@@ -33,6 +33,12 @@ rss: rss
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-titles-from-headings
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: false
 
 # By convention, we "operate" on US Eastern time
 timezone: America/New_York
