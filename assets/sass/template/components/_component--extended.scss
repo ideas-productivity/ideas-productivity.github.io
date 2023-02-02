@@ -1,0 +1,20 @@
+/**
+  * Component: Extended
+  *  
+  * @description
+  * -
+  */
+
+.extended {
+	
+
+	@include respond-to(m) {
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	p {
+		@include stack(m);
+		max-width: 75ch;
+	}
+}

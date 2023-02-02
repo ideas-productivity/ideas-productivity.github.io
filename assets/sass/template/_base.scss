@@ -1,0 +1,259 @@
+/**
+  * Base Styles
+  *  
+  * @description
+  * site-wide styles unique to this project, 
+  * only file where element selectors should be used
+  */
+
+
+
+
+
+// Top Level
+// ----------------------------------------------------------------------------
+
+body {
+	font-size: $base-font-size;
+	background: color(neutral, XX);
+	color: color(neutral, XXXX);
+}
+
+
+
+
+
+
+// Layout
+// ----------------------------------------------------------------------------
+ 
+.layout-wrapper {
+	@include grid-parent();
+}
+
+.nav-wrapper {
+	@include grid-parent();
+}
+
+.layout-wrapper h1,
+.layout-wrapper h2,
+.layout-wrapper h3,
+.layout-wrapper h4,
+.layout-wrapper h5,
+.layout-wrapper h6,
+.layout-wrapper p,
+.layout-wrapper ul,
+.layout-wrapper ol {
+	grid-column: 3 / 11;
+}
+
+.page-content {
+  padding: 0;
+  @include stack(md);
+}
+
+
+
+
+// Typography
+// ----------------------------------------------------------------------------
+
+h1.page-title {
+	@include typestyle($sans-xxl-reg);
+}
+
+h1 {
+	@include typestyle($sans-lg-reg);
+	border-bottom: 4px solid color(warm,X);
+	@include stack(xxs);
+}
+
+p + h1, 
+ul + h1, 
+ol + h1,
+p + h2, 
+ul + h2, 
+ol + h2 {
+	margin-top: bl(6); //24px
+}
+
+h2 {
+	@include typestyle($sans-lg-reg);
+	@include stack(xxs);
+}
+
+h3 {
+	@include typestyle($sans-md-bld);
+	margin-bottom: -2px !important;
+}
+
+p + h3, 
+ul + h3, 
+ol + h3,
+p + h4, 
+ul + h4, 
+ol + h4,
+p + ul, 
+p + ol {
+	margin-top: bl(4); //16px
+}
+
+h4 {
+	@include typestyle($sans-md-reg);
+	margin-bottom: -2px !important;
+}
+
+
+h5 {
+	@include typestyle($sans-sm-bld);
+	margin-bottom: -2px !important;
+}
+
+h6 {
+	@include typestyle($sans-sm-bld);
+	color: color(neutral, XXX);
+	margin-bottom: -2px !important;
+}
+
+p {
+	@include typestyle($sans-sm-reg);
+	@include stack(xs);
+}
+
+ul, ol {
+	@include stack(sm);
+}
+
+
+small {
+	@include typestyle($sans-xs-reg);
+	color: color(neutral, XXX);
+}
+
+a {
+	transition: all 0.2s ease-out;
+	text-decoration: underline;
+	text-decoration-color: color(green, XX);
+	color: color(neutral, XXXX);
+}
+
+a:hover {
+	color: color(neutral, XXX);
+	text-decoration: none;
+	text-decoration-color: color(green, XX);
+}
+
+a:visited {
+	color: color(neutral, XXXX);
+}
+
+a:visited:hover {
+	color: color(neutral, XXX);
+}
+
+
+ul {
+	list-style-type: "\2013";
+	margin-left: 10px;
+	padding-left: 0;
+}
+
+ol {
+	margin-left: 16px;
+	padding-left: 0;
+}
+
+li {
+	margin-bottom: 0 !important;
+	@include typestyle($sans-sm-reg);
+}
+
+
+ul li {
+	padding-left: 1rem;
+}
+
+ol li {
+	padding-left: calc(1rem - 6px);
+}
+
+ol li::marker {
+	color: color(neutral, XXX);
+	@include typestyle($sans-xs-bld);
+}
+
+.icon--sm {
+	@include typestyle($icon-sm);
+}
+
+.icon--md {
+	@include typestyle($icon-md);
+}
+
+
+// Forms
+// ----------------------------------------------------------------------------
+
+input[type=text] {
+	width: 100%;
+	@include inset(sm, md, sm, md);
+  box-sizing: border-box;
+  border: 2px solid #9c479c;
+  border-radius: 4px;
+  @include typestyle($sans-sm-reg);
+  color: #9c479c;
+}
+
+input[type=text]:focus {
+  -webkit-box-shadow: 2px 2px 2x 0px rgba(0,0,0,0.015);
+	-moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.015);
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.015);
+}
+
+select {
+	grid-row: 1;
+	width: 100%;
+	@include inset(sm, md, sm, md);
+  box-sizing: border-box;
+  border: 2px solid #9c479c;
+  border-radius: 4px;
+  @include typestyle($sans-sm-reg);
+  color: #9c479c;
+}
+
+// workaround since select measures text baseline when using plumber.js
+select + span {
+	grid-row: 2;
+	@include stack($bottom: md);
+}
+
+button {
+	background-color: #9c479c;
+	color: color(neutral, X);
+	@include typestyle($sans-sm-reg);
+	padding: bl(2) bl(12) !important;
+	border: 2px solid #9c479c;
+  border-radius: 24px;
+  transition: all 0.4s ease-out;
+}
+
+button:hover {
+	background-color: color(neutral, XXX);
+	border-color: color(neutral, XXX);
+}
+
+
+
+
+// Box General
+// ----------------------------------------------------------------------------
+
+
+
+
+
+// Component General
+// ----------------------------------------------------------------------------
+
+
+

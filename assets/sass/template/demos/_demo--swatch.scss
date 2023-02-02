@@ -1,0 +1,27 @@
+/**
+  * Component: Name
+  *  
+  * @description
+  * -
+  */
+
+.swatch {
+	@include inset($top: m);
+
+	.swatch--sample {
+		@include aspect-ratio($width: 1, $height: 1);
+		@include stack($bottom: s);
+		border: 2px solid color(neutral, XX);
+	}
+
+	.swatch--values {
+		@include typestyle($sans-s-reg);
+	}
+
+
+	// COLORS LISTED HERE
+	.name {
+		background-color: #9c479c;
+	}
+
+}

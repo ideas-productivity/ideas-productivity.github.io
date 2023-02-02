@@ -1,0 +1,56 @@
+/**
+  * Component: Teasers, Text
+  *  
+  * @description
+  * -
+  */
+
+.teasers-text {
+	@include grid-child($cols:12);
+	@include stack(md);
+
+	.group-intro {
+		grid-column: 1 / -1;
+	}
+
+	h1 {
+		@include typestyle($sans-md-bld);
+		display: inline-block;
+		border-bottom: none;
+		@include inline($right:sm);
+		@include stack(xs);
+	}
+
+	.group-link {
+		@include typestyle($sans-sm-reg);
+		display: inline-block;
+		color: color(neutral, XXX);
+	}
+
+	hr {
+		border:none;
+		height: 4px;
+		background-color: color(warm,X);
+		@include stack(xs);
+	}
+
+	.text {
+		@include grid-child($cols:12);
+	}
+
+	.lgtext {
+		@include typestyle($sans-lg-reg);
+		grid-column: 1 / 7;
+	}
+
+	.smtext {
+		@include typestyle($sans-sm-reg);
+		grid-column: 7 / -1;
+	}
+
+}
+
+
+p + .teasers-text {
+	margin-top: bl(12); //48px
+}

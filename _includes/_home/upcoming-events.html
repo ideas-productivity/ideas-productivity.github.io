@@ -1,0 +1,66 @@
+<!-- 
+
+UPCOMING EVENTS
+
+-------------------------------------------------------------------------------
+
+available parameters:
+* title
+* group-linktext
+* group-linkurl
+
+* required
+
+-------------------------------------------------------------------------------
+
+-->
+
+
+<div class="upcoming-events">
+
+
+	<!-- Group Intro  -->
+	<div class="group-intro">
+			<h1>{{ include.title }}</h1>
+
+			<a class="group-link" href="{{ include.group-linkurl }}">
+				{{ include.group-linktext }}
+			</a>	
+
+			<hr>
+	</div>	
+
+
+	<!-- Event Listing  -->
+	{% assign today = site.time | date:"%Y-%m-%d" %}
+	{% assign sorted = site.events | where_exp: "item", "item.startdate >= today" | sort: 'startdate'  %}
+
+	<ul class="event-list">
+		
+		{% for event in sorted limit: 3 %}
+			<li>	
+				<a href="{{ event.url }}" class="event-link">
+				  <h2 class="event-title">{{ event.title }}</h2>
+				  <p class="event-date">
+				  	{{ event.startdate | date:"%b %d" }}
+					  {% assign startmo = event.startdate | date:"%b"  %}
+					  {% assign endmo = event.enddate | date:"%b"  %}
+					  {% if event.enddate %}
+					  	{% if startmo == endmo %}
+					  		–{{ event.enddate | date:"%d" }}
+					  	{% else %}
+					  		–{{ event.enddate | date:"%b %d" }}
+					  	{% endif %}
+					  {% endif %}
+					</p>
+					<small class="event-year">{{ event.startdate | date:"%Y" }}</small>
+					<small class="event-type">{{ event.type }}</small>
+				</a>
+			  <small class="event-series">Series: {{ event.series }}</small> 
+			</li>
+		{% endfor %}
+		
+	</ul>
+
+
+</div>

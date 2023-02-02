@@ -1,0 +1,88 @@
+/**
+  * Component: Footer
+  *  
+  * @description
+  * -
+  */
+
+footer {
+	@include grid-parent();
+
+	.footer--sm {
+		grid-column: 1 / 4;
+		background-color: color(blue, XX);
+		margin-left: -28px;
+    padding: 28px;
+	}
+
+	.footer--lg {
+		@include grid-child($col-start: 4, $cols: 9);
+		background-color: color(blue, XXX);
+		margin-left: -28px;
+		margin-right: -28px;
+    padding: 28px;
+	}
+
+	.footer--sm h1 {
+		@include typestyle($sans-sm-bld);
+		color: color(blue, XXX);
+		border: none;
+	}
+
+	.footer--sm h1:after {
+		content: '\2003 \25B6';	
+		color: color(neutral, X);
+	}
+
+	.footer--sm ul {
+		list-style: none;
+	}
+
+	.footer--sm ul,
+	.footer--sm li {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.footer--sm a,
+	.footer--sm a:visited {
+		color: color(blue, XXX);
+		text-decoration-color: color(neutral, X);
+	}
+
+	.footer--sm a:hover,
+	.footer--sm a:visited:hover {
+		color: color(neutral, X);
+		text-decoration: underline;
+		text-decoration-color: color(neutral, X);
+	}
+
+
+	.footer--lg h1 {
+		@include typestyle($sans-sm-bld);
+		color: color(neutral, X);
+		border: none;
+		grid-column: 4 / -1;
+		grid-row: 1;
+	}
+
+	.footer--lg small {
+		@include typestyle($sans-xs-reg);
+		color: color(neutral, X);
+		grid-column: 4 / 8;
+		grid-row: 2;
+	}
+
+	.footer--lg small a {
+		color: color(blue, XX);
+		text-decoration: none;
+		margin-left: bl(2); //8px
+	}
+
+	.footer--lg .doeLogo {
+		grid-column: 8 / -1;
+		grid-row: 2;
+		justify-self: end;
+	}
+
+}

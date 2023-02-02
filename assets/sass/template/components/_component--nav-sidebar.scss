@@ -1,0 +1,74 @@
+/**
+  * Component: Navigation, Sidebar
+  *  
+  * @description
+  * -
+  */
+
+.nav-sidebar {
+	grid-column: 1 / 3;
+	height: 0;
+	overflow: visible;
+
+	hr {
+		background-color: #DDE6E7;
+		border: none;
+		height: 1px;
+		margin-bottom: 6px;
+	}
+
+	hr.top {
+		margin-bottom: 8px;
+	}
+
+	ul,
+	ul li {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	li h4 {
+		@include typestyle($sans-xs-reg);
+	}
+
+	li a {
+		@include stack(xs);
+		color: color(blue, XXX);
+		text-decoration: none;
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		height: 100%
+	}
+
+	li a.current {
+		$offset: bl(4); //24px
+		left: $offset;
+		width: calc(100% - #{$offset});
+
+		&:before {
+			content: '\25B6';	
+			position: relative;
+			left: calc(-1 * #{$offset});
+		}
+	}
+
+	li a:hover {
+		$offset: bl(4); //24px
+		left: $offset;
+		width: calc(100% - #{$offset});
+		color: color(blue, XX);
+		text-decoration: none;
+
+		&:before {
+			content: '\25B6';	
+			position: relative;
+			left: calc(-1 * #{$offset});
+		}
+	}
+
+
+}
+
+

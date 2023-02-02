@@ -1,0 +1,36 @@
+toc:
+  - title: overview
+    slug: overview
+    url: /overview.html
+    subfolderitems:
+      - page: Background
+        url: /overview/background.html
+      - page: Approach
+        url: /overview/approach.html
+      - page: Impact
+        url: /overview/impact.html
+  - title: activities
+    slug: activities
+    url: /activities.html
+    subfolderitems:
+      - page: xSDK
+        url: /activities/xsdk.html
+      - page: Watersheds
+        url: /activities/watersheds.html
+      - page: BSSw
+        url: /activities/bssw.html
+  - title: resources
+    slug: resources
+    url: /resources.html
+    subfolderitems:
+      - page: Events
+        url: /resources/events.html
+      - page: Past Events
+        url: /resources/past-events.html
+      - page: Tools and Practices
+        url: /resources/tools-and-practices.html
+  - title: join the community!
+    slug: join
+    url: /join.html
+  - title: kitchen sink
+    url: /kitchen-sink.html

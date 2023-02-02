@@ -1,0 +1,369 @@
+/**
+  * Mixins
+  *  
+  * @description
+  * Mixins ordered alphabetically within sections:
+  * - Layout/Grid
+  * - Type
+  * - Spacing
+  * - Additional 
+  */
+
+
+
+
+
+// Layout/Grid
+// ----------------------------------------------------------------------------
+
+/**
+  * grid-child()
+  *  
+  * @description
+  * Mixin to allow nested elements to inherit aspects of their parent's grid
+  * while modifying others. This is typically used to reduce the number of
+  * columns to a subset of the parent's grid.
+  *  
+  * @param   $flavor, optional specify 'grid' or 'flex',
+  *          defaults to 'grid'
+  * @param   $col-start, optional specify the parent col to start element on,
+  *          defaults to auto
+  * @param   $cols, optional number of columns to span and contain,
+  *          defaults to auto
+  * @param   $row-start, optional specify the parent row to start element on,
+  *          defaults to auto
+  * @param   $rows, optional number of rows to span and contain,
+  *          defaults to auto
+  * @param   $gutter-h, optional spacing value for gutters between rows,
+  *          defaults to value set in the $layout-grid configuration
+  * @param   $gutter-v, optional spacing value for gutters between columns,
+  *          defaults to value set in the $layout-grid configuration
+  *
+  * @return  CSS rules to configure a grid template
+  */
+
+@mixin grid-child($flavor: 'grid', $grid: $grid-12, $col-start: auto, $cols: auto, $row-start: auto, $rows: auto, $gutter-h: map-get($grid, gutter-h), $gutter-v: map-get($grid, gutter-v)) {
+  @if $flavor == 'grid' {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+    grid-column-gap: $gutter-h;
+    column-gap: $gutter-h; //repeated due to change in spec
+    grid-row-gap: #{$gutter-v * $baseline-height}rem;
+    row-gap: #{$gutter-v * $baseline-height}rem; //repeated due to spec change
+    margin: 0;
+    grid-column: $col-start/span $cols;
+    grid-row: span $rows;
+  }
+
+  @else if $flavor == 'flex' {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%
+  }
+}
+
+
+/**
+  * grid-parent()
+  *  
+  * @description
+  * Mixin to apply a grid system specified in the configuration 
+  *  
+  * @param   $config, optional layout configuration map,
+  *          defaults to &layout-grid
+  *
+  * @return  CSS rules to configure a grid template
+  */
+
+@mixin grid-parent($config: $grid-12) {
+  $col: map-get($config, columns);
+  $row: map-get($config, rows);
+  $gut-h: map-get($config, gutter-h);
+  $gut-v: map-get($config, gutter-v);
+  $wid: map-get($config, width);
+  $max-wid: map-get($config, max-width);
+
+  display: grid;
+  grid-template-columns: repeat($col, 1fr);
+  grid-template-rows: $row;
+  width: $wid;
+  margin: 0 auto;
+  grid-column-gap: $gut-h;
+  column-gap: $gut-h; //repeated due to change in spec
+  grid-row-gap: #{$gut-v * $baseline-height}rem;
+  row-gap: #{$gut-v * $baseline-height}rem; //repeated due to spec change
+  max-width: $max-wid;
+}
+
+
+/**
+  * respond-to()
+  *  
+  * @description
+  * Mixin for managing responsive styles using breakpoints set in a map 
+  *
+  * @see     sass-guidelin.es/#breakpoint-manager
+  *  
+  * @param   $breakpoint, string key for the desired breakpoint
+  * @param   $breakpoints, optional map to select the breakpoints from,
+  *          defaults to $breakpoints
+  *
+  * @return  A min-width media query for the specified breakpoint
+  */
+
+@mixin respond-to($breakpoint, $breakpoints: $breakpoints) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+
+
+
+
+// Type
+// ----------------------------------------------------------------------------
+
+/**
+  * typestyle()
+  *  
+  * @description
+  * Mixin for applying typestyles from a map to text, 
+  * requires sass-plumber to set on baseline
+  *
+  * @see     smashingmagazine.com/2015/06/responsive-typography-with-sass-maps
+  *  
+  * @param   $ts-map, the typestyle map of values to use
+  * @param   $breakpoints, optional map of breakpoints for responsive styles,
+  *          defaults to the $breakpoints map
+  *
+  * @return  CSS rules for a type-style specification
+  */
+
+// to set type styles
+// depends on plumber and the make-typestyle util mixin below
+@mixin typestyle($ts-map, $breakpoints: $breakpoints) {
+    @each $ts-breakpoint, $ts-style in $ts-map {
+    @if $ts-breakpoint == null {
+      @include make-typestyle($ts-style);
+    }
+    @else {
+      @if map-has-key($breakpoints, $ts-breakpoint) {
+        $ts-breakpoint: map-get($breakpoints, $ts-breakpoint);
+      }
+      @media screen and (min-width: $ts-breakpoint) {
+        @include make-typestyle($ts-style);
+      }
+    }
+  }
+}
+
+// utility mixin compiles the style rule
+@mixin make-typestyle($ts-style) {
+  $font-fam: nth($ts-style, 6);
+
+  @include plumber-set-defaults($use-baseline-origin: true);
+  @include plumber(
+    $grid-height: $baseline-height * 1rem, 
+    $baseline: map-get($font-fam, ratio),
+    $font-size: nth($ts-style, 4)/$baseline-height,
+    $line-height: nth($ts-style, 5),
+    $leading-top: ceil(nth($ts-style, 4)/$baseline-height),
+    $leading-bottom: 0
+  );
+
+  font-style: nth($ts-style, 1);
+  font-variant: nth($ts-style, 2);
+  font-weight: nth($ts-style, 3);
+  font-family: map-get($font-fam, stack);
+  letter-spacing: nth($ts-style, 7) * 1em; 
+  word-spacing: nth($ts-style, 8) * 1em;
+}
+
+
+
+
+
+// Spacing
+// ----------------------------------------------------------------------------
+
+/**
+  * inline()
+  *  
+  * @description
+  * The quick brown fox jumps over the lazy dog 
+  *
+  * @see  quickbrown.fox
+  *  
+  * @param   The quick brown fox jumps over the lazy dog
+  * @param   The quick brown fox jumps over the lazy dog
+  *
+  * @return  The quick brown fox jumps over the lazy dog
+  */
+
+// set the right margin
+@mixin inline($right: m, $spacing: $spacing){
+  margin-right: bl(map-get($spacing, $right));
+}
+
+
+/**
+  * inset()
+  *  
+  * @description
+  * The quick brown fox jumps over the lazy dog 
+  *
+  * @see  quickbrown.fox
+  *  
+  * @param   The quick brown fox jumps over the lazy dog
+  * @param   The quick brown fox jumps over the lazy dog
+  *
+  * @return  The quick brown fox jumps over the lazy dog
+  */
+
+// set the inset
+// make it so the second arg is same as first if not included?
+@mixin inset($top: null, $right: null, $bottom: null, $left: null, $spacing: $spacing){
+  @if ($top and not $right and not $bottom and not $left){
+    padding: bl(map-get($spacing, $top));
+  } @else if ($top and $right and not $bottom and not $left){
+    padding: #{bl(map-get($spacing, $top))} #{bl(map-get($spacing, $right))};
+  } @else if ($top and $right and $bottom and not $left){
+    padding: #{bl(map-get($spacing, $top))} #{bl(map-get($spacing, $right))} #{bl(map-get($spacing, $bottom))}; 
+  } @else if ($top and $right and $bottom and $left){
+    padding: #{bl(map-get($spacing, $top))} #{bl(map-get($spacing, $right))} #{bl(map-get($spacing, $bottom))} #{bl(map-get($spacing, $left))};     
+  }
+}
+
+
+/**
+  * stack()
+  *  
+  * @description
+  * The quick brown fox jumps over the lazy dog 
+  *
+  * @see  quickbrown.fox
+  *  
+  * @param   The quick brown fox jumps over the lazy dog
+  * @param   The quick brown fox jumps over the lazy dog
+  *
+  * @return  The quick brown fox jumps over the lazy dog
+  */
+
+// set the bottom margin
+@mixin stack($bottom: md, $spacing: $spacing){
+  margin-bottom: bl(map-get($spacing, $bottom)) !important;
+}
+
+
+
+
+
+// Additional
+// ----------------------------------------------------------------------------
+
+/**
+  * aspect-ratio()
+  *  
+  * @description
+  * Mixin for scaling objects while maintaining an aspect ratio, like 16:9 
+  * It's applied to a framing object with a div as it's immediate child
+  * The content to scale is placed within the child div
+  *
+  * @see     css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin
+  *  
+  * @param   $width, as a unitless number
+  * @param   $height, as a unitless number
+  *
+  * @return  CSS rules for and element that maintains its aspect ratio
+  */
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+}
+
+
+/**
+  * center()
+  *  
+  * @description
+  * Mixin for centering elements vertically, horizontally, or both
+  *
+  * @see     css-tricks.com/snippets/sass/centering-mixin
+  *  
+  * @param   $horizontal, optional boolean,
+  *          defaults to true
+  * @param   $vertical, optional boolean,
+  *          defaults to true
+  *
+  * @return  CSS rules to center an element
+  */
+
+
+@mixin center($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+
+/**
+  * underline()
+  *  
+  * @description
+  * Mixin to create styled underlines that don't overlap descending letters 
+  *
+  * @see     backwards-engineered from smashingmagazine.com's CSS
+  *  
+  * @param   $stroke-weight, optional string with a weight value, 
+  *          defaults to '1px'
+  * @param   $stroke-offset, optional offset below it's typical position,
+  *          defaults to '.025em'
+  * @param   $stroke-color, optional hex color of underline,
+  *          defaults to #000
+  * @param   $bg-color, optional color of page background,
+  *          defaults to #fff
+  *
+  * @return  CSS rules to produce styled underlines
+  */
+
+@mixin underline($stroke-weight: 1px, $stroke-offset: .025em, $stroke-color: '#000', $bg-color: '#fff'){
+  text-decoration: none;
+  padding: $stroke-offset 0;
+  background-image: linear-gradient($stroke-color,$stroke-color);
+  background-repeat: no-repeat;
+  background-size: 100% $stroke-weight;
+  background-position: center bottom;
+  background-origin: padding-box;
+  text-shadow: 3px 0 $bg-color, 2px 0 $bg-color, 1px 0 $bg-color, -1px 0 $bg-color, -2px 0 $bg-color, -3px 0 $bg-color;
+}

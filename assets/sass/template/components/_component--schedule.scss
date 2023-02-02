@@ -1,0 +1,103 @@
+/**
+  * Component: Event List
+  *  
+  * @description
+  * -
+  */
+
+.schedule {
+	@include grid-child($col-start: 3, $cols: 8);
+	@include stack(sm);
+
+	.eventlist-wrapper {
+		@include grid-child($cols:8);
+	}
+
+	.list-title {
+		grid-column: 1 / -1
+	}
+
+	.list-title h1 {
+		// @include typestyle($sans-md-bld);
+		display: inline-block;
+		grid-column: 1 / -1;
+		width: 100%;
+		// @include stack(xs);	
+	}
+
+	.list-title hr {
+		border:none;
+		height: 4px;
+		background-color: color(warm,X);
+		@include stack(xs);
+	}
+
+	hr {
+		border:none;
+		height: 4px;
+		background-color: color(warm,X);
+		// @include stack(xs);
+	}
+
+	ul {
+		@include grid-child($cols:8);
+		list-style: none;
+		padding: 0;
+		@include stack(md);
+	}
+
+	li {
+		@include grid-child($cols:8);
+		border-bottom: 1px solid color(neutral, XXX);
+		padding: bl(3) 0; //12px
+	}
+
+
+	.subevents {
+		@include grid-child($cols:8);
+		grid-row: 4;
+	}
+
+	.subevent-link {
+		@include grid-child($cols:8);
+		text-decoration: none;
+	}
+
+	.subevent-link:hover,
+	.subevent-link:hover small {
+		text-decoration: underline;
+		color: color(green, XX);
+	}
+
+	.subevent-title {
+		grid-column: 4 / -1;
+		grid-row: 2;
+		min-height: bl(12); //96px
+		@include typestyle($sans-sm-reg);
+	}
+
+	.subevent-date {
+		grid-column: 1 / 4;
+		grid-row: 1;
+		margin-bottom: 0;
+	}
+
+	.subevent-time {
+		grid-column: 1 / 4;
+		grid-row: 2;
+		@include typestyle($sans-sm-reg);
+	}
+
+	.subevent-type {
+		grid-column: 4 / -1;
+		grid-row: 1;
+		margin-bottom: 0;
+	}
+
+	.subevent-series {
+		grid-column: 4 / -1;
+		grid-row: 3;
+		margin-bottom: -4px;
+	}
+
+}

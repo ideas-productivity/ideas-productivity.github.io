@@ -1,0 +1,112 @@
+<!-- 
+
+NAV, SIDEBAR
+
+-------------------------------------------------------------------------------
+
+available parameters:
+* startdate
+* time
+- enddate
+- meta1-name
+- meta1-value
+- meta2-name
+- meta2-value
+- meta3-name
+- meta3-value
+- meta4-name
+- meta4-value
+- meta5-name
+- meta5-value
+- meta6-name
+- meta6-value
+- meta7-name
+- meta7-value
+- meta8-name
+- meta8-value
+
+
+* required
+
+-------------------------------------------------------------------------------
+
+-->
+
+{% assign year = include.startdate | date:"%Y" %}
+{% assign date-start = include.startdate | date:"%b %d" %}
+{% assign startmo = include.startdate | date:"%b"  %}
+{% assign endmo = include.enddate | date:"%b"  %}
+{% if include.enddate %}
+	{% if startmo == endmo %}
+		{% assign date-end = include.enddate | date:"%d" %}
+	{% else %}
+		{% assign date-end = include.enddate | date:"%b %d" %}
+	{% endif %}
+{% endif %}
+
+
+<div class="sidebar-events">
+	<small class="sidebar-year">{{ year }}</small>
+	{% if include.enddate %}
+		<h3 class="sidebar-date">{{ date-start }}-{{ date-end }}</h3>
+	{% else %}
+		<h3 class="sidebar-date">{{ date-start }}</h3>
+	{% endif %}
+	<p class="sidebar-time">{{ include.time }}</p>
+
+	<hr>
+
+	<ul>
+		{% if include.meta1-name %}
+			<li>
+				<h4>{{ include.meta1-name }}</h4>
+				<p>{{ include.meta1-value }}</p>
+			</li>
+		{% endif %}
+		{% if include.meta2-name %}
+			<li>
+				<h4>{{ include.meta2-name }}</h4>
+				<p>{{ include.meta2-value }}</p>
+			</li>
+		{% endif %}
+		{% if include.meta3-name %}
+			<li>
+				<h4>{{ include.meta3-name }}</h4>
+				<p>{{ include.meta3-value }}</p>
+			</li>
+		{% endif %}
+		{% if include.meta4-name %}
+			<li>
+				<h4>{{ include.meta4-name }}</h4>
+				<p>{{ include.meta4-value }}</p>
+			</li>
+		{% endif %}
+		{% if include.meta5-name %}
+			<li>
+				<h4>{{ include.meta5-name }}</h4>
+				<p>{{ include.meta5-value }}</p>
+			</li>
+		{% endif %}
+		{% if include.meta6-name %}
+			<li>
+				<h4>{{ include.meta6-name }}</h4>
+				<p>{{ include.meta6-value }}</p>
+			</li>
+		{% endif %}
+		{% if include.meta7-name %}
+			<li>
+				<h4>{{ include.meta7-name }}</h4>
+				<p>{{ include.meta7-value }}</p>
+			</li>
+		{% endif %}
+		{% if include.meta8-name %}
+			<li>
+				<h4>{{ include.meta8-name }}</h4>
+				<p>{{ include.meta8-value }}</p>
+			</li>
+		{% endif %}
+	</ul>
+</div>
+
+
+

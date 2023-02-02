@@ -1,0 +1,110 @@
+/**
+  * Layout Configuration
+  *
+  * @description
+  * Grid, breakpoint, and layout configuration to be used with the 
+  * grid-parent(), grid-child(), respond-to(), and layout-regions() mixins. 
+  *
+  * The configuration requires 3 steps:
+  * - Define the grid system's parameters
+  *   The basic configuration of the grid is done through the $layout-grid map.
+  *   Additional maps can be added for multiple configurations. 'gutter-v' is
+  *   set as a number of baselines, no unit value is required.
+  *  
+  * - Specify breakpoints
+  *   All breakpoints need to be included in the $breakpoints map. It should be
+  *   indexed with tshirt sizes for the primary steps, and px values for 
+  *   one-off breakpoints.
+  *    
+  * - Establish layout regions
+  *   Regions are defined as classnames, and asigned a label using the 
+  *   grid-area property. Regions are collected into layouts using the 
+  *   grid-template-areas property within teh layout-regions() mixin. 
+  * 
+  * For more detailed documentation see the code guidelines  
+  */
+
+
+
+
+
+// Grid Configuration
+// ----------------------------------------------------------------------------
+
+/**
+  * $layout-grid
+  *
+  * @description
+  * The default map for defining the grid system.
+  *
+  *
+  */
+
+$grid-12: (
+  columns   : 12,
+  rows      : auto,
+  gutter-h  : 28px,
+  gutter-v  : 0,
+  width     : calc(100% - 28px * 2),
+  max-width : 1240px,
+);
+
+$grid-full: (
+  columns   : 1,
+  rows      : auto,
+  gutter-h  : 28px,
+  gutter-v  : 0,
+  width     : 100%,
+);
+
+
+
+
+
+
+
+
+
+// Breakpoints
+// ----------------------------------------------------------------------------
+
+/**
+  * $breakpoints
+  *
+  * @description
+  * Map for all the project's breakpoints 
+  *
+  * (Initial values are placeholder from Bootstrap)
+  */
+
+$breakpoints: (
+  s : 768px,
+  m : 992px,
+  l : 1200px,
+);
+
+
+
+
+
+// Regions
+// ----------------------------------------------------------------------------
+
+.region--header  { grid-area: H; }
+.region--content { grid-area: C; }
+.region--sidebar { grid-area: S; }
+.region--footer  { grid-area: F; }
+
+@mixin layout-regions(){
+    grid-template-areas: 
+    'H H H H H H H H H H H H'
+    'C C C C C C C C C C C C'
+    'S S S S S S S S S S S S'
+    'F F F F F F F F F F F F';
+  @include respond-to(m) {
+    grid-template-areas: 
+    'H H H H H H H H H H H H'
+    'S S S C C C C C C . . .'
+    'F F F F F F F F F F F F';
+  } 
+}

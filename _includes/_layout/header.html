@@ -1,0 +1,45 @@
+
+<header class="header" role="banner">
+
+  <div class="nav-wrapper">
+
+    <div class="masthead">
+      <h1><a href="/index.html">IDEAS PRODUCTIVITY</a></h1>
+    </div>
+
+
+    <div class="nav">
+      {% for item in site.data.nav-config.toc %}
+
+        {% if item.subfolderitems %}
+          <div class="js-drop menuitem-wrapper" id="toggle-{{ item.slug }}" data-menu="{{ item.slug }}">
+            <h2>
+              <a href="{{ item.url }}" class="menuitem">
+                {{ item.title }}
+              </a>
+            </h2>
+            <div id="{{ item.slug }}" class="dropdown js-dropdown-hidden">
+              <ul>
+                {% for entry in item.subfolderitems %}
+                  <li>
+                    <a href="{{ entry.url }}">{{ entry.page }}</a>
+                    <hr>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% else %}
+          <h2>
+            <a href="{{ item.url }}">{{ item.title }}</a>
+          </h2>
+        {% endif %}
+        
+      {% endfor %}
+    </div>
+
+
+  </div>
+
+</header>
+

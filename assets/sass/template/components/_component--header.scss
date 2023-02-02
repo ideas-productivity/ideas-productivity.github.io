@@ -1,0 +1,132 @@
+/**
+  * Component: Header
+  *  
+  * @description
+  * -
+  */
+
+header {
+	background-color: color(green, XXXX);
+	height: 50px;
+	padding-top: bl(3); //12px
+	box-sizing: border-box;
+	border-bottom: 2px solid color(blue, XX);
+
+	.masthead {
+		grid-column: 1 / 6;
+	}
+
+	.nav {
+		grid-column: 6 / -1;
+		justify-self: end;
+		margin-top: -12px;
+	}
+
+	h1 {
+		@include typestyle($sans-sm-bld);
+		color: color(neutral, X);
+		border: none;
+	}
+
+	h1:after {
+		content: '\2003 \25B6';	
+		color: color(green, XX);
+	}
+
+	h2 {
+		@include typestyle($sans-sm-bld);
+		color: color(neutral, X);
+		display: inline-block;
+		margin-left: bl(2); //8px;
+		margin-right: bl(2); //8px;
+		padding-top: 0;
+		margin-top: -2px !important; //to align with masthead
+	}
+
+	h1 a, 
+	h1 a:visited,
+	h2 a, 
+	h2 a:visited {
+		color: color(neutral, X);
+		text-decoration: none;
+	}
+
+	.menuitem-wrapper {
+		height: 48px;
+		display: inline-block;
+		padding-top: 12px;
+	}
+
+	.menuitem-wrapper:hover {
+		background-color: color(neutral, X);
+	}
+
+	.menuitem-wrapper:hover .menuitem {
+		color: color(blue, XXX);
+	}
+
+	.menuitem:after {
+		@include typestyle($icon-sm);
+		content: '\e900';	
+		position: relative;
+		top: 4px;
+		color: color(green, XX);
+		margin-top: 0;
+	}
+
+	.menuitem-wrapper:hover .menuitem:after {
+		color: color(blue, XX);
+	}
+
+	.dropdown {
+		@include inset(xs);
+		background-color: color(neutral, X); 
+		box-shadow: 4px 4px 7px rgba(5, 2, 35, 0.1); 
+		-webkit-box-shadow: 4px 4px 7px rgba(5, 2, 35, 0.1); 
+		-moz-box-shadow: 4px 4px 7px rgba(5, 2, 35, 0.1); 
+		transition: all 0.2s ease-out;
+		position: absolute;
+		top: 48px;
+		min-width: 200px;
+		padding-top: bl(2); //8px
+	}
+
+
+	.dropdown ul,
+	.dropdown li {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.dropdown ul {
+		list-style: none;
+		margin-bottom: bl(1) !important; //4px
+	}
+
+	.dropdown a {
+		color: color(blue, XXX);
+		text-decoration: none;
+		display: inline-block;
+		margin-bottom: bl(2); //8px
+	}
+
+	.dropdown a:hover {
+		color: color(blue, XX);
+	}
+
+	.dropdown hr {
+		background-color: #DDE6E7;
+		border: none;
+		height: 1px;
+	}
+
+	.js-dropdown-hidden {
+		display: none;
+	}
+
+	.js-dropdown-visible {
+		display: block;
+	}
+
+}
+

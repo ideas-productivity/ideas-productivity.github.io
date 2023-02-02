@@ -1,0 +1,51 @@
+/**
+  * Region: Sections
+  *  
+  * @description
+  * -
+  */
+
+
+
+
+.section {
+  @include stack($bottom: xl);
+}
+
+.grid-full {
+  @include grid-parent($config: $grid-full);
+}
+
+.grid-1 {
+  @include grid-parent($config: $grid-1);
+}
+
+.grid-2 {
+  @include grid-parent($config: $grid-1);
+	@include respond-to(s) {
+		@include grid-parent($config: $grid-2);
+	} 
+}
+
+.grid-3 {
+  @include grid-parent($config: $grid-1);
+	@include respond-to(s) {
+		@include grid-parent($config: $grid-3);
+	} 
+}
+
+.grid-4 {
+	@include grid-parent($config: $grid-1);
+	@include respond-to(m) {
+		@include grid-parent($config: $grid-4);
+	} 
+}
+
+.grid-6 {
+	@include grid-parent($config: $grid-1);
+	@include respond-to(m) {
+		@include grid-parent($config: $grid-6);
+	} 
+}
+
+

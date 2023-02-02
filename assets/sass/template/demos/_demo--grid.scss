@@ -1,0 +1,16 @@
+/**
+  * Component: Name
+  *  
+  * @description
+  * -
+  */
+
+.grid--cell {
+	@include inset($top: m);
+	@include aspect-ratio($width: 16, $height: 9);
+	background-color: color(neutral, XX);
+}
+
+.grid--demo {
+	@include stack($bottom: m);
+}

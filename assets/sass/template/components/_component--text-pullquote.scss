@@ -1,0 +1,21 @@
+/**
+  * Component: Text, Pullquote
+  *  
+  * @description
+  * -
+  */
+
+.text-pullquote {
+	grid-column: 1 / 11;
+	@include stack(md);
+	@include typestyle($sans-xl-reg);
+	color: color(green, XXXX);
+
+}
+
+
+p + .text-pullquote,
+ul + .text-pullquote,
+ol + .text-pullquote {
+	margin-top: bl(12) !important; //48px
+}

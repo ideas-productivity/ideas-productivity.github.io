@@ -1,0 +1,51 @@
+<!-- 
+
+TEASERS, TEXT
+
+-------------------------------------------------------------------------------
+
+available parameters:
+- group-title
+- group-linktext
+- group-linkurl
+* lgtext
+* smtext
+
+* required
+
+-------------------------------------------------------------------------------
+
+-->
+
+
+<div class="teasers-text">
+
+	<div class="group-intro">
+		{% if include.group-title %}
+			<h1>{{ include.group-title }}</h1>
+
+			{% if include.group-linktext %}
+			<a class="group-link" href="{{ include.group-linkurl }}">
+				{{ include.group-linktext }}
+			</a>	
+			{% endif %}
+
+			<hr>
+		{% endif %}
+	</div>	
+
+
+	<div class="text">
+		<p class="lgtext">
+			{{ include.lgtext}}
+		</p>
+		
+		<div class="smtext">
+			{{ include.smtext }}
+		</div>
+		
+	</div>
+
+</div>
+
+

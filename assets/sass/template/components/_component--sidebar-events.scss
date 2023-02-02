@@ -1,0 +1,58 @@
+/**
+  * Component: Sidebar, Events
+  *  
+  * @description
+  * -
+  */
+
+.sidebar-events {
+	grid-column: 1 / 3;
+	height: 0;
+	overflow: visible;
+
+	.sidebar-year {
+		display: block;
+		@include stack(xxs);
+
+	}
+
+	.sidebar-date {
+		
+	}
+
+	.sidebar-time {
+		@include typestyle($sans-xs-reg);
+		@include stack(xs);
+	}
+
+	hr {
+		background-color: #DDE6E7;
+		border: none;
+		height: 1px;
+		@include stack(xs);
+	}
+
+	ul,
+	ul li {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	li h4 {
+		@include typestyle($sans-xs-reg);
+	}
+
+	li p {
+		@include typestyle($sans-xs-reg);
+		margin-bottom: 0 !important;
+	}
+
+	li p,
+	li p a {
+		color: color(neutral, XXX);
+	}
+
+}
+
+

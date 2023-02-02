@@ -1,0 +1,16 @@
+/**
+  * Component: Breadcrumbs
+  *  
+  * @description
+  * -
+  */
+
+.breadcrumbs {
+	grid-column: 1 / -1;
+	@include stack(lg);
+	@include typestyle($sans-xs-reg);
+	color: color(neutral, XXX);
+	margin-top: bl(1) !important; //4px
+}
+
+

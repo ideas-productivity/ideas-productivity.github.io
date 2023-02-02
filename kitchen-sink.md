@@ -1,0 +1,387 @@
+---
+
+layout: default
+
+title: "Kitchen Sink"
+blurb: "The quick brown fox jumps over the lazy dog."
+
+meta1-name: "Series"
+meta1-value: "<a href='https://ideas-productivity.org/events/'>Test Series</a>"
+meta2-name: "Contributors"
+meta2-value: "<a href='https://ideas-productivity.org/events/'>Name A Name</a>, <a href='https://ideas-productivity.org/events/'>Name A Name</a>, <a href='https://ideas-productivity.org/events/'>Name A Name</a>"
+
+---
+
+
+
+
+<!-- Page Content -->
+<!-- ---------------------------------------------------------------------- -->
+
+{% 	include media-heroimg.html 
+	  source = "fpo.png"
+		caption = "The quick brown fox jumps over the lazy dog. Photo: Photographer"
+%}
+
+
+# Hello
+
+The *quick brown fox jumps over the lazy dog*. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. **The quick brown fox jumps over the lazy dog**. The quick 1982 [brown fox jumps](https://ideas-productivity.org/ideas-home-page/about-ideas/) over the lazy dog.
+
+{% 	include text-download.html 
+		title = "Test Download"
+		blurb = "The quick brown fox jumps over the lazy dog."
+		url = "https://blog.lostartpress.com/wp-content/uploads/2022/07/AOJ_revised_Jan2020.pdf"
+		file-type = "PDF" 
+		file-size = "100 kb"
+%}
+
+## Subhead
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+## Subhead
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+
+{% 	include media-img.html 
+		source = "fpo.png"
+		caption = "The quick brown fox jumps over the lazy dog."
+%}
+
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+
+### Subhead
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+{% 	include media-img2x.html 
+		source1 = "fpo.png"
+		caption1 = "The quick brown fox jumps over the lazy dog."
+		source2 = "fpo.png"
+		caption2 = "The quick brown fox jumps over the lazy dog."
+%}
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+
+
+#### Subhead
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+{%  include media-video.html
+    embed-code = "<iframe width='560' height='315' src='https://www.youtube.com/embed/NREtpoqE_HU' title='YouTube video player;' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    cover-source = "fpo.png"
+    caption = "The quick brown fox jumps over the lazy dog."
+%}
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+
+
+{% 	include text-pullquote.html 
+		blurb = "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+%}
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+
+
+##### Subhead
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+
+{% 	include table-narrow_equalcol.html 
+		title = "Example Table"
+		caption = "The quick brown fox jumps over the lazy dog."
+
+		cell-1x1 = "1.1 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+		cell-1x2 = "1.2 The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog."
+		cell-1x3 = "1.3 The quick brown fox jumps over the lazy dog."
+
+		cell-2x1 = "2.1 The quick brown fox jumps over the lazy dog."
+		cell-2x2 = "2.2 The quick brown fox jumps over the lazy dog."
+		cell-2x3 = "2.3 The quick brown fox jumps over the lazy dog."
+
+		cell-3x1 = "3.1 The quick brown fox jumps over the lazy dog."
+		cell-3x2 = "3.2 The quick brown fox jumps over the lazy dog."
+		cell-3x3 = "3.3 The quick brown fox jumps over the lazy dog."
+%}
+
+
+
+{% 	include table-narrow_varcol.html 
+		title = "Example Table"
+		caption = "The quick brown fox jumps over the lazy dog."
+
+		cell-1x1 = "1.1 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+		cell-1x2 = "1.2 The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog."
+		cell-1x3 = "1.3 The quick brown fox jumps over the lazy dog."
+
+		cell-2x1 = "2.1 The quick brown fox jumps over the lazy dog."
+		cell-2x2 = "2.2 The quick brown fox jumps over the lazy dog."
+		cell-2x3 = "2.3 The quick brown fox jumps over the lazy dog."
+
+		cell-3x1 = "3.1 The quick brown fox jumps over the lazy dog."
+		cell-3x2 = "3.2 The quick brown fox jumps over the lazy dog."
+		cell-3x3 = "3.3 The quick brown fox jumps over the lazy dog."
+%}
+
+
+
+{% 	include table-wide_equalcol.html 
+		title = "Example Table"
+		caption = "The quick brown fox jumps over the lazy dog."
+
+		cell-1x1 = "1.1 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+		cell-1x2 = "1.2 The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog."
+		cell-1x3 = "1.3 The quick brown fox jumps over the lazy dog."
+
+		cell-2x1 = "2.1 The quick brown fox jumps over the lazy dog."
+		cell-2x2 = "2.2 The quick brown fox jumps over the lazy dog."
+		cell-2x3 = "2.3 The quick brown fox jumps over the lazy dog."
+
+		cell-3x1 = "3.1 The quick brown fox jumps over the lazy dog."
+		cell-3x2 = "3.2 The quick brown fox jumps over the lazy dog."
+		cell-3x3 = "3.3 The quick brown fox jumps over the lazy dog."
+%}
+
+
+
+{% 	include table-wide_varcol.html 
+		title = "Example Table"
+		caption = "The quick brown fox jumps over the lazy dog."
+
+		cell-1x1 = "1.1 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+		cell-1x2 = "1.2 The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the lazy dog."
+		cell-1x3 = "1.3 The quick brown fox jumps over the lazy dog."
+
+		cell-2x1 = "2.1 The quick brown fox jumps over the lazy dog."
+		cell-2x2 = "2.2 The quick brown fox jumps over the lazy dog."
+		cell-2x3 = "2.3 The quick brown fox jumps over the lazy dog."
+
+		cell-3x1 = "3.1 The quick brown fox jumps over the lazy dog."
+		cell-3x2 = "3.2 The quick brown fox jumps over the lazy dog."
+		cell-3x3 = "3.3 The quick brown fox jumps over the lazy dog."
+%}
+
+
+###### Subhead
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+{% 	include teasers-2x_img.html
+		group-title = "Example Teasers"
+		group-linktext = "Learn More"
+		group-linkurl = "https://ideas-productivity.org/events/"
+		group-blurb = "The quick brown fox jumps over the lazy dog."
+
+		title1 = "Teaser One"
+		source1 = "fpo.png"
+		url1 = "https://ideas-productivity.org/events/"
+		blurb1 = "The quick brown fox jumps over the lazy dog."
+
+		title2 = "Teaser Two"
+		source2 = "fpo.png"
+		url2 = "https://ideas-productivity.org/events/"
+		blurb2 = "The quick brown fox jumps over the lazy dog."
+%}
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+{% 	include teasers-2x_noimg.html
+		group-title = "Example Teasers"
+		group-linktext = "Learn More"
+		group-linkurl = "https://ideas-productivity.org/events/"
+		group-blurb = "The quick brown fox jumps over the lazy dog."
+
+		title1 = "Teaser One"
+		url1 = "https://ideas-productivity.org/events/"
+		blurb1 = "The quick brown fox jumps over the lazy dog."
+
+		title2 = "Teaser Two"
+		url2 = "https://ideas-productivity.org/events/"
+		blurb2 = "The quick brown fox jumps over the lazy dog."
+%}
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+
+{% 	include teasers-4x_img.html
+		group-title = "Example Teasers"
+		group-linktext = "Learn More"
+		group-linkurl = "https://ideas-productivity.org/events/"
+		group-blurb = "The quick brown fox jumps over the lazy dog."
+
+		title1 = "Teaser One"
+		source1 = "fpo.png"
+		url1 = "https://ideas-productivity.org/events/"
+		blurb1 = "The quick brown fox jumps over the lazy dog."
+
+		title2 = "Teaser Two"
+		source2 = "fpo.png"
+		url2 = "https://ideas-productivity.org/events/"
+		blurb2 = "The quick brown fox jumps over the lazy dog."
+
+		title3 = "Teaser Three"
+		source3 = "fpo.png"
+		url3 = "https://ideas-productivity.org/events/"
+		blurb3 = "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+
+		title4 = "Teaser Four"
+		source4 = "fpo.png"
+		url4 = "https://ideas-productivity.org/events/"
+		blurb4 = "The quick brown fox jumps over the lazy dog."
+%}
+
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+
+{% 	include teasers-4x_noimg.html
+		group-title = "Example Teasers"
+		group-linktext = "Learn More"
+		group-linkurl = "https://ideas-productivity.org/events/"
+		group-blurb = "The quick brown fox jumps over the lazy dog."
+
+		title1 = "Teaser One"
+		url1 = "https://ideas-productivity.org/events/"
+		blurb1 = "The quick brown fox jumps over the lazy dog."
+
+		title2 = "Teaser Two"
+		url2 = "https://ideas-productivity.org/events/"
+		blurb2 = "The quick brown fox jumps over the lazy dog."
+
+		title3 = "Teaser Three"
+		url3 = "https://ideas-productivity.org/events/"
+		blurb3 = "The quick brown fox jumps over the lazy dog."
+
+		title4 = "Teaser Four"
+		url4 = "https://ideas-productivity.org/events/"
+		blurb4 = "The quick brown fox jumps over the lazy dog."
+%}
+
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+
+{% 	include teasers-banner.html
+		group-title = "Example Teasers"
+		group-linktext = "Learn More"
+		group-linkurl = "https://ideas-productivity.org/events/"
+		group-blurb = "The quick brown fox jumps over the lazy dog."
+
+		title = "Teaser One"
+		source = "fpo.png"
+		url = "https://ideas-productivity.org/events/"
+		blurb = "The quick brown fox jumps over the lazy dog."
+%}
+
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+
+{% 	include teasers-text.html
+		group-title = "Example Teasers"
+		group-linktext = "Learn More"
+		group-linkurl = "https://ideas-productivity.org/events/"
+
+		lgtext = "The quick brown fox jumps over the lazy dog."
+		smtext = "<p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+		<p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+		<p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>"
+%}
+
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+{% 	include text-biglink.html
+		blurb = "Example Call to Action Link"
+		url = "https://ideas-productivity.org/events/"
+%}
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+- The quick brown fox jumps over the lazy dog.
+- The quick brown fox jumps over the lazy dog.
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+- The quick brown fox jumps over the lazy dog.
+- The quick brown fox jumps over the lazy dog.
+
+1. The quick brown fox jumps over the lazy dog.
+2. The quick brown fox jumps over the lazy dog.
+3. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+4. The quick brown fox jumps over the lazy dog.
+5. The quick brown fox jumps over the lazy dog.
+5. The quick brown fox jumps over the lazy dog.
+5. The quick brown fox jumps over the lazy dog.
+5. The quick brown fox jumps over the lazy dog.
+5. The quick brown fox jumps over the lazy dog.
+5. The quick brown fox jumps over the lazy dog.

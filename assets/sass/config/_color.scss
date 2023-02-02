@@ -1,0 +1,84 @@
+/**
+  * Color Configuration
+  *
+  * @description
+  * Configuration of colors and additional styles for use with the color(),
+  * gradient(), and alpha() functions. 
+  *
+  * The color map is the only requirement, the other maps are available as
+  * necessary. 
+  *
+  * The color maps use the name of the color as a key and a map of its 
+  * variants as the value. Different schemes may be used to name the variants,
+  * such as 'background' or 'highlight'.
+  * 
+  * Gradient maps are indexed by the name of the gradient, the gradient's 
+  * definition is provided as a map including the gradient's angle, it's 
+  * flavor ('linear' or 'radial') and stops. 
+  *
+  * Alpha maps are indexed by a series of 'X's to represent the level of 
+  * opacity, the values are a unitless number between 0 (transparent) and 
+  * 1 (opaque)
+  *
+  * For more detailed documentation see the code guidelines  
+  */
+
+
+
+
+
+// Colors
+// ----------------------------------------------------------------------------
+
+/**
+  * $colors
+  *
+  * @description
+  * The default map of the color() function
+  * 'base' is the default variant of the color() function
+  *
+  * (Initial values are placeholder)
+  */
+
+$colors   : (
+  neutral : (X: #ffffff, XX: #fbfdfe, XXB: #F5FAFC, XXX: #696a71, XXXX: #050223),
+  blue    : (X: #e4f8ff, XX: #4fc8ef, XXX: #060034),
+  green   : (X: #d9f5eb, XX: #94d8d0, XXX: #189064, XXXX: #008554),
+  warm    : (X: #FF9686),
+);
+
+
+
+
+
+// Additional Styles
+// ----------------------------------------------------------------------------
+
+/**
+  * $gradients
+  *
+  * @description
+  * Default map of the gradient() function
+  * 
+  * (Initial values are placeholder)
+  */
+  
+// $gradients : (
+// 	dawn     : (angle: 0, flavor: 'linear', stops: (#FFFEE2 20%, #CFF2FF, #FFE2E2 80%, #142146))
+// );
+
+
+/**
+  * $alphas
+  *
+  * @description
+  * Default map of the alpha() function
+  * 
+  * (Initial values are placeholder)
+  */
+
+// $alphas : (
+// 	X     : .25,
+// 	XX    : .5,
+// 	XXX   : .75,
+// );

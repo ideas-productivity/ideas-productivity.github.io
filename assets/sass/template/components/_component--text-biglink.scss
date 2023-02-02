@@ -1,0 +1,23 @@
+/**
+  * Component: Text, Big Link
+  *  
+  * @description
+  * -
+  */
+
+.text-biglink {
+	grid-column: 2 / 10;
+	display: inline-block;
+	@include stack(sm);
+	@include typestyle($sans-md-reg);
+}
+
+
+p + p .text-biglink,
+ul + p .text-biglink,
+ol + p .text-biglink,
+p + .text-biglink,
+ul + .text-biglink,
+ol + .text-biglink {
+	margin-top: bl(6) !important; //24px
+}

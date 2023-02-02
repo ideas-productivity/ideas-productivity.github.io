@@ -1,0 +1,40 @@
+<div class="schedule">
+
+	<!-- List Markup -->
+	<div class="eventlist-wrapper">
+
+		{% if include.title %}
+			<div class="list-title">
+				<h1 class="list-title">{{ include.title }}</h1>
+				<!-- <hr> -->
+			</div>
+		{% endif %}
+
+			  
+  	<ul class="subevents">
+	  	{% for slug in include.events %}
+	  	{% assign sub = site.events | where: 'slug', slug %}
+	  		<li>
+	  			<a href="{{ sub[0].url }}" class="subevent-link">
+	  				<h3 class="subevent-title">
+		  				{{ sub[0].title }}
+		  			</h3>
+		  			<p class="subevent-time">
+		  				{{ sub[0].time }}
+		  			</p>
+		  			<small class="subevent-date">
+		  				{{ sub[0].date | date:"%b %d" }}
+		  			</small>
+		  			<small class="subevent-type">
+		  				{{ sub[0].type }}
+		  			</small>
+		  		</a>
+		  		<small class="subevent-series">
+		  			{{ sub[0].series }}
+		  		</small>
+		  	</li>
+	  	{% endfor %}
+	  </ul>
+
+	</div>
+</div>

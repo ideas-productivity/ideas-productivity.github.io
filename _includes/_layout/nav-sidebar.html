@@ -1,0 +1,117 @@
+<!-- 
+
+NAV, SIDEBAR
+
+-------------------------------------------------------------------------------
+
+available parameters:
+* label1
+* url1
+- label2
+- url2
+- label3
+- url3
+- label4
+- url4
+- label5
+- url5
+- label6
+- url6
+- label7
+- url7
+- label8
+- url8
+
+* required
+
+-------------------------------------------------------------------------------
+
+-->
+
+<div class="nav-sidebar">
+
+	<hr class="top">
+
+	<ul>
+		{% if include.label1 %}
+			<li>
+				{% if include.label1 == include.current %}
+					<a href="{{ include.url1 }}" class="current">{{ include.label1 }}</a>
+				{% else %}
+					<a href="{{ include.url1 }}">{{ include.label1 }}</a>
+				{% endif %}
+				<hr>
+			</li>
+		{% endif %}
+		{% if include.label2 %}
+			<li>
+				{% if include.label2 == include.current %}
+					<a href="{{ include.url2 }}" class="current">{{ include.label2 }}</a>
+				{% else %}
+					<a href="{{ include.url2 }}">{{ include.label2 }}</a>
+				{% endif %}
+				<hr>
+			</li>
+		{% endif %}
+		{% if include.label3 %}
+			<li>
+				{% if include.label3 == include.current %}
+					<a href="{{ include.url3 }}" class="current">{{ include.label3 }}</a>
+				{% else %}
+					<a href="{{ include.url3 }}">{{ include.label3 }}</a>
+				{% endif %}
+				<hr>
+			</li>
+		{% endif %}
+		{% if include.label4 %}
+			<li>
+				{% if include.label4 == include.current %}
+					<a href="{{ include.url4 }}" class="current">{{ include.label4 }}</a>
+				{% else %}
+					<a href="{{ include.url4 }}">{{ include.label4 }}</a>
+				{% endif %}
+				<hr>
+			</li>
+		{% endif %}
+		{% if include.label5 %}
+			<li>
+				{% if include.label5 == include.current %}
+					<a href="{{ include.url5 }}" class="current">{{ include.label5 }}</a>
+				{% else %}
+					<a href="{{ include.url5 }}">{{ include.label5 }}</a>
+				{% endif %}
+				<hr>
+			</li>
+		{% endif %}
+		{% if include.label6 %}
+			<li>
+				{% if include.label6 == include.current %}
+					<a href="{{ include.url6 }}" class="current">{{ include.label6 }}</a>
+				{% else %}
+					<a href="{{ include.url6 }}">{{ include.label6 }}</a>
+				{% endif %}
+				<hr>
+			</li>
+		{% endif %}
+		{% if include.label7 %}
+			<li>
+				{% if include.label1 == include.current %}
+					<a href="{{ include.url7 }}" class="current">{{ include.label7 }}</a>
+				{% else %}
+					<a href="{{ include.url7 }}">{{ include.label7 }}</a>
+				{% endif %}
+				<hr>
+			</li>
+		{% endif %}
+		{% if include.label8 %}
+			<li>
+				{% if include.label8 == include.current %}
+					<a href="{{ include.url8 }}" class="current">{{ include.label8 }}</a>
+				{% else %}
+					<a href="{{ include.url8 }}">{{ include.label8 }}</a>
+				{% endif %}
+				<hr>
+			</li>
+		{% endif %}
+	</ul>
+</div>

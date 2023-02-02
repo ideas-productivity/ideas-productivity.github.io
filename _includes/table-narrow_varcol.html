@@ -1,0 +1,657 @@
+<!-- 
+
+TABLE, NARROW WITH VARIABLE WIDTH COLUMNS
+
+-------------------------------------------------------------------------------
+
+available parameters:
+
+- title
+- caption
+
+* cell-1x1
+- cell-1x2
+- cell-1x3
+- cell-1x4
+- cell-1x5
+- cell-1x6
+- cell-1x7
+- cell-1x8
+- cell-1x9
+- cell-1x10
+- cell-1x11
+- cell-1x12
+
+- cell-2x1
+- cell-2x2
+- cell-2x3
+- cell-2x4
+- cell-2x5
+- cell-2x6
+- cell-2x7
+- cell-2x8
+- cell-2x9
+- cell-2x10
+- cell-2x11
+- cell-2x12
+
+- cell-3x1
+- cell-3x2
+- cell-3x3
+- cell-3x4
+- cell-3x5
+- cell-3x6
+- cell-3x7
+- cell-3x8
+- cell-3x9
+- cell-3x10
+- cell-3x11
+- cell-3x12
+
+- cell-4x1
+- cell-4x2
+- cell-4x3
+- cell-4x4
+- cell-4x5
+- cell-4x6
+- cell-4x7
+- cell-4x8
+- cell-4x9
+- cell-4x10
+- cell-4x11
+- cell-4x12
+
+- cell-5x1
+- cell-5x2
+- cell-5x3
+- cell-5x4
+- cell-5x5
+- cell-5x6
+- cell-5x7
+- cell-5x8
+- cell-5x9
+- cell-5x10
+- cell-5x11
+- cell-5x12
+
+- cell-6x1
+- cell-6x2
+- cell-6x3
+- cell-6x4
+- cell-6x5
+- cell-6x6
+- cell-6x7
+- cell-6x8
+- cell-6x9
+- cell-6x10
+- cell-6x11
+- cell-6x12
+
+- cell-7x1
+- cell-7x2
+- cell-7x3
+- cell-7x4
+- cell-7x5
+- cell-7x6
+- cell-7x7
+- cell-7x8
+- cell-7x9
+- cell-7x10
+- cell-7x11
+- cell-7x12
+
+- cell-8x1
+- cell-8x2
+- cell-8x3
+- cell-8x4
+- cell-8x5
+- cell-8x6
+- cell-8x7
+- cell-8x8
+- cell-8x9
+- cell-8x10
+- cell-8x11
+- cell-8x12
+
+- cell-9x1
+- cell-9x2
+- cell-9x3
+- cell-9x4
+- cell-9x5
+- cell-9x6
+- cell-9x7
+- cell-9x8
+- cell-9x9
+- cell-9x10
+- cell-9x11
+- cell-9x12
+
+- cell-10x1
+- cell-10x2
+- cell-10x3
+- cell-10x4
+- cell-10x5
+- cell-10x6
+- cell-10x7
+- cell-10x8
+- cell-10x9
+- cell-10x10
+- cell-10x11
+- cell-10x12
+
+- cell-11x1
+- cell-11x2
+- cell-11x3
+- cell-11x4
+- cell-11x5
+- cell-11x6
+- cell-11x7
+- cell-11x8
+- cell-11x9
+- cell-11x10
+- cell-11x11
+- cell-11x12
+
+- cell-12x1
+- cell-12x2
+- cell-12x3
+- cell-12x4
+- cell-12x5
+- cell-12x6
+- cell-12x7
+- cell-12x8
+- cell-12x9
+- cell-12x10
+- cell-12x11
+- cell-12x12
+
+
+* required
+
+-------------------------------------------------------------------------------
+
+-->
+
+
+
+<div class="table--narrow-varcol">
+
+	{% if include.title %}
+		<h1>Table: {{ include.title }}</h1>
+	{% endif %}
+
+	<table>
+		{% if include.cell-1x1 %}
+			<tr>	
+				<td>{{ include.cell-1x1 }}</td>	
+				{% if include.cell-1x2 %}
+					<td>{{ include.cell-1x2 }}</td>
+				{% endif %}
+				{% if include.cell-1x3 %}
+					<td>{{ include.cell-1x3 }}</td>
+				{% endif %}
+				{% if include.cell-1x4 %}
+					<td>{{ include.cell-1x4 }}</td>
+				{% endif %}
+				{% if include.cell-1x5 %}
+					<td>{{ include.cell-1x5 }}</td>
+				{% endif %}
+				{% if include.cell-1x6 %}
+					<td>{{ include.cell-1x6 }}</td>
+				{% endif %}
+				{% if include.cell-1x7 %}
+					<td>{{ include.cell-1x7 }}</td>
+				{% endif %}
+				{% if include.cell-1x8 %}
+					<td>{{ include.cell-1x8 }}</td>
+				{% endif %}
+				{% if include.cell-1x9 %}
+					<td>{{ include.cell-1x9 }}</td>
+				{% endif %}
+				{% if include.cell-1x10 %}
+					<td>{{ include.cell-1x10 }}</td>
+				{% endif %}
+				{% if include.cell-1x11 %}
+					<td>{{ include.cell-1x11 }}</td>
+				{% endif %}
+				{% if include.cell-1x12 %}
+					<td>{{ include.cell-1x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+
+		{% if include.cell-2x1 %}
+			<tr>	
+				<td>{{ include.cell-2x1 }}</td>	
+				{% if include.cell-2x2 %}
+					<td>{{ include.cell-2x2 }}</td>
+				{% endif %}
+				{% if include.cell-2x3 %}
+					<td>{{ include.cell-2x3 }}</td>
+				{% endif %}
+				{% if include.cell-2x4 %}
+					<td>{{ include.cell-2x4 }}</td>
+				{% endif %}
+				{% if include.cell-2x5 %}
+					<td>{{ include.cell-2x5 }}</td>
+				{% endif %}
+				{% if include.cell-2x6 %}
+					<td>{{ include.cell-2x6 }}</td>
+				{% endif %}
+				{% if include.cell-2x7 %}
+					<td>{{ include.cell-2x7 }}</td>
+				{% endif %}
+				{% if include.cell-2x8 %}
+					<td>{{ include.cell-2x8 }}</td>
+				{% endif %}
+				{% if include.cell-2x9 %}
+					<td>{{ include.cell-2x9 }}</td>
+				{% endif %}
+				{% if include.cell-2x10 %}
+					<td>{{ include.cell-2x10 }}</td>
+				{% endif %}
+				{% if include.cell-2x11 %}
+					<td>{{ include.cell-2x11 }}</td>
+				{% endif %}
+				{% if include.cell-2x12 %}
+					<td>{{ include.cell-2x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+
+		{% if include.cell-3x1 %}
+			<tr>	
+				<td>{{ include.cell-3x1 }}</td>	
+				{% if include.cell-3x2 %}
+					<td>{{ include.cell-3x2 }}</td>
+				{% endif %}
+				{% if include.cell-3x3 %}
+					<td>{{ include.cell-3x3 }}</td>
+				{% endif %}
+				{% if include.cell-3x4 %}
+					<td>{{ include.cell-3x4 }}</td>
+				{% endif %}
+				{% if include.cell-3x5 %}
+					<td>{{ include.cell-3x5 }}</td>
+				{% endif %}
+				{% if include.cell-3x6 %}
+					<td>{{ include.cell-3x6 }}</td>
+				{% endif %}
+				{% if include.cell-3x7 %}
+					<td>{{ include.cell-3x7 }}</td>
+				{% endif %}
+				{% if include.cell-3x8 %}
+					<td>{{ include.cell-3x8 }}</td>
+				{% endif %}
+				{% if include.cell-3x9 %}
+					<td>{{ include.cell-3x9 }}</td>
+				{% endif %}
+				{% if include.cell-3x10 %}
+					<td>{{ include.cell-3x10 }}</td>
+				{% endif %}
+				{% if include.cell-3x11 %}
+					<td>{{ include.cell-3x11 }}</td>
+				{% endif %}
+				{% if include.cell-3x12 %}
+					<td>{{ include.cell-3x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+
+		{% if include.cell-4x1 %}
+			<tr>	
+				<td>{{ include.cell-4x1 }}</td>	
+				{% if include.cell-4x2 %}
+					<td>{{ include.cell-4x2 }}</td>
+				{% endif %}
+				{% if include.cell-4x3 %}
+					<td>{{ include.cell-4x3 }}</td>
+				{% endif %}
+				{% if include.cell-4x4 %}
+					<td>{{ include.cell-4x4 }}</td>
+				{% endif %}
+				{% if include.cell-4x5 %}
+					<td>{{ include.cell-4x5 }}</td>
+				{% endif %}
+				{% if include.cell-4x6 %}
+					<td>{{ include.cell-4x6 }}</td>
+				{% endif %}
+				{% if include.cell-4x7 %}
+					<td>{{ include.cell-4x7 }}</td>
+				{% endif %}
+				{% if include.cell-4x8 %}
+					<td>{{ include.cell-4x8 }}</td>
+				{% endif %}
+				{% if include.cell-4x9 %}
+					<td>{{ include.cell-4x9 }}</td>
+				{% endif %}
+				{% if include.cell-4x10 %}
+					<td>{{ include.cell-4x10 }}</td>
+				{% endif %}
+				{% if include.cell-4x11 %}
+					<td>{{ include.cell-4x11 }}</td>
+				{% endif %}
+				{% if include.cell-4x12 %}
+					<td>{{ include.cell-4x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+
+		{% if include.cell-5x1 %}
+			<tr>	
+				<td>{{ include.cell-5x1 }}</td>	
+				{% if include.cell-5x2 %}
+					<td>{{ include.cell-5x2 }}</td>
+				{% endif %}
+				{% if include.cell-5x3 %}
+					<td>{{ include.cell-5x3 }}</td>
+				{% endif %}
+				{% if include.cell-5x4 %}
+					<td>{{ include.cell-5x4 }}</td>
+				{% endif %}
+				{% if include.cell-5x5 %}
+					<td>{{ include.cell-5x5 }}</td>
+				{% endif %}
+				{% if include.cell-5x6 %}
+					<td>{{ include.cell-5x6 }}</td>
+				{% endif %}
+				{% if include.cell-5x7 %}
+					<td>{{ include.cell-5x7 }}</td>
+				{% endif %}
+				{% if include.cell-5x8 %}
+					<td>{{ include.cell-5x8 }}</td>
+				{% endif %}
+				{% if include.cell-5x9 %}
+					<td>{{ include.cell-5x9 }}</td>
+				{% endif %}
+				{% if include.cell-5x10 %}
+					<td>{{ include.cell-5x10 }}</td>
+				{% endif %}
+				{% if include.cell-5x11 %}
+					<td>{{ include.cell-5x11 }}</td>
+				{% endif %}
+				{% if include.cell-5x12 %}
+					<td>{{ include.cell-5x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+
+		{% if include.cell-6x1 %}
+			<tr>	
+				<td>{{ include.cell-6x1 }}</td>	
+				{% if include.cell-6x2 %}
+					<td>{{ include.cell-6x2 }}</td>
+				{% endif %}
+				{% if include.cell-6x3 %}
+					<td>{{ include.cell-6x3 }}</td>
+				{% endif %}
+				{% if include.cell-6x4 %}
+					<td>{{ include.cell-6x4 }}</td>
+				{% endif %}
+				{% if include.cell-6x5 %}
+					<td>{{ include.cell-6x5 }}</td>
+				{% endif %}
+				{% if include.cell-6x6 %}
+					<td>{{ include.cell-6x6 }}</td>
+				{% endif %}
+				{% if include.cell-6x7 %}
+					<td>{{ include.cell-6x7 }}</td>
+				{% endif %}
+				{% if include.cell-6x8 %}
+					<td>{{ include.cell-6x8 }}</td>
+				{% endif %}
+				{% if include.cell-6x9 %}
+					<td>{{ include.cell-6x9 }}</td>
+				{% endif %}
+				{% if include.cell-6x10 %}
+					<td>{{ include.cell-6x10 }}</td>
+				{% endif %}
+				{% if include.cell-6x11 %}
+					<td>{{ include.cell-6x11 }}</td>
+				{% endif %}
+				{% if include.cell-6x12 %}
+					<td>{{ include.cell-6x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+
+		{% if include.cell-7x1 %}
+			<tr>	
+				<td>{{ include.cell-7x1 }}</td>	
+				{% if include.cell-7x2 %}
+					<td>{{ include.cell-7x2 }}</td>
+				{% endif %}
+				{% if include.cell-7x3 %}
+					<td>{{ include.cell-7x3 }}</td>
+				{% endif %}
+				{% if include.cell-7x4 %}
+					<td>{{ include.cell-7x4 }}</td>
+				{% endif %}
+				{% if include.cell-7x5 %}
+					<td>{{ include.cell-7x5 }}</td>
+				{% endif %}
+				{% if include.cell-7x6 %}
+					<td>{{ include.cell-7x6 }}</td>
+				{% endif %}
+				{% if include.cell-7x7 %}
+					<td>{{ include.cell-7x7 }}</td>
+				{% endif %}
+				{% if include.cell-7x8 %}
+					<td>{{ include.cell-7x8 }}</td>
+				{% endif %}
+				{% if include.cell-7x9 %}
+					<td>{{ include.cell-7x9 }}</td>
+				{% endif %}
+				{% if include.cell-7x10 %}
+					<td>{{ include.cell-7x10 }}</td>
+				{% endif %}
+				{% if include.cell-7x11 %}
+					<td>{{ include.cell-7x11 }}</td>
+				{% endif %}
+				{% if include.cell-7x12 %}
+					<td>{{ include.cell-7x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+
+		{% if include.cell-8x1 %}
+			<tr>	
+				<td>{{ include.cell-8x1 }}</td>	
+				{% if include.cell-8x2 %}
+					<td>{{ include.cell-8x2 }}</td>
+				{% endif %}
+				{% if include.cell-8x3 %}
+					<td>{{ include.cell-8x3 }}</td>
+				{% endif %}
+				{% if include.cell-8x4 %}
+					<td>{{ include.cell-8x4 }}</td>
+				{% endif %}
+				{% if include.cell-8x5 %}
+					<td>{{ include.cell-8x5 }}</td>
+				{% endif %}
+				{% if include.cell-8x6 %}
+					<td>{{ include.cell-8x6 }}</td>
+				{% endif %}
+				{% if include.cell-8x7 %}
+					<td>{{ include.cell-8x7 }}</td>
+				{% endif %}
+				{% if include.cell-8x8 %}
+					<td>{{ include.cell-8x8 }}</td>
+				{% endif %}
+				{% if include.cell-8x9 %}
+					<td>{{ include.cell-8x9 }}</td>
+				{% endif %}
+				{% if include.cell-8x10 %}
+					<td>{{ include.cell-8x10 }}</td>
+				{% endif %}
+				{% if include.cell-8x11 %}
+					<td>{{ include.cell-8x11 }}</td>
+				{% endif %}
+				{% if include.cell-8x12 %}
+					<td>{{ include.cell-8x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+
+		{% if include.cell-9x1 %}
+			<tr>	
+				<td>{{ include.cell-9x1 }}</td>	
+				{% if include.cell-9x2 %}
+					<td>{{ include.cell-9x2 }}</td>
+				{% endif %}
+				{% if include.cell-9x3 %}
+					<td>{{ include.cell-9x3 }}</td>
+				{% endif %}
+				{% if include.cell-9x4 %}
+					<td>{{ include.cell-9x4 }}</td>
+				{% endif %}
+				{% if include.cell-9x5 %}
+					<td>{{ include.cell-9x5 }}</td>
+				{% endif %}
+				{% if include.cell-9x6 %}
+					<td>{{ include.cell-9x6 }}</td>
+				{% endif %}
+				{% if include.cell-9x7 %}
+					<td>{{ include.cell-9x7 }}</td>
+				{% endif %}
+				{% if include.cell-9x8 %}
+					<td>{{ include.cell-9x8 }}</td>
+				{% endif %}
+				{% if include.cell-9x9 %}
+					<td>{{ include.cell-9x9 }}</td>
+				{% endif %}
+				{% if include.cell-9x10 %}
+					<td>{{ include.cell-9x10 }}</td>
+				{% endif %}
+				{% if include.cell-9x11 %}
+					<td>{{ include.cell-9x11 }}</td>
+				{% endif %}
+				{% if include.cell-9x12 %}
+					<td>{{ include.cell-9x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+
+		{% if include.cell-10x1 %}
+			<tr>	
+				<td>{{ include.cell-10x1 }}</td>	
+				{% if include.cell-10x2 %}
+					<td>{{ include.cell-10x2 }}</td>
+				{% endif %}
+				{% if include.cell-10x3 %}
+					<td>{{ include.cell-10x3 }}</td>
+				{% endif %}
+				{% if include.cell-10x4 %}
+					<td>{{ include.cell-10x4 }}</td>
+				{% endif %}
+				{% if include.cell-10x5 %}
+					<td>{{ include.cell-10x5 }}</td>
+				{% endif %}
+				{% if include.cell-10x6 %}
+					<td>{{ include.cell-10x6 }}</td>
+				{% endif %}
+				{% if include.cell-10x7 %}
+					<td>{{ include.cell-10x7 }}</td>
+				{% endif %}
+				{% if include.cell-10x8 %}
+					<td>{{ include.cell-10x8 }}</td>
+				{% endif %}
+				{% if include.cell-10x9 %}
+					<td>{{ include.cell-10x9 }}</td>
+				{% endif %}
+				{% if include.cell-10x10 %}
+					<td>{{ include.cell-10x10 }}</td>
+				{% endif %}
+				{% if include.cell-10x11 %}
+					<td>{{ include.cell-10x11 }}</td>
+				{% endif %}
+				{% if include.cell-10x12 %}
+					<td>{{ include.cell-10x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+
+		{% if include.cell-11x1 %}
+			<tr>	
+				<td>{{ include.cell-11x1 }}</td>	
+				{% if include.cell-11x2 %}
+					<td>{{ include.cell-11x2 }}</td>
+				{% endif %}
+				{% if include.cell-11x3 %}
+					<td>{{ include.cell-11x3 }}</td>
+				{% endif %}
+				{% if include.cell-11x4 %}
+					<td>{{ include.cell-11x4 }}</td>
+				{% endif %}
+				{% if include.cell-11x5 %}
+					<td>{{ include.cell-11x5 }}</td>
+				{% endif %}
+				{% if include.cell-11x6 %}
+					<td>{{ include.cell-11x6 }}</td>
+				{% endif %}
+				{% if include.cell-11x7 %}
+					<td>{{ include.cell-11x7 }}</td>
+				{% endif %}
+				{% if include.cell-11x8 %}
+					<td>{{ include.cell-11x8 }}</td>
+				{% endif %}
+				{% if include.cell-11x9 %}
+					<td>{{ include.cell-11x9 }}</td>
+				{% endif %}
+				{% if include.cell-11x10 %}
+					<td>{{ include.cell-11x10 }}</td>
+				{% endif %}
+				{% if include.cell-11x11 %}
+					<td>{{ include.cell-11x11 }}</td>
+				{% endif %}
+				{% if include.cell-11x12 %}
+					<td>{{ include.cell-11x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+
+		{% if include.cell-12x1 %}
+			<tr>	
+				<td>{{ include.cell-12x1 }}</td>	
+				{% if include.cell-12x2 %}
+					<td>{{ include.cell-12x2 }}</td>
+				{% endif %}
+				{% if include.cell-12x3 %}
+					<td>{{ include.cell-12x3 }}</td>
+				{% endif %}
+				{% if include.cell-12x4 %}
+					<td>{{ include.cell-12x4 }}</td>
+				{% endif %}
+				{% if include.cell-12x5 %}
+					<td>{{ include.cell-12x5 }}</td>
+				{% endif %}
+				{% if include.cell-12x6 %}
+					<td>{{ include.cell-12x6 }}</td>
+				{% endif %}
+				{% if include.cell-12x7 %}
+					<td>{{ include.cell-12x7 }}</td>
+				{% endif %}
+				{% if include.cell-12x8 %}
+					<td>{{ include.cell-12x8 }}</td>
+				{% endif %}
+				{% if include.cell-12x9 %}
+					<td>{{ include.cell-12x9 }}</td>
+				{% endif %}
+				{% if include.cell-12x10 %}
+					<td>{{ include.cell-12x10 }}</td>
+				{% endif %}
+				{% if include.cell-12x11 %}
+					<td>{{ include.cell-12x11 }}</td>
+				{% endif %}
+				{% if include.cell-12x12 %}
+					<td>{{ include.cell-12x12 }}</td>
+				{% endif %}	
+			</tr>
+		{% endif %}
+	</table>
+
+	{% if include.caption %}
+		<small>{{ include.caption }}</small>
+	{% endif %}
+
+</div>

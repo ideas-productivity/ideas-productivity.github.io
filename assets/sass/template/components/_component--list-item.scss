@@ -1,0 +1,81 @@
+/**
+  * Component: Name
+  *  
+  * @description
+  * -
+  */
+
+.list-item {
+	@include grid-child();
+	@include inset($top: m);
+	// @include stack();
+	transition: all 0.4s ease-out;
+	border-bottom: solid 1px color(neutral, XXX);
+	&:first-of-type {
+		border-top: solid 1px color(neutral, XXX);
+	}
+
+	a {
+		@include grid-child($cols: 6);
+		grid-template-rows: auto auto 1fr auto;
+	}
+
+	.list-item__title {
+		grid-row: 3;
+		grid-column: 1 / -1;		
+		@include respond-to($breakpoint: m) {
+			grid-column: 2 / span 3;
+			grid-row: 1;
+			@include stack($bottom: m);
+		}
+	}
+
+	.list-item__meta-primary {
+		grid-row: 1;
+		grid-column: 1 / -1;
+		@include respond-to($breakpoint: m) { 
+			grid-column: 1 / span 31;
+			grid-row: 1;
+		}
+	}
+
+	.list-item__meta-secondary {
+		grid-row: 5;
+		grid-column: 1 / -1;
+		@include respond-to($breakpoint: m) { 
+			grid-column: 2 / span 3;
+			grid-row: 3;
+			@include stack($bottom: s);
+		}
+	}
+
+	.list-item__blurb {
+		grid-row: 4;
+		grid-column: 1 / -1;
+		@include respond-to($breakpoint: m) {
+			grid-column: 2 / span 3;
+			grid-row: 2;
+			@include stack($bottom: m);
+		}
+	}
+
+	.list-item__image {
+		grid-row: 1;
+		grid-column: 1 / -1;
+    @include respond-to($breakpoint: m) { 
+	    grid-column: 5 / span 2;
+			grid-row: 1 / span 3;
+	    transition: all 0.4s ease-out;
+  	}
+	}
+
+	&:hover {
+		background-color: #ddd;
+	}
+
+	&:hover .card__image {
+		opacity: .45;
+	}
+	
+	
+}

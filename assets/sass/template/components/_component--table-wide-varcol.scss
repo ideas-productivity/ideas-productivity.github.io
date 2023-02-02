@@ -1,0 +1,44 @@
+/**
+  * Component: Table, Narrow with Variable Width Columns
+  *  
+  * @description
+  * -
+  */
+
+.table--wide-varcol {
+	grid-column: 1 / -1;
+	@include stack(sm-md);
+
+	h1 {
+		@include typestyle($sans-sm-bld);
+		border: none;
+	}
+
+	table {
+		@include stack(xs);
+		@include typestyle($sans-xs-reg);
+		color: color(neutral, XXX);
+		border: none;
+	}
+
+	tr {
+		border-top: solid 1px #DDE6E7;
+		border-bottom: solid 1px #DDE6E7;
+		background-color: transparent !important;
+	}
+
+	td {
+		text-align: left;
+		vertical-align: top;
+		border: none;
+		@include inset($top:xs, $right:xs, $bottom:xs);
+		padding-left: 0;
+	}
+
+}
+
+p + .table--wide-varcol {
+	margin-top: bl(12); //48px
+}
+
+

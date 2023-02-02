@@ -1,0 +1,242 @@
+/**
+  * Component: Event List
+  *  
+  * @description
+  * -
+  */
+
+.list-events {
+	@include grid-child($cols:12);
+	@include stack(xs);
+
+	.group-intro {
+		grid-column: 1 / -1;
+	}
+
+	.eventlist-wrapper {
+		@include grid-child($cols:12);
+	}
+
+	.list-title {
+		grid-column: 1 / -1
+	}
+
+	.list-title h1 {
+		@include typestyle($sans-md-bld);
+		display: inline-block;
+		border-bottom: none;
+		@include inline($right:sm);
+		@include stack(xs);	
+	}
+
+	.list-title hr {
+		border:none;
+		height: 4px;
+		background-color: color(warm,X);
+		@include stack(xs);
+	}
+
+	.list h1 {
+		@include typestyle($sans-md-bld);
+		display: inline-block;
+		border-bottom: none;
+		@include inline($right:sm);
+		@include stack(xs);
+	}
+
+	.group-link {
+		@include typestyle($sans-sm-reg);
+		display: inline-block;
+		color: color(neutral, XXX);
+	}
+
+	hr {
+		border:none;
+		height: 4px;
+		background-color: color(warm,X);
+		// @include stack(xs);
+	}
+
+	ul {
+		@include grid-child($cols:12);
+		list-style: none;
+		padding: 0;
+		@include stack(md);
+	}
+
+	li {
+		@include grid-child($cols:12);
+		border-bottom: 1px solid color(neutral, XXX);
+		padding: bl(3) 0; //12px
+	}
+
+	.event-link {
+		@include grid-child($cols:12);
+		text-decoration: none;
+	}
+
+	.event-link:hover,
+	.event-link:hover small {
+		text-decoration: underline;
+		color: color(green, XX);
+	}
+
+	.event-title {
+		grid-column: 4 / -1;
+		grid-row: 2;
+		min-height: bl(24); //96px
+		@include typestyle($sans-md-reg);
+	}
+
+	.event-date {
+		grid-column: 1 / 4;
+		grid-row: 2;
+		@include typestyle($sans-md-reg);
+	}
+
+	.event-year {
+		grid-column: 1 / 4;
+		grid-row: 1;
+		margin-bottom: 0;
+	}
+
+	.event-type {
+		grid-column: 4 / -1;
+		grid-row: 1;
+		margin-bottom: 0;
+	}
+
+	.event-series {
+		grid-column: 4 / -1;
+		grid-row: 3;
+		margin-bottom: -4px;
+	}
+
+
+	.subevents {
+		@include grid-child($cols:12);
+		background-color: color(neutral, XXB);
+		grid-row: 4;
+	}
+
+	.subevent-link {
+		@include grid-child($cols:12);
+		text-decoration: none;
+	}
+
+	.subevent-link:hover,
+	.subevent-link:hover small {
+		text-decoration: underline;
+		color: color(green, XX);
+	}
+
+	.subevent-title {
+		grid-column: 4 / -1;
+		grid-row: 2;
+		min-height: bl(12); //96px
+		@include typestyle($sans-sm-reg);
+	}
+
+	.subevent-date {
+		grid-column: 1 / 4;
+		grid-row: 1;
+		margin-bottom: 0;
+	}
+
+	.subevent-time {
+		grid-column: 1 / 4;
+		grid-row: 2;
+		@include typestyle($sans-sm-reg);
+	}
+
+	.subevent-type {
+		grid-column: 4 / -1;
+		grid-row: 1;
+		margin-bottom: 0;
+	}
+
+	.subevent-series {
+		grid-column: 4 / -1;
+		grid-row: 3;
+		margin-bottom: -4px;
+	}
+
+
+
+	.pagination-wrapper {
+		grid-column: 1 / -1;
+	}
+
+	.paginatino-wrapper,
+	ul.pagination,
+	.btn-prev,
+	.btn-next,
+	ul.pagination li {
+		display: inline;
+	}
+
+	.active {
+		font-size: 30px;
+    font-weight: 900;
+	}
+
+	ul.pagination li {
+		border: none;
+	}
+
+	.pagination a {
+		color: color(blue, XXX);
+		text-decoration: none;
+	}
+
+	.pagination a:hover {
+		color: color(neutral, XXX);
+		opacity: .75;
+	}
+
+	.prev {
+		@include inline(xs);
+	}
+
+	.prev:before {
+		@include typestyle($icon-sm);
+		content: "\e901";
+		position: relative;
+		top: 3px;
+	}
+
+	.next:after {
+		@include typestyle($icon-sm);
+		content: "\e902";
+		position: relative;
+		top: 3px;
+	}
+
+	.first {
+		@include inline(xxs);
+	}
+
+	.first:after {
+		content: "\2026"; 
+	}
+
+	.mid {
+		@include inline(xxs);
+	}
+
+	.last {
+		@include inline(xs);
+	}
+
+	.last:before {
+		content: "\2026";
+	}
+
+	.active-no, a.active-no, .first:after, .last:before {
+		color: color(neutral, XXX);
+		text-decoration: none;
+		opacity: .75;
+		cursor: text;
+	}
+
+}

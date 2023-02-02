@@ -1,0 +1,35 @@
+<!-- 
+
+TEXT, DOWNLOAD
+
+-------------------------------------------------------------------------------
+
+available parameters:
+* title
+- blurb
+* url
+* file-type
+* file-size
+
+* required
+
+-------------------------------------------------------------------------------
+
+-->
+
+
+<div class="download">
+	<a href="{{ include.url }}" download>
+	<div class="img-wrapper">
+		<div><img src="../assets/images/dwnld.svg"></div>
+	</div>
+
+	<div class="txt-wrapper">
+		<h1>Download: {{ include.title }}</h1>
+		<p>{{ include.blurb }}</p>		
+		<small>File</small>
+		<small>{{ include.file-type }}, {{ include.file-size }}</small>
+	</div>
+	</a>
+</div>
+

@@ -1,0 +1,44 @@
+/**
+  * Component: Hero, Page
+  *  
+  * @description
+  * -
+  */
+
+.hero-page {
+	grid-column: 1 / -1;
+	@include stack(sm-md);
+
+	h1 {
+		border-bottom: none;
+		@include typestyle($sans-xxl-reg);
+	}
+
+	.deck {
+		@include typestyle($sans-xl-reg);
+		color: color(neutral, XXX);
+		@include stack(xs);
+	}
+
+	hr {
+		background-color: #DDE6E7;
+		border: none;
+		height: 1px;
+		margin-top: bl(6);
+	}
+
+	small {
+		@include stack(xs);
+		@include inline(xs);
+		display: inline-block;
+	}
+
+	small + hr {
+		margin-top: 0;
+	}
+
+	.deck + hr {
+		margin-top: bl(6);
+	}
+
+}

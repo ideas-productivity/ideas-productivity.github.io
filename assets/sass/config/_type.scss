@@ -1,0 +1,250 @@
+/**
+  * Typestyle Configuration
+  *
+  * @description
+  * Type styles configuration to be used with the typestyle() mixin. 
+  *
+  * The configuration requires 3 steps:
+  * - Set the base variables
+  *   The base font-size should remain 100%, the baseline height is set in
+  *   rems, but no unit should be provided
+  *  
+  * - Define the fonts
+  *   Each font definition requires the stack, and a ratio measurement to
+  *   align the font on the baseline. Common ratios are available here:
+  *   jamonserrano.github.io/plumber-sass/baselines
+  *   A tool for measuring ratios not provided in the list is available here:
+  *   jamonserrano.github.io/plumber-sass/measure
+  *    
+  * - Specify typestyles
+  *   Each type style is defined in a map with keys for each of the
+  *   breakpoints. The value for each key is a list that provides the 
+  *   font-style, font-variant, font-weight, font-size, line-height, 
+  *   font-family, letter-spacing, and word-spacing. The font-size, 
+  *   letter-spacing, and word-spacing are set in rems. The line-height is
+  *   set as the number of baselines required.
+  * 
+  */
+
+
+
+
+
+// Base Variables
+// ----------------------------------------------------------------------------
+
+$base-font-size: 100%;
+$baseline-height: 0.25; //rem
+
+
+
+
+
+// Font Definitions
+// ----------------------------------------------------------------------------
+
+/**
+  * $open-sans
+  *
+  * @description
+  * Open Sans available through Google fonts:
+  * fonts.google.com/specimen/Open+Sans
+  *
+  * (Current values are placeholder)
+  */
+
+
+
+@font-face {
+  font-family: icon;
+  src: url(/assets/fonts/icomoon/fonts/icomoon.woff);
+}
+
+$icon: (
+  stack: #{icon, sans-serif},
+  ratio: .112061
+);
+
+@font-face {
+  font-family: pub-reg;
+  src: url(/assets/fonts/Public_Sans/static/PublicSans-Regular.ttf);
+}
+
+// NEED RATIOS FOR PUB SANS
+$pub-reg: (
+  stack: #{pub-reg, sans-serif},
+  ratio: .112061 
+);
+
+@font-face {
+  font-family: pub-bld;
+  src: url(/assets/fonts/Public_Sans/static/PublicSans-Bold.ttf);
+}
+
+$pub-bld: (
+  stack: #{pub-bld, sans-serif},
+  ratio: .112061 
+);
+
+
+
+
+
+// Type Styles
+// ----------------------------------------------------------------------------
+
+// calcs assuming 1rem = 16px 
+
+
+// The value for each key is a list that provides the 
+// font-style, font-variant, font-weight, font-size, line-height, 
+// font-family, letter-spacing, and word-spacing. The font-size, 
+// letter-spacing, and word-spacing are set in rems. The line-height is
+// set as the number of baselines required
+
+
+$sans-xxl-reg: (
+  null   : (normal, normal, 400, 3.75,  15,  $pub-reg, -.025, 0),
+  s      : (normal, normal, 400, 3.75,  15,  $pub-reg, -.025, 0),
+  m      : (normal, normal, 400, 3.75,  15,  $pub-reg, -.025, 0),
+  l      : (normal, normal, 400, 3.75,  15,  $pub-reg, -.025, 0),   
+);
+
+
+$sans-xxl-bld: (
+  null   : (normal, normal, 400, 3.75,  15,  $pub-bld, -.025, 0),
+  s      : (normal, normal, 400, 3.75,  15,  $pub-bld, -.025, 0),
+  m      : (normal, normal, 400, 3.75,  15,  $pub-bld, -.025, 0),
+  l      : (normal, normal, 400, 3.75,  15,  $pub-bld, -.025, 0),   
+);
+
+
+$sans-xl-reg: (
+  null   : (normal, normal, 400, 3,  13,  $pub-reg, -.025, 0),
+  s      : (normal, normal, 400, 3,  13,  $pub-reg, -.025, 0),
+  m      : (normal, normal, 400, 3,  13,  $pub-reg, -.025, 0),
+  l      : (normal, normal, 400, 3,  13,  $pub-reg, -.025, 0),   
+);
+
+
+$sans-xl-bld: (
+  null   : (normal, normal, 400, 3,  13,  $pub-bld, -.025, 0),
+  s      : (normal, normal, 400, 3,  13,  $pub-bld, -.025, 0),
+  m      : (normal, normal, 400, 3,  13,  $pub-bld, -.025, 0),
+  l      : (normal, normal, 400, 3,  13,  $pub-bld, -.025, 0),   
+);
+
+
+$sans-lg-reg: (
+  null   : (normal, normal, 400, 2.25,  10,  $pub-reg, -.025, 0),
+  s      : (normal, normal, 400, 2.25,  10,  $pub-reg, -.025, 0),
+  m      : (normal, normal, 400, 2.25,  10,  $pub-reg, -.025, 0),
+  l      : (normal, normal, 400, 2.25,  10,  $pub-reg, -.025, 0),   
+);
+
+
+$sans-lg-bld: (
+  null   : (normal, normal, 400, 2.25,  10,  $pub-bld, -.025, 0),
+  s      : (normal, normal, 400, 2.25,  10,  $pub-bld, -.025, 0),
+  m      : (normal, normal, 400, 2.25,  10,  $pub-bld, -.025, 0),
+  l      : (normal, normal, 400, 2.25,  10,  $pub-bld, -.025, 0),   
+);
+
+
+
+$sans-md-reg: (
+  null   : (normal, normal, 400, 1.5,  7,  $pub-reg, 0, 0),
+  s      : (normal, normal, 400, 1.5,  7,  $pub-reg, 0, 0),
+  m      : (normal, normal, 400, 1.5,  7,  $pub-reg, 0, 0),
+  l      : (normal, normal, 400, 1.5,  7,  $pub-reg, 0, 0),   
+);
+
+
+$sans-md-bld: (
+  null   : (normal, normal, 400, 1.5,  7,  $pub-bld, 0, 0),
+  s      : (normal, normal, 400, 1.5,  7,  $pub-bld, 0, 0),
+  m      : (normal, normal, 400, 1.5,  7,  $pub-bld, 0, 0),
+  l      : (normal, normal, 400, 1.5,  7,  $pub-bld, 0, 0),   
+);
+
+
+$sans-sm-reg: (
+  null   : (normal, normal, 400, 1.0625,  6,  $pub-reg, 0, 0),
+  s      : (normal, normal, 400, 1.0625,  6,  $pub-reg, 0, 0),
+  m      : (normal, normal, 400, 1.0625,  6,  $pub-reg, 0, 0),
+  l      : (normal, normal, 400, 1.0625,  6,  $pub-reg, 0, 0),   
+);
+
+
+$sans-sm-bld: (
+  null   : (normal, normal, 400, 1.0625,  6,  $pub-bld, 0, 0),
+  s      : (normal, normal, 400, 1.0625,  6,  $pub-bld, 0, 0),
+  m      : (normal, normal, 400, 1.0625,  6,  $pub-bld, 0, 0),
+  l      : (normal, normal, 400, 1.0625,  6,  $pub-bld, 0, 0),   
+);
+
+
+$sans-xs-reg: (
+  null   : (normal, normal, 400, .875,  5,  $pub-reg, 0, 0),  
+  s      : (normal, normal, 400, .875,  5,  $pub-reg, 0, 0),
+  m      : (normal, normal, 400, .875,  5,  $pub-reg, 0, 0),
+  l      : (normal, normal, 400, .875,  5,  $pub-reg, 0, 0),   
+);
+
+
+$sans-xs-bld: (
+  null   : (normal, normal, 400, .875,  5,  $pub-bld, 0, 0),  
+  s      : (normal, normal, 400, .875,  5,  $pub-bld, 0, 0),
+  m      : (normal, normal, 400, .875,  5,  $pub-bld, 0, 0),
+  l      : (normal, normal, 400, .875,  5,  $pub-bld, 0, 0),   
+);
+
+
+
+
+$icon-xxl: (
+  null   : (normal, normal, 400, 3.75,  15,  $icon, -.025, 0),
+  s      : (normal, normal, 400, 3.75,  15,  $icon, -.025, 0),
+  m      : (normal, normal, 400, 3.75,  15,  $icon, -.025, 0),
+  l      : (normal, normal, 400, 3.75,  15,  $icon, -.025, 0),   
+);
+
+
+$icon-xl: (
+  null   : (normal, normal, 400, 3,  13,  $icon, -.025, 0),
+  s      : (normal, normal, 400, 3,  13,  $icon, -.025, 0),
+  m      : (normal, normal, 400, 3,  13,  $icon, -.025, 0),
+  l      : (normal, normal, 400, 3,  13,  $icon, -.025, 0),    
+);
+
+
+$icon-lg: (
+  null   : (normal, normal, 400, 2.25,  10,  $icon, -.025, 0),
+  s      : (normal, normal, 400, 2.25,  10,  $icon, -.025, 0),
+  m      : (normal, normal, 400, 2.25,  10,  $icon, -.025, 0),
+  l      : (normal, normal, 400, 2.25,  10,  $icon, -.025, 0),    
+);
+
+
+$icon-md: (
+  null   : (normal, normal, 400, 1.5,  7,  $icon, 0, 0),
+  s      : (normal, normal, 400, 1.5,  7,  $icon, 0, 0),
+  m      : (normal, normal, 400, 1.5,  7,  $icon, 0, 0),
+  l      : (normal, normal, 400, 1.5,  7,  $icon, 0, 0),    
+);
+
+
+$icon-sm: (
+  null   : (normal, normal, 400, 1.25,  6,  $icon, 0, 0),
+  s      : (normal, normal, 400, 1.25,  6,  $icon, 0, 0),
+  m      : (normal, normal, 400, 1.25,  6,  $icon, 0, 0),
+  l      : (normal, normal, 400, 1.25,  6,  $icon, 0, 0),    
+);
+
+
+$icon-xs: (
+  null   : (normal, normal, 400, .875,  5,  $icon, 0, 0),  
+  s      : (normal, normal, 400, .875,  5,  $icon, 0, 0),
+  m      : (normal, normal, 400, .875,  5,  $icon, 0, 0),
+  l      : (normal, normal, 400, .875,  5,  $icon, 0, 0),   
+);

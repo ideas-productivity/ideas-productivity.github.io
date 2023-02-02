@@ -1,0 +1,146 @@
+/**
+  * Functions
+  *  
+  * @description
+  * Functions ordered alphabetically within sections:
+  * - Color/Styles
+  * - Additional 
+  */
+
+
+
+
+
+// Color/Styles
+// ----------------------------------------------------------------------------
+
+/**
+  * alpha()
+  *  
+  * @description
+  * Provides an alpha value from a map
+  *
+  * @see     based on similar concept for colors: https://goo.gl/Yhq7kz
+  *  
+  * @param   $alpha, string map key of desired alpha value
+  * @param   $alphas, optional map of alpha values, 
+  *          defaults to $alphas
+  *
+  * @return  float alpha value
+  */
+
+@function alpha($alpha, $alphas: $alphas) {
+  $alpha: map-get($alphas, $alpha);
+  @return $alpha;
+}
+
+
+/**
+  * color()
+  *  
+  * @description
+  * Provides a hex color value from a map
+  *
+  * @see     https://goo.gl/Yhq7kz
+  *  
+  * @param   $color, string map key of desired color
+  * @param   $variant, optional variant of the selected color,
+  *          defaults to 'base'
+  * @param   $colors, optional map of color values
+  *          defaults to $colors 
+  *
+  * @return  hex color value
+  */
+
+@function color($color, $variant: base, $colors: $colors) {
+    $color: map-get($colors, $color);
+    $variant: map-get($color, $variant);
+    @return $variant;
+}
+
+
+/**
+  * gradient()
+  *  
+  * @description
+  * Provides a gradient specification from a map
+  *
+  * @see     based on similar concept for colors: https://goo.gl/Yhq7kz
+  *
+  * @param   $gradient, string map key of desired gradient value
+  * @param   $gradients, optional map of gradient values, 
+  *          defaults to $gradients
+  *
+  * @return  gradient specification
+  */
+
+@function gradient($gradient, $gradients: $gradients) {
+    $gradient: map-get($gradients, $gradient);
+    $angle: map-get($gradient, angle);
+    $flavor: map-get($gradient, flavor);
+    $stops: map-get($gradient, stops);
+    @if ($flavor == 'linear'){
+      @return linear-gradient(#{$angle}, #{$stops});
+    } @else if ($flavor == 'radial'){ 
+      @return radial-gradient(#{$stops});
+    } 
+}
+
+
+
+
+
+// Additional
+// ----------------------------------------------------------------------------
+
+/**
+  * bl()
+  *  
+  * @description
+  * Convenience function for calculating fraction/multiples of the project's 
+  * baseline, set as $baseline-height 
+  *  
+  * @param   $count, optional number of baselines to calculate
+  *          defaults to 1
+  * @param   $baseline-height, baseline height set in REMs, provided unitless
+  *          defaults to the $baseline-height var
+  *
+  * @return  Calculated height in REMs
+  */
+
+@function bl($count: 1, $baseline-height: $baseline-height) {
+  @return #{$baseline-height * $count}rem;
+}
+
+
+/**
+  * ms()
+  *  
+  * @description
+  * Convenience function for calculating values according to a modular scale 
+  *
+  * @see     https://alistapart.com/article/more-meaningful-typography
+  *          https://www.modularscale.com/
+  *  
+  * @param   $level, optional level within the scale to return a value from,
+  *          defaults to 0
+  * @param   $ms-ratio, optional ratio to scale values by,
+  *          defaults to 1.5
+  *
+  * @return  Calculated value from modular scale in REMs
+  */
+
+@function ms($level: 0, $ms-ratio: 1.5) {
+	$size: 1;
+  @if $level > 0 {
+  	@for $i from 1 through $level {
+  		$size: $size * $ms-ratio;
+  	}
+  }
+  @elseif $level < 0 {
+  	@for $i from 1 through $level {
+  		$size: $size / $ms-ratio;
+  	}
+  }
+  @return #{$size}rem;
+}

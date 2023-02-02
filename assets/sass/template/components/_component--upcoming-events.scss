@@ -1,0 +1,96 @@
+/**
+  * Component: Upcoming Events List
+  *  
+  * @description
+  * -
+  */
+
+.upcoming-events {
+	@include grid-child($cols:12);
+	@include stack(md);
+
+	.group-intro {
+		grid-column: 1 / -1;
+	}
+
+	h1 {
+		@include typestyle($sans-md-bld);
+		display: inline-block;
+		border-bottom: none;
+		@include inline($right:sm);
+		@include stack(xs);
+	}
+
+	.group-link {
+		@include typestyle($sans-sm-reg);
+		display: inline-block;
+		color: color(neutral, XXX);
+	}
+
+	hr {
+		border:none;
+		height: 4px;
+		background-color: color(warm,X);
+		// @include stack(xs);
+	}
+
+	ul {
+		@include grid-child($cols:12);
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		@include grid-child($cols:12);
+		border-bottom: 1px solid color(neutral, XXX);
+		padding: bl(3) 0; //12px
+	}
+
+	.event-link {
+		@include grid-child($cols:12);
+		text-decoration: none;
+	}
+
+	.event-link:hover,
+	.event-link:hover small {
+		text-decoration: underline;
+		color: color(green, XX);
+	}
+
+	.event-title {
+		grid-column: 4 / -1;
+		grid-row: 2;
+		min-height: bl(24); //96px
+		@include typestyle($sans-md-reg);
+	}
+
+	.event-date {
+		grid-column: 1 / 4;
+		grid-row: 2;
+		@include typestyle($sans-md-reg);
+	}
+
+	.event-year {
+		grid-column: 1 / 4;
+		grid-row: 1;
+		margin-bottom: 0;
+	}
+
+	.event-type {
+		grid-column: 4 / -1;
+		grid-row: 1;
+		margin-bottom: 0;
+	}
+
+	.event-series {
+		grid-column: 4 / -1;
+		grid-row: 3;
+		margin-bottom: -4px;
+	}
+
+
+
+
+}
+
+

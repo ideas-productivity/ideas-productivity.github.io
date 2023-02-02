@@ -1,0 +1,70 @@
+<div class="list-events">
+
+	<!-- Paginated Event Listing
+	adapted from: https://blog.rafael.picanco.nom.br/2015/09/06/jekyll-pagination-on-github-pages-without-plugins.html 
+	-->
+
+	<!-- Query the events -->
+	{% assign series = include.series %}
+	{% assign today = site.time | date:"%Y-%m-%d" %}
+	{% assign sorted = site.events | where_exp: "item", "item.startdate <= today and item.series contains series" | sort:"startdate" %}
+
+	<!-- List Markup -->
+	<div class="eventlist-wrapper" id="js-upcoming-events">
+
+		{% if include.title %}
+			<div class="list-title">
+				<h1 class="list-title">{{ include.title }}</h1>
+				<hr>
+			</div>
+		{% endif %}
+
+		<ul class="list">
+			{% for event in sorted %}
+	  		<li>	
+					<a href="{{ event.url }}" class="event-link">
+					  <h2 class="event-title">{{ event.title }}</h2>
+					  <p class="event-date">
+					  	{{ event.startdate | date:"%b %d" }}
+						  {% assign startmo = event.startdate | date:"%b"  %}
+						  {% assign endmo = event.enddate | date:"%b"  %}
+						  {% if event.enddate %}
+						  	{% if startmo == endmo %}
+						  		–{{ event.enddate | date:"%d" }}
+						  	{% else %}
+						  		–{{ event.enddate | date:"%b %d" }}
+						  	{% endif %}
+						  {% endif %}
+						</p>
+						<small class="event-year">{{ event.startdate | date:"%Y" }}</small>
+						<small class="event-type">{{ event.type }}</small>
+					</a>
+				  {% if event.series %}
+							{% assign length = event.series | size %}
+					  	<small class="event-series">Series: 
+					  		{% if length > 1 %}
+						  		{% for item in event.series %}
+						  			{% if forloop.index < length %}
+						  				{{ item }}, 
+						  			{% else %}
+						  				{{ item }}
+						  			{% endif %}	
+						  		{% endfor %}
+						  	{% else %}
+						  		{{ event.series[0] }}
+						  	{% endif %}
+					  	</small> 
+					  {% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+
+		<div class="pagination-wrapper">
+			<ul id="js-pagination" class="pagination"></ul>
+		</div>
+
+	</div>
+
+
+
+</div>

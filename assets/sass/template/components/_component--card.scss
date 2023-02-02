@@ -1,0 +1,56 @@
+/**
+  * Component: Name
+  *  
+  * @description
+  * -
+  */
+
+.card {
+	@include grid-child($cols: 1);
+	background-color: color(neutral,XX);
+	@include inset($top: m);
+	@include stack();
+	transition: all 0.4s ease-out;
+
+	a {
+		@include grid-child();
+		grid-template-rows: auto auto 1fr auto;
+	}
+
+	.card__title {
+		grid-column: 1 / -1;
+		grid-row: 2;
+		@include stack($bottom: m);
+	}
+
+	.card__meta {
+		grid-column: 1 / -1;
+		grid-row: 1;
+		@include stack($bottom: s);
+	}
+
+	.card__blurb {
+		grid-column: 1 / -1;
+		grid-row: 3;
+		@include stack($bottom: l);
+	}
+
+	.card__image {
+		grid-column: 1 / -1;
+		grid-row: 4;
+		margin-left: bl(-6); // 'm' from spacing map
+    margin-bottom: bl(-6);
+    width: calc(100% + 2.25rem); // 36/16
+    transition: all 0.4s ease-out;
+	}
+
+	&:hover {
+		background-color: #ddd;
+	}
+
+	&:hover .card__image {
+		opacity: .45;
+	}
+	
+	
+}

@@ -1,0 +1,82 @@
+/**
+  * Typography Boilerplate
+  *  
+  * @description
+  * Boilerplate rules to set the default typographic rules to overidden 
+  * as needed, include styles and notes for future additions 
+  */
+
+
+
+
+
+
+// Styles
+// ----------------------------------------------------------------------------
+
+/**
+  * Sitewide
+  *  
+  * @description
+  * A grab-bag of features that aren't all supported widely
+  *
+  * Rendering of fonts for legibility, this enables the use of special kerning
+  * and optional ligature information that may be contained in the font file
+  * for certain fonts. Potentially a big hit to performance, and worth
+  * rethinking if the site is pokey.
+  *
+  * Hanging punctuation allows for punctuation to sit outside the text box
+  *	
+	* font-feature-settings and font-variants activate opentype features as
+  * available, features specified: kerning, old-style numbers, proportional
+  * numbers, diagonal fractions, common ligatures
+  *
+	* font-kerning makes sure the browser doesn't ignore the font's kerning info
+	*
+	* @see goo.gl/kfm4Ur
+	* @see jonathan-harrell.com/better-typography-font-variants
+	* @see css-tricks.com/almanac/properties/h/hanging-punctuation
+  */
+
+body {
+	text-rendering: optimizeLegibility;
+	hanging-punctuation: first last;
+	font-feature-settings: 'kern' 1, 'onum' 0, 'tnum' 0, 'frac' 0, 'liga' 1;
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures;
+	font-variant-numeric: oldstyle-nums;	
+}
+
+
+/**
+  * Paragraphs
+  *  
+  * @description
+  * Allows hyphens and sets the max-width of the paragraph in characters 
+	*
+	* @see css-tricks.com/almanac/properties/h/hyphenate
+	* @see justmarkup.com/log/2015/07/dealing-with-long-words-in-css
+  */
+
+p {
+	-webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  max-width: 80ch;
+}
+
+
+
+
+
+
+// Notes
+// ----------------------------------------------------------------------------
+
+/**
+  * More Tools to look into
+  *  
+  * bigfoot js for footnotes:        https://github.com/lemonmade/bigfoot
+  * typeset for typographic details: https://github.com/davidmerfield/typeset
+  * Utility for OpenType features:   http://utility-opentype.kennethormandy.com
+  */

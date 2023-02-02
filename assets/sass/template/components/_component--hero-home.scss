@@ -1,0 +1,51 @@
+/**
+  * Component: Hero, Home
+  *  
+  * @description
+  * -
+  */
+
+.hero-home {
+	@include grid-child($cols:12);
+	background-color: color(green, XXX);
+	background-image: url("/assets/images/bg.gif");
+	background-repeat: repeat;
+	margin: 0 -28px;
+  padding: 20vh bl(7); //28px
+  @include stack(sm);
+
+  .tri-wrapper {
+  	grid-column: 1 / 4;
+  	text-align: center;
+  }
+
+  .tri-wrapper img {
+  	margin: 0 auto;
+  	max-width: 172px;
+  }
+
+  .text-wrapper {
+  	grid-column: 4 / -1;
+  }
+
+	.blurb {
+		@include typestyle($sans-xl-reg);
+		color: color(neutral, X);
+	}
+
+	.cta {
+		color: color(neutral, X);
+	}
+
+	.cta a {
+		color: color(neutral, X);
+		text-decoration-color: color(blue, XX);
+	}
+
+	
+
+}
+
+
+
+

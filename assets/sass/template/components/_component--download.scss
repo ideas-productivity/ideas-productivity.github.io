@@ -1,0 +1,61 @@
+/**
+  * Component: Download
+  *  
+  * @description
+  * -
+  */
+
+.download {
+	@include grid-child($col-start: 3, $cols: 8);
+	@include inset(xs);
+	@include stack(md);
+	background-color: color(neutral, X); 
+	box-shadow: 4px 4px 7px rgba(5, 2, 35, 0.1); 
+	-webkit-box-shadow: 4px 4px 7px rgba(5, 2, 35, 0.1); 
+	-moz-box-shadow: 4px 4px 7px rgba(5, 2, 35, 0.1); 
+	transition: all 0.2s ease-out;
+
+	a {
+		text-decoration: none;
+		@include grid-child($col-start: 1, $cols: 8);
+	}
+
+	.img-wrapper {
+		@include aspect-ratio(1, 1);
+		grid-column: 1 / 3;
+	}
+
+	.txt-wrapper {
+		grid-column: 3 / -1;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	h1 {
+		@include typestyle($sans-sm-bld);
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+
+	p {
+		@include typestyle($sans-sm-reg);
+		flex-grow: 2;
+	}
+
+	small {
+		@include typestyle($sans-xs-reg);
+		color: color(neutral, XXX);
+  	align-items: flex-end;
+	}
+
+	&:hover {
+		background-color: color(green, XX);
+	}
+
+}
+
+
+p + .download {
+	margin-top: bl(12); //48px
+}

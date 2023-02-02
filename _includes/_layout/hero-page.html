@@ -1,0 +1,50 @@
+<!-- 
+
+HERO, PAGE
+
+-------------------------------------------------------------------------------
+
+available parameters:
+* title
+- blurb
+- meta1-name
+- meta1-value
+- meta2-name
+- meta2-value
+
+* required
+
+-------------------------------------------------------------------------------
+
+-->
+
+{% include _layout/breadcrumbs.html %}
+
+
+<div class="hero-page">
+	<h1>{{ include.title }}</h1>
+
+	{% if include.blurb %}
+		<p class="deck">{{ include.blurb }}</p>
+	{% endif %}	
+
+	{% if include.meta1-name %}
+		<small class="meta">
+			{{ include.meta1-name }}: {{ include.meta1-value }}
+		</small>
+	{% endif %}
+	{% if include.meta2-name %}
+		<small class="meta">
+			{{ include.meta2-name }}: {{ include.meta2-value }}
+		</small>
+	{% endif %}
+
+	<hr>
+</div>
+
+
+
+
+
+
+
