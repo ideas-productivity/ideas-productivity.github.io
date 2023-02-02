@@ -7,7 +7,7 @@
 	<!-- Query the events -->
 	{% assign series = include.series %}
 	{% assign today = site.time | date:"%Y-%m-%d" %}
-	{% assign sorted = site.events | where_exp: "item", "item.startdate <= today and item.series contains series" | sort:"startdate" %}
+	{% assign sorted = site.events | where_exp:"item", "item.startdate <= today and item.series contains series" | sort:"startdate" %}
 
 	<!-- List Markup -->
 	<div class="eventlist-wrapper" id="js-upcoming-events">
