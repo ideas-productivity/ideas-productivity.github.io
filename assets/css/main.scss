@@ -1,0 +1,82 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+
+// import vendor files
+@import
+	'z_boilerplate/vendor/plumber-sass/plumber';
+
+
+// import files from utils folder
+@import
+	'utils/mixins',
+	'utils/functions';
+
+
+// import files from config folder
+@import
+	'config/type',
+	'config/layout',
+	'config/color',
+	'config/spacing';
+
+
+// import files from base folder
+@import
+	'z_boilerplate/reset',	
+	'z_boilerplate/typography';
+
+
+// import base file
+@import
+	'template/base';
+
+
+// import files from boxes folder
+// @import
+// 	'assets/template/boxes/sections',
+// 	'assets/template/boxes/block--name',
+// 	'assets/template/boxes/field--name',
+// 	'assets/template/boxes/page--name',
+// 	'assets/template/boxes/view--name';
+
+
+// import files from components folder
+@import
+	'template/components/component--banner-a',
+	'template/components/component--download',
+	'template/components/component--hero-page',
+	'template/components/component--hero-home',
+	'template/components/component--breadcrumbs',
+	'template/components/component--list-events',
+	'template/components/component--media-heroimg',
+	'template/components/component--media-img',
+	'template/components/component--media-img2x',
+	'template/components/component--media-video',
+	'template/components/component--nav-sidebar',
+	'template/components/component--schedule',
+	'template/components/component--sidebar-events',
+	'template/components/component--text-pullquote',
+	'template/components/component--text-biglink',
+	'template/components/component--table-narrow-equalcol',
+	'template/components/component--table-narrow-varcol',
+	'template/components/component--table-wide-equalcol',
+	'template/components/component--table-wide-varcol',
+	'template/components/component--teasers-2x-img',
+	'template/components/component--teasers-2x-noimg',
+	'template/components/component--teasers-4x-img',
+	'template/components/component--teasers-4x-noimg',
+	'template/components/component--teasers-banner',
+	'template/components/component--teasers-text',
+	'template/components/component--upcoming-events',
+	'template/components/component--header',
+	'template/components/component--footer';
+
+
+// import files from demo folder
+// @import
+// 	'assets/template/demos/demo--swatch',
+// 	'assets/template/demos/demo--grid';
