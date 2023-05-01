@@ -13,6 +13,8 @@ toc:
     slug: activities
     url: /activities.html
     subfolderitems:
+      - page: IDEAS-Classic
+        url: /activities/ideas-classic/index.html
       - page: xSDK
         url: /activities/xsdk.html
       - page: Watersheds
