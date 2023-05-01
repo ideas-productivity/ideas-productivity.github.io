@@ -37,3 +37,5 @@ The role of IDEAS is to help ease the challenges of software development in adva
 as possible. 
 
 The IDEAS project is collaborating with the community on scientific software ecosystems that emphasize the use and development of high-quality tools, the adaptation and adoption of modern software engineering methodologies, and the development and use of high-quality software components in the composition of next-generation applications.
+
+IDEAS goals are to qualitatively change the culture of advanced CSE and to provide a foundation (through software productivity methodologies and an extreme-scale software ecosystem) that enables transformative and reliable next-generation predictive science and decision support.  
