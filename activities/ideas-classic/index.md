@@ -3,7 +3,7 @@
 layout: page
 
 title: "IDEAS-Classic"
-blurb: "Improving software productivity for terrestrial ecosystem modeling."
+blurb: "Improving software productivity for terrestrial ecosystem modeling"
 
 ---
 
@@ -94,7 +94,6 @@ The IDEAS Project is a unique collaboration between the DOE Office of Advanced S
 
 {% 	include media-img.html 
 	  source = "ideas-classic/IDEAS-broader-DOE-context.jpg"
-		caption = "IDEAS-Classic in the broader DOE context"
 %}
 
 The IDEAS Project is composed of an interdisciplinary multi-institutional team (ANL, LANL, LBNL, LLNL, ORNL, PNNL, SNL, Colorado School of Mines) and leverages a broad set of relationships within the Department of Energy and the broader community.
@@ -102,6 +101,35 @@ The IDEAS Project is composed of an interdisciplinary multi-institutional team (
 # Team
 
 The IDEAS-Classic team includes participants from the following institutions.  Follow the link above for a listing of individual participants.
+
+<!-- For some reason the images are only showing up if there's also text in the cell.  I have no idea!
+<table>
+<tr>
+<td><img src="/assets/images/ideas-classic/ANL-logo-square-300x267.jpg"><br>(Co-lead Institution)</td>
+<td><img src="/assets/images/ideas-classic/SNL_Stacked_Black_Blue-300x115.png"><br>(Co-lead Institution)</td>
+<td><img src="/assets/images/ideas-classic/LANLlogo-300x160.png"></td>
+<td><img src="/assets/images/ideas-classic/BerkeleyLabLogo-300x227.png"></td>
+</tr>
+</table>
+-->
+
+{% 	include teasers-4x_img.html
+		title1 = "(Co-lead Institution)"
+		source1 = "ideas-classic/ANL-logo-square-300x267.jpg"
+		url1 = "https://www.anl.gov/"
+
+		title2 = "(Co-lead Institution)"
+		source2 = "ideas-classic/SNL_Stacked_Black_Blue-300x115.png"
+		url2 = "https://www.sandia.gov/"
+
+		title3 = ""
+		source3 = "ideas-classic/LANLlogo-300x160.png"
+		url3 = "https://lanl.gov/"
+
+		title4 = ""
+		source4 = "ideas-classic/BerkeleyLabLogo-300x227.png"
+		url4 = "https://www.lbl.gov/"
+%}
 
 # Sponsor
 
