@@ -35,8 +35,8 @@ blurb: "Improving software productivity for terrestrial ecosystem modeling."
 <!-- ---------------------------------------------------------------------- -->
 
 {% 	include media-heroimg.html 
-	  source = "fpo.png"
-		caption = "The quick brown fox jumps over the lazy dog. Photo: Photographer"
+	  source = "ideas-classic/IDEAS-broader-DOE-context.jpg"
+		caption = "IDEAS-Classic in the broader DOE context"
 %}
 
 # Mission
@@ -73,7 +73,14 @@ The IDEAS Project focuses on three concrete use cases:
 
 These terrestrial ecosystem use cases tie IDEAS to modeling and simulation goals in two Science Focus Area (SFA) programs and both Next Generation Ecosystem Experiment (NGEE) programs in DOE’s Office of Biologic and Environmental Research (BER).
 
-![IDEAS2](/assets/ideas-classic/IDEAS2.png) ![IDEAS3](/assets/ideas-classic/IDEAS3.png)
+![IDEAS2](/assets/images/ideas-classic/IDEAS2.png) ![IDEAS3](/assets/images/ideas-classic/IDEAS3.png)
+
+<br>
+
+{% 	include media-img2x.html 
+	  source1 = "ideas-classic/IDEAS2.png"
+    source2 = "ideas-classic/IDEAS3.png"
+%}
 
 Deeper understanding and answers to important science questions for these use cases require improved multiscale and multiphysics computational simulations.  The directed efforts to address use-case needs provide guidance to three specific focus areas that will have broad impact on the computational science and engineering community:
 
@@ -85,7 +92,10 @@ Deeper understanding and answers to important science questions for these use ca
 
 The IDEAS Project is a unique collaboration between the DOE Office of Advanced Scientific Computing Research (ASCR) and the Office of Biological and Environmental Research (BER).  This partnership ensures delivery of crosscutting methodologies, software, and metrics with impact on important scientific applications and programs.
 
-![IDEAS in the broader DOE context](/assets//ideas-classic/IDEAS-broader-DOE-context.jpg)
+{% 	include media-img.html 
+	  source = "ideas-classic/IDEAS-broader-DOE-context.jpg"
+		caption = "IDEAS-Classic in the broader DOE context"
+%}
 
 The IDEAS Project is composed of an interdisciplinary multi-institutional team (ANL, LANL, LBNL, LLNL, ORNL, PNNL, SNL, Colorado School of Mines) and leverages a broad set of relationships within the Department of Energy and the broader community.
 
@@ -97,4 +107,8 @@ The IDEAS-Classic team includes participants from the following institutions.  F
 
 This work is supported by the DOE Office of Science, Offices of Advanced Scientific Computing Research (ASCR) and Biological Environmental Sciences (BER).
 
-![DOE Office of Science logo](/assets/ideas-classic/RGB_Color-Seal_Green-Mark_SC_Horizontal-300x50.png)
+![](/assets/images/ideas-classic/RGB_Color-Seal_Green-Mark_SC_Horizontal-300x50.png)
+
+{% include media-img.html
+  source = "ideas-classic/RGB_Color-Seal_Green-Mark_SC_Horizontal-300x50.png"
+%}
