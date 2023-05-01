@@ -15,15 +15,15 @@ blurb: "Improving software productivity for terrestrial ecosystem modeling"
 
 {% 	include _layout/nav-sidebar.html
   label1 = "About"
-  url1 = "/activities/xsdk"
+  url1 = "/activities/ideas-classic"
   label2 = "Use Cases"
-  url2 = "/activities/xsdk/use-cases"
-  label3 = "Team"
-  url3 = "/activities/xsdk/team"
-  label4 = "Code of Conduct"
-  url4 = "/activities/xsdk/code-of-conduct"
-  label5 = "External Site"
-  url5 = "https://xsdk.info/"
+  url2 = "/activities/ideas-classic/use-cases"
+  label3= 'Methodologies and "How To"'
+  url3 = "/activities/ideas-classic/howto"
+  label4 = "Community Outreach"
+  url4 = "/activities/ideas-classic/outreach"
+  label5 = "Team"
+  url5 = "/activities/ideas-classic/team"
 
   current = "About"
 %}
@@ -129,6 +129,23 @@ The IDEAS-Classic team includes participants from the following institutions.  F
 		title4 = ""
 		source4 = "ideas-classic/BerkeleyLabLogo-300x227.png"
 		url4 = "https://www.lbl.gov/"
+%}
+{% 	include teasers-4x_img.html
+		title1 = ""
+		source1 = "ideas-classic/LLNLlogo.jpeg"
+		url1 = "https://www.llnl.gov/"
+
+		title2 = ""
+		source2 = "ideas-classic/ORNLlogo-300x150.png"
+		url2 = "https://www.ornl.gov/"
+
+		title3 = ""
+		source3 = "ideas-classic/PNNLlogo-300x130.jpeg"
+		url3 = "https://www.pnnl.gov/"
+
+		title4 = ""
+		source4 = "ideas-classic/CSMlogo-150x150.jpeg"
+		url4 = "https://www.mines.edu/"
 %}
 
 # Sponsor

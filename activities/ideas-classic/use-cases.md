@@ -2,7 +2,7 @@
 
 layout: page
 
-title: "xSDK: Use Cases"
+title: "IDEAS-Classic: Use Cases"
 blurb: "The quick brown fox jumps over the lazy dog."
 
 ---
