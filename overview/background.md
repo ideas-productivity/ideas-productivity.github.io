@@ -3,7 +3,7 @@
 layout: page
 
 title: "Background"
-blurb: "The quick brown fox jumps over the lazy dog."
+blurb: "Advancing scientific productivity through better scientific software"
 
 ---
 
@@ -13,26 +13,27 @@ blurb: "The quick brown fox jumps over the lazy dog."
 <!-- Page Content -->
 <!-- ---------------------------------------------------------------------- -->
 
-# Placeholder Content
+# High-quality scientific software is a cornerstone of computational science and engineering (CSE).
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+Scientific software is broadly recognized as a cornerstone of sustained collaboration and scientific advances. However, disruptive changes in computer architectures and the complexities of tackling new frontiers in next-generation modeling, simulation, analysis, and design present daunting challenges to the productivity of software developers and the sustainability of software artifacts. 
+ 
 
-## Subhead
+## We face unprecedented complexity and continual change in computer architectures.
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+The transition to hosted accelerated architectures, specifically nodes with multicore CPU and multiple GPUs, requires developing new algorithmic approaches, porting code to new compiling and runtime environments, and realizing massive concurrency that is possible only by overcoming large latency bottlenecks. Furthermore, these new CPU/GPU platforms represent only the beginning of the system heterogeneity expected in the future.
 
-## Subhead
+## The needs of next-generation science continually push advances in software capabilities.
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+Teams are working toward predictive science and engineering through multiphysics, multiscale simulations and analytics and are addressing requirements for greater scientific reproducibility. Intensive development is required for both scientific applications and supporting software tools and technologies.  Developers must adapt to and anticipate new computer architectures and scale their codes to levels not previously possible, often also requiring new algorithms and approaches within the software. 
 
-# Placeholder Content
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+# Mitigating technical risks by building a firmer foundation for reproducible, sustainable science
 
-## Subhead
+Members of the computational science community -- especially at extreme scales but more broadly at all scales of computing --- face an urgent need to improve developer productivity (positively impacting product quality, development time, and staffing resources) and software sustainability (reducing the cost of maintaining, sustaining, and evolving software capabilities).
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+## IDEAS: Partnering with the community to advance scientific software practices 
 
-## Subhead
+The role of IDEAS is to help ease the challenges of software development in advanced computing environments, and to help  development teams ensure that DOE investment in the advanced software ecosystems is as productive and sustainable
+as possible. 
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+The IDEAS project is collaborating with the community on scientific software ecosystems that emphasize the use and development of high-quality tools, the adaptation and adoption of modern software engineering methodologies, and the development and use of high-quality software components in the composition of next-generation applications.
