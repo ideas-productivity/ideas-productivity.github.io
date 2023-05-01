@@ -13,29 +13,32 @@ available parameters:
 
 * required
 
+Captions are not required, but if you want to have caption2 you must also have caption1
+
 -------------------------------------------------------------------------------
 
 -->
 
 <div class="media-img2x">
 	<div class="img-wrapper1">
-		<div><img src="../assets/images/{{ include.source1 }}"></div>
+		<div><img src="/assets/images/{{ include.source1 }}"></div>
 	</div>
 
 	<div class="img-wrapper2">
-		<div><img src="../assets/images/{{ include.source2 }}"></div>
+		<div><img src="/assets/images/{{ include.source2 }}"></div>
 	</div>
 
-	{% if include.caption1 %}
+	{% if include.caption1 OR include.caption2 %}
 		<div class="captions">
+	{% endif %}
+	{% if include.caption1 %}
 			<small class="caption">{{ include.caption1 }}</small>
 	{% endif %} 
-
 	{% if include.caption2 %}
 			<br>
 			<small class="caption">{{ include.caption2 }}</small>
+	{% endif %}
+	{% if include.caption1 OR include.caption2 %}
 		</div>
-	{% else %}	
-		</div>
-	{% endif %} 
+	{% endif %}
 </div>
