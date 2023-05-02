@@ -9,6 +9,7 @@ available parameters:
 - group-linktext
 - group-linkurl
 - group-blurb
+- group-id (anchor for direct links)
 * title1
 * source1
 * url1
@@ -28,6 +29,10 @@ available parameters:
 
 * required
 
+This include lays out the teaser group four-across.  The input parameters are positional,
+meaning that if you supply parameters only for items 2 and 4, they will appear as the
+second and fourth items in the teaser group with gaps in between.
+
 -------------------------------------------------------------------------------
 
 -->
@@ -37,7 +42,11 @@ available parameters:
 
 	<div class="group-intro">
 		{% if include.group-title %}
+		  {% if include.group-id %}
+			<h1 id="{{include.group-id}}">{{ include.group-title }}</h1>
+		  {% else %}
 			<h1>{{ include.group-title }}</h1>
+		  {% endif %}
 
 			{% if include.group-linktext %}
 			<a class="group-link" href="{{ include.group-linkurl }}">
@@ -57,6 +66,7 @@ available parameters:
 	</div>	
 
 
+	{% if include.source1 %}
 	<div class="teaser1">
 		<a href="{{ include.url1 }}">
 			<div class="img-wrapper1">
@@ -68,7 +78,9 @@ available parameters:
 			{% endif %}	
 		</a>
 	</div>
+	{% endif %}
 
+	{% if include.source2 %}
 	<div class="teaser2">
 		<a href="{{ include.url2 }}">
 			<div class="img-wrapper2">
@@ -80,7 +92,9 @@ available parameters:
 			{% endif %}	
 		</a>
 	</div>
+	{% endif %}
 
+	{% if include.source3 %}
 	<div class="teaser3">
 		<a href="{{ include.url3 }}">
 			<div class="img-wrapper3">
@@ -92,7 +106,9 @@ available parameters:
 			{% endif %}	
 		</a>
 	</div>
+	{% endif %}
 
+	{% if include.source4 %}
 	<div class="teaser4">
 		<a href="{{ include.url4 }}">
 			<div class="img-wrapper4">
@@ -104,6 +120,6 @@ available parameters:
 			{% endif %}	
 		</a>
 	</div>
-
+	{% endif %}
 </div>
 
