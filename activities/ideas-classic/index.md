@@ -35,7 +35,7 @@ The scientific software community is facing a crisis created by the confluence o
 
 We have assembled an interdisciplinary team that spans leadership of several critical scientific libraries (including **hypre**, **PETSc**, **SuperLU** and **Trilinos**); world-class software engineering programs; developers of critical tools for program understanding, refactoring, transformation, and code generation; and flagship science programs in BER, including three Science Focus Area programs, the Next Generation Ecosystem Experiment (NGEE) Arctic program, and projects funded by the Water Sustainability and Climate program at NSF. This team has both the breadth and the skill to meet this challenge and realize the full potential of emerging extreme-scale systems.
 
-In our project, Interoperable Design of Extreme-scale Application Software (IDEAS), we are developing and demonstrating new approaches for producing, using, and supporting scientific software. We are establishing methodologies and tools that facilitate the delivery of software as reusable, interoperable components. We are defining software lifecycle models that are both flexible and rigorous, acknowledging that scientific software inception occurs in a research environment but must ultimately result in reliable, well-designed, and well-documented software with a full test suite, so that future use and refactoring can be done with confidence.
+In our project, *Interoperable Design of Extreme-scale Application Software (IDEAS)*, we are developing and demonstrating new approaches for producing, using, and supporting scientific software. We are establishing methodologies and tools that facilitate the delivery of software as reusable, interoperable components. We are defining software lifecycle models that are both flexible and rigorous, acknowledging that scientific software inception occurs in a research environment but must ultimately result in reliable, well-designed, and well-documented software with a full test suite, so that future use and refactoring can be done with confidence.
 
 This approach will address the historical yet unsustainable trend that science applications make modest use of libraries but are otherwise self-contained. Specifically, by supporting suitable levels of autonomy for application developers within a rich ecosystem of interoperable components, productivity gains can be demonstrated across the software ecosystem—with many opportunities to develop and leverage common capabilities. Any consensus in policies, practices, and tools can only improve reusability, reduce education costs for new team members, and foster the use of best practices across all application teams. Finally, forums for sharing plans across the community at all phases of development will enable informed decision-making from the earliest stages of application development.
 
@@ -49,7 +49,7 @@ The IDEAS project focuses on the development of an extreme-scale scientific soft
 
 ## Impact on Applications & Programs
 
-The IDEAS Project focuses on three concrete use cases:
+The IDEAS Project focuses on three concrete [use cases](use-cases):
 
 1. **Hydrology and Biogeochemical Cycling in the Colorado River System**
 2. **Hydrology and Soil Carbon Dynamics of Arctic Tundra**
@@ -68,9 +68,9 @@ These terrestrial ecosystem use cases tie IDEAS to modeling and simulation goals
 
 Deeper understanding and answers to important science questions for these use cases require improved multiscale and multiphysics computational simulations.  The directed efforts to address use-case needs guide to three specific focus areas that will have a broad impact on the computational science and engineering community:
 
-* IDEAS xSDK: A major deliverable of IDEAS is the Extreme-scale Scientific Software Development Kit (xSDK).  The xSDK currently includes four major DOE library products (hypre, PETSc, SuperLU, and Trilinos) and the Alquimia biogeochemistry domain component.  The xSDK provides an interoperability layer that enables easy installation and combined usage of xSDK packages.
-* IDEAS Howto: In addition to xSDK development and other software efforts to address the IDEAS use cases, IDEAS focuses on methodologies (“howto” content) to cultivate best practices, processes, and tools for improved scientific software development.  IDEAS is providing content that will enable other application teams to improve their own development efforts.
-* IDEAS Outreach: The final piece of IDEAS is the dissemination of the content developed in the project.  This includes tutorials on the IDEAS xSDK and the methodologies we develop, in collaboration with DOE computing facilities ALCF, NERSC, and OLCF.  IDEAS outreach also includes collaboration with the broader computational science community, which is also facing similar challenges and opportunities for improving productivity.
+* [IDEAS xSDK](xsdk): A major deliverable of IDEAS is the Extreme-scale Scientific Software Development Kit (xSDK).  The xSDK currently includes four major DOE library products (hypre, PETSc, SuperLU, and Trilinos) and the Alquimia biogeochemistry domain component.  The xSDK provides an interoperability layer that enables easy installation and combined usage of xSDK packages.
+* [IDEAS Howto](methodologies): In addition to xSDK development and other software efforts to address the IDEAS use cases, IDEAS focuses on methodologies (“howto” content) to cultivate best practices, processes, and tools for improved scientific software development.  IDEAS is providing content that will enable other application teams to improve their own development efforts.
+* [IDEAS Outreach](outreach): The final piece of IDEAS is the dissemination of the content developed in the project.  This includes tutorials on the IDEAS xSDK and the methodologies we develop, in collaboration with DOE computing facilities ALCF, NERSC, and OLCF.  IDEAS outreach also includes collaboration with the broader computational science community, which is also facing similar challenges and opportunities for improving productivity.
 
 ## Collaborations
 
@@ -84,7 +84,7 @@ The IDEAS Project is composed of an interdisciplinary multi-institutional team (
 
 ## Team
 
-The IDEAS-Classic team includes participants from the following institutions.  Follow the link above for a listing of individual participants.
+The IDEAS-Classic [team](team) includes participants from the following institutions.  Follow the link above for a listing of individual participants.
 
 <!-- For some reason the images are only showing up if there's also text in the cell.  I have no idea!
 <table>
@@ -134,7 +134,7 @@ The IDEAS-Classic team includes participants from the following institutions.  F
 
 ## Sponsor
 
-This work is supported by the DOE Office of Science, Offices of Advanced Scientific Computing Research (ASCR) and Biological Environmental Sciences (BER).
+This work is supported by the [DOE](http://energy.gov/) [Office of Science](http://science.energy.gov/), Offices of [Advanced Scientific Computing Research](http://science.energy.gov/ascr/) (ASCR) and [Biological Environmental Sciences](http://science.energy.gov/ber/) (BER).
 
 ![](/assets/images/ideas-classic/RGB_Color-Seal_Green-Mark_SC_Horizontal-300x50.png)
 
