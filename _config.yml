@@ -19,20 +19,21 @@
 # in the templates via {{ site.myvariable }}.
 
 title: IDEAS Productivity
-email: your-email@example.com
+email: IDEASProductivity@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://ideas-productivity.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  ideas-productivity
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+#  - flexible_include # We do use this, but it is not a gem
 collections:
   events:
     output: true
