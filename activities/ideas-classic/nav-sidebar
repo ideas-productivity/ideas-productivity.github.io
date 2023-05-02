@@ -1,0 +1,24 @@
+<!-- Sidebar Nav for ideas-classic -->
+<!-- ---------------------------------------------------------------------- -->
+
+{% include _layout/nav-sidebar.html
+  label1  = "About"
+  url1    = "/activities/ideas-classic"
+
+  label2  = "Use Cases"
+  url2    = "/activities/ideas-classic/use-cases"
+
+  label3  = "xSDK"
+  url3    = "/activities/ideas-classic/xsdk"
+
+  label4  = 'Methodologies and "How To"'
+  url4    = "/activities/ideas-classic/methodologies"
+
+  label5  = "Community Outreach"
+  url5    = "/activities/ideas-classic/outreach"
+
+  label6  = "Team"
+  url6    = "/activities/ideas-classic/team"
+
+  current=include.current
+%}
