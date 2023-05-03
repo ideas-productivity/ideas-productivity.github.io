@@ -24,7 +24,7 @@ meta2-value: "<a href='https://ideas-productivity.org/events/'>Name A Name</a>, 
 %}
 
 
-# Hello
+# Hello h1
 
 The *quick brown fox jumps over the lazy dog*. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. **The quick brown fox jumps over the lazy dog**. The quick 1982 [brown fox jumps](https://ideas-productivity.org/ideas-home-page/about-ideas/) over the lazy dog.
 
@@ -36,11 +36,11 @@ The *quick brown fox jumps over the lazy dog*. The quick brown fox jumps over th
 		file-size = "100 kb"
 %}
 
-## Subhead
+## Subhead h2
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
-## Subhead
+## Subhead h2
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -56,7 +56,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
 
-### Subhead
+### Subhead h3
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -73,7 +73,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 
 
-#### Subhead
+#### Subhead h4
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -101,7 +101,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 
 
-##### Subhead
+##### Subhead h5
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -183,7 +183,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 %}
 
 
-###### Subhead
+###### Subhead h6
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -235,6 +235,17 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
 
 {% 	include teasers-4x_img.html
 		group-title = "Example Teasers"
