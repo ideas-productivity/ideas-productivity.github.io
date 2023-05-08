@@ -130,8 +130,6 @@ The IDEAS Project is composed of an interdisciplinary multi-institutional team (
 
 This work is supported by the [DOE](http://energy.gov/) [Office of Science](http://science.energy.gov/), Offices of [Advanced Scientific Computing Research](http://science.energy.gov/ascr/) (ASCR) and [Biological Environmental Sciences](http://science.energy.gov/ber/) (BER).
 
-![](/assets/images/ideas-classic/RGB_Color-Seal_Green-Mark_SC_Horizontal-300x50.png)
+<br>
 
-{% include media-img.html
-  source = "ideas-classic/RGB_Color-Seal_Green-Mark_SC_Horizontal-300x50.png"
-%}
+![](/assets/images/ideas-classic/RGB_Color-Seal_Green-Mark_SC_Horizontal-300x50.png)
