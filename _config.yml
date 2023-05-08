@@ -41,6 +41,9 @@ collections:
   series:
     output: true
     permalink: /series/:slug
+  impact:
+    output: true
+    permalink: /impact/:slug
 
 
 
