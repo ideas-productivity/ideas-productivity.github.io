@@ -82,52 +82,46 @@ The IDEAS Project is a unique collaboration between the DOE Office of Advanced S
 
 The IDEAS Project is composed of an interdisciplinary multi-institutional team (ANL, LANL, LBNL, LLNL, ORNL, PNNL, SNL, Colorado School of Mines) and leverages a broad set of relationships within the Department of Energy and the broader community.
 
-## Team
 
-The IDEAS-Classic [team](team) includes participants from the following institutions.  Follow the link above for a listing of individual participants.
-
-<!-- For some reason the images are only showing up if there's also text in the cell.  I have no idea!
-<table>
-<tr>
-<td><img src="/assets/images/ideas-classic/ANL-logo-square-300x267.jpg"><br>(Co-lead Institution)</td>
-<td><img src="/assets/images/ideas-classic/SNL_Stacked_Black_Blue-300x115.png"><br>(Co-lead Institution)</td>
-<td><img src="/assets/images/ideas-classic/LANLlogo-300x160.png"></td>
-<td><img src="/assets/images/ideas-classic/BerkeleyLabLogo-300x227.png"></td>
-</tr>
-</table>
--->
 
 {% 	include teasers-4x_img.html
-		title1 = "(Co-lead Institution)"
+		group-title = "Team"
+		group-linktext = "Learn More"
+		group-linkurl = "link.com"
+		group-blurb = "The IDEAS-Classic team includes participants from the following institutions. Follow the link for a listing of individual participants."
+
+		title1 = "Argonne National Laboratory"
+		blurb1 = "(Co-lead Institution)"
 		source1 = "ideas-classic/ANL-logo-square-300x267.jpg"
 		url1 = "https://www.anl.gov/"
 
-		title2 = "(Co-lead Institution)"
+		title2 = "Sandia National Laboratory"
+		blurb2 = "(Co-lead Institution)"
 		source2 = "ideas-classic/SNL_Stacked_Black_Blue-300x115.png"
 		url2 = "https://www.sandia.gov/"
 
-		title3 = ""
+		title3 = "Los Alamos National Laboratory"
 		source3 = "ideas-classic/LANLlogo-300x160.png"
 		url3 = "https://lanl.gov/"
 
-		title4 = ""
+		title4 = "Berkeley Lab"
 		source4 = "ideas-classic/BerkeleyLabLogo-300x227.png"
 		url4 = "https://www.lbl.gov/"
 %}
 {% 	include teasers-4x_img.html
-		title1 = ""
+		title1 = "Lawrence Livermore National Laboratory"
 		source1 = "ideas-classic/LLNLlogo.jpeg"
 		url1 = "https://www.llnl.gov/"
 
-		title2 = ""
+		title2 = "Oak Ridge National Laboratory"
 		source2 = "ideas-classic/ORNLlogo-300x150.png"
 		url2 = "https://www.ornl.gov/"
 
-		title3 = ""
+		title3 = "Pacific Northwest National Laboratory"
 		source3 = "ideas-classic/PNNLlogo-300x130.jpeg"
 		url3 = "https://www.pnnl.gov/"
 
-		title4 = ""
+		title4 = "Colorado School of Mines"
 		source4 = "ideas-classic/CSMlogo-150x150.jpeg"
 		url4 = "https://www.mines.edu/"
 %}
