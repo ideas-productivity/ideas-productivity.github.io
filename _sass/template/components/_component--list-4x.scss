@@ -9,7 +9,7 @@
 .list-4x {
 	grid-column: 1 / -1;
 	@include grid-child($cols:12);
-	@include stack(md);
+	@include stack(sm);
 
 	.group-intro {
 		grid-column: 1 / -1;

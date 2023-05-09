@@ -215,14 +215,19 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		title1 = "Hans Johansen (LBNL)"
 		source1 = "ideas-classic/team/Johansen.jpg"
 		blurb1 = "<em>Crosscut Lead</em>"
-
 %}
 
-## IDEAS Project Alumni
+{% 	include list-4x.html
+		group-title = "IDEAS Project Alumni"
+		group-id = "alumni"
 
-* Katie Antypas
-* Jed Brown
-* Irina Demeshko
-* Christos Kartsakalis
-* Kerstin Kleese-Van Dam
-* Sri Hari Krishna Narayanan
+		title1 = "Katie Antypas"
+		title2 = "Jed Brown"
+		title3 = "Irina Demeshko"
+		title4 = "Christos Kartsakalis"
+%}
+
+{% 	include list-4x.html
+		title1 = "Kerstin Kleese-Van Dam"
+		title2 = "Sri Hari Krishna Narayanan"
+%}
