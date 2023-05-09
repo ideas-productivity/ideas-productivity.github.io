@@ -17,6 +17,7 @@ blurb: "The quick brown fox jumps over the lazy dog."
 
 {% 	include media-img.html 
 	  source = "ideas-classic/IDEAS-team-05-2016-1024x586.png"
+	  contain = true
 %}
 
 ## The IDEAS-Classic Project Team
@@ -45,6 +46,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 
 		title3 = "Mark Berrill (ORNL)"
 		source3 = "ideas-classic/team/ORNLlogo-300x150.png"
+		contain3 = true
 
 		title4 = "Todd Gamblin (LLNL)"
 		source4 = "ideas-classic/team/gamblin-todd-COMP-WEB-220x275-LLNL.png"
@@ -188,6 +190,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 
 		title2 = "Rebecca Hartman-Baker (NERSC)"
 		source2 = "ideas-classic/team/NERSClogocolor-1024x688.png"
+		contain2 = true
 
 		title3 = "Lisa Childers (ALCF)"
 		source3 = "ideas-classic/team/LisaChilders.jpg"

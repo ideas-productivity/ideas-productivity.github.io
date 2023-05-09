@@ -83,7 +83,11 @@ This include lays out the list group four-across.  The input parameters are posi
 	{% if include.title2 %}
 		<div class="item2">
 			<div class="img-wrapper2">
-				<div><img src="/assets/images/{{ include.source2 }}"></div>
+				<div><img src="/assets/images/{{ include.source2 }}"
+					{% if include.contain2 %}
+						style="object-fit: contain;"
+					{% endif %}	
+				></div>
 			</div>
 			<h2>{{ include.title2 }}</h2>
 			{% if include.blurb2 %}
@@ -95,7 +99,11 @@ This include lays out the list group four-across.  The input parameters are posi
 	{% if include.title3 %}
 		<div class="item3">
 			<div class="img-wrapper3">
-				<div><img src="/assets/images/{{ include.source3 }}"></div>
+				<div><img src="/assets/images/{{ include.source3 }}"
+					{% if include.contain3 %}
+						style="object-fit: contain;"
+					{% endif %}	
+				></div>
 			</div>
 			<h2>{{ include.title3 }}</h2>
 			{% if include.blurb3 %}
@@ -107,7 +115,11 @@ This include lays out the list group four-across.  The input parameters are posi
 	{% if include.title4 %}
 		<div class="item4">
 			<div class="img-wrapper4">
-				<div><img src="/assets/images/{{ include.source4 }}"></div>
+				<div><img src="/assets/images/{{ include.source4 }}"
+					{% if include.contain4 %}
+						style="object-fit: contain;"
+					{% endif %}	
+				></div>
 			</div>
 			<h2>{{ include.title4 }}</h2>
 			{% if include.blurb4 %}
