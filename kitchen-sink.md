@@ -231,6 +231,13 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
+
+{% 	include media-smimg.html
+		source = "fpo.png"
+		caption = "Small image brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+%}
+
+
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
@@ -246,6 +253,8 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 ##### Heading 5
 
 ###### Heading 6
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
 {% 	include teasers-4x_img.html
 		group-title = "Example Teasers"
