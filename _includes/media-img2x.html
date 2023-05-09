@@ -7,8 +7,10 @@ please use hero-page include for hero images
 
 available parameters:
 * source1
+- contain1
 - caption1
 * source2
+- contain2
 - caption2
 
 * required
@@ -21,11 +23,19 @@ Captions are not required, but if you want to have caption2 you must also have c
 
 <div class="media-img2x">
 	<div class="img-wrapper1">
-		<div><img src="/assets/images/{{ include.source1 }}"></div>
+		<div><img src="/assets/images/{{ include.source1 }}"
+			{% if include.contain1 %}
+				style="object-fit: contain;"
+			{% endif %}	
+		></div>
 	</div>
 
 	<div class="img-wrapper2">
-		<div><img src="/assets/images/{{ include.source2 }}"></div>
+		<div><img src="/assets/images/{{ include.source2 }}"
+			{% if include.contain2 %}
+				style="object-fit: contain;"
+			{% endif %}	
+		></div>
 	</div>
 
 	{% if include.caption1 OR include.caption2 %}

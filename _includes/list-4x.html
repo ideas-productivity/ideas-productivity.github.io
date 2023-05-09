@@ -1,6 +1,6 @@
 <!-- 
 
-TEASERS, IMAGE 4x
+LIST, 4x
 
 -------------------------------------------------------------------------------
 
@@ -13,36 +13,30 @@ available parameters:
 * title1
 * source1
 - contain1
-* url1
 - blurb1
-* title2
-* source2
+- title2
+- source2
 - contain2
-* url2
 - blurb2
-* title3
-* source3
+- title3
+- source3
 - contain3
-* url3
 - blurb3
-* title4
-* source4
+- title4
+- source4
 - contain4
-* url4
 - blurb4
 
 * required
 
-This include lays out the teaser group four-across.  The input parameters are positional,
-meaning that if you supply parameters only for items 2 and 4, they will appear as the
-second and fourth items in the teaser group with gaps in between.
+This include lays out the list group four-across.  The input parameters are positional, meaning that if you supply parameters only for items 2 and 4, they will appear as the second and fourth items in the teaser group with gaps in between.
 
 -------------------------------------------------------------------------------
 
 -->
 
 
-<div class="teasers-4x-img">
+<div class="list-4x">
 
 	<div class="group-intro">
 		{% if include.group-title %}
@@ -70,9 +64,8 @@ second and fourth items in the teaser group with gaps in between.
 	</div>	
 
 
-	{% if include.source1 %}
-	<div class="teaser1">
-		<a href="{{ include.url1 }}">
+	{% if include.title1 %}
+		<div class="item1">
 			<div class="img-wrapper1">
 				<div><img src="/assets/images/{{ include.source1 }}"
 					{% if include.contain1 %}
@@ -84,62 +77,44 @@ second and fourth items in the teaser group with gaps in between.
 			{% if include.blurb1 %}
 				<p>{{ include.blurb1 }}</p>
 			{% endif %}	
-		</a>
-	</div>
+		</div>
 	{% endif %}
 
-	{% if include.source2 %}
-	<div class="teaser2">
-		<a href="{{ include.url2 }}">
+	{% if include.title2 %}
+		<div class="item2">
 			<div class="img-wrapper2">
-				<div><img src="/assets/images/{{ include.source2 }}"
-					{% if include.contain2 %}
-						style="object-fit: contain;"
-					{% endif %}	
-				></div>
+				<div><img src="/assets/images/{{ include.source2 }}"></div>
 			</div>
 			<h2>{{ include.title2 }}</h2>
 			{% if include.blurb2 %}
 				<p>{{ include.blurb2 }}</p>
 			{% endif %}	
-		</a>
-	</div>
+		</div>
 	{% endif %}
 
-	{% if include.source3 %}
-	<div class="teaser3">
-		<a href="{{ include.url3 }}">
+	{% if include.title3 %}
+		<div class="item3">
 			<div class="img-wrapper3">
-				<div><img src="/assets/images/{{ include.source3 }}"
-					{% if include.contain3 %}
-						style="object-fit: contain;"
-					{% endif %}	
-				></div>
+				<div><img src="/assets/images/{{ include.source3 }}"></div>
 			</div>
 			<h2>{{ include.title3 }}</h2>
 			{% if include.blurb3 %}
 				<p>{{ include.blurb3 }}</p>
 			{% endif %}	
-		</a>
-	</div>
+		</div>
 	{% endif %}
 
-	{% if include.source4 %}
-	<div class="teaser4">
-		<a href="{{ include.url4 }}">
+	{% if include.title4 %}
+		<div class="item4">
 			<div class="img-wrapper4">
-				<div><img src="/assets/images/{{ include.source4 }}"
-					{% if include.contain4 %}
-						style="object-fit: contain;"
-					{% endif %}	
-				></div>
+				<div><img src="/assets/images/{{ include.source4 }}"></div>
 			</div>
 			<h2>{{ include.title4 }}</h2>
 			{% if include.blurb4 %}
 				<p>{{ include.blurb4 }}</p>
 			{% endif %}	
-		</a>
-	</div>
+		</div>
 	{% endif %}
+
 </div>
 

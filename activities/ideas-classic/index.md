@@ -20,6 +20,7 @@ blurb: "Improving software productivity for terrestrial ecosystem modeling"
 
 {% 	include media-heroimg.html 
 	  source = "ideas-classic/IDEAS-broader-DOE-context.jpg"
+	  contain = true
 		caption = "IDEAS-Classic in the broader DOE context"
 %}
 
@@ -63,7 +64,9 @@ These terrestrial ecosystem use cases tie IDEAS to modeling and simulation goals
 
 {% 	include media-img2x.html 
 	  source1 = "ideas-classic/IDEAS2.png"
+	  contain1 = true
     source2 = "ideas-classic/IDEAS3.png"
+    contain2 = true
 %}
 
 Deeper understanding and answers to important science questions for these use cases require improved multiscale and multiphysics computational simulations.  The directed efforts to address use-case needs guide to three specific focus areas that will have a broad impact on the computational science and engineering community:
@@ -78,6 +81,7 @@ The IDEAS Project is a unique collaboration between the DOE Office of Advanced S
 
 {% 	include media-img.html 
 	  source = "ideas-classic/IDEAS-broader-DOE-context.jpg"
+	  contain = true
 %}
 
 The IDEAS Project is composed of an interdisciplinary multi-institutional team (ANL, LANL, LBNL, LLNL, ORNL, PNNL, SNL, Colorado School of Mines) and leverages a broad set of relationships within the Department of Energy and the broader community.
@@ -93,36 +97,44 @@ The IDEAS Project is composed of an interdisciplinary multi-institutional team (
 		title1 = "Argonne National Laboratory"
 		blurb1 = "(Co-lead Institution)"
 		source1 = "ideas-classic/ANL-logo-square-300x267.jpg"
+		contain1 = true
 		url1 = "https://www.anl.gov/"
 
 		title2 = "Sandia National Laboratory"
 		blurb2 = "(Co-lead Institution)"
 		source2 = "ideas-classic/SNL_Stacked_Black_Blue-300x115.png"
+		contain2 = true
 		url2 = "https://www.sandia.gov/"
 
 		title3 = "Los Alamos National Laboratory"
 		source3 = "ideas-classic/LANLlogo-300x160.png"
+		contain3 = true
 		url3 = "https://lanl.gov/"
 
 		title4 = "Berkeley Lab"
 		source4 = "ideas-classic/BerkeleyLabLogo-300x227.png"
+		contain4 = true
 		url4 = "https://www.lbl.gov/"
 %}
 {% 	include teasers-4x_img.html
 		title1 = "Lawrence Livermore National Laboratory"
 		source1 = "ideas-classic/LLNLlogo.jpeg"
+		contain1 = true
 		url1 = "https://www.llnl.gov/"
 
 		title2 = "Oak Ridge National Laboratory"
 		source2 = "ideas-classic/ORNLlogo-300x150.png"
+		contain2 = true
 		url2 = "https://www.ornl.gov/"
 
 		title3 = "Pacific Northwest National Laboratory"
 		source3 = "ideas-classic/PNNLlogo-300x130.jpeg"
+		contain3 = true
 		url3 = "https://www.pnnl.gov/"
 
 		title4 = "Colorado School of Mines"
 		source4 = "ideas-classic/CSMlogo-150x150.jpeg"
+		contain4 = true
 		url4 = "https://www.mines.edu/"
 %}
 

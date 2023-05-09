@@ -6,6 +6,7 @@ MEDIA, Small Image
 
 available parameters:
 * source
+- contain
 - caption
 
 * required
@@ -19,7 +20,11 @@ Captions are not required, but if you want to have caption2 you must also have c
 <div class="media-smimg">
 
 	<div class="img-wrapper">
-		<div><img src="/assets/images/{{ include.source }}"></div>
+		<div><img src="/assets/images/{{ include.source }}"
+			{% if include.contain %}
+				style="object-fit: contain;"
+			{% endif %}	
+		></div>
 	</div>
 
 	{% if include.caption %}
