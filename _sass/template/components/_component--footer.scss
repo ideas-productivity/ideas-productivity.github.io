@@ -20,7 +20,7 @@ footer {
 		background-color: color(blue, XXX);
 		margin-left: -28px;
 		margin-right: -28px;
-    padding: 28px;
+    padding: 28px 28px 16px 28px;
 	}
 
 	.footer--sm h1 {
@@ -59,18 +59,28 @@ footer {
 
 
 	.footer--lg h1 {
-		@include typestyle($sans-sm-bld);
+		@include typestyle($sans-md-reg);
 		color: color(neutral, X);
 		border: none;
-		grid-column: 4 / -1;
+		grid-column: 1 / -1;
 		grid-row: 1;
+		@include stack(lg);
+	}
+
+	.footer--lg a {
+		color: color(neutral, X);
+		&:hover {
+			color: color(green, XX);
+			text-decoration: underline;
+		}
 	}
 
 	.footer--lg small {
 		@include typestyle($sans-xs-reg);
 		color: color(neutral, X);
-		grid-column: 4 / 8;
+		grid-column: 1 / 8;
 		grid-row: 2;
+		align-self: end;
 	}
 
 	.footer--lg small a {
