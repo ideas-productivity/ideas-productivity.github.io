@@ -47,7 +47,18 @@ footer {
 	.footer--sm a,
 	.footer--sm a:visited {
 		color: color(blue, XXX);
-		text-decoration-color: color(neutral, X);
+		// text-decoration-color: color(neutral, X);
+		text-decoration: none;
+	}
+
+	.footer--sm a#email:before {
+		@include typestyle($icon-xs);
+		content: '\ea86 \00a0';
+	}
+
+	.footer--sm a#youtube:before {
+		@include typestyle($icon-xs);
+		content: '\ea9d \00a0';
 	}
 
 	.footer--sm a:hover,
