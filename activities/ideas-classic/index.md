@@ -93,37 +93,37 @@ The IDEAS Project is composed of an interdisciplinary multi-institutional team (
 		title1 = "Argonne National Laboratory"
 		blurb1 = "(Co-lead Institution)"
 		source1 = "ideas-classic/ANL-logo-square-300x267.jpg"
-		contain1 = "true"
+		half1 = "true"
 
 		title2 = "Sandia National Laboratory"
 		blurb2 = "(Co-lead Institution)"
 		source2 = "ideas-classic/SNL_Stacked_Black_Blue-300x115.png"
-		contain2 = "true"
+		half2 = "true"
 
 		title3 = "Los Alamos National Laboratory"
 		source3 = "ideas-classic/LANLlogo-300x160.png"
-		contain3 = "true"
+		half3 = "true"
 
 		title4 = "Berkeley Lab"
 		source4 = "ideas-classic/BerkeleyLabLogo-300x227.png"
-		contain4 = "true"
+		half4 = "true"
 %}
 {% include list-4x_img.html
 		title1 = "Lawrence Livermore National Laboratory"
 		source1 = "ideas-classic/LLNLlogo.jpeg"
-		contain1 = "true"
+		half1 = "true"
 
 		title2 = "Oak Ridge National Laboratory"
 		source2 = "ideas-classic/ORNLlogo-300x150.png"
-		contain2 = "true"
+		half2 = "true"
 
 		title3 = "Pacific Northwest National Laboratory"
 		source3 = "ideas-classic/PNNLlogo-300x130.jpeg"
-		contain3 = "true"
+		half3 = "true"
 
 		title4 = "Colorado School of Mines"
 		source4 = "ideas-classic/CSMlogo-150x150.jpeg"
-		contain4 = "true"
+		half4 = "true"
 %}
 
 ## Sponsor

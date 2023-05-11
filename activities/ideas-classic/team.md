@@ -30,7 +30,7 @@ The IDEAS-Classic Project (ASCR/BER partnership) has members from seven US DOE l
 * **[Outreach and Community](#outreach) (lead: David Bernholdt):** This effort is focused on establishing connections to the broader community, which is essential to leverage the value of the content the IDEAS Project develops and complement external efforts.  The IDEAS Project succeeds by satisfying the specific requirements of our use cases and by disseminating our work to the broader scientific software community.  Furthermore, our efforts are part of a broader collection of related projects.
 The structure of the multi-institutional IDEAS project is shown in the diagram above.  The team is listed below the diagram by project category.
 
-{% 	include list-4x_img.html
+{% 	include list-6x.html
 		group-title = "Methodologies for Software Productivity"
 		group-linktext = "Learn More"
 		group-linkurl = "methodologies"
@@ -51,34 +51,32 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		title4 = "Todd Gamblin (LLNL)"
 		source4 = "ideas-classic/team/gamblin-todd-COMP-WEB-220x275-LLNL.png"
 		blurb4 = "<em>Computing Facility Liaison</em>"
+
+		title5 = "Osni Marques (LBNL)"
+		source5 = "ideas-classic/team/marques_osni-225x300.jpg"
+
+		title6 = "Pat McCormick (LANL)"
+		source6 = "ideas-classic/team/Pat_McCormick2-215x300.jpg"
 %}
 
-{% 	include list-4x_img.html
-		title1 = "Osni Marques (LBNL)"
-		source1 = "ideas-classic/team/marques_osni-225x300.jpg"
+{% 	include list-6x.html
+		title1 = "Nicholas Moss (LANL)"
+		source1 = "ideas-classic/team/moss_nick-214x300.png"
 
-		title2 = "Pat McCormick (LANL)"
-		source2 = "ideas-classic/team/Pat_McCormick2-215x300.jpg"
+		title2 = "Andrew Salinger (SNL)"
+		source2 = "ideas-classic/team/AndyS.jpg"
+		blurb2 = "<em>Computing Facility Liaison</em>"
 
-		title3 = "Nicholas Moss (LANL)"
-		source3 = "ideas-classic/team/moss_nick-214x300.png"
+		title3 = "Jason Sarich (ANL)"
+		source3 = "ideas-classic/team/JasonSarich-214x300.jpg"
+		blurb3 = ""
 
-		title4 = "Andrew Salinger (SNL)"
-		source4 = "ideas-classic/team/AndyS.jpg"
-		blurb4 = "<em>Computing Facility Liaison</em>"
+		title4 = "Dali Wang (ORNL)"
+		source4 = "ideas-classic/team/DaliWang-e1456168658867.png"
 %}
 
-{% 	include list-4x_img.html
-		title1 = "Jason Sarich (ANL)"
-		source1 = "ideas-classic/team/JasonSarich-214x300.jpg"
-		blurb1 = ""
 
-		title2 = "Dali Wang (ORNL)"
-		source2 = "ideas-classic/team/DaliWang-e1456168658867.png"
-
-%}
-
-{% 	include list-4x_img.html
+{% 	include list-6x.html
 		group-title = "Extreme-Scale Scientific Software Development Kit"
 		group-linktext = "Learn More"
 		group-linkurl = "xsdk"
@@ -97,31 +95,30 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 
 		title4 = "Vijay Mahadevan (ANL)"
 		source4 = "ideas-classic/team/VijayMahadevan2.jpg"
+
+		title5 = "Daniel Osei-Kuffuor (LLNL)"
+		source5 = "ideas-classic/team/osei-kuffuor-daniel-COMP-WEB-220x275.png"
+		blurb5 = ""
+
+		title6 = "Barry Smith (ANL)"
+		source6 = "ideas-classic/team/BarrySmith.jpg"
 %}
 
-{% 	include list-4x_img.html
-		title1 = "Daniel Osei-Kuffuor (LLNL)"
-		source1 = "ideas-classic/team/osei-kuffuor-daniel-COMP-WEB-220x275.png"
-		blurb1 = ""
+{% 	include list-6x.html
+		title1 = "Mathew Thomas (PNNL)"
+		source1 = "ideas-classic/team/Thomas_Mathew_900991-08.jpeg"
 
-		title2 = "Barry Smith (ANL)"
-		source2 = "ideas-classic/team/BarrySmith.jpg"
+		title2 = "James Willenbring (SNL)"
+		source2 = "ideas-classic/team/JimW-e1456166391921.jpg"
 
-		title3 = "Mathew Thomas (PNNL)"
-		source3 = "ideas-classic/team/Thomas_Mathew_900991-08.jpeg"
-
-		title4 = "James Willenbring (SNL)"
-		source4 = "ideas-classic/team/JimW-e1456166391921.jpg"
-%}
-
-{% 	include list-4x_img.html
-		title1 = "Ulrike Yang (LLNL)"
-		source1 = "ideas-classic/team/umyang.jpg"
-		blurb1 = ""
+		title3 = "Ulrike Yang (LLNL)"
+		source3 = "ideas-classic/team/umyang.jpg"
+		blurb3 = ""
 %}
 
 
-{% 	include list-4x_img.html
+
+{% 	include list-6x.html
 		group-title = "Use Cases for Terrestrial Modeling"
 		group-linktext = "Learn More"
 		group-linkurl = "use-cases"
@@ -140,44 +137,45 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 
 		title4 = "Glenn Hammond (SNL)"
 		source4 = "ideas-classic/team/hammond.jpg"
+
+		title5 = "Reed Maxwell (CSM)"
+		source5 = "ideas-classic/team/RMaxwell.jpg"
+		blurb5 = ""
+
+		title6 = "Scott Painter (ORNL)"
+		source6 = "ideas-classic/team/Painter.jpg"
 %}
 
-{% 	include list-4x_img.html
-		title1 = "Reed Maxwell (CSM)"
-		source1 = "ideas-classic/team/RMaxwell.jpg"
-		blurb1 = ""
+{% 	include list-6x.html
+		
+		title1 = "Laura Condon (CSM)"
+		source1 = "ideas-classic/team/LauraCondon.png"
 
-		title2 = "Scott Painter (ORNL)"
-		source2 = "ideas-classic/team/Painter.jpg"
+		title2 = "Ethan Coon (LANL)"
+		source2 = "ideas-classic/team/Coon_426x640.jpg"
 
-		title3 = "Laura Condon (CSM)"
-		source3 = "ideas-classic/team/LauraCondon.png"
+		title3 = "Dipankar Dwivedi (LANL)"
+		source3 = "ideas-classic/team/DipankarDwivedi.png"
+		blurb3 = ""
 
-		title4 = "Ethan Coon (LANL)"
-		source4 = "ideas-classic/team/Coon_426x640.jpg"
+		title4 = "Jeff Johnson (LBNL)"
+		source4 = "ideas-classic/team/JeffreyJohnson-e1459978743120.jpg"
+
+		title5 = "Erica Woodburn (LBNL)"
+		source5 = "ideas-classic/team/EricaWoodburn.jpeg"
+
+		title6 = "Carol Woodward (LLNL)"
+		source6 = "ideas-classic/team/CarolWoodward.jpeg"
 %}
 
-{% 	include list-4x_img.html
-		title1 = "Dipankar Dwivedi (LANL)"
-		source1 = "ideas-classic/team/DipankarDwivedi.png"
-		blurb1 = ""
 
-		title2 = "Jeff Johnson (LBNL)"
-		source2 = "ideas-classic/team/JeffreyJohnson-e1459978743120.jpg"
-
-		title3 = "Erica Woodburn (LBNL)"
-		source3 = "ideas-classic/team/EricaWoodburn.jpeg"
-
-		title4 = "Carol Woodward (LLNL)"
-		source4 = "ideas-classic/team/CarolWoodward.jpeg"
-%}
-{% 	include list-4x_img.html
+{% 	include list-6x.html
 		title1 = "Xiaofan Yang (PNNL)"
 		source1 = "ideas-classic/team/XiaofanYang_photo.jpg"
 		blurb1 = ""
 %}
 
-{% 	include list-4x_img.html
+{% 	include list-6x.html
 		group-title = "Outreach and Community"
 		group-linktext = "Learn More"
 		group-linkurl = "outreach"
@@ -199,15 +197,14 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		title4 = "Judy Hill (OLCF)"
 		source4 = "ideas-classic/team/Hill.jpg"
 		blurb4 = "<em>Computing Facility Liaison</em>"
+
+		title5 = "Bill Spotz (SNL)"
+		source5 = "ideas-classic/team/BillSpotz2.jpg"
+		blurb5 = "<em>Computing Facility Liaison</em>"
 %}
 
-{% 	include list-4x_img.html
-		title1 = "Bill Spotz (SNL)"
-		source1 = "ideas-classic/team/BillSpotz2.jpg"
-		blurb1 = "<em>Computing Facility Liaison</em>"
-%}
 
-{% 	include list-4x_img.html
+{% 	include list-6x.html
 		group-title = "Crosscutting"
 		group-blurb = "Ensure communication and connections among all focus areas and the broader DOE community."
 		group-id = "crosscutting"
@@ -217,7 +214,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		blurb1 = "<em>Crosscut Lead</em>"
 %}
 
-{% 	include list-4x_img.html
+{% 	include list-6x.html
 		group-title = "IDEAS Project Alumni"
 		group-id = "alumni"
 
@@ -225,9 +222,6 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		title2 = "Jed Brown"
 		title3 = "Irina Demeshko"
 		title4 = "Christos Kartsakalis"
-%}
-
-{% 	include list-4x_img.html
-		title1 = "Kerstin Kleese-Van Dam"
-		title2 = "Sri Hari Krishna Narayanan"
+		title5 = "Kerstin Kleese-Van Dam"
+		title6 = "Sri Hari Krishna Narayanan"
 %}

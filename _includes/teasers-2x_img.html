@@ -12,11 +12,13 @@ available parameters:
 * title1
 * source1
 - contain
+- half1
 * url1
 - blurb1
 * title2
 * source2
 - contain2
+- half2
 * url2
 - blurb2
 
@@ -56,6 +58,8 @@ available parameters:
 				<div><img src="/assets/images/{{ include.source1 }}"
 					{% if include.contain1 %}
 						style="object-fit: contain;"
+					{% elsif include.half1 %}
+						style="object-fit: contain; max-width: 50%; max-height: 50%;"
 					{% endif %}	
 				></div>
 			</div>
@@ -72,6 +76,8 @@ available parameters:
 				<div><img src="/assets/images/{{ include.source2 }}"
 					{% if include.contain2 %}
 						style="object-fit: contain;"
+					{% elsif include.half2 %}
+						style="object-fit: contain; max-width: 50%; max-height: 50%;"
 					{% endif %}	
 				></div>
 			</div>

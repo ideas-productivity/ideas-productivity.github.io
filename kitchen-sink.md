@@ -323,7 +323,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 		title1 = "David Bernholdt (ORNL)"
 		source1 = "fpo.png"
-		contain1 = true
+		half1 = true
 		blurb1 = "<em>Focus Area Lead</em>"
 
 		title2 = "Rebecca Hartman-Baker (NERSC)"
