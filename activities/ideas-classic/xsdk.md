@@ -2,8 +2,8 @@
 
 layout: page
 
-title: "IDEAS-Classic: xSDK"
-#blurb: "Elements of an Extreme-scale Scientific Software Ecosystem"
+title: "xSDK"
+blurb: "IDEAS-Classic"
 
 ---
 

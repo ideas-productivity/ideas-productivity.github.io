@@ -2,8 +2,8 @@
 
 layout: page
 
-title: "IDEAS-Classic: Community Outreach"
-blurb: "The quick brown fox jumps over the lazy dog."
+title: "Community Outreach"
+blurb: "IDEAS-Classic"
 
 ---
 

@@ -2,8 +2,8 @@
 
 layout: page
 
-title: "IDEAS-Classic: Team"
-blurb: "The quick brown fox jumps over the lazy dog."
+title: "Team"
+blurb: "IDEAS-Classic"
 
 ---
 

@@ -87,7 +87,7 @@ The IDEAS Project is composed of an interdisciplinary multi-institutional team (
 {% include list-4x_img.html
 		group-title = "Team"
 		group-linktext = "Learn More"
-		group-linkurl = "link.com"
+		group-linkurl = "team"
 		group-blurb = "The IDEAS-Classic team includes participants from the following institutions. Follow the \"Learn More\" link for details."
 
 		title1 = "Argonne National Laboratory"
