@@ -314,6 +314,40 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
+{% 	include list-6x.html
+		group-title = "List, 6x"
+		group-linktext = "Learn More"
+		group-linkurl = "outreach"
+		group-blurb = "Promote scientific software productivity practices and begin to build a community."
+		group-id = "outreach"
+
+		title1 = "David Bernholdt (ORNL)"
+		source1 = "fpo.png"
+		contain1 = true
+		blurb1 = "<em>Focus Area Lead</em>"
+
+		title2 = "Rebecca Hartman-Baker (NERSC)"
+		source2 = "fpo.png"
+
+		title3 = "Lisa Childers (ALCF)"
+		source3 = "fpo.png"
+		blurb3 = "<em>Computing Facility Liaison</em>"
+
+		title4 = "Judy Hill (OLCF)"
+		source4 = "fpo.png"
+		blurb4 = "<em>Computing Facility Liaison</em>"
+
+		title5 = "David Bernholdt (ORNL)"
+		source5 = "fpo.png"
+		contain5 = true
+		blurb5 = "<em>Focus Area Lead</em>"
+
+		title6 = "Rebecca Hartman-Baker (NERSC)"
+		source6 = "fpo.png"
+%}
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
 
