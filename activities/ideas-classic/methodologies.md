@@ -2,8 +2,8 @@
 
 layout: page
 
-title: 'IDEAS-Classic: Methodologies and "How To"'
-#blurb: "The quick brown fox jumps over the lazy dog."
+title: 'Methodologies and "How To"'
+blurb: "IDEAS-Classic"
 
 ---
 

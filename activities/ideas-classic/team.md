@@ -2,8 +2,8 @@
 
 layout: page
 
-title: "IDEAS-Classic: Team"
-blurb: "The quick brown fox jumps over the lazy dog."
+title: "Team"
+blurb: "IDEAS-Classic"
 
 ---
 
@@ -30,7 +30,7 @@ The IDEAS-Classic Project (ASCR/BER partnership) has members from seven US DOE l
 * **[Outreach and Community](#outreach) (lead: David Bernholdt):** This effort is focused on establishing connections to the broader community, which is essential to leverage the value of the content the IDEAS Project develops and complement external efforts.  The IDEAS Project succeeds by satisfying the specific requirements of our use cases and by disseminating our work to the broader scientific software community.  Furthermore, our efforts are part of a broader collection of related projects.
 The structure of the multi-institutional IDEAS project is shown in the diagram above.  The team is listed below the diagram by project category.
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		group-title = "Methodologies for Software Productivity"
 		group-linktext = "Learn More"
 		group-linkurl = "methodologies"
@@ -53,7 +53,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		blurb4 = "<em>Computing Facility Liaison</em>"
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		title1 = "Osni Marques (LBNL)"
 		source1 = "ideas-classic/team/marques_osni-225x300.jpg"
 
@@ -68,7 +68,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		blurb4 = "<em>Computing Facility Liaison</em>"
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		title1 = "Jason Sarich (ANL)"
 		source1 = "ideas-classic/team/JasonSarich-214x300.jpg"
 		blurb1 = ""
@@ -78,7 +78,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		group-title = "Extreme-Scale Scientific Software Development Kit"
 		group-linktext = "Learn More"
 		group-linkurl = "xsdk"
@@ -99,7 +99,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		source4 = "ideas-classic/team/VijayMahadevan2.jpg"
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		title1 = "Daniel Osei-Kuffuor (LLNL)"
 		source1 = "ideas-classic/team/osei-kuffuor-daniel-COMP-WEB-220x275.png"
 		blurb1 = ""
@@ -114,14 +114,14 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		source4 = "ideas-classic/team/JimW-e1456166391921.jpg"
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		title1 = "Ulrike Yang (LLNL)"
 		source1 = "ideas-classic/team/umyang.jpg"
 		blurb1 = ""
 %}
 
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		group-title = "Use Cases for Terrestrial Modeling"
 		group-linktext = "Learn More"
 		group-linkurl = "use-cases"
@@ -142,7 +142,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		source4 = "ideas-classic/team/hammond.jpg"
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		title1 = "Reed Maxwell (CSM)"
 		source1 = "ideas-classic/team/RMaxwell.jpg"
 		blurb1 = ""
@@ -157,7 +157,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		source4 = "ideas-classic/team/Coon_426x640.jpg"
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		title1 = "Dipankar Dwivedi (LANL)"
 		source1 = "ideas-classic/team/DipankarDwivedi.png"
 		blurb1 = ""
@@ -171,13 +171,13 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		title4 = "Carol Woodward (LLNL)"
 		source4 = "ideas-classic/team/CarolWoodward.jpeg"
 %}
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		title1 = "Xiaofan Yang (PNNL)"
 		source1 = "ideas-classic/team/XiaofanYang_photo.jpg"
 		blurb1 = ""
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		group-title = "Outreach and Community"
 		group-linktext = "Learn More"
 		group-linkurl = "outreach"
@@ -201,13 +201,13 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		blurb4 = "<em>Computing Facility Liaison</em>"
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		title1 = "Bill Spotz (SNL)"
 		source1 = "ideas-classic/team/BillSpotz2.jpg"
 		blurb1 = "<em>Computing Facility Liaison</em>"
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		group-title = "Crosscutting"
 		group-blurb = "Ensure communication and connections among all focus areas and the broader DOE community."
 		group-id = "crosscutting"
@@ -217,7 +217,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		blurb1 = "<em>Crosscut Lead</em>"
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		group-title = "IDEAS Project Alumni"
 		group-id = "alumni"
 
@@ -227,7 +227,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		title4 = "Christos Kartsakalis"
 %}
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		title1 = "Kerstin Kleese-Van Dam"
 		title2 = "Sri Hari Krishna Narayanan"
 %}

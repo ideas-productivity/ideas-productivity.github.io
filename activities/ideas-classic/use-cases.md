@@ -2,8 +2,8 @@
 
 layout: page
 
-title: "IDEAS-Classic: Use Cases"
-#blurb: "Three multifaceted use cases are driving and demonstrating the capabilities and approaches that are being developed in the IDEAS project"
+title: "Use Cases"
+blurb: "IDEAS-Classic"
 
 ---
 
