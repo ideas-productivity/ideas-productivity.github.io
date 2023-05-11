@@ -58,10 +58,6 @@ The IDEAS Project focuses on three concrete [use cases](use-cases):
 
 These terrestrial ecosystem use cases tie IDEAS to modeling and simulation goals in two Science Focus Area (SFA) programs and both Next Generation Ecosystem Experiment (NGEE) programs in DOE’s Office of Biologic and Environmental Research (BER).
 
-![IDEAS2](/assets/images/ideas-classic/IDEAS2.png) ![IDEAS3](/assets/images/ideas-classic/IDEAS3.png)
-
-<br>
-
 {% 	include media-img2x.html 
 	  source1 = "ideas-classic/IDEAS2.png"
 	  contain1 = true
@@ -88,60 +84,53 @@ The IDEAS Project is composed of an interdisciplinary multi-institutional team (
 
 
 
-{% 	include teasers-4x_img.html
+{% include list-4x_img.html
 		group-title = "Team"
 		group-linktext = "Learn More"
 		group-linkurl = "link.com"
-		group-blurb = "The IDEAS-Classic team includes participants from the following institutions. Follow the link for a listing of individual participants."
+		group-blurb = "The IDEAS-Classic team includes participants from the following institutions. Follow the \"Learn More\" link for details."
 
 		title1 = "Argonne National Laboratory"
 		blurb1 = "(Co-lead Institution)"
 		source1 = "ideas-classic/ANL-logo-square-300x267.jpg"
-		contain1 = true
-		url1 = "https://www.anl.gov/"
+		contain1 = "true"
 
 		title2 = "Sandia National Laboratory"
 		blurb2 = "(Co-lead Institution)"
 		source2 = "ideas-classic/SNL_Stacked_Black_Blue-300x115.png"
-		contain2 = true
-		url2 = "https://www.sandia.gov/"
+		contain2 = "true"
 
 		title3 = "Los Alamos National Laboratory"
 		source3 = "ideas-classic/LANLlogo-300x160.png"
-		contain3 = true
-		url3 = "https://lanl.gov/"
+		contain3 = "true"
 
 		title4 = "Berkeley Lab"
 		source4 = "ideas-classic/BerkeleyLabLogo-300x227.png"
-		contain4 = true
-		url4 = "https://www.lbl.gov/"
+		contain4 = "true"
 %}
-{% 	include teasers-4x_img.html
+{% include list-4x_img.html
 		title1 = "Lawrence Livermore National Laboratory"
 		source1 = "ideas-classic/LLNLlogo.jpeg"
-		contain1 = true
-		url1 = "https://www.llnl.gov/"
+		contain1 = "true"
 
 		title2 = "Oak Ridge National Laboratory"
 		source2 = "ideas-classic/ORNLlogo-300x150.png"
-		contain2 = true
-		url2 = "https://www.ornl.gov/"
+		contain2 = "true"
 
 		title3 = "Pacific Northwest National Laboratory"
 		source3 = "ideas-classic/PNNLlogo-300x130.jpeg"
-		contain3 = true
-		url3 = "https://www.pnnl.gov/"
+		contain3 = "true"
 
 		title4 = "Colorado School of Mines"
 		source4 = "ideas-classic/CSMlogo-150x150.jpeg"
-		contain4 = true
-		url4 = "https://www.mines.edu/"
+		contain4 = "true"
 %}
 
 ## Sponsor
 
 This work is supported by the [DOE](http://energy.gov/) [Office of Science](http://science.energy.gov/), Offices of [Advanced Scientific Computing Research](http://science.energy.gov/ascr/) (ASCR) and [Biological Environmental Sciences](http://science.energy.gov/ber/) (BER).
 
-<br>
-
-![](/assets/images/ideas-classic/RGB_Color-Seal_Green-Mark_SC_Horizontal-300x50.png)
+{% 	include media-smimg.html
+		source = "ideas-classic/RGB_Color-Seal_Green-Mark_SC_Horizontal-300x50.png"
+		contain = true
+%}

@@ -288,7 +288,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
-{% 	include list-4x.html
+{% 	include list-4x_img.html
 		group-title = "List, 4x"
 		group-linktext = "Learn More"
 		group-linkurl = "outreach"
