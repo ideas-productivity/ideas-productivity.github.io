@@ -14,7 +14,7 @@
 	}
 
 	h1 {
-		@include typestyle($sans-md-bld);
+		@include typestyle($sans-lg-reg);
 		display: inline-block;
 		border-bottom: none;
 		@include inline($right:sm);
@@ -41,6 +41,7 @@
 	.lgtext {
 		@include typestyle($sans-lg-reg);
 		grid-column: 1 / 7;
+		color: color(neutral,XXX);
 	}
 
 	.smtext {

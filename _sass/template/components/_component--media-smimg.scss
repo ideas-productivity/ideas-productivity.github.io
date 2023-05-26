@@ -1,0 +1,39 @@
+/**
+  * Component: Media, Image
+  *  
+  * @description
+  * -
+  */
+
+.media-smimg {
+	@include grid-child($col-start: 1, $cols: 12);
+	@include stack(sm);
+
+	.img-wrapper {
+		@include aspect-ratio(16, 9);
+		grid-column: 3 / 7;
+	}
+
+	img {
+	 	width: 100%;
+		height: 100%;
+		object-fit: cover;
+		margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+
+	.captions {
+		grid-column: 7 / 11;
+		grid-row: 1;
+	}
+}
+
+p + .media-smimg {
+	margin-top: bl(2); //8px
+}
+
+

@@ -11,11 +11,11 @@
 
 	h1 {
 		border-bottom: none;
-		@include typestyle($sans-xxl-reg);
+		@include typestyle($sans-xl-reg);
 	}
 
 	.deck {
-		@include typestyle($sans-xl-reg);
+		@include typestyle($sans-lg-reg);
 		color: color(neutral, XXX);
 		@include stack(xs);
 	}

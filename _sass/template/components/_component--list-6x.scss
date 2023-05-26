@@ -1,0 +1,98 @@
+/**
+  * Component: List, 6x
+  *  
+  * @description
+  * Grid of items without links
+  * -
+  */
+
+.list-6x {
+	grid-column: 1 / -1;
+	@include grid-child($cols:12);
+	@include stack(sm);
+
+	.group-intro {
+		grid-column: 1 / -1;
+	}
+
+	h1 {
+		@include typestyle($sans-lg-reg);
+		display: inline-block;
+		border-bottom: none;
+		@include inline($right:sm);
+		@include stack(xs);
+	}
+
+	.group-link {
+		@include typestyle($sans-sm-reg);
+		display: inline-block;
+		color: color(neutral, XXX);
+	}
+
+	hr {
+		border:none;
+		height: 4px;
+		background-color: color(warm,X);
+		@include stack(xs);
+	}
+
+	.group-blurb {
+		@include typestyle($sans-lg-reg);
+		@include stack(sm);
+		color: color(neutral,XXX);
+	}
+
+	.item1,
+	.item2,
+	.item3,
+	.item4,
+	.item5,
+	.item6 {
+  	grid-column: span 2;
+	}
+
+
+	.item1 .img-wrapper1, 
+	.item2 .img-wrapper2,
+	.item3 .img-wrapper3, 
+	.item4 .img-wrapper4,
+	.item5 .img-wrapper5,
+	.item6 .img-wrapper6 {
+		@include aspect-ratio(1, 1);
+		@include stack(xs);
+	}
+
+	.item1 img, 
+	.item2 img,
+	.item3 img, 
+	.item4 img,
+	.item5 img,
+	.item6 img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+
+	.item1 h2, 
+	.item2 h2,
+	.item3 h2, 
+	.item4 h2,
+	.item5 h2,
+	.item6 h2 {
+		@include typestyle($sans-sm-bld);
+		margin-bottom: 0 !important;
+	}
+
+
+}
+
+
+p + .list-6x {
+	margin-top: bl(12); //48px
+}

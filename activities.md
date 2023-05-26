@@ -3,7 +3,7 @@
 layout: page
 
 title: "Activities"
-blurb: "The quick brown fox jumps over the lazy dog."
+blurb: "Many things are happening under the IDEAS Productivity umbrella..."
 
 ---
 
@@ -15,30 +15,17 @@ blurb: "The quick brown fox jumps over the lazy dog."
 
 {% 	include teasers-4x_img.html 
 		group-title = "Current Activities"
-		group-blurb = "The quick brown fox jumps over the lazy dog."
 
-		title1 = "IDEAS Classic"
+		title1 = "IDEAS-ECP"
 		source1 = "fpo.png"
 		url1 = "www.link.com"
 		blurb1 = "The quick brown fox jumps over the lazy dog."
 
-		title2 = "xSDK"
+		title2 = "IDEAS-Watersheds"
 		source2 = "fpo.png"
 		url2 = "www.link.com"
 		blurb2 = "The quick brown fox jumps over the lazy dog."
-
-		title3 = "IDEAS Watersheds"
-		source3 = "fpo.png"
-		url3 = "www.link.com"
-		blurb3 = "The quick brown fox jumps over the lazy dog."
-
-		title4 = "IDEAS-ECP"
-		source4 = "fpo.png"
-		url4 = "www.link.com"
-		blurb4 = "The quick brown fox jumps over the lazy dog." 
 %}
-
-
 
 
 <!-- Spin Offs -->
@@ -46,25 +33,33 @@ blurb: "The quick brown fox jumps over the lazy dog."
 
 {% 	include teasers-4x_img.html 
 		group-title = "Spin Offs"
-		group-blurb = "The quick brown fox jumps over the lazy dog."
+		group-blurb = "Activities started within an IDEAS project which have taken on a life of their own"
 
-		title1 = "Spin Off"
+		title1 = "xSDK"
 		source1 = "fpo.png"
 		url1 = "www.link.com"
 		blurb1 = "The quick brown fox jumps over the lazy dog."
 
-		title2 = "Spin Off"
+		title2 = "BSSw Fellowship"
 		source2 = "fpo.png"
 		url2 = "www.link.com"
 		blurb2 = "The quick brown fox jumps over the lazy dog."
 
-		title3 = "Spin Off"
+		title3 = "BSSw.io Resource Hub"
 		source3 = "fpo.png"
 		url3 = "www.link.com"
 		blurb3 = "The quick brown fox jumps over the lazy dog."
+%}
 
-		title4 = "Spin Off"
-		source4 = "fpo.png"
-		url4 = "www.link.com"
-		blurb4 = "The quick brown fox jumps over the lazy dog." 
+<!-- Past Activities -->
+<!-- ---------------------------------------------------------------------- -->
+
+{% 	include teasers-4x_img.html 
+		group-title = "Past Activities"
+		group-blurb = "These projects are no longer active"
+
+		title1 = "IDEAS-Classic (2014-2017)"
+		source1 = "ideas-classic/IDEAS-broader-DOE-context.jpg"
+		url1 = "/activities/ideas-classic"
+		blurb1 = "Improving software productivity for terrestrial ecosystem modeling"
 %}

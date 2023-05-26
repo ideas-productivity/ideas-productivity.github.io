@@ -7,6 +7,8 @@ please use hero-page include for hero images
 
 available parameters:
 * source
+- contain
+- half
 - caption
 
 * required
@@ -17,7 +19,13 @@ available parameters:
 
 <div class="media-img">
 	<div class="img-wrapper">
-		<div><img src="/assets/images/{{ include.source }}"></div>
+		<div><img src="/assets/images/{{ include.source }}"
+			{% if include.contain %}
+				style="object-fit: contain;"
+			{% elsif include.half %}
+				style="object-fit: contain; max-width: 50%; max-height: 50%;"
+			{% endif %}		
+		></div>
 	</div>
 
 	{% if include.caption %}

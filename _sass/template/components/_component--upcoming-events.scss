@@ -14,7 +14,7 @@
 	}
 
 	h1 {
-		@include typestyle($sans-md-bld);
+		@include typestyle($sans-lg-reg);
 		display: inline-block;
 		border-bottom: none;
 		@include inline($right:sm);

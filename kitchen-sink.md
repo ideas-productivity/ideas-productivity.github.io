@@ -24,7 +24,7 @@ meta2-value: "<a href='https://ideas-productivity.org/events/'>Name A Name</a>, 
 %}
 
 
-# Hello
+# Hello h1
 
 The *quick brown fox jumps over the lazy dog*. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. **The quick brown fox jumps over the lazy dog**. The quick 1982 [brown fox jumps](https://ideas-productivity.org/ideas-home-page/about-ideas/) over the lazy dog.
 
@@ -36,11 +36,11 @@ The *quick brown fox jumps over the lazy dog*. The quick brown fox jumps over th
 		file-size = "100 kb"
 %}
 
-## Subhead
+## Subhead h2
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
-## Subhead
+## Subhead h2
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -56,7 +56,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
 
-### Subhead
+### Subhead h3
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -73,7 +73,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 
 
-#### Subhead
+#### Subhead h4
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -101,7 +101,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 
 
-##### Subhead
+##### Subhead h5
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -183,7 +183,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 %}
 
 
-###### Subhead
+###### Subhead h6
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
@@ -231,10 +231,30 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+{% 	include media-smimg.html
+		source = "fpo.png"
+		caption = "Small image brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+%}
+
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
 {% 	include teasers-4x_img.html
 		group-title = "Example Teasers"
@@ -267,6 +287,64 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+{% 	include list-4x_img.html
+		group-title = "List, 4x"
+		group-linktext = "Learn More"
+		group-linkurl = "outreach"
+		group-blurb = "Promote scientific software productivity practices and begin to build a community."
+		group-id = "outreach"
+
+		title1 = "David Bernholdt (ORNL)"
+		source1 = "fpo.png"
+		contain1 = true
+		blurb1 = "<em>Focus Area Lead</em>"
+
+		title2 = "Rebecca Hartman-Baker (NERSC)"
+		source2 = "fpo.png"
+
+		title3 = "Lisa Childers (ALCF)"
+		source3 = "fpo.png"
+		blurb3 = "<em>Computing Facility Liaison</em>"
+
+		title4 = "Judy Hill (OLCF)"
+		source4 = "fpo.png"
+		blurb4 = "<em>Computing Facility Liaison</em>"
+%}
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+{% 	include list-6x.html
+		group-title = "List, 6x"
+		group-linktext = "Learn More"
+		group-linkurl = "outreach"
+		group-blurb = "Promote scientific software productivity practices and begin to build a community."
+		group-id = "outreach"
+
+		title1 = "David Bernholdt (ORNL)"
+		source1 = "fpo.png"
+		half1 = true
+		blurb1 = "<em>Focus Area Lead</em>"
+
+		title2 = "Rebecca Hartman-Baker (NERSC)"
+		source2 = "fpo.png"
+
+		title3 = "Lisa Childers (ALCF)"
+		source3 = "fpo.png"
+		blurb3 = "<em>Computing Facility Liaison</em>"
+
+		title4 = "Judy Hill (OLCF)"
+		source4 = "fpo.png"
+		blurb4 = "<em>Computing Facility Liaison</em>"
+
+		title5 = "David Bernholdt (ORNL)"
+		source5 = "fpo.png"
+		contain5 = true
+		blurb5 = "<em>Focus Area Lead</em>"
+
+		title6 = "Rebecca Hartman-Baker (NERSC)"
+		source6 = "fpo.png"
+%}
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
