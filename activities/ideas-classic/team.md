@@ -45,7 +45,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		source2 = "ideas-classic/team/Bartlett-279x300.jpg"
 
 		title3 = "Mark Berrill (ORNL)"
-		source3 = "ideas-classic/team/ORNLlogo-300x150.png"
+		source3 = "logos/institutions/ORNLlogo-300x150.png"
 		contain3 = true
 
 		title4 = "Todd Gamblin (LLNL)"
@@ -187,7 +187,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		blurb1 = "<em>Focus Area Lead</em>"
 
 		title2 = "Rebecca Hartman-Baker (NERSC)"
-		source2 = "ideas-classic/team/NERSClogocolor-1024x688.png"
+		source2 = "logos/facilities/NERSClogocolor.png"
 		contain2 = true
 
 		title3 = "Lisa Childers (ALCF)"

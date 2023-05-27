@@ -92,37 +92,37 @@ The IDEAS Project is composed of an interdisciplinary multi-institutional team (
 
 		title1 = "Argonne National Laboratory"
 		blurb1 = "(Co-lead Institution)"
-		source1 = "ideas-classic/ANL-logo-square-300x267.jpg"
+		source1 = "logos/institutions/ANL-logo-square-300x267.jpg"
 		half1 = "true"
 
 		title2 = "Sandia National Laboratory"
 		blurb2 = "(Co-lead Institution)"
-		source2 = "ideas-classic/SNL_Stacked_Black_Blue-300x115.png"
+		source2 = "logos/institutions/SNL_Stacked_Black_Blue-300x115.png"
 		half2 = "true"
 
 		title3 = "Los Alamos National Laboratory"
-		source3 = "ideas-classic/LANLlogo-300x160.png"
+		source3 = "logos/institutions/LANLlogo-300x160.png"
 		half3 = "true"
 
 		title4 = "Berkeley Lab"
-		source4 = "ideas-classic/BerkeleyLabLogo-300x227.png"
+		source4 = "logos/institutions/BerkeleyLabLogo-300x227.png"
 		half4 = "true"
 %}
 {% include list-4x_img.html
 		title1 = "Lawrence Livermore National Laboratory"
-		source1 = "ideas-classic/LLNLlogo.jpeg"
+		source1 = "logos/institutions/LLNLlogo.jpeg"
 		half1 = "true"
 
 		title2 = "Oak Ridge National Laboratory"
-		source2 = "ideas-classic/ORNLlogo-300x150.png"
+		source2 = "logos/institutions/ORNLlogo-300x150.png"
 		half2 = "true"
 
 		title3 = "Pacific Northwest National Laboratory"
-		source3 = "ideas-classic/PNNLlogo-300x130.jpeg"
+		source3 = "logos/institutions/PNNLlogo-300x130.jpeg"
 		half3 = "true"
 
 		title4 = "Colorado School of Mines"
-		source4 = "ideas-classic/CSMlogo-150x150.jpeg"
+		source4 = "logos/institutions/CSMlogo-150x150.jpeg"
 		half4 = "true"
 %}
 
@@ -131,6 +131,6 @@ The IDEAS Project is composed of an interdisciplinary multi-institutional team (
 This work is supported by the [DOE](http://energy.gov/) [Office of Science](http://science.energy.gov/), Offices of [Advanced Scientific Computing Research](http://science.energy.gov/ascr/) (ASCR) and [Biological Environmental Sciences](http://science.energy.gov/ber/) (BER).
 
 {% 	include media-smimg.html
-		source = "ideas-classic/RGB_Color-Seal_Green-Mark_SC_Horizontal-300x50.png"
+		source = "logos/doe/RGB_Color-Seal_Green-Mark_SC_Horizontal-300x50.png"
 		contain = true
 %}
