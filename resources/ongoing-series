@@ -13,7 +13,7 @@
 		url2 = "/series/bssw-tutorials"
 		blurb2 = "The Better Scientific Software (BSSw) tutorials focus on issues of developer productivity, software sustainability, and reproducibility in scientific research software, particularly targeting high-performance computers."
 
-		title3 = "Technical Meetings and Birds-of-a-Feather Sessions"
-		url3 = "/series/technical-meetings-and-birds-of-a-feather-sessions"
+		title3 = "Technical Sessions and Meetings"
+		url3 = "/series/technical-sessions-and-meetings"
 		blurb3 = "Creating opportunities to talk about software development, productivity, and sustainability as part of larger meetings or standalone." 
 %}
