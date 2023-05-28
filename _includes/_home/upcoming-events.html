@@ -35,8 +35,8 @@ available parameters:
 	{% assign today = site.time | date:"%Y-%m-%d" %}
 	{% assign sorted = site.events | where_exp: "item", "item.startdate >= today" | sort: 'startdate'  %}
 
-	<ul class="event-list">
-		
+		{% if sorted and sorted.size != 0 %}
+		<ul class="event-list">
 		{% for event in sorted limit: 3 %}
 			<li>	
 				<a href="{{ event.url }}" class="event-link">
@@ -59,8 +59,9 @@ available parameters:
 			  <small class="event-series">Series: {{ event.series }}</small> 
 			</li>
 		{% endfor %}
-		
 	</ul>
-
-
+	{% else %}
+	<p>No events found</p>
+	{% endif %}
+	
 </div>

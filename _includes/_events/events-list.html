@@ -19,6 +19,7 @@
 			</div>
 		{% endif %}
 
+		{% if sorted and sorted.size != 0 %}
 		<ul class="list">
 			{% for event in sorted %}
 				{% unless event.subevent %}
@@ -105,6 +106,9 @@
 				{% endunless %}
 			{% endfor %}
 		</ul>
+		{% else %}
+		<p>No events found</p>
+		{% endif %}
 
 		<div class="pagination-wrapper">
 			<ul id="js-pagination" class="pagination"></ul>
