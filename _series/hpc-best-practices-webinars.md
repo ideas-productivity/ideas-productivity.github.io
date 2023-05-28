@@ -1,7 +1,4 @@
 ---
-
-layout: page
-
 title: "HPC Best Practices Webinars"
 #blurb: "The quick brown fox jumps over the lazy dog."
 

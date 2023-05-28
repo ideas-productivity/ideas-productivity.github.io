@@ -1,7 +1,4 @@
 ---
-
-layout: page
-
 title: "Strategies for Working Remotely Panels"
 blurb: "This series has concluded"
 

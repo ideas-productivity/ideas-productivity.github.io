@@ -45,7 +45,17 @@ collections:
     output: true
     permalink: /impact/:slug
 
-
+defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+  - scope:
+      path: ""
+      type: "series"
+    values:
+      layout: "page"
 
 # Site configuration for the Jekyll 3 Pagination Gem
 # gems:
