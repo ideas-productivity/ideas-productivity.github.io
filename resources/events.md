@@ -5,34 +5,12 @@ layout: page
 title: "Events"
 
 ---
+Events organized by the IDEAS Productivity project are organized into several series, some of which are ongoing, others of which may have concluded.  Select a series to see events in that particular series.  Scroll down for the complete list of upcoming events and a link to past events and concluded series.
 
-
-
-
-<!-- Ongoing Series -->
-<!-- ---------------------------------------------------------------------- -->
-
-{% 	include teasers-4x_noimg.html 
-		group-title = "Ongoing Series"
-		group-blurb = "The quick brown fox jumps over the lazy dog."
-
-		title1 = "Series"
-		url1 = "/series/series-A"
-		blurb1 = "The quick brown fox jumps over the lazy dog."
-
-		title2 = "Series"
-		url2 = "/series/series-A"
-		blurb2 = "The quick brown fox jumps over the lazy dog."
-
-		title3 = "Series"
-		url3 = "/series/series-A"
-		blurb3 = "The quick brown fox jumps over the lazy dog." 
-%}
-
-
-
+{% include_relative ongoing-series %}
 
 <!-- Event List -->
-<!-- ---------------------------------------------------------------------- -->
 
-{% 	include _events/events-list.html %}
+{% include _events/events-list.html %}
+
+{% include text-biglink.html blurb = "See past events and concluded series" url = "/resources/past-events" %}

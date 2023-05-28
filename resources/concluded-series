@@ -1,0 +1,16 @@
+<!-- Concluded Series -->
+
+{% 	include teasers-4x_noimg.html 
+		group-title = "Concluded Series"
+
+		title1 = "Performance Portability & ECP"
+		url1 = "/series/performance-portability-ecp"
+        blurb1 = "Experiences of projects in the Exascale Computing Project Application Development with performance portability -- how they've handled it and the outcomes they've realized."
+		
+		title2 = "Strategies for Working Remotely"
+		url2 = "/series/strategies-for-working-remotely"
+		blurb2 = "Exploring strategies for working remotely, with emphasis on how HPC teams can be effective and efficient in long-term hybrid settings."
+%}
+
+
+

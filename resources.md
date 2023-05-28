@@ -2,31 +2,25 @@
 
 layout: page
 
-title: "Resourcers"
-blurb: "The quick brown fox jumps over the lazy dog."
+title: "Resources"
+#blurb: "The quick brown fox jumps over the lazy dog."
 
 ---
 
-
-
-
-<!-- Page Content -->
-<!-- ---------------------------------------------------------------------- -->
-
 # Events
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+The IDEAS Productivity project organizes many events for the communities in which they participate.  Events are organized into several series, some of which are ongoing, others of which may have concluded.
 
-<a href="#">Upcoming Events</a>
 
-<a href="#">Past Events</a>
+[Upcoming Events and Ongoing Series](/resources/events)
 
+[Past Events (All Series)](/resources/past-events)
 
 # Tools and practices
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
-<a href="#">Resources produced by IDEAS</a>
+[Resources produced by IDEAS](/resources/tools-and-practices)
 
 <br>
 
@@ -34,6 +28,6 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 <!-- ---------------------------------------------------------------------- -->
 
 {% 	include text-biglink.html 
-		text = "visit BSSw for more resources"
+		blurb = "Visit BSSw for more resources"
 		url = "https://bssw.io/"
 %}
