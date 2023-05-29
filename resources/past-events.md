@@ -14,4 +14,4 @@ Events organized by the IDEAS Productivity project are organized into several se
 
 {% include_relative concluded-series %}
 
-{% 	include _events/pastevents-list.html %}
+{% 	include _events/events-list.html past=true %}

@@ -26,7 +26,7 @@ published: true
 {% 	include _layout/sidebar-events.html 
   startdate = page.startdate
   time = page.time
-  meta1-name = "Panalists"
+  meta1-name = "Panelists"
   meta1-value = "Scott Callaghan (University of Southern California), Fernanda Foertter (Voltron Data), Julia Mullen (MIT Lincoln Laboratory)"
   meta2-name = "Moderator"
   meta2-value = "Elaine Raybourn (Sandia National Laboratories)"

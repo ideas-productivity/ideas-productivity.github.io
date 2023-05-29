@@ -6,8 +6,26 @@
 
 	<!-- Query the events -->
 	{% assign today = site.time | date:"%Y-%m-%d" %}
-	{% assign sorted = site.events | where_exp: "item", "item.startdate >= today" | sort:"startdate"  %}
 
+{% comment %}
+Interpreting dates
+
+s = startdate, e = enddate, t = today
+situation			result		inequalities	enddate absent
+s--e t				past		s < t, e < t	s < t
+t s--e				upcoming	s >= t, e >= t	s >=t
+s-t-e (in progress)	upcoming	s < t, e >= t	impossible
+
+An event can be considered to be past iff both startdate and enddate are in the past. If there is an endate we have to check it to be certain the event is not in progress (which we interpret as upcoming because there are still some dates upcoming).
+{% endcomment %}
+
+	{% if include.past %}
+		{% assign enddate = site.events | where_exp: "item", "item.startdate < today and item.enddate < today" %}
+		{% assign noenddate = site.events | where_exp: "item", "item.enddate == nil" | where_exp: "item", "item.startdate < today" %}
+		{% assign sorted = enddate | concat: noenddate | sort:"startdate" | reverse %}
+	{% else %}
+		{% assign sorted = site.events | where_exp: "item", "item.startdate >= today or item.enddate >= today" | sort:"startdate"  %}
+	{% endif %}
 
 	<!-- List Markup -->
 	<div class="eventlist-wrapper" id="js-upcoming-events">
@@ -62,7 +80,6 @@
 					  	</small> 
 					  {% endif %}
 
-
 					  {% if event.subevents %}
 					  	<ul class="subevents">
 						  	{% for subslug in event.subevents %}
@@ -113,9 +130,5 @@
 		<div class="pagination-wrapper">
 			<ul id="js-pagination" class="pagination"></ul>
 		</div>
-
 	</div>
-
-
-
 </div>
