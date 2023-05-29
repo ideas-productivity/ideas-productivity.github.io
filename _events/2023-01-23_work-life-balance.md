@@ -10,6 +10,7 @@ time: "3:00pm–4:15pm EST"
 type: "Webinar" 
 series:
   - "Strategies for Working Remotely"
+  - "Performance Portability & ECP"
 meta1-name: "Series"
 meta1-value: "<a href='#'>Strategies for Working Remotely</a>"
 

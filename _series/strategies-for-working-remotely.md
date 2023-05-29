@@ -1,8 +1,8 @@
 ---
-title: "Strategies for Working Remotely Panels"
+title: "Strategies for Working Remotely"
 blurb: "This series has concluded"
 
-series: "Strategies for Working Remotely Panels"
+series: "Strategies for Working Remotely"
 ---
 
 <!-- Extended Description -->

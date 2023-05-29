@@ -6,7 +6,10 @@ title: "Managing Academic Software Development"
 startdate: "2023-08-09"
 time: "3:00pm EST"
 
-type: "Webinar" 
+type: "Webinar"
+series:
+  - "HPC Best Practices Webinars"
+  - "Strategies for Working Remotely"
 
 published: true
 

@@ -12,11 +12,11 @@ title: "Event Series"
 Events organized by the IDEAS Productivity project are organized into several series, some of which are ongoing, others of which may have concluded.  Select a series to see events in that particular series or follow the links to the main pages for all upcoming or past events.
 
 {% include_relative resources/ongoing-series
-	linktext = "See upcoming events"
+	linktext = "see upcoming events"
 	linkurl = "/resources/events"
 %}
 
 {% include_relative resources/concluded-series 
-	linktext = "See past events"
+	linktext = "see past events"
 	linkurl = "/resources/past-events"
 %}

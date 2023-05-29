@@ -8,7 +8,7 @@ enddate: "2023-06-04"
 type: Minisymposium 
 series: 
   - "Technical Sessions and Meetings"
-  - "Performance Portability & ECP"
+  - "BSSw Tutorials"
 meta1-name: "Series"
 meta1-value: "<a href='/series/performance-portability-ecp'>Performance Portability & ECP</a>, <a href='/series/technical-sessions-and-meetings'>Technical Sessions and Meetings</a>"
 meta2-name: "Part of"

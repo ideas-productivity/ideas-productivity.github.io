@@ -1,11 +1,8 @@
 ---
-
-layout: page
-
 title: "Technical Sessions and Meetings"
 #blurb: "The quick brown fox jumps over the lazy dog."
 
-series: "Technical Meetings and BoFs"
+series: "Technical Sessions and Meetings"
 ---
 
 <!-- Extended Description -->
