@@ -14,7 +14,11 @@
   	<ul class="subevents">
 	  	{% for slug in include.events %}
 	  	{% assign sub = site.events | where: 'slug', slug %}
-	  		<li>
+		  {% if event.link-id %}
+		  <li id="{{ sub[0].link-id }}">
+		  {% else %}
+		  <li>	
+		  {% endif %}	
 	  			<a href="{{ sub[0].url }}" class="subevent-link">
 	  				<h3 class="subevent-title">
 		  				{{ sub[0].title }}

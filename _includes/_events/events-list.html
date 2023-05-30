@@ -41,7 +41,11 @@ An event can be considered to be past iff both startdate and enddate are in the 
 		<ul class="list">
 			{% for event in sorted %}
 				{% unless event.subevent %}
-		  		<li>	
+				{% if event.link-id %}
+				<li id="{{ event.link-id }}">
+				{% else %}
+				<li>	
+				{% endif %}	
 						<a href="{{ event.url }}" class="event-link">
 						  <h2 class="event-title">{{ event.title }}</h2>
 						  <p class="event-date">

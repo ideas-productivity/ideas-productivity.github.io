@@ -24,7 +24,11 @@
 		{% if sorted and sorted.size != 0 %}
 		<ul class="list">
 			{% for event in sorted %}
-	  		<li>	
+			{% if event.link-id %}
+			<li id="{{ event.link-id }}">
+			{% else %}
+			<li>	
+			{% endif %}	
 					<a href="{{ event.url }}" class="event-link">
 					  <h2 class="event-title">{{ event.title }}</h2>
 					  <p class="event-date">
