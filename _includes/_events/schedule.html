@@ -39,7 +39,7 @@
 		  			</small>
 		  		</a>
 		  		<small class="subevent-series">
-		  			{{ sub[0].series | array_to_sentence_string: "," }}
+		  			{{ sub[0].series | join: ", " }}
 		  		</small>
 		  	</li>
 	  	{% endfor %}

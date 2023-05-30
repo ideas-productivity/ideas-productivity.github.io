@@ -44,17 +44,7 @@
 				  {% if event.series %}
 							{% assign length = event.series | size %}
 					  	<small class="event-series">Series: 
-					  		{% if length > 1 %}
-						  		{% for item in event.series %}
-						  			{% if forloop.index < length %}
-						  				{{ item }}, 
-						  			{% else %}
-						  				{{ item }}
-						  			{% endif %}	
-						  		{% endfor %}
-						  	{% else %}
-						  		{{ event.series[0] }}
-						  	{% endif %}
+							{{ event.series | join: ", " }}
 					  	</small> 
 					  {% endif %}
 				</li>

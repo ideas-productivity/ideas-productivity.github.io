@@ -66,17 +66,7 @@ An event can be considered to be past iff both startdate and enddate are in the 
 						{% if event.series %}
 							{% assign length = event.series | size %}
 					  	<small class="event-series">Series: 
-					  		{% if length > 1 %}
-						  		{% for item in event.series %}
-						  			{% if forloop.index < length %}
-						  				{{ item }}, 
-						  			{% else %}
-						  				{{ item }}
-						  			{% endif %}	
-						  		{% endfor %}
-						  	{% else %}
-						  		{{ event.series[0] }}
-						  	{% endif %}
+							  {{ event.series | join: ", " }}
 					  	</small> 
 					  {% endif %}
 
@@ -102,17 +92,7 @@ An event can be considered to be past iff both startdate and enddate are in the 
 							  			{% if sub[0].series %}
 												{% assign sublength = sub[0].series | size %}
 										  	<small class="subevent-series">Series: 
-										  		{% if sublength > 1 %}
-											  		{% for item in sub[0].series %}
-											  			{% if forloop.index < sublength %}
-											  				{{ item }}, 
-											  			{% else %}
-											  				{{ item }}
-											  			{% endif %}	
-											  		{% endfor %}
-											  	{% else %}
-											  		{{ sub[0].series[0] }}
-											  	{% endif %}
+												{{ sub[0].series | join: ", " }}
 										  	</small> 
 										  {% endif %}
 							  	</li>
