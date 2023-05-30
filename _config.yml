@@ -34,6 +34,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-pluralize
+  - jekyll-redirect-from
 #  - flexible_include # We do use this, but it is not a gem
 
 collections:

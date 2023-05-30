@@ -3,6 +3,11 @@ title: "HPC Best Practices Webinars"
 #blurb: "The quick brown fox jumps over the lazy dog."
 
 series: "HPC Best Practices Webinars"
+
+# This will redirect old links to the Wordpress site to the right page, at least.
+# With additional work, it may be possible to get the fragment id (specific event entry)
+# to work.  Tracking this in https://github.com/ideas-productivity/ideas-productivity.github.io/issues/18
+redirect_from: /events/hpc-best-practices-webinars
 ---
 
 <!-- Extended Description -->
