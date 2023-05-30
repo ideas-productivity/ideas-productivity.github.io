@@ -10,6 +10,7 @@ meta1-value: "<a href='/series/strategies-for-working-remotely'>Strategies for W
 subevent: true
 published: true
 
+link-id: panel015
 
 # event-type: swr-panel
 # event-id: 15

@@ -12,6 +12,7 @@ meta2-value: "<a href='/events/20211114-sc21-conference'>SC21</a>"
 subevent: true
 published: true
 
+link-id: panel012
 
 # event-type: swr-panel
 # event-id: 12
