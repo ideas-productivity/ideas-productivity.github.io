@@ -22,9 +22,18 @@
 		  			<p class="subevent-time">
 		  				{{ sub[0].time }}
 		  			</p>
-		  			<small class="subevent-date">
-		  				{{ sub[0].date | date:"%b %d" }}
-		  			</small>
+					<small class="subevent-date">
+						{{ sub[0].startdate | date:"%b %d" }}
+						{% assign startmo = sub[0].startdate | date:"%b" %}
+						{% assign endmo = sub[0].enddate | date:"%b" %}
+						{% if sub[0].enddate %}
+						{% if startmo == endmo %}
+						–{{ sub[0].enddate | date:"%d" }}
+						{% else %}
+						–{{ sub[0].enddate | date:"%b %d" }}
+						{% endif %}
+						{% endif %}
+					</small>
 		  			<small class="subevent-type">
 		  				{{ sub[0].type }}
 		  			</small>
