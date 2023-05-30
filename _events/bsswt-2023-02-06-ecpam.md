@@ -103,10 +103,10 @@ meta1-name = "Presenter"
 meta1-value = page.presenter
 meta2-name = "Recording"
 meta2-value = "<a href='https://www.youtube.com/watch?v=7G2jjJ403gY'>YouTube</a>"
-meta2-name ="Presentation Slides"
-meta2-value = "<a href='10.6084/m9.figshare.21989507'>FigShare</a>"
-meta3-name = "Tutorial Archive"
-meta3-value = "<a href='https://bssw-tutorial.github.io/2023-02-06-ecpam/'>webpage</a>"
+meta3-name ="Presentation Slides"
+meta3-value = "<a href='10.6084/m9.figshare.21989507'>FigShare</a>"
+meta4-name = "Tutorial Archive"
+meta4-value = "<a href='https://bssw-tutorial.github.io/2023-02-06-ecpam/'>webpage</a>"
 %}
 
 {%  include media-video.html
