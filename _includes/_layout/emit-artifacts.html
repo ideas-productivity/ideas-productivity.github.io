@@ -1,0 +1,58 @@
+{% comment %}
+  emit-artifacts.html: generate a pretty representation of the artifacts data structure.
+  The output can be formatted either as a row (default) or HTML list items.
+
+  row example: "label1 (format1) | label2 (format2) | ..."
+  li example: "<li>label1 (format1)</li><li>label2 (format2)</li>..."
+    with labels linking to URLs (if provided)
+    and an optional note which appears after the label, before the format
+
+  arguments:
+    `artifacts`: is a sequence containing the artifact information
+    `format`: must be either "row" or "li" (optional, default: "row", anything other than "li" is interpreted as "row" )
+    `yt-url`: base URL to watch (not embed) a YouTube video (optional, default: site.youtube-watch-url)
+    `gh-url`: base URL for GitHub repositories (optional, default: site.github-url)
+    `doi-url`: URL for the DOI resolver (optional, default: site.doi.resolver-url)
+
+  notes:
+    Note that the row format uses vertical bars ("|") as separators.  Unfortunately, in a Markdown
+    document, these are interpreted as marking table cells.  In this context, they either need to be
+    escaped ("\|"), which would require modifications to this include, or need to be placed into a
+    context that forces them to be interpreted as HTML (for example, within paragraph tags ("<p></p>"))
+
+  Expected data structure
+    artifacts:
+      - label:
+        url: or yt-video-id: or gh-repo: or doi: (optional)
+        note: (optional)
+        format: (optional)
+        status: (only for doi, should be `reserved` or `published`)
+
+  Note: does not check validity of data structure.
+  For that use validate-artifact include
+ {% endcomment %}
+
+{%- if include.format == "li" -%}
+    {%- assign row=false -%}
+{%- else -%}
+    {%- assign row = true -%}
+{%- endif -%}
+
+{%- for i in include.artifacts -%}
+{%- if i.status == "published" or i.status == nil -%}
+  {%- unless row -%}<li><h4>{%- endunless -%}
+    {%- if i.yt-video-id -%}<a href="{{ include.yt-url | default: site.youtube-watch-url }}{{ i.yt-video-id }}">
+    {%- elsif i.gh-repo -%}<a href="{{ include.gh-url | default: site.github-url }}/{{ i.gh-repo }}">
+    {%- elsif i.doi -%}<a href="{{ include.doi-url | default: site.doi-resolver-url }}/{{ i.doi }}">
+    {%- elsif i.url -%}<a href="{{ i.url }}">{%- endif -%}
+    {{ i.label }}
+    {%- if i.yt-video-id or i.gh-repo or i.doi or i.url -%}</a>{%- endif -%}
+    {%- if i.note %} {{ i.note }}{%- endif -%}
+    {%- if i.format %} ({{ i.format }}){%- endif -%}
+    {% if row -%}
+      {%- unless forloop.last %} | {% endunless -%}
+    {%- else -%}
+    </h4></li>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}

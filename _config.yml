@@ -83,3 +83,12 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# For use with event artifacts (and perhaps elsewhere)
+# Base URLs
+doi-resolver-url: https://doi.org
+github-url: https://github.com
+
+# Base URLs for watching and embedding YouTube videos
+youtube-watch-url: https://www.youtube.com/watch?v=
+youtube-embed-url: https://www.youtube.com/embed/

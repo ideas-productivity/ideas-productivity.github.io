@@ -1,0 +1,65 @@
+<!-- 
+
+NAV, SIDEBAR
+
+-------------------------------------------------------------------------------
+
+available parameters:
+* startdate
+* time
+- enddate
+- meta1-name
+- meta1-value
+- meta2-name
+- meta2-value
+- meta3-name
+- meta3-value
+- meta4-name
+- meta4-value
+- meta5-name
+- meta5-value
+- meta6-name
+- meta6-value
+- meta7-name
+- meta7-value
+- meta8-name
+- meta8-value
+
+
+* required
+
+-------------------------------------------------------------------------------
+
+-->
+
+{% assign year = include.startdate | date:"%Y" %}
+{% assign date-start = include.startdate | date:"%b %d" %}
+{% assign startmo = include.startdate | date:"%b"  %}
+{% assign endmo = include.enddate | date:"%b"  %}
+{% if include.enddate %}
+	{% if startmo == endmo %}
+		{% assign date-end = include.enddate | date:"%d" %}
+	{% else %}
+		{% assign date-end = include.enddate | date:"%b %d" %}
+	{% endif %}
+{% endif %}
+
+
+<div class="sidebar-events">
+	<small class="sidebar-year">{{ year }}</small>
+	{% if include.enddate %}
+		<h3 class="sidebar-date">{{ date-start }}-{{ date-end }}</h3>
+	{% else %}
+		<h3 class="sidebar-date">{{ date-start }}</h3>
+	{% endif %}
+	<p class="sidebar-time">{{ include.time }}</p>
+
+	<hr>
+
+	<ul>
+		{% include _layout/emit-artifacts.html artifacts=page.artifacts format="li" %}
+	</ul>
+</div>
+
+
+
