@@ -15,6 +15,7 @@ blurb: "Improving software productivity for terrestrial ecosystem modeling"
 
 {% include_relative nav-sidebar current="About" %}
 
+
 <!-- Content -->
 <!-- ---------------------------------------------------------------------- -->
 
@@ -90,40 +91,38 @@ The IDEAS Project is composed of an interdisciplinary multi-institutional team (
 		group-linkurl = "team"
 		group-blurb = "The IDEAS-Classic team includes participants from the following institutions. Follow the \"Learn More\" link for details."
 
-		title1 = "Argonne National Laboratory"
-		blurb1 = "(Co-lead Institution)"
-		source1 = "logos/institutions/ANL-logo-square-300x267.jpg"
-		half1 = "true"
+		source1 = "logos/institutions/argonne.png"
+		contain1 = true
+		scale1 = ".8"
 
-		title2 = "Sandia National Laboratory"
-		blurb2 = "(Co-lead Institution)"
 		source2 = "logos/institutions/SNL_Stacked_Black_Blue-300x115.png"
-		half2 = "true"
+		contain2 = true
+		scale2 = ".8"
 
-		title3 = "Los Alamos National Laboratory"
 		source3 = "logos/institutions/LANLlogo-300x160.png"
-		half3 = "true"
+		contain3 = true
+		scale3 = ".9"
 
-		title4 = "Berkeley Lab"
-		source4 = "logos/institutions/BerkeleyLabLogo-300x227.png"
-		half4 = "true"
+		source4 = "logos/institutions/berkeley.png"
+		contain4 = true
+		scale4 = ".9"
 %}
 {% include list-4x_img.html
-		title1 = "Lawrence Livermore National Laboratory"
 		source1 = "logos/institutions/LLNLlogo.jpeg"
-		half1 = "true"
+		contain1 = true
+		scale1 = ".9"
 
-		title2 = "Oak Ridge National Laboratory"
 		source2 = "logos/institutions/ORNLlogo-300x150.png"
-		half2 = "true"
+		contain2 = true
+		scale2 = ".75"
 
-		title3 = "Pacific Northwest National Laboratory"
 		source3 = "logos/institutions/PNNLlogo-300x130.jpeg"
-		half3 = "true"
+		contain3 = true
+		scale3 = ".9"
 
-		title4 = "Colorado School of Mines"
-		source4 = "logos/institutions/CSMlogo-150x150.jpeg"
-		half4 = "true"
+		source4 = "logos/institutions/csm.png"
+		contain4 = true
+		scale4 = ".9"
 %}
 
 ## Sponsor

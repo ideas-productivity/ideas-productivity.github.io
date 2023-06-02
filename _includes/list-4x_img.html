@@ -10,35 +10,46 @@ available parameters:
 - group-linkurl
 - group-blurb
 - group-id (anchor for direct links)
-* title1
+- title1
 - source1
 - contain1
-- half1
+- cover1
+- scale1
 - blurb1
 - title2
 - source2
 - contain2
-- half2
+- cover2
+- scale2
 - blurb2
 - title3
 - source3
 - contain3
-- half3
+- cover3
+- scale3
 - blurb3
 - title4
 - source4
 - contain4
-- half4
+- cover4
+- scale4
 - blurb4
 
 * required
 
 This include lays out the list group four-across.  The input parameters are positional, meaning that if you supply parameters only for items 2 and 4, they will appear as the second and fourth items in the teaser group with gaps in between.
 
+Images are included at their original size by default. To have the image scale and crop to fill the space use the cover parameter, if you would like the image to be contained within the space use the contain parameter. You can also provide a decimal scale to size the image. For contained images this will set the the percentage of the area the image will cover, for the default sizing it will scale the image according to itself.
+
 -------------------------------------------------------------------------------
 
 -->
 
+
+
+
+<!-- INTRO -->
+<!-- ---------------------------------------------------------------------- -->
 
 <div class="list-4x">
 
@@ -68,85 +79,57 @@ This include lays out the list group four-across.  The input parameters are posi
 	</div>	
 
 
-	{% if include.title1 %}
-		<div class="item1">
-			{% if include.source1 %}
-				<div class="img-wrapper1">
-					<div><img src="/assets/images/{{ include.source1 }}"
-						{% if include.contain1 %}
-							style="object-fit: contain;"
-						{% elsif include.half1 %}
-							style="object-fit: contain; max-width: 50%; max-height: 50%;"
-						{% endif %}		
-					></div>
-				</div>
-			{% endif %}	
-			<h2>{{ include.title1 }}</h2>
-			{% if include.blurb1 %}
-				<p>{{ include.blurb1 }}</p>
-			{% endif %}	
-		</div>
-	{% endif %}
 
-	{% if include.title2 %}
-		<div class="item2">
-			{% if include.source2 %}
-				<div class="img-wrapper2">
-					<div><img src="/assets/images/{{ include.source2 }}"
-						{% if include.contain2 %}
-							style="object-fit: contain;"
-						{% elsif include.half2 %}
-							style="object-fit: contain; max-width: 50%; max-height: 50%;"
-						{% endif %}		
-					></div>
-				</div>
-			{% endif %}	
-			<h2>{{ include.title2 }}</h2>
-			{% if include.blurb2 %}
-				<p>{{ include.blurb2 }}</p>
-			{% endif %}	
-		</div>
-	{% endif %}
 
-	{% if include.title3 %}
-		<div class="item3">
-			{% if include.source3 %}
-				<div class="img-wrapper3">
-					<div><img src="/assets/images/{{ include.source3 }}"
-						{% if include.contain3 %}
-							style="object-fit: contain;"
-						{% elsif include.half3 %}
-							style="object-fit: contain; max-width: 50%; max-height: 50%;"
-						{% endif %}		
-					></div>
-				</div>
-			{% endif %}	
-			<h2>{{ include.title3 }}</h2>
-			{% if include.blurb3 %}
-				<p>{{ include.blurb3 }}</p>
-			{% endif %}	
-		</div>
-	{% endif %}
 
-	{% if include.title4 %}
-		<div class="item4">
-			{% if include.source4 %}
-				<div class="img-wrapper4">
-					<div><img src="/assets/images/{{ include.source4 }}"
-						{% if include.contain4 %}
-							style="object-fit: contain;"
-						{% elsif include.half4 %}
-							style="object-fit: contain; max-width: 50%; max-height: 50%;"
-						{% endif %}		
-					></div>
-				</div>
-			{% endif %}	
-			<h2>{{ include.title4 }}</h2>
-			{% if include.blurb4 %}
-				<p>{{ include.blurb4 }}</p>
-			{% endif %}	
-		</div>
-	{% endif %}
+<!-- ITEMS -->
+<!-- ---------------------------------------------------------------------- -->
+	{% for i in (1..4)%}
+
+		{% assign title   = 'title'   | append: i %}
+		{% assign source  = 'source'  | append: i %}
+		{% assign cover   = 'cover'   | append: i %}
+		{% assign contain = 'contain' | append: i %}
+		{% assign scale   = 'scale'   | append: i %}
+		{% assign blurb   = 'blurb'   | append: i %}
+
+
+		{% if include.[title] or include.[source] %}
+			<div class="item{{i}}">
+				{% if include.[source] %}
+					<div class="img-wrapper{{i}}">
+						<div><img src="/assets/images/{{ include.[source] }}"
+							{% if include.[cover] %}
+								style="object-fit: cover;"
+							{% elsif include.[cover] %}
+								style="object-fit: contain;
+								{% if include.[scale] %}
+									max-height: calc( {{ include.[scale] }}% * 100 );
+									max-width: calc( {{ include.[scale] }}% * 100 );
+								{% endif %}	
+								"
+							{% else %}
+								style="object-fit: initial;
+								{% if include.[scale] %}
+									-ms-transform: translate(-50%, -50%) scale( {{ include.[scale] }} );
+									transform: translate(-50%, -50%) scale( {{ include.[scale] }} );
+								{% endif %}	
+								"
+							{% endif %}		
+						></div>
+					</div>
+				{% endif %}	
+				<h2>{{ include.[title] }}</h2>
+				{% if include.[blurb] %}
+					<p>{{ include.[blurb] }}</p>
+				{% endif %}	
+			</div>
+		{% endif %}
+
+	{% endfor %}
+
+
+
 
 </div>
 
