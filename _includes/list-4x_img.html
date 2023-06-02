@@ -100,9 +100,15 @@ Images are included at their original size by default. To have the image scale a
 					<div class="img-wrapper{{i}}">
 						<div><img src="/assets/images/{{ include.[source] }}"
 							{% if include.[cover] %}
-								style="object-fit: cover;"
-							{% elsif include.[cover] %}
-								style="object-fit: contain;
+								style="
+								width: 100%;
+								height: 100%;
+								object-fit: cover;"
+							{% elsif include.[contain] %}
+								style="
+								width: 100%;
+								height: 100%;
+								object-fit: contain;
 								{% if include.[scale] %}
 									max-height: calc( {{ include.[scale] }}% * 100 );
 									max-width: calc( {{ include.[scale] }}% * 100 );
@@ -115,7 +121,7 @@ Images are included at their original size by default. To have the image scale a
 									transform: translate(-50%, -50%) scale( {{ include.[scale] }} );
 								{% endif %}	
 								"
-							{% endif %}		
+							{% endif %}	
 						></div>
 					</div>
 				{% endif %}	

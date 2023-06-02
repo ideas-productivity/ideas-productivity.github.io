@@ -93,22 +93,28 @@ second and fourth items in the teaser group with gaps in between.
 				<div class="img-wrapper{{i}}">
 					<div><img src="/assets/images/{{ include.[source] }}"
 						{% if include.[cover] %}
-							style="object-fit: cover;"
-						{% elsif include.[cover] %}
-							style="object-fit: contain;
-							{% if include.[scale] %}
-								max-height: calc( {{ include.[scale] }}% * 100 );
-								max-width: calc( {{ include.[scale] }}% * 100 );
-							{% endif %}	
-							"
-						{% else %}
-							style="object-fit: initial;
-							{% if include.[scale] %}
-								-ms-transform: translate(-50%, -50%) scale( {{ include.[scale] }} );
-								transform: translate(-50%, -50%) scale( {{ include.[scale] }} );
-							{% endif %}	
-							"
-						{% endif %}	
+								style="
+								width: 100%;
+								height: 100%;
+								object-fit: cover;"
+							{% elsif include.[contain] %}
+								style="
+								width: 100%;
+								height: 100%;
+								object-fit: contain;
+								{% if include.[scale] %}
+									max-height: calc( {{ include.[scale] }}% * 100 );
+									max-width: calc( {{ include.[scale] }}% * 100 );
+								{% endif %}	
+								"
+							{% else %}
+								style="object-fit: initial;
+								{% if include.[scale] %}
+									-ms-transform: translate(-50%, -50%) scale( {{ include.[scale] }} );
+									transform: translate(-50%, -50%) scale( {{ include.[scale] }} );
+								{% endif %}	
+								"
+							{% endif %}		
 					></div>
 				</div>
 				<h2>{{ include.[title] }}</h2>

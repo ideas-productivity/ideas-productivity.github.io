@@ -7,7 +7,8 @@ MEDIA, HERO IMAGE
 available parameters:
 * source
 - contain
-- half
+- cover
+- scale
 - caption
 
 * required
@@ -19,11 +20,29 @@ available parameters:
 <div class="hero-img">
 	<div class="img-wrapper">
 		<div><img src="/assets/images/{{ include.source }}"
-			{% if include.contain %}
-				style="object-fit: contain;"
-			{% elsif include.half %}
-				style="object-fit: contain; max-width: 50%; max-height: 50%;"
-			{% endif %}		
+			{% if include.cover %}
+				style="
+				width: 100%;
+				height: 100%;
+				object-fit: cover;"
+			{% elsif include.contain %}
+				style="
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				{% if include.scale %}
+					max-height: calc( {{ include.scale }}% * 100 );
+					max-width: calc( {{ include.scale }}% * 100 );
+				{% endif %}	
+				"
+			{% else %}
+				style="object-fit: initial;
+				{% if include.scale %}
+					-ms-transform: translate(-50%, -50%) scale( {{ include.scale }} );
+					transform: translate(-50%, -50%) scale( {{ include.scale }} );
+				{% endif %}	
+				"
+			{% endif %}			
 		></div>
 	</div>
 	<small class="caption">{{ include.caption }}</small>
