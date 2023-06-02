@@ -18,9 +18,33 @@ blurb: "Extreme-scale Scientific Software Development Kit"
     source2 = "xsdk/use-case-collage.004-300x225.png"
 	contain2 = "true"
     caption2 = "Integrated surface-subsurface hydrology simulations of river meanders require the combined use of xSDK packages."
+	caption1 = "This is a fake caption just to make see what things look like on the other side of the page.  I am curious."
 %}
 
+{% 	include media-img2x.html 
+	  source1 = "xsdk/xsdk_logo_COLOR_large.png"
+	  contain1 = "true"	
+    source2 = "xsdk/use-case-collage.004-300x225.png"
+	contain2 = "true"
+	caption1 = "This is a fake caption just to make see what things look like on the other side of the page.  I am curious."
+%}
 
+{% 	include media-img2x.html 
+	  source1 = "xsdk/xsdk_logo_COLOR_large.png"
+	  contain1 = "true"	
+    source2 = "xsdk/use-case-collage.004-300x225.png"
+	contain2 = "true"
+    caption2 = "Integrated surface-subsurface hydrology simulations of river meanders require the combined use of xSDK packages."
+%}
+
+{% 	include media-img2x.html 
+	  source1 = "xsdk/xsdk_logo_COLOR_large.png"
+	  contain1 = "true"	
+    source2 = "xsdk/use-case-collage.004-300x225.png"
+	contain2 = "true"
+    caption2 = "Surface-subsurface hydrology simulations."
+	caption1 = "Fake caption."
+%}
 
 # Software communities
 
