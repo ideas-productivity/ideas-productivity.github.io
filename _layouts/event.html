@@ -178,10 +178,44 @@
         {% endif %}
       {% endfor %}
 
-      <h1>{{ page.presenters | size | pluralize: "Presenter Bio", "Presenter Bios" }}</h1>
-      {% for person in page.presenters %}
-        <p>{{ person.bio | markdownify }}</p>
+      {% if bios > 0 %}
+        <h1>{{ page.presenters | size | pluralize: "Presenter Bio", "Presenter Bios" }}</h1>
+        {% for person in page.presenters %}
+          <p>{{ person.bio | markdownify }}</p>
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+
+    {% if page.moderators %}
+      {% assign bios = 0 %}
+      {% for person in page.moderators %}
+        {% if person.bio and person.bio != "" %}
+          {% assign bios = bios | plus: 1 %}
+        {% endif %}
       {% endfor %}
+
+      {% if bios > 0 %}
+        <h1>{{ page.moderators | size | pluralize: "Presenter Bio", "Presenter Bios" }}</h1>
+        {% for person in page.moderators %}
+          <p>{{ person.bio | markdownify }}</p>
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+
+    {% if page.organizers %}
+      {% assign bios = 0 %}
+      {% for person in page.organizers %}
+        {% if person.bio and person.bio != "" %}
+          {% assign bios = bios | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+
+      {% if bios > 0 %}
+        <h1>{{ page.organizers | size | pluralize: "Presenter Bio", "Presenter Bios" }}</h1>
+        {% for person in page.organizers %}
+          <p>{{ person.bio | markdownify }}</p>
+        {% endfor %}
+      {% endif %}
     {% endif %}
 
   </main>
