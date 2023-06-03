@@ -5,10 +5,6 @@ title: "Software Productivity and Sustainability track @ Argonne Training Progra
 type: Tutorial
 series: 
   - "BSSw Tutorials"
-meta1-name: "Series"
-meta1-value: "<a href='/series/bssw-tutorials'>BSSw Tutorials</a>"
-subevent: false
-published: true
 
 presenter: David E. Bernholdt (Oak Ridge National Laboratory), Anshu Dubey (Argonne National Laboratory), Todd Gamblin (Lawrence Livermore National Laboratory), Jared O'Neal (Argonne National Laboratory), and Boyana R. Norris (University of Oregon)
 
@@ -73,18 +69,18 @@ presenter: David E. Bernholdt (Oak Ridge National Laboratory), Anshu Dubey (Argo
 # # Scheduled: artifacts
 # #   By the time of delivery, the doi should be set
 # #
-# artifacts:
-# #  - label: Conference Registration
-# #    url: 
-#   - label: Recordings
-#     format: YouTube playlist
-#     url: https://youtube.com/playlist?list=PLuWzStas9iWHlsWNBAZG63zHargIRIPE7
-#   - label: Presentation Slides
-#     format: FigShare
-#     doi: 10.6084/m9.figshare.20416215
-# #  - label: Hands-On Code Repository
-# #    format: GitHub
-# #    gh-repo: bssw-tutorial/hello-numerical-world-2022-08-11-atpesc
+artifacts:
+#  - label: Conference Registration
+#    url: 
+  - label: Recordings
+    format: YouTube playlist
+    url: https://youtube.com/playlist?list=PLuWzStas9iWHlsWNBAZG63zHargIRIPE7
+  - label: Presentation Slides
+    format: FigShare
+    doi: 10.6084/m9.figshare.20416215
+#  - label: Hands-On Code Repository
+#    format: GitHub
+#    gh-repo: bssw-tutorial/hello-numerical-world-2022-08-11-atpesc
 # #
 # # This is a standard collection of deadlines we've encountered historically
 # # Add due dates where appropriate. Those without will be ignored
@@ -123,19 +119,6 @@ presenter: David E. Bernholdt (Oak Ridge National Laboratory), Anshu Dubey (Argo
 #     due: 
 #     responsible: [organizer-ids]
 ---
-<!-- Event Sidebar -->
-{% 	include _layout/sidebar-events.html 
-  startdate = page.startdate
-  time = page.time
-meta1-name = "Presenter"
-meta1-value = page.presenter
-meta2-name = "Recordings"
-meta2-value = "<a href='https://youtube.com/playlist?list=PLuWzStas9iWHlsWNBAZG63zHargIRIPE7'>YouTube playlist</a>"
-meta3-name ="Presentation Slides"
-meta3-value = "<a href='https://doi.org/10.6084/m9.figshare.20416215'>FigShare</a>"
-meta4-name = "Tutorial Archive"
-meta4-value = "<a href='https://bssw-tutorial.github.io/2022-08-11-atpesc/'>webpage</a>"
-%}
 
 # Presenters
 

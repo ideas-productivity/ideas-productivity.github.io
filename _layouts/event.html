@@ -1,22 +1,66 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include _layout/head.html -%}
+{%- include _layout/head.html -%}
 
-  <body>
+<body>
 
-    {%- include _layout/header.html -%}
+  {%- include _layout/header.html -%}
 
-    <main class="page-content layout-wrapper" aria-label="Content">
-    	{%- include _layout/hero-page.html 
-    	    title = page.title
-    	    blurb = page.blurb
-    	    meta1-name = page.meta1-name
-    	    meta1-value = page.meta1-value
-    	    meta2-name = page.meta2-name
-    	    meta2-value = page.meta2-value
-    	-%}
+  {% comment %}
+            Emit the deck information 
+  
+            Uses series and parent-event-* keys, if present
+            Otherwise uses meta1-*, meta2-* keys
+  {% endcomment %}
+  {% if page.series %}
+    {% assign my-meta1-name = "Series" %}
+    {% assign my-meta1-value = "" %}
+    {% for s in page.series %}
+      {% capture link %}<a href='{{ site.baseurl }}/series/{{ s | slugify }}'>{{ s }}</a>{% endcapture %}
+      {% assign my-meta1-value = my-meta1-value | append: link %}
+      {% unless forloop.last %}
+        {% assign my-meta1-value = my-meta1-value | append: ", " %}
+      {% endunless %}
+    {% endfor %}
+  {% else %}
+    {% assign my-meta1-name = page.meta1-name %}
+    {% assign my-meta1-value = page.meta1-value %}
+  {% endif %}
 
+  {% if page.parent-event-name and page.parent-event-file %}
+    {% assign my-meta2-name = "Part of" %}
+    {% capture my-meta2-value %}<a href='{{ page.parent-event-file }}'>{{ page.parent-event-name }}</a>{% endcapture %}
+  {% else %}
+    {% assign my-meta2-name = page.meta2-name %}
+    {% assign my-meta2-value = page.meta2-value %}
+  {% endif %}
+
+  <main class="page-content layout-wrapper" aria-label="Content">
+    {%- include _layout/hero-page.html 
+      title = page.title
+      blurb = page.blurb
+      meta1-name = my-meta1-name
+      meta1-value = my-meta1-value
+      meta2-name = my-meta2-name
+      meta2-value = my-meta2-value
+    -%}
+
+
+    {% comment %}
+              Emit sidebar
+  
+              Use artifact structure if present
+              Otherwise use sidemeta*-* keys  
+    {% endcomment %}
+    {% if page.artifacts %}
+      {% 	include _layout/sidebar-events-artifacts.html 
+        startdate = page.startdate
+        enddate = page.enddate
+        time = page.time
+        artifacts = page.artifacts
+      %}
+    {% else %}
       {%- include _layout/sidebar-events.html 
         startdate = page.startdate
         enddate = page.enddate
@@ -38,12 +82,112 @@
         meta8-name = page.sidemeta8-name
         meta8-value = page.sidemeta8-value
       -%}
+      {% endif %}
 
+      {% comment %}
+                Start page content
+
+                If there's a video artifact, display it at the top of the page
+                A display-video key set to false will override this, if desired
+      {% endcomment %}
+
+      {% assign video-artifact = page.artifacts | find_exp: "item", "item.yt-video-id" %}
+
+      {% if page.display-video != nil %}
+        <p>I have a display-video tag</p>
+        {% assign my-display-video = page.display-video %}
+      {% else %}
+        {% assign my-display-video = true %}
+      {% endif %}
+
+      {% if video-artifact and my-display-video %}
+        {% capture my-embed-code %}<iframe width='560' height='315' src='https://www.youtube.com/embed/{{ video-artifact.yt-video-id }}' title='YouTube video player;' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>{% endcapture %}
+        {%  include media-video.html embed-code = my-embed-code %}
+      {% endif %}
+
+      {% comment %}
+                Incorporate content from event file
+      {% endcomment %}
+     
       {{ content }}
-    </main>
 
-    {%- include _layout/footer.html -%}
+      {% comment %}
+              Show registration link
 
-  </body>
+              If the link is provided and if the event is upcoming
+      {% endcomment %}
+
+      {% include upcoming-event event = page.startdate %}
+      {% if upcoming and page.registration-url %}
+      {%  include text-biglink.html
+          blurb = "Register for the Event"
+          url = page.registration-url
+      %}
+      {% endif %}
+
+      {% comment %}
+                List presenters, moderators, and organizers, if present
+
+                If you don't want any of these to be displayed, you can comment out the metadata keys.
+      {% endcomment %}
+
+      {% if page.presenters %}
+        <h1>{{ page.presenters | size | pluralize: "Presenter", "Presenters" }}</h1>
+        <ul>
+          {% for person in page.presenters %}
+          <li>{{ person.name }}
+            {% if person.affiliation %} ({{ person.affiliation }}){% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if page.moderators %}
+      <h1>{{ page.moderators | size | pluralize: "Moderator", "Moderators" }}</h1>
+      <ul>
+        {% for person in page.moderators %}
+        <li>{{ person.name }}
+          {% if person.affiliation %} ({{ person.affiliation }}){% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if page.organizers %}
+      <h1>{{ page.organizers | size | pluralize: "Organizer", "Organizers" }}</h1>
+      <ul>
+        {% for person in page.organizers %}
+        <li>{{ person.name }}
+          {% if person.affiliation %} ({{ person.affiliation }}){% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% comment %}
+              List bios for presenters, moderators, organizers, if present
+
+              This is a little trickier than just listing the people. It is quite possible bios are not provided, even if the people are listed.  So we need to check for them before we emit the heading.
+    {% endcomment %}
+    
+    {% if page.presenters %}
+      {% assign bios = 0 %}
+      {% for person in page.presenters %}
+        {% if person.bio and person.bio != "" %}
+          {% assign bios = bios | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+
+      <h1>{{ page.presenters | size | pluralize: "Presenter Bio", "Presenter Bios" }}</h1>
+      {% for person in page.presenters %}
+        <p>{{ person.bio | markdownify }}</p>
+      {% endfor %}
+    {% endif %}
+
+  </main>
+
+{%- include _layout/footer.html -%}
+
+</body>
 
 </html>

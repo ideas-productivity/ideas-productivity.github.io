@@ -8,32 +8,10 @@ series:
   - "Technical Sessions and Meetings"
 subevents:
   - 20231115-sc23-swe-cse-hpc-bof
-meta1-name: "Series"
-meta1-value: "<a href='/series/technical-sessions-and-meetings'>Technical Sessions and Meetings</a>"
 
-published: true
-
+artifacts:
+  - label: "Location: Denver, Colorado"
 ---
-
-
-
-
-<!-- Event Sidebar -->
-<!-- ---------------------------------------------------------------------- -->
-
-{% 	include _layout/sidebar-events.html 
-  startdate = page.startdate
-  enddate = page.enddate
-  time = page.time
-  meta1-name = "Location"
-  meta1-value = "Denver, Colorado"
-%}
-
-
-
-
-<!-- Event Primary Content -->
-<!-- ---------------------------------------------------------------------- -->
 
 # Subhead
 

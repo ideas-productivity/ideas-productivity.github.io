@@ -5,10 +5,7 @@ title: "Work/Life Balance? Lessons from SC22 Early Career Program Panelists"
 type: Online Panel Discussion
 series: 
   - "Strategies for Working Remotely"
-meta1-name: "Series"
-meta1-value: "<a href='/series/strategies-for-working-remotely'>Strategies for Working Remotely</a>"
-subevent: true
-published: true
+
 
 link-id: panel015
 
@@ -19,30 +16,17 @@ link-id: panel015
 # title: "Work/Life Balance? Lessons from SC22 Early Career Program Panelists" 
 # panelist-ids: [callaghan-scott, foertter-fernanda, mullen-julia]
 # moderator-ids: [raybourn-elaine]
-# registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItce2spjouGd8IGPZBSdIigXMI7oAsXsE
+registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItce2spjouGd8IGPZBSdIigXMI7oAsXsE
 # ecp-abbreviation:  work-life-balance-sc22
 # #survey-public-url: https://www.surveymonkey.com/r/W8VQW2K
-# #archives:
-# #  - label: Recording
-# #    format: YouTube
-# #    yt-video-id: Y6dWtQ3zl4k
-# #  - label: Slides
-# #    format: PDF
-# #    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/swr008-creativity.pdf
+artifacts:
+ - label: Recording
+   format: YouTube
+   yt-video-id: Y6dWtQ3zl4k
+ - label: Slides
+   format: PDF
+   url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/swr008-creativity.pdf
 ---
-
-<!-- Event Sidebar -->
-{% 	include _layout/sidebar-events.html 
-  startdate = page.startdate
-  enddate =page.enddate
-  time = page.time
-meta1-name = "Panelists"
-meta1-value = "Scott Callaghan, Fernanda Foertter, Julia Mullen"
-meta2-name = "Moderator"
-meta2-value = "Elaine Raybourn"
-meta3-name ="Recording"
-meta3-value = "<a href='https://www.youtube.com/watch?v=EWZCrnWYh8U'>YouTube</a>"
-%}
 
 ## Panelists
 

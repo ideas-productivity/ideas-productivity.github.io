@@ -7,37 +7,14 @@ type: "Conference"
 series: 
   - "Technical Sessions and Meetings"
   - "Performance Portability & ECP"
-  - "Random Series 1"
 subevents:
   - 20210301-cse21-ms30
   - 20210303-cse21-ms162
   - 20210303-cse21-ms162-long
-meta1-name: "Series"
-meta1-value: "<a href='/series/technical-sessions-and-meetings'>Technical Sessions and Meetings</a>, <a href='/series/performance-portability-ecp'>Performance Portability & ECP</a>, Random Series 1"
 
-published: true
-
+sidemeta1-name: "Location: Online"
+sidemeta1-value: ""
 ---
-
-
-
-
-<!-- Event Sidebar -->
-<!-- ---------------------------------------------------------------------- -->
-
-{% 	include _layout/sidebar-events.html 
-  startdate = page.startdate
-  enddate = page.enddate
-  time = page.time
-  meta1-name = "Location"
-  meta1-value = "Online"
-%}
-
-
-
-
-<!-- Event Primary Content -->
-<!-- ---------------------------------------------------------------------- -->
 
 # Subhead
 

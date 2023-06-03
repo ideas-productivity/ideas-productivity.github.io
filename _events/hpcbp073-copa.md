@@ -5,10 +5,6 @@ title: "Facilitating Electronic Structure Calculations on GPU-based Exascale Pla
 type: Webinar
 series: 
   - "HPC Best Practices Webinars"
-meta1-name: "Series"
-meta1-value: "<a href='/series/hpc-best-practices-webinars'>HPC Best Practices Webinars</a>"
-subevent: false
-published: true
 
 presenter: "Jean-Luc Fattebert (Oak Ridge National Laboratory)"
 link-id: webinar073
@@ -18,7 +14,7 @@ link-id: webinar073
 # title: "Facilitating Electronic Structure Calculations on GPU-based Exascale Platforms"
 # presenter-ids: [fattebert-jeanluc]
 # topics: ["software engineering",  "high-performance computing (hpc)", "performance at leadership computing facilities", “online learning”]
-# registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIsdu2trz4oHcvHfBiEco7RFJzPWwNfh3E
+registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIsdu2trz4oHcvHfBiEco7RFJzPWwNfh3E
 # ecp-abbreviation: copa
 # qa-public-url: http://bit.ly/HPCBP-QA
 # survey-public-url: http://bit.ly/HPCBP-feedback
@@ -32,36 +28,7 @@ artifacts:
   - label: Q&A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/04/hpcbp-073-qa.pdf
-  - label: Random other document
-    note: <em>(to be published)</em>
-  - label: Presenter
-    note: "Jean-Luc Fattebert (Oak Ridge National Laboratory)"
 ---
-<!-- Event Sidebar -->
-{% 	include _layout/sidebar-events.html 
-  startdate = page.startdate
-  time = page.time
-meta1-name = "Presenter"
-meta1-value = page.presenter
-meta2-name ="Recording"
-meta2-value = "<a href='https://www.youtube.com/watch?v=T5JInOIMcdw'>YouTube</a>"
-meta3-name = "Slides"
-meta3-value = "<a href='http://ideas-productivity.org/wordpress/wp-content/uploads/2023/04/hpcbp-073-copa.pdf'>PDF</a>"
-meta4-name = "Q&A"
-meta4-value = "<a href='http://ideas-productivity.org/wordpress/wp-content/uploads/2023/04/hpcbp-073-qa.pdf'>PDF</a>"
-%}
-
-{% comment %}
-{% 	include _layout/sidebar-events-artifacts.html 
-  startdate = page.startdate
-  time = page.time
-  artifacts = page.artifacts
-%}
-{% endcomment %}
-
-{%  include media-video.html
-    embed-code = "<iframe width='560' height='315' src='https://www.youtube.com/embed/T5JInOIMcdw' title='YouTube video player;' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
-%}
 
 ## Presenter
 

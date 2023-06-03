@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include _layout/head.html -%}
+
+  <body>
+
+    {%- include _layout/header.html -%}
+
+    <main class="page-content layout-wrapper" aria-label="Content">
+    	{%- include _layout/hero-page.html 
+    	    title = page.title
+    	    blurb = page.blurb
+    	    meta1-name = page.meta1-name
+    	    meta1-value = page.meta1-value
+    	    meta2-name = page.meta2-name
+    	    meta2-value = page.meta2-value
+    	-%}
+
+      {%- include _layout/sidebar-events.html 
+        startdate = page.startdate
+        enddate = page.enddate
+        time = page.time
+        meta1-name = page.sidemeta1-name
+        meta1-value = page.sidemeta1-value
+        meta2-name = page.sidemeta2-name
+        meta2-value = page.sidemeta2-value
+        meta3-name = page.sidemeta3-name
+        meta3-value = page.sidemeta3-value
+        meta4-name = page.sidemeta4-name
+        meta4-value = page.sidemeta4-value
+        meta5-name = page.sidemeta5-name
+        meta5-value = page.sidemeta5-value
+        meta6-name = page.sidemeta6-name
+        meta6-value = page.sidemeta6-value
+        meta7-name = page.sidemeta7-name
+        meta7-value = page.sidemeta7-value
+        meta8-name = page.sidemeta8-name
+        meta8-value = page.sidemeta8-value
+      -%}
+
+      {{ content }}
+    </main>
+
+    {%- include _layout/footer.html -%}
+
+  </body>
+
+</html>

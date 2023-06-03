@@ -8,32 +8,10 @@ series:
   - "Strategies for Working Remotely"
 subevents:
   - swr012-sustainablehybrid
-meta1-name: "Series"
-meta1-value: "<a href='/series/strategies-for-working-remotely'>Strategies for Working Remotely</a>"
 
-published: true
-
+artifacts:
+  - label: "Location: St. Louis, Missouri, and online"
 ---
-
-
-
-
-<!-- Event Sidebar -->
-<!-- ---------------------------------------------------------------------- -->
-
-{% 	include _layout/sidebar-events.html 
-  startdate = page.startdate
-  enddate = page.enddate
-  time = page.time
-  meta1-name = "Location"
-  meta1-value = "St. Louis, Missouri and online"
-%}
-
-
-
-
-<!-- Event Primary Content -->
-<!-- ---------------------------------------------------------------------- -->
 
 # Subhead
 

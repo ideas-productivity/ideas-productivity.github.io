@@ -5,12 +5,9 @@ title: "Sustainable Hybrid Approaches for HPC"
 type: Panel Discussion
 series: 
   - "Strategies for Working Remotely"
-meta1-name: "Series"
-meta1-value: "<a href='/series/strategies-for-working-remotely'>Strategies for Working Remotely</a>"
-meta2-name: "Part of"
-meta2-value: "<a href='/events/20211114-sc21-conference'>SC21</a>"
-subevent: true
-published: true
+
+parent-event-name: SC21
+parent-event-file: 20211114-sc21-conference
 
 link-id: panel012
 
@@ -21,30 +18,18 @@ link-id: panel012
 # title: "Sustainable Hybrid Approaches for HPC"
 # panelist-ids: [alam-sadaf, bischof-christian, cademartori-helen, hodge-devin, nakajima-kengo, quillen-pat]
 # moderator-ids: [raybourn-elaine]
-# registration-url: https://sc21.supercomputing.org/attend/register
+registration-url: https://sc21.supercomputing.org/attend/register
 # ecp-abbreviation:  strategies-for-working-remotely-sc21
 # #survey-public-url: https://www.surveymonkey.com/r/W8VQW2K
-# archives:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: EWZCrnWYh8U
-# #  - label: Slides
-# #    format: PDF
-# #    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/swr008-creativity.pdf
+artifacts:
+  - label: Recording
+    format: YouTube
+    yt-video-id: EWZCrnWYh8U
+#  - label: Slides
+#    format: PDF
+#    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/swr008-creativity.pdf
+#display-video: false
 ---
-
-<!-- Event Sidebar -->
-{% 	include _layout/sidebar-events.html 
-  startdate = page.startdate
-  enddate =page.enddate
-  time = page.time
-meta1-name = "Panelists"
-meta1-value = "Christian Bischof, Helen Cademartori, Devin Hodge, Kengo Nakajima, Pat Quillen"
-meta2-name = "Moderator"
-meta2-value = "Elaine Raybourn"
-meta3-name ="Recording"
-meta3-value = "<a href='https://www.youtube.com/watch?v=EWZCrnWYh8U'>YouTube</a>"
-%}
 
 ## Panelists
 
@@ -61,10 +46,6 @@ meta3-value = "<a href='https://www.youtube.com/watch?v=EWZCrnWYh8U'>YouTube</a>
 ## Description
 
 In spring 2020 many of us abruptly transitioned from a primarily on-site to a primarily remote work experience. Unplanned and imposed remote work created a sea change that has altered the way we work now and will likely impact the way we work in the future. This panel will explore strategies for working remotely, with emphasis on how teams in high-performance computing (HPC) can be effective and efficient in long-term hybrid settings, where some staff work remotely and others on site, or collaborate while geographically dispersed. This shift provides an opportunity to be more inclusive and compassionate, opening doors for technological innovation to support how we work and communicate as teams of scientists. By exploring how hybrid settings can help with hiring and retaining a diverse set of employees, this panel session will offer an opportunity for dialog to help shape and influence the future of HPC work (see <https://sc20.supercomputing.org/proceedings/sotp/sotp_files/sotp114s2-file1.pdf>).
-
-{%  include media-video.html
-    embed-code = "<iframe width='560' height='315' src='https://www.youtube.com/embed/EWZCrnWYh8U' title='YouTube video player;' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
-%}
 
 ## Panelist Bios
 

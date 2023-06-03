@@ -8,23 +8,13 @@ enddate: "2024-07-22"
 type: Workshop 
 series: 
   - "Technical Sessions and Meetings"
-meta1-name: "Series"
-meta1-value: "<a href='/series/technical-sessions-and-meetings'>Technical Sessions and Meetings</a>"
-#
-subevent: false
-#
-published: true
----
-<!-- Event Sidebar -->
-{% 	include _layout/sidebar-events.html 
-  startdate = page.startdate
-  enddate = page.enddate
-  time = page.time
-meta1-name = "Workshop Archive"
-meta1-value = "<a href='https://collegeville.github.io/CW21/'>website</a>"
-%}  
 
-<!-- Event Primary Content -->
+artifacts:
+  - label: "Location: St. Johns University, Collegeville, Minnesota"
+  - label: Workshop Archive
+    url: https://collegeville.github.io/CW21/
+    format: website
+---
 
 The Collegeville Workshop Series on Scientific Software is intended to bring together three communities of scientific software developers: academia, industry and laboratories. While there are certainly existing exchanges between these communities, we are dedicated to improving awareness of common needs, unique contributions and career paths that span these communities.
 

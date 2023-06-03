@@ -8,32 +8,10 @@ series:
   - "BSSw Tutorials"
 subevents:
   - bsswt-2023-05-21-isc
-meta1-name: "Series"
-meta1-value: "<a href='/series/bssw-tutorials'>BSSw Tutorials</a>"
 
-published: true
-
+artifacts:
+  - label: "Location: Hamburg, Germany, and online"
 ---
-
-
-
-
-<!-- Event Sidebar -->
-<!-- ---------------------------------------------------------------------- -->
-
-{% 	include _layout/sidebar-events.html 
-  startdate = page.startdate
-  enddate = page.enddate
-  time = page.time
-  meta1-name = "Location"
-  meta1-value = "Hamburg, Germany"
-%}
-
-
-
-
-<!-- Event Primary Content -->
-<!-- ---------------------------------------------------------------------- -->
 
 # Subhead
 
