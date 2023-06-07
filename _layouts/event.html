@@ -142,6 +142,17 @@
         </ul>
       {% endif %}
 
+      {% if page.panelists %}
+        <h1>{{ page.panelists | size | pluralize: "Panelist", "Panelists" }}</h1>
+        <ul>
+          {% for person in page.panelists %}
+          <li>{{ person.name }}
+            {% if person.affiliation %} ({{ person.affiliation }}){% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
       {% if page.moderators %}
       <h1>{{ page.moderators | size | pluralize: "Moderator", "Moderators" }}</h1>
       <ul>
@@ -165,7 +176,7 @@
     {% endif %}
 
     {% comment %}
-              List bios for presenters, moderators, organizers, if present
+              List bios for presenters, panelists, moderators, organizers, if present
 
               This is a little trickier than just listing the people. It is quite possible bios are not provided, even if the people are listed.  So we need to check for them before we emit the heading.
     {% endcomment %}
@@ -179,14 +190,30 @@
       {% endfor %}
 
       {% if bios > 0 %}
-        <h1>{{ page.presenters | size | pluralize: "Presenter Bio", "Presenter Bios" }}</h1>
+        <h1>{{ bios | pluralize: "Presenter Bio", "Presenter Bios" }}</h1>
         {% for person in page.presenters %}
-          <p>{{ person.bio | markdownify }}</p>
+          {{ person.bio | markdownify }}
         {% endfor %}
       {% endif %}
     {% endif %}
 
-    {% if page.moderators %}
+  {% if page.panelists %}
+    {% assign bios = 0 %}
+    {% for person in page.panelists %}
+      {% if person.bio and person.bio != "" %}
+        {% assign bios = bios | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if bios > 0 %}
+      <h1>{{ bios | pluralize: "Panelist Bio", "Panelist Bios" }}</h1>
+      {% for person in page.panelists %}
+        {{ person.bio | markdownify }}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+
+  {% if page.moderators %}
       {% assign bios = 0 %}
       {% for person in page.moderators %}
         {% if person.bio and person.bio != "" %}
@@ -195,9 +222,9 @@
       {% endfor %}
 
       {% if bios > 0 %}
-        <h1>{{ page.moderators | size | pluralize: "Presenter Bio", "Presenter Bios" }}</h1>
+        <h1>{{ bios | pluralize: "Moderator Bio", "Moderator Bios" }}</h1>
         {% for person in page.moderators %}
-          <p>{{ person.bio | markdownify }}</p>
+          {{ person.bio | markdownify }}
         {% endfor %}
       {% endif %}
     {% endif %}
@@ -211,9 +238,9 @@
       {% endfor %}
 
       {% if bios > 0 %}
-        <h1>{{ page.organizers | size | pluralize: "Presenter Bio", "Presenter Bios" }}</h1>
+        <h1>{{ bios | pluralize: "Organizer Bio", "Organizer Bios" }}</h1>
         {% for person in page.organizers %}
-          <p>{{ person.bio | markdownify }}</p>
+          {{ person.bio | markdownify }}
         {% endfor %}
       {% endif %}
     {% endif %}
