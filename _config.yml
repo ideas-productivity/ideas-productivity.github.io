@@ -41,6 +41,9 @@ collections:
   events:
     output: true
     permalink: /events/:slug
+  events-draft:
+    output: true
+    permalink: /events-draft/:slug
   series:
     output: true
     permalink: /series/:slug
@@ -52,6 +55,11 @@ defaults:
   - scope:
       path: ""
       type: "events"
+    values:
+      layout: "event"
+  - scope:
+      path: ""
+      type: "events-draft"
     values:
       layout: "event"
   - scope:
