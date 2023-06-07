@@ -1,14 +1,13 @@
 ---
-startdate: "2021-11-18"
-time: "04:30 pm - 04:15 pm EST"
-type: Hybrid Panel Discussion
+startdate: "2022-03-24"
+time: "03:00 pm - 04:15 pm EDT"
+type: Online Panel Discussion
 series:
   - "Strategies for Working Remotely"
 activities:
   - "IDEAS-ECP"
-parent-event-name: SC21
-parent-event-file: 20211114-sc21-conference
-link-id: panel012
+link-id: panel013
+#
 panelists:
   - name: Christian Bischof
     affiliation: Technical University (TU) Darmstadt
@@ -33,6 +32,7 @@ new initiatives and infrastructure upgrades."
   - name: Pat Quillen
     affiliation: Mathworks
     bio: "Pat Quillen is a software engineering manager at MathWorks; his group is responsible for the mathematics in MATLABTM as well as the PDE Toolbox. His team of computational scientists and software engineers focuses on building high-quality, mathematically-sound technical computing software to help accelerate the pace of engineering and science. Like many, Pat and his whole team have been working remotely only since March 2020."
+#
 moderators:
   - name: Elaine Raybourn
     affiliation: Sandia National Laboratories
@@ -40,23 +40,23 @@ moderators:
     bio: "Elaine Raybourn is a social scientist in the Statistics and Human Systems Group (Applied Cognitive Science) at Sandia National Laboratories. Her research focuses on virtual teams, software developer productivity, virtual environments, visualization, and transmedia learning. She is the [SC21](https://sc21.supercomputing.org/program/posters/scientific-visualization-data-analytics-showcase/) Scientific Visualization & Data Analytics Showcase Chair. Elaine has worked remotely for a combined total of 14 years while at Sandia National Laboratories: from the UK as a guest researcher at British Telecom; Germany (Fraunhofer FIT) and France (INRIA) as a Fellow of the European Research Consortium in Informatics and Mathematics (ERCIM), and most recently from Orlando, Florida as Sandia’s Institutional PI for the IDEAS-ECP productivity project. Elaine leads [PSIP](https://bssw.io/psip/) and the panel series *[Strategies for Working Remotely](https://www.exascaleproject.org/strategies-for-working-remotely/)*."
 #
 event-type: swr-panel
-event-id: 12
-date: 2021-11-18T16:30-500
-end-date: 2021-11-18T18:00
-title: "Sustainable Hybrid Approaches for HPC @ SC21"
+event-id: 13
+date: 2022-03-24T15:00-400
+end-date: 2022-03-24T16:30
+title: "Sustainable Hybrid Approaches for HPC (Rebroadcast)"
 panelist-ids: [alam-sadaf, bischof-christian, cademartori-helen, hodge-devin, nakajima-kengo, quillen-pat]
 moderator-ids: [raybourn-elaine]
-registration-url: https://sc21.supercomputing.org/attend/register
-ecp-abbreviation:  strategies-for-working-remotely-sc21
+registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItdeqhrjouGoacS77OEdg1_GN2rogsICc
+ecp-abbreviation:  strategies-for-working-remotely-sc21-rebroadcast
 #survey-public-url: https://www.surveymonkey.com/r/W8VQW2K
 artifacts:
   - label: Recording
     format: YouTube
-    yt-video-id: EWZCrnWYh8U
+    yt-video-id: hD-iClH9Gbc
 #  - label: Slides
 #    format: PDF
 #    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/swr008-creativity.pdf
 ---
-**This panel discussion was part of the annual International Conference for High Performance Computing, Networking, Storage, and Analysis (SC21).**
+**This panel discussion was held during SC21 and is being rebroadcast with live chat Q&A. The panel explored strategies for working remotely, with emphasis on how teams in high-performance computing (HPC) can be effective and efficient in long-term hybrid settings, where some staff work remotely and others on site, or collaborate while geographically dispersed.**
 
 In spring 2020 many of us abruptly transitioned from a primarily on-site to a primarily remote work experience. Unplanned and imposed remote work created a sea change that has altered the way we work now and will likely impact the way we work in the future. This panel will explore strategies for working remotely, with emphasis on how teams in high-performance computing (HPC) can be effective and efficient in long-term hybrid settings, where some staff work remotely and others on site, or collaborate while geographically dispersed. This shift provides an opportunity to be more inclusive and compassionate, opening doors for technological innovation to support how we work and communicate as teams of scientists. By exploring how hybrid settings can help with hiring and retaining a diverse set of employees, this panel session will offer an opportunity for dialog to help shape and influence the future of HPC work (see <https://sc20.supercomputing.org/proceedings/sotp/sotp_files/sotp114s2-file1.pdf>).
