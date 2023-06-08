@@ -6,6 +6,7 @@ series:
   - "Strategies for Working Remotely"
 activities:
   - "IDEAS-ECP"
+subevent: true
 parent-event-name: SC21
 parent-event-file: 20211114-sc21-conference
 link-id: panel012

@@ -4,8 +4,8 @@ startdate: "2021-11-14"
 enddate: "2021-11-19"
 
 type: "Conference" 
-series: 
-  - "Strategies for Working Remotely"
+# series: 
+#   - "Strategies for Working Remotely"
 subevents:
   - swr012-sustainablehybrid
 

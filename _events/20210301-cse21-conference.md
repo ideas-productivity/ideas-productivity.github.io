@@ -4,9 +4,9 @@ startdate: "2021-03-01"
 enddate: "2021-03-05"
 
 type: "Conference" 
-series: 
-  - "Technical Sessions and Meetings"
-  - "Performance Portability & ECP"
+# series: 
+#   - "Technical Sessions and Meetings"
+#   - "Performance Portability & ECP"
 subevents:
   - 20210301-cse21-ms30
   - 20210303-cse21-ms162

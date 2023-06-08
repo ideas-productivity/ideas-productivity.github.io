@@ -4,8 +4,8 @@ startdate: "2023-05-21"
 enddate: "2023-05-25"
 
 type: "Conference" 
-series: 
-  - "BSSw Tutorials"
+# series: 
+#   - "BSSw Tutorials"
 subevents:
   - bsswt-2023-05-21-isc
 

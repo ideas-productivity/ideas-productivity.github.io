@@ -4,8 +4,8 @@ startdate: "2023-11-12"
 enddate: "2023-11-17"
 
 type: "Conference" 
-series: 
-  - "Technical Sessions and Meetings"
+# series: 
+#   - "Technical Sessions and Meetings"
 subevents:
   - 20231115-sc23-swe-cse-hpc-bof
 
