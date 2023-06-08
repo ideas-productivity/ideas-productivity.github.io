@@ -37,6 +37,9 @@ plugins:
   - jekyll-redirect-from
 #  - flexible_include # We do use this, but it is not a gem
 
+# This is needed to generate output for future events
+future: true
+
 collections:
   events:
     output: true
