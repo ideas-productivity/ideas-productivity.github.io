@@ -1,6 +1,6 @@
 ---
 title: "Strategies for Working Remotely"
-blurb: "This series has concluded"
+#blurb: "This series has concluded"
 
 series: "Strategies for Working Remotely"
 

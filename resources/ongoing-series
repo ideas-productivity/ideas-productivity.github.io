@@ -16,4 +16,9 @@
 		title3 = "Technical Sessions and Meetings"
 		url3 = "/series/technical-sessions-and-meetings"
 		blurb3 = "Creating opportunities to talk about software development, productivity, and sustainability as part of larger meetings or standalone." 
+
+				
+		title4 = "Strategies for Working Remotely"
+		url4 = "/series/strategies-for-working-remotely"
+		blurb4 = "Exploring strategies for working remotely, with emphasis on how HPC teams can be effective and efficient in long-term hybrid settings."
 %}
