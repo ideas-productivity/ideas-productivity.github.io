@@ -29,7 +29,7 @@ artifacts:
     yt-video-id: PWuRlpbkeXQ
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/05/hpcbp-075-qmcpack.pdf
+    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/06/hpcbp-074-qmcpack.pdf
   - label: Q&A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/05/hpcbp-074-qmcpack-qa.pdf
