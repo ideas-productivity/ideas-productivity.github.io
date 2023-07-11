@@ -6,9 +6,9 @@
   */
 
 .text-biglink {
-	grid-column: 2 / 10;
+	grid-column: 3 / 10;
 	display: inline-block;
-	@include stack(sm);
+	@include stack(md);
 	@include typestyle($sans-md-reg);
 }
 
