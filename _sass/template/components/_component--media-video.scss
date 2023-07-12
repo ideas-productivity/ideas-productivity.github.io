@@ -8,6 +8,7 @@
 .media-video {
 	@include grid-child($col-start: 1, $cols: 12);
 	@include stack(sm);
+	z-index: -10;
 
 	.img-wrapper,
 	.vid-wrapper {
