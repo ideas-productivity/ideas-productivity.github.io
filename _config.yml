@@ -75,6 +75,16 @@ feed:
   collections:
     - events
 
+search_provider: algolia
+algolia:
+  application_id: 2U5U5F24YD
+  index_name: search_index
+  search_only_api_key: 0075d949e24bc994484f4252d8fec7ea
+  files_to_exclude:
+    - _pages/cookies.md
+    - _pages/privacy.md
+
+
 # Site configuration for the Jekyll 3 Pagination Gem
 # gems:
 #   - jekyll-paginate-v2
