@@ -34,7 +34,7 @@ blurb: "Extreme-scale Scientific Software Development Kit"
 	  contain1 = "true"	
     source2 = "xsdk/use-case-collage.004-300x225.png"
 	contain2 = "true"
-    caption2 = "Integrated surface-subsurface hydrology simulations of river meanders require the combined use of xSDK packages."
+    caption2 = "CHECK CHECK Integrated surface-subsurface hydrology simulations of river meanders require the combined use of xSDK packages."
 %}
 
 {% 	include media-img2x.html 

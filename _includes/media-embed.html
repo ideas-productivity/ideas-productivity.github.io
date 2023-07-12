@@ -16,5 +16,9 @@ available parameters:
 -->
 
 
-{{ include.embed-code }}
-{{ include.caption }}
+<div class="embed">
+	{{ include.embed-code }}
+	{% if include.caption %}
+		<small class="caption">{{ include.caption }}</small>
+	{% endif %}
+</div>
