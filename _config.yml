@@ -71,6 +71,10 @@ defaults:
     values:
       layout: "page"
 
+feed:
+  collections:
+    - events
+
 # Site configuration for the Jekyll 3 Pagination Gem
 # gems:
 #   - jekyll-paginate-v2
