@@ -69,9 +69,19 @@ search.start();
 </script>
 
 <style>
+#search-searchbar{
+	margin-top: 20px;
+	grid-column: 1/-1;
+}
 .ais-search-box {
-  max-width: 100%;
-  margin-bottom: 15px;
+  max-width: none;
+  margin-bottom: 20px;
+}
+.ais-search-box .ais-search-box--input{
+  width: calc(100vw - 56px);
+}
+.ais-search-box--powered-by {
+  margin-top: 20px;
 }
 .post-item {
   margin-bottom: 30px;
