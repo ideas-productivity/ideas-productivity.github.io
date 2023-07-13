@@ -10,6 +10,13 @@ meta1-value: "<a href='https://ideas-productivity.org/events/'>Test Series</a>"
 meta2-name: "Contributors"
 meta2-value: "<a href='https://ideas-productivity.org/events/'>Name A Name</a>, <a href='https://ideas-productivity.org/events/'>Name A Name</a>, <a href='https://ideas-productivity.org/events/'>Name A Name</a>"
 
+carousels:
+  - images: 
+    - image: /assets/images/fpo.png
+    - image: /assets/images/fpo.png
+    - image: /assets/images/fpo.png
+    - image: /assets/images/fpo.png
+
 ---
 
 
@@ -22,6 +29,11 @@ meta2-value: "<a href='https://ideas-productivity.org/events/'>Name A Name</a>, 
 	  source = "fpo.png"
 		caption = "The quick brown fox jumps over the lazy dog. Photo: Photographer"
 %}
+
+
+<div style="grid-column: 1/-1;">
+	{% include carousel.html height="50" unit="%" duration="7" number="1" %}
+</div>
 
 
 # Hello h1
@@ -463,3 +475,4 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 5. The quick brown fox jumps over the lazy dog.
 5. The quick brown fox jumps over the lazy dog.
 5. The quick brown fox jumps over the lazy dog.
+
