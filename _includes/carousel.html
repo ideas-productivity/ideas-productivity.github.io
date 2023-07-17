@@ -58,8 +58,7 @@ CAROUSEL ITEMS
           	{% for slides in page.carousel %}
 	            <div class="carousel__slide">
 					{% for teasers in slides.slide %}
-					<!-- <h1>{{ teasers.teaser }}</h1> -->
-						{% assign i = forloop.index  %}
+					{% assign i = forloop.index  %}
 						{% if i == 1 %}
 							{% assign title1 = teasers.title %}
 							{% assign source1 = teasers.source %}
@@ -68,6 +67,31 @@ CAROUSEL ITEMS
 							{% assign scale1 = teasers.scale %}
 							{% assign url1 = teasers.url %}
 							{% assign blurb1 = teasers.blurb %}
+
+							{% assign title2 = nil %}
+							{% assign source2 = nil %}
+							{% assign contain2 = nil %}
+							{% assign cover2 = nil %}
+							{% assign scale2 = nil %}
+							{% assign url2 = nil %}
+							{% assign blurb2 = nil %}
+
+							{% assign title3 = nil %}
+							{% assign source3 = nil %}
+							{% assign contain3 = nil %}
+							{% assign cover3 = nil %}
+							{% assign scale3 = nil %}
+							{% assign url3 = nil %}
+							{% assign blurb3 = nil %}
+
+							{% assign title4 = nil %}
+							{% assign source4 = nil %}
+							{% assign contain4 = nil %}
+							{% assign cover4 = nil %}
+							{% assign scale4 = nil %}
+							{% assign url4 = nil %}
+							{% assign blurb4 = nil %}
+
 						{% elsif i == 2 %}
 							{% assign title2 = teasers.title %}
 							{% assign source2 = teasers.source %}
@@ -95,6 +119,7 @@ CAROUSEL ITEMS
 						{% endif %}
 					{% endfor %}
 
+					{% if title4 %}
 					{% 	include teasers-4x_img.html
 						title1 = title1
 						source1 = source1
@@ -128,6 +153,63 @@ CAROUSEL ITEMS
 						url4 = url4
 						blurb4 = blurb4
 					%}
+					{% elsif title3 %}
+					{% 	include teasers-4x_img.html
+						title1 = title1
+						source1 = source1
+						contain1 = contain1
+						cover1 = cover1
+						scale1 = scale1
+						url1 = url1
+						blurb1 = blurb1
+
+						title2 = title2
+						source2 = source2
+						contain2 = contain2
+						cover2 = cover2
+						scale2 = scale2
+						url2 = url2
+						blurb2 = blurb2
+
+						title3 = title3
+						source3 = source3
+						contain3 = contain3
+						cover3 = cover3
+						scale3 = scale3
+						url3 = url3
+						blurb3 = blurb3
+					%}
+					{% elsif title2 %}
+					{% 	include teasers-4x_img.html
+						title1 = title1
+						source1 = source1
+						contain1 = contain1
+						cover1 = cover1
+						scale1 = scale1
+						url1 = url1
+						blurb1 = blurb1
+
+						title2 = title2
+						source2 = source2
+						contain2 = contain2
+						cover2 = cover2
+						scale2 = scale2
+						url2 = url2
+						blurb2 = blurb2
+					%}
+					{% else %}
+					{% 	include teasers-4x_img.html
+						title1 = title1
+						source1 = source1
+						contain1 = contain1
+						cover1 = cover1
+						scale1 = scale1
+						url1 = url1
+						blurb1 = blurb1
+					%}
+					{% endif %}
+
+
 	            </div> 
             {% endfor %}
         </div>

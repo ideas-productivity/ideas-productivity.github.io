@@ -88,6 +88,7 @@ second and fourth items in the teaser group with gaps in between.
 		{% assign blurb   = 'blurb'   | append: i %}
 		{% assign url     = 'url'     | append: i %}
 
+		{% if include.[title] %}
 		<div class="teaser{{i}}">
 			<a href="{{ include.[url] }}">
 				<div class="img-wrapper{{i}}">
@@ -123,6 +124,7 @@ second and fourth items in the teaser group with gaps in between.
 				{% endif %}	
 			</a>
 		</div>
+		{% endif %}
 
 	{% endfor %}
 
