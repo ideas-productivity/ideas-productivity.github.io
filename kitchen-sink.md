@@ -10,12 +10,72 @@ meta1-value: "<a href='https://ideas-productivity.org/events/'>Test Series</a>"
 meta2-name: "Contributors"
 meta2-value: "<a href='https://ideas-productivity.org/events/'>Name A Name</a>, <a href='https://ideas-productivity.org/events/'>Name A Name</a>, <a href='https://ideas-productivity.org/events/'>Name A Name</a>"
 
-carousels:
-  - images: 
-    - image: /assets/images/fpo.png
-    - image: /assets/images/fpo.png
-    - image: /assets/images/fpo.png
-    - image: /assets/images/fpo.png
+carousel:
+  - slide:
+    - teaser:
+      title: 'Title A1'
+      source: 'fpo.png'
+      cover:  'TRUE'
+      url: 'URL'
+      blurb: 'the quick brown fox jumps over the lazy dog.'
+    - teaser:
+      title: 'Title A2'
+      source: 'fpo.png'
+      cover:  'TRUE'
+      url: 'URL'
+      blurb: 'the quick brown fox jumps over the lazy dog.'
+    - teaser:
+      title: 'Title A3'
+      source: 'fpo.png'
+      cover:  'TRUE'
+      url: 'URL'
+      blurb: 'the quick brown fox jumps over the lazy dog.'
+    - teaser:
+      title: 'Title A4'
+      source: 'fpo.png'
+      cover:  'TRUE'
+      url: 'URL'
+      blurb: 'the quick brown fox jumps over the lazy dog.'
+  - slide:
+    - teaser:
+      title: 'Title B1'
+      source: 'fpo.png'
+      cover:  'TRUE'
+      url: 'URL'
+      blurb: 'the quick brown fox jumps over the lazy dog.'
+    - teaser:
+      title: 'Title B2'
+      source: 'fpo.png'
+      cover:  'TRUE'
+      url: 'URL'
+      blurb: 'the quick brown fox jumps over the lazy dog.'
+    - teaser:
+      title: 'Title B3'
+      source: 'fpo.png'
+      cover:  'TRUE'
+      url: 'URL'
+      blurb: 'the quick brown fox jumps over the lazy dog.'
+    - teaser:
+      title: 'Title B4'
+      source: 'fpo.png'
+      cover:  'TRUE'
+      url: 'URL'
+      blurb: 'the quick brown fox jumps over the lazy dog.'
+  - slide:
+    - teaser:
+      title: 'Title C1'
+      source: 'fpo.png'
+      cover:  'TRUE'
+      url: 'URL'
+      blurb: 'the quick brown fox jumps over the lazy dog.'
+    - teaser:
+      title: 'Title C2'
+      source: 'fpo.png'
+      cover:  'TRUE'
+      url: 'URL'
+      blurb: 'the quick brown fox jumps over the lazy dog.'
+
+    
 
 ---
 
@@ -32,8 +92,9 @@ carousels:
 
 
 <div style="grid-column: 1/-1;">
-	{% include carousel.html height="50" unit="%" duration="7" number="1" %}
+	{% include carousel.html height="50" unit="%" duration="700" number="1" %}
 </div>
+
 
 
 # Hello h1

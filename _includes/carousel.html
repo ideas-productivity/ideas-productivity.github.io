@@ -19,36 +19,127 @@ from: https://jekyllcodex.org/without-plugin/slider/
 {% assign number = include.number | minus: 1 %}
 <div class="carousel__holder">
     <div id="carousel{{ number }}" class="carousel">
-        {% for item in page.carousels[number].images %}
-          <input class="carousel__activator" type="radio" name="carousel{{ number }}" id="{{ number }}{{ letters[forloop.index0] }}" {% if forloop.first %}checked="checked"{% endif %} />
-        {% endfor %}
-        {% for item in page.carousels[number].images %}
-          {% if forloop.index == forloop.length %}
-            {% assign nextindex = 0 %}
-          {% else %}
-            {% assign nextindex = forloop.index0 | plus: 1 %}
-          {% endif %}
-          {% assign nextletter = letters[nextindex] %}
-          {% if forloop.index0 == 0 %}
-            {% assign previndex = forloop.length | minus: 1 %}
-          {% else %}
-            {% assign previndex = forloop.index0 | minus: 1 %}
-          {% endif %}
-          {% assign prevletter = letters[previndex] %}
-          <div class="carousel__controls">
-              <label class="carousel__control carousel__control--backward" for="{{ number }}{{ prevletter }}"></label>
-              <label class="carousel__control carousel__control--forward" for="{{ number }}{{ nextletter }}"></label>
-          </div>
-        {% endfor %}
+    	
+        {% for item in page.carousel %}
+	          <input class="carousel__activator" type="radio" name="carousel{{ number }}" id="{{ number }}{{ letters[forloop.index0] }}" {% if forloop.first %}checked="checked"{% endif %} />
+	        {% endfor %}
+	        {% for item in page.carousel %}
+	          {% if forloop.index == forloop.length %}
+	            {% assign nextindex = 0 %}
+	          {% else %}
+	            {% assign nextindex = forloop.index0 | plus: 1 %}
+	          {% endif %}
+	          {% assign nextletter = letters[nextindex] %}
+	          {% if forloop.index0 == 0 %}
+	            {% assign previndex = forloop.length | minus: 1 %}
+	          {% else %}
+	            {% assign previndex = forloop.index0 | minus: 1 %}
+	          {% endif %}
+	          {% assign prevletter = letters[previndex] %}
+	          <div class="carousel__controls">
+	              <label class="carousel__control carousel__control--backward" for="{{ number }}{{ prevletter }}"></label>
+	              <label class="carousel__control carousel__control--forward" for="{{ number }}{{ nextletter }}"></label>
+	          </div>
+	    {% endfor %}
+      
+
+
+
+
+<!-- 
+
+CAROUSEL ITEMS
+
+--------------------------------------------------------------------------- -->
+
+
+
         <div class="carousel__track">
-          <ul>
-            {% for item in page.carousels[number].images %}
-            <li class="carousel__slide" style="background-image: url('{{ item.image }}');"></li>
+          	{% for slides in page.carousel %}
+	            <div class="carousel__slide">
+					{% for teasers in slides.slide %}
+					<!-- <h1>{{ teasers.teaser }}</h1> -->
+						{% assign i = forloop.index  %}
+						{% if i == 1 %}
+							{% assign title1 = teasers.title %}
+							{% assign source1 = teasers.source %}
+							{% assign contain1 = teasers.contain %}
+							{% assign cover1 = teasers.cover %}
+							{% assign scale1 = teasers.scale %}
+							{% assign url1 = teasers.url %}
+							{% assign blurb1 = teasers.blurb %}
+						{% elsif i == 2 %}
+							{% assign title2 = teasers.title %}
+							{% assign source2 = teasers.source %}
+							{% assign contain2 = teasers.contain %}
+							{% assign cover2 = teasers.cover %}
+							{% assign scale2 = teasers.scale %}
+							{% assign url2 = teasers.url %}
+							{% assign blurb2 = teasers.blurb %}
+						{% elsif i == 3 %}
+							{% assign title3 = teasers.title %}
+							{% assign source3 = teasers.source %}
+							{% assign contain3 = teasers.contain %}
+							{% assign cover3 = teasers.cover %}
+							{% assign scale3 = teasers.scale %}
+							{% assign url3 = teasers.url %}
+							{% assign blurb3 = teasers.blurb %}
+						{% elsif i == 4 %}
+							{% assign title4 = teasers.title %}
+							{% assign source4 = teasers.source %}
+							{% assign contain4 = teasers.contain %}
+							{% assign cover4 = teasers.cover %}
+							{% assign scale4 = teasers.scale %}
+							{% assign url4 = teasers.url %}
+							{% assign blurb4 = teasers.blurb %}
+						{% endif %}
+					{% endfor %}
+
+					{% 	include teasers-4x_img.html
+						title1 = title1
+						source1 = source1
+						contain1 = contain1
+						cover1 = cover1
+						scale1 = scale1
+						url1 = url1
+						blurb1 = blurb1
+
+						title2 = title2
+						source2 = source2
+						contain2 = contain2
+						cover2 = cover2
+						scale2 = scale2
+						url2 = url2
+						blurb2 = blurb2
+
+						title3 = title3
+						source3 = source3
+						contain3 = contain3
+						cover3 = cover3
+						scale3 = scale3
+						url3 = url3
+						blurb3 = blurb3
+
+						title4 = title4
+						source4 = source4
+						contain4 = contain4
+						cover4 = cover4
+						scale4 = scale4
+						url4 = url4
+						blurb4 = blurb4
+					%}
+	            </div> 
             {% endfor %}
-          </ul>
         </div>
+
+
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+
         <div class="carousel__indicators">
-            {% for item in page.carousels[number].images %}
+            {% for item in page.carousel %}
               <label class="carousel__indicator" for="{{ number }}{{ letters[forloop.index0] }}"></label>
             {% endfor %}
         </div>
@@ -69,7 +160,7 @@ from: https://jekyllcodex.org/without-plugin/slider/
 .carousel__activator {
   display: none;
 }
-{% for item in page.carousels[number].images %}
+{% for item in page.carousel %}
 .carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__track {
   -webkit-transform: translateX(-{{ forloop.index0 }}00%);
           transform: translateX(-{{ forloop.index0 }}00%);
@@ -104,7 +195,7 @@ from: https://jekyllcodex.org/without-plugin/slider/
   cursor: pointer;
   border-width: 5px 5px 0 0;
   border-style: solid;
-  border-color: #fafafa;
+  border-color: #000;
   opacity: 0.35;
   opacity: 1;
   outline: 0;
@@ -161,7 +252,7 @@ from: https://jekyllcodex.org/without-plugin/slider/
   right: 0;
   opacity: 1;
 }
-{% for item in page.carousels[number].images %}
+{% for item in page.carousel %}
 .carousel__track .carousel__slide:nth-of-type({{ forloop.index }}) {
   -webkit-transform: translateX({{ forloop.index0 }}00%);
           transform: translateX({{ forloop.index0 }}00%);
@@ -186,7 +277,7 @@ from: https://jekyllcodex.org/without-plugin/slider/
 .carousel__indicator {
   background-color: #fafafa;
 }
-{% for item in page.carousels[number].images %}
+{% for item in page.carousel %}
 .carousel__slide:nth-of-type({{ forloop.index }}),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
   background-size: cover;
