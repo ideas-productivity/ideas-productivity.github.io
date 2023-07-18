@@ -23,15 +23,15 @@ registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItf-6gq
 ecp-abbreviation: cleanssw
 qa-public-url: http://bit.ly/HPCBP-QA
 survey-public-url: http://bit.ly/HPCBP-feedback
-# archives:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: HkayNzOVWRY
-#   - label: Slides
-#     format: PDF
-#     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/01/hpcbp-071-openscapes.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/01/hpcbp-071-openscapes-qa.pdf
+artifacts:
+  - label: Recording
+    format: YouTube
+    yt-video-id: Q6Ksu_uX3bc
+  - label: Slides
+    format: PDF
+    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/07/hpcbp-076-cleanssw.pdf
+  - label: Q&A
+    format: PDF
+    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/07/hpcbp-076-cleanssw-qa.pdf
 ---
 Most scientists are largely self-taught as programmers. Even many of us who spend most of our time coding have never had formal training in writing software. This webinar is intended for students and scientists who have some experience writing code but who have had to learn mostly on their own. The webinar will describe tips and strategies on how to write readable, reusable, and maintainable code. These tips include writing short functions that do exactly one thing with no side-effects, and measuring the length of a variable name by the time needed to understand its meaning rather than by number of characters. The webinar will describe strategies for restructuring a complicated function into smaller and more manageable chunks, and provide tips on how to make the best use of comments and error messages. Overall, the webinar will embolden the Computational Science and Engineering (CS&E) community to think of code as communication.
