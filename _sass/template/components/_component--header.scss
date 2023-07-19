@@ -13,13 +13,14 @@ header {
 	border-bottom: 2px solid color(blue, XX);
 
 	.masthead {
-		grid-column: 1 / 6;
+		grid-column: 1 / 4;
 	}
 
 	.nav {
-		grid-column: 6 / -1;
+		grid-column: 4 / -1;
 		justify-self: end;
 		margin-top: -12px;
+		position: relative;
 	}
 
 	h1 {
@@ -128,5 +129,140 @@ header {
 		display: block;
 	}
 
+
+
+
+
+// SEARCH
+
+
+	#search-trigger {
+		width: 16px;
+		padding-left: 12px;
+		display: inline-block;
+	}
+	#search-trigger:after {
+		@include typestyle($icon-sm);
+		content: '\e986';	
+		position: relative;
+		top: 3px;
+		// right: 3px;
+		color: color(green, XX);
+		margin-top: 0;
+		transition: all 0.2s ease-out;
+	}
+	#search-trigger:hover:after {
+		color: color(neutral, XXX);
+		cursor: pointer;
+	}
+	#search-searchbar{
+		// display: none;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	#search-hits{
+		// display: none;
+		position: absolute;
+		top: 50px;
+		right: -28px;
+		left: 0;
+		// max-height: calc(100vh - 50px);
+		// overflow-y: scroll;
+		background: color(blue, X);
+		@include inset(xs, sm);
+		padding-bottom: 0;
+		box-sizing: border-box;
+		z-index: 100000;
+	}
+	.ais-search-box {
+	  max-width: none;
+	  height: 100%;
+	}
+	.ais-search-box .ais-search-box--input{
+	  width: calc(100% + 28px);
+	  height: calc(100% - 12px);
+	  border: None;
+	  background-color: color(blue, X);
+	  border-radius: unset;
+	  color: color(blue, XXX);
+	  @include typestyle($sans-sm-bld);
+	  padding-left: 48px;
+	}
+	.ais-search-box--loading-indicator-wrapper, .ais-search-box--magnifier {
+	  // fill: color(blue, XXX);
+	  left: 12px;
+	  top: calc(50% - 15px);
+	}
+	.ais-search-box--loading-indicator-wrapper, .ais-search-box--magnifier:after {
+		@include typestyle($icon-sm);
+		content: '\e986';	
+		position: relative;
+		color: color(blue, XXX);
+		top: -3px;
+		transition: all 0.2s ease-out;
+	}
+	.ais-search-box--loading-indicator-wrapper, .ais-search-box--magnifier svg {
+		display: none;
+	}
+	.post-item {
+	  padding-bottom: bl(1);
+	  // @include stack(xs);
+	}
+	.post-link .ais-Highlight {
+	  color: color(green, XXXX);
+	  font-style: normal;
+	  text-decoration: underline;
+	}
+	.post-breadcrumbs {
+	  color: #424242;
+	  display: block;
+	}
+	.post-breadcrumb {
+	  font-size: 18px;
+	  color: #424242;
+	}
+	.post-breadcrumb .ais-Highlight {
+	  font-weight: bold;
+	  font-style: normal;
+	}
+	.post-snippet .ais-Highlight {
+	  color: #2a7ae2;
+	  font-style: normal;
+	  font-weight: bold;
+	}
+	.post-snippet img {
+	  display: none;
+	}
+	.post-meta, .post-snippet p {
+		@include typestyle($sans-xs-reg);
+		color: color(blue, XXX);
+	}
+	.post-meta {
+		display: block;
+		color: color(neutral, XXX);
+		margin-bottom: 0;
+	}
+	.post-item h2 {
+		margin-left: 0;
+		@include stack(xxs);
+	}
+	.post-link, .post-link:visited {
+		color: color(blue, XXX);
+		@include typestyle($sans-sm-bld);
+	}
+	.search-hr {
+		margin-left: -24px;
+		width: calc(100% + 48px);
+		border-top: 1px solid color(blue, XX);
+		border-bottom: none;
+		opacity: .5;
+		@include stack(xs);
+	}
+	.ais-hits .ais-hits--item:last-of-type .search-hr {
+		margin-bottom: 0 !important;
+	}
 }
 

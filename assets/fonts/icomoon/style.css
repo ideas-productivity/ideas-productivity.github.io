@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?qild56');
-  src:  url('fonts/icomoon.eot?qild56#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?qild56') format('truetype'),
-    url('fonts/icomoon.woff?qild56') format('woff'),
-    url('fonts/icomoon.svg?qild56#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?6usyco');
+  src:  url('fonts/icomoon.eot?6usyco#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6usyco') format('truetype'),
+    url('fonts/icomoon.woff?6usyco') format('woff'),
+    url('fonts/icomoon.svg?6usyco#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,14 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow:before {
+  content: "\e900";
+}
 .icon-arrowl:before {
   content: "\e901";
 }
 .icon-arrowr:before {
   content: "\e902";
-}
-.icon-arrow:before {
-  content: "\e900";
 }
 .icon-connection:before {
   content: "\e91b";
@@ -117,4 +117,16 @@
 }
 .icon-linkedin2:before {
   content: "\eaca";
+}
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-folder:before {
+  content: "\e92f";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-bookmark:before {
+  content: "\e9d2";
 }
