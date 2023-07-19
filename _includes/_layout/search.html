@@ -29,7 +29,7 @@ available parameters:
 
 
 <div id="search-trigger"></div>
-<div id="search-searchbar"></div>
+<div id="search-searchbar" class="search-hide"></div>
 <div id="search-hits" class="search-hide"></div>
 
 
@@ -98,8 +98,9 @@ searchInput = searchInput.getElementsByClassName("ais-search-box--input");
 searchInput = searchInput[0];
 const hitsDiv = document.getElementById("search-hits");
 hitsDiv
+const searchTrig = document.getElementById("search-trigger");
+const searchBar =  document.getElementById("search-searchbar");
 
-console.log(searchInput);
 searchInput.addEventListener("focus", (event) => {
 	hitsDiv.classList.remove("search-hide");
 	hitsDiv.classList.add("search-show");
@@ -108,6 +109,13 @@ searchInput.addEventListener("focus", (event) => {
 searchInput.addEventListener("blur", (event) => {
 	hitsDiv.classList.remove("search-show");
 	hitsDiv.classList.add("search-hide");
+	searchBar.classList.remove("search-show");
+	searchBar.classList.add("search-hide");
+});
+
+searchTrig.addEventListener("click", (event) => {
+	searchBar.classList.remove("search-hide");
+	searchBar.classList.add("search-show");
 });
 </script>
 
