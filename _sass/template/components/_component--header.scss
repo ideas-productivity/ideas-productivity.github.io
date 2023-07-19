@@ -156,7 +156,6 @@ header {
 		cursor: pointer;
 	}
 	#search-searchbar{
-		// display: none;
 		position: absolute;
 		bottom: 0;
 		top: 0;
@@ -164,13 +163,12 @@ header {
 		right: 0;
 	}
 	#search-hits{
-		// display: none;
 		position: absolute;
 		top: 50px;
 		right: -28px;
 		left: 0;
-		// max-height: calc(100vh - 50px);
-		// overflow-y: scroll;
+		max-height: calc(75vh - 50px);
+		overflow-y: scroll;
 		background: color(blue, X);
 		@include inset(xs, sm);
 		padding-bottom: 0;
@@ -263,6 +261,13 @@ header {
 	}
 	.ais-hits .ais-hits--item:last-of-type .search-hr {
 		margin-bottom: 0 !important;
+	}
+
+	.search-hide {
+		display: none;
+	}
+	.search-show {
+		display: block;
 	}
 }
 
