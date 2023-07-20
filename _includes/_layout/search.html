@@ -100,10 +100,18 @@ const hitsDiv = document.getElementById("search-hits");
 hitsDiv
 const searchTrig = document.getElementById("search-trigger");
 const searchBar =  document.getElementById("search-searchbar");
+function isEmpty(str) {
+    return !str.trim().length;
+}
 
-searchInput.addEventListener("focus", (event) => {
-	hitsDiv.classList.remove("search-hide");
-	hitsDiv.classList.add("search-show");
+searchInput.addEventListener("input", (event) => {
+	if( !isEmpty(searchInput.value) ) {
+    	hitsDiv.classList.remove("search-hide");
+		hitsDiv.classList.add("search-show");
+  	} else {
+  		hitsDiv.classList.remove("search-show");
+		hitsDiv.classList.add("search-hide");
+  	}
 });
 
 searchInput.addEventListener("blur", (event) => {
@@ -116,6 +124,14 @@ searchInput.addEventListener("blur", (event) => {
 searchTrig.addEventListener("click", (event) => {
 	searchBar.classList.remove("search-hide");
 	searchBar.classList.add("search-show");
+
+	if( !isEmpty(searchInput.value) ) {
+    	hitsDiv.classList.remove("search-hide");
+		hitsDiv.classList.add("search-show");
+  	} else {
+  		hitsDiv.classList.remove("search-show");
+		hitsDiv.classList.add("search-hide");
+  	}
 });
 </script>
 
