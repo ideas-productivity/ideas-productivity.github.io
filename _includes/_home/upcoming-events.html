@@ -40,9 +40,28 @@ limit (default: 3)
 		{% if sorted and sorted.size != 0 %}
 		<ul class="event-list">
 		{% for event in sorted limit: limit %}
-			<li>	
+			<li>
+
+			{% comment %}
+				For most events, we take the title as-is from the frontmatter.  But tutorials are special.  
+				They usually have a "title-type" that characterizes how the venue labels the event (e.g., tutorial or track or training or...).
+				They also have venue information, which we will add to the title iff this is a standalone event (i.e., one that doesn't have
+				parent-event information).
+			{% endcomment %}
+
+			{% if event.title-type %}
+				{% assign my-title = event.title | append: " " | append: event.title-type %}
+			{% else %}
+				{% assign my-title = event.title %}
+			{% endif %}
+
+			{% unless event.parent-event-name and event.parent-event-file %}
+				{% if event.venue %}
+				  {% assign my-title = my-title | append: " @ " | append: event.venue %}
+				{% endif %}
+			{% endunless %}	
 				<a href="{{ event.url }}" class="event-link">
-				  <h2 class="event-title">{{ event.title }}</h2>
+				  <h2 class="event-title">{{ my-title }}</h2>
 				  <p class="event-date">
 				  	{{ event.startdate | date:"%b %d" }}
 					  {% assign startmo = event.startdate | date:"%b"  %}

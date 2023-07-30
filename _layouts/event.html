@@ -36,10 +36,30 @@
     {% assign my-meta2-value = page.meta2-value %}
   {% endif %}
 
+  {% comment %}
+    For most events, we take the title as-is from the frontmatter.  But tutorials are special.  
+    They usually have a "title-type" that characterizes how the venue labels the event (e.g., tutorial or track or training or...).
+    They also have venue information, which we will put into the blurb here iff this is a standalone event (i.e., one that doesn't have
+    parent-event information).
+  {% endcomment %}
+
+  {% if page.title-type %}
+    {% assign my-title = page.title | append: " " | append: page.title-type %}
+  {% else %}
+    {% assign my-title = page.title %}
+  {% endif %}
+
+  {% assign my-blurb = "" %}
+  {% unless page.parent-event-name and page.parent-event-file %}
+    {% if page.venue %}
+      {% capture my-blurb %}at {% if page.venue-url %}<a href="{{ page.venue-url }}">{{ page.venue }}</a>{% else %}{{ page.venue }}{% endif %}{% endcapture %}
+    {% endif %}
+  {% endunless %}
+
   <main class="page-content layout-wrapper" aria-label="Content">
     {%- include _layout/hero-page.html 
-      title = page.title
-      blurb = page.blurb
+      title = my-title
+      blurb = my-blurb
       meta1-name = my-meta1-name
       meta1-value = my-meta1-value
       meta2-name = my-meta2-name
