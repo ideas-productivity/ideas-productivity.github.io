@@ -91,25 +91,34 @@
                 A display-video key set to false will override this, if desired
       {% endcomment %}
 
-      {% assign video-artifact = page.artifacts | find_exp: "item", "item.yt-video-id" %}
+      {% assign have-video = page.artifacts | find_exp: "item", "item.yt-video-id" %}
+      {% assign have-playlist = page.artifacts | find_exp: "item", "item.yt-playlist-id" %}
 
       {% if page.display-video != nil %}
-        <p>I have a display-video tag</p>
         {% assign my-display-video = page.display-video %}
       {% else %}
         {% assign my-display-video = true %}
       {% endif %}
 
-      {% if video-artifact and my-display-video %}
-        {% capture my-embed-code %}<iframe width='560' height='315' src='https://www.youtube.com/embed/{{ video-artifact.yt-video-id }}' title='YouTube video player;' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>{% endcapture %}
-        {%  include media-video.html embed-code = my-embed-code %}
+      {% if my-display-video %}
+        {% if have-video %}
+          {% capture my-embed-code %}<iframe width='560' height='315' src='{{ site.youtube-embed-v-url }}{{ have-video.yt-video-id }}' title='YouTube video player;' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>{% endcapture %}
+          {%  include media-video.html embed-code = my-embed-code %}
+        {% elsif have-playlist %}
+          {% capture my-embed-code %}<iframe width='560' height='315' src='{{ site.youtube-embed-pl-url }}{{ have-playlist.yt-playlist-id }}' title='YouTube video player;' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>{% endcapture %}
+          {%  include media-video.html embed-code = my-embed-code %}
+        {% endif %}
       {% endif %}
 
       {% comment %}
                 Incorporate content from event file
       {% endcomment %}
-     
+
+      {% if page.description %}
+      {{ page.description | markdownify }}
+      {% else %}     
       {{ content }}
+      {% endif %}
 
       {% comment %}
               Show registration link

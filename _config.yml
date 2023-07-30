@@ -114,6 +114,8 @@ algolia:
 doi-resolver-url: https://doi.org
 github-url: https://github.com
 
-# Base URLs for watching and embedding YouTube videos
+# Base URLs for watching and embedding YouTube videos and playlists
 youtube-watch-url: https://www.youtube.com/watch?v=
-youtube-embed-url: https://www.youtube.com/embed/
+youtube-playlist-url: https://youtube.com/playlist?list=
+youtube-embed-v-url: https://www.youtube.com/embed/
+youtube-embed-pl-url: https://www.youtube.com/embed/videoseries?list=
