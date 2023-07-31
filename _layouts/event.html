@@ -146,7 +146,14 @@
               If the link is provided and if the event is upcoming
       {% endcomment %}
 
-      {% include upcoming-event event = page.startdate %}
+      {% if page.enddate %}
+        {% include upcoming-event event=page.enddate %}
+      {% elsif page.startdate %}
+        {% include upcoming-event event=page.startdate %}
+      {% else %}
+        {% assign upcoming = false %}
+      {% endif %}
+
       {% if upcoming and page.registration-url %}
       {%  include text-biglink.html
           blurb = "Register for the Event"
