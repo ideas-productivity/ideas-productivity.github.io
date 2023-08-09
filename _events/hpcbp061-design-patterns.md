@@ -30,7 +30,7 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/03/hpcbp061-designpatterns.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/03/hpcbp061-designpatterns-qa.pdf
 ---

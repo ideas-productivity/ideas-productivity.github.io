@@ -35,7 +35,7 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/06/webinar030-cpp4hpc.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/07/webinar030-cpp4HPC-qa.pdf
 ---

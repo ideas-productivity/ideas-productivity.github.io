@@ -74,6 +74,8 @@ defaults:
 feed:
   collections:
     - events
+  excerpt_only: true
+
 
 search_provider: algolia
 algolia:

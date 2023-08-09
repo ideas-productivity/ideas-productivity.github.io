@@ -52,7 +52,7 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/10/webinar023-osbp.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/10/webinar023-osbp-qa.pdf
 ---

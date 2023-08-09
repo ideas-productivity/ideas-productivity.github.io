@@ -31,7 +31,7 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/10/webinar045-precisiontuning.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/10/webinar045-precisiontuning-qa.pdf
 ---

@@ -30,7 +30,7 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/06/hpcbp-074-qmcpack.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/05/hpcbp-074-qmcpack-qa.pdf
 ---

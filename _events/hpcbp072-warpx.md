@@ -16,7 +16,7 @@ presenters:
 #
 webinar-id: 72
 date: 2023-03-15T13:00-0400
-title: "Our Road to Exascale: Particle Accelerator & Laser-Plasma Modeling"
+title: "Our Road to Exascale: Particle Accelerator &amp; Laser-Plasma Modeling"
 presenter-ids: [huebl-axel]
 topics: ["software engineering",  "high-performance computing (hpc)", "performance at leadership computing facilities", "performance portability", "strategies for more effective teams", “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItc-ihqzwoG0lIl3IHQtifYVYUyDVSZWQ
@@ -30,7 +30,7 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/04/hpcbp-072-warpx.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/04/hpcbp-072-warpx-qa.pdf
 ---

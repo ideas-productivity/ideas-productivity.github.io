@@ -28,7 +28,7 @@ artifacts:
   - label: Slides
     format: FigShare
     url: https://dx.doi.org/10.6084/m9.figshare.7409573
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/12/webinar024-licensing-qa.pdf
 ---

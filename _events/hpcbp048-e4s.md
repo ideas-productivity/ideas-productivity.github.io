@@ -38,7 +38,7 @@ artifacts:
   - label: Slides Part 2
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/01/webinar048-e4s-pt2.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/01/webinar048-e4s-qa.pdf
 ---

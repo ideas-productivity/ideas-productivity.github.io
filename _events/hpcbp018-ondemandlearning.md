@@ -26,7 +26,7 @@ the University of Central Florida. Elaine is a member of IDEAS-ECP."
 #
 webinar-id: 18
 date: 2018-05-09T13:00-0400
-title: "On-demand Learning for Better Scientific Software: How to Use Resources & Technology to Optimize your Productivity"
+title: "On-demand Learning for Better Scientific Software: How to Use Resources &amp; Technology to Optimize your Productivity"
 presenter-ids: [raybourn-elaine]
 artifacts:
   - label: Recording
@@ -35,7 +35,7 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/05/webinar018-slides.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: https://ideas-productivity.org/wordpress/wp-content/uploads/2018/05/webinar018-qa.pdf
 ---

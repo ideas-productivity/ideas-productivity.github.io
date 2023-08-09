@@ -29,7 +29,7 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/07/hpcbp054-miningdevdata.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/07/hpcbp054-miningdevdata-qa.pdf
 ---

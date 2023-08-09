@@ -16,7 +16,7 @@ presenters:
 #
 webinar-id: 70
 date: 2022-12-14T13:00-0500
-title: "Lab Notebooks for Computational Mathematics, Sciences & Engineering"
+title: "Lab Notebooks for Computational Mathematics, Sciences &amp; Engineering"
 presenter-ids: [oneal-jared]
 topics: ["documentation",  “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItdeqppz8oGpALQTX4A5OUekOd-nSjAw0
@@ -30,7 +30,7 @@ artifacts:
  - label: Slides
    format: PDF
    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/12/hpcbp-070-labnotebooks.pdf
- - label: Q&A
+ - label: Q&amp;A
    format: PDF
    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/12/hpcbp-070-labnotebooks-qa.pdf
 ---

@@ -32,7 +32,7 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/07/webinar009-IntermediateGitSlides-4.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/07/webinar009-IntermediateGitQA-4.pdf
   - label: Git Tutorial and Reference Collection

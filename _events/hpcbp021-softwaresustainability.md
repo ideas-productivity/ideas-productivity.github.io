@@ -36,7 +36,7 @@ artifacts:
   - label: Slides
     format: FigShare
     url: https://doi.org/10.6084/m9.figshare.6935840
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/09/webinar021-qa.pdf
 ---

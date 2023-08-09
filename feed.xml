@@ -1,0 +1,54 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+  <channel>
+      <title>{{ site.title | escape }}</title>
+      <link>{{ site.url }}</link>
+      <atom:link href="{{ page.url | prepend: site.url }}" rel="self" type="application/rss+xml" xmlns:atom="https://www.w3.org/2005/Atom" />
+      <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+
+      {% for event in site.events %}
+      <item>
+        <title>{{ event.title }}</title>
+        <link>{{ event.url | prepend: site.url }}</link>
+        <startDate>{{ event.startdate | date: "%a, %b %d, %Y" }}</startDate>
+        <endDate>{{ event.enddate | date: "%a, %b %d, %Y" }}</endDate>
+        <description>{{ event.description | escape }}</description>
+        <registrationURL>{{ event.registration-url }}</registrationURL>
+        <artifacts>
+        {%- if include.format == "li" -%}
+            {%- assign row=false -%}
+        {%- else -%}
+            {%- assign row = true -%}
+        {%- endif -%}
+
+        {%- for i in event.artifacts -%}
+        {%- if i.status == "published" or i.status == nil -%}
+          {%- unless row -%}<li><h4>{%- endunless -%}
+            {%- if i.yt-video-id -%}<a href="{{ include.yt-url | default: site.youtube-watch-url }}{{ i.yt-video-id  | escape }}">
+            {%- elsif i.yt-playlist-id -%}<a href="{{ include.yt-url | default: site.youtube-playlist-url }}{{ i.yt-playlist-id  | escape }}">
+            {%- elsif i.gh-repo -%}<a href="{{ include.gh-url | default: site.github-url }}/{{ i.gh-repo }}">
+            {%- elsif i.doi -%}<a href="{{ include.doi-url | default: site.doi-resolver-url  | escape }}/{{ i.doi  | escape }}">
+            {%- elsif i.url -%}<a href="{{ i.url | escape }}">{%- endif -%}
+            {{ i.label }}
+            {%- if i.yt-video-id or i.yt-playlist-id or i.gh-repo or i.doi or i.url -%}</a>{%- endif -%}
+            {%- if i.note %} {{ i.note }}{%- endif -%}
+            {%- if i.format %} ({{ i.format }}){%- endif -%}
+            {% if row -%}
+              {%- unless forloop.last %} | {% endunless -%}
+            {%- else -%}
+            </h4></li>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+        </artifacts>
+
+      </item>
+      {% endfor %}
+
+  </channel>
+</rss>

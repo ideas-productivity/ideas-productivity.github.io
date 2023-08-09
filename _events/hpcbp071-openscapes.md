@@ -30,7 +30,7 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/01/hpcbp-071-openscapes.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/01/hpcbp-071-openscapes-qa.pdf
 ---

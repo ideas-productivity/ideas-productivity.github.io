@@ -32,14 +32,14 @@ artifacts:
   - label: Recording
     format: YouTube
     yt-video-id: RmTXDTL_Ce0
-  - label: Extended Q&A Recording
+  - label: Extended Q&amp;A Recording
     format: YouTube
     yt-video-id: RWZOVFz7UIg
     dont-embed: true
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/04/webinar028-pfunit.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/04/webinar028-pfunit-qa.pdf
 ---

@@ -32,7 +32,7 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/03/webinar038-testingstrategies.pdf
-  - label: Q&A
+  - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/03/webinar038-testingstrategies-qa.pdf
 ---
