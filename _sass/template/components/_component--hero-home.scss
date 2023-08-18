@@ -6,13 +6,15 @@
   */
 
 .hero-home {
-	@include grid-child($cols:12);
 	background-color: color(green, XXX);
 	background-image: url("/assets/images/bg.gif");
 	background-repeat: repeat;
-	margin: 0 -28px;
-  padding: 20vh bl(7); //28px
-  @include stack(sm);
+  padding: 15vh bl(7); //28px
+  @include stack(lg);
+
+  .hero-content-wrapper {
+  	@include grid-parent();
+  }
 
   .tri-wrapper {
   	grid-column: 1 / 4;
@@ -30,6 +32,7 @@
 
 	.blurb {
 		@include typestyle($sans-xl-reg);
+		hyphens: none;
 		color: color(neutral, X);
 	}
 

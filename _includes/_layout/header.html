@@ -44,3 +44,55 @@
 
 </header>
 
+
+
+<header class="header-mobile" role="banner">
+
+
+  <div class="nav-bar--mobile">
+    <div class="masthead">
+      <h1><a href="/index.html">IDEAS PRODUCTIVITY</a></h1>
+    </div>
+    <div class="icon-links">
+      <a class="burger">&#xe9bd;</a>
+    </div>
+  </div>
+
+
+  <div class="nav-pane">
+    <div class="nav-pane--wrapper">
+      {% for item in site.data.nav-config.toc %}
+
+        {% if item.subfolderitems %}
+          <div class="nav-pane--chunk">
+            <h2>
+              <a href="{{ item.url }}" class="menuitem">
+                {{ item.title }}
+              </a>
+            </h2>
+            <div id="{{ item.slug }}">
+              <ul>
+                {% for entry in item.subfolderitems %}
+                  <li>
+                    <a href="{{ entry.url }}">{{ entry.page }}</a>
+                    <hr>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% else %}
+          <h2 class="nav-pane--chunk">
+            <a href="{{ item.url }}">{{ item.title }}</a>
+          </h2>
+        {% endif %}
+        
+      {% endfor %} 
+    </div>
+  </div>
+
+
+
+
+</header>
+

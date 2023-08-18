@@ -5,12 +5,17 @@
   * -
   */
 
-header {
+.header {
 	background-color: color(green, XXXX);
 	height: 50px;
 	padding-top: bl(3); //12px
 	box-sizing: border-box;
 	border-bottom: 2px solid color(blue, XX);
+	visibility: hidden;
+
+	@include respond-to(m){
+		visibility: visible;
+	}
 
 	.masthead {
 		grid-column: 1 / 4;
@@ -271,3 +276,111 @@ header {
 	}
 }
 
+
+
+
+.header-mobile {
+	position: fixed;
+	z-index: 5000;
+	top: 0;
+	width: 100vw;
+	display: block;
+	background-color: color(green, XXXX);
+	border-bottom: 2px solid color(blue, XX);
+
+	@include respond-to(m){
+		display: none;
+	}
+
+	.nav-bar--mobile {
+		@include grid-parent();
+		padding-top: bl(3); //12px
+		box-sizing: border-box;
+		height: 50px;
+	}
+
+	.masthead {
+		grid-column: 1 / 10;
+	}
+
+	.icon-links {
+		grid-column: 10 / -1;
+		justify-self: end;
+	}
+
+	h1 {
+		@include typestyle($sans-sm-bld);
+		color: color(neutral, X);
+		border: none;
+	}
+
+	h1:after {
+		content: '\2003 \25B6';	
+		color: color(green, XX);
+	}
+
+	h1 a, 
+	h1 a:visited {
+		color: color(neutral, X);
+		text-decoration: none;
+	}
+
+	.burger {
+		@include typestyle($icon-sm);
+		color: color(green, XX);
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+			cursor: pointer;
+			color: color(neutral, XX);
+		}
+	}
+
+
+
+
+	.nav-pane {
+		background-color: color(neutral, X);
+		padding-top: 24px;
+		padding-bottom: 24px;
+		border-top: 2px solid color(blue, XX);
+		// display: none;
+	}
+
+	.nav-pane--wrapper {
+		@include grid-parent();
+	}
+
+	.nav-pane--chunk {
+		grid-column: 1 / -1;
+		@include stack(sm);
+	}
+
+	.nav-pane--wrapper a {
+		color: color(blue, XXX);
+		text-decoration: none;
+		margin-bottom: bl(2); //8px
+		&:hover {
+			color: color(blue, XX);
+		}
+	}
+
+	.nav-pane ul,
+	.nav-pane li {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.nav-pane ul {
+		list-style: none;
+		margin-bottom: bl(1) !important; //4px
+	}
+
+	.nav-pane hr {
+		background-color: #DDE6E7;
+		border: none;
+		height: 1px;
+	}
+
+}
