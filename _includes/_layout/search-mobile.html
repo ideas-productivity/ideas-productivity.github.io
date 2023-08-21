@@ -29,8 +29,8 @@ available parameters:
 
 
 
-<div id="search-trigger-mobile"></div>
-<div id="search-searchbar-mobile" class="search-hide"></div>
+
+<div id="search-searchbar-mobile"></div>
 <div id="search-hits-mobile" class="search-hide"></div>
 
 
@@ -99,7 +99,7 @@ searchInputMobile = searchInputMobile.getElementsByClassName("ais-search-box--in
 searchInputMobile = searchInputMobile[0];
 const hitsDivMobile = document.getElementById("search-hits-mobile");
 hitsDiv
-const searchTrigMobile = document.getElementById("search-trigger-mobile");
+// const searchTrigMobile = document.getElementById("search-trigger-mobile");
 const searchBarMobile =  document.getElementById("search-searchbar-mobile");
 function isEmpty(str) {
     return !str.trim().length;
@@ -107,31 +107,31 @@ function isEmpty(str) {
 
 searchInputMobile.addEventListener("input", (event) => {
 	if( !isEmpty(searchInputMobile.value) ) {
-    	hitsDiv.classList.remove("search-hide");
-		hitsDiv.classList.add("search-show");
+    	hitsDivMobile.classList.remove("search-hide");
+		  hitsDivMobile.classList.add("search-show");
   	} else {
-  		hitsDiv.classList.remove("search-show");
-		hitsDiv.classList.add("search-hide");
+  		hitsDivMobile.classList.remove("search-show");
+		  hitsDivMobile.classList.add("search-hide");
   	}
 });
 
 searchInput.addEventListener("blur", (event) => {
 	hitsDivMobile.classList.remove("search-show");
 	hitsDivMobile.classList.add("search-hide");
-	searchBarMobile.classList.remove("search-show");
-	searchBarMobile.classList.add("search-hide");
+	// searchBarMobile.classList.remove("search-show");
+	// searchBarMobile.classList.add("search-hide");
 });
 
-searchTrigMobile.addEventListener("click", (event) => {
-	searchBarMobile.classList.remove("search-hide");
-	searchBarMobile.classList.add("search-show");
+// searchTrigMobile.addEventListener("click", (event) => {
+// 	// searchBarMobile.classList.remove("search-hide");
+// 	// searchBarMobile.classList.add("search-show");
 
-	if( !isEmpty(searchInputMobile.value) ) {
-    	hitsDivMobile.classList.remove("search-hide");
-		hitsDivMobile.classList.add("search-show");
-  	} else {
-  		hitsDivMobile.classList.remove("search-show");
-		hitsDivMobile.classList.add("search-hide");
-  	}
-});
+// 	if( !isEmpty(searchInputMobile.value) ) {
+//     	hitsDivMobile.classList.remove("search-hide");
+// 		  hitsDivMobile.classList.add("search-show");
+//   	} else {
+//   		hitsDivMobile.classList.remove("search-show");
+// 		  hitsDivMobile.classList.add("search-hide");
+//   	}
+// });
 </script>
