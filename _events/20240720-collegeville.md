@@ -30,7 +30,7 @@ One way to characterize scientific software communities is through their institu
 
 Originally, we thought would we alternate between software sustainability and developer productivity, but we have evolved our strategy to pick an emerging theme for each year. This year’s workshop theme is software teams.
 
-Very little scientific software is developed by indivdual scientists. Instead, teams with diverse skills collaborate on producing and using software to advance scientific discovery and understanding. Understanding how teams function and how teamwork can be improved represents one of the frontiers in improving the impact of software on science. Software team skills and cultures can vary significantly. A scientific software team will certainly have science domain experts but increasingly has expertise in computer science, mathematics and software engineering. As we increase our focus on software teams, we also see value in including expertise in social and cognitive sciences.
+Very little scientific software is developed by individual scientists. Instead, teams with diverse skills collaborate on producing and using software to advance scientific discovery and understanding. Understanding how teams function and how teamwork can be improved represents one of the frontiers in improving the impact of software on science. Software team skills and cultures can vary significantly. A scientific software team will certainly have science domain experts but increasingly has expertise in computer science, mathematics and software engineering. As we increase our focus on software teams, we also see value in including expertise in social and cognitive sciences.
 
 ## What we mean by a software team
 
