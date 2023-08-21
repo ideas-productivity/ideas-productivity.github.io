@@ -115,6 +115,7 @@ algolia:
 # Base URLs
 doi-resolver-url: https://doi.org
 github-url: https://github.com
+bsswt-url: https://bssw-tutorial.github.io
 
 # Base URLs for watching and embedding YouTube videos and playlists
 youtube-watch-url: https://www.youtube.com/watch?v=
