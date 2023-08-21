@@ -1,0 +1,137 @@
+<!-- 
+
+SEARCH
+
+-------------------------------------------------------------------------------
+
+available parameters:
+* 
+
+
+* required
+
+-------------------------------------------------------------------------------
+
+-->
+
+<!--
+
+- Search as mag glass until clicked
+- Close search when click anywhere off screen?
+- Or just shrink bar when unfocused
+- Hits hidden until results/bar in focus
+- Style text
+- Responsive 
+- Divvy into separate files
+
+ -->
+
+
+
+
+
+<div id="search-searchbar-mobile"></div>
+<div id="search-hits-mobile" class="search-hide"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<base href="{{ site.baseurl }}">
+
+<script>
+const searchMobile = instantsearch({
+  appId: '{{ site.algolia.application_id }}',
+  apiKey: '{{ site.algolia.search_only_api_key }}',
+  indexName: '{{ site.algolia.index_name }}'
+});
+
+const hitTemplateMobile = function(hit) {
+  let date = '';
+  if (hit.date) {
+    date = moment.unix(hit.date).format('MMM D, YYYY');
+  }
+  let url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
+
+  const title = hit._highlightResult.title.value;
+
+  let vis = '';
+  if (hit._highlightResult.headings) {
+    vis = 'none'
+  }
+
+  let content = hit._highlightResult.html.value;
+  content = content.slice(0, 140);
+  content = content.concat('&hellip;');
+
+  return `
+    <div class="post-item" style="display: ${vis};">
+      <small class="post-meta">${date}</small>
+      <h2><a class="post-link" href="${url}">${title}</a></h2>
+      <div class="post-snippet">${content}</div>
+    </div><hr class="search-hr" style="display: ${vis};">
+  `;
+}
+
+
+searchMobile.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#search-searchbar-mobile',
+    placeholder: 'Search...',
+    poweredBy: false
+  })
+);
+
+searchMobile.addWidget(
+  instantsearch.widgets.hits({
+    container: '#search-hits-mobile',
+    templates: {
+      item: hitTemplateMobile
+    }
+  })
+);
+
+searchMobile.start();
+
+let searchInputMobile = document.getElementById("search-searchbar-mobile");
+searchInputMobile = searchInputMobile.getElementsByClassName("ais-search-box--input");
+searchInputMobile = searchInputMobile[0];
+const hitsDivMobile = document.getElementById("search-hits-mobile");
+hitsDiv
+// const searchTrigMobile = document.getElementById("search-trigger-mobile");
+const searchBarMobile =  document.getElementById("search-searchbar-mobile");
+function isEmpty(str) {
+    return !str.trim().length;
+}
+
+searchInputMobile.addEventListener("input", (event) => {
+	if( !isEmpty(searchInputMobile.value) ) {
+    	hitsDivMobile.classList.remove("search-hide");
+		  hitsDivMobile.classList.add("search-show");
+  	} else {
+  		hitsDivMobile.classList.remove("search-show");
+		  hitsDivMobile.classList.add("search-hide");
+  	}
+});
+
+searchInput.addEventListener("blur", (event) => {
+	hitsDivMobile.classList.remove("search-show");
+	hitsDivMobile.classList.add("search-hide");
+	// searchBarMobile.classList.remove("search-show");
+	// searchBarMobile.classList.add("search-hide");
+});
+
+// searchTrigMobile.addEventListener("click", (event) => {
+// 	// searchBarMobile.classList.remove("search-hide");
+// 	// searchBarMobile.classList.add("search-show");
+
+// 	if( !isEmpty(searchInputMobile.value) ) {
+//     	hitsDivMobile.classList.remove("search-hide");
+// 		  hitsDivMobile.classList.add("search-show");
+//   	} else {
+//   		hitsDivMobile.classList.remove("search-show");
+// 		  hitsDivMobile.classList.add("search-hide");
+//   	}
+// });
+</script>
