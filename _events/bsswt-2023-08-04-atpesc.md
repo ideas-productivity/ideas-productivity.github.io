@@ -113,11 +113,12 @@ description: "The BSSw tutorial focuses on issues of developer productivity, sof
 #   By the time of delivery, the doi should be set
 #
 artifacts:
-#  - label: Conference Registration
-#    url: 
-#  - label: Presentation Slides
-#    format: FigShare
-#    doi: 10.6084/m9.figshare.20416215
+  - label: Tutorial Webpage
+    bsswt-event-label: 2023-08-04-atpesc
+  - label: Presentation Slides
+    format: FigShare
+    doi: 10.6084/m9.figshare.23823822
+    status: published
 #  - label: Hands-On Code Repository
 #    format: GitHub
 #    gh-repo: bssw-tutorial/hello-numerical-world-2022-08-11-atpesc
