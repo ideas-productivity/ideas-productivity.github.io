@@ -326,14 +326,27 @@
 	}
 
 	.burger {
-		@include typestyle($icon-sm);
 		color: color(green, XX);
-		text-decoration: none;
-
 		&:hover {
 			text-decoration: none;
 			cursor: pointer;
-			color: color(neutral, XX);
+			color: color(neutral, X);
+		}
+	}
+
+	.js-ddtrigger-closed {
+		&:before {
+			@include typestyle($icon-sm);
+			content: "\e9bd"; 
+			speak: none;
+		}
+	}
+
+	.js-ddtrigger-open {
+		&:before {
+			@include typestyle($icon-sm);
+			content: "\ea0f"; 
+			speak: none;
 		}
 	}
 
@@ -344,7 +357,10 @@
 		background-color: color(neutral, X);
 		padding-top: 24px;
 		padding-bottom: 24px;
+		box-sizing: border-box;
 		border-top: 2px solid color(blue, XX);
+		max-height: calc(100vh - 50px);
+		overflow-y: scroll;
 		// display: none;
 	}
 
