@@ -54,12 +54,12 @@
       <h1><a href="/index.html">IDEAS PRODUCTIVITY</a></h1>
     </div>
     <div class="icon-links">
-      <a class="burger">&#xe9bd;</a>
+      <a class="burger burger-closed js-ddtrigger-closed js-drop-click" id="toggle-mobile-pane" data-menu="mobile-pane"></a>
     </div>
   </div>
 
 
-  <div class="nav-pane">
+  <div class="nav-pane js-dropdown-hidden" id="mobile-pane">
     <div class="nav-pane--wrapper">
       {% for item in site.data.nav-config.toc %}
 
