@@ -61,6 +61,7 @@
 
   <div class="nav-pane js-dropdown-hidden" id="mobile-pane">
     <div class="nav-pane--wrapper">
+      {% include _layout/search-mobile.html %} 
       {% for item in site.data.nav-config.toc %}
 
         {% if item.subfolderitems %}
