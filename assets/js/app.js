@@ -11,12 +11,13 @@
 
 // Include drop downs
 // ----------------------------------------------------------------------------
-var dropdowns = document.getElementsByClassName('js-drop');
+var dropdownsHover = document.getElementsByClassName('js-drop');
+var dropdownsClick = document.getElementsByClassName('js-drop-click');
 
-if (dropdowns.length > 0) {
+if (dropdownsHover.length > 0) {
 	var menus = [];
 
-	Array.prototype.forEach.call(dropdowns, function(el) {
+	Array.prototype.forEach.call(dropdownsHover, function(el) {
 		menus.push(new Dropdown({'hook': el.id, 'menu': el.dataset.menu}));	
 	});
 
@@ -25,6 +26,17 @@ if (dropdowns.length > 0) {
 	}); 
 }
 
+if (dropdownsClick.length > 0) {
+	var menus = [];
+
+	Array.prototype.forEach.call(dropdownsClick, function(el) {
+		menus.push(new Dropdown({'hook': el.id, 'menu': el.dataset.menu, 'event': 'click'}));	
+	});
+
+	Array.prototype.forEach.call(menus, function(m) {
+		m.init();
+	}); 
+}
 
 
 
