@@ -42,19 +42,43 @@
 	}
 
 	.teaser1 {
-  	grid-column: 1 / 4;
+  	grid-column: 1 / -1;
+  	@include respond-to(s){
+			grid-column: 1 / 7;
+		}
+		@include respond-to(m){
+			grid-column: 1 / 4;
+		}
 	}
 
 	.teaser2 {
-		grid-column: 4 / 7;
+		grid-column: 1 / -1;
+		@include respond-to(s){
+			grid-column: 7 / -1;
+		}
+		@include respond-to(m){
+			grid-column: 4 / 7;
+		}
 	}
 
 	.teaser3 {
-		grid-column: 7 / 10;
+		grid-column: 1 / -1;
+		@include respond-to(s){
+			grid-column: 1 / 7;
+		}
+		@include respond-to(m){
+			grid-column: 7 / 10;
+		}
 	}
 
 	.teaser4 {
-		grid-column: 10 / -1;
+		grid-column: 1 / -1;
+		@include respond-to(s){
+			grid-column: 7 / -1;
+		}
+		@include respond-to(m){
+			grid-column: 10 / -1;
+		}
 	}
 
 	.teaser1, 
@@ -62,6 +86,7 @@
 	.teaser3, 
 	.teaser4 {
 		@include inset(xs);
+		@include stack(sm);
 		background-color: color(neutral, X); 
 		box-shadow: 4px 4px 7px rgba(5, 2, 35, 0.1); 
 		-webkit-box-shadow: 4px 4px 7px rgba(5, 2, 35, 0.1); 

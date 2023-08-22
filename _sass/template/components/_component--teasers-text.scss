@@ -40,13 +40,19 @@
 
 	.lgtext {
 		@include typestyle($sans-lg-reg);
-		grid-column: 1 / 7;
+		grid-column: 1 / -1;
 		color: color(neutral,XXX);
+		@include respond-to(m){
+			grid-column: 1 / 7;
+		}
 	}
 
 	.smtext {
+		grid-column: 1 / -1;
 		@include typestyle($sans-sm-reg);
-		grid-column: 7 / -1;
+		@include respond-to(m){
+			grid-column: 7 / -1;
+		}
 	}
 
 }

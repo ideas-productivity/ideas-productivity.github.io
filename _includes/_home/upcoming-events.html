@@ -77,7 +77,9 @@ limit (default: 3)
 					<small class="event-year">{{ event.startdate | date:"%Y" }}</small>
 					<small class="event-type">{{ event.type }}</small>
 				</a>
-			  <small class="event-series">Series: {{ event.series }}</small> 
+				{% if event.series %}
+			  		<small class="event-series">Series: {{ event.series }}</small> 
+				{% endif %}
 			</li>
 		{% endfor %}
 	</ul>
@@ -86,7 +88,7 @@ limit (default: 3)
 	{% endif %}
 	{% assign remaining = sorted | size | minus: limit %}
 	{% if remaining > 0 %}
-		<p><a href='{{ include.group-linkurl }}'>see {{remaining }} more upcoming {{ remaining | pluralize: "event", "events" }}</a></p>
+		<p class="upcoming-events--more"><a href='{{ include.group-linkurl }}'>see {{remaining }} more upcoming {{ remaining | pluralize: "event", "events" }}</a></p>
 	{% endif %}
 
 </div>

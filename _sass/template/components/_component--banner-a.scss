@@ -11,22 +11,40 @@
 	position: relative;
 	padding-top: bl(20); 
 
-	.background {
-		position: absolute;
-		top: -200px;
-		left: -28px;
-		width: calc(100vw + 56px);
-		max-width: calc(100vw + 56px);
-		z-index: -1000;
+	.background-wrapper {
+		display: none;
+		@include respond-to(m){
+			display: block;
+			position: absolute;
+			top: -200px;
+			left: -28px;
+			width: 100vw;
+			overflow-x: hidden;
+			z-index: -1000;
+		}
 	}
 
-	.art {
-		grid-column: 1 / 4;
+	.background {	
+		width: calc(100vw + 56px);
+	}
+
+	.art-wrapper {
+		grid-column: 3 / 11;
+		position: relative;
+		@include stack(md);
+		@include respond-to(m){
+			grid-column: 1 / 4;
+			margin-bottom: 0 !important;
+		}
+	}
+
+	.art {	
 		@include aspect-ratio(1, 1);
 		border-radius: 50%;
 		overflow: hidden;
-		display: flex;
-		align-items: center;
+		position: relative;
+  	top: 50%;
+ 	 	transform: translateY(-50%);
 	}
 
 	.art img {
@@ -49,11 +67,14 @@
 	}
 
 	.blurb {
-		grid-column: 4 / -1;
+		grid-column: 1 / -1;
 		color: color(green, XXX);
 		@include typestyle($sans-xxl-reg);
 		display: flex;
 		align-items: center;
+		@include respond-to(m){
+			grid-column: 4 / -1;
+		}
 	}
 }
 

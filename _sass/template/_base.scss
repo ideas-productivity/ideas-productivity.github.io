@@ -44,7 +44,10 @@ body {
 .layout-wrapper p,
 .layout-wrapper ul,
 .layout-wrapper ol {
-	grid-column: 3 / 11;
+	grid-column: 1 / -1;
+	@include respond-to(m){
+		grid-column: 3 / 11;
+	}
 }
 
 .page-content {

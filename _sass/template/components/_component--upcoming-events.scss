@@ -57,17 +57,25 @@
 		color: color(green, XX);
 	}
 
-	.event-title {
-		grid-column: 4 / -1;
-		grid-row: 2;
-		min-height: bl(24); //96px
+	.event-title {	
+		grid-column: 1 / -1;
+		grid-row: 4;
 		@include typestyle($sans-md-reg);
+		@include respond-to(s){
+			grid-column: 4 / -1;
+			grid-row: 2;
+			min-height: bl(24); //96px
+		}
 	}
 
 	.event-date {
-		grid-column: 1 / 4;
+		grid-column: 1 / -1;
 		grid-row: 2;
 		@include typestyle($sans-md-reg);
+		@include respond-to(s){
+			grid-column: 1 / 4;
+			grid-row: 2;
+		}
 	}
 
 	.event-year {
@@ -77,18 +85,28 @@
 	}
 
 	.event-type {
-		grid-column: 4 / -1;
-		grid-row: 1;
+		grid-column: 1 / -1;
+		grid-row: 3;
 		margin-bottom: 0;
+		@include respond-to(s){
+			grid-column: 4 / -1;
+			grid-row: 1;
+		}
 	}
 
 	.event-series {
-		grid-column: 4 / -1;
-		grid-row: 3;
-		margin-bottom: -4px;
+		grid-column: 1 / -1;
+		grid-row: 5;
+		@include respond-to(s){
+			grid-column: 4 / -1;
+			grid-row: 3;
+			margin-bottom: -4px;
+		}		
 	}
 
-
+	.upcoming-events--more {
+		grid-column: 1 / -1;
+	}
 
 
 }
