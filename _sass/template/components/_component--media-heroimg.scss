@@ -10,8 +10,11 @@
 
 	.img-wrapper {
 		@include aspect-ratio(16, 9);
-		grid-column: 3 / 11;
+		grid-column: 1 / -1;
 		@include stack(xxs);
+		@include respond-to(m){
+			grid-column: 3 / 11;
+		}
 	}
 
 	img {
@@ -27,7 +30,10 @@
 	}
 
 	.caption {
-		grid-column: 3 / 11;
+		grid-column: 1 / -1;
 		@include stack(md);
+		@include respond-to(m){
+			grid-column: 3 / 11;
+		}
 	}
 }

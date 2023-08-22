@@ -92,7 +92,7 @@ carousel:
 
 
 <div style="grid-column: 1/-1;">
-	{% include carousel.html height="50" unit="%" duration="7" number="1" %}
+	{% include carousel.html height="50" unit="%" duration="7000" number="1" %}
 </div>
 
 
