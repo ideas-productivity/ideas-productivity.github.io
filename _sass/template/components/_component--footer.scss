@@ -6,21 +6,54 @@
   */
 
 footer {
-	@include grid-parent();
+	width: 100%;
+	position: relative;
+
+	.footer--bg-light,
+	.footer--bg-dark {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		z-index: -100;
+	}
+
+	.footer--bg-light {
+		left: 0;
+		right: 50%;
+		background-color: color(blue, XX);
+	}
+
+	.footer--bg-dark {
+		left: 50%;
+		right: 0;
+		background-color: color(blue, XXX);
+	}
+
+	.footer--content-wrapper {
+		@include grid-parent();
+	}
+	
 
 	.footer--sm {
-		grid-column: 1 / 4;
+		grid-column: span 12;
 		background-color: color(blue, XX);
 		margin-left: -28px;
+		margin-right: -28px;
     padding: 28px;
+    @include respond-to(m){
+			grid-column: 1 / 4;
+		}
 	}
 
 	.footer--lg {
-		@include grid-child($col-start: 4, $cols: 9);
+		@include grid-child($col-start: 1, $cols: 12);
 		background-color: color(blue, XXX);
 		margin-left: -28px;
 		margin-right: -28px;
     padding: 28px 28px 16px 28px;
+    @include respond-to(m){
+			@include grid-child($col-start: 4, $cols: 9);
+		}
 	}
 
 	.footer--sm h1 {
@@ -103,7 +136,7 @@ footer {
 	.footer--lg .doeLogo {
 		grid-column: 8 / -1;
 		grid-row: 2;
-		justify-self: end;
+		max-width: 200px;
 	}
 
 }
