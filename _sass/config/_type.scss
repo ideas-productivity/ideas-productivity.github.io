@@ -104,39 +104,39 @@ $pub-bld: (
 
 
 $sans-xxl-reg: (
-  null   : (normal, normal, 400, 3.75,  15,  $pub-reg, -.025, 0),
-  s      : (normal, normal, 400, 3.75,  15,  $pub-reg, -.025, 0),
+  null   : (normal, normal, 400, 1.5,   7,  $pub-reg, 0, 0),
+  s      : (normal, normal, 400, 3,     13,  $pub-reg, -.025, 0),
   m      : (normal, normal, 400, 3.75,  15,  $pub-reg, -.025, 0),
   l      : (normal, normal, 400, 3.75,  15,  $pub-reg, -.025, 0),   
 );
 
 
 $sans-xxl-bld: (
-  null   : (normal, normal, 400, 3.75,  15,  $pub-bld, -.025, 0),
-  s      : (normal, normal, 400, 3.75,  15,  $pub-bld, -.025, 0),
+  null   : (normal, normal, 400, 1.5,  7,  $pub-bld, 0, 0),
+  s      : (normal, normal, 400, 3,     13,  $pub-bld, -.025, 0),
   m      : (normal, normal, 400, 3.75,  15,  $pub-bld, -.025, 0),
   l      : (normal, normal, 400, 3.75,  15,  $pub-bld, -.025, 0),   
 );
 
 
 $sans-xl-reg: (
-  null   : (normal, normal, 400, 3,  13,  $pub-reg, -.025, 0),
-  s      : (normal, normal, 400, 3,  13,  $pub-reg, -.025, 0),
-  m      : (normal, normal, 400, 3,  13,  $pub-reg, -.025, 0),
-  l      : (normal, normal, 400, 3,  13,  $pub-reg, -.025, 0),   
+  null   : (normal, normal, 400, 1.5,   7,  $pub-reg, 0, 0),
+  s      : (normal, normal, 400, 2.25,  10,  $pub-reg, -.025, 0),
+  m      : (normal, normal, 400, 3,     13,  $pub-reg, -.025, 0),
+  l      : (normal, normal, 400, 3,     13,  $pub-reg, -.025, 0),   
 );
 
 
 $sans-xl-bld: (
-  null   : (normal, normal, 400, 3,  13,  $pub-bld, -.025, 0),
-  s      : (normal, normal, 400, 3,  13,  $pub-bld, -.025, 0),
-  m      : (normal, normal, 400, 3,  13,  $pub-bld, -.025, 0),
-  l      : (normal, normal, 400, 3,  13,  $pub-bld, -.025, 0),   
+  null   : (normal, normal, 400, 1.5,  7,  $pub-bld, 0, 0),
+  s      : (normal, normal, 400, 2.25,  10,  $pub-bld, -.025, 0),
+  m      : (normal, normal, 400, 3,     13,  $pub-bld, -.025, 0),
+  l      : (normal, normal, 400, 3,     13,  $pub-bld, -.025, 0),   
 );
 
 
 $sans-lg-reg: (
-  null   : (normal, normal, 400, 2.25,  10,  $pub-reg, -.025, 0),
+  null   : (normal, normal, 400, 1.5,   7,  $pub-reg, 0, 0),
   s      : (normal, normal, 400, 2.25,  10,  $pub-reg, -.025, 0),
   m      : (normal, normal, 400, 2.25,  10,  $pub-reg, -.025, 0),
   l      : (normal, normal, 400, 2.25,  10,  $pub-reg, -.025, 0),   
@@ -144,7 +144,7 @@ $sans-lg-reg: (
 
 
 $sans-lg-bld: (
-  null   : (normal, normal, 400, 2.25,  10,  $pub-bld, -.025, 0),
+  null   : (normal, normal, 400, 1.5,   7,   $pub-bld, 0, 0),
   s      : (normal, normal, 400, 2.25,  10,  $pub-bld, -.025, 0),
   m      : (normal, normal, 400, 2.25,  10,  $pub-bld, -.025, 0),
   l      : (normal, normal, 400, 2.25,  10,  $pub-bld, -.025, 0),   
