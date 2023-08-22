@@ -12,12 +12,16 @@
 	padding-top: bl(20); 
 
 	.background-wrapper {
-		position: absolute;
-		top: -200px;
-		left: -28px;
-		width: 100vw;
-		overflow-x: hidden;
-		z-index: -1000;
+		display: none;
+		@include respond-to(m){
+			display: block;
+			position: absolute;
+			top: -200px;
+			left: -28px;
+			width: 100vw;
+			overflow-x: hidden;
+			z-index: -1000;
+		}
 	}
 
 	.background {	
