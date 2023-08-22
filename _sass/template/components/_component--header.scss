@@ -285,6 +285,28 @@
 		margin-bottom: 0 !important;
 	}
 
+	.ais-search-box--reset {
+		fill: color(blue, XXX);
+		right: -18px;
+		top: 10px;
+
+		&:hover {
+			background-color: color(blue, XXX);;
+			border-color: color(blue, XXX);;
+			fill: color(blue, XX);
+		}
+	}
+
+	button {
+		padding: 0.5rem .8rem !important;
+	}
+
+	.ais-hits__empty {
+		@include typestyle($sans-sm-bld);
+		margin-top: bl(6); //24px
+		@include stack(xs);
+	}
+
 	.search-hide {
 		display: none;
 	}
@@ -572,6 +594,28 @@
 
 	.ais-hits .ais-hits--item:last-of-type .search-hr {
 		margin-bottom: 0 !important;
+	}
+
+	.ais-search-box--reset {
+		fill: color(blue, XXX);
+		right: -18px;
+		top: 6px;
+
+		&:hover {
+			background-color: color(blue, XXX);;
+			border-color: color(blue, XXX);;
+			fill: color(blue, XX);
+		}
+	}
+
+	button {
+		padding: 0.5rem .8rem !important;
+	}
+
+	.ais-hits__empty {
+		@include typestyle($sans-sm-bld);
+		margin-top: bl(6); //24px
+		@include stack(xs);
 	}
 
 	.search-hide {
