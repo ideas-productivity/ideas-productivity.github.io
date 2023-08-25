@@ -40,48 +40,94 @@ limit (default: 3)
 		{% if sorted and sorted.size != 0 %}
 		<ul class="event-list">
 		{% for event in sorted limit: limit %}
-			<li>
+		{% unless event.subevent %}
+		{% unless event.parent-event-name and event.parent-event-file %}
+		<li>	
 
-			{% comment %}
-				For most events, we take the title as-is from the frontmatter.  But tutorials are special.  
-				They usually have a "title-type" that characterizes how the venue labels the event (e.g., tutorial or track or training or...).
-				They also have venue information, which we will add to the title iff this is a standalone event (i.e., one that doesn't have
-				parent-event information).
-			{% endcomment %}
+		{% comment %}
+			For most events, we take the title as-is from the frontmatter.  But tutorials are special.  
+			They usually have a "title-type" that characterizes how the venue labels the event (e.g., tutorial or track or training or...).
+			They also have venue information, which we will add to the title iff this is a standalone event (i.e., one that doesn't have
+			parent-event information).
+		{% endcomment %}
 
-			{% if event.title-type %}
-				{% assign my-title = event.title | append: " " | append: event.title-type %}
-			{% else %}
-				{% assign my-title = event.title %}
+		{% if event.title-type %}
+			{% assign my-title = event.title | append: " " | append: event.title-type %}
+		{% else %}
+			{% assign my-title = event.title %}
+		{% endif %}
+
+		{% unless event.parent-event-name and event.parent-event-file %}
+			{% if event.venue %}
+			{% assign my-title = my-title | append: " @ " | append: event.venue %}
 			{% endif %}
-
-			{% unless event.parent-event-name and event.parent-event-file %}
-				{% if event.venue %}
-				  {% assign my-title = my-title | append: " @ " | append: event.venue %}
-				{% endif %}
-			{% endunless %}	
+		{% endunless %}
 				<a href="{{ event.url }}" class="event-link">
 				  <h2 class="event-title">{{ my-title }}</h2>
 				  <p class="event-date">
-				  	{{ event.startdate | date:"%b %d" }}
+					  {{ event.startdate | date:"%b %d" }}
 					  {% assign startmo = event.startdate | date:"%b"  %}
 					  {% assign endmo = event.enddate | date:"%b"  %}
 					  {% if event.enddate %}
-					  	{% if startmo == endmo %}
-					  		–{{ event.enddate | date:"%d" }}
-					  	{% else %}
-					  		–{{ event.enddate | date:"%b %d" }}
-					  	{% endif %}
+						  {% if startmo == endmo %}
+							  –{{ event.enddate | date:"%d" }}
+						  {% else %}
+							  –{{ event.enddate | date:"%b %d" }}
+						  {% endif %}
 					  {% endif %}
 					</p>
-					<small class="event-year">{{ event.startdate | date:"%Y" }}</small>
-					<small class="event-type">{{ event.type }}</small>
+					<small class="event-year">
+						{{ event.startdate | date:"%Y" }}
+					</small>
+					<small class="event-type">
+						{{ event.type }}
+					</small>
 				</a>
 				{% if event.series %}
-			  		<small class="event-series">Series: {{ event.series }}</small> 
-				{% endif %}
+					{% assign length = event.series | size %}
+				  <small class="event-series">Series: 
+					  {{ event.series | join: ", " }}
+				  </small> 
+			  {% endif %}
+
+			  {% if event.subevents %}
+				  <ul class="event-subevents">
+					  {% for subslug in event.subevents %}
+					  {% assign sub = site.events | where: 'slug', subslug %}
+						  <li>
+							  <a href="{{ sub[0].url }}" class="subevent-link">
+								{% if sub[0].title-type %}
+									{% assign my-title = sub[0].title | append: " " | append: sub[0].title-type %}
+								{% else %}
+									{% assign my-title = sub[0].title %}
+								{% endif %}
+								  <h3 class="subevent-title">
+									  {{ my-title }}
+								  </h3>
+								  <p class="subevent-time">
+									  {{ sub[0].time }}
+								  </p>
+								  <small class="subevent-date">
+									  {{ sub[0].startdate | date:"%b %d" }}
+								  </small>
+								  <small class="subevent-type">
+									  {{ sub[0].type }}
+								  </small>
+							  </a>
+								  {% if sub[0].series %}
+										{% assign sublength = sub[0].series | size %}
+									  <small class="subevent-series">Series: 
+										{{ sub[0].series | join: ", " }}
+									  </small> 
+								  {% endif %}
+						  </li>
+					  {% endfor %}
+				  </ul>
+			  {% endif %}
 			</li>
-		{% endfor %}
+			{% endunless %}
+		{% endunless %}
+	{% endfor %}
 	</ul>
 	{% else %}
 	<p>No events found</p>
