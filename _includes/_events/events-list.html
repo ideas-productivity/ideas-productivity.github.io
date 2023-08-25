@@ -43,6 +43,7 @@ An event can be considered to be past iff both startdate and enddate are in the 
 		<ul class="list">
 			{% for event in sorted %}
 				{% unless event.subevent %}
+				{% unless event.parent-event-name and event.parent-event-file %}
 				{% if event.link-id %}
 				<li id="{{ event.link-id }}">
 				{% else %}
@@ -130,6 +131,7 @@ An event can be considered to be past iff both startdate and enddate are in the 
 						  </ul>
 					  {% endif %}
 					</li>
+					{% endunless %}
 				{% endunless %}
 			{% endfor %}
 		</ul>
