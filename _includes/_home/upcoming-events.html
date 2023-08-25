@@ -91,7 +91,7 @@ limit (default: 3)
 			  {% endif %}
 
 			  {% if event.subevents %}
-				  <ul class="event-subevents">
+				  <ul class="subevents">
 					  {% for subslug in event.subevents %}
 					  {% assign sub = site.events | where: 'slug', subslug %}
 						  <li>

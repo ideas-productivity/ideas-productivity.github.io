@@ -42,11 +42,9 @@
 				{% assign my-title = event.title %}
 			{% endif %}
 
-			{% unless event.parent-event-name and event.parent-event-file %}
 				{% if event.venue %}
 				{% assign my-title = my-title | append: " @ " | append: event.venue %}
 				{% endif %}
-			{% endunless %}
 					<a href="{{ event.url }}" class="event-link">
 					  <h2 class="event-title">{{ my-title }}</h2>
 					  <p class="event-date">
