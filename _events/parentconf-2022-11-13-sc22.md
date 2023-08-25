@@ -5,11 +5,12 @@ enddate: "2022-11-18"
 #
 type: "Conference" 
 #
+location: Dallas, Texas
+#
 subevents:
   - bsswt-2022-11-13-sc
 #
 artifacts:
-  - label: "Location: Dallas, Texas"
   - label: Conference Website
     url: https://sc22.supercomputing.org/
 ---

@@ -39,6 +39,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar016-eclipse-qa.pdf
+#
+location: online
+#
 ---
 The Eclipse IDE is one of the most popular IDEs available, and its
 support for multiple languages, particularly C, C++ and Fortran has

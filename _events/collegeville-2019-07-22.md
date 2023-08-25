@@ -9,8 +9,9 @@ type: Workshop
 series: 
   - "Technical Sessions and Meetings"
 #
+location: St. Johns University, Collegeville, Minnesota
+#
 artifacts:
-  - label: "Location: St. Johns University, Collegeville, Minnesota"
   - label: Workshop Website
     url: https://collegeville.github.io/CW3S19/
   - label: Workshop Series

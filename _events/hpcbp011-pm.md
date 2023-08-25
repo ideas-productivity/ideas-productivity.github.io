@@ -42,6 +42,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/session011-qa.pdf
+#
+location: online
+#
 ---
 Software development is an essential activity for many scientific
 teams.  Modeling, simulation and data analysis, using team-developed

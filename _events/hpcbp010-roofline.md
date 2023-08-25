@@ -47,6 +47,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/08/webinar010-Roofline-qa.pdf
+#
+location: online
+#
 ---
 In this webinar, we will begin by introducing the Roofline Model and
 its “Cache-Aware” variant. We will proceed with some general

@@ -42,6 +42,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/04/webinar028-pfunit-qa.pdf
+#
+location: online
+#
 ---
 Over the past two decades, the emergence of highly effective software
 testing frameworks has greatly simplified the development and use of

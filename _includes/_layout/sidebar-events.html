@@ -57,6 +57,7 @@ available parameters:
 	<hr>
 
 	<ul>
+		{% if include.location %}<li><h4>Location: {{ include.location }}</h4></li>{% endif %}
 		{% if include.meta1-name %}
 			<li>
 				<h4>{{ include.meta1-name }}</h4>

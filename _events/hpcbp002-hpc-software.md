@@ -24,6 +24,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar002-MakeConfigureIDE.pdf
+#
+location: online
+#
 ---
 The process of developing HPC software requires consideration of
 issues in software design as well as practices that support the

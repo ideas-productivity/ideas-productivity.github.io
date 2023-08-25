@@ -5,11 +5,12 @@ enddate: "2020-11-19"
 #
 type: "Conference" 
 #
+location: online
+#
 subevents:
   - bsswt-2020-11-10-sc
 #
 artifacts:
-  - label: "Location: online"
   - label: Conference Website
     url: https://sc20.supercomputing.org/
 ---

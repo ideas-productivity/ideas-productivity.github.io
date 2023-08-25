@@ -40,6 +40,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/09/webinar033-socialchallenges-qa.pdf
+#
+location: online
+#
 ---
 In recent years scientific software projects have increasingly
 incorporated state-of-the-art technical best practices like continuous

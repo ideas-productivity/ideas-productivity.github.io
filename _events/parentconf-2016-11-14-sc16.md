@@ -5,11 +5,12 @@ enddate: "2016-11-17"
 #
 type: "Conference" 
 #
+location: Salt Lake City, Utah
+#
 subevents:
   - bsswt-2016-11-14-sc
 #
 artifacts:
-  - label: "Location: Salt Lake City, Utah"
   - label: Conference Website
     url: https://sc16.supercomputing.org/
 ---

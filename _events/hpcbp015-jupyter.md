@@ -54,6 +54,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar015-qa.pdf
+#
+location: online
+#
 ---
 During the last few years the Jupyter notebook has become one of the
 tools of choice for the data science and high-performance computing

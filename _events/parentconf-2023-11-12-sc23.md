@@ -5,12 +5,13 @@ enddate: "2023-11-17"
 #
 type: "Conference" 
 #
+location: Denver, Colorado
+#
 subevents:
   - bsswt-2023-11-12-sc
   - 20231115-sc23-swe-cse-hpc-bof
 #
 artifacts:
-  - label: "Location: Denver, Colorado"
   - label: Conference Website
     url: https://sc23.supercomputing.org/
 ---

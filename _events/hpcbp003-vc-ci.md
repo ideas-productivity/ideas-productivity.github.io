@@ -24,6 +24,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar003-HPC-Session3.pdf
+#
+location: online
+#
 ---
 Recently, many tools and workflows have emerged in the software
 industry that have greatly enhanced the productivity of development

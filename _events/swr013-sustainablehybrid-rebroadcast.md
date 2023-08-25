@@ -56,6 +56,9 @@ artifacts:
 #  - label: Slides
 #    format: PDF
 #    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/swr008-creativity.pdf
+#
+location: online
+#
 ---
 **This panel discussion was held during SC21 and is being rebroadcast with live chat Q&A. The panel explored strategies for working remotely, with emphasis on how teams in high-performance computing (HPC) can be effective and efficient in long-term hybrid settings, where some staff work remotely and others on site, or collaborate while geographically dispersed.**
 

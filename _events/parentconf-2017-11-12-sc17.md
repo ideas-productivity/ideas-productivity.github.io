@@ -5,11 +5,12 @@ enddate: "2017-11-17"
 #
 type: "Conference" 
 #
+location: Denver, Colorado
+#
 subevents:
   - bsswt-2017-11-13-sc
 #
 artifacts:
-  - label: "Location: Denver, Colorado"
   - label: Conference Website
     url: https://sc17.supercomputing.org/
 ---

@@ -92,6 +92,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: https://www.exascaleproject.org/wp-content/uploads/2020/03/WorkingRemotelyPanel-2020-04-03-final21.pdf
+#
+location: online
+#
 ---
 Working remotely has suddenly become a near-universal experience for
 staff members of research organizations, but for some it has been a

@@ -36,6 +36,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/02/webinar026-containers-qa.pdf
+#
+location: online
+#
 ---
 Containers have gained adoption in the HPC and scientific computing
 space through specialized runtimes like Shifter, Singularity and

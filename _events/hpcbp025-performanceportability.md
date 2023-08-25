@@ -60,6 +60,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/02/webinar025-qa.pdf
+#
+location: online
+#
 ---
  Wouldn’t it be great if we could port a code to a new
  high-performance architecture without substantially changing the code

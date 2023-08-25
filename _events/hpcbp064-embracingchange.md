@@ -33,6 +33,9 @@ artifacts:
   - label: Chat Transcript
     format: TXT
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/06/hpcbp064-embracingdifference-chat.txt
+#
+location: online
+#
 ---
 Computational science and engineering (CSE) is an inter- and multidisciplinary field.  Given the technical breadth of CSE, one might expect CSE communities to include a broad range of demographics, creating an ideal ecosystem for diversity, equity, and inclusion (DEI).  However, while research indicates that social diversity results in greater innovation, the CSE workforce remains largely homogeneous.  This interactive webinar will explore what it takes to achieve DEI, how DEI could increase innovation and developer productivity, as well as how cultivating respect and embracing difference could help to make inclusion the norm. The session will also include important activities for applying the concepts discussed, deepening understanding, and increasing potential impact.
 

@@ -38,6 +38,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/07/webinar030-cpp4HPC-qa.pdf
+#
+location: online
+#
 ---
 Since its creation by Bjarne Stroustrup in the early 1980s, C++ has
 steadily evolved to become a multi-paradigm programming language that

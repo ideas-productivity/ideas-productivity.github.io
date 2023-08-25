@@ -34,6 +34,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar006-2016_HPC_IO_Intro.pdf
+#
+location: online
+#
 ---
 Parallel data management is a complex problem at large-scale HPC
 environments. The HPC I/O stack can be viewed as a multi-layered cake

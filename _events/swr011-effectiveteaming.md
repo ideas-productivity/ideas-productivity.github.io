@@ -42,6 +42,9 @@ artifacts:
   - label: Slides
     format: Various
     url: https://science.osti.gov/Strategic-Planning-and-Interagency-Coordination/DOE-Laboratories-of-the-Future/LOTF-Workshops/Effective-Teaming-and-Virtual-Collaboration
+#
+location: online
+#
 ---
 **This panel discussion is part of the [DOE Laboratories of the Future](https://science.osti.gov/Strategic-Planning-and-Interagency-Coordination/DOE-Laboratories-of-the-Future) (LOTF) workshop series. Registration is required.**
 

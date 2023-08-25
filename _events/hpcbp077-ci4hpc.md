@@ -33,5 +33,8 @@ survey-public-url: http://bit.ly/HPCBP-feedback
 #   - label: Q&A
 #     format: PDF
 #     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/07/hpcbp-076-cleanssw-qa.pdf
+#
+location: online
+#
 ---
 The Exascale Computing Project (ECP) is investing heavily in software for exascale systems, as can be seen in the many tools, libraries and software components within ECP. In order to boost software integration across computing facilities, ECP has developed infrastructure and tools for high-fidelity testing. This infrastructure is made accessible to ECP software technology developers to provide a trusted and efficient testing environment that employs continuous integration (CI). At the core of the ECP-enabled testing infrastructure is the Jacamar CI tool. This tool allows us to link multi-tenant HPC systems to Gitlab CI workflows. This webinar will provide an overview of the ECP testing infrastructure, discuss what this could look like post-ECP, and how it could benefit other HPC facilities.

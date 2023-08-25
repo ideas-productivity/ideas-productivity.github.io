@@ -38,5 +38,8 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/02/webinar049-softwaredocumentation-qa.pdf
+#
+location: online
+#
 ---
 This webinar aims to introduce the importance of software documentation and the different approaches that may be taken at various stages, and on various levels, in the software development life cycle. Through the sharing of examples and stimulative questions, the speakers aim to encourage the audience to reflect on the relationship between documentation and process, and to make informed choices about when and how to document their software.

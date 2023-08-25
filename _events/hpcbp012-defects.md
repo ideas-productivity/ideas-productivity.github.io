@@ -44,6 +44,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/session012-slides.pdf
+#
+location: online
+#
 ---
 Software Quality Engineering (SQE) and methods research and scientific
 investigation are often thought to be incompatible.  However, in

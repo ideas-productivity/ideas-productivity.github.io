@@ -56,6 +56,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/12/webinar035-softwarepolicies-qa.pdf
+#
+location: online
+#
 ---
 The development of increasingly complex computer architectures and
 software ecosystems continues. Applications that incorporate

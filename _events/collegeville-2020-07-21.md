@@ -9,8 +9,9 @@ type: Workshop
 series: 
   - "Technical Sessions and Meetings"
 #
+location: online
+#
 artifacts:
-  - label: "Location: online"
   - label: Workshop Website
     url: https://collegeville.github.io/CW20/
   - label: Workshop Series

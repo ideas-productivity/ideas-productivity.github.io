@@ -25,6 +25,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar001-160504-dubey-overview.pdf
+#
+location: online
+#
 ---
 Scientific code developers have increasingly been adopting software
 processes derived from the mainstream (non-scientific) community.

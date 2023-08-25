@@ -42,6 +42,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/10/webinar034-FPAnalysis-qa.pdf
+#
+location: online
+#
 ---
 Scientific software is central to the practice of research
 computing. While software is widely used in many science and

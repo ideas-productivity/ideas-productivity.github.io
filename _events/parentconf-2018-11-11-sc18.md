@@ -5,11 +5,12 @@ enddate: "2018-11-16"
 #
 type: "Conference" 
 #
+location: Dallas, Texas
+#
 subevents:
   - bsswt-2018-11-12-sc
 #
 artifacts:
-  - label: "Location: Dallas, Texas"
   - label: Conference Website
     url: https://sc18.supercomputing.org/
 ---

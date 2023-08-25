@@ -31,6 +31,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/12/webinar024-licensing-qa.pdf
+#
+location: online
+#
 ---
 Software licensing and related matters of intellectual property can
 often seem confusing or hopelessly complicated, especially when many

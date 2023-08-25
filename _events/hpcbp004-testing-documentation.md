@@ -24,6 +24,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar004-testing-klinvex.pdf
+#
+location: online
+#
 ---
 Software verification and validation are needed for high-quality and
 reliable scientific codes. For software with moderate to long

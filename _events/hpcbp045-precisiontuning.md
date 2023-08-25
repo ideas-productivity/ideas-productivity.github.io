@@ -34,5 +34,8 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/10/webinar045-precisiontuning-qa.pdf
+#
+location: online
+#
 ---
 The use of numerical software has grown rapidly over the past few years, providing the foundation for a large variety of applications including scientific software and machine learning. Given the variety of numerical errors that can occur, floating-point programs are difficult to write, test and debug. One common practice among developers is to use the highest available precision when allocating variables. While more robust, this can degrade program performance significantly. This webinar describes our research on developing tools to assist programmers in tuning the precision of their floating-point programs. These tools conduct a data-driven approach to search over the types of floating-point variables to lower their precision subject to accuracy constraints and performance goals. In the last part of the webinar, I will discuss challenges and opportunities for scalable precision tuning of large HPC applications.

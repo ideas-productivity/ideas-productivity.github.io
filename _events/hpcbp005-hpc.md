@@ -24,6 +24,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar005-supercomputers.pdf
+#
+location: online
+#
 ---
 High performance computing has transformed how science and engineering
 research is conducted.  Answering a question in 30 minutes that used

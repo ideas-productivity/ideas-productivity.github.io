@@ -47,6 +47,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/bssw.site_.intro_.2017.12.6.pdf
+#
+location: online
+#
 ---
 Better Scientific Software (BSSw) is an organization dedicated to
 improving developer productivity and software sustainability for

@@ -111,6 +111,9 @@ artifacts:
   - label: Mental Fitness Challenge
     format: PDF
     url: https://www.exascaleproject.org/wp-content/uploads/2020/03/4e7cebfa9a5e.pdf
+#
+location: online
+#
 ---
 While working remotely is challenging enough, many are currently
 experiencing unique complexities involved with parenting,

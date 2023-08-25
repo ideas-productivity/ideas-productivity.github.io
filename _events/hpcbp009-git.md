@@ -38,6 +38,9 @@ artifacts:
   - label: Git Tutorial and Reference Collection
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/07/webinar009-GitTutorialandReferenceCollection-4.pdf
+#
+location: online
+#
 ---
 This presentation will emphasize intermediate-level tutorial and
 reference information about the Git version control (VC) system. This

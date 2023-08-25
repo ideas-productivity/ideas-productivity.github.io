@@ -33,6 +33,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/03/webinar027-hdf5-qa.pdf
+#
+location: online
+#
 ---
 HDF5 is a data model, file format, and I/O library that has become a
 de facto standard for HPC applications to achieve scalable I/O and for

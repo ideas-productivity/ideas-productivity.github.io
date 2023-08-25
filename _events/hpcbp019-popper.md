@@ -37,6 +37,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/06/webinar019-qa.pdf
+#
+location: online
+#
 ---
 Current approaches used in computational and data science research may
 require significant time without necessarily advancing scientific

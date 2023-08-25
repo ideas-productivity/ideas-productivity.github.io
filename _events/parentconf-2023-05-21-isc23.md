@@ -5,11 +5,12 @@ enddate: "2023-05-25"
 #
 type: "Conference" 
 #
+location: Hamburg, Germany, and online
+#
 subevents:
   - bsswt-2023-05-21-isc
 #
 artifacts:
-  - label: "Location: Hamburg, Germany, and online"
   - label: Conference Series
     format: website
     url: https://www.isc-hpc.com

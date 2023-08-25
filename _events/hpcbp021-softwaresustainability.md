@@ -39,6 +39,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/09/webinar021-qa.pdf
+#
+location: online
+#
 ---
 How do you make software sustainable? How much is it about process and
 how much about practice? Does it vary between countries or

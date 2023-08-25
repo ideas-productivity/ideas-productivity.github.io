@@ -62,6 +62,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/PythoninHPCGoogleDoc.pdf
+#
+location: online
+#
 ---
 Python’s powerful elegance has driven its adoption at HPC centers for
 job orchestration, visualization, exploratory data analysis, and even

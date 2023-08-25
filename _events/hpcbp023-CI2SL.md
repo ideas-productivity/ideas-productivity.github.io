@@ -55,6 +55,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/10/webinar023-osbp-qa.pdf
+#
+location: online
+#
 ---
 This webinar will continue the discussion of open source software
 (OSS) opportunities within the scientific ecosystem to include the

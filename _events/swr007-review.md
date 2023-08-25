@@ -63,5 +63,8 @@ artifacts:
 #  - label: Chat Transcript
 #    format: TXT
 #    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/11/panel006-hybrid-chat.txt
+#
+location: online
+#
 ---
 Earlier this year many workers abruptly transitioned from a primarily on-site to a primarily remote work experience due to a global pandemic. As we bring 2020 to a close, what have we learned so far, and what do we have yet to learn about working remotely, and working effectively in hybrid configurations? In this fireside chat, we look at key highlights from each of the Strategies for Working Remotely panel discussions in the series and dig deeper. What has worked, why, and where can we improve? What do we have yet to learn, or unlearn? “Ask me anything” questions can be submitted by the audience in advance to <remote@acm.org>.

@@ -38,5 +38,8 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/04/webinar039-bpproxyapps-qa.pdf
+#
+location: online
+#
 ---
 Proxy applications have many uses in software development and hardware/software co-design. Because most proxies are easy to build, run, and understand, they are especially appealing for use in benchmark suites and studies. This webinar will examine the role of proxy apps as benchmarks and explain why run rules and a figure of merit are essential for a proxy application to function as an effective benchmark. We will show how to evaluate the fidelity of benchmarks as a model for actual workloads and provide tips on creating problem specifications and other run rules. We will discuss what DOE facilities are looking for when they assemble benchmark suites for use in procurements. Finally, we will explain how system vendors use our benchmark suites and what practices they view as most (and least) effective.

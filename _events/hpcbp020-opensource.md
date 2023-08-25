@@ -36,6 +36,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/webinar020-qa.pdf
+#
+location: online
+#
 ---
 This talk will provide an overview of the work at Lawrence Livermore
 National Laboratory to re-vamp our open source project offerings,

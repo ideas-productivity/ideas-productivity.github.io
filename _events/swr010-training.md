@@ -51,5 +51,8 @@ artifacts:
 #  - label: Slides
 #    format: PDF
 #    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/swr008-creativity.pdf
+#
+location: online
+#
 ---
 Many organizations abruptly transitioned from a primarily on-site to a primarily remote work experience last spring.  However, organizations still have training needs that were once largely accomplished through in-person events such as workshops, hackathons, and tutorials.  This panel will share what they learned during the past year in their efforts to bring more virtualization to what historically has worked for in-person training events.  What worked well?  What did not work?  This panel will share their insights about lessons learned over the past year and how those  experiences will inform plans moving forward when organizations can safely offer in-person training again.

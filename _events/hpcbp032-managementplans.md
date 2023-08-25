@@ -49,6 +49,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/08/webinar032-managementplans-qa.pdf
+#
+location: online
+#
 ---
 Software is a necessary by-product of research. Software in this
 context can range from small shell scripts to complex and layered

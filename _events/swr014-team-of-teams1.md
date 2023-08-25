@@ -54,5 +54,8 @@ artifacts:
 #  - label: Slides
 #    format: PDF
 #    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/swr008-creativity.pdf
+#
+location: online
+#
 ---
 The ECP core mission is to develop a capable exascale computing ecosystem that accelerates scientific discovery and supports addressing critical challenges in energy, earth systems, materials, data, and national security.  The very nature of this mission has drawn a wide range of talented and successful scientists with diverse backgrounds to work together in new ways toward this goal. In this panel discussion, we build on lessons learned from the experiences of the PETSc, Trilinos, xSDK, and E4S as viewed from the lens of “Team of Teams.” We consider how, why, and when each of these distributed teams may and may not function as Teams of Teams and when applying Team of Teams principles might benefit. We present strategies centered around developing engaged and productive virtual software teams and offer a deeper dive into these communities.  We explore how developing a capable exascale ecosystem depends on meeting technical, social, and cultural challenges.

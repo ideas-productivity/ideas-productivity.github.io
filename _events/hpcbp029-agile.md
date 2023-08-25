@@ -61,6 +61,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/05/webinar029-agile-qa.pdf
+#
+location: online
+#
 ---
 Scientific software team cultures have natural consistencies with
 agile practices. Discovery-driven development, a focus on regular

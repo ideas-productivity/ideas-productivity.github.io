@@ -5,12 +5,13 @@ enddate: "2023-03-03"
 #
 type: "Conference" 
 #
+location: Amsterdam, The Netherlands
+#
 subevents:
   - siam-cse23-ms246
   - siam-cse23-ms321
 #
 artifacts:
-  - label: "Location: Amsterdam, The Netherlands"
   - label: Conference Website
     url: https://www.siam.org/conferences/cm/conference/cse23
 ---

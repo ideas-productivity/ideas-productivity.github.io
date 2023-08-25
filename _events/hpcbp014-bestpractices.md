@@ -36,6 +36,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/01/webinar014-qa.pdf
+#
+location: online
+#
 ---
 How can you introduce best software practices to a long-lived
 scientific production code, with a significant user base, that has

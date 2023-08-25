@@ -5,11 +5,12 @@ enddate: "2021-07-02"
 #
 type: "Conference" 
 #
+location: online
+#
 subevents:
   - bsswt-2021-06-24-isc
 #
 artifacts:
-  - label: "Location: online"
   - label: Conference Series
     format: website
     url: https://www.isc-hpc.com

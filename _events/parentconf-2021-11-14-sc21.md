@@ -5,13 +5,14 @@ enddate: "2021-11-19"
 #
 type: "Conference" 
 #
+location: St. Louis, Missouri and online
+#
 subevents:
   - bsswt-2021-11-15-sc
   - swr012-sustainablehybrid
 
 #
 artifacts:
-  - label: "Location: St. Louis, Missouri and online"
   - label: Conference Website
     url: https://sc21.supercomputing.org/
 ---

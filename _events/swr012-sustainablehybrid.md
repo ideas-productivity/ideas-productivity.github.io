@@ -57,6 +57,9 @@ artifacts:
 #  - label: Slides
 #    format: PDF
 #    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/swr008-creativity.pdf
+#
+location: St. Louis, Missouri, and online
+#
 ---
 **This panel discussion was part of the annual International Conference for High Performance Computing, Networking, Storage, and Analysis (SC21).**
 

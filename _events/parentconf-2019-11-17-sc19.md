@@ -5,11 +5,12 @@ enddate: "2019-11-22"
 #
 type: "Conference" 
 #
+location: Denver, Colorado
+#
 subevents:
   - bsswt-2019-11-18-sc
 #
 artifacts:
-  - label: "Location: Denver, Colorado"
   - label: Conference Website
     url: https://sc19.supercomputing.org/
 ---

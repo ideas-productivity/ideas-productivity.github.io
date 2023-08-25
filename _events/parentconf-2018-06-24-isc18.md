@@ -5,11 +5,12 @@ enddate: "2018-06-28"
 #
 type: "Conference" 
 #
+location: Frankfurt, Germany
+#
 subevents:
   - bsswt-2018-06-24-isc
 
 artifacts:
-  - label: "Location: Frankfurt, Germany"
   - label: Conference Series
     format: website
     url: https://www.isc-hpc.com

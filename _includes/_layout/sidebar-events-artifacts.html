@@ -57,6 +57,7 @@ available parameters:
 	<hr>
 
 	<ul>
+		{% if include.location %}<li><h4>Location: {{ include.location }}</h4></li>{% endif %}
 		{% include _layout/emit-artifacts.html artifacts=page.artifacts format="li" %}
 	</ul>
 

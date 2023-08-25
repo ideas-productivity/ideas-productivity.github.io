@@ -109,6 +109,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: https://www.exascaleproject.org/wp-content/uploads/2020/03/IDEAS-CP_Strategies_Working_Remotely_Panel_Transition_Virtual_Teams_FINAL.pdf
+#
+location: online
+#
 ---
 Recently, many tools and workflows have emerged in the software
 industry that have greatly enhanced the productivity of development

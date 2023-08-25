@@ -36,6 +36,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/webinar031-Apollo50th-qa.pdf
+#
+location: online
+#
 ---
 Commemorating the 50th Anniversary of the Apollo Moon landings, this
 webinar will describe the revolutionary computer, the Apollo Guidance

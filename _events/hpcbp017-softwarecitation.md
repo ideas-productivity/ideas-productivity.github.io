@@ -39,6 +39,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/04/webinar017-qa.pdf
+#
+location: online
+#
 ---
 Software is increasingly important in research, and some of the
 scholarly communications community, for example, in FORCE11, has been

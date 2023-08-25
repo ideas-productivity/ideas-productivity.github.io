@@ -38,6 +38,9 @@ artifacts:
   - label: Q&amp;A
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/webinar022-cmake-qa.pdf
+#
+location: online
+#
 ---
 Bill Hoffman, the creator of the CMake project, will give an
 introduction to development with modern CMake constructs. CMake is 17
