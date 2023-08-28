@@ -14,33 +14,35 @@ from: https://jekyllcodex.org/without-plugin/slider/
 
 -->
 
-{% assign letterstring = "a,b,c,d,e,f,g,h,i,j,k,l,m,n" %}
+{% assign letterstring = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z" %}
 {% assign letters = letterstring | split: ',' %}
 {% assign number = include.number | minus: 1 %}
-<div class="carousel__holder">
-    <div id="carousel{{ number }}" class="carousel">
+
+<div class="carousel__holder holder-sm">
+    <div id="carousel{{ number }}-sm" class="carousel">
     	
-        {% for item in page.carousel %}
-	          <input class="carousel__activator" type="radio" name="carousel{{ number }}" id="{{ number }}{{ letters[forloop.index0] }}" {% if forloop.first %}checked="checked"{% endif %} />
-	        {% endfor %}
-	        {% for item in page.carousel %}
-	          {% if forloop.index == forloop.length %}
-	            {% assign nextindex = 0 %}
-	          {% else %}
-	            {% assign nextindex = forloop.index0 | plus: 1 %}
-	          {% endif %}
-	          {% assign nextletter = letters[nextindex] %}
-	          {% if forloop.index0 == 0 %}
-	            {% assign previndex = forloop.length | minus: 1 %}
-	          {% else %}
-	            {% assign previndex = forloop.index0 | minus: 1 %}
-	          {% endif %}
-	          {% assign prevletter = letters[previndex] %}
-	          <div class="carousel__controls">
-	              <label class="carousel__control carousel__control--backward" for="{{ number }}{{ prevletter }}"></label>
-	              <label class="carousel__control carousel__control--forward" for="{{ number }}{{ nextletter }}"></label>
-	          </div>
-	    {% endfor %}
+    	{% for item in page.carousel %}
+        <input class="carousel__activator carousel__activator-sm" type="radio" name="carousel{{ number }}-sm" id="{{ number }}{{ letters[forloop.index0] }}-sm" {% if forloop.first %}checked="checked"{% endif %} />
+      {% endfor %}
+
+      {% for item in page.carousel %}
+        {% if forloop.index == forloop.length %}
+          {% assign nextindex = 0 %}
+        {% else %}
+          {% assign nextindex = forloop.index0 | plus: 1 %}
+        {% endif %}
+        {% assign nextletter = letters[nextindex] %}
+        {% if forloop.index0 == 0 %}
+          {% assign previndex = forloop.length | minus: 1 %}
+        {% else %}
+          {% assign previndex = forloop.index0 | minus: 1 %}
+        {% endif %}
+        {% assign prevletter = letters[previndex] %}
+        <div class="carousel__controls carousel__controls-sm">
+            <label class="carousel__control carousel__control--backward" for="{{ number }}{{ prevletter }}-sm"></label>
+            <label class="carousel__control carousel__control--forward" for="{{ number }}{{ nextletter }}-sm"></label>
+        </div>
+  		{% endfor %}
       
 
 
@@ -51,182 +53,532 @@ from: https://jekyllcodex.org/without-plugin/slider/
 CAROUSEL ITEMS
 
 --------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
 
 
+    <div class="carousel__track carousel__track-sm">
 
-        <div class="carousel__track">
-          	{% for slides in page.carousel %}
-	            <div class="carousel__slide">
-					{% for teasers in slides.slide %}
-					{% assign i = forloop.index  %}
-						{% if i == 1 %}
-							{% assign title1 = teasers.title %}
-							{% assign source1 = teasers.source %}
-							{% assign contain1 = teasers.contain %}
-							{% assign cover1 = teasers.cover %}
-							{% assign scale1 = teasers.scale %}
-							{% assign url1 = teasers.url %}
-							{% assign blurb1 = teasers.blurb %}
+    	
+    	{% for teaser in page.carousel %}
+      	<div class="carousel__slide-sm">
+      		<div class="grid-wrapper">
+	          <div class="teaser--sm">
+							<a href="{{ teaser.url }}">
+								<div class="img-wrapper{{i}}--sm">
+									<div><img src="/assets/images/{{ teaser.source }}"
+										{% if teaser.cover %}
+												style="
+												width: 100%;
+												height: 100%;
+												object-fit: cover;"
+											{% elsif teaser.contain %}
+												style="
+												width: 100%;
+												height: 100%;
+												object-fit: contain;
+												{% if teaser.scale %}
+													max-height: calc( {{ teaser.scale }}% * 100 );
+													max-width: calc( {{ teaser.scale }}% * 100 );
+												{% endif %}	
+												"
+											{% else %}
+												style="object-fit: initial;
+												{% if teaser.scale %}
+													transform: translate(-50%, -50%) scale( {{ teaser.scale }} );
+												{% endif %}	
+												"
+											{% endif %}	
+									></div>
+								</div>
+								<h2>{{ teaser.title }}</h2>
+								{% if teaser.blurb %}
+									<p>{{ teaser.blurb }}</p>
+								{% endif %}	
+							</a>
+						</div>
+					</div>
+				</div>
+      {% endfor %}
+      
 
-							{% assign title2 = nil %}
-							{% assign source2 = nil %}
-							{% assign contain2 = nil %}
-							{% assign cover2 = nil %}
-							{% assign scale2 = nil %}
-							{% assign url2 = nil %}
-							{% assign blurb2 = nil %}
+		</div> <!-- end carousel-track  -->
 
-							{% assign title3 = nil %}
-							{% assign source3 = nil %}
-							{% assign contain3 = nil %}
-							{% assign cover3 = nil %}
-							{% assign scale3 = nil %}
-							{% assign url3 = nil %}
-							{% assign blurb3 = nil %}
+    <div class="carousel__indicators carousel__indicators-sm">
+        {% for item in page.carousel %}
+          <label class="carousel__indicator carousel__indicator-sm" for="{{ number }}{{ letters[forloop.index0] }}-sm"></label>
+        {% endfor %}
+    </div>
 
-							{% assign title4 = nil %}
-							{% assign source4 = nil %}
-							{% assign contain4 = nil %}
-							{% assign cover4 = nil %}
-							{% assign scale4 = nil %}
-							{% assign url4 = nil %}
-							{% assign blurb4 = nil %}
-
-						{% elsif i == 2 %}
-							{% assign title2 = teasers.title %}
-							{% assign source2 = teasers.source %}
-							{% assign contain2 = teasers.contain %}
-							{% assign cover2 = teasers.cover %}
-							{% assign scale2 = teasers.scale %}
-							{% assign url2 = teasers.url %}
-							{% assign blurb2 = teasers.blurb %}
-						{% elsif i == 3 %}
-							{% assign title3 = teasers.title %}
-							{% assign source3 = teasers.source %}
-							{% assign contain3 = teasers.contain %}
-							{% assign cover3 = teasers.cover %}
-							{% assign scale3 = teasers.scale %}
-							{% assign url3 = teasers.url %}
-							{% assign blurb3 = teasers.blurb %}
-						{% elsif i == 4 %}
-							{% assign title4 = teasers.title %}
-							{% assign source4 = teasers.source %}
-							{% assign contain4 = teasers.contain %}
-							{% assign cover4 = teasers.cover %}
-							{% assign scale4 = teasers.scale %}
-							{% assign url4 = teasers.url %}
-							{% assign blurb4 = teasers.blurb %}
-						{% endif %}
-					{% endfor %}
-
-					{% if title4 %}
-					{% 	include teasers-4x_img.html
-						title1 = title1
-						source1 = source1
-						contain1 = contain1
-						cover1 = cover1
-						scale1 = scale1
-						url1 = url1
-						blurb1 = blurb1
-
-						title2 = title2
-						source2 = source2
-						contain2 = contain2
-						cover2 = cover2
-						scale2 = scale2
-						url2 = url2
-						blurb2 = blurb2
-
-						title3 = title3
-						source3 = source3
-						contain3 = contain3
-						cover3 = cover3
-						scale3 = scale3
-						url3 = url3
-						blurb3 = blurb3
-
-						title4 = title4
-						source4 = source4
-						contain4 = contain4
-						cover4 = cover4
-						scale4 = scale4
-						url4 = url4
-						blurb4 = blurb4
-					%}
-					{% elsif title3 %}
-					{% 	include teasers-4x_img.html
-						title1 = title1
-						source1 = source1
-						contain1 = contain1
-						cover1 = cover1
-						scale1 = scale1
-						url1 = url1
-						blurb1 = blurb1
-
-						title2 = title2
-						source2 = source2
-						contain2 = contain2
-						cover2 = cover2
-						scale2 = scale2
-						url2 = url2
-						blurb2 = blurb2
-
-						title3 = title3
-						source3 = source3
-						contain3 = contain3
-						cover3 = cover3
-						scale3 = scale3
-						url3 = url3
-						blurb3 = blurb3
-					%}
-					{% elsif title2 %}
-					{% 	include teasers-4x_img.html
-						title1 = title1
-						source1 = source1
-						contain1 = contain1
-						cover1 = cover1
-						scale1 = scale1
-						url1 = url1
-						blurb1 = blurb1
-
-						title2 = title2
-						source2 = source2
-						contain2 = contain2
-						cover2 = cover2
-						scale2 = scale2
-						url2 = url2
-						blurb2 = blurb2
-					%}
-					{% else %}
-					{% 	include teasers-4x_img.html
-						title1 = title1
-						source1 = source1
-						contain1 = contain1
-						cover1 = cover1
-						scale1 = scale1
-						url1 = url1
-						blurb1 = blurb1
-					%}
-					{% endif %}
+  </div> <!-- end carousel  -->
+</div> <!-- end carousel-holder  -->
 
 
-	            </div> 
-            {% endfor %}
-        </div>
-
-
+<!-- ---------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------- -->
 
 
 
 
-        <div class="carousel__indicators">
-            {% for item in page.carousel %}
-              <label class="carousel__indicator" for="{{ number }}{{ letters[forloop.index0] }}"></label>
-            {% endfor %}
-        </div>
+
+
+
+<div class="carousel__holder holder-md">
+    <div id="carousel{{ number }}-md" class="carousel">
+    	
+        {% for item in page.carousel %}
+	          <input class="carousel__activator carousel__activator-md" type="radio" name="carousel{{ number }}-md" id="{{ number }}{{ letters[forloop.index0] }}-md" {% if forloop.first %}checked="checked"{% endif %} />
+	      {% endfor %}
+	       
+	      {% assign slideCounter-md = page.carousel.size | divided_by: 2.0 | ceil %}
+	      {% for i in (1..slideCounter-md) %}
+	        {% if i == forloop.length %}
+	          {% assign nextindex = 0 %}
+	        {% else %}
+	          {% assign nextindex = i %}
+	        {% endif %}
+	        {% assign nextletter = letters[nextindex] %}
+	        {% if i == 1 %}
+	          {% assign previndex = forloop.length | minus: 1 %}
+	        {% else %}
+	          {% assign previndex = i | minus: 2 %}
+	        {% endif %}
+	        {% assign prevletter = letters[previndex] %}
+          <div class="carousel__controls carousel__controls-md">
+              <label class="carousel__control carousel__control--backward" for="{{ number }}{{ prevletter }}-md"></label>
+              <label class="carousel__control carousel__control--forward" for="{{ number }}{{ nextletter }}-md"></label>   
+          </div>
+	   	 	{% endfor %}
+      
+
+
+
+
+<!-- 
+
+CAROUSEL ITEMS
+
+--------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+    <div class="carousel__track carousel__track-md">
+    	{% assign slidecount-md = 1 %}	
+    	{% assign teasercount-md = 1 %}
+	       
+    	{% for teasers in page.carousel %}
+    		{% if teasercount-md == 1 %}
+
+  				{% assign title1md = teasers.title %}
+					{% assign source1md = teasers.source %}
+					{% assign contain1md = teasers.contain %}
+					{% assign cover1md = teasers.cover %}
+					{% assign scale1md = teasers.scale %}
+					{% assign url1md = teasers.url %}
+					{% assign blurb1md = teasers.blurb %}
+
+					{% assign title2md = nil %}
+					{% assign source2md = nil %}
+					{% assign contain2md = nil %}
+					{% assign cover2md = nil %}
+					{% assign scale2md = nil %}
+					{% assign url2md = nil %}
+					{% assign blurb2md = nil %}
+
+    			<div class="carousel__slide-md">
+    			{% if forloop.last %}
+    				{% 	include teasers-2x_img.html
+						title1 = title1md
+						source1 = source1md
+						contain1 = contain1md
+						cover1 = cover1md
+						scale1 = scale1md
+						url1 = url1md
+						blurb1 = blurb1md
+						%}
+    				</div>
+    			{% endif %}
+
+    			{% assign teasercount-md = 2 %}
+
+      	{% else %}
+      	
+					{% assign title2md = teasers.title %}
+					{% assign source2md = teasers.source %}
+					{% assign contain2md = teasers.contain %}
+					{% assign cover2md = teasers.cover %}
+					{% assign scale2md = teasers.scale %}
+					{% assign url2md = teasers.url %}
+					{% assign blurb2md = teasers.blurb %}
+				
+
+					{% if title2md %}
+						{% 	include teasers-2x_img.html
+						title1 = title1md
+						source1 = source1md
+						contain1 = contain1md
+						cover1 = cover1md
+						scale1 = scale1md
+						url1 = url1md
+						blurb1 = blurb1md
+
+						title2 = title2md
+						source2 = source2md
+						contain2 = contain2md
+						cover2 = cover2md
+						scale2 = scale2md
+						url2 = url2md
+						blurb2 = blurb2md
+						%}
+					{% else %}
+						{% 	include teasers-2x_img.html
+						title1 = title1md
+						source1 = source1md
+						contain1 = contain1md
+						cover1 = cover1md
+						scale1 = scale1md
+						url1 = url1md
+						blurb1 = blurb1md
+						%}
+					{% endif %}
+
+    			</div>
+    			{% assign teasercount-md = 1 %}
+    		{% endif %}
+
+      {% endfor %}
+      
+
+
+		</div> <!-- end carousel-track  -->
+
+    <div class="carousel__indicators-md">
+    		{% for i in (1..slideCounter-md) %}
+    			{% assign i0 = i | minus: 1 %}
+          <label class="carousel__indicator carousel__indicator-md" for="{{ number }}{{ letters[i0] }}-md"></label>
+        {% endfor %}
     </div>
-</div>
+
+  </div> <!-- end carousel  -->
+</div> <!-- end carousel-holder  -->
+
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+<div class="carousel__holder holder-lg">
+    <div id="carousel{{ number }}-lg" class="carousel">
+    	
+        {% for item in page.carousel %}
+	          <input class="carousel__activator carousel__activator-lg" type="radio" name="carousel{{ number }}-lg" id="{{ number }}{{ letters[forloop.index0] }}-lg" {% if forloop.first %}checked="checked"{% endif %} />
+	        {% endfor %}
+	        
+	        {% assign slideCounter-lg = page.carousel.size | divided_by: 4.0 | ceil %}
+	      	{% for i in (1..slideCounter-lg) %}
+		        {% if i == forloop.length %}
+		          {% assign nextindex = 0 %}
+		        {% else %}
+		          {% assign nextindex = i %}
+		        {% endif %}
+		        {% assign nextletter = letters[nextindex] %}
+		        {% if i == 1 %}
+		          {% assign previndex = forloop.length | minus: 1 %}
+		        {% else %}
+		          {% assign previndex = i | minus: 2 %}
+		        {% endif %}
+		        {% assign prevletter = letters[previndex] %}
+	          <div class="carousel__controls carousel__controls-lg">
+	              <label class="carousel__control carousel__control--backward" for="{{ number }}{{ prevletter }}-lg"></label>
+	              <label class="carousel__control carousel__control--forward" for="{{ number }}{{ nextletter }}-lg"></label>
+	          </div>
+	    		{% endfor %}
+      
+
+
+
+
+<!-- 
+
+CAROUSEL ITEMS
+
+--------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+    <div class="carousel__track carousel__track-lg">
+    	{% assign slidecount-lg = 1 %}
+    	{% assign teasercount-lg = 1 %}
+
+
+			{% for teasers in page.carousel %}
+    		{% if teasercount-lg == 1 %}
+
+  				{% assign title1lg = teasers.title %}
+					{% assign source1lg = teasers.source %}
+					{% assign contain1lg = teasers.contain %}
+					{% assign cover1lg = teasers.cover %}
+					{% assign scale1lg = teasers.scale %}
+					{% assign url1lg = teasers.url %}
+					{% assign blurb1lg = teasers.blurb %}
+
+					{% assign title2lg = nil %}
+					{% assign source2lg = nil %}
+					{% assign contain2lg = nil %}
+					{% assign cover2lg = nil %}
+					{% assign scale2lg = nil %}
+					{% assign url2lg = nil %}
+					{% assign blurb2lg = nil %}
+
+					{% assign title3lg = nil %}
+					{% assign source3lg = nil %}
+					{% assign contain3lg = nil %}
+					{% assign cover3lg = nil %}
+					{% assign scale3lg = nil %}
+					{% assign url3lg = nil %}
+					{% assign blurb3lg = nil %}
+
+					{% assign title4lg = nil %}
+					{% assign source4lg = nil %}
+					{% assign contain4lg = nil %}
+					{% assign cover4lg = nil %}
+					{% assign scale4lg = nil %}
+					{% assign url4lg = nil %}
+					{% assign blurb4lg = nil %}
+
+    			<div class="carousel__slide-lg">
+    			{% if forloop.last %}
+    				{% 	include teasers-4x_img.html
+						title1 = title1lg
+						source1 = source1lg
+						contain1 = contain1lg
+						cover1 = cover1lg
+						scale1 = scale1lg
+						url1 = url1lg
+						blurb1 = blurb1lg
+						%}
+    				</div>
+    			{% endif %}
+
+    			{% assign teasercount-lg = 2 %}
+
+      	{% elsif teasercount-lg == 2 %}
+      		
+					{% assign title2lg = teasers.title %}
+					{% assign source2lg = teasers.source %}
+					{% assign contain2lg = teasers.contain %}
+					{% assign cover2lg = teasers.cover %}
+					{% assign scale2lg = teasers.scale %}
+					{% assign url2lg = teasers.url %}
+					{% assign blurb2lg = teasers.blurb %}
+					{% assign teasercount-lg = 3 %}
+
+					{% if forloop.last %}
+    				{% 	include teasers-4x_img.html
+						title1 = title1lg
+						source1 = source1lg
+						contain1 = contain1lg
+						cover1 = cover1lg
+						scale1 = scale1lg
+						url1 = url1lg
+						blurb1 = blurb1lg
+
+						title2 = title2lg
+						source2 = source2lg
+						contain2 = contain2lg
+						cover2 = cover2lg
+						scale2 = scale2lg
+						url2 = url2lg
+						blurb2 = blurb2lg
+						%}
+    				</div>
+    			{% endif %}
+
+				{% elsif teasercount-lg == 3 %}
+      		
+					{% assign title3lg = teasers.title %}
+					{% assign source3lg = teasers.source %}
+					{% assign contain3lg = teasers.contain %}
+					{% assign cover3lg = teasers.cover %}
+					{% assign scale3lg = teasers.scale %}
+					{% assign url3lg = teasers.url %}
+					{% assign blurb3lg = teasers.blurb %}
+					{% assign teasercount-lg = 4 %}
+
+					{% if forloop.last %}
+    				{% 	include teasers-4x_img.html
+						title1 = title1lg
+						source1 = source1lg
+						contain1 = contain1lg
+						cover1 = cover1lg
+						scale1 = scale1lg
+						url1 = url1lg
+						blurb1 = blurb1lg
+
+						title2 = title2lg
+						source2 = source2lg
+						contain2 = contain2lg
+						cover2 = cover2lg
+						scale2 = scale2lg
+						url2 = url2lg
+						blurb2 = blurb2lg
+
+						title3 = title3lg
+						source3 = source3lg
+						contain3 = contain3lg
+						cover3 = cover3lg
+						scale3 = scale3lg
+						url3 = url3lg
+						blurb3 = blurb3lg
+						%}
+    				</div>
+    			{% endif %}
+
+				{% else %}
+
+					{% assign title4lg = teasers.title %}
+					{% assign source4lg = teasers.source %}
+					{% assign contain4lg = teasers.contain %}
+					{% assign cover4lg = teasers.cover %}
+					{% assign scale4lg = teasers.scale %}
+					{% assign url4lg = teasers.url %}
+					{% assign blurb4lg = teasers.blurb %}
+				
+
+
+					{% if title4lg %}
+						{% 	include teasers-4x_img.html
+						title1 = title1lg
+						source1 = source1lg
+						contain1 = contain1lg
+						cover1 = cover1lg
+						scale1 = scale1lg
+						url1 = url1lg
+						blurb1 = blurb1lg
+
+						title2 = title2lg
+						source2 = source2lg
+						contain2 = contain2lg
+						cover2 = cover2lg
+						scale2 = scale2lg
+						url2 = url2lg
+						blurb2 = blurb2lg
+
+						title3 = title3lg
+						source3 = source3lg
+						contain3 = contain3lg
+						cover3 = cover3lg
+						scale3 = scale3lg
+						url3 = url3lg
+						blurb3 = blurb3lg
+
+						title4 = title4lg
+						source4 = source4lg
+						contain4 = contain4lg
+						cover4 = cover4lg
+						scale4 = scale4lg
+						url4 = url4lg
+						blurb4 = blurb4lg
+						%}
+					{% elsif title3lg %}
+						{% 	include teasers-4x_img.html
+						title1 = title1lg
+						source1 = source1lg
+						contain1 = contain1lg
+						cover1 = cover1lg
+						scale1 = scale1lg
+						url1 = url1lg
+						blurb1 = blurb1lg
+
+						title2 = title2lg
+						source2 = source2lg
+						contain2 = contain2lg
+						cover2 = cover2lg
+						scale2 = scale2lg
+						url2 = url2lg
+						blurb2 = blurb2lg
+
+						title3 = title3lg
+						source3 = source3lg
+						contain3 = contain3lg
+						cover3 = cover3lg
+						scale3 = scale3lg
+						url3 = url3lg
+						blurb3 = blurb3lg
+						%}
+					{% elsif title2lg %}
+						{% 	include teasers-4x_img.html
+						title1 = title1lg
+						source1 = source1lg
+						contain1 = contain1lg
+						cover1 = cover1lg
+						scale1 = scale1lg
+						url1 = url1lg
+						blurb1 = blurb1lg
+
+						title2 = title2lg
+						source2 = source2lg
+						contain2 = contain2lg
+						cover2 = cover2lg
+						scale2 = scale2lg
+						url2 = url2lg
+						blurb2 = blurb2lg
+						%}
+					{% else %}
+						{% 	include teasers-4x_img.html
+						title1 = title1lg
+						source1 = source1lg
+						contain1 = contain1lg
+						cover1 = cover1lg
+						scale1 = scale1lg
+						url1 = url1lg
+						blurb1 = blurb1lg
+						%}
+					{% endif %}
+
+
+    			</div>
+    			{% assign teasercount-lg = 1 %}
+    		{% endif %}
+
+      {% endfor %}
+	        
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+		</div> <!-- end carousel-track  -->
+
+    <div class="carousel__indicators-lg">
+    		{% for i in (1..slideCounter-lg) %}
+          <label class="carousel__indicator carousel__indicator-lg" for="{{ number }}{{ letters[forloop.index0] }}-lg"></label>
+        {% endfor %}
+    </div>
+
+  </div> <!-- end carousel  -->
+</div> <!-- end carousel-holder  -->
+
+
+
+
+
+
+
+
+
 
 
 
@@ -245,12 +597,15 @@ CAROUSEL ITEMS
   padding: 0;
 }
 
-.carousel .teasers-4x-img {
+.carousel .teasers-4x-img,
+.carousel .teasers-2x-img {
 	margin-bottom: 2rem !important;
 }
 
-.carousel__track {
-	position: relative;
+.carousel__track-sm,
+.carousel__track-md,
+.carousel__track-lg {
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
@@ -258,29 +613,65 @@ CAROUSEL ITEMS
   padding: 0;
   margin: 0;
   transition: transform 0.5s ease 0s;
+  width: 100%;
 }
 
-.carousel__track .carousel__slide {
+.carousel__track-sm .carousel__slide-sm,
+.carousel__track-md .carousel__slide-md,
+.carousel__track-lg .carousel__slide-lg {
   display: inline-block;
   left: 0;
   right: 0;
   opacity: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 12px 12px 0;
 }
 
-.carousel--scale .carousel__slide {
+.carousel--scale .carousel__slide-sm,
+.carousel--scale .carousel__slide-md,
+.carousel--scale .carousel__slide-lg {
   transform: scale(0);
 }
 
-.carousel__slide {
+.carousel__slide-sm,
+.carousel__slide-md,
+.carousel__slide-lg {
   height: 100%;
-	position: relative;
+  position: relative;
   opacity: 0;
   overflow: hidden;
 }
 
 
+
+
+
+
+
+
+
+
 	{% for item in page.carousel %}
-		.carousel__track .carousel__slide:nth-of-type({{ forloop.index }}) {
+		.carousel__track-sm .carousel__slide-sm:nth-of-type({{ forloop.index }}) {
+	    {% if forloop.index0 != 0 %}
+	    	margin-top: -{{ forloop.index0 }}00%;
+	    	transform: translate({{ forloop.index0 }}00%, calc(-16px * {{ forloop.index0 }}));
+	    {% endif %}
+		}
+	{% endfor %}
+
+	{% for i in (1..slideCounter-md) %}
+		.carousel__track-md .carousel__slide-md:nth-of-type({{ forloop.index }}) {
+	    {% if forloop.index0 != 0 %}
+	    	margin-top: -{{ forloop.index0 }}00%;
+	    	transform: translate({{ forloop.index0 }}00%, calc(-16px * {{ forloop.index0 }}));
+	    {% endif %}
+		}
+	{% endfor %}
+
+	{% for i in (1..slideCounter-lg) %}
+		.carousel__track-lg .carousel__slide-lg:nth-of-type({{ forloop.index }}) {
 	    {% if forloop.index0 != 0 %}
 	    	margin-top: -{{ forloop.index0 }}00%;
 	    	transform: translate({{ forloop.index0 }}00%, calc(-16px * {{ forloop.index0 }}));
@@ -291,18 +682,31 @@ CAROUSEL ITEMS
 
 
 
+
+
+
+
+
+
+
 .carousel__controls,
 .carousel__activator {
   display: none;
 }
 
 
+
+
+
+
+
+
 {% for item in page.carousel %}
-	.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__track {
+	.carousel__activator-sm:nth-of-type({{ forloop.index }}):checked ~ .carousel__track-sm {
     transform: translateX(-{{ forloop.index0 }}00%);
 	}
 
-	.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__slide:nth-of-type({{ forloop.index }}) {
+	.carousel__activator-sm:nth-of-type({{ forloop.index }}):checked ~ .carousel__slide-sm:nth-of-type({{ forloop.index }}) {
 	  transition: opacity 0.5s, transform 0.5s;
 	  top: 0;
 	  left: 0;
@@ -311,23 +715,82 @@ CAROUSEL ITEMS
 	  transform: scale(1);
 	}
 
-	.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__controls:nth-of-type({{ forloop.index }}) {
+	.carousel__activator-sm:nth-of-type({{ forloop.index }}):checked ~ .carousel__controls-sm:nth-of-type({{ forloop.index }}) {
 	  display: block;
 	  opacity: 1;
 	}
 
-	.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
+	.carousel__activator-sm:nth-of-type({{ forloop.index }}):checked ~ .carousel__indicators-sm .carousel__indicator-sm:nth-of-type({{ forloop.index }}) {
+	  opacity: 1;
+	}
+{% endfor %}
+
+
+{% for i in (1..slideCounter-md) %}
+	.carousel__activator-md:nth-of-type({{ forloop.index }}):checked ~ .carousel__track-md {
+    transform: translateX(-{{ forloop.index0 }}00%);
+	}
+
+	.carousel__activator-md:nth-of-type({{ forloop.index }}):checked ~ .carousel__slide-md:nth-of-type({{ forloop.index }}) {
+	  transition: opacity 0.5s, transform 0.5s;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  opacity: 1;
+	  transform: scale(1);
+	}
+
+	.carousel__activator-md:nth-of-type({{ forloop.index }}):checked ~ .carousel__controls-md:nth-of-type({{ forloop.index }}) {
+	  display: block;
 	  opacity: 1;
 	}
 
+	.carousel__activator-md:nth-of-type({{ forloop.index }}):checked ~ .carousel__indicators-md .carousel__indicator-md:nth-of-type({{ forloop.index }}) {
+	  opacity: 1;
+	}
 {% endfor %}
+
+
+{% for i in (1..slideCounter-lg) %}
+	.carousel__activator-lg:nth-of-type({{ forloop.index }}):checked ~ .carousel__track-lg {
+    transform: translateX(-{{ forloop.index0 }}00%);
+	}
+
+	.carousel__activator-lg:nth-of-type({{ forloop.index }}):checked ~ .carousel__slide-lg:nth-of-type({{ forloop.index }}) {
+	  transition: opacity 0.5s, transform 0.5s;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  opacity: 1;
+	  transform: scale(1);
+	}
+
+	.carousel__activator-lg:nth-of-type({{ forloop.index }}):checked ~ .carousel__controls-lg:nth-of-type({{ forloop.index }}) {
+	  display: block;
+	  opacity: 1;
+	}
+
+	.carousel__activator-lg:nth-of-type({{ forloop.index }}):checked ~ .carousel__indicators-lg .carousel__indicator-lg:nth-of-type({{ forloop.index }}) {
+	  opacity: 1;
+	}
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .carousel__control {
   height: 12px;
   width: 12px;
   margin-top: -15px;
-  bottom: 23px;
   position: absolute;
   display: block;
   cursor: pointer;
@@ -338,6 +801,18 @@ CAROUSEL ITEMS
   opacity: 1;
   outline: 0;
   z-index: 3;
+}
+
+.carousel__controls-sm .carousel__control {
+	bottom: 83px;
+}
+
+.carousel__controls-md .carousel__control {
+	bottom: 33px;
+}
+
+.carousel__controls-lg .carousel__control {
+	bottom: 23px;
 }
 
 .carousel__control:hover {
@@ -353,11 +828,25 @@ CAROUSEL ITEMS
   transform: rotate(45deg);
 }
 
-.carousel__indicators {
+.carousel__indicators-sm,
+.carousel__indicators-md,
+.carousel__indicators-lg {
   position: absolute;
-  bottom: 20px;
+/*  bottom: 20px;*/
   width: 100%;
   text-align: center;
+}
+
+.carousel__indicators-sm {
+  bottom: 80px;
+}
+
+.carousel__indicators-md {
+  bottom: 30px;
+}
+
+.carousel__indicators-lg {
+  bottom: 20px;
 }
 
 .carousel__indicator {
@@ -386,13 +875,147 @@ CAROUSEL ITEMS
 }
 
 
+
+
+
+
 {% for item in page.carousel %}
-	.carousel__slide:nth-of-type({{ forloop.index }}),
-	.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
+	.carousel__slide-sm:nth-of-type({{ forloop.index }}),
+	.carousel--thumb .carousel__indicators-sm .carousel__indicator:nth-of-type({{ forloop.index }}) {
 	  background-size: cover;
 	  background-position: center;
 	}
 {% endfor %}
+
+{% for i in (1..slideCounter-md) %}
+	.carousel__slide-md:nth-of-type({{ forloop.index }}),
+	.carousel--thumb .carousel__indicators-md .carousel__indicator:nth-of-type({{ forloop.index }}) {
+	  background-size: cover;
+	  background-position: center;
+	}
+{% endfor %}
+
+{% for i in (1..slideCounter-lg) %}
+	.carousel__slide-lg:nth-of-type({{ forloop.index }}),
+	.carousel--thumb .carousel__indicators-lg .carousel__indicator:nth-of-type({{ forloop.index }}) {
+	  background-size: cover;
+	  background-position: center;
+	}
+{% endfor %}
+
+
+
+
+.carousel__slide-sm .grid-wrapper {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 28px;
+	row-gap: 0rem;
+	margin: 0;
+}
+
+.teaser--sm {
+	padding: 0.75rem;
+	background-color: #ffffff;
+	box-shadow: 4px 4px 7px rgba(5, 2, 35, 0.1);
+	-webkit-box-shadow: 4px 4px 7px rgba(5, 2, 35, 0.1);
+	-moz-box-shadow: 4px 4px 7px rgba(5, 2, 35, 0.1);
+	transition: all 0.2s ease-out;
+	margin: 0;
+	position: relative;
+	grid-column: 1/-1;
+	overflow: visible;
+}
+
+.teaser--sm:hover {
+	background-color: #94d8d0;
+}
+
+
+.teaser--sm a, 
+.teaser--sm a:hover {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  grid-column: 1/-1;
+}
+
+
+
+.teaser--sm .img-wrapper--sm::before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.teaser--sm .img-wrapper--sm {
+  position: relative;
+  margin-bottom: 0.75rem !important;
+}
+
+.teaser--sm .img-wrapper--sm > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.teaser--sm h2 {
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  margin-top: 0rem;
+  padding-top: 0.0878148125rem;
+  padding-bottom: 0.1621851875rem;
+  margin-bottom: -0.5rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  font-family: pub-bld, sans-serif;
+  letter-spacing: 0em;
+  word-spacing: 0em;
+}
+
+.teaser--sm p {
+  margin-bottom: 4.5rem !important;
+}
+
+
+
+
+.holder-md,
+.holder-lg {
+  display: none;
+}
+.holder-sm {
+	display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .holder-sm,
+  .holder-lg {
+    display: none;
+  }
+  .holder-md {
+  	display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .holder-sm,
+  .holder-md {
+    display: none;
+  }
+  .holder-lg {
+  	display: block;
+  }
+}
+
+
+
 
 
 </style>
@@ -402,7 +1025,9 @@ CAROUSEL ITEMS
 
 <script>
   function isVisible(el) {
+
         while (el) {
+
             if (el === document) {
                 return true;
             }
@@ -414,6 +1039,7 @@ CAROUSEL ITEMS
             } else if (!$style) {
                 return false;
             } else if ($style.display === 'none') {
+            	console.log('HERE');
                 return false;
             } else if ($style.visibility === 'hidden') {
                 return false;
@@ -430,11 +1056,21 @@ CAROUSEL ITEMS
   {% if include.duration %}
   setInterval(function(){
     var j=0;
-    var elements = document.querySelectorAll('#carousel{{ number}} .carousel__control--forward');
-    for(i=(elements.length - 1);i>-1;i--) {
-      if(isVisible(elements[i])) j=i;
+    var elementsSM = document.querySelectorAll('#carousel{{ number}}-sm .carousel__control--forward');
+    var elementsMD = document.querySelectorAll('#carousel{{ number}}-md .carousel__control--forward');
+    var elementsLG = document.querySelectorAll('#carousel{{ number}}-lg .carousel__control--forward');
+    for(i=(elementsSM.length - 1);i>-1;i--) {
+      if(isVisible(elementsSM[i])) j=i;
     }
-    elements[j].click();
+    for(i=(elementsMD.length - 1);i>-1;i--) {
+      if(isVisible(elementsMD[i])) j=i;
+    }
+    for(i=(elementsLG.length - 1);i>-1;i--) {
+      if(isVisible(elementsLG[i])) j=i;
+    }
+    elementsSM[j].click();
+    elementsMD[j].click();
+    elementsLG[j].click();
   },{{ include.duration }}000);
   {% endif %}
 </script>

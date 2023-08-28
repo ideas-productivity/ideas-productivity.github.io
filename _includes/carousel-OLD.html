@@ -1,0 +1,440 @@
+<!-- 
+
+CAROUSEL
+
+-------------------------------------------------------------------------------
+
+available parameters:
+* -
+
+* required
+from: https://jekyllcodex.org/without-plugin/slider/
+
+-------------------------------------------------------------------------------
+
+-->
+
+{% assign letterstring = "a,b,c,d,e,f,g,h,i,j,k,l,m,n" %}
+{% assign letters = letterstring | split: ',' %}
+{% assign number = include.number | minus: 1 %}
+<div class="carousel__holder">
+    <div id="carousel{{ number }}" class="carousel">
+    	
+        {% for item in page.carousel %}
+	          <input class="carousel__activator" type="radio" name="carousel{{ number }}" id="{{ number }}{{ letters[forloop.index0] }}" {% if forloop.first %}checked="checked"{% endif %} />
+	        {% endfor %}
+	        {% for item in page.carousel %}
+	          {% if forloop.index == forloop.length %}
+	            {% assign nextindex = 0 %}
+	          {% else %}
+	            {% assign nextindex = forloop.index0 | plus: 1 %}
+	          {% endif %}
+	          {% assign nextletter = letters[nextindex] %}
+	          {% if forloop.index0 == 0 %}
+	            {% assign previndex = forloop.length | minus: 1 %}
+	          {% else %}
+	            {% assign previndex = forloop.index0 | minus: 1 %}
+	          {% endif %}
+	          {% assign prevletter = letters[previndex] %}
+	          <div class="carousel__controls">
+	              <label class="carousel__control carousel__control--backward" for="{{ number }}{{ prevletter }}"></label>
+	              <label class="carousel__control carousel__control--forward" for="{{ number }}{{ nextletter }}"></label>
+	          </div>
+	    {% endfor %}
+      
+
+
+
+
+<!-- 
+
+CAROUSEL ITEMS
+
+--------------------------------------------------------------------------- -->
+
+
+
+        <div class="carousel__track">
+          	{% for slides in page.carousel %}
+	            <div class="carousel__slide">
+					{% for teasers in slides.slide %}
+					{% assign i = forloop.index  %}
+						{% if i == 1 %}
+							{% assign title1 = teasers.title %}
+							{% assign source1 = teasers.source %}
+							{% assign contain1 = teasers.contain %}
+							{% assign cover1 = teasers.cover %}
+							{% assign scale1 = teasers.scale %}
+							{% assign url1 = teasers.url %}
+							{% assign blurb1 = teasers.blurb %}
+
+							{% assign title2 = nil %}
+							{% assign source2 = nil %}
+							{% assign contain2 = nil %}
+							{% assign cover2 = nil %}
+							{% assign scale2 = nil %}
+							{% assign url2 = nil %}
+							{% assign blurb2 = nil %}
+
+							{% assign title3 = nil %}
+							{% assign source3 = nil %}
+							{% assign contain3 = nil %}
+							{% assign cover3 = nil %}
+							{% assign scale3 = nil %}
+							{% assign url3 = nil %}
+							{% assign blurb3 = nil %}
+
+							{% assign title4 = nil %}
+							{% assign source4 = nil %}
+							{% assign contain4 = nil %}
+							{% assign cover4 = nil %}
+							{% assign scale4 = nil %}
+							{% assign url4 = nil %}
+							{% assign blurb4 = nil %}
+
+						{% elsif i == 2 %}
+							{% assign title2 = teasers.title %}
+							{% assign source2 = teasers.source %}
+							{% assign contain2 = teasers.contain %}
+							{% assign cover2 = teasers.cover %}
+							{% assign scale2 = teasers.scale %}
+							{% assign url2 = teasers.url %}
+							{% assign blurb2 = teasers.blurb %}
+						{% elsif i == 3 %}
+							{% assign title3 = teasers.title %}
+							{% assign source3 = teasers.source %}
+							{% assign contain3 = teasers.contain %}
+							{% assign cover3 = teasers.cover %}
+							{% assign scale3 = teasers.scale %}
+							{% assign url3 = teasers.url %}
+							{% assign blurb3 = teasers.blurb %}
+						{% elsif i == 4 %}
+							{% assign title4 = teasers.title %}
+							{% assign source4 = teasers.source %}
+							{% assign contain4 = teasers.contain %}
+							{% assign cover4 = teasers.cover %}
+							{% assign scale4 = teasers.scale %}
+							{% assign url4 = teasers.url %}
+							{% assign blurb4 = teasers.blurb %}
+						{% endif %}
+					{% endfor %}
+
+					{% if title4 %}
+					{% 	include teasers-4x_img.html
+						title1 = title1
+						source1 = source1
+						contain1 = contain1
+						cover1 = cover1
+						scale1 = scale1
+						url1 = url1
+						blurb1 = blurb1
+
+						title2 = title2
+						source2 = source2
+						contain2 = contain2
+						cover2 = cover2
+						scale2 = scale2
+						url2 = url2
+						blurb2 = blurb2
+
+						title3 = title3
+						source3 = source3
+						contain3 = contain3
+						cover3 = cover3
+						scale3 = scale3
+						url3 = url3
+						blurb3 = blurb3
+
+						title4 = title4
+						source4 = source4
+						contain4 = contain4
+						cover4 = cover4
+						scale4 = scale4
+						url4 = url4
+						blurb4 = blurb4
+					%}
+					{% elsif title3 %}
+					{% 	include teasers-4x_img.html
+						title1 = title1
+						source1 = source1
+						contain1 = contain1
+						cover1 = cover1
+						scale1 = scale1
+						url1 = url1
+						blurb1 = blurb1
+
+						title2 = title2
+						source2 = source2
+						contain2 = contain2
+						cover2 = cover2
+						scale2 = scale2
+						url2 = url2
+						blurb2 = blurb2
+
+						title3 = title3
+						source3 = source3
+						contain3 = contain3
+						cover3 = cover3
+						scale3 = scale3
+						url3 = url3
+						blurb3 = blurb3
+					%}
+					{% elsif title2 %}
+					{% 	include teasers-4x_img.html
+						title1 = title1
+						source1 = source1
+						contain1 = contain1
+						cover1 = cover1
+						scale1 = scale1
+						url1 = url1
+						blurb1 = blurb1
+
+						title2 = title2
+						source2 = source2
+						contain2 = contain2
+						cover2 = cover2
+						scale2 = scale2
+						url2 = url2
+						blurb2 = blurb2
+					%}
+					{% else %}
+					{% 	include teasers-4x_img.html
+						title1 = title1
+						source1 = source1
+						contain1 = contain1
+						cover1 = cover1
+						scale1 = scale1
+						url1 = url1
+						blurb1 = blurb1
+					%}
+					{% endif %}
+
+
+	            </div> 
+            {% endfor %}
+        </div>
+
+
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+
+        <div class="carousel__indicators">
+            {% for item in page.carousel %}
+              <label class="carousel__indicator" for="{{ number }}{{ letters[forloop.index0] }}"></label>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+
+
+<style>
+.carousel__holder {
+	width: 100%; 
+	position: relative; 
+	margin: 1rem 0 1rem;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+	position: relative;
+  padding: 0;
+}
+
+.carousel .teasers-4x-img {
+	margin-bottom: 2rem !important;
+}
+
+.carousel__track {
+	position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.5s ease 0s;
+}
+
+.carousel__track .carousel__slide {
+  display: inline-block;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.carousel--scale .carousel__slide {
+  transform: scale(0);
+}
+
+.carousel__slide {
+  height: 100%;
+	position: relative;
+  opacity: 0;
+  overflow: hidden;
+}
+
+
+	{% for item in page.carousel %}
+		.carousel__track .carousel__slide:nth-of-type({{ forloop.index }}) {
+	    {% if forloop.index0 != 0 %}
+	    	margin-top: -{{ forloop.index0 }}00%;
+	    	transform: translate({{ forloop.index0 }}00%, calc(-16px * {{ forloop.index0 }}));
+	    {% endif %}
+		}
+	{% endfor %}
+
+
+
+
+.carousel__controls,
+.carousel__activator {
+  display: none;
+}
+
+
+{% for item in page.carousel %}
+	.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__track {
+    transform: translateX(-{{ forloop.index0 }}00%);
+	}
+
+	.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__slide:nth-of-type({{ forloop.index }}) {
+	  transition: opacity 0.5s, transform 0.5s;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  opacity: 1;
+	  transform: scale(1);
+	}
+
+	.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__controls:nth-of-type({{ forloop.index }}) {
+	  display: block;
+	  opacity: 1;
+	}
+
+	.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
+	  opacity: 1;
+	}
+
+{% endfor %}
+
+
+.carousel__control {
+  height: 12px;
+  width: 12px;
+  margin-top: -15px;
+  bottom: 23px;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  border-width: 4px 4px 0 0;
+  border-style: solid;
+  border-color: #189064;
+  opacity: 0.35;
+  opacity: 1;
+  outline: 0;
+  z-index: 3;
+}
+
+.carousel__control:hover {
+  opacity: 1;
+}
+
+.carousel__control--backward {
+  left: 20px;
+  transform: rotate(-135deg);
+}
+.carousel__control--forward {
+  right: 20px;
+  transform: rotate(45deg);
+}
+
+.carousel__indicators {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel__indicator {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.35;
+  margin: 0 2.5px 0 2.5px;
+}
+
+.carousel__indicator:hover {
+  opacity: 0.75;
+}
+
+.carousel__slide .overlay {height: 100%;}
+.carousel--thumb .carousel__indicator {
+  height: 30px;
+  width: 30px;
+}
+
+.carousel__indicator {
+  background-color: #189064;
+}
+
+
+{% for item in page.carousel %}
+	.carousel__slide:nth-of-type({{ forloop.index }}),
+	.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
+	  background-size: cover;
+	  background-position: center;
+	}
+{% endfor %}
+
+
+</style>
+
+
+
+
+<script>
+  function isVisible(el) {
+        while (el) {
+            if (el === document) {
+                return true;
+            }
+
+            var $style = window.getComputedStyle(el, null);
+
+            if (!el) {
+                return false;
+            } else if (!$style) {
+                return false;
+            } else if ($style.display === 'none') {
+                return false;
+            } else if ($style.visibility === 'hidden') {
+                return false;
+            } else if (+$style.opacity === 0) {
+                return false;
+            } else if (($style.display === 'block' || $style.display === 'inline-block') &&
+                $style.height === '0px' && $style.overflow === 'hidden') {
+                return false;
+            } else {
+                return $style.position === 'fixed' || isVisible(el.parentNode);
+            }
+        }
+  }
+  {% if include.duration %}
+  setInterval(function(){
+    var j=0;
+    var elements = document.querySelectorAll('#carousel{{ number}} .carousel__control--forward');
+    for(i=(elements.length - 1);i>-1;i--) {
+      if(isVisible(elements[i])) j=i;
+    }
+    elements[j].click();
+  },{{ include.duration }}000);
+  {% endif %}
+</script>
