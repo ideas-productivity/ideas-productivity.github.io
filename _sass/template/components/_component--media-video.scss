@@ -13,8 +13,11 @@
 	.img-wrapper,
 	.vid-wrapper {
 		@include aspect-ratio(16, 9);
-		grid-column: 3 / 11;
+		grid-column: 1 / -1;
 		cursor: pointer;
+		@include respond-to(m){
+			grid-column: 3 / 11;
+		}
 	}
 
 	img,
@@ -26,8 +29,11 @@
 
 	.caption {
 		margin-top: bl(2);
-		grid-column: 3 / 11;
+		grid-column: 1 / -1;
 		grid-row: 2;
+		@include respond-to(m){
+			grid-column: 3 / 11;
+		}
 	}
 
 	.play-btn {
@@ -36,8 +42,11 @@
 		aspect-ratio : 1 / 1;
 		top: bl(4); //16px
 		right: bl(4); //16px
-		width: 80px;
+		width: 40px;
 		z-index: 1000;
+		@include respond-to(s){
+			width: 80px
+		}
 	}
 
 	.play-btn .circle {
@@ -52,11 +61,16 @@
   	box-sizing: border-box;
 	  border-color: transparent transparent transparent color(neutral, X);
 	  border-style: solid;
-	  border-width: 18px 0 18px 30px;
 	  position: absolute;
 	  z-index: 1000;
-	  top: calc(40px - 18px);
-	  left: calc(40px - 11px);
+	  border-width: 9px 0 9px 16px;
+	  top: calc(20px - 9px);
+	  left: calc(20px - 6px);
+	  @include respond-to(s){
+	  	border-width: 18px 0 18px 30px;
+			top: calc(40px - 18px);
+	  	left: calc(40px - 11px);
+		}
 	}
 
 	.img-wrapper:hover .play-btn .circle {

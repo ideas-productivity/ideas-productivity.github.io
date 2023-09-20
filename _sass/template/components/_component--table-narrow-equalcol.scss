@@ -6,7 +6,10 @@
   */
 
 .table--narrow-equalcol {
-	grid-column: 3 / 11;
+	grid-column: 1 / -1;
+	@include respond-to(m){
+			grid-column: 3 / 11;
+		}
 	@include stack(sm-md);
 
 	h1 {

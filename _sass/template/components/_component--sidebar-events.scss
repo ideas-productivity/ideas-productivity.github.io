@@ -6,9 +6,15 @@
   */
 
 .sidebar-events {
-	grid-column: 1 / 3;
-	height: 0;
+	grid-column: 1 / -1;
+	height: auto;
+	@include stack(md);
 	overflow: visible;
+	@include respond-to(m){
+		grid-column: 1 / 3;
+		height: 0;
+		margin-bottom: 0 !important;
+	}
 
 	.sidebar-year {
 		display: block;
@@ -17,7 +23,10 @@
 	}
 
 	.sidebar-date {
-		
+		@include typestyle($sans-sm-reg);
+		@include respond-to(m){
+			@include typestyle($sans-md-reg);
+		}
 	}
 
 	.sidebar-time {

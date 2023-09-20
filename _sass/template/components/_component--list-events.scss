@@ -82,41 +82,72 @@
 	}
 
 	.event-title {
-		grid-column: 4 / -1;
-		grid-row: 2;
-		min-height: bl(24); //96px
+		grid-column: 1 / -1;
+		grid-row: 4;	
+		@include stack(xs);
 		@include typestyle($sans-md-reg);
+		@include respond-to(s){
+			grid-column: 4 / -1;
+			grid-row: 2;
+			min-height: bl(24); //96px
+			margin-bottom: 0 !important;
+		}
 	}
 
 	.event-date {
-		grid-column: 1 / 4;
+		grid-column: 1 / -1;
 		grid-row: 2;
-		@include typestyle($sans-md-reg);
+		@include typestyle($sans-sm-reg);
+		@include respond-to(s){
+			@include typestyle($sans-md-reg);
+			grid-column: 1 / 4;
+			grid-row: 2;
+		}
+
 	}
 
 	.event-year {
-		grid-column: 1 / 4;
+		grid-column: 1 / -1;
 		grid-row: 1;
 		margin-bottom: 0;
+		@include respond-to(s){
+			grid-column: 1 / 4;
+		}
 	}
 
 	.event-type {
-		grid-column: 4 / -1;
-		grid-row: 1;
+		grid-column: 1 / -1;
+		grid-row: 3;
 		margin-bottom: 0;
+		@include respond-to(s){
+			grid-column: 4 / -1;
+			grid-row: 1;
+		}
 	}
 
 	.event-series {
-		grid-column: 4 / -1;
-		grid-row: 3;
+		grid-column: 1 / -1;
+		grid-row: 5;
 		margin-bottom: -4px;
+		@include respond-to(s){
+			grid-column: 4 / -1;
+			grid-row: 3;
+		}
 	}
 
 
 	.subevents {
 		@include grid-child($cols:12);
+		width: 100vw;
+		max-width: 1296px; //1240 standard max + padding
+		box-sizing: border-box;
+		margin-left: -28px;
+		padding-left: 28px;
+		padding-right: 28px;
 		background-color: color(neutral, XXB);
 		grid-row: 4;
+		margin-bottom: -.75rem !important;
+		li { border-bottom: none; }
 	}
 
 	.subevent-link {
@@ -131,34 +162,53 @@
 	}
 
 	.subevent-title {
-		grid-column: 4 / -1;
-		grid-row: 2;
-		min-height: bl(12); //96px
+		grid-column: 	1 / -1;
+		grid-row: 4;
 		@include typestyle($sans-sm-reg);
+		@include respond-to(s){
+			grid-column: 4 / -1;
+			grid-row: 2;
+			// min-height: bl(10); 
+		}
 	}
 
 	.subevent-date {
-		grid-column: 1 / 4;
+		grid-column: 1 / -1;
 		grid-row: 1;
 		margin-bottom: 0;
+		@include respond-to(s){
+			grid-column: 1 / 4;
+		}
 	}
 
 	.subevent-time {
-		grid-column: 1 / 4;
+		grid-column: 1 / -1;
 		grid-row: 2;
-		@include typestyle($sans-sm-reg);
+		@include typestyle($sans-xs-reg);
+		@include respond-to(s){
+			@include typestyle($sans-sm-reg);
+			grid-column: 1 / 4;
+		}
 	}
 
 	.subevent-type {
-		grid-column: 4 / -1;
-		grid-row: 1;
+		grid-column: 1 / -1;
+		grid-row: 3;
 		margin-bottom: 0;
+		@include respond-to(s){
+			grid-column: 4 / -1;
+			grid-row: 1;
+		}
 	}
 
 	.subevent-series {
-		grid-column: 4 / -1;
-		grid-row: 3;
-		margin-bottom: -4px;
+		grid-column: 1 / -1;
+		grid-row: 5;
+		@include stack(xxs);
+		@include respond-to(s){
+			grid-column: 4 / -1;
+			grid-row: 3;
+		}
 	}
 
 

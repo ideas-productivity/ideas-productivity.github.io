@@ -11,7 +11,10 @@
 
 	.img-wrapper {
 		@include aspect-ratio(16, 9);
-		grid-column: 3 / 7;
+		grid-column: 1 / -1;
+		@include respond-to(s){
+			grid-column: 3 / 7;
+		}
 	}
 
 	img {
@@ -28,8 +31,12 @@
 
 	.captions {
 		margin-top: bl(2);
-		grid-column: 7 / 11;
-		grid-row: 1;
+		grid-column: 1 / -1;
+		grid-row: 2;
+		@include respond-to(s){
+			grid-column: 7 / 11;
+			grid-row: 1;
+		}
 	}
 }
 

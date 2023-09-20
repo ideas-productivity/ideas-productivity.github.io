@@ -6,7 +6,11 @@
   */
 
 .download {
-	@include grid-child($col-start: 3, $cols: 8);
+	@include grid-child($col-start: 1, $cols: 12);
+	@include respond-to(m){
+		@include grid-child($col-start: 3, $cols: 8);
+	}
+	
 	@include inset(xs);
 	@include stack(md);
 	background-color: color(neutral, X); 
@@ -17,19 +21,42 @@
 
 	a {
 		text-decoration: none;
-		@include grid-child($col-start: 1, $cols: 8);
+		@include grid-child($col-start: 1, $cols: 12);
+		@include respond-to(m){
+			@include grid-child($col-start: 1, $cols: 8);
+		}
 	}
 
 	.img-wrapper {
 		@include aspect-ratio(1, 1);
-		grid-column: 1 / 3;
+		display: none;
+		@include respond-to(m){
+			grid-column: 1 / 3;
+			display: block;
+		}
 	}
 
 	.txt-wrapper {
-		grid-column: 3 / -1;
+		grid-column: 1 / -1;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+		@include respond-to(m){
+			grid-column: 3 / -1;
+		}
+	}
+
+	.icon-dwnld {
+		&:before {
+			@include typestyle($icon-sm);
+			content: "\e903";
+		}
+		margin-right: bl(3);
+		color: color(blue, XX);
+		speak: none;
+		@include respond-to(m){
+			display: none;
+		}	
 	}
 
 	h1 {

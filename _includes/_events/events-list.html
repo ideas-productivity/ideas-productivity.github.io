@@ -110,9 +110,11 @@ An event can be considered to be past iff both startdate and enddate are in the 
 						  				<h3 class="subevent-title">
 							  				{{ my-title }}
 							  			</h3>
+							  			{% if sub[0].time %}
 							  			<p class="subevent-time">
 							  				{{ sub[0].time }}
 							  			</p>
+							  			{% endif %}
 							  			<small class="subevent-date">
 							  				{{ sub[0].startdate | date:"%b %d" }}
 							  			</small>

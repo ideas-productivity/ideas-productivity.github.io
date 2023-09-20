@@ -42,7 +42,7 @@
 		color: color(neutral,XXX);
 	}
 
-	.teaser1 {
+	.item1 {
   	grid-column: 1 / -1;
   	@include respond-to(s){
 			grid-column: 1 / 7;
@@ -52,7 +52,7 @@
 		}
 	}
 
-	.teaser2 {
+	.item2 {
 		grid-column: 1 / -1;
 		@include respond-to(s){
 			grid-column: 7 / -1;
@@ -62,7 +62,7 @@
 		}
 	}
 
-	.teaser3 {
+	.item3 {
 		grid-column: 1 / -1;
 		@include respond-to(s){
 			grid-column: 1 / 7;
@@ -72,7 +72,7 @@
 		}
 	}
 
-	.teaser4 {
+	.item4 {
 		grid-column: 1 / -1;
 		@include respond-to(s){
 			grid-column: 7 / -1;
@@ -82,10 +82,10 @@
 		}
 	}
 
-	.teaser1,
-	.teaser2,
-	.teaser3,
-	.teaser4 {
+	.item1,
+	.item2,
+	.item3,
+	.item4 {
 		@include stack(sm);
 	}
 

@@ -7,6 +7,7 @@ TEXT, BIG LINK
 available parameters:
 * blurb
 * url
+- pushleft
 
 * required
 
@@ -14,6 +15,16 @@ available parameters:
 
 -->
 
-<a class="text-biglink" href="{{ include.url }}">
-	{{ include.blurb }}
-</a>
+{% if include.pushleft %}
+<div class="text-biglink pushleft">
+	<a href="{{ include.url }}">
+		{{ include.blurb }}
+	</a>
+</div>
+{% else %}
+<div class="text-biglink">
+	<a href="{{ include.url }}">
+		{{ include.blurb }}
+	</a>
+</div>
+{% endif %}

@@ -15,9 +15,16 @@
 	}
 
 	.deck {
-		@include typestyle($sans-lg-reg);
+		@include typestyle($sans-sm-reg);
 		color: color(neutral, XXX);
 		@include stack(xs);
+		@include respond-to(s){
+			@include typestyle($sans-lg-reg);
+		}
+	}
+
+	.deck a {
+		color: color(neutral, XXX);
 	}
 
 	hr {

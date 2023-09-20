@@ -64,8 +64,11 @@
 	}
 
 	.banner .img-wrapper {
-		grid-column: 1 / 7;
+		grid-column: 1 / -1;
 		@include aspect-ratio(16, 9);
+		@include respond-to(m){
+			grid-column: 1 / 7;
+		}
 	}
 
 	.banner img {
@@ -81,7 +84,10 @@
 	}
 
 	.banner .text-wrapper {
-		grid-column: 7 / -1;
+		grid-column: 1 / -1;
+		@include respond-to(m){
+			grid-column: 7 / -1;
+		}
 	}
 
 	.banner h2 {

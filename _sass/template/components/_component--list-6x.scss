@@ -48,7 +48,13 @@
 	.item4,
 	.item5,
 	.item6 {
-  	grid-column: span 2;
+  	grid-column: span 12;
+  	@include respond-to(s){
+			grid-column: span 6;
+		}
+  	@include respond-to(m){
+			grid-column: span 2;
+		}
 	}
 
 

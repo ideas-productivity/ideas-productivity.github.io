@@ -12,5 +12,5 @@ Events organized by the IDEAS Productivity project are organized into several se
 <!-- Event List -->
 
 {% include _events/events-list.html %}
-
-{% include text-biglink.html blurb = "See past events and concluded series" url = "/resources/past-events" %}
+{% include text-biglink.html blurb = 'See past events and concluded series' url = '/resources/past-events' pushleft = 'TRUE'
+%}
