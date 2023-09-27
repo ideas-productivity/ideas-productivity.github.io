@@ -5,6 +5,13 @@
 
   <body>
 
+    <script>
+      if(location.hash){
+        console.log(location.hash);
+        location=location;
+      }
+    </script>
+
     {%- include _layout/header.html -%}
 
     <main class="page-content layout-wrapper" aria-label="Content">
