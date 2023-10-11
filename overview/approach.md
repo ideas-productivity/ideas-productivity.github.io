@@ -3,7 +3,7 @@
 layout: page
 
 title: "Approach"
-blurb: "Multipronged strategy to advance scientific productivity through better scientific software"
+blurb: "IDEAS community partnerships are advancing scientific productivity through better scientific software."
 
 ---
 
@@ -15,31 +15,31 @@ blurb: "Multipronged strategy to advance scientific productivity through better 
 
 # IDEAS Goals
 
-IDEAS goals are to qualitatively change the culture of advanced CSE and to provide a foundation (through software productivity methodologies and an extreme-scale software ecosystem) that enables transformative and reliable next-generation predictive science and decision support. 
+IDEAS goals are to qualitatively change the culture of high-performance computational science and to provide a foundation (through software productivity methodologies and an advanced software ecosystem) that enables transformative and reliable next-generation predictive science and decision support. 
 
-We use an integrated process improvement approach that consists of
-- curating methodologies and educational resources
-- establishing software communities
-- providing opportunities for peer knowledge sharing and training
-- fostering cross-organization informal dialogue to incentivize community-building and a regular cadence of communication. 
+Our integrated approach to process improvement focuses on four complementary focus areas:
+- Curating methodologies and educational resources
+- Establishing software communities
+- Providing opportunities for peer knowledge sharing and training
+- Fostering cross-organization informal dialogue to incentivize community-building and a regular cadence of communication. 
 
-This multipronged strategy drives our efforts toward achieving a diverse and inclusive research culture.
+Together, these drive IDEAS partnerships toward fostering a diverse and inclusive research culture.
 
 # Curating methodologies and educational resources
 
 We use a multifaceted approach to develop, customize, curate, and deploy best practices as a fundamental way to improve software sustainability and programmer productivity. This work requires distilling the collective understanding of team and community members with many years of valuable experience in designing and producing high-quality, reusable HPC scientific software. This experience, when combined with knowledge obtained from the broader software engineering community, has provided a foundation for focused discussion, distillation, and development of a large and growing collection of resources for scientific software teams, including topics such as agile processes, collaboration via revision control workflows, reproducibility, and scientific software design, refactoring, and testing. Specific activities include:
 
-### Establishing the Better Scientific Software (BSSw) website
+### Establishing the Better Scientific Software (BSSw.io) website
 
-We have established the Better Scientific Software (BSSw) website as a hub for sharing information on practices to improve software productivity and sustainability. Readers benefit from blog articles, curated content, and event information contributed by over 250 international community members, covering a wide range of topics relating to scientific software planning, development, performance, reliability, collaboration, and skills.
+We have established the Better Scientific Software (BSSw.io) website as a hub for sharing information on practices to improve software productivity and sustainability. Readers benefit from blog articles, curated content, and event information contributed by over 250 international community members, covering a wide range of topics relating to scientific software planning, development, performance, reliability, collaboration, and skills.
 
 ### Devising Productivity and Sustainability Improvement Planning (PSIP)
  
-We have devised Productivity and Sustainability Improvement Planning (PSIP), a light-weight, iterative workflow where teams incrementally and iteratively upgrade software practices. Teams are now more productively tackling science goals through PSIP advances in areas such as software builds, testing, refactoring, revision control, documentation, and coding standards.
+We have devised *Productivity and Sustainability Improvement Planning (PSIP)*, a light-weight, iterative workflow where teams incrementally and iteratively upgrade software practices. Teams are now more productively tackling science goals through PSIP advances in areas such as software builds, testing, refactoring, revision control, documentation, and coding standards.
  
-### Advancing team of teams concepts
+### Advancing *team of teams* concepts
 
- We are advancing team of teams concepts to strengthen collaborations within the community, with emphasis on improving connections among the many multi-institutional teams that contribute to the Extreme-Scale Scientific Software Stack (E4S).
+ We are advancing *team of teams* concepts to strengthen collaborations within the community, with emphasis on improving connections among the many multi-institutional teams that contribute to the Extreme-Scale Scientific Software Stack (E4S).
 
 # Establishing software communities
 
@@ -52,20 +52,20 @@ Software Development Kits (SDKs) establish collaborative structures for product 
 ### Code Analysis and mining Tools (CAT) SDK
 
 The Code Analysis and mining Tools (CAT) SDK is the most recent contribution to SDK community building. CAT-SDK---a productized suite of analysis tools (including those for analyzing repositories, source code, and pull requests)---enables software teams to gain insight into the day-to-day programming aspects of projects to help understand and improve development processes.
- 
- ### Extreme-scale Scientific Software Stack (E4S) 
+
+### Extreme-scale Scientific Software Stack (E4S) 
 
 The Extreme-scale Scientific Software Stack (E4S) is a curated stack that incorporates the various topical SDKs (including programming models and runtimes, math libraries, data and visualization libraries, and development tools) and relies on the Spack software management ecosystem. E4S facilitates the combined use of independent software packages by application teams, while also improving transparency and reproducibility of computational results.
 
 # Providing opportunities for peer knowledge sharing and training
 
-Central to the IDEAS-ECP project are multipronged efforts that help grow and mobilize a dynamic community to improve software quality, productivity, and sustainability. Our goal is to establish a ”virtuous cycle” in which widespread awareness of the importance of software quality and related issues, in turn promotes sharing, discussion, and refinement of practices and resources for producing better scientific software. Specific activities are:
+Central to IDEAS work are multipronged efforts that help grow and mobilize a dynamic community to improve software quality, productivity, and sustainability. Our goal is to establish a ”virtuous cycle” in which widespread awareness of the importance of software quality and related issues, in turn promotes sharing, discussion, and refinement of practices and resources for producing better scientific software. Specific activities are:
 
-### Producing the webinar series Best Practices for HPC Software Developers.
+### Producing the webinar series Best Practices for HPC Software Developers
 
 Launched in 2016 in partnership with the DOE computing facilities ALCF, NERSC, and OLCF, the webinar series *Best Practices for HPC Software Developers* provides a venue for many topics in HPC scientific software devel- opment from practitioners throughout the international community.
 
-### Creating and teaching tutorials on scientific software practices, 
+### Creating and teaching tutorials on scientific software practices 
  
  IDEAS tutorials focus on topics software testing, verification, revision control, refactoring, agile processes, and more. We present important considerations and practices in scientific software development, typically based on "best practices" identified in the broader software engineering community, tailored and adapted to needs of the HPC scientific software community.
 
@@ -75,7 +75,7 @@ Launched in 2016 in partnership with the DOE computing facilities ALCF, NERSC, a
 
 The BSSw Fellowship Program is helping to advance the culture and careers of research software engineers (RSEs)[70], whose work is central to the sustainment of scientific software— focusing community attention on RSE contributions and providing a larger stage to advance causes related to high-quality software[28]. Moreover, the program provides a pathway to introduce newcomers with strong software skills to the DOE community. Extension and growth of the BSSw Fellowship Program, with broader integration throughout DOE offices that use advanced computing, would help to grow the community of people and training resources needed for trans-disciplinary research.
 
-# Fostering cross-organization informal dialogue
+# Fostering cross-organization dialogue
 
 We create opportunities for a regular cadence of informal cross-institutional dialogue and mecha- nisms to further build community by sharing lessons learned. In CSE, most conferences, work- shops, and journals focus on scientific results and advances in algorithms and methodologies that help create them. Fewer opportunities exist to discuss the process of developing software—which provides the foundation for CSE collaboration and scientific discoveries. Promoting and providing opportunities for such discussions to take place, through workshops and focused sessions within larger conferences, as well as other types of events, is a key part of the IDEAS outreach strategy. Specific activities are:
 

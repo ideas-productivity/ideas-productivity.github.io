@@ -3,7 +3,7 @@
 layout: page
 
 title: "Overview"
-blurb: "The quick brown fox jumps over the lazy dog."
+blurb: "Advancing scientific productivity through better scientific software"
 
 ---
 
@@ -15,20 +15,20 @@ blurb: "The quick brown fox jumps over the lazy dog."
 
 # Background
 
-Hello. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+High-quality scientific software is a cornerstone of computational science and engineering.
 
-<a href="#">Learn More</a>
+<a href="/overview/background">Learn More</a>
 
 
 # Approach
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+We are pursuing a multipronged strategy to advance scientific productivity through better scientific software.
 
-<a href="#">Learn More</a>
+<a href="/overview/approach">Learn More</a>
 
 
 # Impact
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+In partnership with the community, we are mitigating technical risks by building a firmer foundation for reproducible, sustainable science.
 
-<a href="#">Learn More</a>
+<a href="/overview/impact">Learn More</a>
