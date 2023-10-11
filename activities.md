@@ -45,10 +45,11 @@ blurb: "Many things are happening under the IDEAS Productivity umbrella..."
 		url2 = "www.link.com"
 		blurb2 = "The quick brown fox jumps over the lazy dog."
 
-		title3 = "BSSw.io Resource Hub"
-		source3 = "fpo.png"
-		url3 = "www.link.com"
-		blurb3 = "The quick brown fox jumps over the lazy dog."
+		title3 = "BSSw.io"
+		source3 = "logos/bssw/BSSw-logo-transparent.png"
+		scale3 = "0.65"
+		url3 = "/activities/bsswio"
+		blurb3 = "A hub for scientific software development resources."
 %}
 
 <!-- Past Activities -->
