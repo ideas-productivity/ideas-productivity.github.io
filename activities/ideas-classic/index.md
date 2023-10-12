@@ -25,6 +25,8 @@ blurb: "Improving software productivity for terrestrial ecosystem modeling"
 	  caption = "IDEAS-Classic in the broader DOE context"
 %}
 
+*This project was active 2014--2017.*
+
 ## Mission
 
 The IDEAS-Classic Project (2014-2017) was a partnership between the Offices of Advanced Scientific Computing Research (ASCR) and Biological and Environmental Research (BER) in the DOE’s Office of Science.  Motivated by specific use case requirements for multiphysics and multiscale terrestrial ecosystem modeling, IDEAS-Classic is an ambitious effort to improve the compatibility and usability of important DOE libraries; improve the practices, processes, and tools for scientific software development; and improve community knowledge.
