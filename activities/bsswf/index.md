@@ -2,8 +2,8 @@
 
 layout: page
 
-title: "IDEAS Watersheds"
-blurb: "Accelerating watershed science through a community-driven software ecosystem"
+title: "BSSw Fellowship Program"
+blurb: "Providing recognition and funding to leaders and advocates of high-quality scientific software"
 
 ---
 
@@ -39,6 +39,6 @@ Beyond this categorical requirement, the BSSw Fellowship Program seeks applicati
 We encourage applicants at all career stages, ranging from students through early-career, mid-career, and senior professionals, especially those from underrepresented groups, including people who are Black or African American, Hispanic/Latinx, American Indian, Alaska Native, Native Hawaiian, Pacific Islanders, women, persons with disabilities, and first generation scholars.
 
 {% 	include text-biglink.html
-		blurb = "visit BSSw.io"
+		blurb = "learn more about the BSSw Fellowship Program"
 		url = "https://bssw.io/fellowship"
 %}

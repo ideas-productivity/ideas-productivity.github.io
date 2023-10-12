@@ -2,43 +2,56 @@
 
 layout: page
 
-title: "BSSw Fellowship Program"
-blurb: "Providing recognition and funding to leaders and advocates of high-quality scientific software"
+title: "IDEAS Watersheds"
+blurb: "Accelerating watershed science through a community-driven software ecosystem"
 
 ---
 
 {% 	include media-img2x.html 
-	  source1 = "logos/bssw/BSSw-logo-transparent.png"
+	  source1 = "ideas-watersheds/IDEAS_watershed-logo_blueText.png"
 	  contain1 = "true"
-      scale1 = "0.65"
-    source2 = "bsswf/OG_2308_BSSwFellowships_Closed.png"
+      scale1 = "0.85"
+     source2 = "ideas-watersheds/Pillars_hero.png"
+	 scale2 = "0.85"
 	contain2 = "true"
 %}
 
-# About the BSSw Fellows Program
+# Research Activities
 
-The main goal of the BSSw Fellowship program is to foster and promote practices, processes, and tools to improve developer productivity and software sustainability of scientific codes. We also anticipate accumulating a growing community of BSSw Fellowship alums who can serve as leaders, mentors, and consultants to increase the visibility of those involved in scientific software production and sustainability in the pursuit of scientific discovery.
+IDEAS-Watershed is organized around six Research Activities to address important scientific challenges and advance software development methodologies and engagement in the growing community-driven software ecosystem.
 
-BSSw Fellows are selected annually based on an application process that includes the proposal of a funded activity that promotes better scientific software through a publicly available artifact. We select at least three Fellows per year and honorable mentions as appropriate. Each 2024 BSSw Fellow will receive up to $25,000 for an activity that promotes better scientific software. Activities can include organizing a workshop, preparing a tutorial, or creating content to engage the scientific software community, including broadening participation or promoting diversity, equity, and inclusion.
+# SFA Partnership Activities
 
-BSSw Fellows receive funds through their respective institution for one year. We encourage BSSw Fellows to continue to serve the scientific software community as alums by helping select future classes of Fellows and providing leadership in their communities.
+The three Partnership Activities, each undertaken jointly with one of SBR’s interdisciplinary Science Focus Areas (SFAs) (LBNL, ORNL, PNNL), addresses biogeochemical cycling in streams across a wide range of stream orders in disparate climates and land-use conditions, from
 
-## Become a BSSw Fellow
-Do you have something to share with the scientific software community? Do you have a passion to learn and teach others about better software? Apply for a BSSw Fellowship. Help the community, and receive funding and recognition for your efforts.
+- **[LBNL]** Watershed Function SFA: East River Use Case – a pristine mountainous headwater catchment
+- **[ORNL]** Critical Interfaces SFA: East Fork Poplar Creek Use Case – a fourth-order mercury-contaminated stream in deciduous broadleaf forest in a semitropical humid climate
+- **[PNNL]** River Corridor SFA: Columbia River Use Case – to a heavily managed ninth-order river.
+The three regional SFAs share a long-term objective of elucidating how surface water/groundwater exchanges across a range of temporal and spatial scales control watershed-scale biogeochemical cycling.
 
-### Who Should Apply
-Applicants must be affiliated with a U.S.-based institution that is able to receive Federal funding. Typically such institutions include U.S. government labs, U.S. universities, and U.S.-based corporations.
+## CONUS Activity
+  
+Short description goes here. 
+ 
+### Here's an example of a level-3 heading
+ 
+But probably we don't need level-3 headings for this description
 
-Beyond this categorical requirement, the BSSw Fellowship Program seeks applications from people with the following characteristics:
+### And another level-3 heading
+ 
+But probably we don't need level-3 headings for this description
 
-- Passionate about scientific software.
-- Interested in contributing powerful ideas, tools, methodologies, and more that improve the quality of scientific software.
-- Able to use the fellowship to broadly benefit the scientific software community.
-- Willing to participate as an alum in subsequent years to guide selection of future fellows and promote better scientific software in their community.
+## Reaction Network Activity
+ 
+Short description goes here. 
+ 
+## Shared Infrastructure Activity
+ 
+Short description goes here. 
 
-We encourage applicants at all career stages, ranging from students through early-career, mid-career, and senior professionals, especially those from underrepresented groups, including people who are Black or African American, Hispanic/Latinx, American Indian, Alaska Native, Native Hawaiian, Pacific Islanders, women, persons with disabilities, and first generation scholars.
+To do: Determine what to include for high-level overview info.  This is just a quick skeleton starting point. 
 
 {% 	include text-biglink.html
-		blurb = "visit BSSw.io"
-		url = "https://bssw.io/fellowship"
+		blurb = "visit IDEAS Watersheds"
+		url = "https://ideas-watersheds.github.io/"
 %}
