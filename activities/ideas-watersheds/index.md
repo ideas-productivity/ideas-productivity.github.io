@@ -2,8 +2,8 @@
 
 layout: page
 
-title: "IDEAS Watersheds"
-blurb: "Accelerating watershed science through a community-driven software ecosystem"
+title: "BSSw Fellowship Program"
+blurb: "Providing recognition and funding to leaders and advocates of high-quality scientific software"
 
 ---
 
