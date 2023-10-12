@@ -38,14 +38,16 @@ blurb: "Many things are happening under the IDEAS Productivity umbrella..."
 
 		title1 = "xSDK"
 		source1 = "xsdk/xsdk_logo_COLOR_large-no-text.png"
+		scale1 = "0.655"
 		contain1 = true
 		url1 = "/activities/xsdk"
 		blurb1 = "Extreme-scale Scientific Software Development Kit."
 
 		title2 = "BSSw Fellowship"
-		source2 = "fpo.png"
+		source2 = "logos/bssw/BSSw-logo-transparent.png"
+		scale2 = "0.65"
 		url2 = "/activities/bsswf"
-		blurb2 = "The quick brown fox jumps over the lazy dog."
+		blurb2 = "Providing recognition and funding to leaders and advocates of high-quality scientific software."
 
 		title3 = "BSSw.io"
 		source3 = "logos/bssw/BSSw-logo-transparent.png"
