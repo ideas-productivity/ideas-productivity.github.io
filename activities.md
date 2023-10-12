@@ -22,10 +22,11 @@ blurb: "Many things are happening under the IDEAS Productivity umbrella..."
 		url1 = "/activities/ideas-ecp"
 		blurb1 = "Building a productive and sustainable exascale software ecosystem." 
 
-		title2 = "IDEAS-Watersheds"
-		source2 = "fpo.png"
-		url2 = "www.link.com"
-		blurb2 = "The quick brown fox jumps over the lazy dog."
+		title2 = "IDEAS Watersheds"
+		source2 = "ideas-watersheds/Pillars_hero.png"
+		contain2 = true
+		url2 = "/activities/ideas-watersheds"
+		blurb2 = "Accelerating watershed science through a community-driven software ecosystem."
 %}
 
 
