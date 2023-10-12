@@ -13,14 +13,18 @@ toc:
     slug: activities
     url: /activities.html
     subfolderitems:
-      - page: IDEAS-Classic
-        url: /activities/ideas-classic/index.html
+      - page: IDEAS-ECP
+        url: /activities/ideas-ecp/
+      - page: IDEAS-Watersheds
+        url: /activities/ideas-watersheds/
       - page: xSDK
-        url: /activities/xsdk/index.html
-      - page: Watersheds
-        url: /activities/watersheds.html
-      - page: BSSw
-        url: /activities/bssw.html
+        url: /activities/xsdk/
+      - page: BSSw Fellowship
+        url: /activities/bsswf/
+      - page: BSSw.io
+        url: /activities/bsswio/
+      - page: IDEAS-Classic
+        url: /activities/ideas-classic/
   - title: resources
     slug: resources
     url: /resources.html
