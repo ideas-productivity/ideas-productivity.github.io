@@ -1,5 +1,5 @@
 ---
-title: The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC23)
+title: The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC21)
 startdate: "2021-11-14"
 enddate: "2021-11-19"
 #
