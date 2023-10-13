@@ -29,9 +29,6 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/12/hpcbp-059-scisoftecosystem.pdf
-#  - label: Q&A
-#    format: PDF
-#    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/07/webinar043-spack-qa.pdf
 #
 location: online
 #

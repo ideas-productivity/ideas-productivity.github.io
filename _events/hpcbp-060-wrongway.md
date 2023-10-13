@@ -29,9 +29,6 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/02/hpcbp060-wrongway.pdf
-#  - label: Q&A
-#    format: PDF
-#    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/07/webinar043-spack-qa.pdf
 #
 location: online
 #

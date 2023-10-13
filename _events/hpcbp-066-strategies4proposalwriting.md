@@ -30,9 +30,6 @@ artifacts:
   - label: Slides
     format: PDF
     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/08/hpcbp-066-strategies4proposalwriting.pdf
-#  - label: Q&A
-#    format: PDF
-#    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/05/hpcbp063-temporalanalysis-qa.pdf
 #
 location: online
 #

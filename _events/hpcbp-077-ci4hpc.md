@@ -23,16 +23,16 @@ registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItc-uqq
 ecp-abbreviation: ci4hpc
 qa-public-url: http://bit.ly/HPCBP-QA
 survey-public-url: http://bit.ly/HPCBP-feedback
-# artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: Q6Ksu_uX3bc
-#   - label: Slides
-#     format: PDF
-#     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/07/hpcbp-076-cleanssw.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/07/hpcbp-076-cleanssw-qa.pdf
+artifacts:
+  - label: Recording
+    format: YouTube
+    yt-video-id: YNQ7qGtWGSI
+  - label: Slides
+    format: PDF
+    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/08/hpcbp-077-ci4hpc.pdf
+  - label: Q&A
+    format: PDF
+    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/08/hpcbp-077-ci4hpc-qa.pdf
 #
 location: online
 #
