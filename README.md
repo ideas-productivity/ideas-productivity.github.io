@@ -42,6 +42,10 @@ Plan: move into production at https://ideas-productivity.org/ in November 2023
     * The use of (technically appropriate) "eye-candy" images is encouraged to enhance visual interest
     * Be sure to credit image sources where appropriate
 * Content-specific
+    * main nav bar (across the top) (`_data/nav-config.yml`)
+        * To level navbar labels should be all lowercase
+        * Menu items in dropdown should be title case
+    * Main page
     * Overview
     * Activities
         * Activities are something substantial which would be recognized by the public. Funded projects, obviously, but also activities launched by a funded project that may have developed an independent identity with the public.  Events, even an organized series of events, fall under Resources rather than activities.
