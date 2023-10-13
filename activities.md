@@ -20,13 +20,13 @@ blurb: "Many things are happening under the IDEAS Productivity umbrella..."
 		source1 = "ideas-ecp/lightbulb-transparent.png"
 		contain1 = true
 		url1 = "/activities/ideas-ecp"
-		blurb1 = "Building a productive and sustainable exascale software ecosystem." 
+		blurb1 = "Building a productive and sustainable exascale software ecosystem" 
 
 		title2 = "IDEAS Watersheds"
 		source2 = "ideas-watersheds/Pillars_hero.png"
 		contain2 = true
 		url2 = "/activities/ideas-watersheds"
-		blurb2 = "Accelerating watershed science through a community-driven software ecosystem."
+		blurb2 = "Accelerating watershed science through a community-driven software ecosystem"
 %}
 
 
@@ -42,19 +42,19 @@ blurb: "Many things are happening under the IDEAS Productivity umbrella..."
 		scale1 = "0.655"
 		contain1 = true
 		url1 = "/activities/xsdk"
-		blurb1 = "Extreme-scale Scientific Software Development Kit."
+		blurb1 = "Extreme-scale Scientific Software Development Kit"
 
 		title2 = "BSSw Fellowship"
 		source2 = "logos/bssw/BSSw-logo-transparent.png"
 		scale2 = "0.65"
 		url2 = "/activities/bsswf"
-		blurb2 = "Providing recognition and funding to leaders and advocates of high-quality scientific software."
+		blurb2 = "Providing recognition and funding to leaders and advocates of high-quality scientific software"
 
 		title3 = "BSSw.io"
 		source3 = "logos/bssw/BSSw-logo-transparent.png"
 		scale3 = "0.65"
 		url3 = "/activities/bsswio"
-		blurb3 = "A hub for scientific software development resources."
+		blurb3 = "A hub for scientific software development resources"
 %}
 
 <!-- Past Activities -->
