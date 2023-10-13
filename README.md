@@ -31,6 +31,7 @@ Plan: move into production at https://ideas-productivity.org/ in November 2023
     * Page titles and other `title` content should use title case
     * Other headings should use sentence case
     * We prefer to use H1 as the highest level headings for page content (not H2)
+    * For most cases, we would expect a page to utilize at most two levels of headings -- if you need H3s ask yourself if you're going into too much detail
     * `blurbs` (an optional element of most pages and include files) used more or less as subtitles should use sentence case but should *not* end with periods
     * Subtitle `blurbs` should active "-ing" words where possible
     * Use subtitle `blurbs` only where they make sense -- they're *optional*
@@ -47,5 +48,8 @@ Plan: move into production at https://ideas-productivity.org/ in November 2023
         * We currently categorize Activities as *current*, *spin offs*, and *past*.  Spin offs may be separate projects that were actually spun out of another project in the IDEAS umbrella (e.g., xSDK) or activities which are still run by an IDEAS project but have a strong independent identity.  This can be a bit of a judgement call, so discuss it with others if you have any questions
         * Activities that have a separate web presence will generally have a single summary page here with a `text-biglink.html` link to the outside presence at the bottom
         * Activities for which this is the only web presence are encouraged to provide more extensive content (e.g., IDEAS-Classic)
+        * For *past* activities, we should consistently indicate the years during which the project was active, to help put it in context
+            * For the main page for the activity, start the body of the page with a sentence like "*This project was active 2014–2017.*" (note the use of italics).  See [IDEAS-Classic](https://ideas-productivity.github.io/activities/ideas-classic/) as an example
+            * On the cards for past activities, put the dates in the `title` field, like "IDEAS-Classic (2014-2017)".  See the IDEAS-Classic card at the bottom of the [Activities](https://ideas-productivity.github.io/activities.html) page as an example
     * Resources
     * Join
