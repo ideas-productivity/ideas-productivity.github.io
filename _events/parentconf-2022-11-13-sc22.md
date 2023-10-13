@@ -15,6 +15,8 @@ artifacts:
     url: https://sc22.supercomputing.org/
 ---
 
+Events (co-)organized by IDEAS at SC22.
+
 {% include _events/schedule.html
    events = page.subevents
    title = "Event Schedule"

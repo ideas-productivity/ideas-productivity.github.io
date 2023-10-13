@@ -15,6 +15,8 @@ artifacts:
     url: https://www.isc-hpc.com
 ---
 
+Events (co-)organized by IDEAS at ISC22.
+
 {% include _events/schedule.html
    events = page.subevents
    title = "Event Schedule"

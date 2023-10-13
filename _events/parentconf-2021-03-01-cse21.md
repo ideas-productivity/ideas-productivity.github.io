@@ -16,6 +16,8 @@ artifacts:
     url: https://www.siam.org/conferences/cm/conference/cse21
 ---
 
+Events (co-)organized by IDEAS at CSE21.
+
 {% include _events/schedule.html
    events = page.subevents
    title = "Event Schedule"
