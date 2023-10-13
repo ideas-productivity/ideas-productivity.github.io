@@ -111,6 +111,9 @@ algolia:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+exclude:
+  - README.md
+
 # For use with event artifacts (and perhaps elsewhere)
 # Base URLs
 doi-resolver-url: https://doi.org
