@@ -23,13 +23,13 @@ registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItfuior
 ecp-abbreviation: hacc
 qa-public-url: http://bit.ly/HPCBP-QA
 survey-public-url: http://bit.ly/HPCBP-feedback
-# artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: Q6Ksu_uX3bc
-#   - label: Slides
-#     format: PDF
-#     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/07/hpcbp-076-cleanssw.pdf
+artifacts:
+  - label: Recording
+    format: YouTube
+    yt-video-id: E0sEUKmQagw
+  - label: Slides
+    format: PDF
+    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/10/hpcbp-079-hacc.pdf
 #   - label: Q&A
 #     format: PDF
 #     url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/07/hpcbp-076-cleanssw-qa.pdf
