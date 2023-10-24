@@ -114,7 +114,7 @@ algolia:
 exclude:
   - README.md
 
-# For use with event artifacts (and perhaps elsewhere)
+# For use with event artifacts (and perhaps elsewhere) 
 # Base URLs
 doi-resolver-url: https://doi.org
 github-url: https://github.com
