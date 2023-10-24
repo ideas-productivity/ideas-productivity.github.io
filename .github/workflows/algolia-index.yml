@@ -17,4 +17,4 @@ jobs:
       - name: Algolia Jekyll Bootstrap
         uses: abhimanbhau/algolia-jekyll-bootstrap@v1
         with:
-          API_KEY: '$'
+          API_KEY: '${{ secrets.ALGOLIA_API_KEY }}'
