@@ -87,7 +87,7 @@ algolia:
     - _pages/privacy.md
 
 
-# Site configuration for the Jekyll 3 Pagination Gem
+# Site configuration for the Jekyll 3 Pagination Gem 
 # gems:
 #   - jekyll-paginate-v2 
 
