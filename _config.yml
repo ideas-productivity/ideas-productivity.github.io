@@ -89,7 +89,7 @@ algolia:
 
 # Site configuration for the Jekyll 3 Pagination Gem
 # gems:
-#   - jekyll-paginate-v2
+#   - jekyll-paginate-v2 
 
 # Exclude from processing.
 # The following items will not be processed, by default.
