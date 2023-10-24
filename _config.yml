@@ -79,9 +79,9 @@ feed:
 
 search_provider: algolia
 algolia:
-  application_id:"2U5U5F24YD"
+  application_id: "2U5U5F24YD"
   index_name: dev_ideas
-  search_only_api_key:"0075d949e24bc994484f4252d8fec7ea"
+  search_only_api_key: "0075d949e24bc994484f4252d8fec7ea"
   files_to_exclude:
     - _pages/cookies.md
     - _pages/privacy.md
