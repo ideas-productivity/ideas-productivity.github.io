@@ -1,0 +1,240 @@
+09:37:47 From  Osni Marques  to  Everyone:
+	• Slides: https://www.exascaleproject.org/event/embracingdifference (under “Materials from the Webinar”)	• Q&A (google doc): http://bit.ly/HPCBP-QA	• Help us improve the series: http://bit.ly/HPCBP-feedback
+09:38:38 From  Osni Marques  to  Everyone:
+	Poll: https://pollev.com/maryannleung407
+09:38:39 From  Kelley Gaske  to  Everyone:
+	https://pollev.com/maryannleung407
+10:03:37 From  Osni Marques  to  Everyone:
+	• Slides: https://www.exascaleproject.org/event/embracingdifference (under “Materials from the Webinar”)	• Q&A (google doc): http://bit.ly/HPCBP-QA	• Help us improve the series: http://bit.ly/HPCBP-feedback
+10:03:48 From  Kelley Gaske  to  Everyone:
+	https://pollev.com/maryannleung407
+10:04:53 From  Mark Miller  to  Everyone:
+	Can you drag the Zoom control panel off the slide?
+10:05:15 From  Kelley Gaske  to  Everyone:
+	https://pollev.com/maryannleung407
+10:05:35 From  Mark Miller  to  Everyone:
+	Someone is in a boat
+10:05:53 From  Mark Miller  to  Everyone:
+	Antartica?
+10:06:19 From  Kelley Gaske  to  Everyone:
+	https://pollev.com/maryannleung407
+10:06:20 From  Jean Sexton  to  Everyone:
+	E
+10:06:39 From  Cameron Rutherford  to  Everyone:
+	I can’t pick Mathematics & Computer Science. I don’t just have one background 🙁
+10:07:30 From  Kelley Gaske  to  Everyone:
+	https://pollev.com/maryannleung407
+10:07:50 From  Mark Miller  to  Everyone:
+	Perl...its the best ;)
+10:08:00 From  Alicia Guite  to  Everyone:
+	C++ is fighting
+10:08:01 From  Chase Phelps  to  Everyone:
+	jokes, lol
+10:08:23 From  Mark Miller  to  Everyone:
+	Perl makes the easy things easy and the hard things possible.
+10:09:17 From  William Godoy  to  Everyone:
+	Male ~ Python % ?
+10:10:15 From  Peter McCorquodale  to  Everyone:
+	depends on how you define "disability"
+10:10:18 From  Alicia Guite  to  Everyone:
+	^^^
+10:11:19 From  Mark Miller  to  Everyone:
+	I would likely fit some definition of disabled before my first cup of coffee in the morning.
+10:11:47 From  Alicia Guite  to  Everyone:
+	Caffeine addicts are showing themselves
+10:12:07 From  Abu Asaduzzaman  to  Everyone:
+	Difference between Chai and Tea???
+10:12:11 From  Peter McCorquodale  to  Everyone:
+	I await the analysis of correlations between answers to these questions. ;-)
+10:12:12 From  David Wright  to  Everyone:
+	@Alicia - Good call!
+10:12:35 From  Osni Marques  to  Everyone:
+	• Slides: https://www.exascaleproject.org/event/embracingdifference (under “Materials from the Webinar”)	• Q&A (google doc): http://bit.ly/HPCBP-QA
+10:16:21 From  Kelley Gaske  to  Everyone:
+	https://pollev.com/maryannleung407
+10:17:43 From  Mark Miller  to  Everyone:
+	Does fortran vs. C++ count as tech diversity?
+10:18:40 From  Cameron Rutherford  to  Everyone:
+	Every = exceptionally very
+10:18:50 From  Mark Miller  to  Everyone:
+	;)
+10:19:12 From  Eric Tucker  to  Everyone:
+	Loving the unintentional typo… yup… every = every very difficulty🙂
+10:19:21 From  Peter McCorquodale  to  Everyone:
+	Impossible to answer this without being given a sense of what technical areas should be considered “same" or "different”.
+10:19:33 From  Mark Miller  to  Everyone:
+	Just having them sit in meetings and read email...very easy...having them contribute productively...thats a bit harder ;)
+10:19:42 From  Alicia Guite  to  Everyone:
+	Agree w Peter
+10:19:45 From  William Godoy  to  Everyone:
+	This question illustrates why internships are so important :)
+10:21:02 From  Amanda Lee  to  Everyone:
+	Yes agree with William! ^
+10:21:05 From  Eric Tucker  to  Everyone:
+	Agred
+10:22:02 From  Mark Miller  to  Everyone:
+	Did someone put "cray" there ;)
+10:22:24 From  William Godoy  to  Everyone:
+	I put tech…..I had interns getting offers from tech not National Labs :(
+10:22:34 From  Mark Miller  to  Everyone:
+	I see "unix" there too...very funny
+10:23:58 From  Lisa Frerichs  to  Osni Marques(Direct Message):
+	Could you ask Mary Ann to move her Zoom bar?
+10:24:12 From  Lisa Frerichs  to  Osni Marques(Direct Message):
+	Maybe that would be too much of an interruption.
+10:24:44 From  Peter McCorquodale  to  Everyone:
+	“people who have historically been excluded" is short for "people belonging to GROUPS that have historically been excluded", isn't it?
+10:25:09 From  Mark Miller  to  Everyone:
+	I think equity can even mean intentional "bias" (in a new direction) to undue the effects of historical bias
+10:25:19 From  Peter McCorquodale  to  Everyone:
+	rather than different individuals' individual histories
+10:26:11 From  Mark Miller  to  Everyone:
+	@Peter...makes sense to me.
+10:27:08 From  Mark Miller  to  Everyone:
+	Just took a screenshot of that! 👍🏻
+10:29:42 From  Eric Tucker  to  Everyone:
+	I believe true inclusive behaviors don’t solely address the issues arising from historical exclusion of whole groups/classes of people, they enable every team member to be included in the team as a full, authentic expression of their individual self, experiences and capabilities.
+10:31:23 From  Peter McCorquodale  to  Everyone:
+	Does "underrepresented group” in a field mean a group X such that the % of people working in that field belonging to group X is less than the % of people in the general population belonging to group X?
+10:31:35 From  Mark Miller  to  Everyone:
+	@Eric...maybe you are touching on the difference between inclusion and equity.
+10:33:32 From  David Wright  to  Everyone:
+	@Peter, I like your definition, but I don't believe that people do the math very often, just assume.
+10:33:43 From  William Godoy  to  Everyone:
+	@Peter FYI: https://www.pewresearch.org/science/2021/04/01/stem-jobs-see-uneven-progress-in-increasing-gender-racial-and-ethnic-diversity/
+10:34:32 From  Dayle Smith  to  Everyone:
+	thanks William
+10:34:40 From  Peter McCorquodale  to  Everyone:
+	Well, the dictionary definition of "underrepresented" is "not as well represented as SHOULD be”.
+10:35:23 From  Mark Miller  to  Everyone:
+	@Peter...my personal pref. is "historically and systematically marginalized" instead of "underrepresented". The former is the (major) cause of the latter and knowing that WHY is important IMHO to informing dialog about underrepresentation.
+10:35:47 From  Eric Tucker  to  Everyone:
+	Could be Mark, I still consider myself a learner, not a leader, when it comes how to organize my thinking on this topic.
+10:36:42 From  Mark Miller  to  Everyone:
+	@Eric...not matter what one's credentials are, I think we are all "learners" on this topic and always will be IMHO.
+10:37:46 From  Peter McCorquodale  to  Everyone:
+	Sources for “research” on more diversity -> more innovation?
+10:39:30 From  Eric Tucker  to  Everyone:
+	Here’s a link to an HBR article on the subject Peter: https://hbr.org/2013/12/how-diversity-can-drive-innovation
+10:40:57 From  Eric Tucker  to  Everyone:
+	This paper also has a lot of links to historical research on this subject: https://www.sciencedirect.com/science/article/abs/pii/S0048733310002398
+10:41:04 From  Peter McCorquodale  to  Everyone:
+	Eric, thanks.  I see it mentions correlation, but not causation. The causation might even go in the reverse direction.
+10:41:29 From  Alicia Guite  to  Everyone:
+	One thing I appreciate as an individual part of an "underrepresented group" in computer science is how merit-based the field has shown itself to be so far. My perspective has always been respected and appreciated
+10:41:58 From  Abu Asaduzzaman  to  Everyone:
+	Nice presentation!
+10:42:05 From  Eric Tucker  to  Everyone:
+	Agreed Peter.  I think the second link has some links to more rigorous analysis
+10:44:14 From  Aissata Diop  to  Everyone:
+	This was great! I loved the quote that explains the difference between inclusion and diversity. How to respond to micro agressions?
+10:47:16 From  Mark Miller  to  Everyone:
+	My own personal live experience on diversity...when I am asked to describe a piece of my work to my wife (degrees in social sciences) she asks questions I never thought to ask and sometimes have no answer to.
+10:47:35 From  Peter McCorquodale  to  Everyone:
+	It's pretty difficult for a group to work together when they don't speak a common language. So that kind of homogeneity is beneficial.
+10:47:41 From  Wes Coomber  to  Everyone:
+	Mary Great presentation 👍 and I like your zoom background too.
+10:47:50 From  Mark Miller  to  Everyone:
+	Delloite study, https://www2.deloitte.com/us/en/insights/deloitte-review/issue-22/diversity-and-inclusion-at-work-eight-powerful-truths.html
+10:48:52 From  Alicia Guite  to  Everyone:
+	@Peter, the homogeneity would likely come from having a common goal
+10:49:01 From  Aissata Diop  to  Everyone:
+	Thank you!
+10:49:05 From  Eric Tucker  to  Everyone:
+	I agree Mark, I find tremendous value in having to describe my work to as many different people with as many different perspective as possible.  It makes me better at being a clear communicator and ensures the underlying ideas are durable and valuable.
+10:50:43 From  Mark Miller  to  Everyone:
+	@Peter...yes there is great amount of work that says when a team is asked to adopt new practices, initially they are less productive...it takes time to fully learn...once competence in the practice is attained...productivity exceeds where it was before the practice was adopted. I think the same is true with adopting inclusive practices. I've watched as another team learned to work with a neurodivers individual and it was initially frustrating for many involved. That transient died out and now things are going great and very rewarding.
+10:51:48 From  William Godoy  to  Everyone:
+	I actually enjoy working with interns as they show me cool new technologies that I didn't grow up with I can incorporate into my work. Breaking my own homogeneity is crucial.
+10:54:43 From  Felix Rojas  to  Everyone:
+	Sorry all my zoom crashed :(
+10:57:06 From  Aissata Diop  to  Everyone:
+	It was easy
+10:57:36 From  Vijayalakshmi Saravanan  to  Everyone:
+	Eay
+10:57:40 From  Vijayalakshmi Saravanan  to  Everyone:
+	*Easy
+10:57:44 From  Felix Rojas  to  Everyone:
+	My zoom crashed when I was chating, but this are the kind of things we need to overcome to achieve self assembly :)
+10:57:59 From  Mark Miller  to  Everyone:
+	😂
+11:02:52 From  Eric Tucker  to  Everyone:
+	Sorry, I don’t think my rev of zoom supports participation in breakouts.
+11:15:30 From  Eric Tucker  to  Everyone:
+	Sure enough… I have underlying OS issue.  Definitely couldn’t upgrade OS and Zoom in <15 min 🙂
+11:18:13 From  Mark Miller  to  Everyone:
+	Who wants to speak for "Fig"...I think we need a Fig lover to do that ;)
+11:18:28 From  Alicia Guite  to  Everyone:
+	👍
+11:20:04 From  Alicia Guite  to  Everyone:
+	That's grim lol
+11:22:53 From  Amanda Lee  to  Everyone:
+	team mascot!
+11:23:07 From  Mark Miller  to  Everyone:
+	👍🏻
+11:23:27 From  Mark Miller  to  Everyone:
+	Power generator too ;)
+11:23:41 From  Alexia Arthur  to  Everyone:
+	👌🏾
+11:25:44 From  Osni Marques  to  Everyone:
+	Thank you for attending today’s webinar! The next webinar in the HPC-BP series will be on July 6: Growing preCICE from an as-is Coupling Library to a Sustainable, Batteries-included Ecosystem  https://www.exascaleproject.org/event/precice-ecosystem
+11:25:45 From  Mark Miller  to  Everyone:
+	Thanks Alicia
+11:26:10 From  Alicia Guite  to  Everyone:
+	My pleasure. Team fig!
+11:31:42 From  Mark Miller  to  Everyone:
+	I thought about gaming the poll by having 3 different laptops open to it ;)
+11:32:26 From  Aissata Diop  to  Everyone:
+	Thank you this was both informative and fun!
+11:32:31 From  Tanzima Islam  to  Everyone:
+	thank you so much Mary Ann!
+11:32:40 From  William Godoy  to  Everyone:
+	Thanks @Mary Ann!
+11:32:41 From  Kristen Dawson  to  Everyone:
+	Thank you!
+11:32:42 From  Mark Miller  to  Everyone:
+	❤️
+11:32:43 From  vivian huangfu  to  Everyone:
+	Thank you!!!
+11:32:47 From  Alexia Arthur  to  Everyone:
+	Thank you!
+11:32:55 From  Sayef Azad Sakin  to  Everyone:
+	Thank you!
+11:32:56 From  Knia Williams  to  Everyone:
+	Thank you
+11:32:59 From  Nowshin Nawal  to  Everyone:
+	Thank you!
+11:33:04 From  Keisha Moore  to  Everyone:
+	Thank you all for joining!
+11:33:26 From  Serges  Love Teutu Talla  to  Everyone:
+	Thank you so much for this great presentation
+11:33:51 From  Akram Mohammed  to  Everyone:
+	Thanks everyone!!
+11:34:52 From  Isabelle Kemajou-Brown  to  Everyone:
+	Thank you for the presentation
+11:35:52 From  Jason Woods  to  Everyone:
+	Well said
+11:36:35 From  Mark Miller  to  Everyone:
+	Eventually, you get more comfortable with yourself and with "others" and the exhuastion feleling goes away
+11:37:36 From  Jason Woods  to  Everyone:
+	Power trips
+11:37:41 From  Mark Miller  to  Everyone:
+	Nerds rule the world (via algorithms)
+11:39:51 From  Mark Miller  to  Everyone:
+	Thanks for sharing that Prof. Mondy 😀
+11:42:00 From  Mark Miller  to  Everyone:
+	Polls were fun! I like drawing the "small step" from technical diversity to people diversity.
+11:44:40 From  Alicia Guite  to  Everyone:
+	@Trey, I think just asking that question to your interns would in its own right incite them to stay
+11:46:07 From  Trey White  to  Everyone:
+	Good idea, thanks, @Alicia.
+11:47:23 From  Alicia Guite  to  Everyone:
+	I'm going to have to head out, but it was a pleasure being part of this event. Looking forward to seeing all of you again soon!
+11:48:04 From  Aman Rani  to  Everyone:
+	Thank you!!
+11:48:11 From  Margaret Ajuwon  to  Everyone:
+	Thank you
+11:48:11 From  Felix Rojas  to  Everyone:
+	Thanks all for this space and opportunity :)
+11:48:17 From  Diego Roa  to  Everyone:
+	thank you!
