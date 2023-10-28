@@ -8,7 +8,7 @@ blurb: "Providing recognition and funding to leaders and advocates of high-quali
 ---
 
 {% 	include media-img2x.html 
-	  source1 = "logos/bssw/BSSw-logo-transparent.png"
+	  source1 = "logos/bsswf/Logo_BSSw_Fellowship_428_550.png"
 	  contain1 = "true"
       scale1 = "0.65"
     source2 = "bsswf/OG_2308_BSSwFellowships_Closed.png"

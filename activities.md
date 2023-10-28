@@ -45,7 +45,7 @@ blurb: "Many things are happening under the IDEAS Productivity umbrella..."
 		blurb1 = "Extreme-scale Scientific Software Development Kit"
 
 		title2 = "BSSw Fellowship"
-		source2 = "logos/bssw/BSSw-logo-transparent.png"
+		source2 = "logos/bsswf/Logo_BSSw_Fellowship_428_550.png"
 		scale2 = "0.65"
 		url2 = "/activities/bsswf"
 		blurb2 = "Providing recognition and funding to leaders and advocates of high-quality scientific software"
