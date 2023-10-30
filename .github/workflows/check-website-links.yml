@@ -3,7 +3,7 @@ name: Check website links
 on:
     workflow_dispatch:
 
-broken_link_checker_job:
+jobs:
     runs-on: ubuntu-latest
     name: Check for broken links
     steps:
