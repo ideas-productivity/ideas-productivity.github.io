@@ -1,6 +1,6 @@
 name: Check URLs in Changed Files
 
-#on: [pull_request, push, workflow_dispatch]
+on: [pull_request, push, workflow_dispatch]
 
 jobs:  
   urlchecks:
@@ -16,22 +16,26 @@ jobs:
       with:
         format: 'csv'
 
-    # We maintain the list of the URLs excluded from checking in a separate file so that we can use
+    # We maintain the lists of the URLs and URL patterns excluded from checking in separate files so that we can use
     # it in multiple workflows, while easily maintaining consistency.
     - name: Read exclude-urls list
-      id: exclude
+      id: ex-urls
       uses: juliangruber/read-file-action@v1
       with:
         path: ./.github/workflows/exclude-urls.txt
+#
+    - name: Read exclude-urls list
+      id: ex-patterns
+      uses: juliangruber/read-file-action@v1
+      with:
+        path: ./.github/workflows/exclude-patterns.txt
 
-    # Run URL checks
-    - name: URLs-checker
+    - name: urls-checker
       uses: urlstechie/urlchecker-action@0.0.33
       with:
-        # only include the changed files
-        include_files: ${{ steps.files.outputs.added_modified }}
         # Use common exclude list read in above
-        exclude_urls: ${{ steps.exclude.outputs.content }}
+        exclude_urls: ${{ steps.ex-urls.outputs.content }}
+        exclude_patterns: ${{ steps.ex-patterns.outputs.content }}
         timeout: 10
         retry_count: 3
         print_all: false
