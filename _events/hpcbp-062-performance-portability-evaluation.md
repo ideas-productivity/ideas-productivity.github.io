@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: D3daHofpheQ
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/04/hpcbp062-performanceportability.pdf
+    url: /assets/artifacts/hpcbp/hpcbp062-performanceportability.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/04/hpcbp062-performanceportability-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp062-performanceportability-qa.pdf
 #
 location: online
 #

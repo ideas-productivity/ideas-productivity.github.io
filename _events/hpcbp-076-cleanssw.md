@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: Q6Ksu_uX3bc
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/07/hpcbp-076-cleanssw.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-076-cleanssw.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/07/hpcbp-076-cleanssw-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-076-cleanssw-qa.pdf
 #
 location: online
 #

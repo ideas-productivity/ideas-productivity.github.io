@@ -28,10 +28,10 @@ artifacts:
     yt-video-id: nzqUAynvDjA
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/08/hpcbp055-sebp4ssd.pdf
+    url: /assets/artifacts/hpcbp/hpcbp055-sebp4ssd.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/08/hpcbp055-sebp4ssd-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp055-sebp4ssd-qa.pdf
 #
 location: online
 #

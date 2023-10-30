@@ -46,7 +46,7 @@ artifacts:
     yt-video-id: 5waBynVgxuc
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/bssw.site_.intro_.2017.12.6.pdf
+    url: /assets/artifacts/hpcbp/bssw.site_.intro_.2017.12.6.pdf
 #
 location: online
 #

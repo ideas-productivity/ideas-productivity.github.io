@@ -28,10 +28,10 @@ artifacts:
     yt-video-id: 7NBHS5w31Tg
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/09/hpcbp056-20yearsopensource.pdf
+    url: /assets/artifacts/hpcbp/hpcbp056-20yearsopensource.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/09/hpcbp056-20yearsopensource-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp056-20yearsopensource-qa.pdf
 #
 location: online
 #

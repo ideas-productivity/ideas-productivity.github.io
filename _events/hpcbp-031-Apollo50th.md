@@ -32,10 +32,10 @@ artifacts:
     yt-video-id: JcMTR0-bMqQ
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/webinar031-Apollo50th.pdf
+    url: /assets/artifacts/hpcbp/webinar031-Apollo50th.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/webinar031-Apollo50th-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar031-Apollo50th-qa.pdf
 #
 location: online
 #

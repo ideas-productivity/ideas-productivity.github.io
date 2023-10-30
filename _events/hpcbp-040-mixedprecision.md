@@ -35,10 +35,10 @@ artifacts:
     yt-video-id: sgRtwJhVFog
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/05/webinar040-mixedprecision.pdf
+    url: /assets/artifacts/hpcbp/webinar040-mixedprecision.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/05/webinar040-multiprecision-QA.pdf
+    url: /assets/artifacts/hpcbp/webinar040-multiprecision-QA.pdf
 #
 location: online
 #

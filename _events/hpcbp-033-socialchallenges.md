@@ -36,10 +36,10 @@ artifacts:
     yt-video-id: XrjtdlOmmf8
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/10/webinar033-social-challenges-updated.pdf
+    url: /assets/artifacts/hpcbp/webinar033-social-challenges-updated.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/09/webinar033-socialchallenges-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar033-socialchallenges-qa.pdf
 #
 location: online
 #

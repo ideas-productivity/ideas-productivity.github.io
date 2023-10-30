@@ -66,7 +66,7 @@ artifacts:
     yt-video-id: eC761xxprWg
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/swr008-creativity.pdf
+    url: /assets/artifacts/swr/swr008-creativity.pdf
 #
 location: online
 #

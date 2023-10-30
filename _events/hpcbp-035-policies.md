@@ -52,10 +52,10 @@ artifacts:
     yt-video-id: QRyC92ZsFkM
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/12/webinar035-softwarepolicies.pdf
+    url: /assets/artifacts/hpcbp/webinar035-softwarepolicies.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/12/webinar035-softwarepolicies-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar035-softwarepolicies-qa.pdf
 #
 location: online
 #

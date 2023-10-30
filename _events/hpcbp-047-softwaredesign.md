@@ -31,10 +31,10 @@ artifacts:
     yt-video-id: rxKqaK5ud5w
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/12/webinar047-softwaredesign.pdf
+    url: /assets/artifacts/hpcbp/webinar047-softwaredesign.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/12/webinar047-softwaredesign-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar047-softwaredesign-qa.pdf
 #
 location: online
 #

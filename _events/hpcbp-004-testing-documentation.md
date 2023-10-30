@@ -23,7 +23,7 @@ artifacts:
     yt-video-id: kAC0N84JaHA
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar004-testing-klinvex.pdf
+    url: /assets/artifacts/hpcbp/webinar004-testing-klinvex.pdf
 #
 location: online
 #

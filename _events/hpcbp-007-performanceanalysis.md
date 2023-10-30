@@ -23,7 +23,7 @@ artifacts:
     yt-video-id: -qxJf6YJ3fc
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar007-160809-deslippe-antfarm.pdf
+    url: /assets/artifacts/hpcbp/webinar007-160809-deslippe-antfarm.pdf
 #
 location: online
 #

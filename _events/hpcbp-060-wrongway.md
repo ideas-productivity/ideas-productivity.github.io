@@ -28,7 +28,7 @@ artifacts:
     yt-video-id: AsUAXkw4q88
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/02/hpcbp060-wrongway.pdf
+    url: /assets/artifacts/hpcbp/hpcbp060-wrongway.pdf
 #
 location: online
 #

@@ -28,10 +28,10 @@ artifacts:
     yt-video-id: jY_evczWUz0
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/07/hpcbp054-miningdevdata.pdf
+    url: /assets/artifacts/hpcbp/hpcbp054-miningdevdata.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/07/hpcbp054-miningdevdata-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp054-miningdevdata-qa.pdf
 #
 location: online
 #

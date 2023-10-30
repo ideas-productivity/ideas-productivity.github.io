@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: l-NUI1jIkA4
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/05/hpcbp063-temporalanalysis.pdf
+    url: /assets/artifacts/hpcbp/hpcbp063-temporalanalysis.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/05/hpcbp063-temporalanalysis-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp063-temporalanalysis-qa.pdf
 #
 location: online
 #

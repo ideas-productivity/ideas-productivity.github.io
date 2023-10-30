@@ -32,10 +32,10 @@ artifacts:
     yt-video-id: -sX4lGMP88I
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/webinar020-oss.pdf
+    url: /assets/artifacts/hpcbp/webinar020-oss.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/webinar020-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar020-qa.pdf
 #
 location: online
 #

@@ -32,10 +32,10 @@ artifacts:
     yt-video-id: vzHnIS-bQQY
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/02/webinar026-containers.pdf
+    url: /assets/artifacts/hpcbp/webinar026-containers.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/02/webinar026-containers-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar026-containers-qa.pdf
 #
 location: online
 #

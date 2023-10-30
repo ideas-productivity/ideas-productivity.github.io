@@ -23,7 +23,7 @@ artifacts:
     yt-video-id: rNHd6rbvxro
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar005-supercomputers.pdf
+    url: /assets/artifacts/hpcbp/webinar005-supercomputers.pdf
 #
 location: online
 #

@@ -34,10 +34,10 @@ artifacts:
     yt-video-id: sL00-ZDi4sk
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/webinar022-cmake.pdf
+    url: /assets/artifacts/hpcbp/webinar022-cmake.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/webinar022-cmake-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar022-cmake-qa.pdf
 #
 location: online
 #

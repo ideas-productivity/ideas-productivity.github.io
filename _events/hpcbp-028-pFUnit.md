@@ -38,10 +38,10 @@ artifacts:
     dont-embed: true
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/04/webinar028-pfunit.pdf
+    url: /assets/artifacts/hpcbp/webinar028-pfunit.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/04/webinar028-pfunit-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar028-pfunit-qa.pdf
 #
 location: online
 #

@@ -34,13 +34,13 @@ artifacts:
     yt-video-id: uFkFwUvgrAI
   - label: Slides Part 1
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/01/webinar048-e4s-pt1.pdf
+    url: /assets/artifacts/hpcbp/webinar048-e4s-pt1.pdf
   - label: Slides Part 2
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/01/webinar048-e4s-pt2.pdf
+    url: /assets/artifacts/hpcbp/webinar048-e4s-pt2.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/01/webinar048-e4s-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar048-e4s-qa.pdf
 #
 location: online
 #

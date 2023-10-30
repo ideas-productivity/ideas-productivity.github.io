@@ -28,7 +28,7 @@ artifacts:
     yt-video-id: 59_x-gdCjn4
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/12/hpcbp-059-scisoftecosystem.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-059-scisoftecosystem.pdf
 #
 location: online
 #

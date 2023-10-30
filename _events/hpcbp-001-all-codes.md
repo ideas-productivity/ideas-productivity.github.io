@@ -24,7 +24,7 @@ artifacts:
     yt-video-id: YJi05p4n1Gc
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar001-160504-dubey-overview.pdf
+    url: /assets/artifacts/hpcbp/webinar001-160504-dubey-overview.pdf
 #
 location: online
 #

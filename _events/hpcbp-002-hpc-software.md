@@ -23,7 +23,7 @@ artifacts:
     yt-video-id: pnH7JycpfiY
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar002-MakeConfigureIDE.pdf
+    url: /assets/artifacts/hpcbp/webinar002-MakeConfigureIDE.pdf
 #
 location: online
 #

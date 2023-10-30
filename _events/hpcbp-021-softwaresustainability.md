@@ -38,7 +38,7 @@ artifacts:
     url: https://doi.org/10.6084/m9.figshare.6935840
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/09/webinar021-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar021-qa.pdf
 #
 location: online
 #

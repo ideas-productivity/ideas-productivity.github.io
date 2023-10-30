@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: CJHRG-dc3eQ
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/04/hpcbp-072-warpx.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-072-warpx.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/04/hpcbp-072-warpx-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-072-warpx-qa.pdf
 #
 location: online
 #

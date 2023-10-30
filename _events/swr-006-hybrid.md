@@ -89,10 +89,10 @@ artifacts:
     yt-video-id: cDNcDnKGV4o
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/11/panel006-hybrid.pdf
+    url: /assets/artifacts/swr/panel006-hybrid.pdf
   - label: Chat Transcript
     format: TXT
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/11/panel006-hybrid-chat.txt
+    url: /assets/artifacts/swr/panel006-hybrid-chat.txt
 #
 location: online
 #

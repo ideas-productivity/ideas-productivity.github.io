@@ -23,7 +23,7 @@ artifacts:
     yt-video-id: cqH-PIRpnRo
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar003-HPC-Session3.pdf
+    url: /assets/artifacts/hpcbp/webinar003-HPC-Session3.pdf
 #
 location: online
 #

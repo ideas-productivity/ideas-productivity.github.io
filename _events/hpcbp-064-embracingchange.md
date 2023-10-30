@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: Vv7wjB4e-3A
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/06/hpcbp064-embracingdifference.pdf
+    url: /assets/artifacts/hpcbp/hpcbp064-embracingdifference.pdf
   - label: Chat Transcript
     format: TXT
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/06/hpcbp064-embracingdifference-chat.txt
+    url: /assets/artifacts/hpcbp/hpcbp064-embracingdifference-chat.txt
 #
 location: online
 #

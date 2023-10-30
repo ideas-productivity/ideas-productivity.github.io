@@ -38,10 +38,10 @@ artifacts:
     yt-video-id: esEGFyFkVUc
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/01/webinar036-exaalt.pdf
+    url: /assets/artifacts/hpcbp/webinar036-exaalt.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/01/webinar036-exaalt-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar036-exaalt-qa.pdf
 #
 location: online
 #

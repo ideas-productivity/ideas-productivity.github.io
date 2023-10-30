@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: ntN0aq-gHc8
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/07/hpcbp065-precice.pdf
+    url: /assets/artifacts/hpcbp/hpcbp065-precice.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/07/hpcbp065-precice-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp065-precice-qa.pdf
 #
 location: online
 #

@@ -28,10 +28,10 @@ artifacts:
     yt-video-id: OsHGb_Ua1gk
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/10/hpcbp057-sierra-elcapitan.pdf
+    url: /assets/artifacts/hpcbp/hpcbp057-sierra-elcapitan.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/10/hpcbp057-sierra-elcapitan-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp057-sierra-elcapitan-qa.pdf
 #
 location: online
 #

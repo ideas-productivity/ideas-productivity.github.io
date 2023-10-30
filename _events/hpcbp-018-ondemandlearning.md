@@ -34,10 +34,10 @@ artifacts:
     yt-video-id: Ssh8VDj6Nro
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/05/webinar018-slides.pdf
+    url: /assets/artifacts/hpcbp/webinar018-slides.pdf
   - label: Q&amp;A
     format: PDF
-    url: https://ideas-productivity.org/wordpress/wp-content/uploads/2018/05/webinar018-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar018-qa.pdf
 #
 location: online
 #

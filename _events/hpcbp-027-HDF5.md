@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: nR9pkl67GG4
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/03/webinar027-hdf5.pdf
+    url: /assets/artifacts/hpcbp/webinar027-hdf5.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/03/webinar027-hdf5-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar027-hdf5-qa.pdf
 #
 location: online
 #

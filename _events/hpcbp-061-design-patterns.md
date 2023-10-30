@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: F4fxlM5gmtU
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/03/hpcbp061-designpatterns.pdf
+    url: /assets/artifacts/hpcbp/hpcbp061-designpatterns.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/03/hpcbp061-designpatterns-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp061-designpatterns-qa.pdf
 #
 location: online
 #

@@ -57,10 +57,10 @@ artifacts:
     yt-video-id: UvskSxMIfwI
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/05/webinar029-agile.pdf
+    url: /assets/artifacts/hpcbp/webinar029-agile.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/05/webinar029-agile-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar029-agile-qa.pdf
 #
 location: online
 #

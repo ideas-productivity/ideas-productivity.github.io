@@ -38,10 +38,10 @@ artifacts:
     yt-video-id: qL_8O8QMUtk
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/session011-slides.pdf
+    url: /assets/artifacts/hpcbp/session011-slides.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/session011-qa.pdf
+    url: /assets/artifacts/hpcbp/session011-qa.pdf
 #
 location: online
 #

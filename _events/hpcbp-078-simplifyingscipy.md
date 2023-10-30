@@ -29,9 +29,9 @@ artifacts:
     yt-video-id: CqUr5BnlWZw
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/09/hpcbp-078-simplifyingscipy.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-078-simplifyingscipy.pdf
   - label: Q&A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/09/hpcbp-078-simplifyingscipy-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-078-simplifyingscipy-qa.pdf
 ---
 With the growing popularity of Python, installation and management of Python packages in HPC environments is emerging as a critical problem for researchers; the problem is exacerbated by the need to provide consistency across traditional batch workloads and interactive notebooks. This webinar will discuss how  to simplify scientific Python package installation by streamlining environment management, dependency tracking, and runtime customizations through easy-to-use tools. The webinar will discuss challenges for installing Python packages in HPC environments and present the best practices suggested by various HPC centers. Many of these best practices have been incorporated into a tool, conda-env-mod, developed by the speaker and his collaborators. HPC centers can further customize the tool and its module templates to incorporate additional software dependencies and provide descriptive help messages. The deployment of the tool has significantly reduced errors and enabled sharing of Python package installations among users. The webinar will give an overview of installing Python packages with `conda-env-mod`.

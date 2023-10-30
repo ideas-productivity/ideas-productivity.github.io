@@ -43,10 +43,10 @@ artifacts:
     yt-video-id: 8h3f3E-Oq5A
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/08/webinar010-Roofline-slides.pdf
+    url: /assets/artifacts/hpcbp/webinar010-Roofline-slides.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/08/webinar010-Roofline-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar010-Roofline-qa.pdf
 #
 location: online
 #

@@ -27,7 +27,7 @@ artifacts:
     yt-video-id: zPlXn0ND2Vs
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/11/hpcbp058-55yearsinHPC.pdf
+    url: /assets/artifacts/hpcbp/hpcbp058-55yearsinHPC.pdf
 #
 location: online
 #

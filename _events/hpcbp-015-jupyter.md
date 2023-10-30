@@ -50,10 +50,10 @@ artifacts:
     yt-video-id: aKah_O5OZdE
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar015-slides.pdf
+    url: /assets/artifacts/hpcbp/webinar015-slides.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar015-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar015-qa.pdf
 #
 location: online
 #

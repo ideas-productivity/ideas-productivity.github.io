@@ -35,10 +35,10 @@ artifacts:
     yt-video-id: 8hWav1RN4b0
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar016-eclipse-slides.pdf
+    url: /assets/artifacts/hpcbp/webinar016-eclipse-slides.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2018/03/webinar016-eclipse-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar016-eclipse-qa.pdf
 #
 location: online
 #

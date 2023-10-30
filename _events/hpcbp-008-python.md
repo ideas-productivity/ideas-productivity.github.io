@@ -58,10 +58,10 @@ artifacts:
     yt-video-id: lSrfZHu3BZw
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/webinar008-IDEAS-Python-in-HPC-Thomas-Scullin-Belhorn.pdf
+    url: /assets/artifacts/hpcbp/webinar008-IDEAS-Python-in-HPC-Thomas-Scullin-Belhorn.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/06/PythoninHPCGoogleDoc.pdf
+    url: /assets/artifacts/hpcbp/PythoninHPCGoogleDoc.pdf
 #
 location: online
 #

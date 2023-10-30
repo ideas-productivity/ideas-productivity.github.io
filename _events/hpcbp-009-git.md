@@ -31,13 +31,13 @@ artifacts:
     yt-video-id: xBNlcq2B2E8
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/07/webinar009-IntermediateGitSlides-4.pdf
+    url: /assets/artifacts/hpcbp/webinar009-IntermediateGitSlides-4.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/07/webinar009-IntermediateGitQA-4.pdf
+    url: /assets/artifacts/hpcbp/webinar009-IntermediateGitQA-4.pdf
   - label: Git Tutorial and Reference Collection
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2017/07/webinar009-GitTutorialandReferenceCollection-4.pdf
+    url: /assets/artifacts/hpcbp/webinar009-GitTutorialandReferenceCollection-4.pdf
 #
 location: online
 #

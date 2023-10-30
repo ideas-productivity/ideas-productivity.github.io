@@ -56,10 +56,10 @@ artifacts:
     yt-video-id: 2OvsMUQ2mj8
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/02/webinar025-perfport.pdf
+    url: /assets/artifacts/hpcbp/webinar025-perfport.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/02/webinar025-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar025-qa.pdf
 #
 location: online
 #

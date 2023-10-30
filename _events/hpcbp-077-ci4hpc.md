@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: YNQ7qGtWGSI
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/08/hpcbp-077-ci4hpc.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-077-ci4hpc.pdf
   - label: Q&A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/08/hpcbp-077-ci4hpc-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-077-ci4hpc-qa.pdf
 #
 location: online
 #

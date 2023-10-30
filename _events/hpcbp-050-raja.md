@@ -30,10 +30,10 @@ artifacts:
     yt-video-id: W1wR4shM82s
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/webinar050-raja.pdf
+    url: /assets/artifacts/hpcbp/webinar050-raja.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/03/webinar050-raja-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar050-raja-qa.pdf
 #
 location: online
 #

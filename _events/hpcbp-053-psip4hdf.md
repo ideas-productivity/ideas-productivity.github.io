@@ -36,10 +36,10 @@ artifacts:
     yt-video-id: kPUYKuiJQZs
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/06/hpcbp053-psip4hdf.pdf
+    url: /assets/artifacts/hpcbp/hpcbp053-psip4hdf.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/06/hpcbp053-psip4hdf-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp053-psip4hdf-qa.pdf
 #
 location: online
 #

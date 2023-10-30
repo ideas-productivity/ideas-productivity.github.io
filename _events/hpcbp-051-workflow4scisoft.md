@@ -30,10 +30,10 @@ artifacts:
     yt-video-id: XOb1RecTnvA
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/04/webinar051-workflow4scisoft.pdf
+    url: /assets/artifacts/hpcbp/webinar051-workflow4scisoft.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/04/webinar051-workflow4scisoft-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar051-workflow4scisoft-qa.pdf
 #
 location: online
 #

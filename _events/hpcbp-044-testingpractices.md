@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: Q6TKzzbUR0U
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/09/webinar044-testingandreview.pdf
+    url: /assets/artifacts/hpcbp/webinar044-testingandreview.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/09/webinar044-testingand-review-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar044-testingand-review-qa.pdf
 #
 location: online
 #

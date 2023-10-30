@@ -28,10 +28,10 @@ artifacts:
     yt-video-id: pNGsLxm69r8
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/05/hpcbp052-fortran-cpp-bindings.pdf
+    url: /assets/artifacts/hpcbp/hpcbp052-fortran-cpp-bindings.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2021/05/hpcbp052-fortran-cpp-bindings-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp052-fortran-cpp-bindings-qa.pdf
 #
 location: online
 #

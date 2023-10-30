@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: HkayNzOVWRY
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/01/hpcbp-071-openscapes.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-071-openscapes.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/01/hpcbp-071-openscapes-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-071-openscapes-qa.pdf
 #
 location: online
 #

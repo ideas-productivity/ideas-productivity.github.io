@@ -31,10 +31,10 @@ artifacts:
     yt-video-id: MSQ-9UE5Wh4
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/02/webinar037-kokkos.pdf
+    url: /assets/artifacts/hpcbp/webinar037-kokkos.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/02/webinar037-kokkos-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar037-kokkos-qa.pdf
 #
 location: online
 #

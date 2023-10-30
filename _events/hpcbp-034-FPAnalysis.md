@@ -38,10 +38,10 @@ artifacts:
     yt-video-id: CCzB1RETSdM
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/10/webinar034-FPAnalysis.pdf
+    url: /assets/artifacts/hpcbp/webinar034-FPAnalysis.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2019/10/webinar034-FPAnalysis-qa.pdf
+    url: /assets/artifacts/hpcbp/webinar034-FPAnalysis-qa.pdf
 #
 location: online
 #

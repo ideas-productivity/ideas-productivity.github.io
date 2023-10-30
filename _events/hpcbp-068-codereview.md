@@ -37,10 +37,10 @@ artifacts:
     yt-video-id: jsIheafEaD8
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/10/hpcbp-068-codereview.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-068-codereview.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/10/hpcbp-068-codereview-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-068-codereview-qa.pdf
 #
 location: online
 #

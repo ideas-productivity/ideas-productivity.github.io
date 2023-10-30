@@ -32,7 +32,7 @@ artifacts:
     yt-video-id: _vI5cnoWn-I
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/08/webinar043-sciviscolor.pdf
+    url: /assets/artifacts/hpcbp/webinar043-sciviscolor-reduced.pdf
 #  - label: Q&A
 #    format: PDF
 #    url:

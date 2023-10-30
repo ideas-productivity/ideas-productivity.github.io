@@ -29,10 +29,10 @@ artifacts:
    yt-video-id: fWpI4S_dvhc
  - label: Slides
    format: PDF
-   url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/12/hpcbp-070-labnotebooks.pdf
+   url: /assets/artifacts/hpcbp/hpcbp-070-labnotebooks.pdf
  - label: Q&amp;A
    format: PDF
-   url: http://ideas-productivity.org/wordpress/wp-content/uploads/2022/12/hpcbp-070-labnotebooks-qa.pdf
+   url: /assets/artifacts/hpcbp/hpcbp-070-labnotebooks-qa.pdf
 #
 location: online
 #

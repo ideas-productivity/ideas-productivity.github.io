@@ -29,10 +29,10 @@ artifacts:
     yt-video-id: T5JInOIMcdw
   - label: Slides
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/04/hpcbp-073-copa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-073-copa.pdf
   - label: Q&amp;A
     format: PDF
-    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2023/04/hpcbp-073-qa.pdf
+    url: /assets/artifacts/hpcbp/hpcbp-073-qa.pdf
 #
 location: online
 #
