@@ -1,0 +1,134 @@
+15:06:49	 From Brad Carvey : Migrated to new VPN software and could not connect, from my local computer.  I am remoted into a computer on the SRN, so I probably won't be able to talk.  But, I can hear.
+15:07:09	 From Ashley Barker : Thanks Brad for letting us know.
+15:08:05	 From Mark Miller : Is Katie Antypas on by phone by any chance?
+15:08:38	 From Mark Miller : Maybe that was a silly question...on by phone may not be able to see chat :|
+15:09:23	 From Ashley Barker to Mark Miller (Privately) : :)
+15:09:34	 From Ashley Barker to Mark Miller (Privately) : I don’t see anyone on the phone
+15:09:49	 From Ashley Barker to Mark Miller (Privately) : looks like she is here now
+15:10:03	 From Mark Miller to Ashley Barker (Privately) : I see several phone-only entries in the participants list. Glad she is here now!
+15:10:26	 From Ashley Barker to Mark Miller (Privately) : duh… i see them now… i need new glasses
+15:13:51	 From Karen Devine : love the photo!
+15:13:59	 From Mark Miller : +1
+15:14:15	 From Steven Gottlieb : A natural programmer.  He already understands garbage collection.
+15:14:42	 From Mark Miller : He probably wouldn't like Java then ;)
+15:15:31	 From Elaine Raybourn : Question for panelists: how can we replicate having “ears on the ground” virtually?
+15:20:29	 From Brad Carvey : Mark Miller is a zwifter
+15:21:06	 From David Bernholdt : what is a zwifter?
+15:22:06	 From Brad Carvey : His background shows a bike and a desert scene.  Zwift is a virtual environment for running and ride.  10s of thousands of real people ride and run together.
+15:22:38	 From Brad Carvey : Saturday I did a 100 km ride with about 400 people from all over the world.
+15:23:06	 From David Bernholdt : Do you have to all dodge virtual traffic too?
+15:23:40	 From Mark Miller : Yes, I am a zwifter! Was riding in Yorkshire last night ;) Dodging traffic...well zwift steers for me ;)
+15:23:42	 From Brad Carvey : They have introduced steering, but I let the computer determine my path and there are no cars.
+15:24:48	 From Brad Carvey : I am bcarvey in zwift.  I do a Tuesday an Thursday workout with a small group of friends.  I ride or run most days.  Level 23 and tron bike
+15:25:41	 From Brad Carvey : I am in Albuquerque at Sandia National Labs, btw.  Grew up in San Carlos.
+15:25:46	 From Elaine Raybourn : Question for panelists: Hai Ah Nam brings up a great point about (mostly) remote or hybrid staff optimizing a portfolio of collaborations. Would any of the other panelists like to comment on this as well?
+15:26:25	 From Mark Miller : At LLNL, VisIt team needs to coordinate work on classified systems. Can only be handled by someone on site.
+15:26:59	 From David Bernholdt : I tend not to continue my association with project teams that I don't enjoy working with.  But that happens over years.
+15:26:59	 From Mark Miller : Hats off to anyone raising small children (or large pets) during this time ;)
+15:27:14	 From Elaine Raybourn : +1
+15:27:17	 From Ashley Barker : +1
+15:29:08	 From Katerina Antypas : If an organization is going to support hybrid working — should it designate on-site days and remote telework days?
+15:29:35	 From Geoff Klise : would be great if NNSA and non-NNSA labs could have similar collaboration tools.  Slack is not allowed in some labs. 
+15:29:47	 From Ashley Barker : I have the same question as Katie.  I was typing it but she said it better!
+15:29:58	 From Elaine Raybourn : Question for panelists: How does one “manage” remotely, or manage hybrid configurations? What’s worked, and what hasn’t?
+15:30:20	 From Mark Miller : @Katerina...I would say no. But, syncing a large number of hybrid people for something on site can get tricky
+15:30:23	 From David Bernholdt : Katie, this is a challenge for ORNL's COVID return to campus process -- what is the motivation for you to go on site if your colleagues aren't there
+15:30:32	 From Ashley Barker : Also, if a few people on the team are out of state, and you do bring your team in for on-site meetings, how do you ensure those off-site people stay connected with the in-person team?
+15:30:33	 From Hai Ah Nam : Walking the halls = mattermost (slack with OUO and EC allowed) - LANL and SNL currently use - would be nice for others to use across DOE
+15:30:50	 From Elaine Raybourn : +1
+15:31:37	 From Mark Miller : Re managing...several of my managers offer virt. office hours for drop ins. Need to use waiting room feature for that.
+15:32:01	 From Geoff Klise : Multi-institutional is one of Sandia's biggest hurdles.
+15:32:03	 From Elaine Raybourn : that’s a good idea, Mark
+15:32:38	 From Mark Miller : One issue with waiting room...you can't go talk to someone there and pop back to your main meeting.
+15:32:39	 From David Bernholdt : Re: faces -- I don't feel it is so necessary in long-standing collaborations where I think people know me
+15:32:59	 From Mark Miller : @bernholdt...totally agree...but very important for launching a new team
+15:34:01	 From Katerina Antypas : I have to hid from my one year old during the day.  So if I have to go upstairs to get lunch, I crawl on my hands and knees past the play room to remain hidden.
+15:34:02	 From Mark Miller : I wind up doing a ton of collaborating communication on GitHub
+15:35:45	 From Don Claus : Views on using personal equipment vs government issued (especially with regard to video)?
+15:37:08	 From Valerie Taylor : Agree @Hai An about the use of slack for walking the halls
+15:37:47	 From Jay Lofstead : has anyone found a good way to replace the random bumping into people in the hall? for conferences obliged this is a problem too.
+15:38:02	 From David Bernholdt : I find slack (and similar) disruptive.  I know many others who feel similarly; others of course think it is wonderful
+15:38:19	 From Mark Miller : @lofstead...it isn't so random but I host a virtual hallway chat on mondays at lunch
+15:38:26	 From Kevin Buterbaugh : Our team couldn’t do our jobs without Mattermost...
+15:39:19	 From Mark Miller : I find things like slack, mattermost, MS teams only marginally better than plain ole' email. Anyone else?
+15:39:40	 From Brad Carvey : SNL I host virtual lunches and invite my group, but then have surprise guests.
+15:39:41	 From Kevin Buterbaugh : I think the key with Mattermost (and Slack) is to have an “off topic” channel for small talk.  Those who want to follow along can, those who don’t don’t have to.  But the work-related channels are for work-related matters only.
+15:41:15	 From James Aimone : For those living far from the office, let's say Covid lets up enough for locals to go back to work, but not enough to permit frequent trips back, how do you think this affect your remote efforts?
+15:41:37	 From Luis Gutierrez : On the topic of having designated “remote” days, that appears quite similar to how many people work only 4 days a week, and so Fridays tend to be very quiet on-site.
+15:43:11	 From Ryan Shaw : +1 to Mattermost!
+15:43:50	 From Mark Miller : @carvey...I like the idea of surprise guests. Do you plan them and just keep it secret from your team as a sort of incentive?
+15:44:48	 From Mark Miller : We have done a couple of virtual escape rooms ;)
+15:47:22	 From Brad Carvey : @miller  I know but they don't.  I had an previous level 2 manager as a surprise guest.  I had an ex post doc from about 5 years before, as a guest.
+15:48:44	 From Benjamin Sims : Question for panelists: What is missing in current remote work tools that could make remote and/or hybrid work easier? Do you have any tricks or workarounds for those limitations?
+15:49:54	 From Brad Carvey : I also created a newsletter for our group.  I called it the "Telecommunting Gazette".  I have not done it as much lately, but at first it was several a week.  Basic news about what the group is doing.  For example, my manager started making a lot of bread and I posted that with pictures.
+15:50:29	 From Mark Miller : @benjamin Example...WebEx doesn't share audio...so having a "watch party" doesn't work. I had some videos with sound in a ppt and had to hold my local speaker to the mic for others to hear ;)
+15:50:35	 From Karen Devine : nonverbal communication == why we should turn on cameras
+15:50:44	 From Julie Kelly-Smith : I know this was in the chat before but what are the best practices managers have been using for managing their team remotely?
+15:51:22	 From Ashley Barker : Question - besides coffee hours and group lunches, does anyone have any other suggestions for remote team building activities?
+15:51:33	 From Jessica Jones : What specific technology/tools/etc. could be used/improved to be more inclusive of remote team members during meetings (or even in general) once the majority of the workforce returns to being on site?
+15:52:00	 From Mark Miller : @ashley ... virtual card games or escape rooms are some things we've tried on VisIt
+15:52:28	 From David Bernholdt : @Jessica -- abandon conference rooms and expect everyone to attend from their office (wherever that may be)
+15:52:57	 From Geoff Klise : Manager perspective - more 1:1  meetings is necessary when everyone is remote.  It's more time, and replicates the "open door" as much as possible.
+15:53:33	 From Ryan Shaw : I wish we could use more virtual whiteboarding tools but they all seem to be Cloud-based.
+15:53:47	 From Noelle Gemmer : @Katerina - we've started to try using OneNote (connected in a shared way via SharePoint) to have joint notes 
+15:53:51	 From Ryan Shaw : Tools like Miro and Mural.
+15:53:59	 From Teresa Portone : Best I’ve seen is someone connecting an iPad to their computer and sharing screen. But that’s only one person scribbling.
+15:54:20	 From Noelle Gemmer : I've even seen someone use OneNote to mimic filling out Post-Its 
+15:54:28	 From Mark Miller : https://bssw.io/items/virtual-meeting-tools-and-features-for-the-hpc-cse-community
+15:54:35	 From Brad Carvey : My manager has had 1:1 meeting every month since he started and that continues with pandemic.  We also have a meeting every week
+15:54:48	 From Piotr Luszczek : Google has Jamboard https://jamboard.google.com/
+15:55:13	 From Quincey Koziol : I use an app called “Notability” on an iPad, and Zoom can share the screen from the iPad.
+15:55:20	 From Peter Robinson : Collaborative Editing of a Confluence page is surprising effective. 
+15:55:31	 From Quincey Koziol : Very whiteboard-like, but not able to have multiple people scribble.
+15:56:05	 From David Bernholdt : @Peter, I still sometimes have problems with it, but it is getting much better.  I still prefer a Google Doc for real-time co-editing
+15:56:16	 From Elaine Raybourn : multiple layering of technology for work mirrors how we use technology during off work hours and can be very effective
+15:56:56	 From Peter Robinson : @David yeah, I believe it, but when things need to go OUO / Export Controlled Confluence is what I got
+15:57:18	 From Sean Robinson : Microsoft Whiteboard is useful
+15:57:35	 From Tavia Stone Gibbins : +1 to Notability
+15:57:53	 From Cameron Stanavige : Webex has a shared whiteboard that we’ve used before https://help.webex.com/en-us/vwot6eb/Webex-Teams-Create-and-Share-a-Whiteboard-During-a-Meeting
+15:57:54	 From David Bernholdt : @sean for those who can get access.  It is not in the FedRamp approved version of Office that many of the labs use
+15:57:55	 From Ashley Barker : Thanks for the notability tip.  I had not heard of that one.
+15:59:28	 From Elaine Raybourn : Question to panelists: how have your notions of productivity changed during this pandemic, if at all?
+16:00:09	 From Elizabeth Morris : +1 for Elaine's latest question
+16:01:31	 From William F Godoy - ORNL : How to avoid the temptation to work during vacation time while staying at home. Any advice?
+16:01:45	 From Denise Hale : I have no comments except, to say that I confirm the need to somehow overcome challenges of not being in a room together.  Team members in m,
+16:02:26	 From Denise Hale : My group is looking at scheduling a team virtual social gathering to maintain out connection.
+16:03:55	 From David Bernholdt : @William I find it very hard.  My wife and I usually take seriously disconnected vacations.  And now there are no vacations like that.
+16:04:09	 From Geoff Klise : How are panelists working with new staff members that don't have a network at their lab?
+16:05:04	 From David Bernholdt : @Geoff, I haven't dealt with this yet personally, but Ashley Barker has.  Mayeb she can chime in
+16:05:40	 From David Bernholdt : Hi Galen!
+16:06:05	 From Cameron Stanavige : Encoring them to join any employee resource groups that may be available. Out new employee orientation does this and several of our groups have seen an influx of new members, especially among new employees, looking for a social network at work.
+16:06:09	 From Cameron Stanavige : encouraging*
+16:07:05	 From Ashley Barker : @Geoff - Not overly original but we assign the new folks a mentor that works really closely with that person and helps to introduce them and build their network.  I think it is working.  And, we have a group MatterMost channel that we talk in and they are very active in the channel and I think are starting to feel part of the group.
+16:08:20	 From Benjamin Sims : Not a question, but wondering if anyone with disabilities have some thoughts here. I have a mobility-limiting disability and remote work has been great in terms of making my daily logistics easier. But might make things harder for people with other kinds of disabilities.
+16:08:51	 From Elaine Raybourn : +1
+16:08:58	 From Mark Miller : +1
+16:10:36	 From Mark Miller : Hai Ah, what can you do with my hair?
+16:10:49	 From Hai Ah Nam : I can work magic with a rubber band
+16:10:51	 From Julie Kelly-Smith : maybe one more question to add on to managing remotely- what support or tools you might need to help you manage in a new environment?
+16:10:55	 From Cameron Stanavige : Ooh, good question. Technologies often seem to struggle with accessibility, especially when it comes to visual/audio related disabilities.
+16:13:00	 From James Laros : Hard to say in a few words but I have found that I have had to accept that being productive is a different thing in this situation. I was kind of beating myself up a bit feeling that I was not as productive as I was on site even though my days have been filled. I realized when I was speaking with one of my leadership and just discussing the things I did over the past week that I really accomplished a lot. Point is what I am doing is different in some ways but there are pros and cons like everything in life. I’ve learned to take advantage and leverage the pros and try to find ways to mitigate the cons many of which are being discussed here. Moral I guess is don’t be too hard of yourself during transition periods and focus energy on embracing new ways of doing things.
+16:14:00	 From Mark Miller : @james....great comment
+16:14:35	 From James Laros : Thanks hope it was helpful
+16:14:47	 From Hai Ah Nam : +1 @laros + don’t be too hard on others :)
+16:14:52	 From Julie Wilder : +1 to James; when I was an Acting Manager over the last few months, I had lots of conversations like that with my group
+16:14:57	 From Ashley Barker : We are looking at getting a good closed captioning service as we are hearing the some of our webinar/training meetings have hearing issues and it has been a real struggle for them to hear.  So I do think we need to be make sure our virtual environments more accessible too.
+16:15:45	 From Teresa Portone : Agree with Katerina and that has been a benefit for recruiting events too
+16:16:32	 From Brad Carvey : Had to do close captioning for my SC20 presentation.  It was easy and my first time creating close caption. This may be a positive side effect of the pandemic, more close captioning for meetings.
+16:16:37	 From Mark Miller : @bernholdt...upgrading conf. rooms...YES +1
+16:17:23	 From David Bernholdt : @Brad, did you find that the quality of the automatic captioning was acceptable?
+16:17:38	 From Brad Carvey : We have not discussed different personality types.  I have not trouble with the isolation, but others have a big problem
+16:18:19	 From Brad Carvey : I had to edit the final close caption and it was very good.  Although Paraview was hard for it to figure out.
+16:19:10	 From David Bernholdt : @Hai Ah, ORNL says they're going to develop policies for teleworking.  But it is not aimed at technology
+16:19:16	 From Brad Carvey : @david the close captioning was pretty accurate and the software make it easy to review and fix
+16:19:46	 From Brad Carvey : I have done remote work since 1990
+16:19:48	 From Denise Hale : can I get a copy of LLNL’s teleworking document? Denise Hale, jdcook@Sandia.gov
+16:19:54	 From Teresa Portone : Thank you panel
+16:20:01	 From Wesley Coomber : Thank you Everyone.
+16:20:06	 From Mark Miller : @denise hale...what is your email?
+16:20:07	 From Brad Carvey : Thanks everyone.
+16:20:14	 From Mark Miller : Ooops. I see it
+16:20:59	 From Thuraya Abdulla : Thank you everyone for sharing your experiences.
+16:21:10	 From Tavia Stone Gibbins : Thank you all
+16:21:17	 From Roxanne G : Thank you!
+16:21:21	 From Evan Harvey : Thank you!

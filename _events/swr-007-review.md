@@ -57,12 +57,6 @@ artifacts:
   - label: Recording
     format: YouTube
     yt-video-id: VUwpYVCS5PY
-#  - label: Slides
-#    format: PDF
-#    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/11/panel006-hybrid.pdf
-#  - label: Chat Transcript
-#    format: TXT
-#    url: http://ideas-productivity.org/wordpress/wp-content/uploads/2020/11/panel006-hybrid-chat.txt
 #
 location: online
 #
