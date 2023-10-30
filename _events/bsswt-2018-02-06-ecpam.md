@@ -30,7 +30,7 @@ startdate: "2018-02-06"
 #
 venue: "Exascale Computing Project Annual Meeting"
 #venue-type: "meeting" # redundant with the venue name
-venue-url: https://ecpannualmeeting.com/
+#venue-url: 
 location: "Knoxville, Tennessee"
 #
 # Staffing information
