@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Technical Sessions and Meetings"
 #blurb: "The quick brown fox jumps over the lazy dog."
 

@@ -6,25 +6,25 @@
         group-linkurl = include.linkurl
 
 		title1 = "HPC Best Practices Webinars"
-		url1 = "/series/hpc-best-practices-webinars"
+		url1 = "/resources/series/hpc-best-practices-webinars"
 		blurb1 = "The HPC Best Practices webinars address issues faced by developers of computational science and engineering (CSE) software on high-performance computers (HPC)."
 
 		title2 = "BSSw Tutorials"
-		url2 = "/series/bssw-tutorials"
+		url2 = "/resources/series/bssw-tutorials"
 		blurb2 = "The Better Scientific Software (BSSw) tutorials focus on issues of developer productivity, software sustainability, and reproducibility in scientific research software, particularly targeting high-performance computers."
 
 		title3 = "Technical Sessions and Meetings"
-		url3 = "/series/technical-sessions-and-meetings"
+		url3 = "/resources/series/technical-sessions-and-meetings"
 		blurb3 = "Creating opportunities to talk about software development, productivity, and sustainability as part of larger meetings or standalone." 
 
 				
 		title4 = "Strategies for Working Remotely"
-		url4 = "/series/strategies-for-working-remotely"
+		url4 = "/resources/series/strategies-for-working-remotely"
 		blurb4 = "Exploring strategies for working remotely, with emphasis on how HPC teams can be effective and efficient in long-term hybrid settings."
 %}
 
 {% comment %}
 	title5 = "Performance Portability & ECP"
-	url5 = "/series/performance-portability-ecp"
+	url5 = "/resources/series/performance-portability-ecp"
 	blurb5 = "Experiences of projects in the Exascale Computing Project Application Development with performance portability -- how they've handled it and the outcomes they've realized."
 {% endcomment %}

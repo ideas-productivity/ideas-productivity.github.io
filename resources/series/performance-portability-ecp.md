@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Performance Portability & ECP"
 blurb: "This series has concluded"
 

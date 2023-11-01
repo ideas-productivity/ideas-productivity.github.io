@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "BSSw Tutorials"
 #blurb: "The quick brown fox jumps over the lazy dog."
 

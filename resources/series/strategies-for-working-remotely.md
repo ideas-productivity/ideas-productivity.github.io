@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Strategies for Working Remotely"
 #blurb: "This series has concluded"
 
