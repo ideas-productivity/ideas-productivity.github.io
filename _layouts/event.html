@@ -17,7 +17,7 @@
     {% assign my-meta1-name = "Series" %}
     {% assign my-meta1-value = "" %}
     {% for s in page.series %}
-      {% capture link %}<a href='{{ site.baseurl }}/series/{{ s | slugify }}'>{{ s }}</a>{% endcapture %}
+      {% capture link %}<a href='{{ site.baseurl }}/resources/series/{{ s | slugify }}'>{{ s }}</a>{% endcapture %}
       {% assign my-meta1-value = my-meta1-value | append: link %}
       {% unless forloop.last %}
         {% assign my-meta1-value = my-meta1-value | append: ", " %}

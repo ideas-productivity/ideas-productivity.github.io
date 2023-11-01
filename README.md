@@ -48,7 +48,7 @@ Plan: move into production at https://ideas-productivity.org/ in November 2023
     * Main page
     * Overview
     * Activities
-        * Activities are something substantial which would be recognized by the public. Funded projects, obviously, but also activities launched by a funded project that may have developed an independent identity with the public.  Events, even an organized series of events, fall under Resources rather than activities.
+        * Activities are something substantial which would be recognized by the public. Funded projects, obviously, but also activities launched by a funded project that may have developed an independent identity with the public.  Events, even an organized series of events, fall under Resources rather than Activities.
         * We currently categorize Activities as *current*, *spin offs*, and *past*.  Spin offs may be separate projects that were actually spun out of another project in the IDEAS umbrella (e.g., xSDK) or activities which are still run by an IDEAS project but have a strong independent identity.  This can be a bit of a judgement call, so discuss it with others if you have any questions
         * Activities that have a separate web presence will generally have a single summary page here with a `text-biglink.html` link to the outside presence at the bottom
         * Activities for which this is the only web presence are encouraged to provide more extensive content (e.g., IDEAS-Classic)
