@@ -32,7 +32,7 @@ toc:
       - page: Events
         url: /resources/events.html
       - page: Events by Series
-        url: /resources/series.html
+        url: /resources/series/
       - page: Tools and Practices
         url: /resources/tools-and-practices.html
   - title: join the community!

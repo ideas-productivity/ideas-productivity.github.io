@@ -7,7 +7,7 @@ title: "Events"
 ---
 Events organized by the IDEAS Productivity project are organized into several series.  Select a series to see events in that particular series.  Scroll down for the complete lists of [upcoming](#upcoming-events) and [past](#past-events) events.
 
-{% include_relative series-teaser %}
+{% include series-teaser %}
 
 <!-- Event List -->
 
