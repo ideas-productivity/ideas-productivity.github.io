@@ -1,7 +1,7 @@
-<!-- Ongoing Series -->
+<!-- Event Series -->
 
 {% 	include teasers-4x_noimg.html 
-		group-title = "Ongoing Series"
+		group-title = "Event series"
         group-linktext = include.linktext
         group-linkurl = include.linkurl
 
@@ -22,3 +22,9 @@
 		url4 = "/series/strategies-for-working-remotely"
 		blurb4 = "Exploring strategies for working remotely, with emphasis on how HPC teams can be effective and efficient in long-term hybrid settings."
 %}
+
+{% comment %}
+	title5 = "Performance Portability & ECP"
+	url5 = "/series/performance-portability-ecp"
+	blurb5 = "Experiences of projects in the Exascale Computing Project Application Development with performance portability -- how they've handled it and the outcomes they've realized."
+{% endcomment %}

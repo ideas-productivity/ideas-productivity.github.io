@@ -12,9 +12,9 @@ title: "Resources"
 The IDEAS Productivity project organizes many events for the communities in which they participate.  Events are organized into several series, some of which are ongoing, others of which may have concluded.
 
 
-[Upcoming Events and Ongoing Series](/resources/events)
+[Upcoming and Past Events](/resources/events)
 
-[Past Events (All Series)](/resources/past-events)
+[Events by Series](/resources/series)
 
 # Tools and practices
 

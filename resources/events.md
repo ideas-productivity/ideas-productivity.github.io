@@ -5,12 +5,14 @@ layout: page
 title: "Events"
 
 ---
-Events organized by the IDEAS Productivity project are organized into several series, some of which are ongoing, others of which may have concluded.  Select a series to see events in that particular series.  Scroll down for the complete list of upcoming events and a link to past events and concluded series.
+Events organized by the IDEAS Productivity project are organized into several series.  Select a series to see events in that particular series.  Scroll down for the complete lists of [upcoming](#upcoming-events) and [past](#past-events) events.
 
-{% include_relative ongoing-series %}
+{% include_relative series-teaser %}
 
 <!-- Event List -->
 
-{% include _events/events-list.html %}
-{% include text-biglink.html blurb = 'See past events and concluded series' url = '/resources/past-events' pushleft = 'TRUE'
-%}
+{% include _events/events-list.html 
+    title = "Upcoming events" %}
+
+{% 	include _events/events-list.html past=true 
+    title = "Past events" %}

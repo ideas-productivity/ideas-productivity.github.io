@@ -31,8 +31,8 @@ toc:
     subfolderitems:
       - page: Events
         url: /resources/events.html
-      - page: Past Events
-        url: /resources/past-events.html
+      - page: Events by Series
+        url: /resources/series.html
       - page: Tools and Practices
         url: /resources/tools-and-practices.html
   - title: join the community!
