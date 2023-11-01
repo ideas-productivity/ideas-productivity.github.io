@@ -27,7 +27,7 @@ toc:
         url: /activities/ideas-classic/
   - title: resources
     slug: resources
-    url: /resources.html
+    url: /resources/
     subfolderitems:
       - page: Events
         url: /resources/events.html

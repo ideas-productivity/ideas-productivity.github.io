@@ -3,7 +3,6 @@
 layout: page
 
 title: "Resources"
-#blurb: "The quick brown fox jumps over the lazy dog."
 
 ---
 
@@ -28,6 +27,6 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 <!-- ---------------------------------------------------------------------- -->
 
 {% 	include text-biglink.html 
-		blurb = "Visit BSSw for more resources"
+		blurb = "visit BSSw.io for more resources"
 		url = "https://bssw.io/"
 %}
