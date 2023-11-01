@@ -1,7 +1,7 @@
 toc:
   - title: overview
     slug: overview
-    url: /overview.html
+    url: /overview/
     subfolderitems:
       - page: Background
         url: /overview/background.html
@@ -11,7 +11,7 @@ toc:
         url: /overview/impact.html
   - title: activities
     slug: activities
-    url: /activities.html
+    url: /activities/
     subfolderitems:
       - page: IDEAS-ECP
         url: /activities/ideas-ecp/
