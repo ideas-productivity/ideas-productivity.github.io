@@ -15,6 +15,15 @@ Plan: move into production at https://ideas-productivity.org/ in November 2023
 
 *To be added*
 
+* Content that appears in the horizontal nav bar (`_data/nav-config.yml`) with subfolder items (i.e., the menu has a dropdown, not a singleton link) should be organized in the repository as a directory containing the pages for the dropdown menu items.  Importantly, the directory should also include an index.md file for the main content (the item appearing on the nav bar itself) rather than placing it "beside" the directory.  This will allow the breadcrumbs to work properly. In other words, something like this:
+    - `resources/index.md`
+    - `resources/item1.md`
+    - `resources/item2.md`
+<br>rather than<br>
+    - `resources.md`
+    - `resources/item1.md`
+    - `resources/item2.md`
+
 ## Style guide
 
 *Note: for events, see `_events/README.md` (to be added)*
@@ -54,6 +63,6 @@ Plan: move into production at https://ideas-productivity.org/ in November 2023
         * Activities for which this is the only web presence are encouraged to provide more extensive content (e.g., IDEAS-Classic)
         * For *past* activities, we should consistently indicate the years during which the project was active, to help put it in context
             * For the main page for the activity, start the body of the page with a sentence like "*This project was active 2014–2017.*" (note the use of italics).  See [IDEAS-Classic](https://ideas-productivity.github.io/activities/ideas-classic/) as an example
-            * On the cards for past activities, put the dates in the `title` field, like "IDEAS-Classic (2014-2017)".  See the IDEAS-Classic card at the bottom of the [Activities](https://ideas-productivity.github.io/activities.html) page as an example
+            * On the cards for past activities, put the dates in the `title` field, like "IDEAS-Classic (2014-2017)".  See the IDEAS-Classic card at the bottom of the [Activities](https://ideas-productivity.github.io/activities/) page as an example
     * Resources
     * Join
