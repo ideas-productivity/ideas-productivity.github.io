@@ -27,13 +27,13 @@ blurb: "Improving software productivity for terrestrial ecosystem modeling"
 
 *This project was active 2014--2017.*
 
-## Mission
+# Mission
 
 The IDEAS-Classic Project (2014-2017) was a partnership between the Offices of Advanced Scientific Computing Research (ASCR) and Biological and Environmental Research (BER) in the DOE’s Office of Science.  Motivated by specific use case requirements for multiphysics and multiscale terrestrial ecosystem modeling, IDEAS-Classic is an ambitious effort to improve the compatibility and usability of important DOE libraries; improve the practices, processes, and tools for scientific software development; and improve community knowledge.
 
 The most important goal of the project is to help move scientific software development toward an approach of building new applications as a composition of reusable, robust, and scalable software components and libraries, using the best available practices and tools.  We want to develop, demonstrate, use, and make possible for others the ability to create and support new applications better, faster, and cheaper.
 
-## Motivation
+# Motivation
 
 The scientific software community is facing a crisis created by the confluence of disruptive changes in computing architectures and new opportunities for greatly improved simulation capabilities. New architectures are demanding fundamental algorithm and software refactoring, while at the same time enabling new multiscale and multiphysics modeling, simulation, and analysis. This crisis brings with it a unique opportunity to fundamentally change how scientific software is designed, developed, and supported.
 
@@ -45,13 +45,13 @@ This approach will address the historical yet unsustainable trend that science a
 
 We are defining community collaboration models that provide opportunities and incentives for application developers to create and adopt emerging tools and best practices. We are also providing community forum models that enable communication of requirements and plans so that application teams are informed about complementary activities as early as possible. The community-oriented infrastructure will enhance collaboration, while at the same time protecting and fostering small-team autonomy as much as possible, recognizing that local control enhances creativity, fosters broader design exploration, and generally provides a dynamic exchange of ideas across the community.
 
-## Improving Software Productivity
+# Improving Software Productivity
 
 Scientific productivity is one of the top ten exascale research challenges, and software productivity (the effort, time, and cost for software development, maintenance, and support) is one critical aspect of scientific productivity. Therefore, although general and actionable productivity metrics are very difficult to define, an overarching focus on productivity is essential to making clear decisions in this time of highly disruptive architectural changes. In this project, we are focusing on improving productivity by defining and taking steps toward a new scientific software ecosystem that emphasizes the use and development of high-quality tools, adaptation and adoption of modern software engineering methodologies, and the development and use of high-quality software components in the composition of next-generation applications.
 
 The IDEAS project focuses on the development of an extreme-scale scientific software ecosystem that will provide a foundation for next-generation scientific simulations. To ensure the effectiveness of our efforts, we are specifically addressing the modeling and simulation needs of three important use cases: (i) climate impacts on the upper Colorado River system; (ii) the hydrology and soil carbon dynamics of the Arctic tundra, and (iii) hydrologic, land surface, and atmospheric process coupling over the continental United States. At the same time, because many scientific application areas face similar challenges in multiphysics and multiscale modeling, and because many ASCR project participants pursue ongoing work with diverse science groups, our approach to the software ecosystem will also serve the broader DOE extreme-scale computational science community.
 
-## Impact on Applications & Programs
+# Impact on Applications & Programs
 
 The IDEAS Project focuses on three concrete [use cases](use-cases):
 
@@ -74,7 +74,7 @@ Deeper understanding and answers to important science questions for these use ca
 * [IDEAS Howto](methodologies): In addition to xSDK development and other software efforts to address the IDEAS use cases, IDEAS focuses on methodologies (“howto” content) to cultivate best practices, processes, and tools for improved scientific software development.  IDEAS is providing content that will enable other application teams to improve their own development efforts.
 * [IDEAS Outreach](outreach): The final piece of IDEAS is the dissemination of the content developed in the project.  This includes tutorials on the IDEAS xSDK and the methodologies we develop, in collaboration with DOE computing facilities ALCF, NERSC, and OLCF.  IDEAS outreach also includes collaboration with the broader computational science community, which is also facing similar challenges and opportunities for improving productivity.
 
-## Collaborations
+# Collaborations
 
 The IDEAS Project is a unique collaboration between the DOE Office of Advanced Scientific Computing Research (ASCR) and the Office of Biological and Environmental Research (BER).  This partnership ensures the delivery of crosscutting methodologies, software, and metrics with impact on important scientific applications and programs.
 
@@ -127,7 +127,7 @@ The IDEAS Project is composed of an interdisciplinary multi-institutional team (
 	scale4 = ".9"
 %}
 
-## Sponsor
+# Sponsor
 
 This work is supported by the [DOE](http://energy.gov/) [Office of Science](http://science.energy.gov/), Offices of [Advanced Scientific Computing Research](http://science.energy.gov/ascr/) (ASCR) and [Biological Environmental Sciences](http://science.energy.gov/ber/) (BER).
 

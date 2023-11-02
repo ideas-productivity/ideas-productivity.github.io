@@ -21,7 +21,7 @@ blurb: "IDEAS-Classic"
 
 Three multifaceted use cases are driving and demonstrating the capabilities and approaches that are being developed in the IDEAS project. These use cases are aligned with existing DOE and NSF programs and are designed to foster collaborative development and interdisciplinary communication. Each use case touches on multiple aspects of software productivity challenges and requires this extreme-scale scientific software development ecosystem to reach its goals.
 
-## Use Case 1: Hydrological and Biogeochemical Cycling in the Colorado River System
+# Use Case 1: Hydrological and Biogeochemical Cycling in the Colorado River System
 
 {% include media-img.html source = "ideas-classic/EastRiver-meanders-300x225.png" %}
 
@@ -31,7 +31,7 @@ Climate and land use changes are projected to significantly impact hydrology, bi
 
 This work builds on the Sustainable Systems SFA 2.0 at LBNL and demonstrates the componentization of its genome-enabled biogeochemistry capability in CrunchFlow, and its use as a component through the Alquimia geochemistry interface library. Variable resolution unstructured meshes with a resolution of less than 10 cm near the meandering river will be used with the Amanzi/ATS simulator, and upscaling of the coupled surface/subsurface reacting flow through these meanders along a 5km stretch of the East river are being explored.  In addition, the potential of leveraging structured subsurface/surface coupled flow components from ParFlow in the Chombo structured AMR framework is being assessed.
 
-## Use Case 2: Hydrology and Soil Carbon Dynamics of Arctic Tundra
+# Use Case 2: Hydrology and Soil Carbon Dynamics of Arctic Tundra
 
 {% include media-img2x.html 
 	source1 = "ideas-classic/polygons_pristine.png"
@@ -44,7 +44,7 @@ Increasing temperature in the Arctic region is expected to lead to increases in 
 
 This work leverages ongoing studies in the Next Generation Ecosystem Experiment (NGEE) – Arctic, and addresses the important and challenging need to transfer this understanding to larger scales suitable for Earth System Models (ESMs).   Specifically, building on microtopography resolving models of a few polygons (tens of meters), an intermediate scale model will be developed that uses one-dimensional thermal hydrology models coupled with a two-dimensional overland flow model using the lightweight framework capabilities of Amanzi/ATS to reach scales of ESM grid cells (~30km). This new intermediate-scale model explores the use of biogeochemistry from PFLOTRAN through the Alquimia interface library and may use CLM for land surface processes.
 
-## Use Case 3: Hydrologic, Land Surface, and Atmospheric Process Coupling over the Continental U. S.
+# Use Case 3: Hydrologic, Land Surface, and Atmospheric Process Coupling over the Continental U. S.
 
 {% include media-img.html source = "ideas-classic/Figure4-small-1024x663.png" %}
 
@@ -54,6 +54,6 @@ Figure4-smallRecent studies demonstrate that feedbacks between groundwater dynam
 
 This project is exploring the computational challenges and scientific potential of integrated hydrology models at regional and continental scales, including their coupling to both land process models and atmospheric models. Interoperability between solvers, simulators, and libraries will be leveraged to enhance the productivity of computational hydrology. Developing hyperresolution continental scale models is an identified Grand Challenge in computational hydrology. The project builds upon an integrated hydrologic model of the Mississippi and Colorado River basins previously developed and focuses on the componentization, interoperability, and performance portability of terrestrial hydrologic simulators. We use a phased approach to explore multiscale, multiphysics treatments of Earth system modeling from the bedrock into the atmosphere. As described above, to adequately capture feedbacks between deeper subsurface flow, the land energy budget, and the lower atmosphere, explicit connections need to be made between these systems in models. This project focuses on three key elements of this system: integrated subsurface and surface flow, land-surface water and energy fluxes, and feedbacks to the lower atmosphere to provide state-of-the-science simulations over North America.
 
-## Additional Synergy and Opportunities with BER Programs
+# Additional Synergy and Opportunities with BER Programs
 
 IDEAS is exploring similar opportunities within the Hydro-Biogeochemical Process Dynamics in the Groundwater-Surface Water Interaction Zone project at PNNL and the new multi-lab NGEE Tropics project. Both involve many similar thermal-hydrological models of coupled surface/subsurface flow with biogeochemical reactive transport. Key multiscale and land-surface modeling opportunities are being sought.

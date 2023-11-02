@@ -15,7 +15,7 @@ blurb: "IDEAS-Classic"
 <!-- Content -->
 <!-- ---------------------------------------------------------------------- -->
 
-## Elements of an Extreme-scale Scientific Software Ecosystem
+# Elements of an Extreme-scale Scientific Software Ecosystem
 
 {% include media-img.html source = "ideas-classic/FutureAppBigPicture-e1456170703257-300x214.jpg" %}
 

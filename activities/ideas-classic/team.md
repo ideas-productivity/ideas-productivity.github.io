@@ -20,7 +20,7 @@ blurb: "IDEAS-Classic"
 	  contain = true
 %}
 
-## The IDEAS-Classic Project Team
+# The IDEAS-Classic Project Team
 
 The IDEAS-Classic Project (ASCR/BER partnership) has members from seven US DOE laboratories.  Efforts are organized into four *focus areas*:
 

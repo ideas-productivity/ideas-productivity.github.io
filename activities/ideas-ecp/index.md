@@ -14,15 +14,15 @@ blurb: "Building a productive and sustainable exascale software ecosystem"
 	contain2 = "true"
 %}
 
-## About the Exascale Computing Project
+# About the Exascale Computing Project
 
-*The mission of the [Exascale Computing Project](https://www.exascaleproject.org/) (ECP) is to accelerate delivery of a capable exascale computing ecosystem that will provide breakthrough solutions to address America’s most critical challenges in scientific discovery, energy assurance, economic competitiveness, and national security.*
+The mission of the [Exascale Computing Project](https://www.exascaleproject.org/) (ECP) is to accelerate delivery of a capable exascale computing ecosystem that will provide breakthrough solutions to address America’s most critical challenges in scientific discovery, energy assurance, economic competitiveness, and national security.
 
-## IDEAS in the ECP: Summary
+# IDEAS in the ECP: Summary
 
 The ECP sets a very aggressive goal, which requires intensive development activities on the part of both scientific applications and the supporting software tools and technologies.  Developers must adapt to and anticipate new computer architectures and scale their codes to levels not previously possible, often also requiring new algorithms and approaches within the software.  The role of IDEAS within the ECP is to help ease the challenges of software development in this environment, and to help the development teams ensure that DOE investment in the exascale software ecosystem is as productive and sustainable as possible.
 
-## Areas of Activity
+# Areas of Activity
 
 Our ECP-supported work includes activities that are specifically focused on software development efforts within the ECP as well as more broadly based activities that benefit both ECP members and the broader communities in high-performance computing (HPC) and computational science and engineering (CSE).
 
@@ -69,7 +69,7 @@ Our ECP-supported work includes activities that are specifically focused on soft
 	scale3 = ".75"
 %}
 
-## Sponsor
+# Sponsor
 
 This work is supported by the Exascale Computing Project (17-SC-20-SC), a collaborative effort of the U.S. [Department of Energy](http://energy.gov/) [Office of Science](http://science.energy.gov/) and the [National Nuclear Security Administration](https://www.energy.gov/nnsa).
 
