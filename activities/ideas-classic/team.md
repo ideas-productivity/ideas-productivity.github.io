@@ -132,9 +132,11 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 
 		title2 = "Tim Scheibe (PNNL)"
 		source2 = "ideas-classic/team/scheibe.jpg"
+		cover2 = "true"
 
 		title3 = "Carl Steefel (LBNL)"
 		source3 = "ideas-classic/team/SteefelPhoto.jpg"
+		cover3 = "true"
 
 		title4 = "Glenn Hammond (SNL)"
 		source4 = "ideas-classic/team/hammond.jpg"
