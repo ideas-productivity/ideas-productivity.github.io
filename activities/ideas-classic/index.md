@@ -20,7 +20,7 @@ blurb: "Improving software productivity for terrestrial ecosystem modeling"
 <!-- ---------------------------------------------------------------------- -->
 
 {% 	include media-heroimg.html 
-	  source = "ideas-classic/IDEAS-broader-DOE-context.jpg"
+	  source = "ideas-classic/IDEAS-broader-DOE-context-transparent.png"
 	  contain = true
 	  caption = "IDEAS-Classic in the broader DOE context"
 %}
