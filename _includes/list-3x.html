@@ -1,0 +1,152 @@
+<!-- 
+
+LIST, 6x
+
+-------------------------------------------------------------------------------
+
+available parameters:
+- group-title
+- group-linktext
+- group-linkurl
+- group-blurb
+- group-id (anchor for direct links)
+- title1
+- source1
+- contain1
+- cover1
+- scale1
+- blurb1
+- title2
+- source2
+- contain2
+- cover2
+- scale2
+- blurb2
+- title3
+- source3
+- contain3
+- cover3
+- scale3
+- blurb3
+- title4
+- source4
+- contain4
+- cover4
+- scale4
+- blurb4
+- title5
+- source5
+- contain5
+- cover5
+- scale5
+- blurb5
+- title6
+- source6
+- contain6
+- cover6
+- scale6
+- blurb6
+
+* required
+
+This include lays out the list group four-across.  The input parameters are positional, meaning that if you supply parameters only for items 2 and 4, they will appear as the second and fourth items in the teaser group with gaps in between.
+
+Images are included at their original size by default. To have the image scale and crop to fill the space use the cover parameter, if you would like the image to be contained within the space use the contain parameter. You can also provide a decimal scale to size the image. For contained images this will set the the percentage of the area the image will cover, for the default sizing it will scale the image according to itself.
+
+-------------------------------------------------------------------------------
+
+-->
+
+
+
+
+<!-- INTRO -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+<div class="list-3x">
+
+	<div class="group-intro">
+		{% if include.group-title %}
+		  {% if include.group-id %}
+			<h1 id="{{include.group-id}}">{{ include.group-title }}</h1>
+		  {% else %}
+			<h1>{{ include.group-title }}</h1>
+		  {% endif %}
+
+			{% if include.group-linktext %}
+			<a class="group-link" href="{{ include.group-linkurl }}">
+				{{ include.group-linktext }}
+			</a>	
+			{% endif %}
+
+			<hr>
+
+			{% if include.group-blurb %}
+				<p class="group-blurb">
+					{{ include.group-blurb }}
+				</p>
+			{% endif %}
+
+		{% endif %}
+	</div>	
+
+
+
+
+<!-- ITEMS -->
+<!-- ---------------------------------------------------------------------- -->
+	{% for i in (1..6)%}
+
+		{% assign title   = 'title'   | append: i %}
+		{% assign source  = 'source'  | append: i %}
+		{% assign cover   = 'cover'   | append: i %}
+		{% assign contain = 'contain' | append: i %}
+		{% assign scale   = 'scale'   | append: i %}
+		{% assign blurb   = 'blurb'   | append: i %}
+
+
+		{% if include.[title] or include.[source] %}
+			<div class="item{{i}}">
+				{% if include.[source] %}
+					<div class="img-wrapper{{i}}">
+						<div><img src="/assets/images/{{ include.[source] }}"
+							{% if include.[cover] %}
+								style="
+								width: 100%;
+								height: 100%;
+								object-fit: cover;"
+							{% elsif include.[contain] %}
+								style="
+								width: 100%;
+								height: 100%;
+								object-fit: contain;
+								{% if include.[scale] %}
+									max-height: calc( {{ include.[scale] }}% * 100 );
+									max-width: calc( {{ include.[scale] }}% * 100 );
+								{% endif %}	
+								"
+							{% else %}
+								style="object-fit: initial;
+								{% if include.[scale] %}
+									-ms-transform: translate(-50%, -50%) scale( {{ include.[scale] }} );
+									transform: translate(-50%, -50%) scale( {{ include.[scale] }} );
+								{% endif %}	
+								"
+							{% endif %}			
+						></div>
+					</div>
+				{% endif %}	
+				<h2>{{ include.[title] }}</h2>
+				{% if include.[blurb] %}
+					<p>{{ include.[blurb] }}</p>
+				{% endif %}	
+			</div>
+		{% endif %}
+
+	{% endfor %}
+
+	
+
+</div>
+

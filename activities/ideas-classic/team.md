@@ -92,6 +92,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 
 		title3 = "Sherry Li (LBNL)"
 		source3 = "ideas-classic/team/XiaoyeLi1.jpg"
+		cover3 = "true"
 
 		title4 = "Vijay Mahadevan (ANL)"
 		source4 = "ideas-classic/team/VijayMahadevan2.jpg"
@@ -173,6 +174,7 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		title1 = "Xiaofan Yang (PNNL)"
 		source1 = "ideas-classic/team/XiaofanYang_photo.jpg"
 		blurb1 = ""
+		cover1 = "true"
 %}
 
 {% 	include list-6x.html
@@ -212,16 +214,20 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 		title1 = "Hans Johansen (LBNL)"
 		source1 = "ideas-classic/team/Johansen.jpg"
 		blurb1 = "<em>Crosscut Lead</em>"
+		cover1 = "true"
 %}
 
-{% 	include list-6x.html
+{% 	include list-3x.html
 		group-title = "IDEAS Project Alumni"
 		group-id = "alumni"
 
 		title1 = "Katie Antypas"
 		title2 = "Jed Brown"
 		title3 = "Irina Demeshko"
-		title4 = "Christos Kartsakalis"
-		title5 = "Kerstin Kleese-Van Dam"
-		title6 = "Sri Hari Krishna Narayanan"
+%}
+
+{% 	include list-3x.html
+		title1 = "Christos Kartsakalis"
+		title2 = "Kerstin Kleese-Van Dam"
+		title3 = "Sri Hari Krishna Narayanan"
 %}
