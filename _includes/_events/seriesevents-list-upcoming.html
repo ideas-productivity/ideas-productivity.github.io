@@ -16,6 +16,12 @@
 		{% if include.title %}
 			<div class="list-title">
 				<h1 class="list-title">{{ include.title }}</h1>
+
+				{% if include.group-linktext %}
+				<a class="group-link" href="{{ include.group-linkurl }}">
+					{{ include.group-linktext }}
+				</a>	
+				{% endif %}
 				<hr>
 			</div>
 		{% endif %}

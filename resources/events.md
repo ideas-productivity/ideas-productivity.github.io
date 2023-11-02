@@ -11,20 +11,14 @@ Events organized by the IDEAS Productivity project are organized into several se
 {% include series-teaser %}
 {% endcomment %}
 
-{% 	include text-biglink.html 
-		blurb = "explore events by the series"
-		url = "/resources/series"
-        pushleft = "false"
-%}
 
 <!-- Event List -->
 
 {% include _events/events-list.html 
     title = "Upcoming events" 
     group-linktext = "explore by series"
-	group-linkurl = "//resources/series"
+	group-linkurl = "/resources/series"
 %}
-
 {% 	include _events/events-list.html past=true 
     title = "Past events" 
     group-linktext = "explore by series"
