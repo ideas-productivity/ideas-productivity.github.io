@@ -34,29 +34,27 @@ A long-term goal of IDEAS is to help change the culture of scientific computing 
 
 - Consider partnering with a software community---either joining an existing Software Development Kit (SDK) or starting another SDK in an area of interest to you. 
     - The **[Extreme-scale Scientific Software Development Kit (xSDK)](https://xsdk.info)** is a spin-off of the IDEAS project. Members of the xSDK community are working toward a community software ecosystem, including packages developed by diverse, independent teams.  If you develop a numerical software package, consider contributing.  Or have a look at the **[community policies](https://xsdk.info/policies/)** and consider starting another SDK in an area of interest to you.
-    - Check out SDK-Tools.
-    - Learn about E4S. 
+    - Check out **[SDK-Tools](https://betterscientificsoftware.github.io/SDK-Tools/)**, a collection of documents that support planning for and maintaining the vibrancy of Software Development Kits (SDKs)
+    - Learn about the **[Extreme-scale Scientific Software Stack (E4S)](https://e4s.io)**. 
 
 
 ## How to participate throughout the community:
 
-- Get involved with **Research Software Engineers (RSEs)**, including [US-RSE](https://us-rse.org) and international counterparts such as the UK [Society of Research Software Engineering](https://society-rse.org).   The term “Research Software Engineering” is gaining greater recognition as describing a job or career path for many interesting in scientific software, and there is a growing community of RSE organizations around the world.  These groups are raising awareness of software’s vital role in research and advancing advocacy and resources for those who regularly use expertise in programming to advance research. 
+- Get involved with the growing international community of **Research Software Engineers (RSEs)**, including [US-RSE](https://us-rse.org), the [Society of Research Software Engineering](https://society-rse.org), [DE-RSE](https://de-rse.org), and others. These groups are raising awareness of software’s vital role in research and advancing advocacy and resources for those who regularly use expertise in programming to advance research. 
 
-- The UK **[Software Sustainability Institute](https://www.software.ac.uk)**---an international leader in advancing software practices---provides many great resources.
+- Check out resources and activities of the UK **[Software Sustainability Institute](https://www.software.ac.uk)**---an international leader in advancing software practices.
 
-- Learn from and teach for **[The Carpentries](https://carpentries.org)** -- organizers of **[Software Carpentry](https://software-carpentry.org)**, **[Data Carpentry](https://datacarpentry.org)), **[Library Carpentry]**(https://librarycarpentry.org)**, and the inspiration for **[HPC Carpentry](http://www.hpc-carpentry.org)**. The Carpentries teach foundational coding and data science skills to researchers worldwide.
+- Learn from and teach for **[The Carpentries](https://carpentries.org)**---organizers of **[Software Carpentry](https://software-carpentry.org)**, **[Data Carpentry](https://datacarpentry.org)**, **[Library Carpentry](https://librarycarpentry.org)**, and the inspiration for **[HPC Carpentry](http://www.hpc-carpentry.org)**. The Carpentries teach foundational coding and data science skills to researchers worldwide.
  
-- The Q&A service Stack Exchange has several sites of interest:
-    - **[Computational Science](https://scicomp.stackexchange.com)** tends to be more towards methods than software per se, but many interested in IDEAS use the site and contribute.
+- Read and contribute to **[Computational Science Stack Exchange](https://scicomp.stackexchange.com)**---a Q&A service that tends to be more towards methods than software per se, but many interested in IDEAS use the site and contribute.
 
-- BSSw.io also includes pointers to many other places to get involved in the community!
+- Explore content at **[BSSw.io](https://bssw.io)**, which includes pointers to many other places to get involved in the community!
 
 ### Events
 
-- The Collegeville workshop series
-- The Software Engineering for Computational Science (SE4Science) workshop series usually hold two workshops each year, alternating between software engineering and scientific computing/HPC conferences.
-- See more details on a variety of events
+- Contribute to a variety of events focused on scientific software practices take place throughout the community.   For example, the **[Collegeville Workshop Series on Scientific Software](https://collegeville.github.io/Workshops)** and the **[Software Engineering for Computational Science (SE4Science) Workshop Series](http://se4science.org/workshops/)**, and conferences hosted by US-RSE and others.  
+- See more details on a variety of events here-XXXXXX.
 
 # Contact Us!
 
-We welcome your questions, comments or ideas.  Please email us at IDEASProductivity@gmail.com.
+We welcome your questions, comments or ideas.  Please email us at IDEASProductivity@gmail.com. ---XXXXXX (insert email hyperlink).
