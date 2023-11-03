@@ -45,6 +45,7 @@ Plan: move into production at https://ideas-productivity.org/ in November 2023
     * Subtitle `blurbs` should active "-ing" words where possible
     * Use subtitle `blurbs` only where they make sense -- they're *optional*
     * `blurbs` for `text-biglink.html` includes should be all lowercase, except for acronyms or key phrases
+    * For link blurbs, we prefer the language "learn more about..." over something simpler, like "visit..."
     * For project names that start with "IDEAS", use a hyphen to link to a distinguishing term.  For example, IDEAS-Classic, IDEAS-ECP, or IDEAS-Watersheds rather than IDEAS Classic, IDEAS ECP, or IDEAS Watersheds
 * Graphics
     * Graphics with a transparent background are generally preferred wherever possible.  This means PNG or GIF format.  JPEG files do not support transparent backgrounds
