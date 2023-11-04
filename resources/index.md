@@ -8,8 +8,7 @@ title: "Resources"
 
 # Events
 
-The IDEAS Productivity project organizes many events for the communities in which they participate.  Events are organized into several series, some of which are ongoing, others of which may have concluded.
-
+The IDEAS Productivity project organizes many events for the communities in which they participate.  Events are organized into several series, including webinars, tutorials, panel discussions, and technical meetings.
 
 [Upcoming and Past Events](/resources/events)
 
@@ -17,9 +16,9 @@ The IDEAS Productivity project organizes many events for the communities in whic
 
 # Tools and practices
 
-The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+The IDEAS team also works to incubate and curate methodologies for scientific software development, foster communities around scientific software, and disseminate the knowledge and experience gained.
 
-[Resources produced by IDEAS](/resources/tools-and-practices)
+[Learn more about IDEAS work on tools and practices](/resources/tools-and-practices)
 
 <br>
 
