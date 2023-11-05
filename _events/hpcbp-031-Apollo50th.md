@@ -19,7 +19,7 @@ things, he contributes to
 <a href='https://wci.llnl.gov/simulation/computer-codes/visit'>VisIt</a>,
 <a href='https://wci.llnl.gov/simulation/computer-codes/silo'>Silo</a>,
 <a href='https://www.hdfgroup.org'>HDF5</a> and
-<a href='https://ideas-productivity.org/ideas-ecp'>IDEAS-ECP</a>. Mark has a
+<a href='/activities/ideas-ecp'>IDEAS-ECP</a>. Mark has a
 passion for technology through history."
 #
 webinar-id: 31

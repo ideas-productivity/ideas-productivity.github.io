@@ -6,9 +6,9 @@ title: "Kitchen Sink"
 blurb: "The quick brown fox jumps over the lazy dog."
 
 meta1-name: "Series"
-meta1-value: "<a href='https://ideas-productivity.org/events/'>Test Series</a>"
+meta1-value: "<a href='/resources/events'>Test Series</a>"
 meta2-name: "Contributors"
-meta2-value: "<a href='https://ideas-productivity.org/events/'>Name A Name</a>, <a href='https://ideas-productivity.org/events/'>Name A Name</a>, <a href='https://ideas-productivity.org/events/'>Name A Name</a>"
+meta2-value: "<a href='/resources/events'>Name A Name</a>, <a href='/resources/events'>Name A Name</a>, <a href='/resources/events'>Name A Name</a>"
 
 carousel:
   - teaser:
@@ -97,7 +97,7 @@ carousel:
 
 # Hello h1
 
-The *quick brown fox jumps over the lazy dog*. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. **The quick brown fox jumps over the lazy dog**. The quick 1982 [brown fox jumps](https://ideas-productivity.org/ideas-home-page/about-ideas/) over the lazy dog.
+The *quick brown fox jumps over the lazy dog*. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. **The quick brown fox jumps over the lazy dog**. The quick 1982 [brown fox jumps](/overview) over the lazy dog.
 
 {% 	include text-download.html 
 		title = "Test Download"
@@ -265,17 +265,17 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 {% 	include teasers-2x_img.html
 		group-title = "Example Teasers"
 		group-linktext = "Learn More"
-		group-linkurl = "https://ideas-productivity.org/events/"
+		group-linkurl = "/resources/events"
 		group-blurb = "The quick brown fox jumps over the lazy dog."
 
 		title1 = "Teaser One"
 		source1 = "fpo.png"
-		url1 = "https://ideas-productivity.org/events/"
+		url1 = "/resources/events"
 		blurb1 = "The quick brown fox jumps over the lazy dog."
 
 		title2 = "Teaser Two"
 		source2 = "fpo.png"
-		url2 = "https://ideas-productivity.org/events/"
+		url2 = "/resources/events"
 		blurb2 = "The quick brown fox jumps over the lazy dog."
 %}
 
@@ -288,15 +288,15 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 {% 	include teasers-2x_noimg.html
 		group-title = "Example Teasers"
 		group-linktext = "Learn More"
-		group-linkurl = "https://ideas-productivity.org/events/"
+		group-linkurl = "/resources/events"
 		group-blurb = "The quick brown fox jumps over the lazy dog."
 
 		title1 = "Teaser One"
-		url1 = "https://ideas-productivity.org/events/"
+		url1 = "/resources/events"
 		blurb1 = "The quick brown fox jumps over the lazy dog."
 
 		title2 = "Teaser Two"
-		url2 = "https://ideas-productivity.org/events/"
+		url2 = "/resources/events"
 		blurb2 = "The quick brown fox jumps over the lazy dog."
 %}
 
@@ -330,27 +330,27 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 {% 	include teasers-4x_img.html
 		group-title = "Example Teasers"
 		group-linktext = "Learn More"
-		group-linkurl = "https://ideas-productivity.org/events/"
+		group-linkurl = "/resources/events"
 		group-blurb = "The quick brown fox jumps over the lazy dog."
 
 		title1 = "Teaser One"
 		source1 = "fpo.png"
-		url1 = "https://ideas-productivity.org/events/"
+		url1 = "/resources/events"
 		blurb1 = "The quick brown fox jumps over the lazy dog."
 
 		title2 = "Teaser Two"
 		source2 = "fpo.png"
-		url2 = "https://ideas-productivity.org/events/"
+		url2 = "/resources/events"
 		blurb2 = "The quick brown fox jumps over the lazy dog."
 
 		title3 = "Teaser Three"
 		source3 = "fpo.png"
-		url3 = "https://ideas-productivity.org/events/"
+		url3 = "/resources/events"
 		blurb3 = "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
 
 		title4 = "Teaser Four"
 		source4 = "fpo.png"
-		url4 = "https://ideas-productivity.org/events/"
+		url4 = "/resources/events"
 		blurb4 = "The quick brown fox jumps over the lazy dog."
 %}
 
@@ -425,23 +425,23 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 {% 	include teasers-4x_noimg.html
 		group-title = "Example Teasers"
 		group-linktext = "Learn More"
-		group-linkurl = "https://ideas-productivity.org/events/"
+		group-linkurl = "/resources/events"
 		group-blurb = "The quick brown fox jumps over the lazy dog."
 
 		title1 = "Teaser One"
-		url1 = "https://ideas-productivity.org/events/"
+		url1 = "/resources/events"
 		blurb1 = "The quick brown fox jumps over the lazy dog."
 
 		title2 = "Teaser Two"
-		url2 = "https://ideas-productivity.org/events/"
+		url2 = "/resources/events"
 		blurb2 = "The quick brown fox jumps over the lazy dog."
 
 		title3 = "Teaser Three"
-		url3 = "https://ideas-productivity.org/events/"
+		url3 = "/resources/events"
 		blurb3 = "The quick brown fox jumps over the lazy dog."
 
 		title4 = "Teaser Four"
-		url4 = "https://ideas-productivity.org/events/"
+		url4 = "/resources/events"
 		blurb4 = "The quick brown fox jumps over the lazy dog."
 %}
 
@@ -456,12 +456,12 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 {% 	include teasers-banner.html
 		group-title = "Example Teasers"
 		group-linktext = "Learn More"
-		group-linkurl = "https://ideas-productivity.org/events/"
+		group-linkurl = "/resources/events"
 		group-blurb = "The quick brown fox jumps over the lazy dog."
 
 		title = "Teaser One"
 		source = "fpo.png"
-		url = "https://ideas-productivity.org/events/"
+		url = "/resources/events"
 		blurb = "The quick brown fox jumps over the lazy dog."
 %}
 
@@ -476,7 +476,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 {% 	include teasers-text.html
 		group-title = "Example Teasers"
 		group-linktext = "Learn More"
-		group-linkurl = "https://ideas-productivity.org/events/"
+		group-linkurl = "/resources/events"
 
 		lgtext = "The quick brown fox jumps over the lazy dog."
 		smtext = "<p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
@@ -493,7 +493,7 @@ The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the 
 
 {% 	include text-biglink.html
 		blurb = "Example Call to Action Link"
-		url = "https://ideas-productivity.org/events/"
+		url = "/resources/events"
 %}
 
 The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
