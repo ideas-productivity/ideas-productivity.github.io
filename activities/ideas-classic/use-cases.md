@@ -5,6 +5,8 @@ layout: page
 title: "Use Cases"
 blurb: "IDEAS-Classic"
 
+# This will redirect old links to the Wordpress site
+redirect_from: /ideas-classic/use-cases
 ---
 
 

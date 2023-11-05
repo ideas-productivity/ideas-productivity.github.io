@@ -6,7 +6,13 @@ title: "IDEAS-Watersheds"
 blurb: "Accelerating watershed science through a community-driven software ecosystem"
 
 # This will redirect old links to the Wordpress site
-redirect_from: /ideas-watersheds
+redirect_from: 
+  - /ideas-watersheds
+  - /ideas-watersheds/research-activities/
+  - /ideas-watersheds/software-ecosystem/
+  - /ideas-watersheds/ideas-watersheds-team/
+  - /ideas-watersheds/events/
+  - /ideas-watersheds/job-postings/
 ---
 
 {% 	include media-img2x.html 

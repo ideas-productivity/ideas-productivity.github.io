@@ -5,6 +5,8 @@ layout: page
 title: "Community Outreach"
 blurb: "IDEAS-Classic"
 
+# This will redirect old links to the Wordpress site
+redirect_from: /ideas-classic/outreach
 ---
 
 <!-- Sidebar Nav -->
