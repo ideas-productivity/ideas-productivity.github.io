@@ -35,6 +35,12 @@ If you’d like to receive announcements of upcoming webinars and other IDEAS-or
 
 Want to request another topic?  Want to give a webinar?  Email us at [IDEASProductivity@gmail.com](mailto:IDEASProductivity@gmail.com?subject=HPCBP webinar suggestion).
 
+## Related Presentations and Publications
+
+- The HPC Best Practices Webinar Series. Osni A. Marques, David E. Bernholdt, Elaine M. Raybourn, Ashley D. Barker,  Rebecca J. Hartman-Baker. Journal of Computational Science Education **10**(1), 108--110, January 2019. doi:[10.22369/issn.2153-4136/10/1/19](https://doi.org/10.22369/issn.2153-4136/10/1/19).
+
+
+
 <!-- Organizers -->
 
 {% 	include list-6x.html 
