@@ -8,3 +8,7 @@ vendor/
 
 desktop.ini
 .Rhistory
+
+# Shouldn't be committed in the first place
+secrets/actions/ALGOLIA_API_KEY
+secrets/
