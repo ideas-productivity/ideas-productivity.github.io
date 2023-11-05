@@ -5,6 +5,8 @@ layout: page
 title: "IDEAS-Watersheds"
 blurb: "Accelerating watershed science through a community-driven software ecosystem"
 
+# This will redirect old links to the Wordpress site
+redirect_from: /ideas-watersheds
 ---
 
 {% 	include media-img2x.html 

@@ -4,6 +4,8 @@ layout: page
 
 title: "Events"
 
+# This will redirect old links to the Wordpress site
+redirect_from: /events
 ---
 {% comment %}
 Events organized by the IDEAS Productivity project are organized into several series.  Select a series to see events in that particular series.  Scroll down for the complete lists of [upcoming](#upcoming-events) and [past](#past-events) events.

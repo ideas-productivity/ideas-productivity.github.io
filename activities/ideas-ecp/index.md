@@ -5,6 +5,8 @@ layout: page
 title: "IDEAS-ECP"
 blurb: "Building a productive and sustainable exascale software ecosystem"
 
+# This will redirect old links to the Wordpress site
+redirect_from: /ideas-ecp
 ---
 
 {% 	include media-img2x.html 

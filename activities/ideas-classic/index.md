@@ -5,6 +5,8 @@ layout: page
 title: "IDEAS-Classic"
 blurb: "Improving software productivity for terrestrial ecosystem modeling"
 
+# This will redirect old links to the Wordpress site
+redirect_from: /ideas-classic
 ---
 
 
