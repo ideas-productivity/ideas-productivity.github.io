@@ -30,7 +30,7 @@ toc:
     url: /resources/
     subfolderitems:
       - page: Events
-        url: /resources/events.html
+        url: /resources/events/
       - page: Events by Series
         url: /resources/series/
       - page: Tools and Practices
