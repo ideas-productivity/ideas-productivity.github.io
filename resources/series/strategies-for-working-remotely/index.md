@@ -8,7 +8,9 @@ series: "Strategies for Working Remotely"
 # This will redirect old links to the Wordpress site to the right page, at least.
 # With additional work, it may be possible to get the fragment id (specific event entry)
 # to work.  Tracking this in https://github.com/ideas-productivity/ideas-productivity.github.io/issues/18
-redirect_from: /events/strategies-for-working-remotely-panels
+redirect_from: 
+  - /events/strategies-for-working-remotely-panels
+  - /events/strategies-for-working-remotely-panels/
 ---
 
 <!-- Extended Description -->

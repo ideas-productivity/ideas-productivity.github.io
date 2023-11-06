@@ -6,7 +6,9 @@ title: 'Methodologies and "How To"'
 blurb: "IDEAS-Classic"
 
 # This will redirect old links to the Wordpress site
-redirect_from: /ideas-classic/how-to
+redirect_from: 
+  - /ideas-classic/how-to
+  - /ideas-classic/how-to/
 ---
 
 <!-- Sidebar Nav -->

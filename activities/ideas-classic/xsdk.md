@@ -6,7 +6,9 @@ title: "xSDK"
 blurb: "IDEAS-Classic"
 
 # This will redirect old links to the Wordpress site
-redirect_from: /ideas-classic/xsdk
+redirect_from: 
+  - /ideas-classic/xsdk
+  - /ideas-classic/xsdk/
 ---
 
 <!-- Sidebar Nav -->

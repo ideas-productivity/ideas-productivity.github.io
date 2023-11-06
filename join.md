@@ -6,7 +6,9 @@ title: "Join the Community!"
 blurb: "Working together to advance scientific software productivity"
 
 # This will redirect old links to the Wordpress site
-redirect_from: /getting-involved
+redirect_from: 
+  - /getting-involved
+  - /getting-involved/
 ---
 
 

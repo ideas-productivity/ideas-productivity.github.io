@@ -5,7 +5,9 @@ layout: page
 title: "Overview"
 blurb: "Advancing scientific productivity through better scientific software"
 
-redirect_from: /ideas-home-page/about-ideas/
+redirect_from: 
+  - /ideas-home-page/about-ideas
+  - /ideas-home-page/about-ideas/
 ---
 
 
