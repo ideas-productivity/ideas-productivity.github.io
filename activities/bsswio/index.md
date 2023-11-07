@@ -7,12 +7,8 @@ blurb: "A hub for scientific software development resources."
 
 ---
 
-{% 	include media-img2x.html 
-	  source1 = "logos/bssw/BSSw-logo-transparent.png"
-	  contain1 = "true"
-      scale1 = "0.65"
-    source2 = "bsswio/bssw-categories.jpeg"
-	contain2 = "true"
+{% 	include media-heroimg-2.html 
+	  source = "hero-bssw.png"
 %}
 
 # Developing scientific software should be a shared experience

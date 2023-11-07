@@ -1,0 +1,32 @@
+/**
+  * Component: Media, Hero Image
+  *  
+  * @description
+  * -
+  */
+
+  .hero-img-2 {
+	@include grid-child($cols:12);
+
+	.img-wrapper {
+		// @include aspect-ratio(16, 9);
+		grid-column: 1 / -1;
+		@include stack(sm);
+		@include respond-to(m){
+			grid-column: 3 / 11;
+			@include stack(md);
+		}
+	}
+
+	img {
+	 	width: 100%;
+	}
+
+	.caption {
+		grid-column: 1 / -1;
+		@include stack(md);
+		@include respond-to(m){
+			grid-column: 3 / 11;
+		}
+	}
+}

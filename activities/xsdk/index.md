@@ -11,12 +11,8 @@ blurb: "Extreme-scale Scientific Software Development Kit"
 <!-- Content -->
 <!-- ---------------------------------------------------------------------- -->
 
-{% 	include media-img2x.html 
-	  source1 = "xsdk/xsdk_logo_COLOR_large.png"
-	  contain1 = "true"	
-    source2 = "xsdk/use-case-collage.004-300x225.png"
-	contain2 = "true"
-    caption2 = "Integrated surface-subsurface hydrology simulations of river meanders require the combined use of xSDK packages."
+{% 	include media-heroimg-2.html 
+	  source = "hero-xsdk.png"
 %}
 
 

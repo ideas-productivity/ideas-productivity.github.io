@@ -1,0 +1,51 @@
+<!-- 
+
+MEDIA, HERO IMAGE 2 (no fixed proportions)
+
+-------------------------------------------------------------------------------
+
+available parameters:
+* source
+- contain
+- cover
+- scale
+- caption
+
+* required
+
+-------------------------------------------------------------------------------
+
+-->
+
+<div class="hero-img-2">
+	<div class="img-wrapper">
+		<div><img src="/assets/images/{{ include.source }}"
+			{% if include.cover %}
+				style="
+				width: 100%;
+				height: 100%;
+				object-fit: cover;"
+			{% elsif include.contain %}
+				style="
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				{% if include.scale %}
+					max-height: calc( {{ include.scale }}% * 100 );
+					max-width: calc( {{ include.scale }}% * 100 );
+				{% endif %}	
+				"
+			{% else %}
+				style="object-fit: initial;
+				{% if include.scale %}
+					-ms-transform: translate(-50%, -50%) scale( {{ include.scale }} );
+					transform: translate(-50%, -50%) scale( {{ include.scale }} );
+				{% endif %}	
+				"
+			{% endif %}			
+		></div>
+	</div>
+	{% if include.caption %}
+	<small class="caption">{{ include.caption }}</small>
+	{% endif %}	
+</div>

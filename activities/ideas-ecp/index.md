@@ -11,11 +11,8 @@ redirect_from:
   - /ideas-ecp/team/
 ---
 
-{% 	include media-img2x.html 
-	  source1 = "ideas-ecp/lightbulb-transparent.png"
-	  contain1 = "true"
-    source2 = "logos/ecp/ECP_logo.png"
-	contain2 = "true"
+{% 	include media-heroimg-2.html 
+	  source = "hero-ecp.png"
 %}
 
 # About the Exascale Computing Project

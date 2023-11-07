@@ -21,13 +21,8 @@ redirect_from:
   - /ideas-watersheds/job-postings/
 ---
 
-{% 	include media-img2x.html 
-	  source1 = "ideas-watersheds/IDEAS_watershed-logo_blueText.png"
-	  contain1 = "true"
-      scale1 = "0.85"
-     source2 = "ideas-watersheds/Pillars_hero.png"
-	 scale2 = "0.85"
-	contain2 = "true"
+{%  include media-heroimg-2.html 
+    source = "hero-watersheds.png"
 %}
 
 # Overview
