@@ -32,6 +32,7 @@ github_username:  ideas-productivity
 # Build settings
 theme: minima
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll-pluralize
   - jekyll-redirect-from
@@ -62,6 +63,15 @@ defaults:
       type: "events-draft"
     values:
       layout: "event"
+      sitemap: false
+  - scope:
+      path: "internal"
+    values:
+      sitemap: false
+  - scope:
+      path: "internal/**"
+    values:
+      sitemap: false
 
 feed:
   collections:
