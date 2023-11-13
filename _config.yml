@@ -46,7 +46,7 @@ collections:
     permalink: /events/:slug
   events-draft:
     output: true
-    permalink: /events-draft/:slug
+    permalink: /internal/events-draft/:slug
   impact:
     output: true
     permalink: /impact/:slug
