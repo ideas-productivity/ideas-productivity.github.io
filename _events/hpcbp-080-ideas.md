@@ -27,16 +27,16 @@ registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItd-6vq
 ecp-abbreviation: ideas-ecp
 qa-public-url: http://bit.ly/HPCBP-QA
 survey-public-url: http://bit.ly/HPCBP-feedback
-# artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: Q6Ksu_uX3bc
-#   - label: Slides
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-076-cleanssw.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-076-cleanssw-qa.pdf
+artifacts:
+  - label: Recording
+    format: YouTube
+    yt-video-id: NbasGUOJ4qQ
+  - label: Slides
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-080-ideas-v05.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbphpcbp-080-ideas-qa.pdf
 ---
 The US Department of Energy’s Exascale Computing Project (ECP) has been an unprecedented effort to establish a software ecosystem spanning 24 scientific applications, 6 co-design centers, and the supporting software technologies needed to enable leading-edge computational science and engineering research on the world’s first generation of exascale computers.  ECP also presented an unprecedented challenge from the standpoint of developer productivity and the sustainability of all of that software, which led to the establishment in 2017 of the second instance of the IDEAS Productivity project, IDEAS-ECP.
 
