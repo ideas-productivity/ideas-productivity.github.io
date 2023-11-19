@@ -1,0 +1,51 @@
+---
+layout: none
+series: "HPC Best Practices Webinars"
+---
+
+# Best Practices for HPC Software Developers Webinar Series
+
+The HPC Best Practices (HPC-BP) webinars address issues faced by
+developers of computational science and engineering (CSE) software on
+high-performance computers (HPC).
+
+Resource information | Details
+:--- | :---
+Resource name | Best Practices for HPC Software Developers Webinar Series
+Website | <{{ site.production_url }}{{ site.baseurl }}/resources/series/hpc-best-practices-webinars/>
+Focus | Software productivity and sustainability
+
+Webinars are scheduled on roughly a monthly basis and are available
+live and then archived for future reference. The event web site
+provides details about the webinar series, including announcements of
+upcoming webinars, a mailing list to receive announcements, and
+archival information for the entire series.
+
+Upcoming webinars are announced on the [BSSw Events
+page](https://bssw.io/events), the IDEAS Productivity [announcements
+list](http://eepurl.com/cQCyJ5), and in other venues.
+
+Participation is free and open to the public. Registration is required for each event. Those who register will also receive a notification when the webinar recording is available.
+
+The webinar series is produced by the [IDEAS Productivity Project](https://ideas-productivity.org/) in collaboration with the DOE/ASCR computing facilities ([ALCF](https://www.alcf.anl.gov/), [NERSC](https://www.nersc.gov/), and [OLCF](https://www.olcf.ornl.gov/)) and the [Exascale Computing Project](https://www.exascaleproject.org/).
+
+## Past Webinars
+
+*Listed in reverse chronological order. Last updated: {{ "now" | date: "%F" }}*
+
+{%- assign today = site.time | date:"%Y-%m-%d" %}
+{%- assign enddate = site.events | where_exp: "item", "item.startdate < today and item.enddate < today" %}
+{%- assign noenddate = site.events | where_exp: "item", "item.enddate == nil and item.startdate < today" %}
+{%- assign sorted = enddate | concat: noenddate | where_exp: "item", "item.series contains page.series" | sort:"startdate" | reverse %}
+
+{% for webinar in sorted %}
+- {{ webinar.date | date: "%F" }}: [{{ webinar.title }}]({{ site.production_url }}{{ site.baseurl }}{{ webinar.url }}), presented by {% for person in webinar.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}
+{% endfor %}
+
+#### Contributed by [Osni Marques](http://github.com/oamarques)
+#### Publication date: {{ "now" | date: "%F" }}
+
+<!---
+Publish: yes
+Topics: online learning
+--->

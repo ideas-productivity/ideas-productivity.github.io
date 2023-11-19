@@ -24,6 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Advancing scientific productivity through better scientific software.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ideas-productivity.org" # the base hostname & protocol for your site, e.g. http://example.com
+production_url: "https://ideas-productivity.org" # This will not change when the site is built locally
 #twitter_username: jekyllrb
 github_username:  ideas-productivity
 
