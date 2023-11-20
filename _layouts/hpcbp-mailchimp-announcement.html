@@ -23,10 +23,6 @@ layout: none
 
   <p><strong>{{ page.startdate | date: "%F" }}: </strong> {{ page.title }}</p>
 
-<h2>Create tag when importing audience</h2>
-<section style="border: 3px; border-style: solid; padding: 1em">
-  <p>{{ hpcbp-tag }}</p>
-</section>
 
 <h2>Campaign name</h2>
 <section style="border: 3px; border-style: solid; padding: 1em">
@@ -42,7 +38,7 @@ layout: none
 <section style="border: 3px; border-style: solid; padding: 1em; text-align: center">
   <strong>{{ page.title }}<br>
   {{ page.time }}<br>
-  {{ page.startdate | date: "%A %B %d, %Y" }}</strong>
+  {{ page.startdate | date: "%A, %B %d, %Y" }}</strong>
 </section>
 
 <h2>Presenter and Description</h2>
@@ -67,7 +63,7 @@ layout: none
 <section style="border: 3px; border-style: solid; padding: 1em">
   <ul>
   {% for webinar in sorted offset:current limit:3 %}
-    <li><a href="{{ webinar.url | replace: '/internal/events-hpcbp', '/events' }}">{{ webinar.title }}</a> ({{ webinar.startdate | date: "%B, %Y" }})</li>
+    <li><a href="{{ webinar.url | replace: '/internal/events-hpcbp', '/events' }}">{{ webinar.title }}</a> ({{ webinar.startdate | date: "%B %Y" }})</li>
   {% endfor %}
   </ul>
 </section>
