@@ -19,6 +19,7 @@ assignees: ''
   - [ ] `registration-url`
   - [ ] `ecp-abbreviation`
   - [ ] webinar abstract
+  - [ ] identify appropriate `bsswio-topics`
 - [ ] Technical editor checks webinar abstract
 - [ ] Create event in `_events-drafts`
 - [ ] Verify content and formatting
