@@ -6,7 +6,7 @@ layout: none
 
 - Event Date: {{ page.startdate | date: "%F" }}
 - Location: {% if page.location %}{{ page.location | capitalize }}{% else %}Online{% endif %}
-- Event Webpage: <{{ production-url }}>
+- Event Website: <{{ production-url }}>
 - Organizers: The IDEAS Productivity Project
 
 This event is a part of the "Best Practices for HPC Software
