@@ -18,7 +18,7 @@ webinar-id: 69
 date: 2022-11-09T13:00-0500
 title: "Managing Academic Software Development"
 presenter-ids: [mangham-sam]
-topics: ["release and deployment", "documentation", "strategies for more effective teams", "software sustainability", “online learning”]
+bsswio-topics: ["release and deployment", "documentation", "strategies for more effective teams", "software sustainability", “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIsc-mhqD4vGpzCRfOBvYc6PfjCzSC9uwM
 ecp-abbreviation: managing-academic-software
 qa-public-url: http://bit.ly/HPCBP-QA

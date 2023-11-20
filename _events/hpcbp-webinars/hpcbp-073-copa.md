@@ -18,7 +18,7 @@ webinar-id: 73
 date: 2023-04-12T13:00-0400
 title: "Facilitating Electronic Structure Calculations on GPU-based Exascale Platforms"
 presenter-ids: [fattebert-jeanluc]
-topics: ["software engineering",  "high-performance computing (hpc)", "performance at leadership computing facilities", “online learning”]
+bsswio-topics: ["software engineering",  "high-performance computing (hpc)", "performance at leadership computing facilities", “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIsdu2trz4oHcvHfBiEco7RFJzPWwNfh3E
 ecp-abbreviation: copa
 qa-public-url: http://bit.ly/HPCBP-QA

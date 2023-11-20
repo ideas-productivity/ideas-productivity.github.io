@@ -18,7 +18,7 @@ webinar-id: 71
 date: 2023-01-11T13:00-0500
 title: "Openscapes: supporting better science for future us"
 presenter-ids: [lowndes-juliastewart]
-topics: ["documentation",  “online learning”]
+bsswio-topics: ["documentation",  “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIsf-6orjMoGA2DP-0K3a6mAjaWtMd50N8
 ecp-abbreviation: openscapes
 qa-public-url: http://bit.ly/HPCBP-QA

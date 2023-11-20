@@ -35,6 +35,7 @@ plugins:
   - jekyll-feed
   - jekyll-pluralize
   - jekyll-redirect-from
+  - jekyll_basename_dirname
 #  - flexible_include # We do use this, but it is not a gem
 
 # This is needed to generate output for future events
@@ -47,6 +48,24 @@ collections:
   events-draft:
     output: true
     permalink: /internal/events-draft/:slug
+  events-hpcbp:
+    output: false
+    permalink: /internal/events-hpcbp/:slug
+  events-hpcbp-bsswio:
+    output: true
+    permalink: /internal/events-hpcbp-bsswio/:slug
+  events-hpcbp-bsswio-digest:
+    output: true
+    permalink: /internal/events-hpcbp-bsswio-digest/:slug
+  events-hpcbp-mailchimp-announcement:
+    output: true
+    permalink: /internal/events-hpcbp-mailchimp-announcement/:slug
+  events-hpcbp-youtube:
+    output: true
+    permalink: /internal/events-hpcbp-youtube/:slug
+  events-hpcbp-mailchimp-followup:
+    output: true
+    permalink: /internal/events-hpcbp-mailchimp-followup/:slug
   impact:
     output: true
     permalink: /impact/:slug
@@ -62,6 +81,42 @@ defaults:
       type: "events-draft"
     values:
       layout: "event"
+      sitemap: false
+  - scope:
+      path: ""
+      type: "events-hpcbp"
+    values:
+      layout: "event"
+      sitemap: false
+  - scope:
+      path: ""
+      type: "events-hpcbp-bsswio"
+    values:
+      layout: bsswio-event
+      sitemap: false
+  - scope:
+      path: ""
+      type: "events-hpcbp-bsswio-digest"
+    values:
+      layout: bsswio-event-digest
+      sitemap: false
+  - scope:
+      path: ""
+      type: "events-hpcbp-mailchimp-announcement"
+    values:
+      layout: hpcbp-mailchimp-announcement
+      sitemap: false
+  - scope:
+      path: ""
+      type: "events-hpcbp-youtube"
+    values:
+      layout: hpcbp-youtube
+      sitemap: false
+  - scope:
+      path: ""
+      type: "events-hpcbp-mailchimp-followup"
+    values:
+      layout: hpcbp-mailchimp-followup
       sitemap: false
   - scope:
       path: "internal"
@@ -115,6 +170,12 @@ algolia:
 exclude:
   - README.md
 
+# We have multiple pages where we need to refer to the canonical location
+# for the HPC-BP webinar series and also to the directory where the actual events
+# are output
+hpcbp-series-path: /resources/series/hpc-best-practices-webinars/
+hpcbp-events-path: /events
+
 # For use with event artifacts (and perhaps elsewhere) 
 # Base URLs
 doi-resolver-url: https://doi.org
@@ -126,3 +187,6 @@ youtube-watch-url: https://www.youtube.com/watch?v=
 youtube-playlist-url: https://youtube.com/playlist?list=
 youtube-embed-v-url: https://www.youtube.com/embed/
 youtube-embed-pl-url: https://www.youtube.com/embed/videoseries?list=
+
+# Limits to check for YouTube uploads
+youtube-title-max: 100

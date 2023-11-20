@@ -18,7 +18,7 @@ webinar-id: 74
 date: 2023-05-10T13:00-0400
 title: "Lessons Learned Developing Performance Portable QMCPACK"
 presenter-ids: [kent-paul]
-topics: ["software engineering",  "high-performance computing (hpc)", "performance at leadership computing facilities", “online learning”]
+bsswio-topics: ["software engineering",  "high-performance computing (hpc)", "performance at leadership computing facilities", “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIsfu2tpj4tH5IPhwHyts07waBFxGIAvYo
 ecp-abbreviation: qmcpack
 qa-public-url: http://bit.ly/HPCBP-QA

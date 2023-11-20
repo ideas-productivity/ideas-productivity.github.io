@@ -22,7 +22,7 @@ webinar-id: 80
 date: 2023-11-08T13:00-0500
 title: "A cast of thousands: How the IDEAS Productivity project has advanced software productivity and sustainability"
 presenter-ids: [bernholdt-davide]
-bsswio-topics: ["projects and organizations", “online learning”]
+bsswio-topics: ["projects and organizations", "online learning"]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItd-6vqTwiGAPgULTsN_C4CLg76smd5H8
 ecp-abbreviation: ideas-ecp
 qa-public-url: http://bit.ly/HPCBP-QA
@@ -37,6 +37,8 @@ artifacts:
   - label: Q&A
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-080-ideas-qa.pdf
+#
+location: online
 ---
 The US Department of Energy’s Exascale Computing Project (ECP) has been an unprecedented effort to establish a software ecosystem spanning 24 scientific applications, 6 co-design centers, and the supporting software technologies needed to enable leading-edge computational science and engineering research on the world’s first generation of exascale computers.  ECP also presented an unprecedented challenge from the standpoint of developer productivity and the sustainability of all of that software, which led to the establishment in 2017 of the second instance of the IDEAS Productivity project, IDEAS-ECP.
 

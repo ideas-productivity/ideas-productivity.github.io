@@ -1,0 +1,79 @@
+---
+layout: none
+---
+{% assign formatted-date = page.startdate | date: "%F" %}
+{% assign production-url = site.production_url | append: site.baseurl | append: page.url | replace: "/internal/events-hpcbp-youtube", "/events" -%}
+{% assign series-url = site.production_url | append: site.baseurl | append: site.hpcbp-series-path %}
+<html>
+  <head>
+    <title>Webinar Entry for YouTube</title>
+  </head>
+<body>
+<main>
+  <h1>Webinar Entry for YouTube</h1>
+
+  <p><strong>{{ formatted-date }}: </strong> {{ page.title }}</p>
+
+<h2>Title</h2>
+
+{% assign full-title = formatted-date | append: " webinar: " | append: page.title %}
+{% assign tlength = full-title | size %}
+
+{% if tlength > site.youtube-title-max %}
+<section style="border: 3px; border-style: solid; padding: 1em; border-color: red">
+<p><strong><em><font color="red">WARNING: Full title is longer than YouTube limit of {{ site.youtube-title-max }} characters.</font></em></strong></p>
+<p><strong>Full title:</strong> {{ full-title }}</p>
+<p><strong>Truncated title:</strong> {{ full-title | truncate: site.youtube-title-max, "" }}
+<p><em>Preferred alternative: edit title to make sense at {{ site.youtube-title-max }} characters.</em></p>
+</section>
+{% else %}
+<section style="border: 3px; border-style: solid; padding: 1em">
+  <p>{{ full-title }}</p>
+</section>
+{% endif %}
+
+<h2>Description</h2>
+<section style="border: 3px; border-style: solid; padding: 1em">
+  <p>{% if tlength > site.youtube-title-max %}Full title: {{ page.title }}<br>{% endif %}
+  {{ page.presenters | size | pluralize: "Presenter:", "Presenters:" }}
+    {% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}<br>
+  Presented on: {{ page.startdate | date: "%F" }}</p>
+  
+  {% if page.description %}
+  {{ page.description | markdownify }}
+  {% else %}     
+  {{ content }}
+  {% endif %}
+
+  <p>For additional details of this webinar, see {{ production-url }}.<br>
+  This webinar is part of the Best Practices for HPC Software Developers (HPC-BP) series; for more information, see {{ series-url }}.</p>
+</section>
+
+<h2>Additional Inputs</h2>
+<section style="border: 3px; border-style: solid; padding: 1em">
+  <ul>
+    <li>Thumbnail -- <em>skip</em></li>
+    <li>Playlists -- <em>skip</em></li>
+    <li>Audience -- <strong>No, it's not made for kids</strong></li>
+    <li>Age restriction (advanced) -- <em>skip</em></li>
+  </ul>
+</section>
+
+<h2>Show More Inputs</h2>
+<section style="border: 3px; border-style: solid; padding: 1em">
+  <ul>
+    <li>Paid promotion -- <em>accept default</em></li>
+    <li>Automatic chapters -- <em>accept default</em></li>
+    <li>Featured places -- <strong>UNCHECK Allow automatic places</strong></li>
+    <li>Automatic concepts -- <em>accept default</em></li>
+    <li>Tags -- <strong>HPC Best Practices webinars</strong></li>
+    <li>Language and captions certification -- <em>skip</em></li>
+    <li>Recording date -- <strong>{{ page.startdate | date: "%b %d, %Y" }}</strong></li>
+    <li>Recording location -- <em>skip</em></li>
+    <li><em>Accept defaults for the remainder of inputs.</em></li>
+  </ul>
+</section>
+
+</main>
+</body>
+</html>

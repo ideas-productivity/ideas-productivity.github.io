@@ -18,7 +18,7 @@ webinar-id: 66
 date: 2022-08-10T13:00-0400
 title: "Effective Strategies for Writing Proposal Work Plans for Research Software"
 presenter-ids: [million-chase]
-topics: ["software engineering", "requirements", “online learning”]
+bsswio-topics: ["software engineering", "requirements", “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIscumurj4jGfrT7IlFCpoaIwQhXTbWWNk
 ecp-abbreviation: strategies4proposalwriting
 qa-public-url: http://bit.ly/HPCBP-QA

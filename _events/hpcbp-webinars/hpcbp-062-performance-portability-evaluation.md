@@ -18,7 +18,7 @@ webinar-id: 62
 date: 2022-04-13T13:00-0400
 title: "Evaluating Performance Portability of HPC Applications and Benchmarks Across Diverse HPC Architectures"
 presenter-ids: [kwack-jaehyuk]
-topics: [“online learning”, “performance at leadership computing facilities”, “performance portability”]
+bsswio-topics: [“online learning”, “performance at leadership computing facilities”, “performance portability”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIsdOGprDMjE4X9dnLIY1DleDme3cYyFpI
 ecp-abbreviation: performance-portability-evaluation
 qa-public-url: http://bit.ly/HPCBP-QA

@@ -18,7 +18,7 @@ webinar-id: 65
 date: 2022-07-06T13:00-0400
 title: "Growing preCICE from an as-is Coupling Library to a Sustainable, Batteries-included Ecosystem"
 presenter-ids: [chourdakis-gerasimos]
-topics: ["strategies for more effective teams", "software engineering", "software process improvement", “online learning”]
+bsswio-topics: ["strategies for more effective teams", "software engineering", "software process improvement", “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItdOGrrjMrHKZnWI22lh6qwAwFux6NosI
 ecp-abbreviation: precice-ecosystem
 qa-public-url: http://bit.ly/HPCBP-QA

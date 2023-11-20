@@ -1,0 +1,50 @@
+---
+layout: none
+---
+{% assign production-url = site.production_url | append: site.baseurl | append: page.url | replace: "/internal/events-hpcbp-mailchimp-followup", "/events" -%}
+{% comment %}
+  Figure out where we are in the collection so that we can list the
+  three webinars immediately preceding this one.
+{% endcomment %}
+{% assign sorted = site.events-hpcbp | sort: "startdate" | reverse %}
+{% for webinar in sorted %}
+{% if webinar.startdate == page.startdate and webinar.title == page.title %}
+  {% assign current = forloop.index %}
+  {% break %}
+{% endif %}
+{% endfor %}
+{% assign hpcbp-tag = page.path | basename_without_extension %}
+<html>
+  <head>
+    <title>Webinar Followup for Mailchimp</title>
+  </head>
+<body>
+<main>
+  <h1>Webinar Followup for Mailchimp</h1>
+
+  <p><strong>{{ page.startdate | date: "%F" }}: </strong> {{ page.title }}</p>
+
+  <h2>Campaign name</h2>
+  <section style="border: 3px; border-style: solid; padding: 1em">
+    <p>{{ hpcbp-tag }}-followup</p>
+  </section>
+  
+<h2>Audience tag to send to</h2>
+<section style="border: 3px; border-style: solid; padding: 1em">
+  <p>{{ hpcbp-tag }}</p>
+</section>
+
+<h2>Email subject</h2>
+<section style="border: 3px; border-style: solid; padding: 1em">
+<p>Webinar Recording Available: {{ page.title }}</p>
+</section>
+
+<h2>Title and Date</h2>
+<section style="border: 3px; border-style: solid; padding: 1em; text-align: center">
+  <strong><a href="{{ production-url }}">{{ page.title }}</a><br>
+  Presented on {{ page.startdate | date: "%A %B %d, %Y" }}</strong>
+</section>
+
+</main>
+</body>
+</html>

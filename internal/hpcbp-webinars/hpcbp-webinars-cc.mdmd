@@ -1,6 +1,9 @@
 ---
 layout: none
 series: "HPC Best Practices Webinars"
+contributors:
+  - name: Osni Marques
+    github-id: oamarques
 ---
 
 # Best Practices for HPC Software Developers Webinar Series
@@ -12,7 +15,7 @@ high-performance computers (HPC).
 Resource information | Details
 :--- | :---
 Resource name | Best Practices for HPC Software Developers Webinar Series
-Website | <{{ site.production_url }}{{ site.baseurl }}/resources/series/hpc-best-practices-webinars/>
+Website | <{{ site.production_url }}{{ site.baseurl }}{{ site.hpcbp-series-path }}>
 Focus | Software productivity and sustainability
 
 Webinars are scheduled on roughly a monthly basis and are available
@@ -32,17 +35,22 @@ The webinar series is produced by the [IDEAS Productivity Project](https://ideas
 ## Past Webinars
 
 *Listed in reverse chronological order. Last updated: {{ "now" | date: "%F" }}*
-
 {%- assign today = site.time | date:"%Y-%m-%d" %}
 {%- assign enddate = site.events | where_exp: "item", "item.startdate < today and item.enddate < today" %}
 {%- assign noenddate = site.events | where_exp: "item", "item.enddate == nil and item.startdate < today" %}
 {%- assign sorted = enddate | concat: noenddate | where_exp: "item", "item.series contains page.series" | sort:"startdate" | reverse %}
-
 {% for webinar in sorted %}
 - {{ webinar.date | date: "%F" }}: [{{ webinar.title }}]({{ site.production_url }}{{ site.baseurl }}{{ webinar.url }}), presented by {% for person in webinar.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}
 {% endfor %}
 
-#### Contributed by [Osni Marques](http://github.com/oamarques)
+{%- if page.contributors %}
+#### Contributed by {% for person in page.contributors -%}
+  {% if person.github-id %}[{{person.name }}]({{ site.github-url }}/{{ person.github-id }}){% else %}{{ person.name }}{% endif %}
+{%- unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}
+{%- endfor %}
+{% else %}
+#### Contributed by the BSSw Community
+{% endif %}
 #### Publication date: {{ "now" | date: "%F" }}
 
 <!---

@@ -18,7 +18,7 @@ webinar-id: 63
 date: 2022-05-11T13:00-0400
 title: "Acquisition and Analysis of Times Series of Satellite Data in the Cloud – Lessons from the Field"
 presenter-ids: [garciareyes-marisol]
-topics: [“online learning”]
+bsswio-topics: [“online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItdO2vqzgvEovKLczTLnUWLwKVpVPbE4g
 ecp-abbreviation: temporalanalysis
 qa-public-url: http://bit.ly/HPCBP-QA

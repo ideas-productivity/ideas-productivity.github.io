@@ -18,7 +18,7 @@ webinar-id: 61
 date: 2022-03-09T13:00-0500
 title: "Software Design Patterns in Research Software with Examples from OpenFOAM"
 presenter-ids: [maric-tomislav]
-topics: ["online learning", "design"]
+bsswio-topics: ["online learning", "design"]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIscuupqD4rGjGuOSSg2TNB9NgJhI_qkiY
 ecp-abbreviation: design-patterns
 qa-public-url: http://bit.ly/HPCBP-QA

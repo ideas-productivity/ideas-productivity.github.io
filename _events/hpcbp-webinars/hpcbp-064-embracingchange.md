@@ -18,7 +18,7 @@ webinar-id: 64
 date: 2022-06-15T13:00-0400
 title: "Normalizing Inclusion by Embracing Difference"
 presenter-ids: [leung-maryann]
-topics: ["inclusivity", "strategies for more effective teams", “online learning”]
+bsswio-topics: ["inclusivity", "strategies for more effective teams", “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIscOuvqz4rEvgvterVYAd_ccxKXvhaPb0
 ecp-abbreviation: embracingdifference
 qa-public-url: http://bit.ly/HPCBP-QA

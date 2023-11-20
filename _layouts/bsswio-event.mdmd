@@ -1,0 +1,72 @@
+---
+layout: none
+---
+{% assign production-url = site.production_url | append: site.baseurl | append: page.url | replace: "/internal/events-hpcbp-bsswio", "/events" -%}
+# Webinar: {{ page.title }}
+
+- Event Date: {{ page.startdate | date: "%F" }}
+- Location: {% if page.location %}{{ page.location | capitalize }}{% else %}Online{% endif %}
+- Event Webpage: <{{ production-url }}>
+- Organizers: The IDEAS Productivity Project
+
+This event is a part of the "Best Practices for HPC Software
+Developers" webinar series, produced by the IDEAS Productivity
+Project. The HPC Best Practices webinars address issues faced by
+developers of computational science and engineering (CSE) software on
+high-performance computers (HPC) and occur approximately monthly.
+
+Resource Information | Details
+:--- | :---			   
+Webinar Title | {{ page.title }}
+Date and Time | {{page.startdate | date: "%F" }} {{ page.time }}
+{{ page.presenters | size | pluralize: "Presenter", "Presenters" }} | {% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}
+Registration, Information, and Archives | 	<{{ production-url }}>	   
+
+**Webinars are free and open to the public, but advance registration is required through the Event website. Archives (recording, slides, Q&A) will be posted at the same link soon after the event, and all registrants will be notified.**
+
+{%if page.content -%}
+### Abstract
+
+{{ page.content | markdownify | strip }}
+{% endif %}
+
+{%- if page.presenters %}
+### {{ page.presenters | size | pluralize: "Presenter", "Presenters" }}
+{% for person in page.presenters %}
+- {{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}
+{%- endfor %}
+{%- endif %}
+
+{%- if page.presenters %}
+  {%- assign bios = 0 %}
+  {%- for person in page.presenters %}
+  {%- if person.bio and person.bio != "" %}
+    {%- assign bios = bios | plus: 1 %}
+  {%- endif %}
+{%- endfor %}
+
+{% if bios > 0 -%}
+### {{ bios | pluralize: "Presenter Bio", "Presenter Bios" }}
+{% for person in page.presenters %}
+{{ person.bio | markdownify }}
+{%- endfor %}
+{%- endif %}
+{%- endif %}
+
+{%- if page.presenters %}
+#### Contributed by {% for person in page.presenters -%}
+  {% if person.github-id %}[{{person.name }}]({{ site.github-url }}/{{ person.github-id }}){% else %}{{ person.name }}{% endif %}
+{%- unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}
+{%- endfor %}
+{% else %}
+#### Contributed by the BSSw Community
+{% endif %}
+
+<!---
+Publish: yes
+{%- if page.bsswio-topics %}
+Topics: {{ page.bsswio-topics | join: ", " }}
+{%- else %}
+Topics: online learning
+{%- endif %}
+--->

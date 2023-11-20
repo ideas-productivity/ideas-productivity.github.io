@@ -18,7 +18,7 @@ webinar-id: 67
 date: 2022-09-07T13:00-0400
 title: "Software Packaging"
 presenter-ids: [rogers-david]
-topics: ["configuration and build", "release and deployment", “online learning”]
+bsswio-topics: ["configuration and build", "release and deployment", “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIsfuCvqDorEmKKU_Dmtrut31OAjQiAeNg
 ecp-abbreviation: softwarepackaging
 qa-public-url: http://bit.ly/HPCBP-QA

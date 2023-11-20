@@ -18,7 +18,7 @@ webinar-id: 75
 date: 2023-06-14T13:00-0400
 title: "The OpenSSF Best Practices Badge Program"
 presenter-ids: [bartlett-roscoea]
-topics: ["software engineering", "software process improvement", “online learning”]
+bsswio-topics: ["software engineering", "software process improvement", “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItdeGqpjMiHOTBuRWq1cMHIACOiFHNhz0
 ecp-abbreviation: openssf
 qa-public-url: http://bit.ly/HPCBP-QA

@@ -26,7 +26,7 @@ webinar-id: 68
 date: 2022-10-12T13:00-0400
 title: "Investing in Code Reviews for Better Research Software"
 presenter-ids: [lestang-thibault, krzeminski-dominik, maggio-valerio]
-topics: ["peer code review", “online learning”]
+bsswio-topics: ["peer code review", “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItduCuqjgtHt8hGWwuKgpGRSxOgZA1QVc
 ecp-abbreviation: codereview
 qa-public-url: http://bit.ly/HPCBP-QA

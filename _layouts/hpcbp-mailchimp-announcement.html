@@ -1,0 +1,77 @@
+---
+layout: none
+---
+{% comment %}
+  Figure out where we are in the collection so that we can list the
+  three webinars immediately preceding this one.
+{% endcomment %}
+{% assign sorted = site.events-hpcbp | sort: "startdate" | reverse %}
+{% for webinar in sorted %}
+{% if webinar.startdate == page.startdate and webinar.title == page.title %}
+  {% assign current = forloop.index %}
+  {% break %}
+{% endif %}
+{% endfor %}
+{% assign hpcbp-tag = page.path | basename_without_extension %}
+<html>
+  <head>
+    <title>Webinar Announcement for Mailchimp</title>
+  </head>
+<body>
+<main>
+  <h1>Webinar Announcement for Mailchimp</h1>
+
+  <p><strong>{{ page.startdate | date: "%F" }}: </strong> {{ page.title }}</p>
+
+<h2>Create tag when importing audience</h2>
+<section style="border: 3px; border-style: solid; padding: 1em">
+  <p>{{ hpcbp-tag }}</p>
+</section>
+
+<h2>Campaign name</h2>
+<section style="border: 3px; border-style: solid; padding: 1em">
+  <p>{{ hpcbp-tag }}-announcement</p>
+</section>
+
+<h2>Email subject</h2>
+<section style="border: 3px; border-style: solid; padding: 1em">
+<p>Upcoming webinar: {{ page.title }}</p>
+</section>
+
+<h2>Title, Time and Date</h2>
+<section style="border: 3px; border-style: solid; padding: 1em; text-align: center">
+  <strong>{{ page.title }}<br>
+  {{ page.time }}<br>
+  {{ page.startdate | date: "%A %B %d, %Y" }}</strong>
+</section>
+
+<h2>Presenter and Description</h2>
+<section style="border: 3px; border-style: solid; padding: 1em">
+  <p><strong>{{ page.presenters | size | pluralize: "Presenter:", "Presenters:" }}</strong>
+  {% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}</p>
+
+  <strong>Description:</strong>
+  {% if page.description %}
+  {{ page.description | markdownify }}
+  {% else %}     
+  {{ content }}
+  {% endif %}
+</section>
+
+<h2>Registration Link</h2>
+<section style="border: 3px; border-style: solid; padding: 1em">
+  {{ page.registration-url }}
+</section>
+
+<h2>Past Webinars</h2>
+<section style="border: 3px; border-style: solid; padding: 1em">
+  <ul>
+  {% for webinar in sorted offset:current limit:3 %}
+    <li><a href="{{ webinar.url | replace: '/internal/events-hpcbp', '/events' }}">{{ webinar.title }}</a> ({{ webinar.startdate | date: "%B, %Y" }})</li>
+  {% endfor %}
+  </ul>
+</section>
+
+</main>
+</body>
+</html>

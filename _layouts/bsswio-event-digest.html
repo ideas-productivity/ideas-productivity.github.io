@@ -1,0 +1,30 @@
+---
+layout: none
+---
+<html>
+  <head>
+    <title>Webinar Entry for BSSw Monthly Digest</title>
+  </head>
+<body>
+<main>
+  <h1>Webinar Entry for BSSw Monthly Digest</h1>
+
+  <p><strong>{{ page.startdate | date: "%F" }}: </strong> {{ page.title }}</p>
+
+  <section style="border: 3px; border-style: solid; padding: 1em">
+<p>Webinar: {{ page.title }}</p>
+{{ page.startdate | date: "%A %B %d, %Y"}}<br/>
+{% if page.location %}{{ page.location | capitalize }}{% else %}Online{% endif %}, in the webinar series <em>Best Practices for HPC Software Developers</em></p>
+
+{% if page.description %}
+{{ page.description | markdownify }}
+{% else %}     
+{{ content }}
+{% endif %}
+
+<p><a href="{{ page.url | replace: "/internal/events-hpcbp-bsswio-digest", "/events" }}" target="_blank">Event Information &gt;</a></p>
+</section>
+
+</main>
+</body>
+</html>

@@ -21,6 +21,7 @@ group :jekyll_plugins do
   gem "jekyll-redirect-from"
   gem 'jekyll-algolia', '~> 1.0'
   gem "jekyll-sitemap"
+  gem 'jekyll_basename_dirname'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

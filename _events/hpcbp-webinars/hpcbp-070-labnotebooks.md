@@ -18,7 +18,7 @@ webinar-id: 70
 date: 2022-12-14T13:00-0500
 title: "Lab Notebooks for Computational Mathematics, Sciences &amp; Engineering"
 presenter-ids: [oneal-jared]
-topics: ["documentation",  “online learning”]
+bsswio-topics: ["documentation",  “online learning”]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItdeqppz8oGpALQTX4A5OUekOd-nSjAw0
 ecp-abbreviation: labnotebooks
 qa-public-url: http://bit.ly/HPCBP-QA
