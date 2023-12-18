@@ -6,19 +6,35 @@
   */
 
 .nav-sidebar {
-	grid-column: 1 / 3;
-	height: 0;
+	grid-column: 1 / -1;
+	height: auto;
+	position: relative;
+	z-index: 10000;
+	@include stack(sm);
 	overflow: visible;
+	margin-top: -3rem;
+	@include respond-to(m){
+		grid-column: 1 / 3;
+		height: 0;
+		margin-bottom: 0 !important;
+		margin-top: auto;
+	}
 
 	hr {
 		background-color: #DDE6E7;
 		border: none;
 		height: 1px;
-		margin-bottom: 6px;
+		margin-bottom: 4px;
+		@include respond-to(m){
+			margin-bottom: 6px;
+		}
 	}
 
 	hr.top {
-		margin-bottom: 8px;
+		margin-bottom: 4px;
+		@include respond-to(m){
+			margin-bottom: 8px;
+		}
 	}
 
 	ul,
@@ -26,6 +42,10 @@
 		list-style: none;
 		margin-left: 0;
 		padding-left: 0;
+		@include typestyle($sans-xs-reg);
+		@include respond-to(m){
+			@include typestyle($sans-sm-reg);
+		}
 	}
 
 	li h4 {
@@ -33,13 +53,16 @@
 	}
 
 	li a {
-		@include stack(xs);
 		color: color(blue, XXX);
 		text-decoration: none;
 		display: inline-block;
 		position: relative;
 		width: 100%;
-		height: 100%
+		height: 100%;
+		padding-bottom: 6px;
+		@include respond-to(m){
+			@include stack(xs);
+		}
 	}
 
 	li a.current {
