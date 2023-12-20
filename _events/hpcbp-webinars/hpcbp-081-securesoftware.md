@@ -15,16 +15,16 @@ bsswio-topics: ["software engineering", "software process improvement", "online 
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJIscu6rrzkrGa1guOIECwVgvYKCiPLJ1Ww
 ecp-abbreviation: securesoftware
 #
-# artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: NbasGUOJ4qQ
-#   - label: Slides
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-080-ideas-v05.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-080-ideas-qa.pdf
+artifacts:
+  - label: Recording
+    format: YouTube
+    yt-video-id: SEu0zX7t12Y
+  - label: Slides
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-081-securesoftware.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-081-securesoftware-qa.pdf
 #
 # Items that change rarely
 #
