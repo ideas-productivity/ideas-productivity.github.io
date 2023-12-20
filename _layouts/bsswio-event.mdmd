@@ -20,7 +20,8 @@ Resource Information | Details
 Webinar Title | {{ page.title }}
 Date and Time | {{page.startdate | date: "%F" }} {{ page.time }}
 {{ page.presenters | size | pluralize: "Presenter", "Presenters" }} | {% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}
-Registration, Information, and Archives | 	<{{ production-url }}>	   
+Registration, Information, and Archives | 	<{{ production-url }}>
+Presentation Language | English	   
 
 **Webinars are free and open to the public, but advance registration is required through the Event website. Archives (recording, slides, Q&A) will be posted at the same link soon after the event, and all registrants will be notified.**
 
