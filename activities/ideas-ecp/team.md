@@ -242,6 +242,12 @@ alumni:
 				title6 = t6
         blurb6 = b6
         source6 = s6
+        cover1 = true
+        cover2 = true
+        cover3 = true
+        cover4 = true
+        cover5 = true
+        cover6 = true
 			%}
 			{% assign firstpass = false %}
 		{% else %}
@@ -264,6 +270,12 @@ alumni:
 				title6 = t6
         blurb6 = b6
         source6 = s6
+        cover1 = true
+        cover2 = true
+        cover3 = true
+        cover4 = true
+        cover5 = true
+        cover6 = true
 			%}
 		{% endif %}
 		{% assign t1 = nil %}
