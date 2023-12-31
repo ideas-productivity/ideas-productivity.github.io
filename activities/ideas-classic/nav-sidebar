@@ -2,7 +2,7 @@
 <!-- ---------------------------------------------------------------------- -->
 
 {% include _layout/nav-sidebar.html
-  label1  = "About"
+  label1  = "Overview"
   url1    = "/activities/ideas-classic"
 
   label2  = "Use Cases"

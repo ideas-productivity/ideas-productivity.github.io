@@ -17,7 +17,7 @@ redirect_from:
 <!-- Sidebar Nav -->
 <!-- ---------------------------------------------------------------------- -->
 
-{% include_relative nav-sidebar current="About" %}
+{% include_relative nav-sidebar current="Overview" %}
 
 
 <!-- Content -->
