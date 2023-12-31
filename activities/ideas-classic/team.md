@@ -221,16 +221,16 @@ The structure of the multi-institutional IDEAS project is shown in the diagram a
 %}
 
 {% 	include list-3x.html
-		group-title = "IDEAS Project Alumni"
+		group-title = "Alumni"
 		group-id = "alumni"
 
-		title1 = "Katie Antypas"
-		title2 = "Jed Brown"
-		title3 = "Irina Demeshko"
+		title1 = "Katie Antypas (LBNL)"
+		title2 = "Jed Brown (ANL)"
+		title3 = "Irina Demeshko (SNL)"
 %}
 
 {% 	include list-3x.html
-		title1 = "Christos Kartsakalis"
-		title2 = "Kerstin Kleese-Van Dam"
-		title3 = "Sri Hari Krishna Narayanan"
+		title1 = "Christos Kartsakalis (ORNL)"
+		title2 = "Kerstin Kleese-Van Dam (PNNL)"
+		title3 = "Sri Hari Krishna Narayanan (ANL)"
 %}
