@@ -2,7 +2,7 @@
 layout: page
 #
 title: "Team"
-blurb: "The IDEAS-ECP team includes members from six national laboratories, one university, and five DOE computing facilities."
+blurb: "The IDEAS-ECP team includes members from six national laboratories, one university, and five DOE computing facilities"
 #
 # This will redirect old links to the Wordpress site
 redirect_from: 
@@ -165,9 +165,7 @@ alumni:
 
 <!-- Sidebar Nav -->
 
-{% comment %}
 {% include_relative nav-sidebar current="Team" %}
-{% endcomment %}
 
 <!-- Content -->
 
@@ -224,7 +222,7 @@ alumni:
 	{% if i == 0 or forloop.last %}
 		{% if firstpass %}
 			{% include list-6x.html
-				group-title = "Team Members"
+				group-title = "Active Members"
 				group-id = "alumni"
 				title1 = t1
         blurb1 = b1

@@ -1,0 +1,12 @@
+<!-- Sidebar Nav for ideas-classic -->
+<!-- ---------------------------------------------------------------------- -->
+
+{% include _layout/nav-sidebar.html
+  label1  = "Overview"
+  url1    = "/activities/ideas-ecp"
+
+  label2  = "Team"
+  url2    = "/activities/ideas-ecp/team"
+
+  current=include.current
+%}
