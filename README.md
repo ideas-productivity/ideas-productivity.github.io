@@ -77,14 +77,14 @@ Plan: move into production at https://ideas-productivity.org/ in November 2023
 
 #### Team pages
 
-"Team pages" typically include a list of members of the project team, their affiliations, project roles, and perhaps additional information.  Former team members are often recognized as "Alumni" and listed without photos.  Examples include the [IDEAS-Classic team page](/activities/ideas-classic/team) and the [IDEAS-ECP team page](/activities/ideas-ecp/team).
+"Team pages" typically include a list of members of the project team, their affiliations, project roles, and perhaps additional information.  Former team members are often recognized as "Alumni" and listed without photos.  Examples include the [IDEAS-Classic team page](https://ideas-productivity.org/activities/ideas-classic/team) and the [IDEAS-ECP team page](https://ideas-productivity.org/activities/ideas-ecp/team).
 
 * Use the `list-6x.html` include file for a photo gallery.  This provides a 6-column display.  Multiple includes can be used to handle more than 6 people.
 * Use the `list_-x.htm` include file for a text-only list.  This provides a 3-column display.  Multiple includes can used to handle more than 3 people.
 * The `group-title` and optionally `group-blurb` arguments should be used on the *first* include in a group to provide the heading and optionally a brief description.  Subsequent includes in the block should not use any of the `group-*` arguments.
 * Participant names and short affiliations (e.g., "Firstname Lastname (XNL)") should appear as the `title*` arguments to the include.
 * Information about project roles (e.g., "Institutional PI" or "Computing Facility Liaison") can be included using the `blurb*` arguments.  These should be succinct and should be in plain text (not bold or italicized).
-* Either kind of listing (`list-6x` or `list-3x`) can be automated, listing the relevant information in the YAML metadata and processing it in the body using Jekyll (Liquid) scripting.  See the [IDEAS-ECP team page](/activities/ideas-ecp/team) for an example (and code to copy).
+* Either kind of listing (`list-6x` or `list-3x`) can be automated, listing the relevant information in the YAML metadata and processing it in the body using Jekyll (Liquid) scripting.  See the IDEAS-ECP team page [source code](https://github.com/ideas-productivity/ideas-productivity.github.io/blob/main/activities/ideas-ecp/team.md) for an example (and code to copy).
 * For the page `title``, simply using "Team" is preferred
 * It may be appropriate to include a `blurb` (subtitle) that briefly summarizes the institutional membership of the project team (e.g,, "The IDEAS-Classic team includes members from seven national laboratories, one university, and five DOE computing facilities").  As per the guidelines above, blurbs should *not* end with a period.
 * In choosing headings for the various blocks, be sensitive to the repetition of words.  If you're on the "Team" page, try to avoid repeating the word "Team" in every heading.  Likewise, if it is clear that this is the IDEAS-ECP team page (perhaps through the page subtitle or other indications), the project name probably doesn't need to be repeated in the headings.
