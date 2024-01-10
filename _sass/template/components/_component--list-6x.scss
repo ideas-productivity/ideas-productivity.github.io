@@ -102,3 +102,18 @@
 p + .list-6x {
 	margin-top: bl(12); //48px
 }
+
+
+.nav-sidebar ~ .list-6x {
+	@include respond-to(m){
+		@include grid-child($col-start:3, $cols:9);
+		.item1,
+		.item2,
+		.item3,
+		.item4,
+		.item5,
+		.item6 {
+	  	grid-column: span 3;
+		}	
+	}
+}
