@@ -105,7 +105,7 @@ An event can be considered to be past iff both startdate and enddate are in the 
 					  {% if event.subevents %}
 					  	<ul class="subevents">
 						  	{% for subslug in event.subevents %}
-						  	{% assign sub = site.events | where: 'slug', subslug %}
+						  	{% assign sub = include.events | where: 'slug', subslug %}
 						  		<li>
 						  			<a href="{{ sub[0].url }}" class="subevent-link">
 										{% if sub[0].title-type %}

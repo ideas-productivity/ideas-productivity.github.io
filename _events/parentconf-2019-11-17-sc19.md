@@ -18,6 +18,6 @@ artifacts:
 Events (co-)organized by IDEAS at SC19.
 
 {% include _events/schedule.html
-   events = page.subevents
+   subevents = page.subevents
    title = "Event Schedule"
 %}

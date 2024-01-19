@@ -1,3 +1,4 @@
+{% assign my-events = include.events | default: site[page.collection] %}
 <div class="schedule">
 
 	<!-- List Markup -->
@@ -12,8 +13,8 @@
 
 			  
   	<ul class="subevents">
-	  	{% for slug in include.events %}
-	  	{% assign sub = site.events | where: 'slug', slug %}
+	  	{% for slug in include.subevents %}
+	  	{% assign sub = my-events | where: 'slug', slug %}
 		  {% if event.link-id %}
 		  <li id="{{ sub[0].link-id }}">
 		  {% else %}
