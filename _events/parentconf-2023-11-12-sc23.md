@@ -9,7 +9,7 @@ location: Denver, Colorado
 #
 subevents:
   - bsswt-2023-11-12-sc
-  - 20231115-sc23-swe-cse-hpc-bof
+  - swe-cse-bof-2023-11-sc23
 #
 artifacts:
   - label: Conference Website

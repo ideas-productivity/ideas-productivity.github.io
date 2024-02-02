@@ -7,7 +7,7 @@ type: Minisymposium
 series: 
   - "Technical Sessions and Meetings"
 parent-event-name: SIAM CSE21
-parent-event-file: 20210301-cse21-conference
+parent-event-file: parentconf-2021-03-01-cse21
 
 organizers:
   - name: Lois Curfman McInnes
@@ -31,7 +31,5 @@ artifacts:
 ---
 
 A minisymposium in the SIAM CSE21 conference organized by Lois Curfman McInnes (Argonne National Laboratory) and Stuart Yates (Swiss National Supercomputing Center)
-
-# Description
 
 Software is the key crosscutting technology that enables advances in mathematics, computer science, and domain-specific science and engineering to achieve robust simulations and analysis for predictive science, engineering, and other research fields. While software is becoming more complex due to multiphysics and multiscale modeling, the coupling of data analytics, and disruptive changes in computer hardware (due to increases in typical system scale and heterogeneity, including GPUs and additional alternative architectures), software itself has not traditionally received focused attention in the computational science and engineering (CSE) community. The presenters in this minisymposium will address work that addresses growing technical and social challenges in software productivity, quality, and sustainability, and thereby helps software fulfill its critical role as a cornerstone of long-term CSE collaboration.

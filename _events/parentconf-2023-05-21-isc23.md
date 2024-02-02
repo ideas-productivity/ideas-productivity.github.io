@@ -9,6 +9,7 @@ location: Hamburg, Germany, and online
 #
 subevents:
   - bsswt-2023-05-21-isc
+  - swe-cse-bof-2023-05-isc23
 #
 artifacts:
   - label: Conference Series

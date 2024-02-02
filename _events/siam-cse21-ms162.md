@@ -10,7 +10,7 @@ series:
   - "Technical Sessions and Meetings"
 
 parent-event-name: SIAM CSE21
-parent-event-file: 20210301-cse21-conference
+parent-event-file: parentconf-2021-03-01-cse21
 
 organizers:
   - name: Anshu Dubey
@@ -39,7 +39,5 @@ artifacts:
 ---
 
 A two-part minisymposium in the SIAM CSE21 conference organized by Anshu Dubey (Argonne National Laboratory).
-
-## Description
 
 Performance portability is a critical issue for the Exascale Computing Project because of nontrivial architectural differences between machines available today and those expected at exascale and beyond. Obtaining good performance on current machines (e.g., Summit) is no guarantee that modifications and developments so far will meet the requirements at exascale. However, many ECP teams in Application Development (AD) and Software Technology (ST) are working toward performance portability by investing in revised software design and refactoring, while leveraging advances in programming models, runtimes, and development tools. Given continued disruptive architectural changes and heterogeneity, and given that the ECP community must promote dialogue about various teams’ findings and experiences we organized a series of performance portability panels organized around common themes of algorithms and data locality in various classes of applications, tools, and libraries. We propose a minisymposium to disseminate the discussion and analysis from the panels to the wider computational science community.

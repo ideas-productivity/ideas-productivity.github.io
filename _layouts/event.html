@@ -133,15 +133,22 @@
       {% endif %}
 
       {% comment %}
-                Incorporate content from event file
+                Incorporate description or content from event file
+
+                The general expectation is that an event will have *either* 
+                a description in metadata *or* page content that takes its place.
+
+                For events that are used on multiple websites, it may be useful to
+                have a description for use on the i-p.o site and page content which
+                is used by the other site (it may also use the description).
       {% endcomment %}
 
       {% if page.description %}
       {{ page.description | markdownify }}
-      {% else %}     
+      {% else %}
       {{ content }}
       {% endif %}
-
+    
       {% comment %}
               Show registration link
 

@@ -9,6 +9,7 @@ location: Denver, Colorado
 #
 subevents:
   - bsswt-2017-11-13-sc
+  - swe-cse-bof-2017-11-sc17
 #
 artifacts:
   - label: Conference Website

@@ -9,7 +9,7 @@ location: Frankfurt, Germany
 #
 subevents:
   - bsswt-2018-06-24-isc
-
+#
 artifacts:
   - label: Conference Series
     format: website

@@ -9,6 +9,7 @@ location: Salt Lake City, Utah
 #
 subevents:
   - bsswt-2016-11-14-sc
+  - swe-cse-bof-2016-11-sc16
 #
 artifacts:
   - label: Conference Website

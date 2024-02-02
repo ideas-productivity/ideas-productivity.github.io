@@ -8,6 +8,7 @@ type: "Conference"
 location: Hamburg, Germany, and online
 subevents:
   - bsswt-2022-05-29-isc
+  - swe-cse-bof-2022-05-isc22
 #
 artifacts:
   - label: Conference Series

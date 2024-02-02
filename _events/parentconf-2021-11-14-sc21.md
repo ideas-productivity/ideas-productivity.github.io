@@ -9,6 +9,7 @@ location: St. Louis, Missouri and online
 #
 subevents:
   - bsswt-2021-11-15-sc
+  - swe-cse-bof-2021-11-sc21
   - swr012-sustainablehybrid
 
 #

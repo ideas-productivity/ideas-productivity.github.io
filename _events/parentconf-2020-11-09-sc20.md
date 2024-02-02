@@ -9,6 +9,7 @@ location: online
 #
 subevents:
   - bsswt-2020-11-10-sc
+  - swe-cse-bof-2020-11-sc20
 #
 artifacts:
   - label: Conference Website

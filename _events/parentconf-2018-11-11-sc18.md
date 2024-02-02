@@ -9,6 +9,7 @@ location: Dallas, Texas
 #
 subevents:
   - bsswt-2018-11-12-sc
+  - swe-cse-bof-2018-11-sc18
 #
 artifacts:
   - label: Conference Website

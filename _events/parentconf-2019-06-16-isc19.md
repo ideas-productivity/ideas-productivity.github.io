@@ -9,6 +9,7 @@ location: Frankfurt, Germany
 #
 subevents:
   - bsswt-2019-06-19-isc
+  - swe-cse-bof-2019-06-isc19
 #
 artifacts:
   - label: Conference Series
