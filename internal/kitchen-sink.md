@@ -102,7 +102,7 @@ The *quick brown fox jumps over the lazy dog*. The quick brown fox jumps over th
 {% 	include text-download.html 
 		title = "Test Download"
 		blurb = "The quick brown fox jumps over the lazy dog."
-		url = "https://science.osti.gov/grants/FOAs/-/media/grants/pdf/foas/2023/DE-FOA-0003177.pdf"
+		url = "https://science.osti.gov/grants/FOAs/FOAs/2024/-/media/grants/pdf/foas/2023/DE-FOA-0003177-000001.pdf"
 		file-type = "PDF" 
 		file-size = "100 kb"
 %}
