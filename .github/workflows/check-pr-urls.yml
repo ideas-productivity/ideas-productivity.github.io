@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:    
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - id: files
 #      uses: jitterbit/get-changed-files@v1 ### Hasn't been updated to Node16
-      uses: masesgroup/retrieve-changed-files@v2
+      uses: masesgroup/retrieve-changed-files@v3
       with:
         format: 'csv'
 
@@ -31,7 +31,7 @@ jobs:
         path: ./.github/workflows/exclude-patterns.txt
 
     - name: urls-checker
-      uses: urlstechie/urlchecker-action@0.0.33
+      uses: urlstechie/urlchecker-action@0.0.34
       with:
         # Use common exclude list read in above
         exclude_urls: ${{ steps.ex-urls.outputs.content }}
