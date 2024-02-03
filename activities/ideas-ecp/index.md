@@ -10,6 +10,9 @@ redirect_from:
   - /ideas-ecp
   - /ideas-ecp/team/
 ---
+<!-- Sidebar Nav -->
+
+{% include_relative nav-sidebar current="Overview" %}
 
 {% 	include media-heroimg-2.html 
 	  source = "hero-ecp.png"
@@ -43,6 +46,8 @@ Our ECP-supported work includes activities that are specifically focused on soft
 
 {% include list-4x_img.html
 	group-title = "Team"
+	group-linktext = "Learn More"
+	group-linkurl = "team"
 	group-blurb = "The IDEAS-ECP team includes participants from the following institutions."
 
 	source1 = "logos/institutions/argonne.png"
