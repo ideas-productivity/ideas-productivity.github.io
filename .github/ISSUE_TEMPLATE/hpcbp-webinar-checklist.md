@@ -12,13 +12,14 @@ assignees: ''
   - [ ] webinar `startdate`
   - [ ] webinat `time`
   - [ ] webinar `title`
+  - [ ] webinar abstract
   - [ ] presenter name(s)
   - [ ] presenter affiliation(s)
   - [ ] presenter bio(s)
   - [ ] presenter github id(s)
   - [ ] `registration-url`
-  - [ ] `ecp-abbreviation`
-  - [ ] webinar abstract
+  - [ ] `qa-public-url`
+  - [ ] `survey public-url`
   - [ ] identify appropriate `bsswio-topics`
 - [ ] Technical editor checks webinar abstract
 - [ ] Create event in `_events-drafts`
