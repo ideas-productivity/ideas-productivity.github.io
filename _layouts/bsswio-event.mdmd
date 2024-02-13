@@ -9,11 +9,22 @@ layout: none
 - Event Website: <{{ production-url }}>
 - Organizers: The IDEAS Productivity Project
 
+{% comment %}
+  A subtle but important change to the attribution, post-ECP.
+{% endcomment %}
+{% if page.startdate < "2024-01-01" %}
 This event is a part of the "Best Practices for HPC Software
 Developers" webinar series, produced by the IDEAS Productivity
 Project. The HPC Best Practices webinars address issues faced by
 developers of computational science and engineering (CSE) software on
 high-performance computers (HPC) and occur approximately monthly.
+{% else %}
+This event is a part of the "Best Practices for HPC Software
+Developers" webinar series, produced by the [IDEAS Productivity](https://ideas-productivity.org/)
+family of projects. The HPC Best Practices webinars address issues faced by
+developers of computational science and engineering (CSE) software on
+high-performance computers (HPC) and occur approximately monthly.
+{% endif %}
 
 Resource Information | Details
 :--- | :---			   
