@@ -43,7 +43,8 @@ body {
 .layout-wrapper h6,
 .layout-wrapper p,
 .layout-wrapper ul,
-.layout-wrapper ol {
+.layout-wrapper ol,
+.layout-wrapper code {
 	grid-column: 1 / -1;
 	@include respond-to(m){
 		grid-column: 3 / 11;
