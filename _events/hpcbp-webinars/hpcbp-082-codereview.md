@@ -2,7 +2,7 @@
 startdate: "2024-03-20"
 time: "01:00 pm - 02:00 pm EDT" # Ensure that time zone is correct with respect to standard/daylight time
 #
-title: "Code Review for Scientific Software - experiences building an online tutorial"
+title: "Code Review for Scientific Software: Experiences building an online tutorial"
 #
 presenters:
   - name: Helen Kershaw
@@ -38,4 +38,4 @@ series:
 activities:
   - "COLABS"
 ---
-[code-review.org](https://code-review.org) is an online tutorial for code review made possible by the [Better Scientific Software Fellowship](https://bssw.io/fellowship). Code review is a skill. You can break it down, you can practice, and you can get better at it. The difficult thing is you are often learning a bunch of other skills at the same time. Scientists are often working on a new scientific problem while trying to learn git, GitHub, a programming language... all while someone ‘criticizes’ their code. Equally, scientific software developers may start work in a domain they know little about. It can be very difficult to separate criticism of the code from criticism of the person. Reviewing is hard - you really have to take into account how to communicate constructive and actionable criticism. [code-review.org](https://code-review.org) aims to provide a way to practice reviewing in a no-consequence environment using the tutorial. Experience with code review from the NCAR Software Engineering Assembly will be presented, including the positive and negative effects of code review.
+[Code-review.org](https://code-review.org) is an online tutorial for code review made possible by the [Better Scientific Software Fellowship](https://bssw.io/fellowship). Code review is a skill. You can break it down, you can practice, and you can get better at it. The difficulty is you are often learning a bunch of other skills at the same time. Scientists are often working on a new scientific problem while trying to learn git, GitHub, a programming language, etc., all while someone ‘criticizes’ their code. In addition, scientific software developers may start work in a new and unfamiliar domain. It can be very difficult to separate criticism of the code from criticism of the person. Reviewing is hard; people truly need to take into account how to communicate constructive and actionable criticism. [Code-review.org](https://code-review.org) aims to provide a way to practice reviewing in a no-consequence environment using the tutorial. Experience with code review from the NCAR Software Engineering Assembly will be presented, including the positive and negative effects of code review.
