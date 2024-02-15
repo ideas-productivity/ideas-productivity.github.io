@@ -26,12 +26,12 @@ layout: none
 
 <h2>Audience tag for importing audience and sending message</h2>
 <section style="border: 3px; border-style: solid; padding: 1em">
-  <p>{{ hpcbp-tag }}</p>
+  <p>{{ page.startdate | date: "%Y-%m" }}-{{ hpcbp-tag }}</p>
 </section>
 
 <h2>Campaign name</h2>
 <section style="border: 3px; border-style: solid; padding: 1em">
-  <p>{{ hpcbp-tag }}-followup</p>
+  <p>{{ page.startdate | date: "%Y-%m" }}-{{ hpcbp-tag }}-followup</p>
 </section>
   
 <h2>Email subject</h2>
