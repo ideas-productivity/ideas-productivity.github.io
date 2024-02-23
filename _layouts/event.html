@@ -56,8 +56,14 @@
     {% endif %}
   {% endunless %}
 
+  {% assign my-eyebrow = "" %}
+  {% if page.type %}
+    {% capture my-eyebrow %}{{ page.type }}{% endcapture %}
+  {% endif %}
+  
   <main class="page-content layout-wrapper" aria-label="Content">
-    {%- include _layout/hero-page.html 
+    {%- include _layout/hero-page.html
+      eyebrow = my-eyebrow 
       title = my-title
       blurb = my-blurb
       meta1-name = my-meta1-name

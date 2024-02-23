@@ -22,6 +22,9 @@ available parameters:
 
 
 <div class="hero-page">
+	{% if include.eyebrow %}
+		<small class="meta">{{ include.eyebrow }}</small>
+	{% endif %}
 	<h1>{{ include.title }}</h1>
 
 	{% if include.blurb %}
