@@ -71,9 +71,6 @@
 				{% assign my-title = event.title %}
 			{% endif %}
 
-				{% if event.venue %}
-				  {% assign my-title = my-title | append: " @ " | append: event.venue %}
-				{% endif %}
 					<a href="{{ event.url }}" class="event-link">
 					  <h2 class="event-title">{{ my-title }}</h2>
 					  <p class="event-date">
@@ -91,12 +88,18 @@
 						<small class="event-year">{{ event.startdate | date:"%Y" }}</small>
 						<small class="event-type">{{ event.type }}</small>
 					</a>
-				  {% if event.series %}
-							{% assign length = event.series | size %}
-					  	<small class="event-series">Series: 
-							{{ event.series | join: ", " }}
-					  	</small> 
-					  {% endif %}
+					{% assign series = nil %}
+					{% if event.series %}
+						{% assign series = event.series | join: ", " %}
+						{% assign series = series | prepend: "Series: " %}
+					{% endif %}
+					{% assign venue = nil %}
+					{% if event.venue %}
+						{% assign venue = "Venue: "" | append: event.venue %}
+					{% endif %}
+					{% if series or venue %}
+					  	<small class="event-series">{{ series }} {{ venue }}</small> 
+					{% endif %}
 				</li>
 			{% endfor %}
 		</ul>
