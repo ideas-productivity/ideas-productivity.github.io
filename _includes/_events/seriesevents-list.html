@@ -98,7 +98,10 @@
 						{% assign venue = "Venue: "" | append: event.venue %}
 					{% endif %}
 					{% if series or venue %}
-					  	<small class="event-series">{{ series }} {{ venue }}</small> 
+					  	<div class='event-series_venue'>
+					  		<small class="event-series">{{ series }}</small>
+					  		<small class='event-venue'>{{ venue }}</small>
+					  	</div>
 					{% endif %}
 				</li>
 			{% endfor %}

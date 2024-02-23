@@ -95,12 +95,21 @@ An event can be considered to be past iff both startdate and enddate are in the 
 								{{ event.type }}
 							</small>
 						</a>
-						{% if event.series %}
-							{% assign length = event.series | size %}
-					  	<small class="event-series">Series: 
-							  {{ event.series | join: ", " }}
-					  	</small> 
-					  {% endif %}
+						{% assign series = nil %}
+					{% if event.series %}
+						{% assign series = event.series | join: ", " %}
+						{% assign series = series | prepend: "Series: " %}
+					{% endif %}
+					{% assign venue = nil %}
+					{% if event.venue %}
+						{% assign venue = "Venue: "" | append: event.venue %}
+					{% endif %}
+					{% if series or venue %}
+					  	<div class='event-series_venue'>
+					  		<small class="event-series">{{ series }}</small>
+					  		<small class='event-venue'>{{ venue }}</small>
+					  	</div>
+					{% endif %}
 
 					  {% if event.subevents %}
 					  	<ul class="subevents">
