@@ -83,23 +83,21 @@ limit (default: 3)
 						{{ event.type }}
 					</small>
 				</a>
-				
-
-			  {% assign series = nil %}
-				{% if event.series %}
-					{% assign series = event.series | join: ", " %}
-					{% assign series = series | prepend: "Series: " %}
-				{% endif %}
-				{% assign venue = nil %}
-				{% if event.venue %}
-					{% assign venue = "Venue: "" | append: event.venue %}
-				{% endif %}
-				{% if series or venue %}
-				  	<div class='event-series_venue'>
-				  		<small class="event-series">{{ series }}</small>
-				  		<small class='event-venue'>{{ venue }}</small>
-				  	</div>
-				{% endif %}
+				{% assign series = nil %}
+					{% if event.series %}
+						{% assign series = event.series | join: ", " %}
+						{% assign series = series | prepend: "Series: " %}
+					{% endif %}
+					{% assign venue = nil %}
+					{% if event.venue %}
+						{% assign venue = "Venue: "" | append: event.venue %}
+					{% endif %}
+					{% if series or venue %}
+					  	<div class='event-series_venue'>
+					  		<small class="event-series">{{ series }}</small>
+					  		<small class='event-venue'>{{ venue }}</small>
+					  	</div>
+					{% endif %}
 
 			  {% if event.subevents %}
 				  <ul class="subevents">
