@@ -72,14 +72,14 @@ Want to request another topic?  Want to give a webinar?  Email us at [IDEASProdu
 
 <!-- Upcoming Event List -->
 
-{% 	include _events/seriesevents-list-upcoming.html 
+{% 	include _events/seriesevents-list.html 
     series = page.series
     title = "Upcoming Events"
 %}
 
 <!-- Past Event List -->
 
-{% 	include _events/seriesevents-list-past.html 
+{% 	include _events/seriesevents-list.html past=true 
     series = page.series
     title = "Past Events"
 %}

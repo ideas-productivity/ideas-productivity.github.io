@@ -31,14 +31,14 @@ Performance portability is a critical issue for the Exascale Computing Project (
 
 <!-- Upcoming Event List -->
 
-{% 	include _events/seriesevents-list-upcoming.html 
+{% 	include _events/seriesevents-list.html 
     series = page.series
     title = "Upcoming Events"
 %}
 
 <!-- Past Event List -->
 
-{% 	include _events/seriesevents-list-past.html 
+{% 	include _events/seriesevents-list.html past=true 
     series = page.series
     title = "Past Events"
 %}

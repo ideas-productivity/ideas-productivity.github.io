@@ -4,14 +4,37 @@
 	adapted from: https://blog.rafael.picanco.nom.br/2015/09/06/jekyll-pagination-on-github-pages-without-plugins.html 
 	-->
 
+	{% comment %}
+	Interpreting dates
+	
+	s = startdate, e = enddate, t = today
+	situation			result		inequalities	enddate absent
+	s--e t				past		s < t, e < t	s < t
+	t s--e				upcoming	s >= t, e >= t	s >=t
+	s-t-e (in progress)	upcoming	s < t, e >= t	impossible
+	
+	An event can be considered to be past iff both startdate and enddate are in the past. If there is an endate we have to check it to be certain the event is not in progress (which we interpret as upcoming because there are still some dates upcoming).
+	{% endcomment %}
+
 	<!-- Query the events -->
 	{% assign series = include.series %}
 	{% assign today = site.time | date:"%Y-%m-%d" %}
-	{% assign upcoming = site.events | where_exp: "item", "item.startdate >= today or item.enddate >= today" %}
-	{% assign sorted = upcoming | where_exp: "item", "item.series contains series" | sort:"startdate"  %}
-	
+
+	{% if include.past and include.past == true %}
+		{% assign enddate = site.events | where_exp: "item", "item.startdate < today and item.enddate < today" %}
+		{% assign noenddate = site.events | where_exp: "item", "item.enddate == nil and item.startdate < today" %}
+		{% assign sorted = enddate | concat: noenddate | where_exp: "item", "item.series contains series" | sort:"startdate" | reverse %}
+	{% else %}
+		{% assign upcoming = site.events | where_exp: "item", "item.startdate >= today or item.enddate >= today" %}
+		{% assign sorted = upcoming | where_exp: "item", "item.series contains series" | sort:"startdate"  %}
+	{% endif %}
+
 	<!-- List Markup -->
-	<div class="eventlist-wrapper">
+	{% if include.past and include.past == true %}
+		<div class="eventlist-wrapper">
+	{% else %}
+		<div class="eventlist-wrapper" id="js-upcoming-events">
+	{% endif %}
 
 		{% if include.title %}
 			<div class="list-title">
@@ -20,7 +43,7 @@
 				{% if include.group-linktext %}
 				<a class="group-link" href="{{ include.group-linkurl }}">
 					{{ include.group-linktext }}
-				</a>	
+				</a>
 				{% endif %}
 				<hr>
 			</div>
@@ -49,7 +72,7 @@
 			{% endif %}
 
 				{% if event.venue %}
-				{% assign my-title = my-title | append: " @ " | append: event.venue %}
+				  {% assign my-title = my-title | append: " @ " | append: event.venue %}
 				{% endif %}
 					<a href="{{ event.url }}" class="event-link">
 					  <h2 class="event-title">{{ my-title }}</h2>
@@ -81,6 +104,8 @@
 		<p>No events found</p>
 		{% endif %}
 
+		<div class="pagination-wrapper">
+			<ul id="js-pagination" class="pagination"></ul>
+		</div>
 	</div>
-
 </div>
