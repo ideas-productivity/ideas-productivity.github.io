@@ -21,7 +21,7 @@ redirect_from:
 
 # Elements of an Extreme-scale Scientific Software Ecosystem
 
-{% include media-img.html source = "ideas-classic/FutureAppBigPicture-e1456170703257-300x214.jpg" %}
+{% include media-img.html source = "ideas-classic/FutureAppBigPicture.jpg" %}
 
 Rapid, efficient production of high-quality, sustainable applications is best accomplished using a rich collection of reusable libraries, tools, lightweight frameworks, and defined software methodologies, developed by a community of scientists who are striving to identify, adapt, and adopt best practices in software engineering.
 
