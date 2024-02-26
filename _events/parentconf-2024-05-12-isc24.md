@@ -9,7 +9,7 @@ location: Hamburg, Germany
 #
 subevents:
   - bsswt-2024-05-12-isc
-#  - swe-cse-bof-2023-05-isc23
+  - rse-pathways-bof-2024-05-isc24
 #
 artifacts:
   - label: Conference Series
