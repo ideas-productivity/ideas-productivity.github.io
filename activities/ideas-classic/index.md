@@ -83,7 +83,7 @@ Deeper understanding and answers to important science questions for these use ca
 The IDEAS Project is a unique collaboration between the DOE Office of Advanced Scientific Computing Research (ASCR) and the Office of Biological and Environmental Research (BER).  This partnership ensures the delivery of crosscutting methodologies, software, and metrics with impact on important scientific applications and programs.
 
 {% include media-img.html 
-	source = "ideas-classic/IDEAS-broader-DOE-context.jpg"
+	source = "ideas-classic/IDEAS-broader-DOE-context-transparent.png"
 	contain = true
 %}
 
