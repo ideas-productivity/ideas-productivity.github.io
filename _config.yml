@@ -169,6 +169,7 @@ algolia:
 
 exclude:
   - README.md
+  - vendor
 
 # We have multiple pages where we need to refer to the canonical location
 # for the HPC-BP webinar series and also to the directory where the actual events
