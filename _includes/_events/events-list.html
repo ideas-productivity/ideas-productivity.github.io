@@ -26,7 +26,7 @@ An event can be considered to be past iff both startdate and enddate are in the 
 		{% assign noenddate = my-events | where_exp: "item", "item.enddate == nil and item.startdate < today" %}
 		{% assign sorted = enddate | concat: noenddate | sort:"startdate" | reverse %}
 	{% else %}
-		{% assign sorted = my-events | where_exp: "item", "item.startdate >= today or item.enddate >= today" | sort:"startdate"  %}
+		{% assign sorted = my-events | where_exp: "item", "item.startdate >= today or item.enddate >= today" | sort: "startdate"  %}
 	{% endif %}
 
 	<!-- List Markup -->
