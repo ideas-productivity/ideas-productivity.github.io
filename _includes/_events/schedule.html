@@ -14,39 +14,9 @@
 			  
   	<ul class="subevents">
 	  	{% for slug in include.subevents %}
-	  	{% assign sub = my-events | where: 'slug', slug %}
-		  {% if event.link-id %}
-		  <li id="{{ sub[0].link-id }}">
-		  {% else %}
-		  <li>	
-		  {% endif %}	
-	  			<a href="{{ sub[0].url }}" class="subevent-link">
-	  				<h3 class="subevent-title">
-		  				{{ sub[0].title }}
-		  			</h3>
-		  			<p class="subevent-time">
-		  				{{ sub[0].time }}
-		  			</p>
-					<small class="subevent-date">
-						{{ sub[0].startdate | date:"%b %d" }}
-						{% assign startmo = sub[0].startdate | date:"%b" %}
-						{% assign endmo = sub[0].enddate | date:"%b" %}
-						{% if sub[0].enddate %}
-						{% if startmo == endmo %}
-						–{{ sub[0].enddate | date:"%d" }}
-						{% else %}
-						–{{ sub[0].enddate | date:"%b %d" }}
-						{% endif %}
-						{% endif %}
-					</small>
-		  			<small class="subevent-type">
-		  				{{ sub[0].type }}
-		  			</small>
-		  		</a>
-		  		<small class="subevent-series">Series: 
-		  			{{ sub[0].series | join: ", " }}
-		  		</small>
-		  	</li>
+		  {% assign subs = my-events | where: 'slug', slug %}
+		  {% assign my-subevent = subs[0] %}
+		  {% include _events/subevent-item.html subevent=my-subevent %}
 	  	{% endfor %}
 	  </ul>
 

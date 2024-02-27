@@ -1,0 +1,42 @@
+{% comment %}
+  subevent-item.html: Emit a single event, styled as a subevent
+
+  Arguments:
+    subevent: A complete event structure
+{% endcomment %}
+
+{% assign my-title = include.subevent.title %}
+{% if include.subevent.title-type %}
+  {% assign my-title = my-title | append: " " | append: include.subevent.title-type %}
+{% endif %}
+
+{% if include.subevent.link-id %}
+  <li id="{{ include.subevent.link-id }}">
+{% else %}
+  <li>
+{% endif %}
+  <a href="{{ include.subevent.url }}" class="subevent-link">
+    <h3 class="subevent-title">{{ my-title }}</h3>
+    {% if include.subevent.time %}
+      <p class="subevent-time">{{ include.subevent.time }}</p>
+    {% endif %}
+    <small class="subevent-date">
+      {{ include.subevent.startdate | date:"%b %d" }}
+      {% assign startmo = include.subevent.startdate | date: "%b" %}
+      {% assign endmo = include.subevent.enddate | date: "%b" %}
+      {% if include.subevent.enddate %}
+        {% if startmo == endmo %}
+          -{{ include.subevent.enddate | date: "%d" }}
+        {% else %}
+          -{{ include.subevent.enddate | date: "%b %d" }}
+        {% endif %}
+      {% endif %}
+    </small>
+    <small class="subevent-type">
+      {{ include.subevent.type }}
+    </small>
+  </a>
+  {% if include.subevent.series %}
+    <small class="subevent-series">Series: {{ include.subevent.series | join: ", " }}</small> 
+  {% endif %}
+</li>

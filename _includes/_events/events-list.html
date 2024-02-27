@@ -1,158 +1,125 @@
 <div class="list-events">
 
-	<!-- Paginated Event Listing
-	adapted from: https://blog.rafael.picanco.nom.br/2015/09/06/jekyll-pagination-on-github-pages-without-plugins.html 
-	-->
+  <!-- Paginated Event Listing
+  adapted from: https://blog.rafael.picanco.nom.br/2015/09/06/jekyll-pagination-on-github-pages-without-plugins.html 
+  -->
 
-	<!-- Query the events -->
-	{% assign today = site.time | date:"%Y-%m-%d" %}
+  {% assign today = site.time | date:"%Y-%m-%d" %}
 
-{% comment %}
-Interpreting dates
+  {% comment %}
+    Interpreting dates:
+      Definitions: s = startdate, e = enddate, t = today
+      Situation            Result    Inequalities	   Enddate absent
+      s--e t               past      s < t, e < t    s < t
+      t s--e               upcoming  s >= t, e >= t  s >=t
+      s-t-e (in progress)  upcoming  s < t, e >= t   impossible
 
-s = startdate, e = enddate, t = today
-situation			result		inequalities	enddate absent
-s--e t				past		s < t, e < t	s < t
-t s--e				upcoming	s >= t, e >= t	s >=t
-s-t-e (in progress)	upcoming	s < t, e >= t	impossible
+    An event can be considered to be past iff both startdate and enddate are in the past. If there is an endate we have to check it to be certain the event is not in progress (which we interpret as upcoming because there are still some dates upcoming).
+  {% endcomment %}
 
-An event can be considered to be past iff both startdate and enddate are in the past. If there is an endate we have to check it to be certain the event is not in progress (which we interpret as upcoming because there are still some dates upcoming).
-{% endcomment %}
+  {% assign my-events = include.events | default: site.events %}
 
-{% assign my-events = include.events | default: site.events %}
+  {% if include.past and include.past == true %}
+    {% assign enddate = my-events | where_exp: "item", "item.startdate < today and item.enddate < today" %}
+    {% assign noenddate = my-events | where_exp: "item", "item.enddate == nil and item.startdate < today" %}
+    {% assign sorted = enddate | concat: noenddate | sort:"startdate" | reverse %}
+  {% else %}
+    {% assign sorted = my-events | where_exp: "item", "item.startdate >= today or item.enddate >= today" | sort: "startdate"  %}
+  {% endif %}
 
-	{% if include.past and include.past == true %}
-		{% assign enddate = my-events | where_exp: "item", "item.startdate < today and item.enddate < today" %}
-		{% assign noenddate = my-events | where_exp: "item", "item.enddate == nil and item.startdate < today" %}
-		{% assign sorted = enddate | concat: noenddate | sort:"startdate" | reverse %}
-	{% else %}
-		{% assign sorted = my-events | where_exp: "item", "item.startdate >= today or item.enddate >= today" | sort: "startdate"  %}
-	{% endif %}
+  <!-- List Markup -->
+  <div class="eventlist-wrapper" id="js-upcoming-events">
+    {% if include.title %}
+      <div class="list-title">
+        <h1 id="{{ include.title | slugify }}" class="list-title">{{ include.title }}</h1>
+        {% if include.group-linktext %}
+          <a class="group-link" href="{{ include.group-linkurl }}">{{ include.group-linktext }}</a>
+        {% endif %}
+        <hr>
+      </div>
+    {% endif %}
 
-	<!-- List Markup -->
-	<div class="eventlist-wrapper" id="js-upcoming-events">
+    {% if sorted and sorted.size != 0 %}
+      <ul class="list">
+      {% for event in sorted %}
+        {% unless event.subevent %}
+          {% unless event.parent-event-name and event.parent-event-file %}
+            {% if event.link-id %}
+              <li id="{{ event.link-id }}">
+            {% else %}
+              <li> 
+            {% endif %} 
 
-		{% if include.title %}
-			<div class="list-title">
-				<h1 id="{{ include.title | slugify }}" class="list-title">{{ include.title }}</h1>
+            {% comment %}
+              For most events, we take the title as-is from the frontmatter.  But tutorials are special.  
+              They usually have a "title-type" that characterizes how the venue labels the event (e.g., tutorial or track or training or...).
+              They also have venue information, which we will add to the title iff this is a standalone event (i.e., one that doesn't have
+              parent-event information).
+            {% endcomment %}
 
-				{% if include.group-linktext %}
-				<a class="group-link" href="{{ include.group-linkurl }}">
-					{{ include.group-linktext }}
-				</a>
-				{% endif %}
-				<hr>
-			</div>
-		{% endif %}
+            {% assign my-title = event.title %}
+            {% if event.title-type %}
+              {% assign my-title = my-title | append: " " | append: event.title-type %}
+            {% endif %}
 
-		{% if sorted and sorted.size != 0 %}
-		<ul class="list">
-			{% for event in sorted %}
-				{% unless event.subevent %}
-				{% unless event.parent-event-name and event.parent-event-file %}
-				{% if event.link-id %}
-				<li id="{{ event.link-id }}">
-				{% else %}
-				<li>	
-				{% endif %}	
+            <a href="{{ event.url }}" class="event-link">
+              <h2 class="event-title">{{ my-title }}</h2>
+              <p class="event-date">
+              {{ event.startdate | date:"%b %d" }}
+              {% assign startmo = event.startdate | date:"%b"  %}
+              {% assign endmo = event.enddate | date:"%b"  %}
+              {% if event.enddate %}
+                {% if startmo == endmo %}
+                  –{{ event.enddate | date:"%d" }}
+                {% else %}
+                  –{{ event.enddate | date:"%b %d" }}
+                {% endif %}
+              {% endif %}
+              </p>
+              <small class="event-year">
+                {{ event.startdate | date:"%Y" }}
+              </small>
+              <small class="event-type">
+                {{ event.type }}
+              </small>
+            </a>
 
-				{% comment %}
-					For most events, we take the title as-is from the frontmatter.  But tutorials are special.  
-					They usually have a "title-type" that characterizes how the venue labels the event (e.g., tutorial or track or training or...).
-					They also have venue information, which we will add to the title iff this is a standalone event (i.e., one that doesn't have
-					parent-event information).
-				{% endcomment %}
+            {% assign series = nil %}
+            {% if event.series %}
+              {% assign series = event.series | join: ", " %}
+              {% assign series = series | prepend: "Series: " %}
+            {% endif %}
+            {% assign venue = nil %}
+            {% if event.venue %}
+              {% assign venue = "Venue: " | append: event.venue %}
+            {% endif %}
+            {% if series or venue %}
+              <div class='event-series_venue'>
+                <small class="event-series">{{ series }}</small>
+                <small class='event-venue'>{{ venue }}</small>
+              </div>
+            {% endif %}
 
-				{% if event.title-type %}
-					{% assign my-title = event.title | append: " " | append: event.title-type %}
-				{% else %}
-					{% assign my-title = event.title %}
-				{% endif %}
+            {% if event.subevents %}
+              <ul class="subevents">
+              {% for subslug in event.subevents %}
+                {% assign subs = my-events | where: 'slug', subslug %}
+                {% assign my-subevent = subs[0] %}
+                {% include _events/subevent-item.html subevent=my-subevent %}
+              {% endfor %} {% comment %} subslug {% endcomment %}
+              </ul>
+            {% endif %} {% comment %} event.subevents {% endcomment %}
+          </li>
+        {% endunless %}
+      {% endunless %}
+      {% endfor %}
+      </ul>
+    {% else %}
+      <p>No events found</p>
+    {% endif %}
 
-						<a href="{{ event.url }}" class="event-link">
-						  <h2 class="event-title">{{ my-title }}</h2>
-						  <p class="event-date">
-						  	{{ event.startdate | date:"%b %d" }}
-							  {% assign startmo = event.startdate | date:"%b"  %}
-							  {% assign endmo = event.enddate | date:"%b"  %}
-							  {% if event.enddate %}
-							  	{% if startmo == endmo %}
-							  		–{{ event.enddate | date:"%d" }}
-							  	{% else %}
-							  		–{{ event.enddate | date:"%b %d" }}
-							  	{% endif %}
-							  {% endif %}
-							</p>
-							<small class="event-year">
-								{{ event.startdate | date:"%Y" }}
-							</small>
-							<small class="event-type">
-								{{ event.type }}
-							</small>
-						</a>
-						{% assign series = nil %}
-					{% if event.series %}
-						{% assign series = event.series | join: ", " %}
-						{% assign series = series | prepend: "Series: " %}
-					{% endif %}
-					{% assign venue = nil %}
-					{% if event.venue %}
-						{% assign venue = "Venue: " | append: event.venue %}
-					{% endif %}
-					{% if series or venue %}
-					  	<div class='event-series_venue'>
-					  		<small class="event-series">{{ series }}</small>
-					  		<small class='event-venue'>{{ venue }}</small>
-					  	</div>
-					{% endif %}
-
-					  {% if event.subevents %}
-					  	<ul class="subevents">
-						  	{% for subslug in event.subevents %}
-						  	{% assign sub = my-events | where: 'slug', subslug %}
-						  		<li>
-						  			<a href="{{ sub[0].url }}" class="subevent-link">
-										{% if sub[0].title-type %}
-											{% assign my-title = sub[0].title | append: " " | append: sub[0].title-type %}
-										{% else %}
-											{% assign my-title = sub[0].title %}
-										{% endif %}
-						  				<h3 class="subevent-title">
-							  				{{ my-title }}
-							  			</h3>
-							  			{% if sub[0].time %}
-							  			<p class="subevent-time">
-							  				{{ sub[0].time }}
-							  			</p>
-							  			{% endif %}
-							  			<small class="subevent-date">
-							  				{{ sub[0].startdate | date:"%b %d" }}
-							  			</small>
-							  			<small class="subevent-type">
-							  				{{ sub[0].type }}
-							  			</small>
-							  		</a>
-							  			{% if sub[0].series %}
-												{% assign sublength = sub[0].series | size %}
-										  	<small class="subevent-series">Series: 
-												{{ sub[0].series | join: ", " }}
-										  	</small> 
-										  {% endif %}
-							  	</li>
-						  	{% endfor %}
-						  </ul>
-					  {% endif %}
-					</li>
-					{% endunless %}
-				{% endunless %}
-			{% endfor %}
-		</ul>
-		{% else %}
-		<p>No events found</p>
-		{% endif %}
-
-		<div class="pagination-wrapper">
-			<ul id="js-pagination" class="pagination"></ul>
-		</div>
-	</div>
+    <div class="pagination-wrapper">
+      <ul id="js-pagination" class="pagination"></ul>
+    </div>
+  </div>
 </div>

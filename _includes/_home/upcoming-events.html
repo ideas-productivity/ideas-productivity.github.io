@@ -97,34 +97,9 @@ limit (default: 3)
 			  {% if event.subevents %}
 				  <ul class="subevents">
 					  {% for subslug in event.subevents %}
-					  {% assign sub = site.events | where: 'slug', subslug %}
-						  <li>
-							  <a href="{{ sub[0].url }}" class="subevent-link">
-								{% if sub[0].title-type %}
-									{% assign my-title = sub[0].title | append: " " | append: sub[0].title-type %}
-								{% else %}
-									{% assign my-title = sub[0].title %}
-								{% endif %}
-								  <h3 class="subevent-title">
-									  {{ my-title }}
-								  </h3>
-								  <p class="subevent-time">
-									  {{ sub[0].time }}
-								  </p>
-								  <small class="subevent-date">
-									  {{ sub[0].startdate | date:"%b %d" }}
-								  </small>
-								  <small class="subevent-type">
-									  {{ sub[0].type }}
-								  </small>
-							  </a>
-								  {% if sub[0].series %}
-										{% assign sublength = sub[0].series | size %}
-									  <small class="subevent-series">Series: 
-										{{ sub[0].series | join: ", " }}
-									  </small> 
-								  {% endif %}
-						  </li>
+						{% assign subs = site.events | where: 'slug', subslug %}
+						{% assign my-subevent = subs[0] %}
+						{% include _events/subevent-item.html subevent=my-subevent %}
 					  {% endfor %}
 				  </ul>
 			  {% endif %}
