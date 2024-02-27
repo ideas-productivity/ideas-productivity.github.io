@@ -17,14 +17,20 @@
     An event can be considered to be past iff both startdate and enddate are in the past. If there is an endate we have to check it to be certain the event is not in progress (which we interpret as upcoming because there are still some dates upcoming).
   {% endcomment %}
 
+  {% comment %}
+    Break down the event list into top-level and standalone events (which drive the main listing) and subevents.  With this
+    distinction, we can eliminate one nest from the main loop.  A small win.
+  {% endcomment %}
   {% assign my-events = include.events | default: site.events %}
+  {% assign main-events = my-events | where_exp: "item", "item.parent-event-name == nil" and "item.parent-event-file == nil" %}
+  {% assign subevents = my-events | where_exp: "item", "item.parent-event-name" and "item.parent-event-file" %}
 
   {% if include.past and include.past == true %}
-    {% assign enddate = my-events | where_exp: "item", "item.startdate < today and item.enddate < today" %}
-    {% assign noenddate = my-events | where_exp: "item", "item.enddate == nil and item.startdate < today" %}
+    {% assign enddate = main-events | where_exp: "item", "item.startdate < today and item.enddate < today" %}
+    {% assign noenddate = main-events | where_exp: "item", "item.enddate == nil and item.startdate < today" %}
     {% assign sorted = enddate | concat: noenddate | sort:"startdate" | reverse %}
   {% else %}
-    {% assign sorted = my-events | where_exp: "item", "item.startdate >= today or item.enddate >= today" | sort: "startdate"  %}
+    {% assign sorted = main-events | where_exp: "item", "item.startdate >= today or item.enddate >= today" | sort: "startdate"  %}
   {% endif %}
 
   <!-- List Markup -->
@@ -43,7 +49,6 @@
       <ul class="list">
       {% for event in sorted %}
         {% unless event.subevent %}
-          {% unless event.parent-event-name and event.parent-event-file %}
             {% if event.link-id %}
               <li id="{{ event.link-id }}">
             {% else %}
@@ -103,14 +108,13 @@
             {% if event.subevents %}
               <ul class="subevents">
               {% for subslug in event.subevents %}
-                {% assign subs = my-events | where: 'slug', subslug %}
+                {% assign subs = subevents | where: 'slug', subslug %}
                 {% assign my-subevent = subs[0] %}
                 {% include _events/subevent-item.html subevent=my-subevent %}
               {% endfor %} {% comment %} subslug {% endcomment %}
               </ul>
             {% endif %} {% comment %} event.subevents {% endcomment %}
           </li>
-        {% endunless %}
       {% endunless %}
       {% endfor %}
       </ul>
