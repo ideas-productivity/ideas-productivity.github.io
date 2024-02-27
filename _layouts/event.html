@@ -28,9 +28,26 @@
     {% assign my-meta1-value = page.meta1-value %}
   {% endif %}
 
+  {% comment %}
+    In the second meta field, we provide information about the venue with which the event is associated.
+
+    The priority case is if there are other IDEAS events at the same venue, in which case this should be
+    a subevent of another event on the site for overarching conference.  In that case, we use the label "Part of"
+    and link to the parent event on the site.
+
+    The next case is if there is venue information in the event frontmatter, but there are no other IDEAS-organized events
+    associated with this venue so this one stands alone.  In this case, we use the label "Venue" and put the venue 
+    information in for the value. This can include a link.
+
+    The fallback case is if the meta2-name and meta2-value are explicitly specified in the event frontmatter.  Note even if
+    these keys are explicitly provided, the two cases above will override.  Maybe that's upside down.
+  {% endcomment %}
   {% if page.parent-event-name and page.parent-event-file %}
     {% assign my-meta2-name = "Part of" %}
     {% capture my-meta2-value %}<a href='{{ page.parent-event-file }}'>{{ page.parent-event-name }}</a>{% endcapture %}
+  {% elsif page.venue %}
+    {% assign my-meta2-name = "Venue" %}
+    {% capture my-meta2-value %}{% if page.venue-url %}<a href="{{ page.venue-url }}">{{ page.venue }}</a>{% else %}{{ page.venue }}{% endif %}{% endcapture %}
   {% else %}
     {% assign my-meta2-name = page.meta2-name %}
     {% assign my-meta2-value = page.meta2-value %}
@@ -49,18 +66,9 @@
     {% assign my-title = page.title %}
   {% endif %}
 
-  {% assign my-blurb = "" %}
-  {% unless page.parent-event-name and page.parent-event-file %}
-    {% if page.venue %}
-      {% capture my-blurb %}at {% if page.venue-url %}<a href="{{ page.venue-url }}">{{ page.venue }}</a>{% else %}{{ page.venue }}{% endif %}{% endcapture %}
-    {% endif %}
-  {% endunless %}
+  {% assign my-blurb = page.blurb | default: nil %}
+  {% assign my-eyebrow = page.type | detault: nil %}
 
-  {% assign my-eyebrow = "" %}
-  {% if page.type %}
-    {% capture my-eyebrow %}{{ page.type }}{% endcapture %}
-  {% endif %}
-  
   <main class="page-content layout-wrapper" aria-label="Content">
     {%- include _layout/hero-page.html
       eyebrow = my-eyebrow 

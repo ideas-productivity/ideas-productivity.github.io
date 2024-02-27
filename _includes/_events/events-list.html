@@ -102,7 +102,7 @@ An event can be considered to be past iff both startdate and enddate are in the 
 					{% endif %}
 					{% assign venue = nil %}
 					{% if event.venue %}
-						{% assign venue = "Venue: "" | append: event.venue %}
+						{% assign venue = "Venue: " | append: event.venue %}
 					{% endif %}
 					{% if series or venue %}
 					  	<div class='event-series_venue'>
