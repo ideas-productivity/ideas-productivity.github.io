@@ -57,11 +57,6 @@ limit (default: 3)
 			{% assign my-title = event.title %}
 		{% endif %}
 
-		{% unless event.parent-event-name and event.parent-event-file %}
-			{% if event.venue %}
-			{% assign my-title = my-title | append: " @ " | append: event.venue %}
-			{% endif %}
-		{% endunless %}
 				<a href="{{ event.url }}" class="event-link">
 				  <h2 class="event-title">{{ my-title }}</h2>
 				  <p class="event-date">
@@ -90,7 +85,7 @@ limit (default: 3)
 					{% endif %}
 					{% assign venue = nil %}
 					{% if event.venue %}
-						{% assign venue = "Venue: "" | append: event.venue %}
+						{% assign venue = "Venue: " | append: event.venue %}
 					{% endif %}
 					{% if series or venue %}
 					  	<div class='event-series_venue'>
