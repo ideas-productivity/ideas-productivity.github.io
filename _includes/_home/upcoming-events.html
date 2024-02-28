@@ -25,9 +25,9 @@ limit (default: 3)
 	<div class="group-intro">
 			<h1>{{ include.title }}</h1>
 
-			<a class="group-link" href="{{ include.group-linkurl }}">
-				{{ include.group-linktext }}
-			</a>	
+			{% if include.group-linktext %}
+				<a class="group-link" href="{{ include.group-linkurl }}">{{ include.group-linktext }}</a>
+			{% endif %}
 
 			<hr>
 	</div>	
