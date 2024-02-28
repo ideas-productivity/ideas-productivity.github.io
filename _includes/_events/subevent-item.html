@@ -10,11 +10,7 @@
   {% assign my-title = my-title | append: " " | append: include.event.title-type %}
 {% endif %}
 
-{% if include.event.link-id %}
-  <li id="{{ include.event.link-id }}">
-{% else %}
-  <li>
-{% endif %}
+<li id="{{ include.event.link-id | default: include.event.slug }}">
   <a href="{{ include.event.url }}" class="subevent-link">
     <h3 class="subevent-title">{{ my-title }}</h3>
     {% if include.event.time %}
