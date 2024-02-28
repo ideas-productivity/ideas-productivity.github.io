@@ -36,7 +36,7 @@ plugins:
   - jekyll-pluralize
   - jekyll-redirect-from
   - jekyll_basename_dirname
-#  - flexible_include # We do use this, but it is not a gem
+  - flexible_include
 
 # This is needed to generate output for future events
 future: true

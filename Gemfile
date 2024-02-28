@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem 'jekyll_basename_dirname'
   gem 'jekyll-sass-converter', '~> 2.0'
+  gem 'jekyll_flexible_include'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
