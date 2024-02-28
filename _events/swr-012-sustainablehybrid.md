@@ -6,9 +6,8 @@ series:
   - "Strategies for Working Remotely"
 activities:
   - "IDEAS-ECP"
-subevent: true
 parent-event-name: SC21
-parent-event-file: 20211114-sc21-conference
+parent-event-file: parentconf-2021-11-14-sc21
 link-id: panel012
 panelists:
   - name: Christian Bischof
