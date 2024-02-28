@@ -24,7 +24,7 @@ title-type: "tutorial"
 #
 startdate: "2019-01-14"
 #enddate:
-# time: 2:30 pm - 4:00 pm EDT (UTC-4)
+# time: 2:30 pm - 4:00 pm EDT
 #
 # Venue information
 #

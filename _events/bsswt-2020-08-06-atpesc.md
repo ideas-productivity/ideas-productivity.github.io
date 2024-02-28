@@ -39,7 +39,7 @@ title-type: "track"
 #
 startdate: "2020-08-06"
 #enddate: 
-time: "9:30 am - 4:45 pm CDT (UTC-5)"
+time: "9:30 am - 4:45 pm CDT"
 #
 # Venue information
 #

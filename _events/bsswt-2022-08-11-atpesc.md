@@ -39,7 +39,7 @@ title-type: "track"
 #
 startdate: "2022-08-11"
 #enddate: 
-time: "8:30 am - 9:00 pm CDT (UTC-5)"
+time: "8:30 am - 9:00 pm CDT"
 #
 # Venue information
 #

@@ -24,7 +24,7 @@ title-type: "tutorial"
 #
 startdate: "2023-02-06"
 #enddate:
-time: 3:00 pm - 6:15 pm EST (UTC-5)
+time: 3:00 pm - 6:15 pm EST
 #
 # Venue information
 #

@@ -39,7 +39,7 @@ title-type: "tutorial"
 #
 startdate: "2023-08-01"
 enddate: "2023-08-02"
-time: 9:00 am - 5:00 pm MDT (UTC-6)
+time: 9:00 am - 5:00 pm MDT
 #
 # Venue information
 #

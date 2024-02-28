@@ -39,7 +39,7 @@ title-type: "track"
 #
 startdate: "2017-08-09"
 #enddate: 
-# time: "8:30 am - 9:00 pm CDT (UTC-5)"
+# time: "8:30 am - 9:00 pm CDT"
 #
 # Venue information
 #

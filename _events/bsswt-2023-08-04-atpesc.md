@@ -39,7 +39,7 @@ title-type: "track"
 #
 startdate: "2023-08-04"
 #enddate: 
-time: "8:30 am - 9:30 pm CDT (UTC-5)"
+time: "8:30 am - 9:30 pm CDT"
 #
 # Venue information
 #
