@@ -47,19 +47,14 @@
     </small>
   </a>
 
-  {% assign series = nil %}
-  {% if include.event.series %}
-    {% assign series = include.event.series | join: ", " %}
-    {% assign series = series | prepend: "Series: " %}
-  {% endif %}
-  {% assign venue = nil %}
-  {% if include.event.venue %}
-    {% assign venue = "Venue: " | append: event.venue %}
-  {% endif %}
-  {% if series or venue %}
+  {% if include.event.series or include.event.venue %}
     <div class='event-series_venue'>
-      <small class="event-series">{{ series }}</small>
-      <small class='event-venue'>{{ venue }}</small>
+      {% if include.event.series %}
+        <small class="event-series">Series: {{ include.event.series | join: ", " }}</small>
+      {% endif %}
+      {% if include.event.venue %}
+        <small class='event-venue'>Venue: {{ include.event.venue }}</small>
+      {% endif %}
     </div>
   {% endif %}
 
