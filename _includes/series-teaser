@@ -2,8 +2,8 @@
 
 {% 	include teasers-4x_noimg.html 
 		group-title = "Event series"
-        group-linktext = include.linktext
-        group-linkurl = include.linkurl
+        group-linktext = include.group-linktext
+        group-linkurl = include.group-linkurl
 
 		title1 = "HPC Best Practices Webinars"
 		url1 = "/resources/series/hpc-best-practices-webinars"
