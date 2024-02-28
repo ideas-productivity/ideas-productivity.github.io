@@ -49,7 +49,7 @@ time: "9:30 am - 4:45 pm CDT"
 venue: "Argonne Training Program on Extreme-Scale Computing"
 venue-type: "summer school"
 venue-url: https://extremecomputingtraining.anl.gov/
-location: "online"
+location: Online
 #
 # Staffing information
 # organizer-ids will be assigned the issues that presenter-ids are not doing, basically

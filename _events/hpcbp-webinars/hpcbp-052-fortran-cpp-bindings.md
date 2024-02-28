@@ -33,7 +33,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp052-fortran-cpp-bindings-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Although many active scientific codes use modern Fortran, most contemporary scientific software libraries are implemented in C and C++. Providing their numerical, algorithmic, or data management features to Fortran codes requires writing and maintaining substantial amounts of glue code. In the same vein, some projects are actively moving key kernels from Fortran toward C++ to support performance portability models and other rapidly-developing, dynamic programming paradigms. How can a project smoothly connect existing Fortran code to new internal C++ kernels or external C++ libraries? SWIG-Fortran provides a solution with a wide range of flexibility, including support for performant data transfers, MPI support, and direct translation of C++ features to Fortran interfaces.

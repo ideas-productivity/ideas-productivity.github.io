@@ -56,7 +56,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar023-osbp-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 This webinar will continue the discussion of open source software

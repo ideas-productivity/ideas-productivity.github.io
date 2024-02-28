@@ -55,7 +55,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar015-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 During the last few years the Jupyter notebook has become one of the

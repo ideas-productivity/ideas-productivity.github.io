@@ -34,7 +34,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp065-precice-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Starting humbly as a coupling library for fluid-structure interaction problems used by just a few academic groups in Germany, preCICE has grown to a complete coupling ecosystem used by more than 100 research groups worldwide, and for a wide range of multi-physics applications. How did that happen? Apart from the library itself, preCICE now maintains ready-to-use adapters for several open-source solvers, tutorial cases, documentation, and more. Users can thus easily couple popular open-source solvers (such as OpenFOAM, SU2, deal.II, or FEniCS) with their in-house simulation software (written in C++, C, Fortran, Python, Matlab, or Julia). In parallel to this, the developers of preCICE had to learn how to write more effective documentation (avoiding fragmentation and getting the user in the loop), how to manage the rapidly growing community (switching from a mailing list to a chatroom and then to a dedicated Discourse forum), and how to organize workshops and training courses. This webinar will focus on lessons learned that can help any research software project grow in a sustainable way.

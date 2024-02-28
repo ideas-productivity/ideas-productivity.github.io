@@ -5,7 +5,7 @@ enddate: "2020-11-19"
 #
 type: "Conference" 
 #
-location: online
+location: Online
 #
 activities:
   - "IDEAS-ECP"

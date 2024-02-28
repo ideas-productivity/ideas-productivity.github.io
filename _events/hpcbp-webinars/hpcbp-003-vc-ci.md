@@ -25,7 +25,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar003-HPC-Session3.pdf
 #
-location: online
+location: Online
 #
 ---
 Recently, many tools and workflows have emerged in the software

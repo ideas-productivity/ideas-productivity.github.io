@@ -39,7 +39,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar049-softwaredocumentation-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 This webinar aims to introduce the importance of software documentation and the different approaches that may be taken at various stages, and on various levels, in the software development life cycle. Through the sharing of examples and stimulative questions, the speakers aim to encourage the audience to reflect on the relationship between documentation and process, and to make informed choices about when and how to document their software.

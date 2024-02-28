@@ -50,7 +50,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar032-managementplans-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Software is a necessary by-product of research. Software in this

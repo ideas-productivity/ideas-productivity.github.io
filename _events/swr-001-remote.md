@@ -93,7 +93,7 @@ artifacts:
     format: PDF
     url: https://www.exascaleproject.org/wp-content/uploads/2020/03/WorkingRemotelyPanel-2020-04-03-final21.pdf
 #
-location: online
+location: Online
 #
 ---
 Working remotely has suddenly become a near-universal experience for

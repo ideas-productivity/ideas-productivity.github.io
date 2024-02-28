@@ -39,7 +39,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar009-GitTutorialandReferenceCollection-4.pdf
 #
-location: online
+location: Online
 #
 ---
 This presentation will emphasize intermediate-level tutorial and

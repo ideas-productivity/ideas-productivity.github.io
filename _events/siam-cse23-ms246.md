@@ -11,6 +11,8 @@ series:
 parent-event-name: SIAM CSE23
 parent-event-file: parentconf-2023-02-26-cse23
 #
+location: Amsterdam, The Netherlands
+#
 activities:
   - "IDEAS-ECP"
 #

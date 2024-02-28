@@ -25,7 +25,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar004-testing-klinvex.pdf
 #
-location: online
+location: Online
 #
 ---
 Software verification and validation are needed for high-quality and

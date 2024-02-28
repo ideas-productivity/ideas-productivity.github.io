@@ -39,7 +39,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar018-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Continual advances in new technologies for computational science often

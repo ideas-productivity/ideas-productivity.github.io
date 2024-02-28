@@ -39,7 +39,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar030-cpp4HPC-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Since its creation by Bjarne Stroustrup in the early 1980s, C++ has

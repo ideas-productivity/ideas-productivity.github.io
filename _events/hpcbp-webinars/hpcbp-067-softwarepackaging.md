@@ -34,7 +34,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-067-softwarepackaging-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 The ability to “import” a package is the critical enabling technology for software re-use. As a package developer, there are a variety of standards and tools we can adopt to make importing our work easier for our users. This webinar surveys packaging technologies and ideas popular in scientific software (C++, python, and Fortran with autoconf, cmake, python builds, spack, and containers). Good re-usability is a product of thoughtful program structure, build process, version control, and testing. By examining some real-world examples, we show how these steps build on each other in “live” projects to make easy connections between software deployment and package use.

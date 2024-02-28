@@ -37,7 +37,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar043-spack-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Spack is a package manager for scientific computing, with a rapidly growing open source community. With over 500 contributors from academia, industry, and government laboratories, Spack has a wide range of use cases, from small-scale development on laptops and clusters, to software release management for the U.S. Exascale Computing Project, to user software deployment on 6 of the top 10 supercomputer sites in the world.

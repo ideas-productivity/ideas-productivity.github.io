@@ -112,7 +112,7 @@ artifacts:
     format: PDF
     url: https://www.exascaleproject.org/wp-content/uploads/2020/03/4e7cebfa9a5e.pdf
 #
-location: online
+location: Online
 #
 ---
 While working remotely is challenging enough, many are currently

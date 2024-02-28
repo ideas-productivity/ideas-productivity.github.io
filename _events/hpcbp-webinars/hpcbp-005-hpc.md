@@ -25,7 +25,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar005-supercomputers.pdf
 #
-location: online
+location: Online
 #
 ---
 High performance computing has transformed how science and engineering

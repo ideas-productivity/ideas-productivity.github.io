@@ -40,7 +40,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar017-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Software is increasingly important in research, and some of the

@@ -62,7 +62,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar029-agile-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Scientific software team cultures have natural consistencies with

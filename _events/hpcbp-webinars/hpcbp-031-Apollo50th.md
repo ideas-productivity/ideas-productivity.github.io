@@ -37,7 +37,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar031-Apollo50th-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Commemorating the 50th Anniversary of the Apollo Moon landings, this

@@ -40,7 +40,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar021-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 How do you make software sustainable? How much is it about process and

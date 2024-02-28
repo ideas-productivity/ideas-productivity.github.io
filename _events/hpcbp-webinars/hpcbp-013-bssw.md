@@ -48,7 +48,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/bssw.site_.intro_.2017.12.6.pdf
 #
-location: online
+location: Online
 #
 ---
 Better Scientific Software (BSSw) is an organization dedicated to

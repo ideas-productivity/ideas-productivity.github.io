@@ -12,6 +12,8 @@ series:
 parent-event-name: SIAM CSE21
 parent-event-file: parentconf-2021-03-01-cse21
 #
+location: Online
+#
 activities:
   - "IDEAS-ECP"
 #

@@ -32,7 +32,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar024-licensing-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Software licensing and related matters of intellectual property can

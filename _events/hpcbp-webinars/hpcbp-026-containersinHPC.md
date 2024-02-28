@@ -37,7 +37,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar026-containers-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Containers have gained adoption in the HPC and scientific computing

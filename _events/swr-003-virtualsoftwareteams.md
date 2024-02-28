@@ -110,7 +110,7 @@ artifacts:
     format: PDF
     url: https://www.exascaleproject.org/wp-content/uploads/2020/03/IDEAS-ECP_Strategies_Working_Remotely_Panel_Transition_Virtual_Teams_FINAL.pdf
 #
-location: online
+location: Online
 #
 ---
 Recently, many tools and workflows have emerged in the software

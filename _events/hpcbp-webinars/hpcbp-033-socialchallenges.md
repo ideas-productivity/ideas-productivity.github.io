@@ -41,7 +41,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar033-socialchallenges-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 In recent years scientific software projects have increasingly

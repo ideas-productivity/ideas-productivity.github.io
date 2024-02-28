@@ -48,7 +48,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar010-Roofline-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 In this webinar, we will begin by introducing the Roofline Model and

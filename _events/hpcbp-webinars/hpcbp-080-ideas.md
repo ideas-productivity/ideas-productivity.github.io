@@ -38,7 +38,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-080-ideas-qa.pdf
 #
-location: online
+location: Online
 ---
 The US Department of Energy’s Exascale Computing Project (ECP) has been an unprecedented effort to establish a software ecosystem spanning 24 scientific applications, 6 co-design centers, and the supporting software technologies needed to enable leading-edge computational science and engineering research on the world’s first generation of exascale computers.  ECP also presented an unprecedented challenge from the standpoint of developer productivity and the sustainability of all of that software, which led to the establishment in 2017 of the second instance of the IDEAS Productivity project, IDEAS-ECP.
 

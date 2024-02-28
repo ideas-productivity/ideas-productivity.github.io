@@ -86,7 +86,7 @@ artifacts:
     format: PDF
     url: https://www.exascaleproject.org/wp-content/uploads/2020/07/WorkingRemotelyPanel-Teams_Tick.pdf
 #
-location: online
+location: Online
 #
 ---
 Many teams have been working remotely for several months as a result of the COVID-19 pandemic. In some cases, teams were largely co-located and comfortable that way – *they just seemed to tick*. Now that teams have become fully virtual and can no longer rely on productivity practices driven by being face-to-face, how have they managed change? What personal challenges have they faced, and how are they bringing back into balance team dynamics, and individual well-being? What are they learning about themselves and each other that has been unexpected? In the fifth installment of this IDEAS-ECP panel discussion series, we bring together members of successful software teams to speak candidly about being disrupted by change and bringing their teams back into balance.

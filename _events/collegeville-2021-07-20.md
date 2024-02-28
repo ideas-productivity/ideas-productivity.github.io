@@ -11,7 +11,7 @@ series:
 activities:
   - "IDEAS-ECP"
 #
-location: online
+location: Online
 #
 artifacts:
   - label: Workshop Website

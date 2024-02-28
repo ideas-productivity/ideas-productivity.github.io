@@ -36,7 +36,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar047-softwaredesign-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 In the era of simultaneously increasing heterogeneity in hardware and application software, the topics of performance portability and longevity may seem at cross purposes. Key to achieving either objective individually is software design. Achieving both simultaneously is a much harder challenge, yet, in today’s scientific computing landscape neither objective can be ignored. Questions that science is posing to computation are more complex, which imply greater investment in building science capabilities in the software, and therefore longevity is important. Those questions need more capable hardware, which can be obtained only through evermore heterogeneous platforms. This webinar will present a few basic principles of scientific software design that have been instrumental in mitigating some of the challenges that applications developers are facing. These principles represent a combination of experience from the presenter’s own project and from the Exascale Computing Project Performance Portability Panel Series that took place during summer of 2020.

@@ -37,7 +37,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar014-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 How can you introduce best software practices to a long-lived

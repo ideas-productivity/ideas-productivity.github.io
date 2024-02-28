@@ -34,7 +34,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar027-hdf5-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 HDF5 is a data model, file format, and I/O library that has become a

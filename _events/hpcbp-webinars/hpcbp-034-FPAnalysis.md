@@ -43,7 +43,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar034-FPAnalysis-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Scientific software is central to the practice of research

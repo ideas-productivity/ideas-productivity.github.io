@@ -26,7 +26,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar001-160504-dubey-overview.pdf
 #
-location: online
+location: Online
 #
 ---
 Scientific code developers have increasingly been adopting software

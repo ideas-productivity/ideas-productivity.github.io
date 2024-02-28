@@ -31,7 +31,7 @@ time: 2:30 pm - 4:00 pm EDT
 venue: "Exascale Computing Project Annual Meeting"
 #venue-type: "meeting" # redundant with the venue name
 #venue-url:
-location: "online"
+location: Online
 #
 # Staffing information
 # organizer-ids will be assigned the issues that presenter-ids are not doing, basically

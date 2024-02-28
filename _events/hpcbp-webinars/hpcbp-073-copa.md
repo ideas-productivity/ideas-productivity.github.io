@@ -34,7 +34,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-073-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 GPUs accelerators offer the prospect of speeding up ab initio molecular dynamics and other large-scale first-principles atomistic simulations. Taking advantage of these devices is, however, not a trivial task given their specificities. Some algorithms struggle, while others thrive with the high level of thread concurrency available on modern GPUs. The PROGRESS and BML libraries, developed within ECP’s Co-design Center for Particle Applications (CoPA) project, allow electronic structure codes to offload their most expensive kernels, with a unified interface for various matrix formats and computer architectures. The webinar will focus on implementations and algorithmic choices made in those libraries, and lessons learned while trying to achieve performance portability on exascale platforms. Specifically, the webinar will discuss eigensolvers and their alternatives, as well as strong scaling in fast time-to-solution in molecular dynamics.

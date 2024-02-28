@@ -39,7 +39,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar022-cmake-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Bill Hoffman, the creator of the CMake project, will give an

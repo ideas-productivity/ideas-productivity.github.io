@@ -43,7 +43,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar028-pfunit-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Over the past two decades, the emergence of highly effective software

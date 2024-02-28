@@ -41,7 +41,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp053-psip4hdf-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Productivity and Sustainability Improvement Planning (PSIP) is a lightweight, iterative workflow that allows software development teams to identify development bottlenecks and track progress toward goals to overcome them. In this talk, we present an overview of the PSIP methodology and toolkit, and describe how the HDF5 Group used PSIP to make improvements in three key areas of their software development process.

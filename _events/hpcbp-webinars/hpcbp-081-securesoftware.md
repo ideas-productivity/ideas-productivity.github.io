@@ -31,7 +31,7 @@ artifacts:
 qa-public-url: http://bit.ly/HPCBP-QA
 survey-public-url: http://bit.ly/HPCBP-feedback
 #
-location: online
+location: Online
 #
 type: Webinar
 series:

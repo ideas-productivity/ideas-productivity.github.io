@@ -30,7 +30,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-059-scisoftecosystem.pdf
 #
-location: online
+location: Online
 #
 ---
 HPC software is a cornerstone of long-term collaboration and scientific progress, but software complexity is increasing due to disruptive changes in computer architectures and the challenges of next-generation science. Thus, the HPC community has the unique opportunity to fundamentally change how scientific software is designed, developed, and sustained—embracing community collaboration toward scientific software ecosystems, while fostering a diverse HPC workforce who embody a broad range of skills and perspectives. This webinar will introduce work in the U.S. Exascale Computing Project, where a varied suite of scientific applications builds on programming models and runtimes, math libraries, data and visualization packages, and development tools that comprise the Extreme-scale Scientific Software Stack (E4S). The webinar will introduce crosscutting strategies that are increasing developer productivity and software sustainability, thereby mitigating technical risks by building a firmer foundation for reproducible, sustainable science. The webinar will also mention complementary community efforts and opportunities for involvement.

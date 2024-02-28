@@ -63,7 +63,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/PythoninHPCGoogleDoc.pdf
 #
-location: online
+location: Online
 #
 ---
 Python’s powerful elegance has driven its adoption at HPC centers for

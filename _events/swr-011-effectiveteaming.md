@@ -44,7 +44,7 @@ artifacts:
     format: YouTube
     yt-video-id: DHSFUFb_q2k
 #
-location: online
+location: Online
 #
 ---
 *This panel discussion is part of the DOE Laboratories of the Future (LOTF) workshop series.*

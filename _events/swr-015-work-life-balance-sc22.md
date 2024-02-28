@@ -42,7 +42,7 @@ artifacts:
    format: YouTube
    yt-video-id: eqM9mli-Ko0
 #
-location: online
+location: Online
 #
 ---
 This panel features brief presentations followed by engaging discussion from contributors to the SC22 Early Career Program invited talks on life/work balance conducted at the annual International Conference for High Performance Computing, Networking, Storage, and Analysis (SC22). Speakers will provide tips and lessons shared with the SC22 Early Career Program panel on work/life balance, parenting, strategies for working remotely, and on how everyone, especially those early in their careers, can apply lessons learned from pandemic-driven change and resiliency.

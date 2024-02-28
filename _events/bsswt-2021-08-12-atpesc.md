@@ -20,7 +20,7 @@ time: 9:30am - 5:45pm CDT
 venue: "Argonne Training Program on Extreme-Scale Computing"
 venue-type: "summer school"
 #venue-url: https://extremecomputingtraining.anl.gov/
-location: "online"
+location: Online
 #
 # presenter-ids: [bernhold, adubey64, rinkug, frobnitzem]
 presenters:

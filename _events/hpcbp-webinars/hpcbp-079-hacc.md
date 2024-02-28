@@ -34,6 +34,6 @@ artifacts:
 #     format: PDF
 #     url: /assets/artifacts/hpcbp/hpcbp-076-cleanssw-qa.pdf
 #
-location: online
+location: Online
 ---
 HACC (Hardware/Hybrid Accelerated Cosmology Code) is a well-established code within the US Department of Energy community, and with a long history — having run on every flagship computing system for over a decade. Often participating in early-access programs for upcoming systems, an ongoing challenge for HACC developers is to not only contend with state-of-the-art architectures, but also with their initially supported, and often novel, programming models. The increased computing power brought about by today’s exascale systems has allowed HACC to support additional baryonic physics through a newly developed Smoothed Particle Hydrodynamics (SPH) formalism called Conservative Reproducing Kernel (CRK). This webinar will discuss the challenges faced in preparing HACC for multiple exascale systems while simultaneously adding additional code capabilities, with ongoing development, all the while with a central focus on performance.

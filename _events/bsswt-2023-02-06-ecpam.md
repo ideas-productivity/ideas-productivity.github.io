@@ -31,7 +31,7 @@ time: 3:00 pm - 6:15 pm EST
 venue: "Exascale Computing Project Tutorial Days"
 #venue-type: "meeting" # redundant with the venue name
 venue-url: https://www.exascaleproject.org/event/ecp-tutorial-days/
-location: "online"
+location: Online
 #
 # Staffing information
 # organizer-ids will be assigned the issues that presenter-ids are not doing, basically

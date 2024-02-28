@@ -35,7 +35,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar051-workflow4scisoft-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 The webinar will present a workflow that increases the quality of research software in Computational Science and Engineering (CSE) by applying established software engineering practices extended with CSE-specific testing and visualization, and periodical cross-linking of software with reports/publications and datasets. The workflow is minimalistic. It introduces a small amount of work overhead, which is crucial for research groups without dedicated funding for ensuring the quality of research software and reproducibility of scientific results.

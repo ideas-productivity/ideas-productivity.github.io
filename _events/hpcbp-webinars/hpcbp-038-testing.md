@@ -36,7 +36,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar038-testingstrategies-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Software testing is an invaluable practice, albeit the level of testing in scientific applications can vary widely, from no testing at all to full continuous integration (as discussed in earlier webinars of the HPC-BP series). In this webinar I will consider a specific case: the use of unit-testing when developing a mini-app as an approach to learn about new programming models such as Kokkos and SYCL, or when using (or contributing to) high-performance libraries. I will illustrate with an example from Lattice QCD, focusing on the integration of the QUDA optimized library with the Chroma application. The webinar will focus on lessons learned and generally applicable strategies.

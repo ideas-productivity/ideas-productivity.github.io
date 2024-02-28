@@ -57,7 +57,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar035-softwarepolicies-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 The development of increasingly complex computer architectures and

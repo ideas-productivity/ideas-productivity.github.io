@@ -45,7 +45,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/session012-slides.pdf
 #
-location: online
+location: Online
 #
 ---
 Software Quality Engineering (SQE) and methods research and scientific

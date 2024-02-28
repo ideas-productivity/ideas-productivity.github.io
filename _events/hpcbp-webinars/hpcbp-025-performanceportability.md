@@ -61,7 +61,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar025-qa.pdf
 #
-location: online
+location: Online
 #
 ---
  Wouldn’t it be great if we could port a code to a new

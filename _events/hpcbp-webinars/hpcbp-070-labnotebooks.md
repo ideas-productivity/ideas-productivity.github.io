@@ -34,7 +34,7 @@ artifacts:
    format: PDF
    url: /assets/artifacts/hpcbp/hpcbp-070-labnotebooks-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 As computational mathematics, science, and engineering problems become larger, more ambitious, and more complex, it is increasingly important to develop and use tools and techniques that ensure that computational research is based on a strong foundation of general, low-level scientific best practices. In this webinar, the speaker will relate his experience of transitioning from working in the worlds of experimental and observational sciences to the world of computational sciences as well as his experience adapting experimental tools and techniques to computational research. In particular, the speaker will focus on the role of lab notebooks in experimental sciences and present concrete examples to address the challenges associated with adapting lab notebooks to computational research.

@@ -40,7 +40,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar016-eclipse-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 The Eclipse IDE is one of the most popular IDEs available, and its

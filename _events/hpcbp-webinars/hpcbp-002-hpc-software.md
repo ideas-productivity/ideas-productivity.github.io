@@ -25,7 +25,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar002-MakeConfigureIDE.pdf
 #
-location: online
+location: Online
 #
 ---
 The process of developing HPC software requires consideration of

@@ -35,7 +35,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar046-technicaldebit-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Computational experiments can be challenging to reproduce; researchers have to choose between pursuing a fast-paced research agenda and developing well-organized, sufficiently documented, and easily reproducible software. Like incurring fiscal debt, there are often tactical reasons to take on technical debt in scientific software—such as deferring documentation, organization, refactoring, and unit tests when pursuing a new idea or meeting a conference deadline. However, more often than not, researchers do not repay this technical debt, leading to irreproducible experiments.

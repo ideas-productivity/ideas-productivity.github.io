@@ -5,7 +5,7 @@ enddate: "2021-03-05"
 #
 type: "Conference" 
 #
-location: online
+location: Online
 #
 activities:
   - "IDEAS-ECP"

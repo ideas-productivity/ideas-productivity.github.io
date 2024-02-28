@@ -34,7 +34,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp062-performanceportability-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 As HPC communities move into the exascale era, GPU-accelerated systems become one of the primary HPC architectures, and major processor vendors proactively lead technical innovation in the GPU ecosystem. The U.S. DOE has successfully supported this transformation to the next generation of HPC infrastructure through the Exascale Computing Project (ECP). NVIDIA has played a leading role to deploy multiple pre-exascale GPU systems (Summit at OLCF, Sierra at LLNL, Perlmutter at NERSC, and Polaris at ALCF). AMD and Intel are playing critical roles in developing exascale GPU systems, such as Frontier at OLCF, Aurora at ALCF, and El Capitan at LLNL. Simultaneously with the dynamic shifts in hardware, application developer communities have endeavored to maintain or increase their scientific throughputs by adopting performance portable programming models or frameworks, and it turns out a smooth transition is one of the necessary conditions to maintain productivity. In this webinar, the speaker will evaluate the progress being made on achieving performance portability by a subset of ECP applications or their related mini-apps, and approaches to achieving performance portability across diverse HPC architectures including AMD, Intel, and NVIDIA GPUs.

@@ -25,7 +25,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar007-160809-deslippe-antfarm.pdf
 #
-location: online
+location: Online
 #
 ---
 How is optimizing HPC applications like an Ant Farm? Attend this

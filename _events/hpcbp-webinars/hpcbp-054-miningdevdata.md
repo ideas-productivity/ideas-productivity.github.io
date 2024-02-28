@@ -33,7 +33,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp054-miningdevdata-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 The webinar will explore the role of software-related data mining tools in supporting productive development of high-performance scientific software. The webinar will discuss a variety of existing and emerging tools for analyzing code, git, emails, issues, test results, and dependencies, with the long-term goal of improving the understanding of development processes and enhancing developer productivity. The webinar will include specific analysis examples by applying a subset of those tools to ECP projects.

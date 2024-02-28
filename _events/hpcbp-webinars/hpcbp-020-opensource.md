@@ -37,7 +37,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar020-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 This talk will provide an overview of the work at Lawrence Livermore

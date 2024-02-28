@@ -43,7 +43,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/session011-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Software development is an essential activity for many scientific

@@ -34,7 +34,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-075-openssf-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 The Linux Foundation’s [OpenSSF Best Practices Badge Program](https://bssw.io/items/openssf-best-practices-badge-program) represents an impressive collection of the open source community’s knowledge base for creating, maintaining, and sustaining robust, high quality, and (most importantly) secure open source software. At its foundation is a featureful “Badge App” website, which provides a database of projects that document what best practices they have adopted and supporting evidence. This set of best practices (along with the detailed documentation and supporting justifications for each item) also serves as an incremental learning tool and as a foundation for incremental software process and quality improvements efforts. The webinar will provide an overview of this effort and describe some of its surprising benefits. The webinar will also describe how the OpenSSF Best Practices Badge Program can be used to help continue the recent advances in software quality and sustainability efforts in the computational science and engineering community going forward.

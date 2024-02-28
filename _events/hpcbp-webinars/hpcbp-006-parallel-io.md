@@ -35,7 +35,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar006-2016_HPC_IO_Intro.pdf
 #
-location: online
+location: Online
 #
 ---
 Parallel data management is a complex problem at large-scale HPC

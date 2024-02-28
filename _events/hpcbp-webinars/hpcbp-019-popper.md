@@ -38,7 +38,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/webinar019-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Current approaches used in computational and data science research may

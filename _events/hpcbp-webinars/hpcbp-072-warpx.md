@@ -34,7 +34,7 @@ artifacts:
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-072-warpx-qa.pdf
 #
-location: online
+location: Online
 #
 ---
 Particle accelerators, among the largest, most complex devices, demand increasingly sophisticated computational tools for the design and optimization of the next generation of accelerators that will meet the challenges of increasing energy, intensity, accuracy, compactness, complexity and efficiency. It is key that contemporary software take advantage of the latest advances in computer hardware and scientific software engineering practices, delivering speed, reproducibility and feature composability for the aforementioned challenges.
