@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: Hamburg, Germany
 #
+activities:
+  - "IDEAS-ECP"
+#
 subevents:
   - bsswt-2024-05-12-isc
   - rse-pathways-bof-2024-05-isc24

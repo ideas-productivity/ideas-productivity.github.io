@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: St. Louis, Missouri and online
 #
+activities:
+  - "IDEAS-ECP"
+#
 subevents:
   - bsswt-2021-11-15-sc
   - swe-cse-bof-2021-11-sc21

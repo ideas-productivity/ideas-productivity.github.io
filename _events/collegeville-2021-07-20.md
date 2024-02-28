@@ -8,6 +8,9 @@ type: Workshop
 series: 
   - "Technical Sessions and Meetings"
 #
+activities:
+  - "IDEAS-ECP"
+#
 location: online
 #
 artifacts:

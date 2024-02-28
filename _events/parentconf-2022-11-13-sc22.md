@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: Dallas, Texas
 #
+activities:
+  - "IDEAS-ECP"
+#
 subevents:
   - bsswt-2022-11-13-sc
   - swe-cse-bof-2022-11-sc22

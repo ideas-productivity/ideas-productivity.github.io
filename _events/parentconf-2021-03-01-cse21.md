@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: online
 #
+activities:
+  - "IDEAS-ECP"
+#
 subevents:
   - siam-cse21-ms30
   - siam-cse21-ms162

@@ -8,7 +8,9 @@ series:
   - "Technical Sessions and Meetings"
 parent-event-name: SIAM CSE21
 parent-event-file: parentconf-2021-03-01-cse21
-
+#
+activities:
+  - "IDEAS-ECP"
 organizers:
   - name: Lois Curfman McInnes
     affiliation: Argonne National Laboratory

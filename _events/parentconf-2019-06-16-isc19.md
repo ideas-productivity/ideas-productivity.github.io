@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: Frankfurt, Germany
 #
+activities:
+  - "IDEAS-ECP"
+#
 subevents:
   - bsswt-2019-06-19-isc
   - swe-cse-bof-2019-06-isc19

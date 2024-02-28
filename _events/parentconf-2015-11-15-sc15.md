@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: Austin, Texas
 #
+activities:
+  - "IDEAS-Classic"
+#
 subevents:
   - swe-cse-bof-2015-11-sc15
 #

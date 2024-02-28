@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: Hamburg, Germany, and online
 #
+activities:
+  - "IDEAS-ECP"
+#
 subevents:
   - bsswt-2023-05-21-isc
   - swe-cse-bof-2023-05-isc23

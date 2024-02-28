@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: online
 #
+activities:
+  - "IDEAS-ECP"
+#
 subevents:
   - bsswt-2020-11-10-sc
   - swe-cse-bof-2020-11-sc20

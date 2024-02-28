@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: Denver, Colorado
 #
+activities:
+  - "IDEAS-ECP"
+  #
 subevents:
   - bsswt-2017-11-13-sc
   - swe-cse-bof-2017-11-sc17

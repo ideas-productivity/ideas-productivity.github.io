@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: Frankfurt, Germany
 #
+activities:
+  - "IDEAS-ECP"
+#
 subevents:
   - bsswt-2018-06-24-isc
 #

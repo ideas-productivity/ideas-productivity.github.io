@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: Dallas, Texas
 #
+activities:
+  - "IDEAS-ECP"
+#
 subevents:
   - bsswt-2018-11-12-sc
   - swe-cse-bof-2018-11-sc18

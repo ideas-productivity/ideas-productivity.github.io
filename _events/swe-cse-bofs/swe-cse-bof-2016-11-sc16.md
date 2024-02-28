@@ -8,7 +8,7 @@ series:
   - "Technical Sessions and Meetings"
 #
 activities:
-  - "IDEAS-Classic"
+  - "IDEAS-ECP"
 #
 parent-event-name: SC16
 parent-event-file: parentconf-2016-11-14-sc16

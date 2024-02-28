@@ -7,6 +7,9 @@ type: "Conference"
 #
 location: Amsterdam, The Netherlands
 #
+activities:
+  - "IDEAS-ECP"
+#
 subevents:
   - siam-cse23-ms246
   - siam-cse23-ms321

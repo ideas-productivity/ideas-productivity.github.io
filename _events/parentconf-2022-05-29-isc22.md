@@ -6,6 +6,10 @@ enddate: "2022-06-02"
 type: "Conference" 
 #
 location: Hamburg, Germany, and online
+#
+activities:
+  - "IDEAS-ECP"
+#
 subevents:
   - bsswt-2022-05-29-isc
   - swe-cse-bof-2022-05-isc22

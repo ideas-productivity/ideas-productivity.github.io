@@ -9,6 +9,9 @@ type: Workshop
 series: 
   - "Technical Sessions and Meetings"
 #
+activities:
+  - "IDEAS-ECP"
+#
 location: St. Johns University, Collegeville, Minnesota
 #
 artifacts:
