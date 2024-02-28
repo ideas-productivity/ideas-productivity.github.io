@@ -1,0 +1,77 @@
+{% comment %}
+  event-item.html: Emit a single event listitem, styled as a top-level event
+
+  Arguments:
+    event: A complete event structure
+    showsubevents: Whether or not to show subevents as part of the item (default: true)
+    subevents: An array of events in which the needed subevents can be found (default: site.events)
+{% endcomment %}
+
+{% assign my-subevents = include.subevents | default: site.events %}
+
+{% comment %}
+  For most events, we take the title as-is from the frontmatter.  But tutorials are special.  
+  They usually have a "title-type" that characterizes how the venue labels the event (e.g., tutorial or track or training or...).
+  They also have venue information, which we will add to the title iff this is a standalone event (i.e., one that doesn't have
+  parent-event information).
+{% endcomment %}
+{% assign my-title = include.event.title %}
+{% if include.event.title-type %}
+  {% assign my-title = my-title | append: " " | append: include.event.title-type %}
+{% endif %}
+
+{% if include.event.link-id %}
+  <li id="{{ include.event.link-id }}">
+{% else %}
+  <li>
+{% endif %}
+  <a href="{{ include.event.url }}" class="event-link">
+    <h2 class="event-title">{{ my-title }}</h2>
+    <p class="event-date">
+    {{ include.event.startdate | date:"%b %d" }}
+    {% assign startmo = include.event.startdate | date:"%b"  %}
+    {% assign endmo = include.event.enddate | date:"%b"  %}
+    {% if include.event.enddate %}
+      {% if startmo == endmo %}
+        –{{ include.event.enddate | date:"%d" }}
+      {% else %}
+        –{{ include.event.enddate | date:"%b %d" }}
+      {% endif %}
+    {% endif %}
+    </p>
+    <small class="event-year">
+      {{ include.event.startdate | date:"%Y" }}
+    </small>
+    <small class="event-type">
+      {{ include.event.type }}
+    </small>
+  </a>
+
+  {% assign series = nil %}
+  {% if include.event.series %}
+    {% assign series = include.event.series | join: ", " %}
+    {% assign series = series | prepend: "Series: " %}
+  {% endif %}
+  {% assign venue = nil %}
+  {% if include.event.venue %}
+    {% assign venue = "Venue: " | append: event.venue %}
+  {% endif %}
+  {% if series or venue %}
+    <div class='event-series_venue'>
+      <small class="event-series">{{ series }}</small>
+      <small class='event-venue'>{{ venue }}</small>
+    </div>
+  {% endif %}
+
+  {% unless include.showsubevents == false %}
+    {% if event.subevents %}
+      <ul class="subevents">
+      {% for subslug in event.subevents %}
+        {% assign subs = my-subevents | where: 'slug', subslug %}
+        {% assign my-subevent = subs[0] %}
+        {% include _events/subevent-item.html event=my-subevent %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+  {% endunless %}
+  </li>

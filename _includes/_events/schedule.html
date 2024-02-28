@@ -16,7 +16,7 @@
 	  	{% for slug in include.subevents %}
 		  {% assign subs = my-events | where: 'slug', slug %}
 		  {% assign my-subevent = subs[0] %}
-		  {% include _events/subevent-item.html subevent=my-subevent %}
+		  {% include _events/subevent-item.html event=my-subevent %}
 	  	{% endfor %}
 	  </ul>
 

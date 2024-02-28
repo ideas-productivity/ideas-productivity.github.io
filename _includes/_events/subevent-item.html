@@ -1,42 +1,42 @@
 {% comment %}
-  subevent-item.html: Emit a single event, styled as a subevent
+  subevent-item.html: Emit a single event listitem, styled as a subevent
 
   Arguments:
-    subevent: A complete event structure
+    event: A complete event structure
 {% endcomment %}
 
-{% assign my-title = include.subevent.title %}
-{% if include.subevent.title-type %}
-  {% assign my-title = my-title | append: " " | append: include.subevent.title-type %}
+{% assign my-title = include.event.title %}
+{% if include.event.title-type %}
+  {% assign my-title = my-title | append: " " | append: include.event.title-type %}
 {% endif %}
 
-{% if include.subevent.link-id %}
-  <li id="{{ include.subevent.link-id }}">
+{% if include.event.link-id %}
+  <li id="{{ include.event.link-id }}">
 {% else %}
   <li>
 {% endif %}
-  <a href="{{ include.subevent.url }}" class="subevent-link">
+  <a href="{{ include.event.url }}" class="subevent-link">
     <h3 class="subevent-title">{{ my-title }}</h3>
-    {% if include.subevent.time %}
-      <p class="subevent-time">{{ include.subevent.time }}</p>
+    {% if include.event.time %}
+      <p class="subevent-time">{{ include.event.time }}</p>
     {% endif %}
     <small class="subevent-date">
-      {{ include.subevent.startdate | date:"%b %d" }}
-      {% assign startmo = include.subevent.startdate | date: "%b" %}
-      {% assign endmo = include.subevent.enddate | date: "%b" %}
-      {% if include.subevent.enddate %}
+      {{ include.event.startdate | date:"%b %d" }}
+      {% assign startmo = include.event.startdate | date: "%b" %}
+      {% assign endmo = include.event.enddate | date: "%b" %}
+      {% if include.event.enddate %}
         {% if startmo == endmo %}
-          -{{ include.subevent.enddate | date: "%d" }}
+          -{{ include.event.enddate | date: "%d" }}
         {% else %}
-          -{{ include.subevent.enddate | date: "%b %d" }}
+          -{{ include.event.enddate | date: "%b %d" }}
         {% endif %}
       {% endif %}
     </small>
     <small class="subevent-type">
-      {{ include.subevent.type }}
+      {{ include.event.type }}
     </small>
   </a>
-  {% if include.subevent.series %}
-    <small class="subevent-series">Series: {{ include.subevent.series | join: ", " }}</small> 
+  {% if include.event.series %}
+    <small class="subevent-series">Series: {{ include.event.series | join: ", " }}</small> 
   {% endif %}
 </li>

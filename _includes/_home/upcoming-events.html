@@ -48,70 +48,7 @@ limit (default: 3)
 		{% if sorted and sorted.size != 0 %}
 		<ul class="event-list">
 		{% for event in sorted limit: limit %}
-		{% unless event.subevent %}
-		<li>	
-
-		{% comment %}
-			For most events, we take the title as-is from the frontmatter.  But tutorials are special.  
-			They usually have a "title-type" that characterizes how the venue labels the event (e.g., tutorial or track or training or...).
-			They also have venue information, which we will add to the title iff this is a standalone event (i.e., one that doesn't have
-			parent-event information).
-		{% endcomment %}
-
-		{% if event.title-type %}
-			{% assign my-title = event.title | append: " " | append: event.title-type %}
-		{% else %}
-			{% assign my-title = event.title %}
-		{% endif %}
-
-				<a href="{{ event.url }}" class="event-link">
-				  <h2 class="event-title">{{ my-title }}</h2>
-				  <p class="event-date">
-					  {{ event.startdate | date:"%b %d" }}
-					  {% assign startmo = event.startdate | date:"%b"  %}
-					  {% assign endmo = event.enddate | date:"%b"  %}
-					  {% if event.enddate %}
-						  {% if startmo == endmo %}
-							  –{{ event.enddate | date:"%d" }}
-						  {% else %}
-							  –{{ event.enddate | date:"%b %d" }}
-						  {% endif %}
-					  {% endif %}
-					</p>
-					<small class="event-year">
-						{{ event.startdate | date:"%Y" }}
-					</small>
-					<small class="event-type">
-						{{ event.type }}
-					</small>
-				</a>
-				{% assign series = nil %}
-					{% if event.series %}
-						{% assign series = event.series | join: ", " %}
-						{% assign series = series | prepend: "Series: " %}
-					{% endif %}
-					{% assign venue = nil %}
-					{% if event.venue %}
-						{% assign venue = "Venue: " | append: event.venue %}
-					{% endif %}
-					{% if series or venue %}
-					  	<div class='event-series_venue'>
-					  		<small class="event-series">{{ series }}</small>
-					  		<small class='event-venue'>{{ venue }}</small>
-					  	</div>
-					{% endif %}
-
-			  {% if event.subevents %}
-				  <ul class="subevents">
-					  {% for subslug in event.subevents %}
-						{% assign subs = site.events | where: 'slug', subslug %}
-						{% assign my-subevent = subs[0] %}
-						{% include _events/subevent-item.html subevent=my-subevent %}
-					  {% endfor %}
-				  </ul>
-			  {% endif %}
-			</li>
-		{% endunless %}
+		{% include _events/event-item.html event=event %}
 	{% endfor %}
 	</ul>
 	{% else %}
