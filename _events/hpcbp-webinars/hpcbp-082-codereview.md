@@ -27,8 +27,8 @@ registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItcOurq
 #
 # Items that change rarely
 #
-qa-public-url: http://bit.ly/HPCBP-QA
-survey-public-url: http://bit.ly/HPCBP-feedback
+qa-public-url: http://bit.ly/hpc-bp-qa
+survey-public-url: http://bit.ly/hpc-bp-feedback
 #
 location: Online
 #
