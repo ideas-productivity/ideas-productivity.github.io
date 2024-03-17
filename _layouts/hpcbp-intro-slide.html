@@ -8,14 +8,14 @@
     {%- include _layout/header.html -%}
 
     <main class="page-content layout-wrapper" aria-label="Content">
-<    	{%- include _layout/hero-page.html 
+      {%- include _layout/hero-page.html 
     	    title = "Welcome to the HPC Best Practices Webinar Series"
     	-%}
 
       <p>The webinar for {{ page.time }} {{ page.startdate | date: "%A %-d %B %Y" }} is<br>
       
       <h2>{{ page.title }}</h2>
-      <h3>By {% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</h3>
+      <h3>by {% for person in page.presenters %}{% if forloop.last %}and {% endif %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</h3>
       </p>
 
       <h2>We want this webinar to be interactive, and we encourage questions</h2>
