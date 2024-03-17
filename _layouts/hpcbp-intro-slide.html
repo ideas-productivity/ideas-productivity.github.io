@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include _layout/head.html -%}
+
+  <body>
+
+    {%- include _layout/header.html -%}
+
+    <main class="page-content layout-wrapper" aria-label="Content">
+<    	{%- include _layout/hero-page.html 
+    	    title = "Welcome to the HPC Best Practices Webinar Series"
+    	-%}
+
+      <p>The webinar for {{ page.time }} {{ page.startdate | date: "%A %-d %B %Y" }} is<br>
+      
+      <h2>{{ page.title }}</h2>
+      <h3>By {% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% endfor %}</h3>
+      </p>
+
+      <h2>We want this webinar to be interactive, and we encourage questions</h2>
+      <ul>
+        <li><strong>Please type your questions into the Q&A document: <a href="{{ page.qa-public-url }}">{{ page.qa-public-url }}</a></strong></li>
+        <li>The host will ask the speaker questions at breaks in the presentation</li>
+        <li>Please keep your microphones muted unless the host asks you to speak</li>
+      </ul>
+
+      <h2>We want your feedback</h2>
+      <ul>
+        <li>After the webinar, please take a moment to give us your feedback: <strong><a href="{{ page.survey-public-url }}">{{ page.survey-public-url }}</a></strong></li>
+      </ul>
+
+      {% assign ipo-url = "/" | absolute_url %}
+      <h2>Archives of this webinar will be published</h2>
+      <ul>
+        <li>After the webinar, the event page will be updated with links to the recording, slides, and Q&A notes</li>
+        <li>Everyone who registered or attended will receive an email with the information</li>
+        <li>To navigate to the webinar series archives, go to <strong><a href ="{{ ipo-url }}">{{ ipo-url }}</a> > Resources > Events by Series > HPC Best Practices Webinars</strong></li>
+      </ul>
+
+      <p><em>The Best Practices for HPC Software Developers webinar series is produced by the IDEAS Productivity family of projects, in partnership with the Argonne Leadership Computing Facility (ALCF), National Energy Research Scientific Computing Center (NERSC), Oak Ridge Leadership Computing Facility (OLCF), and developing DOE software stewardship organizations.</em></p>
+    </main>   
+  </body>
+</html>

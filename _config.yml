@@ -60,6 +60,9 @@ collections:
   events-hpcbp-mailchimp-announcement:
     output: true
     permalink: /internal/events-hpcbp-mailchimp-announcement/:slug
+  events-hpcbp-intro-slides:
+    output: true
+    permalink: /internal/events-hpcbp-intro-slides/:slug
   events-hpcbp-youtube:
     output: true
     permalink: /internal/events-hpcbp-youtube/:slug
@@ -105,6 +108,12 @@ defaults:
       type: "events-hpcbp-mailchimp-announcement"
     values:
       layout: hpcbp-mailchimp-announcement
+      sitemap: false
+  - scope:
+      path: ""
+      type: "events-hpcbp-intro-slides"
+    values:
+      layout: hpcbp-intro-slide
       sitemap: false
   - scope:
       path: ""
