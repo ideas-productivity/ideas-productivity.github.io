@@ -27,7 +27,7 @@ Three multifaceted use cases are driving and demonstrating the capabilities and 
 
 # Use Case 1: Hydrological and Biogeochemical Cycling in the Colorado River System
 
-{% include media-img.html source = "ideas-classic/EastRiver-meanders-300x225.png" %}
+{% include media-img.html source = "ideas-classic/hydro-1.jpg" %}
 
 Climate and land use changes are projected to significantly impact hydrology, biogeochemical cycling, and vegetation over the coming decades, with potentially profound impacts on the ecosystem services of critical watersheds. The impact is likely to be particularly severe in the western U.S., where semi-arid conditions and limited water availability have already placed the large river systems under stress, with potentially detrimental effects on their water supply and carbon regulation services.  Biogeochemical cycling within the larger western U.S. river systems is the result of a coupled set of processes that include subsurface and surface water flow, soil processes, and evolving vegetation, all of which interact to control the short- and long-term dynamics of watershed hydrology and biogeochemical cycles. Arguably, the most important of the biogeochemical cycles is that of carbon because of its effect on both the redox status of subsurface systems (which in large part flow back into the river systems) and its regulation of atmospheric CO2, the most important of the greenhouse gases. Moreover, since these changes are expected to take place over extended periods, they are not reasonably addressed by observation alone.  In this project, the emerging community-based xSDK will provide the advanced simulation capabilities necessary **to address the following science objective:**
 
