@@ -12,6 +12,8 @@ series: "HPC Best Practices Webinars"
     - BSSw.io event articles
     - BSSw.io digest content for event articles
     - Mailchimp announcement message
+  - **During-event content**
+    - Intro slide
   - **Post-event content**
     - YouTube content
     - Mailchimp follow-up message
