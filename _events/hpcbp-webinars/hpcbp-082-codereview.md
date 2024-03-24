@@ -18,6 +18,7 @@ artifacts:
   - label: Recording
     format: YouTube
     yt-video-id: NDgZ8Y74ISg
+  - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-082-codereview.pdf
   - label: Q&A
