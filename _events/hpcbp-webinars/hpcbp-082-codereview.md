@@ -15,15 +15,14 @@ bsswio-topics: ["peer code review", "online learning"]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItcOurqjIiHsWLFLiFJwwD-pcRa1hq3fw
 #
 artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: SEu0zX7t12Y
-  - label: Slides
+  - label: Recording
+    format: YouTube
+    yt-video-id: NDgZ8Y74ISg
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-082-codereview.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-082-codereview-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-082-codereview-qa.pdf
 #
 # Items that change rarely
 #
