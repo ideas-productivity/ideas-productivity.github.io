@@ -1,6 +1,6 @@
 ---
 startdate: "2024-03-20"
-time: "01:00 pm - 02:00 pm EDT" # Ensure that time zone is correct with respect to standard/daylight time
+time: "1:00 pm - 2:00 pm EDT" # Ensure that time zone is correct with respect to standard/daylight time
 #
 title: "Code Review for Scientific Software: Experiences building an online tutorial"
 #
