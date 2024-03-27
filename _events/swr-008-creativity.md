@@ -9,9 +9,9 @@ activities:
 link-id: panel008
 #
 panelists:
-  - name: Addi Thakur Malviya
+  - name: Addi Malviya Thakur
     affiliation: Oak Ridge National Laboratory
-    bio: "Addi Thakur Malviya is a Group Leader for Software Engineering at Oak Ridge National Laboratory and a Better Scientific Software (BSSw) fellow."
+    bio: "Addi Malviya Thakur is a Group Leader for Software Engineering at Oak Ridge National Laboratory and a Better Scientific Software (BSSw) fellow."
   - name: Pat Quillen
     affiliation: Mathworks
     bio: "Pat Quillen is a software engineer for Mathworks."
