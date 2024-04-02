@@ -7,7 +7,7 @@ title: "Getting it Right: System Testing of Scientific Software"
 presenters:
   - name: Myra Cohen
     affiliation: Iowa State University
-    github-id: https://faculty.sites.iastate.edu/mcohen/
+    profile-url: https://faculty.sites.iastate.edu/mcohen/
     bio: |
       Myra Cohen is a professor of computer science at Iowa State University, where she holds the Lahn and Oahn Chair in software engineering. She is also a 2023 Better Scientific Software Fellow. Her research expertise is in systems software testing, with an emphasis on systems that are highly configurable (or customizable).  She also has a strong interest in synergies between synthetic and systems biology and software engineering, which have many parallels and can benefit from similar testing approaches; she uses many bio-inspired algorithms in her research. She is an IEEE Senior Member and an ACM Distinguished Scientist.
 #

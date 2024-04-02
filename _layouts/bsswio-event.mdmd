@@ -67,7 +67,7 @@ Presentation Language | English
 
 {%- if page.presenters %}
 #### Contributed by {% for person in page.presenters -%}
-  {% if person.github-id %}[{{person.name }}]({{ site.github-url }}/{{ person.github-id }}){% else %}{{ person.name }}{% endif %}
+  {% if person.github-id %}[{{person.name }}]({{ site.github-url }}/{{ person.github-id }}){% elsif person.profile-url %}[{{person.name }}]({{ person.profile-url }}){% else %}{{ person.name }}{% endif %}
 {%- unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}
 {%- endfor %}
 {% else %}
