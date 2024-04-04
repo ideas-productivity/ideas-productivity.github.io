@@ -29,12 +29,12 @@ layout: null
         {%- for i in event.artifacts -%}
         {%- if i.status == "published" or i.status == nil -%}
           {%- unless row -%}<li><h4>{%- endunless -%}
-            {%- if i.yt-video-id -%}<a href="{{ include.yt-url | default: site.youtube-watch-url }}{{ i.yt-video-id  | escape }}">
+            {%- if i.yt-video-id -%}<a href="{{ include.yt-url | default: site.youtube-watch-url }}{{ i.yt-video-id | escape }}">
             {%- elsif i.yt-playlist-id -%}<a href="{{ include.yt-url | default: site.youtube-playlist-url }}{{ i.yt-playlist-id  | escape }}">
             {%- elsif i.gh-repo -%}<a href="{{ include.gh-url | default: site.github-url }}/{{ i.gh-repo }}">
-            {%- elsif i.doi -%}<a href="{{ include.doi-url | default: site.doi-resolver-url  | escape }}/{{ i.doi  | escape }}">
-            {%- elsif i.url -%}<a href="{{ i.url | escape }}">{%- endif -%}
-            {{ i.label }}
+            {%- elsif i.doi -%}<a href="{{ include.doi-url | default: site.doi-resolver-url }}/{{ i.doi  | escape }}">
+            {%- elsif i.url -%}<a href="{{ i.url }}">{%- endif -%}
+            {{ i.label | escape }}
             {%- if i.yt-video-id or i.yt-playlist-id or i.gh-repo or i.doi or i.url -%}</a>{%- endif -%}
             {%- if i.note %} {{ i.note }}{%- endif -%}
             {%- if i.format %} ({{ i.format }}){%- endif -%}
