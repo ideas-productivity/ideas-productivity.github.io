@@ -8,7 +8,7 @@ blurb: "Providing recognition and funding to leaders and advocates of high-quali
 ---
 
 {% 	include media-heroimg-2.html 
-	  source = "hero-fellowship.png"
+	  source = "hero-fellowship.jpg"
 %}
 
 # About the BSSw Fellows Program

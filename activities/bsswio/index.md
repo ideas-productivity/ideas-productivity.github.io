@@ -8,7 +8,7 @@ blurb: "A hub for scientific software development resources."
 ---
 
 {% 	include media-heroimg-2.html 
-	  source = "hero-bssw.png"
+	  source = "hero-bssw.jpg"
 %}
 
 # Developing scientific software should be a shared experience

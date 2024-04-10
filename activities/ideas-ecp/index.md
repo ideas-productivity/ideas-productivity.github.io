@@ -15,7 +15,7 @@ redirect_from:
 {% include_relative nav-sidebar current="Overview" %}
 
 {% 	include media-heroimg-2.html 
-	  source = "hero-ecp.png"
+	  source = "hero-ecp.jpg"
 %}
 
 # About the Exascale Computing Project

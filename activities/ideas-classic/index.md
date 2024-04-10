@@ -24,9 +24,7 @@ redirect_from:
 <!-- ---------------------------------------------------------------------- -->
 
 {% 	include media-heroimg.html 
-	  source = "ideas-classic/IDEAS-broader-DOE-context-transparent.png"
-	  contain = true
-	  caption = "IDEAS-Classic in the broader DOE context"
+	  source = "hero-classic.jpg"
 %}
 
 *This project was active 2014--2017.*

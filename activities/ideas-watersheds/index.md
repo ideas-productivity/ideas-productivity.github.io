@@ -22,7 +22,7 @@ redirect_from:
 ---
 
 {%  include media-heroimg-2.html 
-    source = "hero-watersheds.png"
+    source = "hero-watersheds.jpg"
 %}
 
 # Overview

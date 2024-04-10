@@ -12,7 +12,7 @@ blurb: "Extreme-scale Scientific Software Development Kit"
 <!-- ---------------------------------------------------------------------- -->
 
 {% 	include media-heroimg-2.html 
-	  source = "hero-xsdk.png"
+	  source = "hero-xsdk.jpg"
 %}
 
 
