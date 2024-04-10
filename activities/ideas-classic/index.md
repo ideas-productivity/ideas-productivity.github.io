@@ -23,7 +23,7 @@ redirect_from:
 <!-- Content -->
 <!-- ---------------------------------------------------------------------- -->
 
-{% 	include media-heroimg.html 
+{% 	include media-heroimg-2.html 
 	  source = "hero-classic.jpg"
 %}
 
