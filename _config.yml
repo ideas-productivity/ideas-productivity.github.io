@@ -128,11 +128,11 @@ defaults:
       layout: hpcbp-mailchimp-followup
       sitemap: false
   - scope:
-      path: "internal"
+      path: "_internal"
     values:
       sitemap: false
   - scope:
-      path: "internal/**"
+      path: "_internal/**"
     values:
       sitemap: false
 
@@ -150,10 +150,10 @@ algolia:
   files_to_exclude:
     - _pages/cookies.md
     - _pages/privacy.md
-    - internal/*
-    - internal/index.md
-    - internal/hccbp-webinars/*
-    - internal/hccbp-webinars/index.md
+    - _internal/*
+    - _internal/index.md
+    - _internal/hccbp-webinars/*
+    - _internal/hccbp-webinars/index.md
     - _events-draft/*
     - _events-hpcbp/*
     - _events-hpcbp-bsswio/*
