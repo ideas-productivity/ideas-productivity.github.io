@@ -135,6 +135,14 @@ defaults:
       path: "_internal/**"
     values:
       sitemap: false
+  - scope:
+      path: "_internal/hccbp-webinars"
+    values:
+      sitemap: false
+  - scope:
+      path: "_internal/hccbp-webinars/**"
+    values:
+      sitemap: false
 
 feed:
   collections:
