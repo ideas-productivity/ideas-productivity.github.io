@@ -150,17 +150,17 @@ algolia:
   files_to_exclude:
     - _pages/cookies.md
     - _pages/privacy.md
-    - collections/internal/*
-    - collections/internal/index.md
-    - collections/internal/hccbp-webinars/*
-    - collections/internal/hccbp-webinars/index.md
-    - collections/_events-draft/*
-    - collections/_events-hpcbp/*
-    - collections/_events-hpcbp-bsswio/*
-    - collections/_events-hpcbp-bsswio-digest/*
-    - collections/_events-hpcbp-mailchimp-announcement/*
-    - collections/_events-hpcbp-youtube/*
-    - collections/_events-hpcbp-mailchimp-followup/*
+    - internal/*
+    - internal/index.md
+    - internal/hccbp-webinars/*
+    - internal/hccbp-webinars/index.md
+    - _events-draft/*
+    - _events-hpcbp/*
+    - _events-hpcbp-bsswio/*
+    - _events-hpcbp-bsswio-digest/*
+    - _events-hpcbp-mailchimp-announcement/*
+    - _events-hpcbp-youtube/*
+    - _events-hpcbp-mailchimp-followup/*
 
 # Site configuration for the Jekyll 3 Pagination Gem 
 # gems: 
