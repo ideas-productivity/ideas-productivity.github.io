@@ -150,7 +150,10 @@ algolia:
   files_to_exclude:
     - _pages/cookies.md
     - _pages/privacy.md
-
+    - collections/internal/*
+    - collections/internal/index.md
+    - collections/internal/hccbp-webinars/*
+    - collections/internal/hccbp-webinars/index.md
 
 # Site configuration for the Jekyll 3 Pagination Gem 
 # gems: 
