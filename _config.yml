@@ -128,19 +128,19 @@ defaults:
       layout: hpcbp-mailchimp-followup
       sitemap: false
   - scope:
-      path: "_internal"
+      path: "internal"
     values:
       sitemap: false
   - scope:
-      path: "_internal/**"
+      path: "internal/**"
     values:
       sitemap: false
   - scope:
-      path: "_internal/hccbp-webinars"
+      path: "internal/hccbp-webinars"
     values:
       sitemap: false
   - scope:
-      path: "_internal/hccbp-webinars/**"
+      path: "internal/hccbp-webinars/**"
     values:
       sitemap: false
 
