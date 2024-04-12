@@ -73,6 +73,7 @@
 	p {
 		grid-column: 1 / -1;
 		color: #696a71;
+		@include stack(md);
 	}
 
 	.event-link {
