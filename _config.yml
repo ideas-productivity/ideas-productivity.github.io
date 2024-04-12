@@ -155,19 +155,17 @@ algolia:
   application_id: "2U5U5F24YD"
   index_name: dev_ideas
   search_only_api_key: "5f84ff238bbe1b105add259330b70136"
-  files_to_exclude: [_internal/]
-
-
-   # - _pages/cookies.md
-   # - _pages/privacy.md
-   # - _events-draft/
-   # - _events-hpcbp/
-   # - _events-hpcbp-bsswio/
-   # - _events-hpcbp-bsswio-digest/
-   # - _events-hpcbp-mailchimp-announcement/
-   # - _events-hpcbp-youtube/
-   # - _events-hpcbp-mailchimp-followup/
-   # - _internal/*
+  files_to_exclude:
+   - _pages/cookies.md
+   - _pages/privacy.md
+   - _events-draft/
+   - _events-hpcbp/
+   - _events-hpcbp-bsswio/
+   - _events-hpcbp-bsswio-digest/
+   - _events-hpcbp-mailchimp-announcement/
+   - _events-hpcbp-youtube/
+   - _events-hpcbp-mailchimp-followup/
+   - "_internal/**"
 
 
 
