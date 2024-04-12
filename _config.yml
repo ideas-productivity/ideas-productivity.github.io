@@ -170,6 +170,9 @@ algolia:
     - _events-hpcbp-youtube/*
     - _events-hpcbp-mailchimp-followup/*
 
+
+exclude: [_internal, _events-draft]
+
 # Site configuration for the Jekyll 3 Pagination Gem 
 # gems: 
 #   - jekyll-paginate-v2 
