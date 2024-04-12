@@ -165,7 +165,8 @@ algolia:
    - _events-hpcbp-mailchimp-announcement/
    - _events-hpcbp-youtube/
    - _events-hpcbp-mailchimp-followup/
-   - "_internal/**"
+   - internal/*
+   - internal/*/*
 
 
 
