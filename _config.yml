@@ -158,10 +158,10 @@ algolia:
   files_to_exclude:
     - _pages/cookies.md
     - _pages/privacy.md
-    - _internal/*
-    - _internal/index.md
-    - _internal/hccbp-webinars/*
-    - _internal/hccbp-webinars/index.md
+    - internal/*
+    - internal/index.md
+    - internal/hccbp-webinars/*
+    - internal/hccbp-webinars/index.md
     - _events-draft/*
     - _events-hpcbp/*
     - _events-hpcbp-bsswio/*
@@ -171,7 +171,6 @@ algolia:
     - _events-hpcbp-mailchimp-followup/*
 
 
-exclude: [_internal, _events-draft]
 
 # Site configuration for the Jekyll 3 Pagination Gem 
 # gems: 
@@ -200,6 +199,7 @@ exclude: [_internal, _events-draft]
 exclude:
   - README.md
   - vendor
+  - internal
 
 # We have multiple pages where we need to refer to the canonical location
 # for the HPC-BP webinar series and also to the directory where the actual events
