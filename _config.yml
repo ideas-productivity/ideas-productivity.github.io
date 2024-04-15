@@ -44,34 +44,34 @@ future: true
 collections:
   events:
     output: true
-    permalink: /events/:slug
+    permalink: events/:slug
   impact:
     output: true
-    permalink: /impact/:slug
+    permalink: impact/:slug
   events-draft:
     output: true
-    permalink: /internal/events-draft/:slug
+    permalink: internal/events-draft/:slug
   events-hpcbp:
     output: false
-    permalink: /internal/events-hpcbp/:slug
+    permalink: internal/events-hpcbp/:slug
   events-hpcbp-bsswio:
     output: true
-    permalink: /internal/events-hpcbp-bsswio/:slug
+    permalink: internal/events-hpcbp-bsswio/:slug
   events-hpcbp-bsswio-digest:
     output: true
-    permalink: /internal/events-hpcbp-bsswio-digest/:slug
+    permalink: internal/events-hpcbp-bsswio-digest/:slug
   events-hpcbp-mailchimp-announcement:
     output: true
-    permalink: /internal/events-hpcbp-mailchimp-announcement/:slug
+    permalink: internal/events-hpcbp-mailchimp-announcement/:slug
   events-hpcbp-intro-slides:
     output: true
-    permalink: /internal/events-hpcbp-intro-slides/:slug
+    permalink: internal/events-hpcbp-intro-slides/:slug
   events-hpcbp-youtube:
     output: true
-    permalink: /internal/events-hpcbp-youtube/:slug
+    permalink: internal/events-hpcbp-youtube/:slug
   events-hpcbp-mailchimp-followup:
     output: true
-    permalink: /internal/events-hpcbp-mailchimp-followup/:slug
+    permalink: internal/events-hpcbp-mailchimp-followup/:slug
 
 defaults:
   - scope:
@@ -158,16 +158,6 @@ algolia:
   files_to_exclude:
    - _pages/cookies.md
    - _pages/privacy.md
-   - _events-draft/*.md
-   - _events-hpcbp/*.md
-   - _events-hpcbp-bsswio/*.md
-   - _events-hpcbp-bsswio-digest/*.md
-   - _events-hpcbp-mailchimp-announcement/*.md
-   - _events-hpcbp-youtube/*.md
-   - _events-hpcbp-mailchimp-followup/*.md
-   - internal/*.md
-   - internal/hpcbp-webinars/*.md
-
 
 
 
