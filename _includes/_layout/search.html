@@ -73,11 +73,17 @@ const hitTemplate = function(hit) {
   `;
 }
 
+let timerId;
+let timeout = 0;
 
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
     placeholder: 'Search...',
+    queryHook(query, refine) {
+      clearTimeout(timerId);
+      timerId = setTimeout(() => refine(query), timeout);
+    },
     poweredBy: false
   })
 );
