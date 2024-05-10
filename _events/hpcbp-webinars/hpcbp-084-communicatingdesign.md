@@ -9,7 +9,7 @@ presenters:
     affiliation: National Renewable Energy Laboratory
     github-id: rafmudaf
     bio: |
-      Rafael Mudafort is a senior researcher at the National Renewable Energy Lab’s National Wind Technology Center, focusing on computational modeling of wind turbine and wind farm dynamics and controls. He has served as the research software engineer for several wind energy software packages, and he is currently leading an effort to characterize, coordinate, and elevate the quality of NREL’s portfolio of wind energy software.  Rafael is also a 2023 Better Scientific Software Fellow.
+      Rafael Mudafort is a senior researcher at the National Renewable Energy Lab’s National Wind Technology Center, focusing on computational modeling of wind turbine and wind farm dynamics and controls. He has served as the research software engineer for several wind energy software packages, and he is currently involved in an effort to coordinate and elevate the quality of NREL’s wind energy software.   Rafael is also a 2023 [Better Scientific Software Fellow](https://bssw.io/fellowship).
 #
 bsswio-topics: ["documentation", "design", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/vJIsc-quqT8tHpd71RgLupEVRnTOHWSP5o0
