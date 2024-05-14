@@ -63,6 +63,9 @@ collections:
   events-hpcbp-mailchimp-announcement:
     output: true
     permalink: internal/events-hpcbp-mailchimp-announcement/:slug
+  events-hpcbp-slack:
+    output: true
+    permalink: internal/events-hpcbp-slack/:slug
   events-hpcbp-intro-slides:
     output: true
     permalink: internal/events-hpcbp-intro-slides/:slug
@@ -102,6 +105,12 @@ defaults:
       type: "events-hpcbp-bsswio-digest"
     values:
       layout: bsswio-event-digest
+      sitemap: false
+  - scope:
+      path: ""
+      type: "events-hpcbp-slack"
+    values:
+      layout: hpcbp-slack
       sitemap: false
   - scope:
       path: ""

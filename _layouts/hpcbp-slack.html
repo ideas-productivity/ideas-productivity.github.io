@@ -1,0 +1,56 @@
+---
+layout: none
+---
+{% comment %}
+  Figure out where we are in the collection so that we can list the
+  three webinars immediately preceding this one.
+{% endcomment %}
+{% assign sorted = site.events-hpcbp | sort: "startdate" | reverse %}
+{% for webinar in sorted %}
+{% if webinar.startdate == page.startdate and webinar.title == page.title %}
+  {% assign current = forloop.index %}
+  {% break %}
+{% endif %}
+{% endfor %}
+{% assign hpcbp-tag = page.path | basename_without_extension %}
+<html>
+  <head>
+    <title>Webinar Announcement for Slack</title>
+  </head>
+<body>
+<main>
+  <h1>Webinar Announcement for Slack</h1>
+
+  <p><strong>{{ page.startdate | date: "%F" }}: </strong> {{ page.title }}</p>
+
+
+
+<h2>Short version</h2>
+{% if page.short-description %}
+<section style="border: 3px; border-style: solid; padding: 1em;">
+  The next webinar in the HPC Best Practices series:<br>
+  <p><strong>{{ page.title }}</strong><br>
+  will be presented by <strong>{% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}</strong><br>
+  on <strong>{{ page.startdate | date: "%B %d" }} {{ page.time }}</strong></p>
+  <p><strong>Registration:</strong> <a href="{{ page.registration-url }}">{{ page.registration-url }}</a></p>
+  <p><strong>Topic:</strong> {{ page.short-description }}</p>
+  <p><strong>Details:</strong> <a href="{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}">{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}</a></p>
+</section>
+{% else %}
+<em>Short description not provided.</em>
+{% endif %}
+
+<h2>Full version</h2>
+<section style="border: 3px; border-style: solid; padding: 1em;">
+  The next webinar in the HPC Best Practices series:<br>
+  <p><strong>{{ page.title }}</strong><br>
+  will be presented by <strong>{% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}</strong><br>
+  on <strong>{{ page.startdate | date: "%B %d" }} {{ page.time }}</strong></p>
+  <p><strong>Registration:</strong> <a href="{{ page.registration-url }}">{{ page.registration-url }}</a></p>
+  <p>{% if page.description %}{{ page.description }}{% else %}{{ content }}{% endif %}</p>
+  <p><strong>Details:</strong> <a href="{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}">{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}</a></p>
+</section>
+
+</main>
+</body>
+</html>
