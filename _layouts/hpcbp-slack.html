@@ -27,13 +27,18 @@ layout: none
 
 <h2>Short version</h2>
 {% if page.short-description %}
+<p><em>Yes, it looks like there's a lot of vertical white space here.  However, when pasted into Slack it will be well formatted. You will probably want to eliminate the website previews before sending.</em></p>
 <section style="border: 3px; border-style: solid; padding: 1em;">
-  The next webinar in the HPC Best Practices series:<br>
-  <p><strong>{{ page.title }}</strong><br>
-  will be presented by <strong>{% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}</strong><br>
-  on <strong>{{ page.startdate | date: "%B %d" }} {{ page.time }}</strong></p>
+  <p>The next webinar in the HPC Best Practices series:</p>
+  <br>
+  <p><strong>{{ page.title }}</strong></p>
+  <p>will be presented by <strong>{% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}</strong></p>
+  <p>on <strong>{{ page.startdate | date: "%B %d" }} {{ page.time }}</strong></p>
+  <br>
   <p><strong>Registration:</strong> <a href="{{ page.registration-url }}">{{ page.registration-url }}</a></p>
+  <br>
   <p><strong>Topic:</strong> {{ page.short-description }}</p>
+  <br>
   <p><strong>Details:</strong> <a href="{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}">{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}</a></p>
 </section>
 {% else %}
@@ -41,13 +46,18 @@ layout: none
 {% endif %}
 
 <h2>Full version</h2>
+<p><em>Yes, it looks like there's a lot of vertical white space here.  However, when pasted into Slack it will be well formatted. You will probably want to eliminate the website previews before sending.</em></p>
 <section style="border: 3px; border-style: solid; padding: 1em;">
-  The next webinar in the HPC Best Practices series:<br>
-  <p><strong>{{ page.title }}</strong><br>
-  will be presented by <strong>{% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}</strong><br>
-  on <strong>{{ page.startdate | date: "%B %d" }} {{ page.time }}</strong></p>
+  <p>The next webinar in the HPC Best Practices series:</p>
+  <br>
+  <p><strong>{{ page.title }}</strong></p>
+  <p>will be presented by <strong>{% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}</strong></p>
+  <p>on <strong>{{ page.startdate | date: "%B %d" }} {{ page.time }}</strong></p>
+  <br>
   <p><strong>Registration:</strong> <a href="{{ page.registration-url }}">{{ page.registration-url }}</a></p>
+  <br>
   <p>{% if page.description %}{{ page.description }}{% else %}{{ content }}{% endif %}</p>
+  <br>
   <p><strong>Details:</strong> <a href="{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}">{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}</a></p>
 </section>
 
