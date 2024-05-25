@@ -66,6 +66,9 @@ collections:
   events-hpcbp-slack:
     output: true
     permalink: internal/events-hpcbp-slack/:slug
+  events-hpcbp-facilities:
+    output: true
+    permalink: internal/events-hpcbp-facilities/:slug
   events-hpcbp-intro-slides:
     output: true
     permalink: internal/events-hpcbp-intro-slides/:slug
@@ -111,6 +114,12 @@ defaults:
       type: "events-hpcbp-slack"
     values:
       layout: hpcbp-slack
+      sitemap: false
+  - scope:
+      path: ""
+      type: "events-hpcbp-facilities"
+    values:
+      layout: hpcbp-facilities
       sitemap: false
   - scope:
       path: ""

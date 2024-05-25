@@ -12,6 +12,7 @@ series: "HPC Best Practices Webinars"
     - BSSw.io event articles, link to BSSe.io action to publish event, BSSw.io digest content for event articles
     - Mailchimp announcement message
     - Slack announcement messages
+    - Facilities announcement messages
   - **During-event content**
     - Intro slide
   - **Post-event content**

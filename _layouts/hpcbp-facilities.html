@@ -1,0 +1,39 @@
+---
+layout: none
+---
+{% comment %}
+  Figure out where we are in the collection so that we can list the
+  three webinars immediately preceding this one.
+{% endcomment %}
+{% assign sorted = site.events-hpcbp | sort: "startdate" | reverse %}
+{% for webinar in sorted %}
+{% if webinar.startdate == page.startdate and webinar.title == page.title %}
+  {% assign current = forloop.index %}
+  {% break %}
+{% endif %}
+{% endfor %}
+{% assign hpcbp-tag = page.path | basename_without_extension %}
+<html>
+  <head>
+    <title>Webinar Announcement for Computing Facilities</title>
+  </head>
+<body>
+<main>
+  <h1>Webinar Announcement for Computing Facilities</h1>
+
+  <p><strong>{{ page.startdate | date: "%F" }}: </strong> {{ page.title }}</p>
+
+  <p><em>The goal of this page is to make is possible to simply cut-and-paste the HPC-BP webinar announcements into your facility's communications to users.  Please let <a href="mailto:bernholdtde@ornl.gov?subject=HPC-BP facilities announcements page">David Bernholdt</a> know if changes to this page would help!</em></p>
+
+<h2>ALCF</h2>
+<section style="border: 3px; border-style: solid; padding: 1em;">
+  <p>*** HPC Best Practices Webinar: {{ page.title }}: {{ page.startdate | date: "%B %d" }} *** <a href="{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}">{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}</a></p>
+</section>
+
+<h2>NERSC</h2>
+
+<h2>OLCF</h2>
+
+</main>
+</body>
+</html>
