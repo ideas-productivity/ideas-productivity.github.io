@@ -15,9 +15,9 @@ bsswio-topics: ["testing", "online learning"]
 registration-url: https://exascaleproject.zoomgov.com/meeting/register/vJItcemvpj8iG8vyauLJ4M6hukBbw4D3fxM
 #
 artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: NDgZ8Y74ISg
+  - label: Recording
+    format: YouTube
+    yt-video-id: EsdZlKvgRQk
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-083-gettingitright.pdf
