@@ -27,10 +27,35 @@ layout: none
 
 <h2>ALCF</h2>
 <section style="border: 3px; border-style: solid; padding: 1em;">
-  <p>*** HPC Best Practices Webinar: {{ page.title }}: {{ page.startdate | date: "%B %d" }} *** <a href="{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}">{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}</a></p>
+  <p>*** HPC Best Practices Webinar: {{ page.title }}: {{ page.startdate | date: "%B %-d" }} *** <a href="{{ page.url | replace: '/internal/events-hpcbp-facilities', '/events' | absolute_url }}">{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}</a></p>
 </section>
 
 <h2>NERSC</h2>
+
+{% comment %}
+  A completely inflexible kludge to get event times in Pacific time.
+
+  Assumes page.time is a string of the form "%l:%M %P - "%l:%m %P E?T", where
+  %l is the 12-hour hours, %M is the minutes, %P is "am" or "pm", and the 
+  timezone is either EST or EDT. We subtract three hours (10800 seconds) 
+  to shift from Eastern to Pacific.
+
+  Does NOT handle any edge cases (e.g., times near the start/end of the day, etc.)
+{% endcomment %}
+
+{% assign t = page.time | split: "-" %}
+{% assign t0p = t[0] | date: "%s" | minus: 10800 | date: "%l:%M %P" %}
+{% assign t1p = t[1] | date: "%s" | minus: 10800 | date: "%l:%M %P" %}
+
+<section style="border: 3px; border-style: solid; padding: 1em;">
+<p><strong>HPC Best Practices Webinar on {{ page.topic | default: "NEED HUMAN INTERVENTION" }}, {{ page.startdate | date: "%B %-d" }}</strong></p>
+
+<p>The IDEAS Productivity project is hosting an upcoming webinar in their HPC Best Practices Series, entitled "{{ page.title }}" on {{ page.startdate | date: "%B %-d" }}, from  {{ t0p }}-{{ t1p }} (Pacific Time).</p>
+
+<p>{% if page.short-description %}{{ page.short-description }}{% else %}{{ content }}{% endif %}</p>
+
+<p>There is no cost to attend, but registration is required. For more information, please see the <a href="{{ page.url | replace: '/internal/events-hpcbp-failities', '/events' | absolute_url }}">event webpage</a>.</p>
+</section>
 
 <h2>OLCF</h2>
 
