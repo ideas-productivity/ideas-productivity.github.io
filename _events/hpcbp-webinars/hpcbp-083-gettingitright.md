@@ -21,9 +21,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-083-gettingitright.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-083-gettingitright-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-083-gettingitright-qa.pdf
 #
 # Items that change rarely
 #
