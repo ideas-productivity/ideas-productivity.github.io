@@ -14,13 +14,13 @@ presenters:
 bsswio-topics: ["documentation", "design", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/vJIsc-quqT8tHpd71RgLupEVRnTOHWSP5o0
 #
-# artifacts:
+artifacts:
 #   - label: Recording
 #     format: YouTube
 #     yt-video-id: NDgZ8Y74ISg
-#   - label: Slides
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign.pdf
+  - label: Slides
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign.pdf
 #   - label: Q&A
 #     format: PDF
 #     url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign-qa.pdf
