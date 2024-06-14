@@ -17,7 +17,7 @@ registration-url: https://www.zoomgov.com/meeting/register/vJIsc-quqT8tHpd71RgLu
 artifacts:
   - label: Recording
     format: YouTube
-    yt-video-id: JB2YqQnggv0
+    yt-video-id: VZXg7wcrhao
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign.pdf
