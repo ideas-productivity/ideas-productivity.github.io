@@ -21,9 +21,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign-qa.pdf
 #
 # Items that change rarely
 #
