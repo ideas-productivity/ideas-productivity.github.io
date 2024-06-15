@@ -43,6 +43,6 @@ activities:
 #
 topic: user experience in scientific ecosystems
 short-description: |
-  Have you found building and delivering usable scientific software to be challenging? Encountering challenges meeting user needs? Join us virtually for the first in the STRUDEL project’s series of events to help support adoption of user experience approaches in scientific software development.
+  Have you found building and delivering usable scientific software to be challenging? Encountering challenges meeting user needs? Join us for this introduction to the STRUDEL project, which helps support adoption of user experience approaches in scientific software development.
 ---
 Scientific discoveries increasingly depend on leveraging computation and data synergistically at scale. Scientific workflows and software have become a cornerstone to enable seamless, interactive, searchable, collaborative, and reproducible science. However, delivering usable and maintainable software is often still challenging.  This talk will detail our journey in using user experience research over the last decade to develop software products and inform our research approaches. User experience research has enabled us to focus on understanding user behaviors, needs, and motivations to build next-generation scientific software ecosystems. Finally, the talk will describe how our experiences have led us to STRUDEL, an open-source science project building resources to enable teams to plan, design, and build user-centered software for their scientific communities.
