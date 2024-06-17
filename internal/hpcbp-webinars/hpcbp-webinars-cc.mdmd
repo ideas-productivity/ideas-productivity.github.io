@@ -4,6 +4,8 @@ series: "HPC Best Practices Webinars"
 contributors:
   - name: Osni Marques
     github-id: oamarques
+  - name: David E. Bernholdt
+    github-id: bernhold
 ---
 
 # Best Practices for HPC Software Developers Webinar Series
