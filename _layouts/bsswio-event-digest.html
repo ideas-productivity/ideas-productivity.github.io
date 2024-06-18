@@ -16,10 +16,12 @@ layout: none
 {{ page.startdate | date: "%A %B %d, %Y"}}<br/>
 {% if page.location %}{{ page.location | capitalize }}{% else %}Online{% endif %}, in the webinar series <em>Best Practices for HPC Software Developers</em></p>
 
-{% if page.description %}
-{{ page.description | markdownify }}
+{% if page.short-description %}
+    {{ page.short-description | markdownify }}
+{% elsif page.description %}
+  {{ page.description | markdownify }}
 {% else %}     
-{{ content }}
+  {{ content }}
 {% endif %}
 
 <p><a href="{{ page.url | replace: "/internal/events-hpcbp-bsswio-digest", "/events" }}" target="_blank">Event Information &gt;</a></p>
