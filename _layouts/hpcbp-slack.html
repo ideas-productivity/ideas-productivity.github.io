@@ -21,7 +21,7 @@ layout: none
 <main>
   <h1>Webinar Announcement for Slack</h1>
 
-  <p><strong>{{ page.startdate | date: "%F" }}: </strong> {{ page.title }}</p>
+  <p><strong>{{ page.startdate | date: "%F" }}: </strong> <a href="{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}">{{ page.title }}</a></p>
 
 
 

@@ -21,7 +21,7 @@ layout: none
 <main>
   <h1>Webinar Announcement for Computing Facilities</h1>
 
-  <p><strong>{{ page.startdate | date: "%F" }}: </strong> {{ page.title }}</p>
+  <p><strong>{{ page.startdate | date: "%F" }}: </strong> <a href="{{ page.url | replace: '/internal/events-hpcbp-facilities', '/events' | absolute_url }}">{{ page.title }}</a></p>
 
   <p><em>Many computing facilities communicate regularly with their users through email (and other channels) about related trainings and events that might be of interest.  The the purpose of this page is to make it as easy as possible for facilities to announce HPC-BP webinars by providing the information formatted as the facility prefers. The goal is that it should be a simple cut-and-paste from here into your communication tools.  If your facility would like to be added to this page, or if changes are needed to the way your content is presented, please <a href="mailto:IDEASProductivity@gmail.com?subject=HPC-BP facilities announcements page">contact us</a>.</em> </p>
   
@@ -29,7 +29,7 @@ layout: none
 
 <h2>ALCF</h2>
 <section style="border: 3px; border-style: solid; padding: 1em;">
-  <p>*** HPC Best Practices Webinar: {{ page.title }}: {{ page.startdate | date: "%B %-d" }} *** <a href="{{ page.url | replace: '/internal/events-hpcbp-facilities', '/events' | absolute_url }}">{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}</a></p>
+  <p>*** HPC Best Practices Webinar: {{ page.title }}: {{ page.startdate | date: "%B %-d" }} *** <a href="{{ page.url | replace: '/internal/events-hpcbp-facilities', '/events' | absolute_url }}">{{ page.url | replace: '/internal/events-hpcbp-facilities', '/events' | absolute_url }}</a></p>
 </section>
 
 <h2>NERSC</h2>
@@ -66,7 +66,7 @@ layout: none
   The IDEAS Productivity Project will host an HPC Best Practices Webinar about {{ page.topic | default: "NEED HUMAN INTERVENTION" }} on {{ page.startdate | date: "%B %-d" }}.
     {% if page.short-description %}{{ page.short-description }}{% else %}{{ content }}{% endif %}
   </p>
-  <p>Learn more: <a href="{{ page.url | replace: '/internal/events-hpcbp-facilities', '/events' | absolute_url }}">{{ page.url | replace: '/internal/events-hpcbp-slack', '/events' | absolute_url }}</a></p>
+  <p>Learn more: <a href="{{ page.url | replace: '/internal/events-hpcbp-facilities', '/events' | absolute_url }}">{{ page.url | replace: '/internal/events-hpcbp-facilities', '/events' | absolute_url }}</a></p>
 </section>
 
 </main>

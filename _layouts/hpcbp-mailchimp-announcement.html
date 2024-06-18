@@ -21,7 +21,8 @@ layout: none
 <main>
   <h1>Webinar Announcement for Mailchimp</h1>
 
-  <p><strong>{{ page.startdate | date: "%F" }}: </strong> {{ page.title }}</p>
+  <p><strong>{{ page.startdate | date: "%F" }}: </strong> <a href="{{ page.url | replace: '/internal/events-hpcbp-mailchimp-announcement', '/events' | absolute_url }}">{{ page.title }}</a></p>
+
 
 
 <h2>Campaign name</h2>

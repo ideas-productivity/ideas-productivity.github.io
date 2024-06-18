@@ -12,7 +12,7 @@ layout: none
 <main>
   <h1>Webinar Entry for YouTube</h1>
 
-  <p><strong>{{ formatted-date }}: </strong> {{ page.title }}</p>
+  <p><strong>{{ page.startdate | date: "%F" }}: </strong> <a href="{{ page.url | replace: '/internal/events-hpcbp-youtube', '/events' | absolute_url }}">{{ page.title }}</a></p>
 
 <h2>Title</h2>
 

@@ -22,7 +22,8 @@ layout: none
 <main>
   <h1>Webinar Followup for Mailchimp</h1>
 
-  <p><strong>{{ page.startdate | date: "%F" }}: </strong> {{ page.title }}</p>
+  <p><strong>{{ page.startdate | date: "%F" }}: </strong> <a href="{{ page.url | replace: '/internal/events-hpcbp-mailchimp-followup', '/events' | absolute_url }}">{{ page.title }}</a></p>
+
 
 <h2>Audience tag for importing audience and sending message</h2>
 <section style="border: 3px; border-style: solid; padding: 1em">
