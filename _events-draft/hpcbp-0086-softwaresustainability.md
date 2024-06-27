@@ -9,7 +9,7 @@ presenters:
     affiliation: Kitware, Inc.
     github-id: billhoffman
     bio: |
-      Bill Hoffman is a founder of Kitware and currently serves as Chairman of the Board, Vice President, and Chief Technical Officer (CTO). He is the original author and lead architect of CMake, an open-source, cross-platform build and configuration tool that is used by hundreds of projects around the world, and he is the co-author of the accompanying text, Mastering CMake. Using his 20+ years of experience with large software systems development, Mr. Hoffman is also a major technical contributor to Kitware’s Visualization Toolkit {VTK}, Insight Toolkit (ITK), and ParaView projects. As CTO, Mr. Hoffman’s emphasis is on software development methodologies and establishing best practices across the breadth of Kitware’s development efforts.
+      Bill Hoffman is a founder of Kitware and currently serves as Chairman of the Board, Vice President, and Chief Technical Officer (CTO). He is the original author and lead architect of CMake, an open-source, cross-platform build and configuration tool that is used by hundreds of projects around the world, and he is the co-author of the accompanying text, Mastering CMake. Using his 20+ years of experience with large software systems development, Mr. Hoffman is also a major technical contributor to Kitware’s Visualization Toolkit (VTK), Insight Toolkit (ITK), and ParaView projects. As CTO, Mr. Hoffman’s emphasis is on software development methodologies and establishing best practices across the breadth of Kitware’s development efforts.
   - name: Will Schroeder
     affiliation: Kitware, Inc.
     github-id: wschroed
