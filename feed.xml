@@ -1,10 +1,22 @@
 ---
 layout: null
 ---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>{{ site.url | absolute_url | append: "/" }}</id>
+	<title>{{ site.title | strip_html  }}{% if site.subtitle %}{{ " | " | append: site.subtitle | strip_html }}{% endif %}</title>
+	{% if site.subtitle -%}
+	<subtitle>{{- site.subtitle | strip_html -}}</subtitle>
+	{%- endif %}
+	<link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
+	<link href="{{  ""  | absolute_url }}" rel="alternate" type="text/html" />
+	<rights>(c) {{ site.time | date: '%Y' }} by the IDEAS Productivity family of projects, licensed CC-BY 4.0 International</rights>
+  <icon>{{- "assets/images/favicon-32x32.png" | absolute_url -}}</icon>
+  <logo>{{- "assets/images/android-chrome-192x192.png" | absolute_url -}}</logo>
 
+{% comment %}}
   <channel>
       <title>{{ site.title | xml_escape }}</title>
       <link>{{ site.url }}</link>
@@ -51,4 +63,5 @@ layout: null
       {% endfor %}
 
   </channel>
-</rss>
+{% endcomment %}
+</feed>
