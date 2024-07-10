@@ -1,7 +1,7 @@
 ---
 title: "Developing a Sustainable Future for HPC and RSE Skills: Training Pathways and Structures"
 startdate: "2024-05-15"
-time: "10:05 am to 11:05 am CEST"
+time: "10:05 am-11:05 am CEST"
 #title-url: "https://app.swapcard.com/widget/event/isc-high-performance-2024/planning/UGxhbm5pbmdfMTgyNjc4OA=="
 #
 type: Birds-of-a-Feather Session 
