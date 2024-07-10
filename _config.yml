@@ -32,7 +32,7 @@ github_username:  ideas-productivity
 theme: minima
 plugins:
   - jekyll-sitemap
-  - jekyll-feed
+#  - jekyll-feed
   - jekyll-pluralize
   - jekyll-redirect-from
   - jekyll_basename_dirname
@@ -162,10 +162,12 @@ defaults:
     values:
       sitemap: false
 
-feed:
-  collections:
-    - events
-  excerpt_only: true
+# We're not using jekyll-feed because it doesn't provide sufficient customization of the feed content.
+# But if we were, this is how we'd configure it.
+# feed:
+#   collections:
+#     - events
+#   excerpt_only: true
 
 
 search_provider: algolia

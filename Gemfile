@@ -16,7 +16,7 @@ gem "minima", "~> 2.5"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
 	gem "jekyll-paginate-v2"
-  gem "jekyll-feed", "~> 0.12"
+#  gem "jekyll-feed", "~> 0.12" # Not customizable enough for our needs
   gem "jekyll-pluralize"
   gem "jekyll-redirect-from"
   gem 'jekyll-algolia', '~> 1.0'
