@@ -10,58 +10,107 @@ layout: null
 	{% if site.subtitle -%}
 	<subtitle>{{- site.subtitle | strip_html -}}</subtitle>
 	{%- endif %}
+  <author><name>The IDEAS Productivity family of projects</name></author>
 	<link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
 	<link href="{{  ""  | absolute_url }}" rel="alternate" type="text/html" />
 	<rights>(c) {{ site.time | date: '%Y' }} by the IDEAS Productivity family of projects, licensed CC-BY 4.0 International</rights>
   <icon>{{- "assets/images/favicon-32x32.png" | absolute_url -}}</icon>
   <logo>{{- "assets/images/android-chrome-192x192.png" | absolute_url -}}</logo>
 
-{% comment %}}
-  <channel>
-      <title>{{ site.title | xml_escape }}</title>
-      <link>{{ site.url }}</link>
-      <atom:link href="{{ page.url | prepend: site.url }}" rel="self" type="application/rss+xml" xmlns:atom="https://www.w3.org/2005/Atom" />
-      <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-
-      {% for event in site.events %}
-      <item>
-        <title>{{ event.title | xml_escape }}</title>
-        <link>{{ event.url | prepend: site.url | xml_escape }}</link>
-        <startDate>{{ event.startdate | date: "%a, %b %d, %Y" }}</startDate>
-        <endDate>{{ event.enddate | date: "%a, %b %d, %Y" }}</endDate>
-        <description>{{ event.description | xml_escape }}</description>
-        <registrationURL>{{ event.registration-url | xml_escape }}</registrationURL>
-        <artifacts>
-        {%- if include.format == "li" -%}
-            {%- assign row=false -%}
-        {%- else -%}
-            {%- assign row = true -%}
-        {%- endif -%}
-
-        {%- for i in event.artifacts -%}
-        {%- if i.status == "published" or i.status == nil -%}
-          {%- unless row -%}<li><h4>{%- endunless -%}
-            {%- if i.yt-video-id -%}<a href="{{ include.yt-url | default: site.youtube-watch-url }}{{ i.yt-video-id | xml_escape }}">
-            {%- elsif i.yt-playlist-id -%}<a href="{{ include.yt-url | default: site.youtube-playlist-url }}{{ i.yt-playlist-id  | xml_escape }}">
-            {%- elsif i.gh-repo -%}<a href="{{ include.gh-url | default: site.github-url | xml_escape }}/{{ i.gh-repo | xml_escape }}">
-            {%- elsif i.doi -%}<a href="{{ include.doi-url | default: site.doi-resolver-url | xml_escape }}/{{ i.doi  | xml_escape }}">
-            {%- elsif i.url -%}<a href="{{ i.url | xml_escape }}">{%- endif -%}
-            {{ i.label | xml_escape }}
-            {%- if i.yt-video-id or i.yt-playlist-id or i.gh-repo or i.doi or i.url -%}</a>{%- endif -%}
-            {%- if i.note %} {{ i.note }}{%- endif -%}
-            {%- if i.format %} ({{ i.format }}){%- endif -%}
-            {% if row -%}
-              {%- unless forloop.last %} | {% endunless -%}
-            {%- else -%}
-            </h4></li>
-            {%- endif -%}
-          {%- endif -%}
-        {%- endfor -%}
-        </artifacts>
-
-      </item>
+  {% comment %}
+    Exclude events that are merely containers for subevents (e.g., conferences) -- they're redundant in this context
+  {% endcomment %}
+  {% assign feed_events = site.events | where_exp: "item", "item.subevents == nil" | sort: "last_modified_at" | reverse %}
+  {% for event in feed_events %}
+  <entry>
+    {% if event.title-type %}
+      <title>{{ event.title | append: " " | append: event.title-type | xml_escape }}</title>
+    {% else %}
+      <title>{{ event.title | xml_escape }}</title>
+    {% endif %}
+    <id>{{ event.url | absolute_url }}</id>
+    <updated>{{ event.last_modified_at | date_to_xmlschema }}</updated>
+    <link rel="alternate" href="{{ event.url | absolute_url }}"/>
+    {% comment %}
+    <category term="event" label="Event"/>
+    {% if event.series %}
+      {% for s in event.series %}
+        <category term="{{ 'series ' | append: s | slugify }}" label="Series: {{ s }}"/>
       {% endfor %}
-
-  </channel>
-{% endcomment %}
+    {% endif %}
+    {% endcomment %}
+    {% if event.enddate %}
+      {% include upcoming-event event=event.enddate %}
+    {% elsif event.startdate %}
+      {% include upcoming-event event=event.startdate %}
+    {% else %}
+      {% assign upcoming = false %}
+    {% endif %}
+    {%- assign startmo = event.startdate | date:"%b"  -%}
+    {%- assign endmo = event.enddate | date:"%b"  -%}
+    <content type="html" xml:base="{{ event.url | absolute_url | xml_escape }}">
+      <![CDATA[
+        <p><strong>Date & time: </strong>
+          {{- event.startdate | date: "%b %d" -}}
+          {%- if event.enddate -%}
+            {% if startmo == endmo %}–{{- event.enddate | date:"%d" -}}{% else %}–{{- event.enddate | date:"%b %d" -}}{%- endif -%}
+          {%- endif %}
+          {{ event.startdate | date:"%Y" -}}
+          {% if event.time %} {{ event.time }}{% endif -%}
+          {% if event.type %}
+            <br><strong>Type: </strong>{{ event.type }}
+          {% endif %}
+          {% if event.series %}
+            <br><strong>Series: </strong>{{ event.series | join: ", " }}
+          {% endif %}
+          {% if event.venue %}
+            <br><strong>Venue: </strong>{{ event.venue }}
+          {% endif %}
+          {% if event.location %}
+            <br><strong>Location: </strong>{{ event.location }}
+          {% endif %}
+        </p>
+        {% if event.artifacts %}
+          <p><strong>{{ event.artifacts | size | pluralize: "Artifact:", "Artifacts:" }} </strong>{% include _layout/emit-artifacts.html artifacts=event.artifacts format="row" %}</p>
+        {% endif %}
+        {% if event.description %}
+          {{ event.description | markdownify }}
+        {% else %}
+          {{ event.content | markdownify }}
+        {% endif %}
+        {% if upcoming and event.registration-url %}
+          <p><strong><a href="{{ event.registration-url }}">Register for the event</a></strong></p>
+        {% endif %}
+        {% if event.presenters %}
+          <p><strong>{{ event.presenters | size | pluralize: "Presenter:", "Presenters:" }} </strong>
+            {% for person in event.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif -%}
+              {% unless forloop.last %}, {% endunless -%}
+            {% endfor -%}
+          </p>
+        {% endif %}
+        {% if event.panelists %}
+          <p><strong>{{ event.panelists | size | pluralize: "Panelist:", "Panelists:" }} </strong>
+            {% for person in event.panelists %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif -%}
+              {% unless forloop.last %}, {% endunless -%}
+            {% endfor -%}
+          </p>
+        {% endif %}
+        {% if event.moderators %}
+          <p><strong>{{ event.moderators | size | pluralize: "Moderator:", "Moderators:" }} </strong>
+            {% for person in event.moderators %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif -%}
+              {% unless forloop.last %}, {% endunless -%}
+            {% endfor -%}
+          </p>
+        {% endif %}
+        {% if event.organizers %}
+          <p><strong>{{ event.organizers | size | pluralize: "Organizer:", "Organizers:" }} </strong>
+            {% for person in event.organizers %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif -%}
+              {% unless forloop.last %}, {% endunless -%}
+            {% endfor -%}
+          </p>
+        {% endif %}
+      ]]>
+    </content>
+  </entry>
+  {% endfor %}
 </feed>
