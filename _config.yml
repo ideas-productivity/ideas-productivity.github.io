@@ -37,6 +37,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll_basename_dirname
   - flexible_include
+  - jekyll-last-modified-at
 
 # This is needed to generate output for future events
 future: true
