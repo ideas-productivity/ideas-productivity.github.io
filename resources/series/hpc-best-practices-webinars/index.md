@@ -11,6 +11,8 @@ series: "HPC Best Practices Webinars"
 redirect_from: 
   - /events/hpc-best-practices-webinars
   - /events/hpc-best-practices-webinars/
+  - /hpc-best-practices-webinars
+  - /hpc-best-practices-webinars/
 ---
 
 <!-- Extended Description -->
