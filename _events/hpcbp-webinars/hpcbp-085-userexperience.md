@@ -17,16 +17,16 @@ presenters:
 bsswio-topics: ["user experience design", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/vJIsceGhqzwsGDIYA_jNwkWdaInvZYWDf7Y
 #
-# artifacts:
+artifacts:
 #   - label: Recording
 #     format: YouTube
 #     yt-video-id: NDgZ8Y74ISg
-#   - label: Slides
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign.pdf
+  - label: Slides
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-085-userexperience.pdf
 #   - label: Q&A
 #     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign-qa.pdf
+#     url: /assets/artifacts/hpcbp/hpcbp-085-userexperience-qa.pdf
 #
 # Items that change rarely
 #
