@@ -16,7 +16,7 @@ subevents:
 #
 artifacts:
   - label: Conference Website
-    url: https://www.siam.org/conferences/cm/conference/cse23
+    url: https://www.siam.org/conferences-events/past-event-archive/cse23/
 ---
 
 Events (co-)organized by IDEAS at CSE23.
