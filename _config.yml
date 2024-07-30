@@ -42,6 +42,12 @@ plugins:
 # This is needed to generate output for future events
 future: true
 
+# Fix the timezone for the site so that GH Pages and local builds will be the same
+# Since Jekyll really doesn't handle timezones as well as we'd like, our convention
+# will be to interpret everything as UTC and "manually" adjust times to AoE to 
+# decide whether the event is past.
+timezone: Etc/UTC
+
 collections:
   events:
     output: true

@@ -2,11 +2,24 @@
    upcoming-event: set 'upcoming' true/false based on whether argument
                    is in the future or not
    argument: event = date of event
+
+   Assumptions:
+    We assume that the site is operating in the Etc/UTC timezone
+    We assume that the events are specified in the EtC/UTC timezone
+      (which will be true as long as the site is operating in UTC
+      the event itself doesn't include a timezone specification)
+    We assume that, in the absence of specific timezones, the best
+      way to handle dates is to treat them as being AoE, which
+      involves shifting them 12 hours (43200 seconds) from UTC.
+
+  Implementation notes
+    The aoedate calculation is a bt convoluted.  It is the current time in the
+    UTC-12 timezone (AOE), converted to YYYY-MM-DD format to strip off the time, and then reconverted to a Jekyll date, and then to an integer.
 {% endcomment %}
 
-{%- assign today = 'now' | date: "%s" -%}
-{%- assign wdate = include.event | date: "%s" -%}
-{%- if wdate >= today -%}
+{%- assign aoedate = 'now' | date: "%s" | minus: 43200 | date: "%Y-%m-%d" | date: "%s" | plus: 0 -%}
+{%- assign wdate = include.event | date: "%s" | plus: 0 -%}
+{%- if wdate >= aoedate -%}
   {%- assign upcoming = true -%}
 {%- else -%}
   {%- assign upcoming = false -%}
