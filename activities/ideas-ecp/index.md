@@ -39,9 +39,18 @@ Our ECP-supported work includes activities that are specifically focused on soft
 * Organizing the [Best Practices for HPC Software Developers](/series/hpc-best-practices-webinars) webinar series and other tutorials, with an emphasis on topics related to software productivity and sustainability.
 * Organizing other [events](/resources/events.html) that promote the discussion of software development experiences, including minisymposia, birds-of-a-feather sessions, and more.
 
+## Fostering Communities
+
+## Incubating and Curating Methodologies
+
+## Disseminating Knowledge
+
+## Achievements
+
+
 {% 	include text-biglink.html
 		blurb = "read an overview of IDEAS-ECP"
-		url = "https://doi.org/10.48550/arXiv.2311.02010"
+		url = "https://doi.org/10.1109/MCSE.2024.3383799"
 %}
 
 {% include list-4x_img.html
