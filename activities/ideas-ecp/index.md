@@ -18,6 +18,8 @@ redirect_from:
 	  source = "hero-ecp.jpg"
 %}
 
+*This project was active 2017--2024.*
+
 # About the Exascale Computing Project
 
 The mission of the [Exascale Computing Project](https://www.exascaleproject.org/) (ECP) is to accelerate delivery of a capable exascale computing ecosystem that will provide breakthrough solutions to address America’s most critical challenges in scientific discovery, energy assurance, economic competitiveness, and national security.
