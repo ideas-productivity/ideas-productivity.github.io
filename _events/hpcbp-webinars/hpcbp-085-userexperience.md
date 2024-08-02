@@ -18,9 +18,9 @@ bsswio-topics: ["user experience design", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/vJIsceGhqzwsGDIYA_jNwkWdaInvZYWDf7Y
 #
 artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: NDgZ8Y74ISg
+  - label: Recording
+    format: YouTube
+    yt-video-id: 2UxR_5qG_Yo
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-085-userexperience.pdf
