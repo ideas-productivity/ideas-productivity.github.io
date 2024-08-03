@@ -9,7 +9,7 @@ presenters:
     affiliation: Oak Ridge National Laboratory
     github-id: kmorel
     bio: |
-      Dr. Kenneth Moreland is a senior research scientist at Oak Ridge National Laboratory. He received BS degrees in computer science and in electrical engineering from the New Mexico Institute of Mining and Technology in 1997. He received MS and Ph.D. degrees in computer science from the University of New Mexico in 2000 and 2004, respectively. Dr. Moreland specializes in large-scale visualization and graphics and plays an active role in the development of several HPC products including ParaView, VTK, IceT, Catalyst, and VTK-m. His current interests include the design and development of visualization algorithms and systems to run on multi-core, many-core, and future-generation computer hardware.
+      Dr. Kenneth Moreland is a senior research scientist at Oak Ridge National Laboratory. He received BS degrees in computer science and electrical engineering from the New Mexico Institute of Mining and Technology in 1997. He received MS and PhD degrees in computer science from the University of New Mexico in 2000 and 2004, respectively. Dr. Moreland specializes in large-scale visualization and graphics and plays an active role in the development of several HPC products, including ParaView, VTK, IceT, Catalyst, and VTK-m. His current interests include the design and development of visualization algorithms and systems to run on multi-core, many-core, and future-generation computer hardware.
 #
 bsswio-topics: ["software engineering", "software process improvement", "performance portability", "software sustainability", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/vJIsc-ivqD4oGPQPCTRqcJUhOcAEBUnjEes
@@ -40,6 +40,6 @@ activities:
 #
 topic: taking a research code to production
 short-description: |
-  VTK-m is a visualization library designed for processing on modern HPC systems. In this talk, we will discuss the software engineering that allowed the Exascale Computing Project (ECP) to bring VTK-m from a research code to a production system.
+  VTK-m is a visualization library designed for processing on modern HPC systems. This presentation will discuss the software engineering that allowed the Exascale Computing Project (ECP) to bring VTK-m from a research code to a production system.
 ---
-VTK-m is a visualization library designed for processing on modern HPC systems. In this talk, we will discuss the software engineering that allowed the Exascale Computing Project (ECP) to bring VTK-m from a research code to a production system. This talk will cover the basic software development methods used, the tools and tricks used, and some of the most helpful features for developers and users. The talk will also discuss some of the more problematic aspects of porting to ECP hardware and how these were overcome.
+VTK-m is a visualization library designed for processing on modern HPC systems. In this talk, we will discuss the software engineering that allowed the Exascale Computing Project (ECP) to bring VTK-m from a research code to a production system. This talk will cover the basic software development methods used, the tools and tricks used, and some of the most helpful features of VTK-m for developers and users. The talk will also discuss some of the more problematic aspects of porting to ECP hardware and how these were overcome.
