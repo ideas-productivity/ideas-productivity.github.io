@@ -24,9 +24,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-085-userexperience.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-085-userexperience-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-085-userexperience-qa.pdf
 #
 # Items that change rarely
 #
