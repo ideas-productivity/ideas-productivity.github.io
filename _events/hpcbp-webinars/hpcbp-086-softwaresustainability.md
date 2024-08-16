@@ -20,15 +20,15 @@ bsswio-topics: ["software sustainability", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/vJIsf-ChrTwrG1JYUhPkrTE_WnO091nKAkA
 #
 artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: NDgZ8Y74ISg
+  - label: Recording
+    format: YouTube
+    yt-video-id: WnQOTquKozM
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-086-softwaresustainability.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-086-softwaresustainability-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-086-softwaresustainability-qa.pdf
 #
 # Items that change rarely
 #
