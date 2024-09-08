@@ -19,7 +19,7 @@ venue-type: "conference"
 venue-url: https://www.isc-hpc.com/
 location: "Hamburg, Germany"
 #
-# registration-url: https://www.isc-hpc.com/registration-2024.html
+# registration-url:
 #
 organizers:
   - name: Anshu Dubey
