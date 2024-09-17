@@ -29,7 +29,7 @@ layout: none
 {% if page.short-description %}
 <p><em>Yes, it looks like there's a lot of vertical white space here.  However, when pasted into Slack it will be well formatted. You will probably want to eliminate the website previews before sending.</em></p>
 <section style="border: 3px; border-style: solid; padding: 1em;">
-  <p>The next webinar in the HPC Best Practices series:</p>
+  <p>The HPC Best Practices webinar for {{ page.startdate | date: "%B" }}:</p>
   <br>
   <p><strong>{{ page.title }}</strong></p>
   <p>will be presented by <strong>{% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}</strong></p>
@@ -48,7 +48,7 @@ layout: none
 <h2>Full version</h2>
 <p><em>Yes, it looks like there's a lot of vertical white space here.  However, when pasted into Slack it will be well formatted. You will probably want to eliminate the website previews before sending.</em></p>
 <section style="border: 3px; border-style: solid; padding: 1em;">
-  <p>The next webinar in the HPC Best Practices series:</p>
+  <p>The HPC Best Practices webinar for {{ page.startdate | date: "%B" }}:</p>
   <br>
   <p><strong>{{ page.title }}</strong></p>
   <p>will be presented by <strong>{% for person in page.presenters %}{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}{% unless forloop.last %}, {% endunless %}{% if forloop.rindex0 == 1 %}and {% endif %}{% endfor %}</strong></p>
