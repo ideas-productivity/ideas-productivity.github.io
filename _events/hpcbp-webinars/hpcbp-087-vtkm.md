@@ -14,13 +14,13 @@ presenters:
 bsswio-topics: ["software engineering", "software process improvement", "performance portability", "software sustainability", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/vJIsc-ivqD4oGPQPCTRqcJUhOcAEBUnjEes
 #
-# artifacts:
+artifacts:
 #   - label: Recording
 #     format: YouTube
 #     yt-video-id: NDgZ8Y74ISg
-#   - label: Slides
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-087-vtkm.pdf
+  - label: Slides
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-087-vtkm.pdf
 #   - label: Q&A
 #     format: PDF
 #     url: /assets/artifacts/hpcbp/hpcbp-087-vtkm-qa.pdf
