@@ -11,15 +11,15 @@ activities:
   - "PESO"
   - "COLABS"
 #
-# parent-event-name: SC24
-# parent-event-file: parentconf-2024-11-17-sc24-conference
+parent-event-name: SC24
+parent-event-file: parentconf-2024-11-17-sc24
 #
 venue: "The International Conference for High-Performance Computing, Networking, Storage, and Analysis (SC24)"
 venue-type: "conference"
 venue-url: https://sc24.supercomputing.org/
-location: "Atlanta, Georgia, and online"
+location: "Atlanta, Georgia"
 #
-registration-url: https://sc24.supercomputing.org/attend/registration/
+registration-url: "https://sc24.supercomputing.org/attend/registration/"
 #
 organizers:
   - name: David E. Bernholdt	
