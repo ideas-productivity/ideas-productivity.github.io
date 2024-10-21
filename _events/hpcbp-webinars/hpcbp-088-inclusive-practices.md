@@ -14,13 +14,13 @@ presenters:
 bsswio-topics: ["inclusivity", "strategies for more effective teams", "user experience", "documentation", "software process improvement", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/vJItce-orz0sHgN-Y11kCNvew7N4iyS5CFQ
 #
-# artifacts:
+artifacts:
 #   - label: Recording
 #     format: YouTube
 #     yt-video-id: NDgZ8Y74ISg
-#   - label: Slides
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-088-inclusive-practices.pdf
+  - label: Slides
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-088-inclusive-practices.pdf
 #   - label: Q&A
 #     format: PDF
 #     url: /assets/artifacts/hpcbp/hpcbp-088-inclusive-practices-qa.pdf
