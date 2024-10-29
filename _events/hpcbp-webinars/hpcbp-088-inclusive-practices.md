@@ -15,15 +15,15 @@ bsswio-topics: ["inclusivity", "strategies for more effective teams", "user expe
 registration-url: https://www.zoomgov.com/meeting/register/vJItce-orz0sHgN-Y11kCNvew7N4iyS5CFQ
 #
 artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: NDgZ8Y74ISg
+  - label: Recording
+    format: YouTube
+    yt-video-id: WQLInDZUOtw
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-088-inclusive-practices.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-088-inclusive-practices-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-088-inclusive-practices-qa.pdf
 #
 # Items that change rarely
 #
