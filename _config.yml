@@ -33,7 +33,7 @@ theme: minima
 plugins:
   - jekyll-sitemap
 #  - jekyll-feed
-  - jekyll-pluralize
+#  - liquid_pluralize # Do not use jekyll-pluralize -- outdated
   - jekyll-redirect-from
   - jekyll_basename_dirname
   - flexible_include
