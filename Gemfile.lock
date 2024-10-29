@@ -19,6 +19,7 @@ GEM
     eventmachine (1.2.7)
     facets (3.1.0)
     ffi (1.17.0-x64-mingw-ucrt)
+    ffi (1.17.0-x86_64-linux-gnu)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
     htmlentities (4.3.4)
@@ -106,6 +107,8 @@ GEM
       jekyll-seo-tag (~> 2.1)
     nokogiri (1.16.7-x64-mingw-ucrt)
       racc (~> 1.4)
+    nokogiri (1.16.7-x86_64-linux)
+      racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     progressbar (1.13.0)
@@ -136,6 +139,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
