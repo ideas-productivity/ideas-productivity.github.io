@@ -2,7 +2,7 @@
 startdate: "2025-01-22"
 time: "1:00 pm - 2:00 pm EST" # Ensure that time zone is correct with respect to standard/daylight time
 #
-title: "High-Performance Computing and Software Sustainability: Toward Green Software Development (DATE CHANGE)"
+title: "High-Performance Computing and Software Sustainability: Toward Green Software Development"
 #
 presenters:
   - name: Antigoni Georgiadou
@@ -14,13 +14,13 @@ presenters:
 bsswio-topics: ["high-performance computing (HPC)", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/vJIsc-2tpjMvHmDursdh-B6gqAbsiVBV7yk
 #
-# artifacts:
+artifacts:
 #   - label: Recording
 #     format: YouTube
 #     yt-video-id: WQLInDZUOtw
-#   - label: Slides
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-089-green-software.pdf
+  - label: Slides
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-089-green-software.pdf
 #   - label: Q&A
 #     format: PDF
 #     url: /assets/artifacts/hpcbp/hpcbp-089-green-software-qa.pdf
@@ -42,6 +42,4 @@ topic: energy efficiency and green software practices
 short-description: |
   As the power consumption of data centers is becoming a hot topic, there is a widespread interest in green software development. This presentation aims to spark discusion on how software developers can produce better software in terms of more energy efficient approaches. 
 ---
-**Note: due to a change in the speaker's availability, this webinar has been rescheduled to Wednesday 22 January, 2025 (originally 15 January).**
-
 The power consumption of data centers is becoming a hot topic. With the growth of AI and exascale, systems are requiring 30+ MW, enough to power sizable towns. There is  widespread interest in green software development, with academia, government, and industry spearheading the discussion of how software developers can produce better software in terms of more energy-efficient approaches. This presentation will discuss topics concerning Leadership Computing Facilities with respect to energy consumption, awareness of the costs of running on the systems, and potential green software practices. This talk aims to spark further discussion on specific software practices related to energy-efficient software.  The goals include raising awareness of good software practices, improving scientific productivity, and informing ongoing efforts for sustainability planning.
