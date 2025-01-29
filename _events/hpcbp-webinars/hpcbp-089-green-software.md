@@ -15,15 +15,15 @@ bsswio-topics: ["high-performance computing (HPC)", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/vJIsc-2tpjMvHmDursdh-B6gqAbsiVBV7yk
 #
 artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: WQLInDZUOtw
+  - label: Recording
+    format: YouTube
+    yt-video-id: nCm2nlRI6q8
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-089-green-software.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: /assets/artifacts/hpcbp/hpcbp-089-green-software-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-089-green-software-qa.pdf
 #
 # Items that change rarely
 #
