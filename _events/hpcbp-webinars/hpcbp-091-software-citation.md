@@ -38,7 +38,7 @@ series:
 activities:
   - "COLABS"
 #
-topic: A practical introduction to making research software citable, and to citing software that has been used in research.
+topic: making research software citable and citing software that has been used in research
 short-description: |
   This webinar provides a practical introduction to software citation for developers, maintainers and users of research software. In the first part, it introduces the principles of software citation and current good practices for making software citable with the help of metadata formats, tools and infrastructure. The second part provides examples for a tool-based workflow for citing software, and how to find relevant metadata and deal with missing metadata. 
 ---
