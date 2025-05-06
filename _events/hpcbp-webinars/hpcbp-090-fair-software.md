@@ -18,9 +18,9 @@ artifacts:
   # - label: Recording
   #   format: YouTube
   #   yt-video-id: nCm2nlRI6q8
-  # - label: Slides
-  #   format: PDF
-  #   url: /assets/artifacts/hpcbp/hpcbp-090-fair-software.pdf
+  - label: Slides
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-090-fair-software.pdf
   # - label: Q&A
   #   format: PDF
   #   url: /assets/artifacts/hpcbp/hpcbp-090-fair-software-qa.pdf
