@@ -15,15 +15,15 @@ bsswio-topics: ["software publishing and citation", "release and deployment", "s
 registration-url: https://www.zoomgov.com/meeting/register/OUOlBppNRqyv9iZDpdfCgQ
 #
 artifacts:
-  # - label: Recording
-  #   format: YouTube
-  #   yt-video-id: nCm2nlRI6q8
+  - label: Recording
+    format: YouTube
+    yt-video-id: _vI_S1y9D2g
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-090-fair-software.pdf
-  # - label: Q&A
-  #   format: PDF
-  #   url: /assets/artifacts/hpcbp/hpcbp-090-fair-software-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-090-fair-software-qa.pdf
 #
 # Items that change rarely
 #
