@@ -18,6 +18,10 @@ artifacts:
   # - label: Recording
   #   format: YouTube
   #   yt-video-id: nCm2nlRI6q8
+  - label: Slides
+    format: Zenodo
+    doi: 10.5281/zenodo.15583669
+  # We prefer the DOI over the local copy of the file, but we'll keep this as a "backup", just in case...
   # - label: Slides
   #   format: PDF
   #   url: /assets/artifacts/hpcbp/hpcbp-091-software-citation.pdf
