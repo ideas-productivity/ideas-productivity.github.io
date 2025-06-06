@@ -36,7 +36,7 @@ type: Webinar
 series:
   - "HPC Best Practices Webinars"
 activities:
-  - "COLABS"
+  - "PESO"
 #
 topic: FAIR software
 short-description: |

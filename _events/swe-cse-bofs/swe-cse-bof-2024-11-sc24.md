@@ -9,7 +9,6 @@ series:
 #
 activities:
   - "PESO"
-  - "COLABS"
 #
 parent-event-name: SC24
 parent-event-file: parentconf-2024-11-17-sc24

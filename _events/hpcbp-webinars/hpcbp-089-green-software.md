@@ -36,7 +36,7 @@ type: Webinar
 series:
   - "HPC Best Practices Webinars"
 activities:
-  - "COLABS"
+  - "PESO"
 #
 topic: energy efficiency and green software practices
 short-description: |

@@ -8,7 +8,6 @@ type: "Conference"
 location: Atlanta, Georgia
 #
 activities:
-  - "COLABS"
   - "CORSA"
   - "PESO"
 #

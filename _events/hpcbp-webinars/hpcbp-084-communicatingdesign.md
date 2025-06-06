@@ -36,7 +36,7 @@ type: Webinar
 series:
   - "HPC Best Practices Webinars"
 activities:
-  - "COLABS"
+  - "PESO"
 #
 short-description: |
   Visually communicating elements of research software design can enable improved communication and extension of the software architecture and included models. This webinar describes the Unified Modeling Language as a mechanism for software diagramming as well as concrete methods for incorporating this practice into research software development workflows.

@@ -39,7 +39,7 @@ type: Webinar
 series:
   - "HPC Best Practices Webinars"
 activities:
-  - "COLABS"
+  - "PESO"
 #
 topic: user experience in scientific ecosystems
 short-description: |

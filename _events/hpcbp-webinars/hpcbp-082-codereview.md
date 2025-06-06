@@ -36,6 +36,6 @@ type: Webinar
 series:
   - "HPC Best Practices Webinars"
 activities:
-  - "COLABS"
+  - "PESO"
 ---
 [Code-review.org](https://code-review.org) is an online tutorial for code review made possible by the [Better Scientific Software Fellowship](https://bssw.io/fellowship). Code review is a skill. You can break it down, you can practice, and you can get better at it. The difficulty is you are often learning a bunch of other skills at the same time. Scientists are often working on a new scientific problem while trying to learn git, GitHub, a programming language, etc., all while someone ‘criticizes’ their code. In addition, scientific software developers may start work in a new and unfamiliar domain. It can be very difficult to separate criticism of the code from criticism of the person. Reviewing is hard; people truly need to take into account how to communicate constructive and actionable criticism. [Code-review.org](https://code-review.org) aims to provide a way to practice reviewing in a no-consequence environment using the tutorial. Experience with code review from the NCAR Software Engineering Assembly will be presented, including the positive and negative effects of code review.

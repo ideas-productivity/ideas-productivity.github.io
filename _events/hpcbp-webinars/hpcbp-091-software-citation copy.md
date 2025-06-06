@@ -40,7 +40,7 @@ type: Webinar
 series:
   - "HPC Best Practices Webinars"
 activities:
-  - "COLABS"
+  - "PESO"
 #
 topic: making research software citable and citing software that has been used in research
 short-description: |

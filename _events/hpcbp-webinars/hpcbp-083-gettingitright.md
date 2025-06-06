@@ -36,6 +36,6 @@ type: Webinar
 series:
   - "HPC Best Practices Webinars"
 activities:
-  - "COLABS"
+  - "PESO"
 ---
 Testing software to ensure its correctness is a challenging yet critical task that can consume more than 50% of the software lifecycle. Over the past decade, we have built software testing practices into our development frameworks and are embracing the use of unit tests and continuous integration--testing as we code. However, these types of tests focus heavily on covering individual code elements and may miss important system-level requirements. In scientific software, we often model complex behaviors, and our applications are heavily data-driven and configurable. In addition, we have added machine learning components into this mix. Together, this situation can leave our systems vulnerable to subtle, incorrect behaviors, which can impact our scientific results. In this talk, I will discuss system testing for scientific software, present some challenges, such as configurability, and present some techniques we can use to help improve the testing process.
