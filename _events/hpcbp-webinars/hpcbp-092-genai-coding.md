@@ -23,9 +23,9 @@ artifacts:
   # - label: Recording
   #   format: YouTube
   #   yt-video-id: i-oAXxpsMew
-  # - label: Slides
-  #   format: PDF
-  #   url: /assets/artifacts/hpcbp/hpcbp-092-genai-coding.pdf
+  - label: Slides
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-092-genai-coding.pdf
   # - label: Q&A
   #   format: PDF
   #   url: /assets/artifacts/hpcbp/hpcbp-092-genai-coding-qa.pdf
