@@ -20,15 +20,15 @@ bsswio-topics: ["software engineering", "testing", "refactoring", "online learni
 registration-url: https://www.zoomgov.com/meeting/register/1H75o2gJSoe2NQ9UPHvjgQ
 #
 artifacts:
-  # - label: Recording
-  #   format: YouTube
-  #   yt-video-id: i-oAXxpsMew
+  - label: Recording
+    format: YouTube
+    yt-video-id: ywCb2Byd4Xs
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-092-genai-coding.pdf
-  # - label: Q&A
-  #   format: PDF
-  #   url: /assets/artifacts/hpcbp/hpcbp-092-genai-coding-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-092-genai-coding-qa.pdf
 #
 # Items that change rarely
 #
