@@ -90,7 +90,7 @@ GEM
       jekyll_plugin_logger
       key-value-parser
       pry
-    json (2.11.3)
+    json (2.13.2)
     key-value-parser (0.0.2)
     kramdown (2.5.1)
       rexml (>= 3.3.9)
@@ -107,9 +107,9 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     mutex_m (0.3.0)
-    nokogiri (1.18.8-x64-mingw-ucrt)
+    nokogiri (1.18.9-x64-mingw-ucrt)
       racc (~> 1.4)
-    nokogiri (1.18.8-x86_64-linux-gnu)
+    nokogiri (1.18.9-x86_64-linux-gnu)
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -123,7 +123,7 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     rexml (3.4.1)
-    rouge (4.5.2)
+    rouge (4.6.0)
     rugged (1.9.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
