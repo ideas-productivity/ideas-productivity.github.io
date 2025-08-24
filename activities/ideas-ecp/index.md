@@ -18,6 +18,8 @@ redirect_from:
 	  source = "hero-ecp.jpg"
 %}
 
+*This project was active 2017--2024.*
+
 # About the Exascale Computing Project
 
 The mission of the [Exascale Computing Project](https://www.exascaleproject.org/) (ECP) is to accelerate delivery of a capable exascale computing ecosystem that will provide breakthrough solutions to address America’s most critical challenges in scientific discovery, energy assurance, economic competitiveness, and national security.
@@ -30,6 +32,7 @@ The ECP sets a very aggressive goal, which requires intensive development activi
 
 Our ECP-supported work includes activities that are specifically focused on software development efforts within the ECP as well as more broadly based activities that benefit both ECP members and the broader communities in high-performance computing (HPC) and computational science and engineering (CSE).
 
+{% comment %}
 * Working with individual ECP application development and software technology teams to understand productivity bottlenecks and improve software development practices through the [Productivity and Sustainability Improvement Planning](https://bssw.io/psip) (PSIP) methodology.
 * Customizing and curating methodologies to improve the software practices of individuals and teams.
 * Establishing and providing editorial support for the Better Scientific Software (BSSw) website ([BSSw.io](https://bssw.io/)), a community-driven hub for sharing information on practices, techniques, experiences, tools, and other resources to improve developer productivity and software sustainability ([Contributors welcome!](https://bssw.io/contribute)).
@@ -38,10 +41,36 @@ Our ECP-supported work includes activities that are specifically focused on soft
 * Using our interactions with ECP software developers to help identify other training and support needs and working with ECP leadership to appropriately address them.
 * Organizing the [Best Practices for HPC Software Developers](/series/hpc-best-practices-webinars) webinar series and other tutorials, with an emphasis on topics related to software productivity and sustainability.
 * Organizing other [events](/resources/events.html) that promote the discussion of software development experiences, including minisymposia, birds-of-a-feather sessions, and more.
+{% endcomment %}
+
+## Fostering Communities
+
+Intro sentence
+
+[Learn More >](fostering-communities)
+
+## Incubating and Curating Methodologies
+
+Intro sentence
+
+[Learn More >](methodologies)
+
+## Disseminating Knowledge
+
+Intro sentence
+
+[Learn More >](disseminating-knowledge)
+
+## Achievements
+
+Intro sentence
+
+[Learn More >](achievements)
+
 
 {% 	include text-biglink.html
 		blurb = "read an overview of IDEAS-ECP"
-		url = "https://doi.org/10.48550/arXiv.2311.02010"
+		url = "https://doi.org/10.1109/MCSE.2024.3383799"
 %}
 
 {% include list-4x_img.html
