@@ -28,9 +28,9 @@ artifacts:
   # - label: Recording
   #   format: YouTube
   #   yt-video-id: ywCb2Byd4Xs
-  # - label: Slides
-  #   format: PDF
-  #   url: /assets/artifacts/hpcbp/hpcbp-093-openssf.pdf
+  - label: Slides
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-093-openssf.pdf
   # - label: Q&A
   #   format: PDF
   #   url: /assets/artifacts/hpcbp/hpcbp-093-openssf-qa.pdf
