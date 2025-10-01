@@ -25,15 +25,15 @@ bsswio-topics: ["software engineering", "software process improvement", "online 
 registration-url: https://www.zoomgov.com/meeting/register/fA5L_OO9TN-_mP4znD-MvQ
 #
 artifacts:
-  # - label: Recording
-  #   format: YouTube
-  #   yt-video-id: ywCb2Byd4Xs
+  - label: Recording
+    format: YouTube
+    yt-video-id: pkzkoXcsCp8
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-093-openssf.pdf
-  # - label: Q&A
-  #   format: PDF
-  #   url: /assets/artifacts/hpcbp/hpcbp-093-openssf-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-093-openssf-qa.pdf
 #
 # Items that change rarely
 #
