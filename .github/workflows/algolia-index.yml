@@ -13,8 +13,28 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.4'
-          bundler-cache: true  
-      - name: Algolia Jekyll Bootstrap
-        uses: abhimanbhau/algolia-jekyll-bootstrap@v1
-        with:
-          API_KEY: '${{ secrets.ALGOLIA_API_KEY }}'
+          bundler-cache: true 
+      #
+      # Turns out that the algolia-jekyll-bootstrap action is a composite that
+      # runs setup-ruby on its own, with a specific version (3.1).  When that
+      # doesn't align with the ruby version used for the main jekyll build
+      # failures ensue. In particular, the version of bundler used for the
+      # main jekyll build requires ruby 3.2 or newer.
+      #
+      # So, I've replaced the algolia-jekyll-bootstrap call with the key
+      # steps from that action.
+      #
+      # - name: Algolia Jekyll Bootstrap
+      #   uses: abhimanbhau/algolia-jekyll-bootstrap@v1
+      #   with:
+      #     API_KEY: '${{ secrets.ALGOLIA_API_KEY }}'
+      - name: Bundle install
+        run: |
+          bundle install --jobs 4 --retry 3
+        shell: bash
+      - name: bundle exec jekyll algolia
+        run: |
+          bundle exec jekyll algolia
+        env:
+          ALGOLIA_API_KEY: "${{ secrets.ALGOLIA_API_KEY }}"
+        shell: bash
