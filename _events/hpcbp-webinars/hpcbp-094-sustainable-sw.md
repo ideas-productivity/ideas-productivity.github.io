@@ -17,15 +17,15 @@ bsswio-topics: ["software engineering", "software sustainability", "strategies f
 registration-url: https://www.zoomgov.com/meeting/register/cgGGVk86Ru6noPGTI94htA
 #
 artifacts:
-  # - label: Recording
-  #   format: YouTube
-  #   yt-video-id: ywCb2Byd4Xs
+  - label: Recording
+    format: YouTube
+    yt-video-id: tzPbndr1u4o
   - label: Slides
     format: PDF
     url: /assets/artifacts/hpcbp/hpcbp-094-sustainable-sw.pdf
-  # - label: Q&A
-  #   format: PDF
-  #   url: /assets/artifacts/hpcbp/hpcbp-094-sustainable-sw-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: /assets/artifacts/hpcbp/hpcbp-094-sustainable-sw-qa.pdf
 #
 # Items that change rarely
 #
