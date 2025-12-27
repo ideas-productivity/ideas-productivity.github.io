@@ -69,10 +69,10 @@ artifacts:
 #  - label: Recording
 #    format: YouTube recording
 #    url: https://youtu.be/7G2jjJ403gY
-#  - label: Presentation Slides
-#    format: FigShare
-#    doi: 10.6084/m9.figshare.25686426
-#    status: reserved
+  - label: Presentation Slides
+    format: FigShare
+    doi: 10.6084/m9.figshare.26019469
+    status: published
 # - label: Hands-On Code Repository
 #   format: GitHub
 #   gh-repo: bssw-tutorial/hello-numerical-world-2022-05-02-ecpam
