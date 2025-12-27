@@ -20,10 +20,10 @@ artifacts:
     yt-video-id: VZXg7wcrhao
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-084-communicatingdesign.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-084-communicatingdesign-qa.pdf
 #
 # Items that change rarely
 #

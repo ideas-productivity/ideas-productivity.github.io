@@ -20,10 +20,10 @@ artifacts:
     yt-video-id: _vI_S1y9D2g
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-090-fair-software.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-090-fair-software.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-090-fair-software-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-090-fair-software-qa.pdf
 #
 # Items that change rarely
 #

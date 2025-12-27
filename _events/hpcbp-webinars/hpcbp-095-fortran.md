@@ -32,10 +32,10 @@ artifacts:
   #   yt-video-id: tzPbndr1u4o
   # - label: Slides
   #   format: PDF
-  #   url: /assets/artifacts/hpcbp/hpcbp-095-fortran.pdf
+  #   url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-095-fortran.pdf
   # - label: Q&A
   #   format: PDF
-  #   url: /assets/artifacts/hpcbp/hpcbp-095-fortran-qa.pdf
+  #   url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-095-fortran-qa.pdf
 #
 # Items that change rarely
 #

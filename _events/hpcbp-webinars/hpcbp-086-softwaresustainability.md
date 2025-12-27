@@ -25,10 +25,10 @@ artifacts:
     yt-video-id: WnQOTquKozM
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-086-softwaresustainability.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-086-softwaresustainability.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-086-softwaresustainability-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-086-softwaresustainability-qa.pdf
 #
 # Items that change rarely
 #

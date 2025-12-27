@@ -20,10 +20,10 @@ artifacts:
     yt-video-id: EsdZlKvgRQk
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-083-gettingitright.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-083-gettingitright.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-083-gettingitright-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-083-gettingitright-qa.pdf
 #
 # Items that change rarely
 #

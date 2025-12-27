@@ -24,10 +24,10 @@ artifacts:
   # We prefer the DOI over the local copy of the file, but we'll keep this as a "backup", just in case...
   # - label: Slides
   #   format: PDF
-  #   url: /assets/artifacts/hpcbp/hpcbp-091-software-citation.pdf
+  #   url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-091-software-citation.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-091-software-citation-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-091-software-citation-qa.pdf
 #
 # Items that change rarely
 #

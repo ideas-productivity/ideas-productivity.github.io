@@ -20,10 +20,10 @@ artifacts:
     yt-video-id: nCm2nlRI6q8
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-089-green-software.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-089-green-software.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-089-green-software-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-089-green-software-qa.pdf
 #
 # Items that change rarely
 #

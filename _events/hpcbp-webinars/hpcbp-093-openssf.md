@@ -30,10 +30,10 @@ artifacts:
     yt-video-id: pkzkoXcsCp8
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-093-openssf.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-093-openssf.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-093-openssf-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-093-openssf-qa.pdf
 #
 # Items that change rarely
 #

@@ -20,10 +20,10 @@ artifacts:
     yt-video-id: NDgZ8Y74ISg
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-082-codereview.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-082-codereview.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-082-codereview-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-082-codereview-qa.pdf
 #
 # Items that change rarely
 #

@@ -25,10 +25,10 @@ artifacts:
     yt-video-id: ywCb2Byd4Xs
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-092-genai-coding.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-092-genai-coding.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-092-genai-coding-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-092-genai-coding-qa.pdf
 #
 # Items that change rarely
 #

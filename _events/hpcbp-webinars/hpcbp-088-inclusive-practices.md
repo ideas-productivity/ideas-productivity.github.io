@@ -20,10 +20,10 @@ artifacts:
     yt-video-id: WQLInDZUOtw
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-088-inclusive-practices.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-088-inclusive-practices.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-088-inclusive-practices-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-088-inclusive-practices-qa.pdf
 #
 # Items that change rarely
 #
