@@ -39,7 +39,7 @@ title-type: "track"
 #
 startdate: "2023-08-04"
 #enddate: 
-time: "8:30 am - 9:30 pm CDT"
+time: "8:30 am - 9:30 pm CDT (UTC-5)"
 #
 # Venue information
 #
@@ -113,15 +113,12 @@ description: "The BSSw tutorial focuses on issues of developer productivity, sof
 #   By the time of delivery, the doi should be set
 #
 artifacts:
-  - label: Tutorial Webpage
+  - label: Tutorial webpage
     bsswt-event-label: 2023-08-04-atpesc
-  - label: Presentation Slides
+  - label: Slides
     format: FigShare
     doi: 10.6084/m9.figshare.23823822
     status: published
-#  - label: Hands-On Code Repository
-#    format: GitHub
-#    gh-repo: bssw-tutorial/hello-numerical-world-2022-08-11-atpesc
 #
 # This is a standard collection of deadlines we've encountered historically
 # Add due dates where appropriate. Those without will be ignored

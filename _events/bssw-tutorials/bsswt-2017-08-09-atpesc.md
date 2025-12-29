@@ -39,7 +39,7 @@ title-type: "track"
 #
 startdate: "2017-08-09"
 #enddate: 
-# time: "8:30 am - 9:00 pm CDT"
+# time: "8:30 am - 9:00 pm CDT (UTC-5)"
 #
 # Venue information
 #
@@ -94,12 +94,12 @@ description: "The BSSw tutorial focuses on issues of developer productivity, sof
 #   By the time of delivery, the doi should be set
 #
 artifacts:
-  - label: Tutorial Webpage
+  - label: Tutorial webpage
     bsswt-event-label: 2017-08-09-atpesc
   - label: Playlist
     format: YouTube
     yt-playlist-id: PLuWzStas9iWFE3iOWMcDgOcdejKcRp3Z2
-  - label: Presentation Slides
+  - label: Slides
     format: FigShare
     doi: 10.6084/m9.figshare.21800054
 #

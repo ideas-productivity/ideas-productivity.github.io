@@ -24,14 +24,14 @@ title-type: "tutorial"
 #
 startdate: "2023-02-06"
 #enddate:
-time: 3:00 pm - 6:15 pm EST
+time: 3:00 pm - 6:15 pm EST (UTC-5)
 #
 # Venue information
 #
 venue: "Exascale Computing Project Tutorial Days"
 #venue-type: "meeting" # redundant with the venue name
 venue-url: https://www.exascaleproject.org/event/ecp-tutorial-days/
-location: Online
+location: "online"
 #
 # Staffing information
 # organizer-ids will be assigned the issues that presenter-ids are not doing, basically
@@ -65,18 +65,17 @@ description: |
 # after registration closes or after the event, when it is no longer useful.
 #
 artifacts:
-  - label: Tutorial Webpage
+  - label: Tutorial webpage
     bsswt-event-label: 2023-02-06-ecpam
+#  - label: Tutorial registration
+#    url: https://docs.google.com/forms/d/e/1FAIpQLSc8jf451DjE3l7iHuN_gIl4ACG_5ntCy9k7ErZSFPHGHVhjBw/viewform
   - label: Recording
     format: YouTube
     yt-video-id: 7G2jjJ403gY
-  - label: Presentation Slides
+  - label: Slides
     format: FigShare
     doi: 10.6084/m9.figshare.21989507
     status: published
-# - label: Hands-On Code Repository
-#   format: GitHub
-#   gh-repo: bssw-tutorial/hello-numerical-world-2022-05-02-ecpam
 #
 # This is a standard collection of deadlines we've encountered historically
 # Add due dates where appropriate. Those without will be ignored

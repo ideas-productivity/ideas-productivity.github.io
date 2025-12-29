@@ -39,7 +39,7 @@ title-type: "track"
 #
 startdate: "2020-08-06"
 #enddate: 
-time: "9:30 am - 4:45 pm CDT"
+time: "9:30 am - 4:45 pm CDT (UTC-5)"
 #
 # Venue information
 #
@@ -49,7 +49,7 @@ time: "9:30 am - 4:45 pm CDT"
 venue: "Argonne Training Program on Extreme-Scale Computing"
 venue-type: "summer school"
 venue-url: https://extremecomputingtraining.anl.gov/
-location: Online
+location: "online"
 #
 # Staffing information
 # organizer-ids will be assigned the issues that presenter-ids are not doing, basically
@@ -99,9 +99,9 @@ description: "The BSSw tutorial focuses on issues of developer productivity, sof
 #   By the time of delivery, the doi should be set
 #
 artifacts:
-  - label: Tutorial Webpage
+  - label: Tutorial webpage
     bsswt-event-label: 2020-08-06-atpesc
-#  - label: Conference Registration
+#  - label: Conference registration
 #    url: 
   # - label: Recordings
   #   format: YouTube playlist
@@ -109,12 +109,12 @@ artifacts:
   - label: Playlist
     format: YouTube
     yt-playlist-id: PLuWzStas9iWHlsWNBAZG63zHargIRIPE7
-  - label: Presentation Slides
+  - label: Slides
     format: FigShare
     doi: 10.6084/m9.figshare.12719834
-  - label: Hands-On Code Repository
+  - label: Hands-on repository
     format: GitHub
-    gh-repo: betterscientificsoftware/hello-numerical-world-atpesc-2020
+    url: https://github.com/betterscientificsoftware/hello-numerical-world-atpesc-2020
 #
 # This is a standard collection of deadlines we've encountered historically
 # Add due dates where appropriate. Those without will be ignored

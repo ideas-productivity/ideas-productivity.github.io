@@ -20,7 +20,7 @@ time: 9:30am - 5:45pm CDT
 venue: "Argonne Training Program on Extreme-Scale Computing"
 venue-type: "summer school"
 #venue-url: https://extremecomputingtraining.anl.gov/
-location: Online
+location: "online"
 #
 # presenter-ids: [bernhold, adubey64, rinkug, frobnitzem]
 presenters:
@@ -48,16 +48,16 @@ presenters:
 description: "The BSSw tutorial focuses on issues of developer productivity, software sustainability, and reproducibility in scientific research software, particularly targeting high-performance computers."
 #
 artifacts:
-  - label: Tutorial Webpage
+  - label: Tutorial webpage
     bsswt-event-label: 2021-08-12-atpesc
   - label: Playlist
     format: YouTube
     yt-playlist-id: PLuWzStas9iWH1gbVQ0MTjyhyEJHrIhMGG
-  - label: Presentation Slides
+  - label: Slides
     format: FigShare
     doi: 10.6084/m9.figshare.15130590
-  - label: Hands-On Code Repository
+  - label: Hands-on repository
     format: GitHub
-    gh-repo: bssw-tutorial/hello-numerical-world-2021-08-12-atpesc
+    url: https://github.com/bssw-tutorial/hello-numerical-world-2021-08-12-atpesc
 ---
 

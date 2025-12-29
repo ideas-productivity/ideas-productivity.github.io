@@ -8,10 +8,9 @@ type: Tutorial
 series:
   - "BSSw Tutorials"
 activities:
-  - "PESO"
   - "RAPIDS"
-parent-event-name: SC25
-parent-event-file: parentconf-2025-11-16-sc25
+parent-event-name: HPCAsia 2026
+parent-event-file: parentconf-2026-01-26-hpcasia
 #
 # Commentary notes indicate fields that are
 # required (plain text) and optional (bracketed text)
@@ -22,9 +21,9 @@ parent-event-file: parentconf-2025-11-16-sc25
 # Planned: title, [title-type], [title-url]
 # Scheduled: same
 #
-title: "Better Software for Reproducible Science"
+title: "Better Software for Science with High-Performance Computing"
 title-type: "tutorial"
-title-url: https://sc25.conference-program.com/presentation/?id=tut159&sess=sess377
+#title-url: https://sc23.conference-program.com/presentation/?id=tut147&sess=sess225
 #
 # Presentation date and time.
 # enddate is optional for one-day events
@@ -38,21 +37,21 @@ title-url: https://sc25.conference-program.com/presentation/?id=tut159&sess=sess
 #   Unless the tutorial occurs over multiple days, enddate is not
 #   needed for tutorials in the "scheduled" stage.
 #
-startdate: "2025-11-16"
+startdate: "2026-01-26"
 #enddate: "2023-11-132
-time: "8:30 am - 12:00 pm CST"
+time: "9:30 am - 4:30 pm JST"
 #
 # Venue information
 #
 # Planned: venue, [venue-type], [venue-url], location
 # Scheduled: same
 #
-venue: "The International Conference for High-Performance Computing, Networking, Storage, and Analysis (SC25)"
+venue: "SupercomputingAsia 2026 (SCA 2026)/The International Conference on High Performance Computing in Asia-Pacific Region 2026 (HPCAsia 2026)"
 venue-type: "conference"
-venue-url: https://sc25.supercomputing.org/
-location: "St. Louis, Missouri"
+venue-url: https://www.sca-hpcasia2026.jp/
+location: "Osaka, Japan"
 #
-registration-url: https://sc25.supercomputing.org/attend/registration/
+registration-url: https://www.sca-hpcasia2026.jp/registration.html
 #
 # Staffing information
 # organizer-ids will be assigned the issues that presenter-ids are not doing, basically
@@ -70,16 +69,16 @@ registration-url: https://sc25.supercomputing.org/attend/registration/
 organizer-ids: [bernhold,adubey64]
 #
 presenters:
-  - name: David E. Bernholdt
-    affiliation: Oak Ridge National Laboratory
-    short-affil: ORNL
-    pronouns: he/him
-    github-id: bernhold
   - name: Anshu Dubey
     affiliation: Argonne National Laboratory
     short-affil: ANL
     pronouns: she/her
     github-id: adubey64
+  - name: Akash Dhruv
+    affiliation: Argonne National Laboratory
+    short-affil: ANL
+    pronouns: he/him
+    github-id: akashdhruv
 #
 # helpers:
 #   - name: Rinku Gupta
@@ -91,7 +90,9 @@ presenters:
 description: |
   Producing scientific software is a challenge.  The high-performance modeling and simulation community, in particular, faces the confluence of disruptive changes in computing architectures and new opportunities (and demands) for greatly improved simulation capabilities, especially through coupling physics and scales.  Simultaneously, computational science and engineering (CSE), as well as other areas of science, are experiencing an increasing focus on scientific reproducibility and software quality.  Large language models (LLMs), can significantly increase developer productivity through judicious off-loading of tasks. However, models can hallucinate, therefore it is important to have a good methodology to get the most benefit out of this approach.
 
-  In this tutorial, attendees will learn about practices, processes, and tools to improve the productivity of those who develop CSE software, increase the sustainability of software artifacts, and enhance trustworthiness in their use. We will focus on aspects of scientific software development that are not adequately addressed by resources developed for industrial software engineering, offering a strategy for the responsible use of LLMs to enhance developer productivity in the context of scientific software development, incorporating testing strategies for the generated code, and discussing reproducibility considerations in the development and use of scientific software.
+  We propose a tutorial in which attendees will learn about practices, processes, and tools to improve the productivity of those who develop CSE software, increase the sustainability of software artifacts, and enhance trustworthiness in their use. We will focus on aspects of scientific software development that are not adequately addressed by resources developed for industrial software engineering.  We will additionally impart state-of-the-art approaches for using LLMs to enhance developer productivity in the context of scientific software development and maintenance. Topics include the design, test-driven development, refactoring, code translation and testing of complex scientific software systems; and  conducting computational experiments with reproducibility built in.  
+
+  The inclusion of LLM assistance on coding related tasks is particularly important to include in any software productivity concern given that it has the potential to change the way development is done. It is particularly challenging to get this assistance in developing research software because of limited training data. We have developed methodologies and tools for software development and translation that use LLMs.  The use of these tools and methodologies for hands-on activities will be a part of this tutorial.
 #
 # This is a more or less typical collection of artifacts for tutorials.
 # Comment out anything that isn't (yet) available.
@@ -106,11 +107,11 @@ description: |
 #
 artifacts:
   - label: Tutorial webpage
-    bsswt-event-label: 2025-11-16-sc
-  - label: Slides
-    format: FigShare
-    doi: 10.6084/m9.figshare.30394186
-    status: published
+    bsswt-event-label: 2026-01-26-hpcasia
+  # - label: Slides
+  #   format: FigShare
+  #   doi: 10.6084/m9.figshare.30394186
+  #   status: reserved
 #
 # This is a common set of deadlines we've encountered historically
 # Add due dates where appropriate. Those without will be ignored
@@ -125,16 +126,16 @@ artifacts:
 #
 deadlines:
   - label: internal-presentations
-    due: 2025-10-22
+    due: 2026-01-12
     responsible: [by-presentation]
   - label: internal-resource-links
-    due: 2025-10-28
+    due: 2026-01-19
     responsible: [by-presentation]
   - label: venue-initial-presentations
-    due: 2025-10-27
+    due: 
     responsible: [organizer-ids]
   - label: venue-final-presentations
-    due: 2025-11-16
+    due: 2026-01-24
     responsible: [organizer-ids]
   - label: internal-consents
     due: 
@@ -152,13 +153,13 @@ deadlines:
     due: 
     responsible: [presenter-ids]
   - label: venue-final-program-info
-    due: 2025-08-04
+    due: 
     responsible: [organizer-ids]
   - label: internal-financial-info
     due: 
     responsible: [presenter-ids]
   - label: venue-financial-info
-    due: 2025-08-04
+    due: 
     responsible: [organizer-ids]
 
 ---

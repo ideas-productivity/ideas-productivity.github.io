@@ -20,7 +20,7 @@ time: 2:30 pm - 4:00 pm EDT
 venue: "Exascale Computing Project Annual Meeting"
 #venue-type: "meeting" # redundant with the venue name
 #venue-url:
-location: Online
+location: "online"
 #
 # presenter-ids: [bernhold, pagrubel, jwillenbring]
 presenters:
@@ -46,12 +46,12 @@ description: |
   In this tutorial, which is aimed at those with beginner to intermediate levels of comfort with testing and continuous integration, we will briefly review the multiple motivations for testing, and the different types of tests that address them. We’ll discuss some strategies for testing complex software systems, and how continuous integration testing fits into the larger picture. Accompanying hands-on activities, available for self-study, will demonstrate how to get started with a very simple level of CI testing.
 
 artifacts:
-  - label: Tutorial Webpage
+  - label: Tutorial webpage
     bsswt-event-label: 2021-04-12-ecpam
   - label: Playlist
     format: YouTube
     yt-playlist-id: PLuWzStas9iWFcaosbTcoVA0GN3qr2ZfSA
-  - label: Presentation Slides
+  - label: Slides
     format: FigShare
     doi: 10.6084/m9.figshare.14376956
 ---

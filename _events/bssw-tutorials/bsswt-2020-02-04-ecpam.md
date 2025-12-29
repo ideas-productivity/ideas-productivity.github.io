@@ -24,13 +24,13 @@ title-type: "tutorial"
 #
 startdate: "2020-02-04"
 #enddate:
-#time: 2:30 pm - 4:00 pm EDT
+#time: 2:30 pm - 4:00 pm EDT (UTC-4)
 #
 # Venue information
 #
 venue: "Exascale Computing Project Annual Meeting"
 #venue-type: "meeting" # redundant with the venue name
-#venue-url: 
+#venue-url:
 location: "Houston, Texas"
 #
 # Staffing information
@@ -69,9 +69,9 @@ description: |
 # after registration closes or after the event, when it is no longer useful.
 #
 artifacts:
-  - label: Tutorial Webpage
+  - label: Tutorial webpage
     bsswt-event-label: 2020-02-04-ecpam
-  - label: Presentation Slides
+  - label: Slides
     format: FigShare
     doi: 10.6084/m9.figshare.11786868
 #

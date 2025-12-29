@@ -64,18 +64,15 @@ description: |
 # after registration closes or after the event, when it is no longer useful.
 #
 artifacts:
-  - label: Tutorial Webpage
+  - label: Tutorial webpage
     bsswt-event-label: 2024-06-18-acmrep
 #  - label: Recording
 #    format: YouTube recording
 #    url: https://youtu.be/7G2jjJ403gY
-  - label: Presentation Slides
+  - label: Slides
     format: FigShare
     doi: 10.6084/m9.figshare.26019469
     status: published
-# - label: Hands-On Code Repository
-#   format: GitHub
-#   gh-repo: bssw-tutorial/hello-numerical-world-2022-05-02-ecpam
 #
 # This is a standard collection of deadlines we've encountered historically
 # Add due dates where appropriate. Those without will be ignored

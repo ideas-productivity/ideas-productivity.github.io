@@ -39,7 +39,7 @@ title-type: "tutorial"
 #
 startdate: "2023-08-01"
 enddate: "2023-08-02"
-time: 9:00 am - 5:00 pm MDT
+time: 9:00 am - 5:00 pm MDT (UTC-6)
 #
 # Venue information
 #
@@ -107,18 +107,14 @@ description: "The BSSw tutorial focuses on issues of developer productivity, sof
 #   By the time of delivery, the doi should be set
 #
 artifacts:
-  - label: Tutorial Webpage
+  - label: Tutorial webpage
     bsswt-event-label: 2023-08-01-noaa
-#  - label: Conference Registration
+#  - label: Conference registration
 #    url: https://www.isc-hpc.com/registration-2022.html
-  - label: Presentation Slides
+  - label: Slides
     format: FigShare
     doi: 10.6084/m9.figshare.23796606
     status: published
-# The only meaningful values of status are: reserved or published
-#  - label: Hands-On Code Repository
-#    format: GitHub
-#    gh-repo: bssw-tutorial/hello-numerical-world-2022-05-29-isc
 #
 # This is a standard collection of deadlines we've encountered historically
 # Add due dates where appropriate. Those without will be ignored

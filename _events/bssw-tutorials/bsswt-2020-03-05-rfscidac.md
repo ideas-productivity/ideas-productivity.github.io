@@ -39,7 +39,7 @@ title-type: "tutorial"
 #
 startdate: "2020-03-05"
 #enddate: 
-#time: "9:30 am - 4:45 pm CDT"
+#time: "9:30 am - 4:45 pm CDT (UTC-5)"
 #
 # Venue information
 #
@@ -79,9 +79,9 @@ description: "The BSSw tutorial focuses on issues of developer productivity, sof
 #   By the time of delivery, the doi should be set
 #
 artifacts:
-  - label: Tutorial Webpage
+  - label: Tutorial webpage
     bsswt-event-label: 2020-03-05-rfscidac
-  - label: Presentation Slides
+  - label: Slides
     format: FigShare
     doi: 10.6084/m9.figshare.11918397
 #

@@ -24,14 +24,14 @@ title-type: "tutorial"
 #
 startdate: "2022-05-02"
 #enddate:
-time: 2:30 pm - 4:00 pm EDT
+time: 2:30 pm - 4:00 pm EDT (UTC-4)
 #
 # Venue information
 #
 venue: "Exascale Computing Project Annual Meeting"
 #venue-type: "meeting" # redundant with the venue name
 #venue-url:
-location: Online
+location: "online"
 #
 # Staffing information
 # organizer-ids will be assigned the issues that presenter-ids are not doing, basically
@@ -62,19 +62,19 @@ description: |
 # after registration closes or after the event, when it is no longer useful.
 #
 artifacts:
-  - label: Tutorial Webpage
+  - label: Tutorial webpage
     bsswt-event-label: 2022-05-02-ecpam
-#  - label: Conference Registration
+#  - label: Conference registration
 #    url: 
   - label: Playlist
     format: YouTube
     yt-playlist-id: PLuWzStas9iWFiWGCw7rC8Y-rG4KtPa39I
-  - label: Presentation Slides
+  - label: Slides
     format: FigShare
     doi: 10.6084/m9.figshare.19608927
-  - label: Hands-On Code Repository
+  - label: Hands-on repository
     format: GitHub
-    gh-repo: bssw-tutorial/hello-numerical-world-2022-05-02-ecpam
+    url: https://github.com/bssw-tutorial/hello-numerical-world-2022-05-02-ecpam
 #
 # This is a standard collection of deadlines we've encountered historically
 # Add due dates where appropriate. Those without will be ignored
