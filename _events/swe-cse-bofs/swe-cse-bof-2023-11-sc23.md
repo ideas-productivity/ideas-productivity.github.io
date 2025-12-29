@@ -20,6 +20,10 @@ location: "Denver, Colorado, and online"
 #
 registration-url: https://sc23.supercomputing.org/attend/registration/
 #
+header:
+    overlay_image: /assets/images/sc23_hor_blackcolor@4x.png
+    overlay_filter: 0.33
+#
 organizers:
   - name: David E. Bernholdt	
     affiliation: Oak Ridge National Laboratory
@@ -71,17 +75,13 @@ presenters:
     url: /assets/2023-11-sc23-bof/07-reid-hpccarpentry.pdf
 #
 artifacts:
+  - label: Summary blog article
+    url: "https://bssw.io/blog_posts/reflecting-on-our-community-the-sc23-bof-on-scientific-software-and-the-people-who-make-it-happen-building-communities-of-practice"
+    format: BSSw.io
+  - label: BoF webpage
+    url: "https://betterscientificsoftware.github.io/swe-cse-bof/2023-11-sc23-bof"
   - label: Conference program page
     url: "https://sc23.conference-program.com/presentation/?id=bof177&sess=sess375"
-  - label: BoF archive
-    url: "https://betterscientificsoftware.github.io/swe-cse-bof/2023-11-sc23-bof"
-    format: webpage
-  - label: BoF series
-    url: "http://bit.ly/swe-cse-bof"
-    format: website
-  - label: BoF summary
-    url: "https://bssw.io/blog_posts/reflecting-on-our-community-the-sc23-bof-on-scientific-software-and-the-people-who-make-it-happen-building-communities-of-practice"
-    format: blog article
 #
 description: |
   Software has become central to all aspects of modern science and technology. Especially in high-performance computing (HPC) and computational science and engineering (CSE), it is becoming ever-larger and more complex while computer platforms evolve and become more diverse. Simultaneously, the teams behind the software are becoming larger, more technically diverse, and more geographically distributed.
@@ -107,6 +107,6 @@ description: |
 
 ## Discussion Notes
 
-We're writing a summary blog article for [Bssw.io](https://bssw.io/blog_posts).  We'll update here when it is published.
+We've published a blog article on the Better Scientific Software resource site (<https://bssw.io>) based on this BoF: [Reflecting on Our Community: The SC23 BoF on Scientific Software and the People Who Make it Happen: Building Communities of Practice](https://bssw.io/blog_posts/reflecting-on-our-community-the-sc23-bof-on-scientific-software-and-the-people-who-make-it-happen-building-communities-of-practice)
 
-In the meantime, you can read the [notes](bof-notes).
+Alternatively, you can read the [summary notes](bof-notes).

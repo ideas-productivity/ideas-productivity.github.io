@@ -18,6 +18,10 @@ venue-type: "conference"
 venue-url: https://www.isc-hpc.com/
 location: "Frankfurt, Germany"
 #
+header:
+    overlay_image: /assets/images/ISC_hp_logo_72dpi_rgb.png
+    overlay_filter: 0.33
+#
 organizers:
   - name: David E. Bernholdt
     affiliation: Oak Ridge National Laboratory
@@ -61,12 +65,8 @@ presenters:
     url: /assets/2019-06-isc19-bof/05-kabiri-chimeh-diversity.pdf
 #
 artifacts:
-  - label: BoF archive
+  - label: BoF webpage
     url: "https://betterscientificsoftware.github.io/swe-cse-bof/2019-06-isc19-bof/"
-    format: webpage
-  - label: BoF series
-    url: "http://bit.ly/swe-cse-bof"
-    format: website
 #
 description: |
   Software engineering (SWE) for computational science and engineering
