@@ -23,6 +23,7 @@ GEM
     eventmachine (1.2.7)
     facets (3.1.0)
     ffi (1.17.3-x64-mingw-ucrt)
+    ffi (1.17.3-x86_64-linux-gnu)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
     htmlentities (4.4.2)
@@ -114,6 +115,8 @@ GEM
     mutex_m (0.3.0)
     nokogiri (1.19.0-x64-mingw-ucrt)
       racc (~> 1.4)
+    nokogiri (1.19.0-x86_64-linux-gnu)
+      racc (~> 1.4)
     ostruct (0.6.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -148,6 +151,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   base64
