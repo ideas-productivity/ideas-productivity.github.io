@@ -42,8 +42,8 @@ topic: interface design with C++20 and later
 short-description: |
   This talk will introduce standard C++ Concepts, Constraints and std::mdspan and discuss their uses for designing interfaces in scientific computing software.
 ---
-Over the last few years C++ has evolved considerably by adding features that allow for more robust, intuitive and maintainable interfaces most notably through the addition of Concepts and Constraints in C++20, and std::mdspan in C++23.
-This can in particular benefit scientific computing, where libraries with complex overload sets or large number of class specializations are common.
-In this presentation we will introduce Concepts and Constraints and discuss their benefits as well as their pitfalls. In particular we will illustrate how these new capabilities interact with std::mdspan to enable the design of public facing interfaces, that enable interoperability between libraries for multi-dimensional arrays, and provide a much larger degree of safety and maintainability than typical C-like interfaces.
+Over the last few years C++ has evolved considerably by adding features that allow for more robust, intuitive and maintainable interfaces, most notably through the addition of Concepts and Constraints in C++20, and std::mdspan in C++23.
+These features can in particular benefit scientific computing, where libraries with complex overload sets or large numbers of class specializations are common.
+In this presentation we will introduce Concepts and Constraints and discuss their benefits as well as their pitfalls. In particular, we will illustrate how these new capabilities interact with std::mdspan to enable the design of public facing interfaces, which enable interoperability between libraries for multi-dimensional arrays, and provide a much larger degree of safety and maintainability than typical C-like interfaces.
 
-This talk will be appropriate for attendees who do not know anything about Concepts, Constraints or std::mdspan, however a general C++ familiarity is highly recommended.
+This talk will be appropriate for attendees who do not know anything about Concepts, Constraints or std::mdspan; however, a general C++ familiarity is highly recommended.
