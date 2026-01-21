@@ -30,9 +30,9 @@ artifacts:
   # - label: Recording
   #   format: YouTube
   #   yt-video-id: tzPbndr1u4o
-  # - label: Slides
-  #   format: PDF
-  #   url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-095-fortran.pdf
+  - label: Slides
+    format: PDF
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-095-fortran.pdf
   # - label: Q&A
   #   format: PDF
   #   url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-095-fortran-qa.pdf
