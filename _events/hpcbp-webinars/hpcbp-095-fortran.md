@@ -34,8 +34,8 @@ artifacts:
     format: PDF
     url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-095-fortran.pdf
   - label: Q&A
-    format: pending
-  #   url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-095-fortran-qa.pdf
+    format: PDF
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-095-fortran-qa.pdf
 #
 # Items that change rarely
 #
