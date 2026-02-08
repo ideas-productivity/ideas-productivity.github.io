@@ -30,7 +30,7 @@ time: 3:00 pm - 6:15 pm EST (UTC-5)
 #
 venue: "Exascale Computing Project Tutorial Days"
 #venue-type: "meeting" # redundant with the venue name
-venue-url: https://www.exascaleproject.org/event/ecp-tutorial-days/
+# venue-url: 
 location: "online"
 #
 # Staffing information
