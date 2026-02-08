@@ -76,6 +76,6 @@ developed by CLaSS and our collaborators.  The talk will conclude with a
 description of the planned Fortran 2028 support for generic programming via
 type-safe templates and the powerful ramifications of this technology in our
 development of a formally verifiable, domain-specific language embedded in Fortran
-2028 via a type system being developed for the [MOLE](https://github.com/rouson/mole/tree/extended-gauss-divergence/example) PDE solver library.
+2028 via a type system being developed for the [Formal](https://go.lbl.gov/formal) PDE solver library.
 One recurring theme will be the ability to write thousands of lines of code
 manipulating large collections of data with few or no loops.
