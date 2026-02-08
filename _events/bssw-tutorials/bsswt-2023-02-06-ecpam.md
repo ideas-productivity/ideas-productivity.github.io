@@ -68,7 +68,7 @@ artifacts:
   - label: Tutorial webpage
     bsswt-event-label: 2023-02-06-ecpam
 #  - label: Tutorial registration
-#    url: https://docs.google.com/forms/d/e/1FAIpQLSc8jf451DjE3l7iHuN_gIl4ACG_5ntCy9k7ErZSFPHGHVhjBw/viewform
+#    url: 
   - label: Recording
     format: YouTube
     yt-video-id: 7G2jjJ403gY
