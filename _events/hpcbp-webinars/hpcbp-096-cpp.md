@@ -18,9 +18,9 @@ artifacts:
   # - label: Recording
   #   format: YouTube
   #   yt-video-id: tzPbndr1u4o
-  # - label: Slides
-  #   format: PDF
-  #   url: XXXXX://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-096-cpp.pdf
+  - label: Slides
+    format: PDF
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-096-cpp.pdf
   # - label: Q&A
   #   format: PDF
   #   url: XXXXX://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-096-cpp-qa.pdf
