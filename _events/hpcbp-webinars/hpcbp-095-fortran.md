@@ -1,6 +1,6 @@
 ---
 startdate: "2026-01-21"
-time: "1:00 pm - 2:00 pm EDT" # Ensure that time zone is correct with respect to standard/daylight time
+time: "1:00 pm - 2:00 pm EST" # Ensure that time zone is correct with respect to standard/daylight time
 #
 title: "Please, No More Loops (Than Necessary): New Patterns in Fortran 2023"
 #
