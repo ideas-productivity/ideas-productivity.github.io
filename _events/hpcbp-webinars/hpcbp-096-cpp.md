@@ -17,7 +17,7 @@ registration-url: https://www.zoomgov.com/meeting/register/OtBDoWACSOSiVftdtUUe7
 artifacts:
   - label: Recording
     format: YouTube
-    yt-video-id: P0aEYOZe6_Y
+    yt-video-id: AbHpRnnpUk0
   - label: Slides
     format: PDF
     url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-096-cpp.pdf
