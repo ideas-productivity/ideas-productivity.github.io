@@ -40,7 +40,7 @@ activities:
 #
 topic: documentation
 short-description: |
-  In this talk, I will present recommendations for documenting scientific software based on the concept of a “minimum viable documentation product”: what's the least amount of documentation you need to prepare while still doing right by your users?
+  Recommendations for documenting scientific software based on the concept of a “minimum viable documentation product”: what's the least amount of documentation you need to prepare while still doing right by your users?
 ---
 Many of us aspire to provide high-quality documentation alongside our scientific software. However, we rarely have much time to write it, and it is easy to get stuck staring at the proverbial “blank page” when we finally sit down to begin.
 
