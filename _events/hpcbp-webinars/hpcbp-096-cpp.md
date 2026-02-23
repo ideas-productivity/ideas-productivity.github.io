@@ -15,9 +15,9 @@ bsswio-topics: ["software engineering", "high-performance computing (hpc)", "onl
 registration-url: https://www.zoomgov.com/meeting/register/OtBDoWACSOSiVftdtUUe7w
 #
 artifacts:
-  # - label: Recording
-  #   format: YouTube
-  #   yt-video-id: tzPbndr1u4o
+  - label: Recording
+    format: YouTube
+    yt-video-id: P0aEYOZe6_Y
   - label: Slides
     format: PDF
     url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-096-cpp.pdf
