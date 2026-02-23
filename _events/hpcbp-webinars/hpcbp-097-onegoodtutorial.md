@@ -6,7 +6,7 @@ title: 'One Good Tutorial: Defining a “Minimum Viable Documentation Product”
 #
 presenters:
   - name: Peter K. G. Williams
-    affiliation: "Center for Astrophysics | Harvard & Smithsonian"
+    affiliation: "Center for Astrophysics, Harvard & Smithsonian"
     github-id: pkgw
     bio: |
       [Peter K. G. Williams](https://newton.cx/~peter/) is an astrophysicist at the [Center for Astrophysics \| Harvard & Smithsonian](https://cfa.harvard.edu/). He received his PhD from UC Berkeley in 2012 and currently serves as the Technical Lead for the [IAU Minor Planet Center](https://minorplanetcenter.net/), which is responsible for collecting, verifying, and distributing observations of asteroids, comets, and other small bodies in the Solar System from around the world. He has a long history of contributions to open-source software, including serving on the conda-forge core team from 2019 to 2024.
