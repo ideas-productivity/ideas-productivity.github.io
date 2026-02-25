@@ -21,9 +21,9 @@ artifacts:
   - label: Slides
     format: PDF
     url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-096-cpp.pdf
-  # - label: Q&A
-  #   format: PDF
-  #   url: XXXXX://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-096-cpp-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-096-cpp-qa.pdf
 #
 # Items that change rarely
 #
