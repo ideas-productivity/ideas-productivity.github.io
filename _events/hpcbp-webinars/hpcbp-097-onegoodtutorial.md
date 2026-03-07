@@ -20,7 +20,7 @@ artifacts:
   #   yt-video-id: 
   # - label: Slides
   #   format: PDF
-  #   url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-097-onegoodtutorial.pdf
+  #   url: XXXXX://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-097-onegoodtutorial.pdf
   # - label: Q&A
   #   format: PDF
   #   url: XXXXX://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-097-onegoodtutorial-qa.pdf
