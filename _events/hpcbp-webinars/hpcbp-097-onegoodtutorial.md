@@ -15,15 +15,15 @@ bsswio-topics: ["documentation", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/wjQvbQjnQRiNqG9p6McZJw
 #
 artifacts:
-  # - label: Recording
-  #   format: YouTube
-  #   yt-video-id: 
+  - label: Recording
+    format: YouTube
+    yt-video-id: YnIGpJChx8I
   - label: Slides
     format: PDF
     url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-097-onegoodtutorial.pdf
-  # - label: Q&A
-  #   format: PDF
-  #   url: XXXXX://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-097-onegoodtutorial-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-097-onegoodtutorial-qa.pdf
 #
 # Items that change rarely
 #
