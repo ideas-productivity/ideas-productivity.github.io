@@ -8,7 +8,7 @@ series:
   - "Technical Sessions and Meetings"
 #
 activities:
-  - "IDEAS-ECP"
+  - "IDEAS-Classic"
 #
 parent-event-name: SC16
 parent-event-file: parentconf-2016-11-14-sc16
@@ -17,6 +17,11 @@ venue: "The International Conference for High-Performance Computing, Networking,
 venue-type: "conference"
 venue-url: https://sc16.supercomputing.org/
 location: "Salt Lake City, Utah"
+#
+header:
+    overlay_image: /assets/images/SC16.4CBlackRedTextOutline.png
+    overlay_filter: 0.33
+    # overlay_filter: rgba(0, 146, 202, 0.75) # Same color as "air" skin footer
 #
 organizers:
   - name: David E. Bernholdt
@@ -74,12 +79,8 @@ presenters:
 
 #
 artifacts:
-  - label: BoF archive
+  - label: BoF webpage
     url: "https://betterscientificsoftware.github.io/swe-cse-bof/2016-11-sc16-bof"
-    format: webpage
-  - label: BoF series
-    url: "http://bit.ly/swe-cse-bof"
-    format: website
 #
 description: |
   Software engineering (SWE) for computational science and engineering

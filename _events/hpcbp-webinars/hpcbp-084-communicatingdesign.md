@@ -20,10 +20,10 @@ artifacts:
     yt-video-id: VZXg7wcrhao
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-084-communicatingdesign.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-084-communicatingdesign-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-084-communicatingdesign-qa.pdf
 #
 # Items that change rarely
 #
@@ -36,7 +36,7 @@ type: Webinar
 series:
   - "HPC Best Practices Webinars"
 activities:
-  - "COLABS"
+  - "PESO"
 #
 short-description: |
   Visually communicating elements of research software design can enable improved communication and extension of the software architecture and included models. This webinar describes the Unified Modeling Language as a mechanism for software diagramming as well as concrete methods for incorporating this practice into research software development workflows.

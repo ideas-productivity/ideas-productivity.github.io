@@ -1,6 +1,6 @@
 name: Check URLs in Changed Files
 
-on: [pull_request, push, workflow_dispatch]
+on: [pull_request]
 
 jobs:  
   urlchecks:
@@ -33,9 +33,13 @@ jobs:
     - name: urls-checker
       uses: urlstechie/urlchecker-action@0.0.34
       with:
+        # Check only the changed files
+        include_files: ${{ steps.files.outputs.added_modified }}
         # Use common exclude list read in above
         exclude_urls: ${{ steps.ex-urls.outputs.content }}
         exclude_patterns: ${{ steps.ex-patterns.outputs.content }}
+        # Add yml to the default file types to check
+        file_types: ".md,.py,.rst,.html,.yml"
         timeout: 10
         retry_count: 3
         print_all: false

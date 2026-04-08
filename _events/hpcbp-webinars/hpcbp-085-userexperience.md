@@ -23,10 +23,10 @@ artifacts:
     yt-video-id: 2UxR_5qG_Yo
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-085-userexperience.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-085-userexperience.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-085-userexperience-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-085-userexperience-qa.pdf
 #
 # Items that change rarely
 #
@@ -39,7 +39,7 @@ type: Webinar
 series:
   - "HPC Best Practices Webinars"
 activities:
-  - "COLABS"
+  - "PESO"
 #
 topic: user experience in scientific ecosystems
 short-description: |

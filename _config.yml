@@ -33,7 +33,7 @@ theme: minima
 plugins:
   - jekyll-sitemap
 #  - jekyll-feed
-  - jekyll-pluralize
+#  - liquid_pluralize # Do not use jekyll-pluralize -- outdated
   - jekyll-redirect-from
   - jekyll_basename_dirname
   - flexible_include
@@ -221,6 +221,7 @@ algolia:
 exclude:
   - README.md
   - vendor
+  - _events-draft/README.md
 
 # We have multiple pages where we need to refer to the canonical location
 # for the HPC-BP webinar series and also to the directory where the actual events

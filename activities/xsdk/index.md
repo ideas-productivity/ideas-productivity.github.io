@@ -36,5 +36,5 @@ To help address challenges in interoperability and sustainability of software wr
 
 {% 	include text-biglink.html 
 		blurb = "learn more about xSDK"
-		url = "https://xsdk.info/"
+		url = "https://github.com/xsdk-project/"
 %}

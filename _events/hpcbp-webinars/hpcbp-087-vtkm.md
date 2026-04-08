@@ -20,10 +20,10 @@ artifacts:
     yt-video-id: mbevXdtztxQ
   - label: Slides
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-087-vtkm.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-087-vtkm.pdf
   - label: Q&A
     format: PDF
-    url: /assets/artifacts/hpcbp/hpcbp-087-vtkm-qa.pdf
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-087-vtkm-qa.pdf
 #
 # Items that change rarely
 #
@@ -36,7 +36,7 @@ type: Webinar
 series:
   - "HPC Best Practices Webinars"
 activities:
-  - "COLABS"
+  - "PESO"
 #
 topic: taking a research code to production
 short-description: |
