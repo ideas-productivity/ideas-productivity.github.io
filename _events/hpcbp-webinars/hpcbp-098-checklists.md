@@ -1,5 +1,5 @@
 ---
-startdate: "2026-05-27"
+startdate: "2026-05-20"
 time: "1:00pm - 2:00pm EDT" # Ensure that time zone is correct with respect to standard/daylight time
 #
 title: 'Research Software Sharing, Publication, & Distribution Checklists'
