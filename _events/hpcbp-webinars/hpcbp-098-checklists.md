@@ -15,6 +15,8 @@ bsswio-topics: ["documentation", "reproducibility", "software publishing and cit
 registration-url: https://www.zoomgov.com/meeting/register/lO56tqWVSpi0tJbbY5EGgw
 #
 artifacts:
+  - label: Website
+    url: https://rsspdc.org/
 #   - label: Recording
 #     format: YouTube
 #     yt-video-id: YnIGpJChx8I
