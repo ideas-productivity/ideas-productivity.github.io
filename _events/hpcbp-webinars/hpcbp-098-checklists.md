@@ -14,13 +14,16 @@ presenters:
 bsswio-topics: ["documentation", "reproducibility", "software publishing and citation", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/lO56tqWVSpi0tJbbY5EGgw
 #
-# artifacts:
+artifacts:
 #   - label: Recording
 #     format: YouTube
 #     yt-video-id: YnIGpJChx8I
-#   - label: Slides
-#     format: PDF
-#     url: XXXXX://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-098-checklists.pdf
+  - label: Slides
+    format: HTML
+    url: https://rsspdc.gitlab.io/slides/hpc-best-practices_2026-05-20.html
+  - label: Slides
+    format: PDF
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-098-checklists.pdf
 #   - label: Q&A
 #     format: PDF
 #     url: XXXXX://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-098-checklists-qa.pdf
