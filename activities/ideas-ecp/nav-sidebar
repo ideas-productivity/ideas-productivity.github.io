@@ -5,8 +5,20 @@
   label1  = "Overview"
   url1    = "/activities/ideas-ecp"
 
-  label2  = "Team"
-  url2    = "/activities/ideas-ecp/team"
+  label2  = "Fostering Communities"
+  url2    = "/activities/ideas-ecp/fostering-communities"
+  
+  label3  = "Incubating and Curating Methodologies"
+  url3    = "/activities/ideas-ecp/methodologies"
+  
+  label3  = "Disseminating Knowledge"
+  url3    = "/activities/ideas-ecp/disseminating-knowledge"
+  
+  label4  = "Achievements"
+  url4    = "/activities/ideas-ecp/achievements"
+  
+  label5  = "Team"
+  url5    = "/activities/ideas-ecp/team"
 
   current=include.current
 %}
