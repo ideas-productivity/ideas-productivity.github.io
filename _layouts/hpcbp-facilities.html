@@ -43,16 +43,20 @@ layout: none
   to shift from Eastern to Pacific.
 
   Does NOT handle any edge cases (e.g., times near the start/end of the day, etc.)
+
+  For reasons I don't understand if t[1] has the timezone designator in it, 
+  the conversion is wrong -- 2pm translates to 3pm instead of 11am.  This is why we strip 
+  off the timezone in the first step.
 {% endcomment %}
 
-{% assign t = page.time | split: "-" %}
+{% assign t = page.time | remove: "EST" | remove: "EDT" | split: "-" %}
 {% assign t0p = t[0] | date: "%s" | minus: 10800 | date: "%l:%M %P" %}
 {% assign t1p = t[1] | date: "%s" | minus: 10800 | date: "%l:%M %P" %}
 
 <section style="border: 3px; border-style: solid; padding: 1em;">
 <p><strong>HPC Best Practices Webinar on {{ page.topic | default: "NEED HUMAN INTERVENTION" }}, {{ page.startdate | date: "%B %-d" }}</strong></p>
 
-<p>The IDEAS Productivity project is hosting an upcoming webinar in their HPC Best Practices Series, entitled "{{ page.title }}" on {{ page.startdate | date: "%B %-d" }}, from  {{ t0p }}-{{ t1p }} (Pacific Time).</p>
+<p>The IDEAS Productivity project is hosting an upcoming webinar in their HPC Best Practices Series, entitled "{{ page.title }}" on {{ page.startdate | date: "%B %-d" }}, from  {{ t0p }} - {{ t1p }} (Pacific Time).</p>
 
 <p>{% if page.short-description %}{{ page.short-description }}{% else %}{{ content }}{% endif %}</p>
 
