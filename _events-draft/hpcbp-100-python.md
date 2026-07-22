@@ -9,7 +9,7 @@ presenters:
     affiliation: "Nuclear Criticality Safety Division, Lawrence Livermore National Lab"
     github-id: jpmorgan98
     bio: |
-      Joanna Morgan is a post-doctoral scholar at LLNL researching nuclear critical experiments for nuclear data and simulation validation. Before starting at LLNL, she was a PhD student developing MC/DC at Oregon State University. Joanna’s research about methods development (for both deterministic (SN) and Monte Carlo simulations), verification, and validation of solutions to the time dependent radiation transport equation, often requiring modern high-performance computing architectures. See more at <https://jpmorgan98.github.io/>.
+      Joanna Morgan is a post-doctoral scholar at LLNL designing critical nuclear experiments for nuclear data and code validation. Before starting at LLNL, she was a PhD student developing MC/DC at Oregon State University. Joanna’s research include methods development (both deterministic (SN) and Monte Carlo simulations) for the time dependent radiation transport equation, verification and validation, and open-source software development. See more at <https://jpmorgan98.github.io/>.
 #
 bsswio-topics: ["high-preformance computing (hpc)", "software engineering", "programming languages", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/QD2cLY8xSKKvzIbpexqnXw
