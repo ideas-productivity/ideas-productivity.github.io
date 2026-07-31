@@ -2,7 +2,7 @@
 startdate: "2026-09-02"
 time: "1:00pm - 2:00pm EDT" # Ensure that time zone is correct with respect to standard/daylight time
 #
-title: 'Rapid Development of a High-Performance Applications using Python'
+title: 'Rapid Development of a High-Performance Applications Using Python'
 #
 presenters:
   - name: Joanna Piper Morgan
