@@ -14,13 +14,13 @@ presenters:
 bsswio-topics: ["high-preformance computing (hpc)", "software engineering", "programming languages", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/QD2cLY8xSKKvzIbpexqnXw
 #
-# artifacts:
+artifacts:
 #   - label: Recording
 #     format: YouTube
 #     yt-video-id: 9Mp9SbA0fdU
-#   - label: Slides
-#     format: PDF
-#     url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-100-python.pdf
+  - label: Slides
+    format: PDF
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-100-python.pdf
 #   - label: Q&A
 #     format: PDF
 #     url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-100-python-qa.pdf
