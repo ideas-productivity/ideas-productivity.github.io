@@ -15,15 +15,15 @@ bsswio-topics: ["high-preformance computing (hpc)", "software engineering", "pro
 registration-url: https://www.zoomgov.com/meeting/register/QD2cLY8xSKKvzIbpexqnXw
 #
 artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: 9Mp9SbA0fdU
+  - label: Recording
+    format: YouTube
+    yt-video-id: bOhBFzlJKPw
   - label: Slides
     format: PDF
     url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-100-python.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-100-python-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-100-python-qa.pdf
 #
 # Items that change rarely
 #
