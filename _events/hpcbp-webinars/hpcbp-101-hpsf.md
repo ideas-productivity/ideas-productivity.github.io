@@ -14,7 +14,7 @@ presenters:
     affiliation: "CEA"
     github-id: xdelaruelle
     bio: |
-      Xavier began his career as an HPC systems administrator and is now the manager of the HPC Operations team at CEA. In this role, he coordinates CEA's technical activities for the Alice Recoque infrastructure, which will become EuroHPC's second exascale supercomputer. He is also the lead developer and project manager of the open-source [Environment Modules](https://envmodules.io/) project.
+      Xavier Delaruelle began his career as an HPC systems administrator and is now the manager of the HPC Operations team at CEA. In this role, he coordinates CEA's technical activities for the Alice Recoque infrastructure, which will become EuroHPC's second exascale supercomputer. He is also the lead developer and project manager of the open-source [Environment Modules](https://envmodules.io/) project.
   - name: Axel Huebl
     affiliation: "Lawrence Berkeley National Laboratory"
     github-id: ax3l
