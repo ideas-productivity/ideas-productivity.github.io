@@ -24,13 +24,13 @@ presenters:
 bsswio-topics: ["projects and organizations", "software sustainability", "high-performance computing (hpc)", "online learning"]
 registration-url: https://www.zoomgov.com/meeting/register/84jTOtAlSq-WFjkP9Psm7A
 #
-# artifacts:
+artifacts:
 #   - label: Recording
 #     format: YouTube
 #     yt-video-id: bOhBFzlJKPw
-#   - label: Slides
-#     format: PDF
-#     url: XXXXX://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-101-hpsf.pdf
+  - label: Slides
+    format: PDF
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-101-hpsf.pdf
 #   - label: Q&A
 #     format: PDF
 #     url: XXXXX://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-101-hpsf-qa.pdf
