@@ -25,15 +25,15 @@ bsswio-topics: ["projects and organizations", "software sustainability", "high-p
 registration-url: https://www.zoomgov.com/meeting/register/84jTOtAlSq-WFjkP9Psm7A
 #
 artifacts:
-#   - label: Recording
-#     format: YouTube
-#     yt-video-id: bOhBFzlJKPw
+  - label: Recording
+    format: YouTube
+    yt-video-id: N8RKai8nnJg
   - label: Slides
     format: PDF
     url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-101-hpsf.pdf
-#   - label: Q&A
-#     format: PDF
-#     url: XXXXX://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-101-hpsf-qa.pdf
+  - label: Q&A
+    format: PDF
+    url: https://ideas-productivity.org/assets/artifacts/hpcbp/hpcbp-101-hpsf-qa.pdf
 #
 # Items that change rarely
 #
